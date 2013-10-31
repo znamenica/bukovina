@@ -1,0 +1,18 @@
+vim commands for hip conversion
+
+:set fileencodings=cp1251
+:w ++enc=utf-8 ++ff=unix
+
+шаблон:
+
+---
+вечерня:
+   отпустителен:
+      тропарь:
+         глас: 
+         текст: 
+утреня:
+   канон:
+      кондак:
+         глас: 
+         текст: 
