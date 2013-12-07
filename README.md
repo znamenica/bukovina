@@ -1,6 +1,6 @@
 # Bukovina
 
-TODO: Write a gem description
+Bukovina is the Orthodox Christian God-service library
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just use is as is
 
 ## Contributing
 
