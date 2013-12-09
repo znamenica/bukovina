@@ -1,0 +1,218 @@
+#!/usr/bin/env ruby
+#coding: utf-8
+
+require 'yaml'
+require 'rdoba'
+require 'open-uri'
+require 'nokogiri'
+require 'hashie'
+require 'fileutils'
+
+rdoba :mixin => [ :case ]
+
+def drevo_person_line li
+   def set_name hashie, name
+      names = name.split /\s+/
+      имя = names.shift
+      hashie.имя = имя && имя.strip || nil
+      hashie.фамилия = names
+   end
+
+   people = []
+   mark = nil
+   person = Hashie::Mash.new
+   parts = []
+   text = ''
+   li.children.each do| li_e |
+      if !li_e.is_a?( Nokogiri::XML::Element ) || li_e.content =~ /^\d+|[IVX]+$/ || li_e.attr( 'href' ) =~ /find/
+         text << li_e.content
+         next ; end
+
+      link = 'http://drevo-info.ru' + li_e.attr( 'href' )
+      person.вики = link
+      text << li_e.content
+      parts = text.split ','
+      person.имя = parts.shift
+      people << person
+
+      text = ''
+      if parts.empty?
+         next ; end
+      text = parts.pop
+      parts.each do| part |
+         person = Hashie::Mash.new
+         person.имя = part.strip
+         people << person
+      end
+
+      person = Hashie::Mash.new
+   end
+
+   if people.last
+      people.last.имя << text
+      people.last.имя.strip!
+   else
+      person.имя = text.strip
+      people << person
+   end
+
+   people.each_index do| i |
+      person = people[ i ]
+      mode = nil
+      имя = person.имя
+      person.имя = ''
+      имя.split( '(' ).each do| subtoken |
+         subtoken = subtoken.strip
+         if subtoken =~ /^(.+)\)/
+            if subtoken =~ /^(.*(\d|\w)+.*)\)/
+               person.год = $1
+               mode = :год
+            elsif subtoken =~ /^(.*)\)/
+               if mode
+                  person.area = $1
+                  mode = :area
+               else
+                  person.фамилия ||= []
+                  person.фамилия << $1
+                  mode = :фамилия
+               end
+            else
+               $stderr.puts "Invalid token #{token}"
+            end
+         elsif subtoken =~ /[А-Яа-я\-]+/
+            if subtoken =~ /(.*)\.(.*)/
+               person.чин = $1.downcase
+               set_name person, $2.strip
+            else
+               set_name person, subtoken
+            end
+         end
+      end
+      text = ''
+
+      if person.чин?
+         mark = person.чин[ -1 ] == person.чин[ -2 ]
+      end
+
+      if !( mark || person.чин? && person.чин !~ /еп|митр|патр/ ||
+            !person.чин? && person.имя !~ /еп|митр|патр|отшельн|именуем/ )
+         if people[ i - 1 ]
+            last = person.merge people[ i - 1 ]
+            last.фамилия ||= []
+            if person.имя?
+               last.фамилия << person.имя
+            end
+            if person.фамилия?
+               last.фамилия |= person.фамилия
+            end
+            people[ i - 1 ].replace last
+            people[ i ] = nil
+         end
+      end
+   end
+
+   people.compact!
+
+   # set чин
+   чин = nil
+   people.each do| person |
+      if person.чин?
+         if person.чин[ -1 ] == person.чин[ -2 ]
+            чин = person.чин[ 0..-2 ]
+            person.чин = чин
+         else
+            чин = person.чин
+         end
+      else
+         person.чин = чин
+      end     
+   end
+
+   # set год
+   год = nil
+   people.reverse.each do| person |
+      if person.год?
+         год = person.год
+      else
+         person.год = год
+      end     
+   end
+
+   people.each do| person |
+      if person.фамилия?
+         person.фамилия = person.фамилия.join ', '
+      end
+   end
+end 
+
+Months = [ 'ЯНВАРЯ', 'ФЕВРАЛЯ', 'МАРТА', 'АПРЕЛЯ', 'МАЯ', 'ИЮНЯ',
+           'ИЮЛЯ', 'АВГУСТА', 'СЕНТЯБРЯ', 'ОКТЯБРЯ', 'НОЯБРЯ', 'ДЕКАБРЯ' ]
+
+date = ARGV.shift
+date =~ /(\d+)[\/\.](\d+)/
+day = $1.to_i
+month = $2.to_i
+month_str = Months[ month - 1 ]
+
+puts "Search for #{day} #{month_str}"
+
+# calendar
+uri = 'http://drevo-info.ru/articles/list/14.html?page='
+date_link = 'http://drevo-info.ru' +
+(1..4).each do| i |
+   drevo_cal = Nokogiri::HTML( open "#{uri}#{i}" )
+   li =
+   drevo_cal.css( 'li' ).each do| li |
+      if li.content == "#{day} #{month_str}"
+         break li
+      end
+   end
+   if li.is_a? Nokogiri::XML::Element
+      break li.css( 'a' ).attr( 'href' ).value
+   end
+end
+
+if date_link.is_a? String
+   drevo_date = Nokogiri::HTML( open date_link )
+
+   seg = drevo_date.css( 'h2' ).each do| h2 |
+      if h2.text == 'Память'
+         break h2 ; end ; end
+
+   memlist = []
+   if !seg.is_a? Array
+      #TODO change to seg
+      mem = drevo_date.css( '#article ul' )
+      mem.css( 'li' ).each do| li |
+         if li.content.strip =~ /^\d/
+            next ; end
+         ml = drevo_person_line li
+         memlist |= ml
+      end
+   end
+end
+
+drevo_people = {}
+memlist.each do| person |
+   def detect_uniq_name person
+      drevo_person = Nokogiri::HTML( open person.вики )
+      name = drevo_person.css( 'h1' ).text.downcase
+   end
+
+   name =
+   if person.вики
+      detect_uniq_name person
+   else
+      person.имя.to_s + ' ' + person.фамилия[ 0 ].to_s
+   end
+   drevo_people[ name ] = person.to_hash
+end
+
+
+folder = sprintf "мѣсѧцесловъ/%2i/%2i", month, day
+FileUtils.mkdir_p folder
+File.open( File.join( folder, 'месяцеслов.ро.yml' ), 'w' ) do| f |
+   f.puts drevo_people.to_yaml
+end
+
+
