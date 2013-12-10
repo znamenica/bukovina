@@ -8,53 +8,84 @@ require 'nokogiri'
 require 'hashie'
 require 'fileutils'
 
-rdoba :mixin => [ :case ]
+rdoba :mixin => [ :case ], :log => { :functions => [ :* ] }
 
 def drevo_person_line li
-   def set_name hashie, name
+   def new_person
+      person = Hashie::Mash.new
+      person.имя = ''
+      person.прозвище = []
+      person.фамилия = []
+      person.описание = []
+      person.чин = nil
+      person.год = nil
+      person.собор = nil
+      person.служба = nil
+      person.вики = nil
+      person.бытие = nil
+      person.отечник = nil
+      person.образ = []
+      person
+   end
+
+   def set_name person, name
       names = name.split /\s+/
       имя = names.shift
-      hashie.имя = имя && имя.strip || nil
-      hashie.фамилия = names
+      person.имя = имя && имя.strip || nil
+      person.фамилия |= names
+   end
+
+   def proc_parts parts, person
+      parts.each_index do| i |
+         part = parts[ i ].strip
+         if part =~ /^[а-яё]/ && part !~ /прмч|сщмч|мч/ || part =~ /^\(.*[\d\w\)]+.*\)$/
+            begin
+               parts[ i - 1 ] << ' ' + part
+               parts[ i ] = nil
+            rescue
+               parts[ i ] = part ; end
+         else
+            parts[ i ] = part ; end ; end
+      parts.compact
    end
 
    people = []
    mark = nil
-   person = Hashie::Mash.new
+   person = self.new_person
    parts = []
    text = ''
    li.children.each do| li_e |
-      if !li_e.is_a?( Nokogiri::XML::Element ) || li_e.content =~ /^\d+|[IVX]+$/ || li_e.attr( 'href' ) =~ /find/
-         text << li_e.content
-         next ; end
-
-      link = 'http://drevo-info.ru' + li_e.attr( 'href' )
-      person.вики = link
-      text << li_e.content
-      parts = text.split ','
-      person.имя = parts.shift
-      people << person
-
-      text = ''
-      if parts.empty?
-         next ; end
-      text = parts.pop
-      parts.each do| part |
-         person = Hashie::Mash.new
-         person.имя = part.strip
-         people << person
+      text = li_e.content.strip
+      if li_e.is_a?( Nokogiri::XML::Element )
+         if text =~ /^[А-ЯЁ]/ && !person.имя.empty?
+            people << person
+            person = self.new_person
+         end
+         person.имя << ' ' + text.gsub( /[,.]/, '' )
+         if li_e.attr( 'href' ) !~ /find/ && text !~ /[\d\w]/
+            person.вики = 'http://drevo-info.ru' + li_e.attr( 'href' ) ; end
+      elsif text =~ /^(?:([А-ЯЁа-яё]+)\.|Икон)(.*)$/
+         person.чин = ( $1 || 'обр' ).downcase
+         person.имя = $2.strip.gsub( /[.,]/, '' )
+      else
+         text.split( ',' ).each do| part |
+            part = part.strip
+            if part =~ /^[А-ЯЁ]/
+               people << person
+               person = self.new_person
+               person.имя = part
+            elsif part =~ /^([а-яё]+)\.|икон.*$/
+               people << person
+               person = self.new_person
+               person.чин = ( $1 || 'обр' ).downcase
+            else
+               person.имя << ' ' + part
+            end
+         end
       end
-
-      person = Hashie::Mash.new
    end
 
-   if people.last
-      people.last.имя << text
-      people.last.имя.strip!
-   else
-      person.имя = text.strip
-      people << person
-   end
+   people << person
 
    people.each_index do| i |
       person = people[ i ]
@@ -65,27 +96,20 @@ def drevo_person_line li
          subtoken = subtoken.strip
          if subtoken =~ /^(.+)\)/
             if subtoken =~ /^(.*(\d|\w)+.*)\)/
-               person.год = $1
+               person.год = $1.strip
                mode = :год
             elsif subtoken =~ /^(.*)\)/
                if mode
-                  person.area = $1
-                  mode = :area
+                  person.собор = $1.to_s.gsub( /[.,\s]+/, '' ).downcase
+                  mode = :собор
                else
-                  person.фамилия ||= []
-                  person.фамилия << $1
+                  person.фамилия |= $1.to_s.split( /[,\s]+/ )
                   mode = :фамилия
                end
             else
-               $stderr.puts "Invalid token #{token}"
-            end
+               $stderr.puts "Invalid token #{subtoken}" ; end
          elsif subtoken =~ /[А-Яа-я\-]+/
-            if subtoken =~ /(.*)\.(.*)/
-               person.чин = $1.downcase
-               set_name person, $2.strip
-            else
-               set_name person, subtoken
-            end
+            set_name person, subtoken
          end
       end
       text = ''
@@ -94,21 +118,6 @@ def drevo_person_line li
          mark = person.чин[ -1 ] == person.чин[ -2 ]
       end
 
-      if !( mark || person.чин? && person.чин !~ /еп|митр|патр/ ||
-            !person.чин? && person.имя !~ /еп|митр|патр|отшельн|именуем/ )
-         if people[ i - 1 ]
-            last = person.merge people[ i - 1 ]
-            last.фамилия ||= []
-            if person.имя?
-               last.фамилия << person.имя
-            end
-            if person.фамилия?
-               last.фамилия |= person.фамилия
-            end
-            people[ i - 1 ].replace last
-            people[ i ] = nil
-         end
-      end
    end
 
    people.compact!
@@ -116,7 +125,7 @@ def drevo_person_line li
    # set чин
    чин = nil
    people.each do| person |
-      if person.чин?
+      if person.чин
          if person.чин[ -1 ] == person.чин[ -2 ]
             чин = person.чин[ 0..-2 ]
             person.чин = чин
@@ -131,16 +140,29 @@ def drevo_person_line li
    # set год
    год = nil
    people.reverse.each do| person |
-      if person.год?
+      if person.год
          год = person.год
       else
          person.год = год
       end     
    end
 
+   # установка прозвища и описания
    people.each do| person |
-      if person.фамилия?
-         person.фамилия = person.фамилия.join ', '
+      pro = []
+      person.фамилия.map! do| part |
+         if part =~ /^(.*)\((.*)\)(.*)$/
+            pro << $1.to_s + $3.to_s
+            $2
+         else
+            pro << part
+            nil
+         end
+      end.compact!
+      if pro.join =~ /икон/
+         person.описание = pro
+      else
+         person.прозвище = pro
       end
    end
 end 
@@ -163,7 +185,7 @@ date_link = 'http://drevo-info.ru' +
    drevo_cal = Nokogiri::HTML( open "#{uri}#{i}" )
    li =
    drevo_cal.css( 'li' ).each do| li |
-      if li.content == "#{day} #{month_str}"
+      if li.content == "#{day} #{month_str}" # check 27 НОЯБРЯ
          break li
       end
    end
@@ -196,23 +218,31 @@ drevo_people = {}
 memlist.each do| person |
    def detect_uniq_name person
       drevo_person = Nokogiri::HTML( open person.вики )
-      name = drevo_person.css( 'h1' ).text.downcase
+      name = drevo_person.css( 'h1' ).text.downcase.gsub( /[\d\(\)\-,]+/, '' )
+      parts = name.strip.split( /\s+/ )
+      parts.each {| part | part[ 0 ] = part[ 0 ].upcase }.join ' '
    end
 
+   log >> { person: person }
    name =
    if person.вики
       detect_uniq_name person
    else
-      person.имя.to_s + ' ' + person.фамилия[ 0 ].to_s
+      [ person.имя, person.фамилия[ 0 ] || person.прозвище[ 0 ] ].compact.join ' '
    end
+   log > { name: name }
+   log >> '*'*80
+   person.фамилия = person.фамилия.join ' '
+   person.прозвище = person.прозвище.join ' '
+   person.описание = person.описание.join ' '
+   person.образ = !person.образ.empty? && person.образ || nil
    drevo_people[ name ] = person.to_hash
 end
-
 
 folder = sprintf "мѣсѧцесловъ/%2i/%2i", month, day
 FileUtils.mkdir_p folder
 File.open( File.join( folder, 'месяцеслов.ро.yml' ), 'w' ) do| f |
-   f.puts drevo_people.to_yaml
+   f.puts drevo_people.to_yaml.gsub( /  /, '   ' ).gsub( /'/, '' ).gsub( /\s+$/, '' )
 end
 
 
