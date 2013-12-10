@@ -7,6 +7,7 @@ require 'open-uri'
 require 'nokogiri'
 require 'hashie'
 require 'fileutils'
+require 'petrovich'
 
 rdoba :mixin => [ :case ], :log => { :functions => [ :* ] }
 
@@ -134,7 +135,7 @@ def drevo_person_line li
          end
       else
          person.чин = чин
-      end     
+      end
    end
 
    # set год
@@ -144,7 +145,7 @@ def drevo_person_line li
          год = person.год
       else
          person.год = год
-      end     
+      end
    end
 
    # установка прозвища и описания
@@ -165,7 +166,46 @@ def drevo_person_line li
          person.прозвище = pro
       end
    end
-end 
+
+   # Обращение падежей в именительный
+   people.each do| person |
+      gen =
+      if person.чин =~ /мц|обр/
+         :female
+      elsif !person.чин
+         :androgynous
+      else
+         :male
+      end
+      petro = Petrovich.new gen
+
+      if person.описание
+         person.описание.map! do| v |
+            petro.lastname v, :nominative, :genitive
+         end
+      end
+
+      if person.фамилия
+         person.фамилия.map! do| v |
+            petro.lastname v, :nominative, :genitive
+         end
+      end
+
+      if person.прозвище
+         person.прозвище.map! do| v |
+            petro.lastname v, :nominative, :genitive
+         end
+      end
+
+      if person.имя
+         имя = petro.firstname person.имя, :nominative, :genitive
+         if имя = person.имя
+            имя = petro.lastname person.имя, :nominative, :genitive
+         end
+         person.имя = имя
+      end
+   end
+end
 
 Months = [ 'ЯНВАРЯ', 'ФЕВРАЛЯ', 'МАРТА', 'АПРЕЛЯ', 'МАЯ', 'ИЮНЯ',
            'ИЮЛЯ', 'АВГУСТА', 'СЕНТЯБРЯ', 'ОКТЯБРЯ', 'НОЯБРЯ', 'ДЕКАБРЯ' ]

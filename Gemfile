@@ -4,4 +4,5 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'rdoba', :git => 'https://github.com/3aHyga/rdoba.git'
+gem 'petrovich', :git => 'https://github.com/petrovich/petrovich-ruby.git'
 
