@@ -2,6 +2,7 @@
 #coding: utf-8
 
 require 'yaml'
+require 'date'
 require 'rdoba'
 require 'open-uri'
 require 'nokogiri'
@@ -11,7 +12,10 @@ require 'petrovich'
 
 rdoba :mixin => [ :case ], :log => { :functions => [ :* ] }
 
-def drevo_person_line li
+def azbuka_p p
+   drevo_person_line p, nil, 'бытие' ; end
+
+def drevo_person_line li, base = 'http://drevo-info.ru', store_name = 'вики'
    def new_person
       person = Hashie::Mash.new
       person.имя = ''
@@ -26,29 +30,31 @@ def drevo_person_line li
       person.бытие = nil
       person.отечник = nil
       person.образ = []
-      person
-   end
+      person ; end
 
    def set_name person, name
       names = name.split /\s+/
       имя = names.shift
       person.имя = имя && имя.strip || nil
-      person.фамилия |= names
-   end
+      if names.join =~ /икон/
+         person.описание |= names
+      else
+         person.прозвище |= names ; end ; end
 
    def proc_parts parts, person
       parts.each_index do| i |
          part = parts[ i ].strip
          if part =~ /^[а-яё]/ && part !~ /прмч|сщмч|мч/ || part =~ /^\(.*[\d\w\)]+.*\)$/
             begin
-               parts[ i - 1 ] << ' ' + part
+               if !parts[ i - 1 ].empty?
+                  parts[ i - 1 ] << ' ' ; end
+               parts[ i - 1 ] << part
                parts[ i ] = nil
             rescue
                parts[ i ] = part ; end
          else
             parts[ i ] = part ; end ; end
-      parts.compact
-   end
+      parts.compact ; end
 
    people = []
    mark = nil
@@ -56,20 +62,31 @@ def drevo_person_line li
    parts = []
    text = ''
    li.children.each do| li_e |
-      text = li_e.content.strip
+      if li_e.is_a? Nokogiri::XML::Comment
+         next ; end
+      text = li_e.content.gsub( /[<!«»]|--/, '' ).gsub( / +/, ' ' ).strip #NBSP to Space here
       if li_e.is_a?( Nokogiri::XML::Element )
-         if text =~ /^[А-ЯЁ]/ && !person.имя.empty?
+         if text =~ /^[а-яёА-ЯЁ]/ && !person.имя.empty?
             people << person
             person = self.new_person
          end
-         person.имя << ' ' + text.gsub( /[,.]/, '' )
-         if li_e.attr( 'href' ) !~ /find/ && text !~ /[\d\w]/
-            person.вики = 'http://drevo-info.ru' + li_e.attr( 'href' ) ; end
+
+         if text =~ /^(?:([А-ЯЁа-яё]+)\.|Иконы?)(.*)$/
+            person.чин = ( $1 || 'обр' ).downcase
+            person.имя = $2.gsub( /[,.<!]/, '' ).strip
+         elsif !text.empty?
+            if !person.имя.empty?
+               person.имя << ' ' ; end
+            person.имя << text.gsub( /[,.<!]/, '' ).strip ; end
+
+         if li_e.name == 'a' && li_e.attr( 'href' ) !~ /find|p-znaki/ && text !~ /[\d\w]/
+            url = li_e.attr( 'href' )
+            person[ store_name ] = url =~ /^http/ && url || ( base + url ) ; end
       elsif text =~ /^(?:([А-ЯЁа-яё]+)\.|Икон)(.*)$/
          person.чин = ( $1 || 'обр' ).downcase
-         person.имя = $2.strip.gsub( /[.,]/, '' )
-      else
-         text.split( ',' ).each do| part |
+         person.имя = $2.gsub( /[.,]/, '' ).strip
+      elsif !text.empty?
+         text.split( /[;,]/ ).each do| part |
             part = part.strip
             if part =~ /^[А-ЯЁ]/
                people << person
@@ -79,13 +96,8 @@ def drevo_person_line li
                people << person
                person = self.new_person
                person.чин = ( $1 || 'обр' ).downcase
-            else
-               person.имя << ' ' + part
-            end
-         end
-      end
-   end
-
+            elsif !part.empty?
+               person.имя << ' ' + part ; end ; end ; end ; end
    people << person
 
    people.each_index do| i |
@@ -105,21 +117,15 @@ def drevo_person_line li
                   mode = :собор
                else
                   person.фамилия |= $1.to_s.split( /[,\s]+/ )
-                  mode = :фамилия
-               end
+                  mode = :фамилия ; end
             else
                $stderr.puts "Invalid token #{subtoken}" ; end
          elsif subtoken =~ /[А-Яа-я\-]+/
-            set_name person, subtoken
-         end
-      end
+            set_name person, subtoken ; end ; end
       text = ''
 
       if person.чин?
-         mark = person.чин[ -1 ] == person.чин[ -2 ]
-      end
-
-   end
+         mark = person.чин[ -1 ] == person.чин[ -2 ] ; end ; end
 
    people.compact!
 
@@ -131,12 +137,9 @@ def drevo_person_line li
             чин = person.чин[ 0..-2 ]
             person.чин = чин
          else
-            чин = person.чин
-         end
+            чин = person.чин ; end
       else
-         person.чин = чин
-      end
-   end
+         person.чин = чин ; end ; end
 
    # set год
    год = nil
@@ -144,28 +147,7 @@ def drevo_person_line li
       if person.год
          год = person.год
       else
-         person.год = год
-      end
-   end
-
-   # установка прозвища и описания
-   people.each do| person |
-      pro = []
-      person.фамилия.map! do| part |
-         if part =~ /^(.*)\((.*)\)(.*)$/
-            pro << $1.to_s + $3.to_s
-            $2
-         else
-            pro << part
-            nil
-         end
-      end.compact!
-      if pro.join =~ /икон/
-         person.описание = pro
-      else
-         person.прозвище = pro
-      end
-   end
+         person.год = год ; end ; end
 
    # Обращение падежей в именительный
    people.each do| person |
@@ -175,45 +157,73 @@ def drevo_person_line li
       elsif !person.чин
          :androgynous
       else
-         :male
-      end
+         :male ; end
       petro = Petrovich.new gen
 
       if person.описание
          person.описание.map! do| v |
-            petro.lastname v, :nominative, :genitive
-         end
-      end
+            petro.lastname v, :nominative, :genitive ; end ; end
 
       if person.фамилия
          person.фамилия.map! do| v |
-            petro.lastname v, :nominative, :genitive
-         end
-      end
+            petro.lastname v, :nominative, :genitive ; end ; end
 
       if person.прозвище
          person.прозвище.map! do| v |
-            petro.lastname v, :nominative, :genitive
-         end
-      end
+            petro.lastname v, :nominative, :genitive ; end ; end
 
       if person.имя
          имя = petro.firstname person.имя, :nominative, :genitive
          if имя = person.имя
-            имя = petro.lastname person.имя, :nominative, :genitive
-         end
-         person.имя = имя
+            имя = petro.lastname person.имя, :nominative, :genitive ; end
+         person.имя = имя ; end ; end ; end
+
+def parse_list list, shift = 0
+   def detect_uniq_name person, shift
+      url =
+      if person.вики
+         log >> { вики: person.вики }
+         person.вики
+      elsif person.бытие
+         log >> { бытие: person.бытие }
+         person.бытие
       end
-   end
-end
+      person_doc = Nokogiri::HTML( ( open url), nil, 'utf-8' )
+      name = person_doc.css( 'h1' ).text.downcase
+      if name =~ /икона/
+         shift = 2 ; end
+      parts = name.strip.split( /\s+/ )[ shift, 2 ]
+      parts.each do| part |
+         part.gsub!( /[,«»\d\)\(]+/, '' )
+         part[ 0 ] = part[ 0 ].upcase
+      end.join( ' ' ) ; end
+
+   people = {}
+   list.each do| person |
+      log >> { person: person }
+      name =
+      if person.бытие || person.вики && person.имя.empty?
+         detect_uniq_name person, shift
+      else
+         [ person.имя, person.фамилия[ 0 ] || person.прозвище[ 0 ] ].compact.join ' '
+      end
+      log > { name: name }
+      log >> '*'*80
+      person.фамилия = person.фамилия.join ' '
+      person.прозвище = person.прозвище.join ' '
+      person.описание = person.описание.join ' '
+      person.образ = !person.образ.empty? && person.образ || nil
+      people[ name ] = person.to_hash ; end
+   people ; end
+
+#date = ARGV.shift
+date = Date.parse( ARGV.shift ) rescue Date.today
+julian = date.julian
+day = julian.day
+month = julian.month
 
 Months = [ 'ЯНВАРЯ', 'ФЕВРАЛЯ', 'МАРТА', 'АПРЕЛЯ', 'МАЯ', 'ИЮНЯ',
            'ИЮЛЯ', 'АВГУСТА', 'СЕНТЯБРЯ', 'ОКТЯБРЯ', 'НОЯБРЯ', 'ДЕКАБРЯ' ]
-
-date = ARGV.shift
-date =~ /(\d+)[\/\.](\d+)/
-day = $1.to_i
-month = $2.to_i
 month_str = Months[ month - 1 ]
 
 puts "Search for #{day} #{month_str}"
@@ -254,35 +264,107 @@ if date_link.is_a? String
    end
 end
 
-drevo_people = {}
-memlist.each do| person |
-   def detect_uniq_name person
-      drevo_person = Nokogiri::HTML( open person.вики )
-      name = drevo_person.css( 'h1' ).text.downcase.gsub( /[\d\(\)\-,]+/, '' )
-      parts = name.strip.split( /\s+/ )
-      parts.each {| part | part[ 0 ] = part[ 0 ].upcase }.join ' '
-   end
+people = parse_list memlist
 
-   log >> { person: person }
-   name =
-   if person.вики
-      detect_uniq_name person
+date_link = 'http://azbyka.ru/days'
+doc = open "#{date_link}/#{date.strftime( "%Y-%m-%d" )}"
+azbuka = Nokogiri::HTML doc.read, nil, 'utf-8'
+
+memlist = []
+ps = azbuka.css( '#calendar-wrapper .text p' )
+ps.to_a.each_index do| i |
+   if i == 0
+      next ; end
+   p = ps[ i ]
+   ml = azbuka_p p
+   memlist |= ml ; end
+#end
+
+# Merge
+azbuka_people = parse_list memlist, 1
+azbuka_people.each do| name, person |
+   if people.key? name
+      log > { Merging: name }
+      log >> { P1: people[ name ], P2: person }
+      # deep merge
+      people[ name ].keys.each do| key |
+         people[ name ][ key ] =
+         case people[ name ][ key ]
+         when Array
+            case person[ key ]
+            when Array
+               ( people[ name ][ key ] | person.delete( key ) ).uniq
+            when NilClass
+               people[ name ][ key ]
+            when String
+               if person[ key ].strip.empty?
+                  people[ name ][ key ]
+               else
+                  ( people[ name ][ key ] | [ person.delete( key ) ] ).uniq ; end
+            else
+               ( people[ name ][ key ] | [ person.delete( key ) ] ).uniq ; end
+         when NilClass
+            case person[ key ]
+            when Array
+               person.delete( key )
+            when NilClass
+            when String
+               if !person[ key ].strip.empty?
+                  person.delete( key ) ; end
+            else
+               person.delete( key ) ; end
+         when String
+            if people[ name ][ key ].strip.empty?
+               case person[ key ]
+               when Array
+                  person.delete( key )
+               when NilClass
+               when String
+                  if !person[ key ].strip.empty?
+                     person.delete( key ) ; end
+               else
+                  person.delete( key ) ; end
+            else
+               case person[ key ]
+               when Array
+                  ( [ people[ name ][ key ] ] | person.delete( key ) ).uniq
+               when NilClass
+                  people[ name ][ key ]
+               when String
+                  if person[ key ].strip.empty?
+                     people[ name ][ key ]
+                  elsif person[ key ] == people[ name ][ key ]
+                     person.delete( key )
+                  else
+                     ( [ people[ name ][ key ] ] | [ person.delete( key ) ] ).uniq ; end
+               else
+                  ( [ people[ name ][ key ] ] | [ person.delete( key ) ] ).uniq ; end ; end
+         else
+            case person[ key ]
+            when Array
+               ( [ people[ name ][ key ] ] | [ person.delete( key ) ] ).uniq
+            when NilClass
+               people[ name ][ key ]
+            when String
+               if person[ key ].strip.empty?
+                  people[ name ][ key ]
+               else
+                  ( [ people[ name ][ key ] ] | [ person.delete( key ) ] ).uniq ; end
+            else
+               if person[ key ] == people[ name ][ key ]
+                  person.delete( key )
+               else
+                  ( [ people[ name ][ key ] ] | person.delete( key ) ).uniq ; end ; end ; end
+      end
+      person.each {| key, value | people[ name ][ key ] }
+      log >> people[ name ]
    else
-      [ person.имя, person.фамилия[ 0 ] || person.прозвище[ 0 ] ].compact.join ' '
-   end
-   log > { name: name }
-   log >> '*'*80
-   person.фамилия = person.фамилия.join ' '
-   person.прозвище = person.прозвище.join ' '
-   person.описание = person.описание.join ' '
-   person.образ = !person.образ.empty? && person.образ || nil
-   drevo_people[ name ] = person.to_hash
-end
+      people[ name ] = person ; end ; end
 
 folder = sprintf "мѣсѧцесловъ/%2i/%2i", month, day
 FileUtils.mkdir_p folder
 File.open( File.join( folder, 'месяцеслов.ро.yml' ), 'w' ) do| f |
-   f.puts drevo_people.to_yaml.gsub( /  /, '   ' ).gsub( /'/, '' ).gsub( /\s+$/, '' )
+   f.puts people.to_yaml.gsub( /  /, '   ' ).gsub( /'/, '' ).gsub( /\s+$/, '' )
 end
 
 
