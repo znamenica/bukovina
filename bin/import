@@ -13,12 +13,55 @@ require 'petrovich'
 
 rdoba :mixin => [ :case ], :log => { :functions => [ :* ] }
 
-def prav_ru_trop trop
-   names = trop.css( '.trop_title' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
-   glas = trop.css( '.trop_glas' ).inner_text.strip
-   text = trop.css( '.trop_text' ).inner_text.strip
-   kind = names.shift.downcase
+def добава куда, име, нечто
+   case куда[ име ]
+   when Array
+      if !куда[ име ].include? нечто
+         куда[ име ] << нечто ; end
+   when Hash, String
+      if куда[ име ].is_a?( Hash ) &&
+         куда[ име ].select {| _, нечто | нечто && !нечто.empty? }.empty?
+         куда[ име ] = нечто
+      elsif куда[ име ] != нечто
+         куда[ име ] = [ куда[ име ], нечто ] ; end
+   when NilClass
+      куда[ име ] = нечто
+   end
+end
 
+def assign_trops trops, people, services
+   service_tmpl = YAML.load( IO.read 'service.yml' )
+   trops.each do| trop |
+      (names, glas, text, c) = yield trop
+      mls = parse_trop names, glas, text, c
+      log >> { people: { mls[ 0 ] => mls[ 1 ] } }
+      people.merge!( mls[ 0 ] => mls[ 1 ] )
+   
+      name = "#{mls[ 1 ][ 'служба' ]}.цс_ро.yml"
+      value = mls[ 2 ]
+      service = services[ name ] || service_tmpl.dup( :recursive )
+      log >> { name: name, services: services[ name ] }
+   
+      case value[ 0 ]
+      when 'тропарь'
+         добава service['вечерня']['отпустительно'], 'тропарь',
+                { 'глас' => value[ 1 ], 'текст' => value[ 2 ] }
+      when 'молитва'
+         добава service['вечерня']['отпустительно'], 'молитва',
+                value[ 1 ]
+      when 'кондак'
+         добава service['утреня']['канон'], 'кондак',
+                { 'глас' => value[ 1 ], 'текст' => value[ 2 ] }
+      when 'величание'
+         добава service['утреня'], 'величание',
+                value[ 1 ]
+      end
+      services[ name ] = service
+   end
+end
+
+def parse_trop names, glas, text, c
+   kind = names.shift.downcase
    род =
    if names[ 0 ] =~ /мученицы|преподобной|праведной|Божией/i
       :female
@@ -29,12 +72,21 @@ def prav_ru_trop trop
    fname = ''
    names =
    names.select do| name |
-      name =~ /[А-ЯЁ]/ && name !~ /Божией|Матери|Ее/
+      name =~ /[А-ЯЁ]/ &&
+      name !~ /Божией|Матери|Ее|Пресвят|Богородице|Ея|Свято|Крещен/
    end.map do| name |
+      name.gsub! /[«»]+/, ''
       if fname.empty?
          fname = petro.firstname name, :nominative, :genitive
+         if fname == name
+            fname = petro.firstname name, :nominative, :dative ; end
+         fname
       else
-         petro.lastname name, :nominative, :genitive ; end ; end
+         new = petro.lastname name, :nominative, :genitive
+         if new == name
+            petro.lastname name, :nominative, :dative
+         else
+            new ; end ; end ; end
    name = names.join ' '
    fservice = petro.firstname names.shift, :dative
    lservice = names.map {| i | petro.lastname i, :dative }
@@ -251,6 +303,7 @@ date = Date.parse( ARGV.shift ) rescue Date.today
 julian = date.julian
 day = julian.day
 month = julian.month
+services = {}
 people_set = []
 
 Months = [ 'ЯНВАРЯ', 'ФЕВРАЛЯ', 'МАРТА', 'АПРЕЛЯ', 'МАЯ', 'ИЮНЯ',
@@ -300,7 +353,6 @@ end
 
 people_set.push( parse_list memlist )
 
-
 # Azbuka parsing
 log * "Parse azbuka.ru site"
 log * ( "*"*80 )
@@ -318,67 +370,34 @@ ps.to_a.each_index do| i |
    ml = azbuka_p p
    memlist |= ml ; end
 
-people_set.push( parse_list memlist, 1 )
+azbuka_people = parse_list memlist, 1
+assign_trops( ( azbuka.css '.taks_block .taks_content' ),
+              azbuka_people, services ) do| trop |
+   names = trop.css( 'h3' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
+   glas = trop.css( '.glas' ).inner_text.strip rescue ''
+   text = trop.css( 'div' ).inner_text.strip
+   [ names, glas, text, :dative ] ; end
 
+people_set.push azbuka_people
 
 # Pravoslavie.ru parsing
 log * "Parse Pravoslavie.ru site"
 log * ( "*"*80 )
 
+prav_people = {}
+
 date_link = 'http://days.pravoslavie.ru/Days'
 doc = open "#{date_link}/#{julian.strftime( "%Y%m%d" )}.htm"
 prav_ru = Nokogiri::HTML doc.read
 
-prav_people = {}
-prav_service = {}
-  
-trops = prav_ru.css( '.trop' )
-
-def добава куда, име, нечто
-   case куда[ име ]
-   when Array
-      if !куда[ име ].include? нечто
-         куда[ име ] << нечто ; end
-   when Hash, String
-      if куда[ име ].is_a?( Hash ) &&
-         куда[ име ].select {| _, нечто | нечто && !нечто.empty? }.empty?
-         куда[ име ] = нечто
-      elsif куда[ име ] != нечто
-         куда[ име ] = [ куда[ име ], нечто ] ; end
-   when NilClass
-      куда[ име ] = нечто
-   end
-end
-
-service_tmpl = YAML.load( IO.read 'service.yml' )
-services = {}
-
-trops.each do| trop |
-   mls = prav_ru_trop trop
-   log >> { people: { mls[ 0 ] => mls[ 1 ] } }
-   prav_people.merge!( mls[ 0 ] => mls[ 1 ] )
-   prav_service[ mls[ 0 ] ] ||= []
-
-   name = "#{mls[ 1 ][ 'служба' ]}.цс_ро.yml"
-   value = mls[ 2 ]
-   service = services[ name ] || service_tmpl.dup( :recursive )
-   log >> { name: name, services: services[ name ] }
-
-   case value[ 0 ]
-   when 'тропарь'
-      добава service['вечерня']['отпустительно'], 'тропарь', { 'глас' => value[ 1 ], 'текст' => value[ 2 ] }
-   when 'молитва'
-      добава service['вечерня']['отпустительно'], 'молитва', value[ 1 ]
-   when 'кондак'
-      добава service['утреня']['канон'], 'кондак', { 'глас' => value[ 1 ], 'текст' => value[ 2 ] }
-   when 'величание'
-      добава service['утреня'], 'величание', value[ 1 ]
-   end
-   services[ name ] = service
-end
+assign_trops( ( prav_ru.css '.trop' ),
+              prav_people, services ) do| trop |
+   names = trop.css( '.trop_title' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
+   glas = trop.css( '.trop_glas' ).inner_text.strip
+   text = trop.css( '.trop_text' ).inner_text.strip
+   [ names, glas, text, :genitive ] ; end
 
 people_set.push prav_people
-
 
 # Merge descriptions
 log * "Merging the site data"
@@ -465,6 +484,7 @@ people_set.each do| current_people |
       else
          people[ name ] = person ; end ; end ; end
 
+
 folder = sprintf "мѣсѧцесловъ/%2i/%2i", month, day
 FileUtils.mkdir_p folder
 File.open( File.join( folder, 'месяцеслов.ро.yml' ), 'w' ) do| f |
@@ -478,4 +498,5 @@ services.each do| име, служба |
       f.puts служба.to_yaml.gsub( /  /, '   ' ).gsub( / - /, '  - ' ).gsub( /'/, '' ).gsub( /\s+$/, '' )
    end
 end
+
 
