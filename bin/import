@@ -10,6 +10,7 @@ require 'nokogiri'
 require 'hashie'
 require 'fileutils'
 require 'petrovich'
+require 'mechanize'
 
 rdoba :mixin => [ :case ], :log => { :functions => [ :* ] }
 
@@ -399,7 +400,8 @@ assign_trops( ( prav_ru.css '.trop' ),
 
 people_set.push prav_people
 
-# Merge descriptions
+
+# Merge people descriptions
 log * "Merging the site data"
 log * ( "*"*80 )
 
@@ -484,6 +486,39 @@ people_set.each do| current_people |
       else
          people[ name ] = person ; end ; end ; end
 
+
+# pravicon.com search
+
+agent = Mechanize.new
+#agent.user_agent_alias = 'Windows IE 9'
+
+people.each do| name, value |
+   page = agent.get 'http://pravicon.com/'
+   f = page.forms.first
+   if name
+      f.search = name
+      f.selectdb = value[ 'чин' ] == 'обр' && 's' || 'b'
+   end
+   begin
+      doc = Nokogiri::HTML( f.submit( f.buttons.last ).content )
+   rescue
+      next
+   end
+   uris = []
+   doc.css( '#content a' ).each do| a |
+      uris << ( 'http://pravicon.com' + a.attr( 'href' ) )
+   end
+   case uris.size
+   when 0
+   when 1
+      value[ 'образ' ] = uris.last
+   else
+      value[ 'образ' ] = uris
+   end
+end
+
+
+# Store the people data
 
 folder = sprintf "мѣсѧцесловъ/%2i/%2i", month, day
 FileUtils.mkdir_p folder
