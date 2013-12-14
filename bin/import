@@ -30,17 +30,34 @@ def добава куда, име, нечто
    end
 end
 
+def search_for services, name
+   service = services[ name ]
+   if service
+      return service ; end
+   names = name.split( '/' )[ 0 ].split /\s+/
+
+   p '^'*80
+   p name
+   p names
+   if names.size > 1
+      services.each do| key, value |
+         key = key.split( '/' )[ 0 ]
+         p key
+         if names.reject {| n | key.include? n }.empty?
+            return value ; end ; end ; end
+   nil ; end
+
 def assign_trops trops, people, services
    service_tmpl = YAML.load( IO.read 'service.yml' )
    trops.each do| trop |
-      (names, glas, text, c) = yield trop
-      mls = parse_trop names, glas, text, c
+      ( names, glas, text, cases ) = yield trop
+      mls = parse_trop names, glas, text, cases
       log >> { people: { mls[ 0 ] => mls[ 1 ] } }
       people.merge!( mls[ 0 ] => mls[ 1 ] )
    
       name = "#{mls[ 1 ][ 'служба' ]}.цс_ро.yml"
       value = mls[ 2 ]
-      service = services[ name ] || service_tmpl.dup( :recursive )
+      service = search_for( services, name ) || service_tmpl.dup( :recursive )
       log >> { name: name, services: services[ name ] }
    
       case value[ 0 ]
@@ -61,7 +78,7 @@ def assign_trops trops, people, services
    end
 end
 
-def parse_trop names, glas, text, c
+def parse_trop names, glas, text, cases
    kind = names.shift.downcase
    род =
    if names[ 0 ] =~ /мученицы|преподобной|праведной|Божией/i
@@ -76,18 +93,20 @@ def parse_trop names, glas, text, c
       name =~ /[А-ЯЁ]/ &&
       name !~ /Божией|Матери|Ее|Пресвят|Богородице|Ея|Свято|Крещен/
    end.map do| name |
+      def apply_cases petro, method, cases, name
+         cases = cases.is_a?( Array) && cases || [ cases ]
+         new =
+         cases.each do| c |
+            new = petro.send method, name, :nominative, c
+            if new != name
+               break new ; end ; end
+         new.is_a?( Array ) && name || new ; end
+
       name.gsub! /[«»]+/, ''
       if fname.empty?
-         fname = petro.firstname name, :nominative, :genitive
-         if fname == name
-            fname = petro.firstname name, :nominative, :dative ; end
-         fname
+         fname = apply_cases petro, :firstname, cases, name
       else
-         new = petro.lastname name, :nominative, :genitive
-         if new == name
-            petro.lastname name, :nominative, :dative
-         else
-            new ; end ; end ; end
+         apply_cases petro, :lastname, cases, name ; end ; end
    name = names.join ' '
    fservice = petro.firstname names.shift, :dative
    lservice = names.map {| i | petro.lastname i, :dative }
@@ -354,6 +373,26 @@ end
 
 people_set.push( parse_list memlist )
 
+# Pravoslavie.ru parsing
+log * "Parse Pravoslavie.ru site"
+log * ( "*"*80 )
+
+prav_people = {}
+
+date_link = 'http://days.pravoslavie.ru/Days'
+doc = open "#{date_link}/#{julian.strftime( "%Y%m%d" )}.htm"
+prav_ru = Nokogiri::HTML doc.read
+
+assign_trops( ( prav_ru.css '.trop' ),
+              prav_people, services ) do| trop |
+   names = trop.css( '.trop_title' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
+   glas = trop.css( '.trop_glas' ).inner_text.strip
+   text = trop.css( '.trop_text' ).inner_text.strip
+   [ names, glas, text, :genitive ] ; end
+
+people_set.push prav_people
+
+
 # Azbuka parsing
 log * "Parse azbuka.ru site"
 log * ( "*"*80 )
@@ -377,29 +416,9 @@ assign_trops( ( azbuka.css '.taks_block .taks_content' ),
    names = trop.css( 'h3' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
    glas = trop.css( '.glas' ).inner_text.strip rescue ''
    text = trop.css( 'div' ).inner_text.strip
-   [ names, glas, text, :dative ] ; end
+   [ names, glas, text, [ :dative, :genitive ] ] ; end
 
 people_set.push azbuka_people
-
-# Pravoslavie.ru parsing
-log * "Parse Pravoslavie.ru site"
-log * ( "*"*80 )
-
-prav_people = {}
-
-date_link = 'http://days.pravoslavie.ru/Days'
-doc = open "#{date_link}/#{julian.strftime( "%Y%m%d" )}.htm"
-prav_ru = Nokogiri::HTML doc.read
-
-assign_trops( ( prav_ru.css '.trop' ),
-              prav_people, services ) do| trop |
-   names = trop.css( '.trop_title' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
-   glas = trop.css( '.trop_glas' ).inner_text.strip
-   text = trop.css( '.trop_text' ).inner_text.strip
-   [ names, glas, text, :genitive ] ; end
-
-people_set.push prav_people
-
 
 # Merge people descriptions
 log * "Merging the site data"
