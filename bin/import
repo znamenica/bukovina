@@ -539,7 +539,7 @@ end
 
 # Store the people data
 
-folder = sprintf "мѣсѧцесловъ/%2i/%2i", month, day
+folder = sprintf "мѣсѧцесловъ/%02i/%02i", month, day
 FileUtils.mkdir_p folder
 File.open( File.join( folder, 'месяцеслов.ро.yml' ), 'w' ) do| f |
    f.puts people.to_yaml.gsub( /  /, '   ' ).gsub( /'/, '' ).gsub( /\s+$/, '' )
