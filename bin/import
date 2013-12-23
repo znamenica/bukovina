@@ -12,7 +12,40 @@ require 'fileutils'
 require 'petrovich'
 require 'mechanize'
 
-rdoba :mixin => [ :case ], :log => { :functions => [ :* ] }
+rdoba :mixin => [ :case ], :log => { :functions => [ :* ], :prefix => [ :function_name, :function_line ] }
+
+Map = {
+   /[Сс]вятител/i => 'свт',
+   /[Пп]раведн/i => 'прав',
+   /[Пп]роро/i => 'прор',
+   /[Аа]постол/i => 'ап',
+   /[Мм]учениц/i => 'мц',
+   /[Мм]ученик/i => 'мч',
+   /[Сс]вященномучен/i => 'сщмч',
+   /[Пп]реподобномучен/i => 'прмч',
+   /[Пп]реподобн/ => 'прп',
+   /[Бб]бессребрен/i => 'бср',
+   /[Сс]вято/i => 'прав',
+   /[Бб]лаженн/i => 'блаж',
+   /[Ии]споведницы/i => 'исп',
+   /[Пп]ресвитер/ => '',
+}
+
+def краток_чин чин, options = {}
+   if чин =~ /^[А-ЯЁ][^а-яё]*$/
+      чин = чин[ 0 ] << чин[ 1..-1 ].downcase ; end
+   замена = Map.select {| к, _ | чин =~ к }
+
+   if !замена.empty? && options[ :точка ]
+      замена.to_a.last.last << '.' ; end
+
+   log - ( замена.empty? && чин || замена.to_a.last.last )
+end
+
+def общя_замена словеса
+   словеса.split( /\s+/ ).map do| слово | 
+      краток_чин слово, :точка => true
+   end.join ' ' ; end
 
 def добава куда, име, нечто
    case куда[ име ]
@@ -30,17 +63,8 @@ def добава куда, име, нечто
    end
 end
 
-def общя_замена словеса
-   map = {
-      /[Сс]вященномучен/i => 'сщмч.',
-      /пресвитер/ => '',
-   }
-   словеса.split( /\s+/ ).map do| слово |
-      замена = map.select {| к, з | слово =~ к }
-      замена.empty? && слово || замена.to_a.last.last ; end.join ' ' ; end
-
 def добавить_память people, person
-   if person.имя.empty? || person.имя =~ /^[а-я]+$/
+   if person.имя.empty? || person.имя !~ /[А-ЯЁ]/
       return person ; end
 
    people << person
@@ -64,14 +88,24 @@ def assign_trops trops, people, services
    service_tmpl = YAML.load( IO.read 'service.yml' )
    trops.each do| trop |
       ( names, glas, text, cases ) = yield trop
-      mls = parse_trop( names, glas, text, cases ) do | names |
-         log >> { trop_names: names }
-         if names.size > 1
-            return names ; end
-         found = people.keys.select do | key |
-            key.split( /\s+/ ).select {| name | names[ 0 ] == name }.size > 0
-            end
-         found.size > 0 && found.last.split( /\s+/ ) || names ; end
+      mls = parse_trop( names, glas, text, cases ) do | чин, names |
+         log > { trop_names: names }
+         case names.size
+         when 0
+            краткъ = краток_чин чин, :род => true
+            found = people.keys.compact.map do| key |
+               people[ key ][ 'чин' ]
+            end.select {| чин | чин == краткъ }
+            [ found.size > 0 && found.reverse.last || краткъ ]
+         when 1
+            found = people.keys.compact.select do | key |
+               key.split( /\s+/ ).select {| name | names[ 0 ] == name }.size > 0
+               end
+            found.size > 0 && found.last.split( /\s+/ ) || names
+         when 2
+            names
+         else
+            names[0..1] ; end ; end
 
       log >> { people: { mls[ 0 ] => mls[ 1 ] } }
       if people[ mls[ 0 ] ]
@@ -145,11 +179,14 @@ def parse_trop names, glas, text, cases
       else
          apply_cases petro, :lastname, cases, name ; end ; end
 
-   names = yield names
+   names = yield чин, names
+   log > { 'yielded trop names' => names }
    name = names.join ' '
-   fservice = petro.firstname names.shift, :dative
-   lservice = names.map {| i | petro.lastname i, :dative }
-   service = ( [ fservice ] | lservice | [ 'служба' ] ).join ' '
+   service = ''
+   if !names.empty?
+      fservice = petro.firstname names.shift, :dative
+      lservice = names.map {| i | petro.lastname i, :dative }
+      service = ( [ fservice ] | lservice | [ 'служба' ] ).join ' ' ; end
    
    [ name, { 'служба' => "#{name}/#{service}" }, [ kind, glas, text ] ] ; end
 
@@ -223,7 +260,12 @@ def drevo_person_line li, base = 'http://drevo-info.ru', store_name = 'вики'
          url = li_e.attr( 'href' )
          uri = url =~ /^http/ && url || ( base + url )
          azbuka_group = Nokogiri::HTML( open( uri ), nil, 'utf-8' )
-         azbuka_group.css( "#featured .cont h1" ).children.to_a
+         ary = azbuka_group.css( "#featured .cont h1" ).children.to_a
+         text = li_e.content
+         if text =~ /(\(.*[\dIVX]+.*\))/
+            ary << Nokogiri::XML::Text.new( $1.to_s, li_e )
+         else
+            ary ; end
       else
          li_e ; end ; end.flatten
 
@@ -232,9 +274,10 @@ def drevo_person_line li, base = 'http://drevo-info.ru', store_name = 'вики'
          next ; end
       text = li_e.content.gsub( /[<!«»:]|--/, '' ).gsub( / +/, ' ' ).strip #NBSP to Space here
       log * ( '&'*80 )
-      log >> { text: text }
+      log >> { букы: text }
       if li_e.is_a?( Nokogiri::XML::Element )
-         log * "Ссылка"
+         log > "Ссылка"
+         log >> { "Ссылка подробно" => li_e }
          text = общя_замена text
          if text =~ /^[а-яёА-ЯЁ]/ && !person.имя.empty?
             person = добавить_память people, person ; end
@@ -242,20 +285,28 @@ def drevo_person_line li, base = 'http://drevo-info.ru', store_name = 'вики'
          if text =~ /^(?:([А-ЯЁа-яё]+)\.|Иконы?)(.*)$/
             person.чин = ( $1 || 'обр' ).downcase
             person.имя = $2.gsub( /[,.<!]/, '' ).strip
+            log > { чин: person.чин }
+            log > { имя: person.имя }
+         elsif text =~ /[\dIVX]/
+            person.год = text
+            log > { год: person.год }
          elsif !text.empty?
             if !person.имя.empty?
                person.имя << ' ' ; end
-            person.имя << text.gsub( /[,.<!]/, '' ).strip ; end
+            person.имя << text.gsub( /[,.<!]/, '' ).strip
+            log > { имя: person.имя } ; end
 
-         if li_e.name == 'a' && text !~ /[\d\w]/ &&
-            li_e.attr( 'href' ) !~ /find|p-znaki|p-san|p-tip/
+         if li_e.name == 'a' && text !~ /^(?:[\dIVX]+|[^\(\),А-Я]+[\dIVX]+)$/ &&
+            li_e.attr( 'href' ) !~ /\/(find|p-znaki|p-san|p-tip)/
             url = li_e.attr( 'href' )
             uri = url =~ /^http/ && url || ( base + url )
-            person[ store_name ] = uri ; end
+            if li_e.attr( 'href' ) =~ /otechnik/
+               person[ 'отечник' ] = uri
+            else
+               person[ store_name ] = uri ; end ; end
 
-         log > { имя: person.имя }
       elsif text =~ /^(?:([А-ЯЁа-яё]+)\.|Икона Божией Матери|Священномучени[а-я]+)(.*)$/
-         log * "Чин"
+         log > "Чин"
          (чин, имя) = [ $1, $2 ]
          if text =~ /(гг|н|э)\./ 
             person.имя << text
@@ -265,12 +316,12 @@ def drevo_person_line li, base = 'http://drevo-info.ru', store_name = 'вики'
          end
          log > { имя: person.имя }
       elsif !text.empty?
-         log * "Ино"
+         log > "Ино"
          if text =~ /(.*\))([^)])*$/
             person.имя << $1
             text = $2.to_s ; end
 
-         text.split( /[;,]| ?и / ).each do| part |
+         text.split( /[;,]| ?и |^и$/ ).each do| part |
             part = part.strip
             log >> { part: part }
             if part =~ /^[А-ЯЁ]/
@@ -373,7 +424,7 @@ def drevo_person_line li, base = 'http://drevo-info.ru', store_name = 'вики'
 
       if person.имя
          имя = petro.firstname person.имя, :nominative, :genitive
-         if имя = person.имя
+         if имя == person.имя
             имя = petro.lastname person.имя, :nominative, :genitive ; end
          person.имя = имя ; end ; end ; end
 
@@ -388,29 +439,31 @@ def parse_list list, shift = 0
          person.бытие
       end
       person_doc = Nokogiri::HTML( ( open url), nil, 'utf-8' )
-      name = person_doc.css( 'h1' ).text.downcase
-      if name =~ /икона/
-         shift = 2 ; end
-      parts = name.strip.split( /\s+/ )[ shift, 2 ]
-      parts.each do| part |
-         part.gsub!( /[,«»\d\)\(]+/, '' )
-         part[ 0 ] = part[ 0 ].upcase
-      end.join( ' ' ) ; end
+      name = person_doc.css( 'h1' ).text
+      name = общя_замена name.strip
+      parts = name.split( /\s+/ ).select {| v | v =~ /^[А-ЯЁ]/ }[ 0, 2 ]
+      new = parts.map {| p | p.gsub( /[,«»\d\)\(]+/, '' ) }
+      new.grep( /[А-ЯЁ]/ ) && new || name.split( /\s+/ ) ; end
 
    people = {}
    list.each do| person |
       log >> { person: person }
-      name =
+      name1 = []
       if !person.имя.empty?
          вторки = [ person.фамилия, person.прозвище ].flatten.compact
          вторка = вторки.select {| имя | имя =~ /^[А-ЯЁ]/ }[ 0 ]
-         [ person.имя, вторка ].compact.join ' ' ; end
+         name1 = [ person.имя, вторка ].compact ; end
+      log >> { 'name 1' => name1 }
 
-      if person.бытие || person.вики && ( !name || name !~ /\s/ )
-         name = detect_uniq_name person, shift ; end
-
-      log > { name: name }
+      name2 = []
+      if person.бытие || person.вики
+         name2 = detect_uniq_name person, shift ; end
+      log >> { 'name 2' => name2 }
       log >> '*'*80
+
+      name = ( name2.size <= name1.size && name1 || name2 ).join ' '
+      log > { 'name selected' => name }
+
       person.фамилия = person.фамилия.join ' '
       person.прозвище = person.прозвище.join ' '
       person.описание = person.описание.join ' '
@@ -492,6 +545,8 @@ assign_trops( ( prav_ru.css '.trop' ),
    names = trop.css( '.trop_title' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
    glas = trop.css( '.trop_glas' ).inner_text.strip
    text = trop.css( '.trop_text' ).inner_text.strip
+   log * ( "#"*80 )
+   log >> { names: names }
    [ names, glas, text, :genitive ] ; end
 
 people_set.push drevo_people
@@ -520,6 +575,8 @@ assign_trops( ( azbuka.css '.taks_block .taks_content' ),
    names = trop.css( 'h3' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
    glas = trop.css( '.glas' ).inner_text.strip rescue ''
    text = trop.css( 'div' ).inner_text.strip
+   log > ( "#"*80 )
+   log >> { names: names }
    [ names, glas, text, [ :dative, :genitive ] ] ; end
 
 people_set.push azbuka_people
@@ -612,6 +669,9 @@ people_set.each do| current_people |
 
 # pravicon.com search
 
+log * "Pravicon.ru search"
+log * ( "*"*80 )
+
 agent = Mechanize.new
 #agent.user_agent_alias = 'Windows IE 9'
 
@@ -619,24 +679,39 @@ people.each do| name, value |
    if !name || name.empty?
       next ; end
 
+   log > { name: name }
+   names = name.split /\s+/
    page = agent.get 'http://pravicon.com/'
    f = page.forms.first
-   f.search = name
-   f.selectdb = value[ 'чин' ] == 'обр' && 's' || 'b'
+   f.search = names.shift
+   f.selectdb = value[ 'чин' ] == 'обр' && 'b' || 's'
+   log >> { form: f }
    begin
       content = f.submit( f.buttons.last ).content
       doc = Nokogiri::HTML content
    rescue
       next
    end
-   uris = []
-   doc.css( '#content a' ).each do| a |
-      uris << ( 'http://pravicon.com' + a.attr( 'href' ) )
+
+   uris = doc.css( '#content a' ).select do| a |
+      log >> { 'match for' => a.content }
+      names.reject {| name | a.content =~ /#{name}/ }.empty?
+   end.map do| a |
+      ( 'http://pravicon.com' + a.attr( 'href' ) )
    end
+
+   if names.empty? && uris.size > 1
+      next ; end
    case uris.size
    when 0
    when 1
       value[ 'образ' ] = uris.last
+      if !value[ 'бытие' ]
+         doc = Nokogiri::HTML( open uris.last )
+         a = doc.css( ".spoiler a" )[ 0 ]
+         if a
+            value[ 'бытие' ] = a.attr( 'href' ) ; end
+      end
    else
       value[ 'образ' ] = uris
    end
