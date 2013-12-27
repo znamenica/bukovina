@@ -408,6 +408,16 @@ def parse_tokens памяти, tokens, store_name = 'вики'
       else
          person.год = год ; end ; end ; end
 
+def е_исключение слово
+   Исключения = [
+      /ого[^А-ЯЁа-яё]*$/,
+      /его[^А-ЯЁа-яё]*$/,
+      /ой[^А-ЯЁа-яё]*$/,
+   ]
+
+   !Исключения.select {|s| слово =~ s }.empty?
+end
+
 def tokenize_line li, base
    # expanding groups
    lis = li.children.to_a.map do| li_e |
@@ -465,11 +475,12 @@ def tokenize_line li, base
       if t =~ /(.*)[,;]$/
          t = $1
          tokens[ (i + 1)..-1 ].each do| tt |
-            if tt =~ /^[А-ЯЁ]/ && tt !~ /\.\)?$/
+            иск = tt =~ /\.\)?$/ || е_исключение( tt )
+            if tt =~ /^[А-ЯЁ]/ && !иск || t.empty?
                под << t << 'и'
                t = nil               
                break
-            elsif tt =~ /^[а-яё].*[^.]$/ || tt =~ /\.\)?$/
+            elsif tt =~ /^[а-яё].*[^.]?$/ || иск
                break ; end ; end ; end
       if t =~ /^[,;](.*)/
          t = $1
