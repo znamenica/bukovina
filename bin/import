@@ -14,6 +14,17 @@ require 'mechanize'
 
 rdoba :mixin => [ :case ], :log => { :functions => [ :* ], :prefix => [ :function_name, :function_line ] }
 
+
+class Array
+   alias :old_append :<<
+   alias :old_unshift :unshift
+
+   def unshift value
+      !self.include?( value ) && self.old_unshift( value ) || self ; end
+
+   def << value
+      !self.include?( value ) && self.old_append( value ) || self ; end ; end
+
 Map = {
    /[Сс]вятител/i => 'свт.',
    /[Пп]раведн/i => 'прав.',
@@ -87,18 +98,53 @@ def добава куда, име, нечто
    end
 end
 
+def detect_uniq_name память
+   url =
+   if память.вики
+      log >> { вики: память.вики }
+      память.вики         
+   elsif память.бытие
+      log >> { бытие: память.бытие }
+      память.бытие
+   end
+   память_doc = Nokogiri::HTML( ( open url), nil, 'utf-8' )
+   name = память_doc.css( 'h1' ).text
+   name = общя_замена name.strip
+   parts = name.split( /\s+/ ).select {| v | v =~ /^[А-ЯЁ]/ }
+
+   parts =
+   if память.вики && parts.size == 3
+      [ parts[ 1 ], parts[ 0 ] ]
+   else
+      parts[ 0, 2 ] ; end
+   new = parts.map {| p | p.gsub( /[,«»\d\)\(]+/, '' ) }
+   new.grep( /[А-ЯЁ]/ ) && new || name.split( /\s+/ ) ; end
+
 def добавить_память памяти, person
-   память = памяти.map do| память |
+   log + { person: person }
+
+   памятие = памяти.map do| память |
       имена = выделить_имя память
       имена_новы = выделить_имя person
       имена_общи = имена & имена_новы
-      имена_общи.size >= 2 && [ имена_общи.size, память ] || nil
+      вес = имена_общи.size
+      if имена.size < 2 && имена_новы.size < 2 && память.чин == person.чин
+         вес += 1 ; end
+      вес >= 2 && [ вес, память ] || nil
    end.compact.sort do| x, y |
-      x <=> y
-   end.last[ 1 ] rescue nil
+      x[ 0 ] <=> y[ 0 ]
+   end
+   log >> { памятие: памятие }
 
+   if person.бытие || person.вики
+      name = detect_uniq_name person
+      name1 = name.shift
+      if name1 != person.имя
+         person.прозвище << name1 ; end
+      person.прозвище.concat name ; end
+
+   память = памятие.last[ 1 ] rescue nil
    if память
-      log > { 'Добавлена память' => person }
       имена_новы = выделить_имя person
       имена_общи = ( выделить_имя память ) & имена_новы
       память.прозвище = ( имена_новы - имена_общи ) + память.прозвище
@@ -107,7 +153,7 @@ def добавить_память памяти, person
       память.описание << ( person.описание - ( память.описание & person.описание ) )
       память.чин = ( память.чин.split(',') + ( person.чин.split(',') - ( память.чин.split(',') & person.чин.split(',') ) ) ).join( ',' ) rescue память.чин || person.чин
       память.год = ( память.год.split(',') + ( person.год.split(',') - ( память.год.split(',') & person.год.split(',') ) ) ).join( ',' ) rescue память.год || person.год
-      память.собор = ( память.собор.split(',') + ( person.собор.split(',') - ( память.собор.split(',') & person.собор.split(',') ) ) ).join( ',' ) rescue память.собор || person.собор
+      память.собор = память.собор + ( person.собор - ( память.собор & person.собор ) )
       if !память.вики && person.вики
          память.вики = person.вики ; end
       if !память.бытие && person.бытие
@@ -171,7 +217,6 @@ def assign_trops trops, памяти, services
          else
             весы = 
             памяти.map do| память |
-            p память
                вес = ( выделить_имя( память ) & names ).size * 2
                if память.чин && память.чин == краткъ
                   вес += 1 ; end
@@ -329,6 +374,42 @@ def parse_tokens памяти, tokens, store_name = 'вики'
          log > "Разделитель имен"
          склад = nil
          person = добавить_память памяти, person
+      when /^\(?([А-ЯЁ][а-яё]+)\./
+         собор = $1.to_s.downcase
+         log > { Собор: собор }
+         person.собор << собор
+      when /^\(([А-ЯЁ][а-яё\-]+)\)/
+         фамилия = nocase && t || обращение( person, $1, :фамилия )
+         log > { Фамилия: фамилия }
+         person.фамилия << фамилия
+      when /^\(([\dIVX\.а-яё\-]+[^\.\)]?)$/
+         год = $1
+         log > { Год1: год }
+         person.год = год
+         склад = :скобы
+      when /\(?(.*)\)$/
+         tt = $1
+         log > { Подсклад: tt }
+         case склад
+         when :скобы
+            if tt =~ /^[А-ЯЁ]/
+               собор = tt.downcase
+               log > { Собор: собор }
+               person.собор << собор
+            else
+               log > { Год3: tt }
+               person.год << ' ' << tt ; end
+            склад = nil
+         else
+            if tt =~ /^[\dIVX\.а-яё\-]+/
+               log > { Год2: tt }
+               if person.год
+                  person.год << ',' << tt
+               else
+                  person.год = tt ; end
+            else
+               log % { 'Нерешённый подсклад' => "'#{t}'" }
+               $stderr.puts "Нерешённый подсклад #{tt}" ; end ; end
       when /^([а-яё]+)\.$/
          чин = $1
          log > { Чин: чин }
@@ -338,50 +419,28 @@ def parse_tokens памяти, tokens, store_name = 'вики'
             имя = nocase && t || обращение( person, t, :имя )
             log > { Имя: имя }
             person.имя = имя
-         elsif склад == :скобы
-            собор = t.split( ',' ).map do| s |
-               s = s.strip.downcase
-               s =~ /(.*)\.\)?$/ && $1.to_s || s ; end
+         elsif склад == :скобы && t =~ /\.\)?$/
+            s = t.strip.downcase
+            собор = s =~ /(.*)\.\)?$/ && $1.to_s
             log > { Собор: собор }
-            person.собор = собор
+            person.собор << собор
          else
             имя = nocase && t || обращение( person, t, :фамилия )
             log > { Прозвище: имя }
             person.прозвище.unshift имя
          end
       when /^[а-яё\d]/
-         имя = nocase && t || обращение( person, t, :фамилия )
-         log > { Описание: имя }
-         person.прозвище << имя
-      when /^\(([А-ЯЁ][а-яё\-]+)\)/
-         фамилия = nocase && t || обращение( person, $1, :фамилия )
-         log > { Фамилия: фамилия }
-         person.фамилия << фамилия
-      when /^\(([\dIVX\.а-яё]+)/
-         год = $1
-         log > { Год: год }
-         person.год = год
-         склад = :скобы
-      when /^\(([А-ЯЁ][\.,а-яё]+)\)/
-         собор = $1.split( ',' ).map{|s|s.strip.downcase}
-         log > { Собор: собор }
-         person.собор = собор
-      when /(.*)\)$/
-         tt = $1
-         log > { Подсклад: tt }
-         case склад
-         when :скобы
-            person.год << ' ' << tt
-            склад = nil
+         if склад == :скобы && t =~ /^[а-яё\d]/
+            person.год << ' ' << t
+            log > { Год3: год }
+#            else t =~ /^[а-яё]/
+#            собор = t.strip.downcase
+#            log > { Собор: собор }
+#            person.собор << собор
          else
-            if tt =~ /^[\dIVX\.а-яё]+/
-               if person.год
-                  person.год << ',' << tt
-               else
-                  person.год = tt ; end
-            else
-               log % { 'Нерешённый подсклад' => t }
-               $stderr.puts "Нерешённый подсклад #{tt}" ; end ; end
+            имя = nocase && t || обращение( person, t, :фамилия )
+            log > { Описание: имя }
+            person.прозвище << имя ; end
       when ''
          log > "Пробел"
       else
@@ -496,43 +555,16 @@ def tokenize_line li, base
 
    log - ( tokens << 'и' ).flatten ; end
 
-def parse_list list
-   def detect_uniq_name память
-      url =
-      if память.вики
-         log >> { вики: память.вики }
-         память.вики         
-      elsif память.бытие
-         log >> { бытие: память.бытие }
-         память.бытие
-      end
-      память_doc = Nokogiri::HTML( ( open url), nil, 'utf-8' )
-      name = память_doc.css( 'h1' ).text
-      name = общя_замена name.strip
-      parts = name.split( /\s+/ ).select {| v | v =~ /^[А-ЯЁ]/ }
-
-      parts =
-      if память.вики && parts.size == 3
-         [ parts[ 1 ], parts[ 0 ] ]
-      else
-         parts[ 0, 2 ] ; end
-      new = parts.map {| p | p.gsub( /[,«»\d\)\(]+/, '' ) }
-      new.grep( /[А-ЯЁ]/ ) && new || name.split( /\s+/ ) ; end
-
+def to_people list
    people = {}
    list.each do| память |
       log >> { память: память }
-      name1 = []
+      name = ''
       if !память.имя.empty?
          вторки = [ память.фамилия, память.прозвище ].flatten.compact
          вторка = вторки.select {| имя | имя =~ /^[А-ЯЁ]/ }[ 0 ]
-         name1 = [ память.имя, вторка ].compact ; end
-      log >> { 'name 1' => name1 }
-
-      name2 = []
-      if память.бытие || память.вики
-         name2 = detect_uniq_name память ; end
-      log >> { 'name 2' => name2 }
+         name = [ память.имя, вторка ].compact.join ' ' ; end
+      log >> { 'name' => name }
       log >> '*'*80
 
       память.фамилия = память.фамилия.select{|a|!a.empty?}.join( ' ' ).strip
@@ -545,14 +577,14 @@ def parse_list list
       память.собор = память.собор.select{|a|!a.empty?}.join( ',' ).strip
       память.образ = память.образ.select{|a|!a.empty?}
 
-      name = ( name2.size <= name1.size && name1 || name2 ).join ' '
       if name.empty?
-         name = !память.прозвище.empty? && память.прозвище || память.описание
-         end
+         name = !память.прозвище.empty? && память.прозвище ||
+                память.описание ; end
       log > { 'name selected' => name }
 
-      if name
+      if !name.empty?
          заверка_прозвища память, ( name.split( ' ' ).last || '' ) ; end
+
       память = память.to_hash.reject! {| _, з | з.nil? || з.empty? }
       if people.key? name
          i = 0
@@ -714,7 +746,7 @@ memlist.each do| память |
    else
       память.образ = uris ; end ; end
 
-people = parse_list memlist
+people = to_people memlist
 
 folder = sprintf "мѣсѧцесловъ/%02i/%02i", month, day
 FileUtils.mkdir_p folder
