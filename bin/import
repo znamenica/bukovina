@@ -367,7 +367,7 @@ def parse_tokens памяти, tokens, store_name = 'вики'
       log > { склад => t, 'вид склада' => склад }
       if склад == :скобы
          case t
-         when '', 'и'
+         when '', 'и', '.'
          when ')'
             if !line.empty?
                год = line.join( ' ' ).gsub( / ([-\/]) /, '\1' )
@@ -429,8 +429,7 @@ def parse_tokens памяти, tokens, store_name = 'вики'
             имя = nocase && t || обращение( person, t, :фамилия )
             log > { Описание: имя }
             person.прозвище << имя
-         when ''
-            log > "Пробел"
+         when '.', ''
          else
             log % { 'Нерешённый склад' => t }
             $stderr.puts "Нерешённый склад #{t.inspect}" ; end
@@ -522,11 +521,11 @@ def tokenize_line li, base
          current_uri = uri
          tokens << uri ; end
 
-      t = t.map do| tt |
-         tt =~ /^([;,])?([^;,]+)([;,])?$/ && [ $1, $2, $3 ].compact || tt
-      end.flatten.map do| tt |
-         tt =~ /^(\()?([^\)]+)(\))?$/ && [ $1, $2, $3 ].compact || tt
-      end.flatten
+      t.map! do| tt |
+         a = tt.split( /[\(\)\.;,]/, -1 )
+         tt.scan( /[\(\)\.;,]/ ) { | s | a.push [ a.shift, s ] }
+         a.push a.shift
+      end.flatten!
       log >> { "Добавлен набор" => t } 
 
       tokens.concat t ; end
