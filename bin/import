@@ -14,17 +14,6 @@ require 'mechanize'
 
 rdoba :mixin => [ :case ], :log => { :functions => [ :* ], :prefix => [ :function_name, :function_line ] }
 
-
-class Array
-   alias :old_append :<<
-   alias :old_unshift :unshift
-
-   def unshift value
-      !self.include?( value ) && self.old_unshift( value ) || self ; end
-
-   def << value
-      !self.include?( value ) && self.old_append( value ) || self ; end ; end
-
 Map = {
    /[Сс]вятител/i => 'свт.',
    /[Пп]раведн/i => 'прав.',
@@ -40,10 +29,11 @@ Map = {
    /[Бб]лаженн/i => 'блж.',
    /[Пп]реподобносповедни/i => 'присп.',
    /[Ии]споведни/i => 'исп.',
-   /[Мм]итр\./i => 'святитель',
-   /[Аа]рхиеп\./i => 'святитель',
-   /[Ее]п\./i => 'святитель',
-   /[Сс]вящ\./i => 'священник',
+   /[Мм]итр/i => 'святитель',
+   /[Аа]рхиеп|[Ее]п/i => 'святитель',
+   /[Сс]вящ|[Пп]ресвит/i => 'священник',
+   /[Ии]гум/i => 'игумен',
+   /[Пр]рославление/ => 'прославление',
    /Свтт?\./i => 'свт.',
    /Правв?\./i => 'прав.',
    /Прорр?\./i => 'прор.',
@@ -120,6 +110,33 @@ def detect_uniq_name память
    new = parts.map {| p | p.gsub( /[,«»\d\)\(]+/, '' ) }
    new.grep( /[А-ЯЁ]/ ) && new || name.split( /\s+/ ) ; end
 
+def усечь_поле присуще, *новы
+   усечены = []
+   новы.each do| ново |
+      усечены << ново - ( присуще & ново )
+   end
+   усечены
+end
+
+def поплести_память память, person
+   log + { память: память, нова_память: person }
+   присуще = обще_имя память
+   фамилия, прозвище = усечь_поле присуще, person.фамилия, person.прозвище
+   память.фамилия = фамилия + память.фамилия
+   память.прозвище = прозвище + память.прозвище
+   ( память.описание << ( person.описание - ( память.описание & person.описание ) ) ).uniq!
+   память.чин = ( память.чин.split(',') + ( person.чин.split(',') - ( память.чин.split(',') & person.чин.split(',') ) ) ).join( ',' ) rescue память.чин || person.чин
+   память.год = ( память.год.split(',') + ( person.год.split(',') - ( память.год.split(',') & person.год.split(',') ) ) ).join( ',' ) rescue память.год || person.год
+   память.собор = память.собор + ( person.собор - ( память.собор & person.собор ) )
+   if !память.вики && person.вики
+      память.вики = person.вики ; end
+   if !память.бытие && person.бытие
+      память.бытие = person.бытие ; end
+   if память.отечник && person.отечник
+      память.отечник = person.отечник ; end
+   память.образ.concat усечь_поле( память.образ, person.образ ).last
+   log > { 'Суплетена память' => память } ; end
+
 def добавить_память памяти, person
    log + { person: person }
 
@@ -138,49 +155,37 @@ def добавить_память памяти, person
 
    if person.бытие || person.вики
       name = detect_uniq_name person
-      name1 = name.shift
-      if name1 != person.имя
-         person.прозвище << name1 ; end
-      person.прозвище.concat name ; end
+      имена, = усечь_поле( ( выделить_имя person ), name )
+      person.прозвище = имена + person.прозвище ; end
 
    память = памятие.last[ 1 ] rescue nil
    if память
-      имена_новы = выделить_имя person
-      имена_общи = ( выделить_имя память ) & имена_новы
-      память.прозвище = ( имена_новы - имена_общи ) + память.прозвище
-      память.прозвище << ( person.прозвище - ( память.прозвище & person.прозвище ) )
-      память.фамилия << ( person.фамилия - ( память.фамилия & person.фамилия ) )
-      память.описание << ( person.описание - ( память.описание & person.описание ) )
-      память.чин = ( память.чин.split(',') + ( person.чин.split(',') - ( память.чин.split(',') & person.чин.split(',') ) ) ).join( ',' ) rescue память.чин || person.чин
-      память.год = ( память.год.split(',') + ( person.год.split(',') - ( память.год.split(',') & person.год.split(',') ) ) ).join( ',' ) rescue память.год || person.год
-      память.собор = память.собор + ( person.собор - ( память.собор & person.собор ) )
-      if !память.вики && person.вики
-         память.вики = person.вики ; end
-      if !память.бытие && person.бытие
-         память.бытие = person.бытие ; end
-      if память.отечник && person.отечник
-         память.отечник = person.отечник ; end
-      память.образ << ( person.образ - ( память.образ & person.образ ) )
-      log > { 'Суплетена память' => память }
+      поплести_память память, person
    else
       памяти << person
       log > { 'Добавлена память' => person } ; end
-
    new_person ; end
 
 def обращение память, склад, вид
-   род =
+   рода =
    if память.чин =~ /мц|обр/
-      :female
+      [ :female ]
    elsif !память.чин
-      :androgynous
+      [ :androgynous, :male, :female ]
    else
-      :male ; end
-   петро = Petrovich.new род
-   if вид == :имя
-      петро.firstname склад, :nominative, :genitive
-   else
-      петро.lastname склад, :nominative, :genitive ; end ; end
+      [ :male, :female, :androgynous ] ; end
+
+   имя =
+   рода.each do| род |
+      петро = Petrovich.new род
+      имя =
+      if вид == :имя
+         петро.firstname склад, :nominative, :genitive
+      else
+         петро.lastname склад, :nominative, :genitive ; end
+      if имя != склад
+         break имя ; end ; end
+   имя.is_a?( Array ) && склад || имя ; end
 
 def search_for services, name
    service = services[ name ]
@@ -195,9 +200,12 @@ def search_for services, name
             return value ; end ; end ; end
    nil ; end
 
-def выделить_имя память
+def обще_имя память
    [ память.имя, память.прозвище,
-     память.фамилия, память.описание ].flatten.compact.select do| имя |
+     память.фамилия, память.описание ].flatten.compact.uniq ; end
+
+def выделить_имя память
+   обще_имя( память ).select do| имя |
       имя =~ /^[А-ЯЁ]/ ; end ; end
 
 def assign_trops trops, памяти, services
@@ -205,7 +213,7 @@ def assign_trops trops, памяти, services
    trops.each do| trop |
       ( names, glas, text, cases ) = yield trop
       mls = parse_trop( памяти, names, glas, text, cases ) do | чин, names |
-         log > { trop_names: names }
+         log > { 'имена тропаря' => names }
          краткъ = ократчити_склад( чин )
          краткъ = краткъ =~ /(.*)\.$/ && $1 || краткъ
          log > { чин: краткъ }
@@ -223,11 +231,11 @@ def assign_trops trops, памяти, services
                [ вес, память ] ; end.sort do| x, y |
                   x[ 0 ] <=> y[ 0 ] ; end
             log >> { весы: весы }
-            память = весы.last[ 1 ] rescue nil
+            память = весы.last && весы.last[ 0 ] > 1 && весы.last[ 1 ] || nil
 
+            log > { память: память }
             if память
-               общи_имена = выделить_имя( память ) & names
-               имена = names - общи_имена
+               имена = names - ( выделить_имя( память ) & names )
                память.прозвище = имена + память.прозвище ; end
 
             память ; end ; end
@@ -278,13 +286,15 @@ def parse_trop памяти, names, glas, text, cases
       name !~ /Божией|Матери|Ее|Пресвят|Богородице|Ея|Свято|Крещен|Священномучени/
    end.map do| name |
       def apply_cases petro, method, cases, name
+         log + { petro: petro, method: method, cases: cases, name: name }
          cases = cases.is_a?( Array ) && cases || [ cases ]
          new =
          cases.each do| c |
             new = petro.send method, name, :nominative, c
+         p new
             if new != name
                break new ; end ; end
-         new.is_a?( Array ) && name || new ; end
+         log - ( new.is_a?( Array ) && name || new ); end
 
       name.gsub! /[«»]+/, ''
       if fname.empty?
@@ -338,7 +348,7 @@ def new_person
    person.фамилия = []
    person.описание = []
    person.чин = nil
-   person.год = nil
+   person.год = []
    person.собор = []
    person.служба = nil
    person.вики = nil
@@ -351,101 +361,80 @@ def parse_tokens памяти, tokens, store_name = 'вики'
    person = new_person
 
    nocase = false
+   line = []
    склад = nil
    tokens.each do| t |
-      log > { склад: t }
-      case t
-      when /Nocase/
-         nocase = true
-      when /Case/
-         nocase = false
-      when /^http:\/\/(.*)/
-         if $1.empty?
-            log > "Отмена ссылки"
-            next
-         else
-            log > { Ссылка: t } ; end
-
-         if t =~ /otechnik/
-            person.отечник = t
-         else
-            person[ store_name ] = t ; end
-      when /^и$/
-         log > "Разделитель имен"
-         склад = nil
-         person = добавить_память памяти, person
-      when /^\(?([А-ЯЁ][а-яё]+)\./
-         собор = $1.to_s.downcase
-         log > { Собор: собор }
-         person.собор << собор
-      when /^\(([А-ЯЁ][а-яё\-]+)\)/
-         фамилия = nocase && t || обращение( person, $1, :фамилия )
-         log > { Фамилия: фамилия }
-         person.фамилия << фамилия
-      when /^\(([\dIVX\.а-яё\-]+[^\.\)]?)$/
-         год = $1
-         log > { Год1: год }
-         person.год = год
-         склад = :скобы
-      when /\(?(.*)\)$/
-         tt = $1
-         log > { Подсклад: tt }
-         case склад
-         when :скобы
-            if tt =~ /^[А-ЯЁ]/
-               собор = tt.downcase
-               log > { Собор: собор }
-               person.собор << собор
-            else
-               log > { Год3: tt }
-               person.год << ' ' << tt ; end
+      log > { склад => t, 'вид склада' => склад }
+      if склад == :скобы
+         case t
+         when '', 'и'
+         when ')'
+            if !line.empty?
+               год = line.join( ' ' ).gsub( / ([-\/]) /, '\1' )
+               log > { Год: год }
+               person.год << год
+               line = [] ; end
             склад = nil
-         else
-            if tt =~ /^[\dIVX\.а-яё\-]+/
-               log > { Год2: tt }
-               if person.год
-                  person.год << ',' << tt
-               else
-                  person.год = tt ; end
-            else
-               log % { 'Нерешённый подсклад' => "'#{t}'" }
-               $stderr.puts "Нерешённый подсклад #{tt}" ; end ; end
-      when /^([а-яё]+)\.$/
-         чин = $1
-         log > { Чин: чин }
-         person.чин = чин
-      when /^[А-ЯЁ]/
-         if person.имя.empty?
-            имя = nocase && t || обращение( person, t, :имя )
-            log > { Имя: имя }
-            person.имя = имя
-         elsif склад == :скобы && t =~ /\.\)?$/
-            s = t.strip.downcase
-            собор = s =~ /(.*)\.\)?$/ && $1.to_s
+         when /^([А-ЯЁ][а-яё]+)\./
+            собор = $1.to_s.downcase
             log > { Собор: собор }
             person.собор << собор
+         when /^([А-ЯЁ][а-яё\-]+)/
+            фамилия = nocase && t || обращение( person, $1, :фамилия )
+            log > { Фамилия: фамилия }
+            person.фамилия << фамилия
+         when /^[а-яёА-ЯЁ\dIVX\-]/
+            line << t
          else
-            имя = nocase && t || обращение( person, t, :фамилия )
-            log > { Прозвище: имя }
-            person.прозвище.unshift имя
-         end
-      when /^[а-яё\d]/
-         if склад == :скобы && t =~ /^[а-яё\d]/
-            person.год << ' ' << t
-            log > { Год3: год }
-#            else t =~ /^[а-яё]/
-#            собор = t.strip.downcase
-#            log > { Собор: собор }
-#            person.собор << собор
-         else
+            log % { 'Нерешённый склад' => t }
+            $stderr.puts "Нерешённый склад #{t.inspect}" ; end
+      else
+         case t
+         when /Nocase/
+            nocase = true
+         when /Case/
+            nocase = false
+         when /^http:\/\/(.*)/
+            if $1.empty?
+               log > "Отмена ссылки"
+               next
+            else
+               log > { Ссылка: t } ; end
+   
+            if t =~ /otechnik/
+               person.отечник = t
+            else
+               person[ store_name ] = t ; end
+         when /^и$/
+            log > "Разделитель имен"
+            склад = nil
+            person = добавить_память памяти, person
+         when '('
+            склад = :скобы
+         when /^([а-яё]+)\.$/
+            чин = $1
+            log > { Чин: чин }
+            person.чин = чин
+         when /^[А-ЯЁ]/
+            if person.имя.empty?
+               имя = nocase && t || обращение( person, t, :имя )
+               log > { Имя: имя }
+               person.имя = имя
+            else
+               имя = nocase && t || обращение( person, t, :фамилия )
+               log > { Прозвище: имя }
+               person.прозвище.unshift имя
+            end
+         when /^[а-яё\dIVX\-]/
             имя = nocase && t || обращение( person, t, :фамилия )
             log > { Описание: имя }
-            person.прозвище << имя ; end
-      when ''
-         log > "Пробел"
-      else
-         log % { 'Нерешённый склад' => t }
-         $stderr.puts "Нерешённый склад #{t}" ; end ; end
+            person.прозвище << имя
+         when ''
+            log > "Пробел"
+         else
+            log % { 'Нерешённый склад' => t }
+            $stderr.puts "Нерешённый склад #{t.inspect}" ; end
+      end ; end
 
    # set чин
    чин = nil
@@ -472,6 +461,10 @@ def е_исключение слово
       /ого[^А-ЯЁа-яё]*$/,
       /его[^А-ЯЁа-яё]*$/,
       /ой[^А-ЯЁа-яё]*$/,
+      /святитель/,
+      /священник/,
+      /игумен/,
+      /прославление/,
    ]
 
    !Исключения.select {|s| слово =~ s }.empty?
@@ -496,6 +489,7 @@ def tokenize_line li, base
    current_uri = 'http://'
    tokens = [ current_uri ]
    lis.each do| li_e |
+      link = false
       if li_e.is_a? Nokogiri::XML::Comment
          next ; end
       text = li_e.content.gsub( /[<!«»:]|--/, '' ).gsub( / +/, ' ' ).strip #NBSP to Space here
@@ -503,55 +497,54 @@ def tokenize_line li, base
       log >> { букы: text }
       uri =
       if li_e.is_a?( Nokogiri::XML::Element ) &&
-         li_e.name == 'a' && text !~ /^(?:[\dIVX]+|[^\(\),;А-Я]+[\dIVX]+)$/ &&
-         li_e.attr( 'href' ) !~ /\/(find|p-znaki|p-san|p-tip)/
-         log >> "Ссылка"
-         url = li_e.attr( 'href' )
-         url =~ /^http/ && url || ( base + url )
+         li_e.name == 'a'
+         link = true
+         if text !~ /^(?:[\dIVX]+|[^\(\),;А-Я]+[\dIVX]+)$/ &&
+            li_e.attr( 'href' ) !~ /(\/(find|p-znaki|p-san|p-tip)|#)/
+            log >> "Ссылка"
+            url = li_e.attr( 'href' )
+            url =~ /^http/ && url || ( base + url )
+         else
+            'http://' ; end
       else
          'http://' ; end
 
       t = text.split /\s+/, -1
       if tokens.size > 0 && !tokens.last.empty? &&
          tokens.last =~ /^[А-ЯЁа-яё]+$/ && tokens.last != 'и' &&
-         uri =~ /^http:\/\/$/ &&
+         uri == 'http://' && current_uri == uri && link
          !( t.empty? || t[ 0 ].empty? || t[ 0 ] == 'и' || t[ 0 ] !~ /^[А-ЯЁа-яё]+$/ )
          log >> { "Прибавлена вещка" => t[ 0 ] }
          tokens.last << t.shift ; end
 
       if current_uri != uri
-         current_uri = uri
          log >> { "Добавлена ссылка" => uri }
+         current_uri = uri
          tokens << uri ; end
 
-      log >> { "Добавлен набор" => t }
+      t = t.map do| tt |
+         tt =~ /^([;,])?([^;,]+)([;,])?$/ && [ $1, $2, $3 ].compact || tt
+      end.flatten.map do| tt |
+         tt =~ /^(\()?([^\)]+)(\))?$/ && [ $1, $2, $3 ].compact || tt
+      end.flatten
+      log >> { "Добавлен набор" => t } 
+
       tokens.concat t ; end
 
    log >> { tokens: tokens }
    tokens.map! {| t | ократчити_склад t }
    tokens.map!.with_index do| t, i |
-      под = []
-      if t =~ /(.*)[,;]$/
-         t = $1
+      if t =~ /^[,;]$/
          tokens[ (i + 1)..-1 ].each do| tt |
             иск = tt =~ /\.\)?$/ || е_исключение( tt )
-            if tt =~ /^[А-ЯЁ]/ && !иск || t.empty?
-               под << t << 'и'
-               t = nil               
+            if tt =~ /^[А-ЯЁ]/ && !иск
+               t = 'и'
                break
-            elsif tt =~ /^[а-яё].*[^.]?$/ || иск
-               break ; end ; end ; end
-      if t =~ /^[,;](.*)/
-         t = $1
-         tokens[ 0, i - 1 ].each do| tt |
-            if tt =~ /^[А-ЯЁ]/ && tt !~ /\.\)?$/
-               под << 'и'
-               break
-            elsif tt =~ /^[а-яё].*[^.]$/ || tt =~ /\.\)?$/
-               break ; end ; end ; end
-      if t
-         под << t ; end
-      под ; end
+            elsif tt =~ /^(?:и|;|,|)$/
+               break ; end
+            end
+      end
+      t !~ /^[,;]$/ && t || nil ; end.compact!
 
    log - ( tokens << 'и' ).flatten ; end
 
@@ -561,39 +554,24 @@ def to_people list
       log >> { память: память }
       name = ''
       if !память.имя.empty?
-         вторки = [ память.фамилия, память.прозвище ].flatten.compact
-         вторка = вторки.select {| имя | имя =~ /^[А-ЯЁ]/ }[ 0 ]
-         name = [ память.имя, вторка ].compact.join ' ' ; end
+         фамилия = память.фамилия.select {| имя | имя =~ /^[А-ЯЁ]/ }[ 0 ]
+         прозвище = память.прозвище.select {| имя | имя =~ /^[А-ЯЁ]/ }[ 0 ]
+         log > { фамилия => фамилия, прозвище => прозвище }
+         name = [ память.имя, прозвище || фамилия ].compact.join ' ' ; end
       log >> { 'name' => name }
       log >> '*'*80
-
-      память.фамилия = память.фамилия.select{|a|!a.empty?}.join( ' ' ).strip
-      память.прозвище = память.прозвище.select{|a|!a.empty?}.join( ' ' ).strip
-      память.описание = память.описание.select{|a|!a.empty?}.join( ' ' ).strip
-      if память.год =~ /19(\d\d)/
-         num = $1.to_i 
-         if num >= 17 && num <= 48
-            память.собор << 'нмр' ; end ; end
-      память.собор = память.собор.select{|a|!a.empty?}.join( ',' ).strip
-      память.образ = память.образ.select{|a|!a.empty?}
 
       if name.empty?
          name = !память.прозвище.empty? && память.прозвище ||
                 память.описание ; end
       log > { 'name selected' => name }
 
-      if !name.empty?
-         заверка_прозвища память, ( name.split( ' ' ).last || '' ) ; end
-
-      память = память.to_hash.reject! {| _, з | з.nil? || з.empty? }
       if people.key? name
-         i = 0
-         while people.key? "#{name}-#{i}"
-            i += 1 ; end
-         people[ "#{name}-#{i}" ] = память
+         поплести_память people[ name ], память
       else
          people[ name ] = память ; end ; end
    people ; end
+
 
 #date = ARGV.shift
 date = Date.parse( ARGV.shift ) rescue Date.today
@@ -664,8 +642,7 @@ assign_trops( ( prav_ru.css '.trop' ),
    text = trop.css( '.trop_text' ).inner_text.strip
    log * ( "#"*80 )
    log >> { names: names }
-   [ names, glas, text, :genitive ] ; end
-
+   [ names, glas, text, [ :dative, :genitive ] ] ; end
 
 # Azbuka parsing
 log * "Parse azbuka.ru site"
@@ -694,12 +671,7 @@ assign_trops( ( azbuka.css '.taks_block .taks_content' ),
    log >> { names: names }
    [ names, glas, text, [ :dative, :genitive ] ] ; end
 
-# Merge people descriptions
-log * "Merging the site data"
-log * ( "*"*80 )
-
 # pravicon.com search
-
 log * "Pravicon.ru search"
 log * ( "*"*80 )
 
@@ -747,11 +719,31 @@ memlist.each do| память |
       память.образ = uris ; end ; end
 
 people = to_people memlist
+people.keys.each do| имя |
+   память = people[ имя ]
+   log > { имя: имя, память: память }
+   память.год = память.год.select{|a|!a.empty?}.join( ' ' ).strip
+   память.фамилия = память.фамилия.select{|a|!a.empty?}.join( ' ' ).strip
+   память.прозвище = память.прозвище.select{|a|!a.empty?}.join( ' ' ).strip
+   память.описание = память.описание.select{|a|!a.empty?}.join( ' ' ).strip
+   if память.год =~ /19(\d\d)/
+      num = $1.to_i 
+      if num >= 17 && num <= 48
+         память.собор << 'нмр' ; end ; end
+   память.собор = память.собор.select{|a|!a.empty?}.join( ',' ).strip
+   память.образ = память.образ.select{|a|!a.empty?}
+
+#   if !имя.empty?
+#      заверка_прозвища память, ( имя.split( ' ' ).last || '' ) ; end
+
+   people[ имя ] = память.to_hash.reject! {| _, з | з.nil? || з.empty? } ; end
+
 
 folder = sprintf "мѣсѧцесловъ/%02i/%02i", month, day
 FileUtils.mkdir_p folder
 File.open( File.join( folder, 'месяцеслов.ро.yml' ), 'w' ) do| f |
-   f.puts people.to_yaml.gsub( /  /, '   ' ).gsub( /['\[\]]+/, '' ).gsub( /\s+$/, '' )
+#   f.puts people.to_yaml
+   f.puts people.to_yaml.gsub( /  /, '   ' ).gsub( / - /, '  - ' ).gsub( /['\[\]]+/, '' ).gsub( /\s+$/, '' )
 end
 
 services.each do| име, служба |
