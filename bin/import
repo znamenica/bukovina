@@ -48,6 +48,7 @@ Map = {
    /Блжж?\./i => 'блж.',
    /Приспп?\./i => 'присп.',
    /Испп?\./i => 'исп.',
+   /([А-ЯЁ][а-яё]+[оае]го)\.$/i => nil,
 }
 
 Case = [
@@ -58,9 +59,15 @@ def ократчити_склад склад
    if склад =~ /^[А-ЯЁ]/
       склад = склад[ 0 ] << склад[ 1..-1 ].downcase ; end
 
-   замена = Map.select {| к, _ | склад =~ к }
-   if !замена.empty?
-      замена = замена.to_a.last.last.dup
+   замены = Map.map do| к, з |
+      ( попад = к.match( склад ) ) && [ з, попад ] || nil
+   end.compact
+
+   if !замены.empty?
+      замена = замены.to_a.first.first
+      if !замена
+         замена = замены.to_a.first.last.to_a.last
+      end
    else
       замена = Case.select {| к | склад =~ к }
       if !замена.empty?
@@ -523,7 +530,12 @@ def tokenize_line li, base
 
       t.map! do| tt |
          a = tt.split( /[\(\)\.;,]/, -1 )
-         tt.scan( /[\(\)\.;,]/ ) { | s | a.push [ a.shift, s ] }
+         tt.scan( /[\(\)\.;,]/ ) do | s |
+            text = a.shift
+            if s == '.' && text =~ /[а-яё]$/
+               a.push( text << s )
+            else
+               a.push [ text, s ] ; end ; end
          a.push a.shift
       end.flatten!
       log >> { "Добавлен набор" => t } 
