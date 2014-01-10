@@ -506,8 +506,9 @@ def tokenize_line li, base
       t = text.split /\s+/, -1
       if tokens.size > 0 && !tokens.last.empty? &&
          tokens.last =~ /^[А-ЯЁа-яё]+$/ && tokens.last != 'и' &&
-         uri == 'http://' && current_uri == uri && link
-         !( t.empty? || t[ 0 ].empty? || t[ 0 ] == 'и' || t[ 0 ] !~ /^[А-ЯЁа-яё]+$/ )
+         uri == 'http://' && current_uri == uri && link &&
+         !( t.empty? || t[ 0 ].empty? || t[ 0 ] == 'и' || t[ 0 ] =~ /^[А-ЯЁ]/ )
+
          log >> { "Прибавлена вещка" => t[ 0 ] }
          tokens.last << t.shift ; end
 
