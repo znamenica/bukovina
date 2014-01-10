@@ -272,10 +272,12 @@ def assign_trops trops, памяти, services
    end
 end
 
-def parse_trop памяти, names, glas, text, cases
-   if names[ 0 ] =~ /[Ии]н/
-      names.shift ; end
-   kind = names.shift.downcase
+def parse_trop памяти, имена, glas, text, cases
+   log + { имена: имена, glas: glas, text: text, cases: cases }
+   if имена[ 0 ] =~ /[Ии]н/
+      имена.shift ; end
+   names = имена.map {|o| o !~ /[Тт]ропарь|[Кк]ондак|[Мм]олитва|[Вв]еличание/ && o || nil }
+   kind = ( имена - names ).last.downcase
 
    чин = names[ 0 ] =~ /^[а-яё]/ && names.shift || ''
 
@@ -298,7 +300,6 @@ def parse_trop памяти, names, glas, text, cases
          new =
          cases.each do| c |
             new = petro.send method, name, :nominative, c
-         p new
             if new != name
                break new ; end ; end
          log - ( new.is_a?( Array ) && name || new ); end
@@ -324,10 +325,10 @@ def parse_trop памяти, names, glas, text, cases
 
    if !память
       память = new_person
-      память.имя = names.shift || ''
+      память.имя = names.shift || name
       память.прозвище = names
-      добавить_память памяти, память
-   end
+      if память.имя && !память.имя.empty?
+         добавить_память памяти, память ; end ; end
 
    служба = "#{name}/#{service}"
    case память.служба
@@ -744,13 +745,12 @@ people.keys.each do| имя |
    память.собор = память.собор.select{|a|!a.empty?}.join( ',' ).strip
    память.образ = память.образ.select{|a|!a.empty?}
 
-#   if !имя.empty?
-#      заверка_прозвища память, ( имя.split( ' ' ).last || '' ) ; end
-
    people[ имя ] = память.to_hash.reject! {| _, з | з.nil? || з.empty? } ; end
 
 
 folder = sprintf "мѣсѧцесловъ/%02i/%02i", month, day
+log > { folder: folder }
+
 FileUtils.mkdir_p folder
 File.open( File.join( folder, 'месяцеслов.ро.yml' ), 'w' ) do| f |
 #   f.puts people.to_yaml
