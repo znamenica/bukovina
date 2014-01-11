@@ -36,6 +36,7 @@ Map = {
    /[Ии]гум/i => 'игумен',
    /[Пр]рославление/ => 'прославление',
    /([А-ЯЁ][а-яё]+[оае]го)\.$/i => nil,
+   /([А-ЯЁ][а-яё]+(?:ла|лы))\.$/i => nil,
 }
 
 Case = [
@@ -450,15 +451,23 @@ def parse_tokens памяти, tokens, store_name = 'вики'
       else
          person.год = год ; end ; end ; end
 
-def е_исключение слово
+def и_исключение слово
    Исключения = [
       /ого[^А-ЯЁа-яё]*$/,
       /его[^А-ЯЁа-яё]*$/,
       /ой[^А-ЯЁа-яё]*$/,
+   ]
+
+   !Исключения.select {|s| слово =~ s }.empty?
+end
+
+def е_исключение слово
+   Исключения = [
       /святитель/,
       /священник/,
       /игумен/,
       /прославление/,
+      /бывш/,
    ]
 
    !Исключения.select {|s| слово =~ s }.empty?
@@ -486,7 +495,7 @@ def tokenize_line li, base
       link = false
       if li_e.is_a? Nokogiri::XML::Comment
          next ; end
-      text = li_e.content.gsub( /[<!«»:]|--/, '' ).gsub( / +/, ' ' ).strip #NBSP to Space here
+      text = li_e.content.gsub( /["<!«»:]|--/, '' ).gsub( / +/, ' ' ).strip #NBSP to Space here
       log * ( '&'*80 )
       log >> { букы: text }
       uri =
@@ -537,13 +546,12 @@ def tokenize_line li, base
       if t =~ /^[,;]$/
          tokens[ (i + 1)..-1 ].each do| tt |
             иск = tt =~ /\.\)?$/ || е_исключение( tt )
-            if tt =~ /^[А-ЯЁ]/ && !иск
+            ииск = и_исключение( tt )
+            if tt =~ /^(\(|http:\/\/.+)/ || tt =~ /^[А-ЯЁ]/ && !иск && !ииск
                t = 'и'
                break
-            elsif tt =~ /^(?:и|;|,|)$/
-               break ; end
-            end
-      end
+            elsif tt =~ /^(?:http:\/\/|и|;|,)$/ || иск
+               break ; end ; end ; end
       t !~ /^[,;]$/ && t || nil ; end.compact!
 
    log - ( tokens << 'и' ).flatten ; end
