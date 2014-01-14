@@ -438,7 +438,7 @@ def parse_tokens памяти, tokens, store_name = 'вики'
    # set чин
    чин = nil
    памяти.each do| person |
-      if person.чин
+      if person.чин && !person.чин.empty?
          if person.чин[ -1 ] == person.чин[ -2 ]
             чин = person.чин[ 0..-2 ]
             person.чин = чин
@@ -450,7 +450,7 @@ def parse_tokens памяти, tokens, store_name = 'вики'
    # set год
    год = nil
    памяти.reverse.each do| person |
-      if person.год
+      if person.год && !person.год.empty?
          год = person.год
       else
          person.год = год ; end ; end ; end
