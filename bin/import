@@ -657,8 +657,8 @@ prav_ru = Nokogiri::HTML doc.read
 assign_trops( ( prav_ru.css '.trop' ),
               memlist, services ) do| trop |
    names = trop.css( '.trop_title' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
-   glas = trop.css( '.trop_glas' ).inner_text.strip
-   text = trop.css( '.trop_text' ).inner_text.strip
+   glas = trop.css( '.trop_glas' ).inner_text.scan(/\d+/).last
+   text = trop.css( '.trop_text' ).inner_text.strip.gsub( /\s*\//, ' /' )
    log * ( "#"*80 )
    log >> { names: names }
    [ names, glas, text, [ :dative, :genitive ] ] ; end
@@ -684,8 +684,8 @@ parse_tokens memlist, tokens, 'бытие'
 assign_trops( ( azbuka.css '.taks_block .taks_content' ),
               memlist, services ) do| trop |
    names = trop.css( 'h3' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
-   glas = trop.css( '.glas' ).inner_text.strip rescue ''
-   text = trop.css( 'div' ).inner_text.strip
+   glas = trop.css( '.glas' ).inner_text.scan( /\d+/ ).last rescue ''
+   text = trop.css( 'div' ).inner_text.strip.gsub( /\s*\//, ' /' )
    log > ( "#"*80 )
    log >> { names: names }
    [ names, glas, text, [ :dative, :genitive ] ] ; end
