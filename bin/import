@@ -658,7 +658,7 @@ assign_trops( ( prav_ru.css '.trop' ),
               memlist, services ) do| trop |
    names = trop.css( '.trop_title' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
    glas = trop.css( '.trop_glas' ).inner_text.scan(/\d+/).last
-   text = trop.css( '.trop_text' ).inner_text.strip.gsub( /\s*\//, ' /' )
+   text = trop.css( '.trop_text' ).inner_text.strip.gsub( /\s*\//, ' /' ).sub( /(\/\s*)?\/([^\/]+)$/, '//\1' )
    log * ( "#"*80 )
    log >> { names: names }
    [ names, glas, text, [ :dative, :genitive ] ] ; end
@@ -685,7 +685,7 @@ assign_trops( ( azbuka.css '.taks_block .taks_content' ),
               memlist, services ) do| trop |
    names = trop.css( 'h3' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
    glas = trop.css( '.glas' ).inner_text.scan( /\d+/ ).last rescue ''
-   text = trop.css( 'div' ).inner_text.strip.gsub( /\s*\//, ' /' )
+   text = trop.css( 'div' ).inner_text.strip.gsub( /\s*\//, ' /' ).sub( /(\/\s*)?\/([^\/]+)$/, '//\1' )
    log > ( "#"*80 )
    log >> { names: names }
    [ names, glas, text, [ :dative, :genitive ] ] ; end
