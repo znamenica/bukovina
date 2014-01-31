@@ -12,6 +12,22 @@ require 'fileutils'
 require 'petrovich'
 require 'mechanize'
 
+YAML_Service = <<Y
+---
+вечерня:
+   отпустительно:
+      тропарь:
+         глас: 
+         текст: 
+      молитва: 
+утреня:
+   величание: 
+   канон:
+      кондак:
+         глас: 
+         текст: 
+Y
+
 rdoba :mixin => [ :case ], :log => { :functions => [ :* ], :prefix => [ :function_name, :function_line ] }
 
 Map = {
@@ -108,7 +124,10 @@ def detect_uniq_name память
    else
       parts[ 0, 2 ] ; end
    new = parts.map {| p | p.gsub( /[,«»\d\)\(]+/, '' ) }
-   new.grep( /[А-ЯЁ]/ ) && new || name.split( /\s+/ ) ; end
+   new.grep( /[А-ЯЁ]/ ) && new || name.split( /\s+/ )
+rescue
+   log.e
+   nil ; end
 
 def усечь_поле присуще, *новы
    усечены = []
@@ -155,8 +174,9 @@ def добавить_память памяти, person
 
    if person.бытие || person.вики
       name = detect_uniq_name person
-      имена, = усечь_поле( ( выделить_имя person ), name )
-      person.прозвище = имена + person.прозвище ; end
+      if name
+         имена, = усечь_поле( ( выделить_имя person ), name )
+         person.прозвище = имена + person.прозвище ; end ; end
 
    память = памятие.last[ 1 ] rescue nil
    if память
@@ -209,7 +229,7 @@ def выделить_имя память
       имя =~ /^[А-ЯЁ]/ ; end ; end
 
 def assign_trops trops, памяти, services
-   service_tmpl = YAML.load( IO.read 'service.yml' )
+   service_tmpl = YAML.load( YAML_Service )
    trops.each do| trop |
       ( names, glas, text, cases ) = yield trop
       mls = parse_trop( памяти, names, glas, text, cases ) do | чин, names |
@@ -312,7 +332,7 @@ def parse_trop памяти, имена, glas, text, cases
 
    if !память
       память = new_person
-      память.имя = names.shift || name
+      память.имя = names.shift || имя
       память.прозвище = names
       $stderr.print "#{памяти.keys.size}. #{память.имя}\n? "
       имя = $stdin.gets.strip
@@ -334,16 +354,17 @@ def parse_trop памяти, имена, glas, text, cases
       имя = памяти.key память
    end
 
+   log > { 'имя' => имя }
    names = имя.split ' '
    fservice = petro.firstname names.shift, :dative
    if !names.empty?
       lservice = petro.lastname names.last, :dative ; end
    служба = File.join( имя, [ fservice, lservice, 'служба' ].join( ' ' ) )
 
-   if память.служба
-      служба = память.служба
+   if память.событие.служба
+      служба = память.событие.служба
    else
-      память.служба = служба
+      память.событие.служба = служба
    end
    
    [ имя, служба, [ kind, glas, text ] ] ; end
@@ -359,6 +380,7 @@ def new_person
    event.год = []
    event.дата = nil
    event.описание = nil
+   event.служба = nil
    person = Hashie::Mash.new
    person.имя = ''
    person.прозвище = []
@@ -366,7 +388,6 @@ def new_person
    person.описание = []
    person.чин = nil
    person.собор = []
-   person.служба = nil
    person.вики = nil
    person.бытие = nil
    person.отечник = nil
@@ -677,7 +698,7 @@ ps.to_a.each_index do| i |
    if i == 0
       next ; end
    p = ps[ i ]
-   tokens.concat( tokenize_line p, nil ) ; end
+   tokens.concat( tokenize_line p, 'http://azbyka.ru/days' ) ; end
 
 parse_tokens memlist, tokens, 'бытие'
 
@@ -780,10 +801,10 @@ people.keys.each do| имя |
    память.событие.год = память.событие.год.select{|a|!a.empty?}.join( ' ' ).strip
    память.событие.описание ||= 'прств'
    память.событие.дата = sprintf( "%.2i.%.2i", day, month )
+   память.событие.служба = память.событие.служба && память.событие.служба.split( '/' ).last
    память.фамилия = память.фамилия.select{|a|!a.empty?}.join( ' ' ).strip
    память.прозвище = память.прозвище.select{|a|!a.empty?}.join( ' ' ).strip
    память.описание = память.описание.select{|a|!a.empty?}.join( ' ' ).strip
-   память.служба = память.служба && память.служба.split( '/' ).last
    if память.событие.год =~ /19(\d\d)/
       num = $1.to_i 
       if num >= 17 && num <= 48
@@ -796,13 +817,28 @@ people.keys.each do| имя |
 folder = 'памяти'
 people.each do| име, память |
    dir = File.join( folder, име )
-   if File.exist? dir
-      raise ; end
    FileUtils.mkdir_p dir
-   File.open( File.join( dir, 'память.ро.yml' ), 'w' ) do| f |
+   fn = File.join( dir, 'память.ро.yml' )
+   if File.exists? fn
+      h = File.open( fn, 'r' ) {| f | YAML.load( f.read )[ име ] }
+      h.each do| k, v |
+         v || next
+         if память[ k ]
+            case память[ k ]
+            when Hash
+               память[ k ] = [ память[ k ], v ]
+            when Array
+               память[ k ] << v
+            when String
+               память[ k ] << ', ' + v
+            else
+               $stderr.puts "Error on #{память[ k ]}, class #{память[ k ].class}" ; end
+         else
+            память[ k ] = v ; end ; end ; end
+
+   File.open( fn, 'w' ) do| f |
       f.puts ({ име => people[ име ] }).to_yaml.gsub( /  /, '   ' ).gsub( / - /, '  - ' ).gsub( /['\[\]]+/, '' ).gsub( /\s+$/, '' )
-   end
-end
+      end ; end
 
 services.each do| име, служба |
    име = име.split( '/' )
@@ -812,4 +848,65 @@ services.each do| име, служба |
    end
 end
 
+$stderr.puts people.keys.join( "\n" )
+
+Dir.foreach( "мѣсѧцесловъ/%02i" % month ) do| file |
+   file =~ /^#{sprintf "%02i", day}.*\.hip$/ || next
+   $stderr.puts file
+   path = File.join( "мѣсѧцесловъ/%02i" % month, file )
+   hip = File.open( path, 'r', encoding: 'Windows-1251' ) {| f | f.readlines }
+   hip.map! do| line |
+      line.encode( 'UTF-8' ).gsub( /\s*\(с\. \d+\)\s*|\s*\(с\.\s*$|^\d+\)\s*|\s+$/, '' ).gsub( /\s+/, ' ')
+   end
+   heap = hip[0...20].grep( /./ ).join( "\n" )
+   heap << "\n" + '*' * 80
+   $stderr.puts heap
+   $stderr.print "имя ? "
+   name = $stdin.gets.strip
+   память = people[ name ]
+   событие = память[ 'событие' ]
+   служба = ( событие.is_a?( Array ) && событие[ 0 ] || событие )[ 'служба' ]
+   if !служба
+      род = :male
+      if память[ 'чин' ] =~ /мц/
+         род = :female ; end
+      $stderr.print "#{род}:\nрод ? "
+      род1 = $stdin.gets.strip
+      if !род1.empty?
+         род = /^m/ =~ род1 && :male || :female ; end
+      petro = Petrovich.new род
+      names = name.split /\s+/
+      fservice = petro.firstname names.shift, :dative
+      if !names.empty?
+         lservice = petro.lastname names.last, :dative ; end
+      служба = [ fservice, lservice, 'служба' ].join( ' ' ) ; end
+
+   fullname = File.join( "памяти", name, "#{служба}.цс.hip" )
+   i = 1
+   while File.exist?( fullname )
+      fullname = File.join( "памяти", name, "#{служба}(#{i}).цс.hip" )
+      i += 1 ; end
+
+   File.open( fullname, 'w' ) do| f |
+      f.puts hip.join( "\n" ) ; end
+   `git add -f '#{fullname}'` ; end
+
 `git add памяти`
+
+
+h = people.keys.reduce({}) {| h, key | h[ key ] = nil ; h }
+fn = File.join( "мѣсѧцесловъ/%02i/%02i.ро.yml" % [ month, day ] )
+File.open( fn, 'w' ) {| f | f.puts h.to_yaml.gsub(/\s+$/, '') }
+
+`git add #{fn}`
+
+files=`git status -s|grep "^[AM] "|sed "s/^.. //"`.split("\n")
+
+log >> { files: files.join(' ') }
+p = fork { exec "gvim -f #{files.join(' ')}" }
+Process.wait p
+
+files.each do| file |
+   `git add -f #{file}`
+end
+
