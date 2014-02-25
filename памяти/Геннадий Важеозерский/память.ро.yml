@@ -3,11 +3,17 @@
    имя: Геннадий
    прозвище: Важеозерский
    чин: прп
-   собор: слав
+   собор: слав,рус,кар,спб
    вики: http://drevo-info.ru/articles/5165.html
-   бытие: http://pravicon.com/info-3645
+   бытие:
+    - http://azbyka.ru/days/sv-gennadij-vazheozerskij
+    - http://pravicon.com/info-3645
    образ: http://pravicon.com/icon-3245
    событие:
-      год: 1516
+      год: ок. 1516
       дата: 08.01
+      описание: прств
+   помин:
+      год: ок. 1516
+      дата: 09.02
       описание: прств
