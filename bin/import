@@ -41,7 +41,7 @@ Map = {
    /[Мм]учениц|Мцц?\./i => 'мц.',
    /[Мм]ученик|Мчч?\./i => 'мч.',
    /[Пп]реподобн|Прпп?\./ => 'прп.',
-   /[Бб]бессребрен|Бсрр?\./i => 'бср.',
+   /[Бб]бессребрен|Бсрр|Бессрр?\./i => 'бср.',
    /[Сс]вято|Свв?\./i => 'прав.',
    /[Бб]лаженн|Блжж?\./i => 'блж.',
    /[Ии]споведни|Испп?\./i => 'исп.',
@@ -56,6 +56,17 @@ Map = {
    /[Ии]ером\.?/i => 'иеромонах',
    /[Пп]опразднство/ => 'попразднство',
    /[Пп]рославление/ => 'прославление',
+   /\bП[ёе]тра?\b/ => 'Кам',
+   /\bПаве?ла?\b/ => 'Мал',
+   /\bИван\b/ => 'Иоанн',
+   /\bЯков\b/ => 'Иаков',
+   /\bФ[ёе]о?дора?\b/ => 'Божидар',
+   /\bСерг[ие][йя]/ => 'Сергий',
+   /\bАлекс[еи][йя]/ => 'Бранко',
+   /\bДи?митри[йя]/ => 'Земко',
+   /\bЗо[ья]/ => 'Зоя',
+   /Дорофе[ьяи]/ => 'Богудара',
+   /кельт\./ => 'келт.',
    /([А-ЯЁ][а-яё]+[оае]го)\.$/i => nil,
    /([А-ЯЁ][а-яё]+(?:ла|лы))\.$/i => nil,
 }
@@ -145,7 +156,7 @@ def поплести_память память, person
    память.прозвище = прозвище + память.прозвище
    ( память.описание << ( person.описание - ( память.описание & person.описание ) ) ).uniq!
    память.чин = ( память.чин.split(',') + ( person.чин.split(',') - ( память.чин.split(',') & person.чин.split(',') ) ) ).join( ',' ) rescue память.чин || person.чин
-   память.событие.год = ( память.событие.год.split(',') + ( person.событие.год.split(',') - ( память.событие.год.split(',') & person.событие.год.split(',') ) ) ).join( ',' ) rescue память.событие.год || person.событие.год
+   память.помин.год = ( память.помин.год.split(',') + ( person.помин.год.split(',') - ( память.помин.год.split(',') & person.помин.год.split(',') ) ) ).join( ',' ) rescue память.помин.год || person.помин.год
    память.собор = память.собор + ( person.собор - ( память.собор & person.собор ) )
    if !память.вики && person.вики
       память.вики = person.вики ; end
@@ -361,10 +372,10 @@ def parse_trop памяти, имена, glas, text, cases
       lservice = petro.lastname names.last, :dative ; end
    служба = File.join( имя, [ fservice, lservice, 'служба' ].join( ' ' ) )
 
-   if память.событие.служба
-      служба = память.событие.служба
+   if память.помин.служба
+      служба = память.помин.служба
    else
-      память.событие.служба = служба
+      память.помин.служба = служба
    end
    
    [ имя, служба, [ kind, glas, text ] ] ; end
@@ -392,7 +403,7 @@ def new_person
    person.бытие = nil
    person.отечник = nil
    person.образ = []
-   person.событие = event
+   person.помин = event
    person ; end
 
 def parse_tokens памяти, tokens, store_name = 'вики'
@@ -410,7 +421,7 @@ def parse_tokens памяти, tokens, store_name = 'вики'
             if !line.empty?
                год = line.join( ' ' ).gsub( / ([-\/]) /, '\1' )
                log > { Год: год }
-               person.событие.год << год
+               person.помин.год << год
                line = [] ; end
             склад = nil
          when /^([А-ЯЁ][а-яё]+)\./
@@ -488,10 +499,10 @@ def parse_tokens памяти, tokens, store_name = 'вики'
    # set год
    год = []
    памяти.reverse.each do| person |
-      if person.событие.год && !person.событие.год.empty?
-         год = person.событие.год
+      if person.помин.год && !person.помин.год.empty?
+         год = person.помин.год
       else
-         person.событие.год = год ; end ; end ; end
+         person.помин.год = год ; end ; end ; end
 
 def и_исключение слово
    Исключения = [
@@ -507,9 +518,11 @@ def е_исключение слово
    Исключения = [
       /^святитель/,
       /^священник/,
+      /^архимандрит/,
       /^игумен/,
       /^чтец/,
       /^иеромонах/,
+      /диакон/,
       /^прославление/,
       /^в$/,
       /^крещен/,
@@ -630,12 +643,52 @@ def to_people list
    people ; end
 
 
-#date = ARGV.shift
-date = Date.parse( ARGV.shift ) rescue Date.today
-julian = date.julian
+def parse_azbuka memlist
+   # Azbuka parsing
+   log * "Parse azbuka.ru site"
+   log * ( "*"*80 )
+   
+   tokens = []
+   date_link = "http://azbyka.ru/days/#{@date.strftime( "%Y-%m-%d" )}"
+   log > { azbuka_url: date_link }
+   doc = open date_link
+   azbuka = Nokogiri::HTML doc.read, nil, 'utf-8'
+   
+   ps = azbuka.css( '#calendar-wrapper .text p' )
+   ps.to_a.each_index do| i |
+      if i == 0
+         next ; end
+      p = ps[ i ]
+      tokens.concat( tokenize_line p, 'http://azbyka.ru/days' ) ; end
+   
+   parse_tokens memlist, tokens, 'бытие'
+rescue
+   log.e ; end
+
+def azbuka_trops people
+   date_link = "http://azbyka.ru/days/#{@date.strftime( "%Y-%m-%d" )}"
+   log > { azbuka_url: date_link }
+   doc = open date_link
+   azbuka = Nokogiri::HTML doc.read, nil, 'utf-8'
+
+   # Tropasions scan
+   #
+   assign_trops( ( azbuka.css '.taks_block .taks_content' ),
+                 people, @services ) do| trop |
+      names = trop.css( 'h3' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
+      glas = trop.css( '.glas' ).inner_text.scan( /\d+/ ).last rescue ''
+      text = trop.css( 'div' ).inner_text.strip.gsub( /\s*\//, ' /' ).sub( /(?:\/\s*)?\/([^\/]+)$/, '//\1' )
+      log > ( "#"*80 )
+      log >> { names: names }
+      [ names, glas, text, [ :dative, :genitive ] ] ; end
+rescue
+   log.e ; end
+   
+@date = Date.parse( ARGV.shift ) rescue Date.today
+julian = @date.julian
 day = julian.day
 month = julian.month
-services = {}
+@services = {}
 
 Months = [ 'ЯНВАРЯ', 'ФЕВРАЛЯ', 'МАРТА', 'АПРЕЛЯ', 'МАЯ', 'ИЮНЯ',
            'ИЮЛЯ', 'АВГУСТА', 'СЕНТЯБРЯ', 'ОКТЯБРЯ', 'НОЯБРЯ', 'ДЕКАБРЯ' ]
@@ -684,23 +737,7 @@ end
 
 parse_tokens memlist, tokens
 
-# Azbuka parsing
-log * "Parse azbuka.ru site"
-log * ( "*"*80 )
-
-tokens = []
-date_link = 'http://azbyka.ru/days'
-doc = open "#{date_link}/#{date.strftime( "%Y-%m-%d" )}"
-azbuka = Nokogiri::HTML doc.read, nil, 'utf-8'
-
-ps = azbuka.css( '#calendar-wrapper .text p' )
-ps.to_a.each_index do| i |
-   if i == 0
-      next ; end
-   p = ps[ i ]
-   tokens.concat( tokenize_line p, 'http://azbyka.ru/days' ) ; end
-
-parse_tokens memlist, tokens, 'бытие'
+parse_azbuka memlist
 
 # convert to hashie
 #
@@ -719,16 +756,7 @@ people.keys.each.with_index do| имя, i |
       else
          people[ line ] = people.delete( имя ) ; end ; end ; end
 
-# Tropasions scan
-#
-assign_trops( ( azbuka.css '.taks_block .taks_content' ),
-              people, services ) do| trop |
-   names = trop.css( 'h3' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
-   glas = trop.css( '.glas' ).inner_text.scan( /\d+/ ).last rescue ''
-   text = trop.css( 'div' ).inner_text.strip.gsub( /\s*\//, ' /' ).sub( /(?:\/\s*)?\/([^\/]+)$/, '//\1' )
-   log > ( "#"*80 )
-   log >> { names: names }
-   [ names, glas, text, [ :dative, :genitive ] ] ; end
+azbuka_trops people
 
 # Pravoslavie.ru parsing
 log * "Parse Pravoslavie.ru site"
@@ -739,7 +767,7 @@ doc = open "#{date_link}/#{julian.strftime( "%Y%m%d" )}.htm"
 prav_ru = Nokogiri::HTML doc.read
 
 assign_trops( ( prav_ru.css '.trop' ),
-              people, services ) do| trop |
+              people, @services ) do| trop |
    names = trop.css( '.trop_title' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
    glas = trop.css( '.trop_glas' ).inner_text.scan(/\d+/).last
    text = trop.css( '.trop_text' ).inner_text.strip.gsub( /\s*\//, ' /' ).sub( /(?:\/\s*)?\/([^\/]+)$/, '//\1' )
@@ -798,14 +826,14 @@ people.each do| имя, память |
 people.keys.each do| имя |
    память = people[ имя ]
    log > { имя: имя, память: память }
-   память.событие.год = память.событие.год.select{|a|!a.empty?}.join( ' ' ).strip
-   память.событие.описание ||= 'прств'
-   память.событие.дата = sprintf( "%.2i.%.2i", day, month )
-   память.событие.служба = память.событие.служба && память.событие.служба.split( '/' ).last
+   память.помин.год = память.помин.год.select{|a|!a.empty?}.join( ' ' ).strip
+   память.помин.описание ||= 'прств'
+   память.помин.дата = sprintf( "%.2i.%.2i", day, month )
+   память.помин.служба = память.помин.служба && память.помин.служба.split( '/' ).last
    память.фамилия = память.фамилия.select{|a|!a.empty?}.join( ' ' ).strip
    память.прозвище = память.прозвище.select{|a|!a.empty?}.join( ' ' ).strip
    память.описание = память.описание.select{|a|!a.empty?}.join( ' ' ).strip
-   if память.событие.год =~ /19(\d\d)/
+   if память.помин.год =~ /19(\d\d)/
       num = $1.to_i 
       if num >= 17 && num <= 48
          память.собор << 'слав,нмр' ; end ; end
@@ -826,25 +854,25 @@ people.each do| име, память |
          if память[ k ]
             case память[ k ]
             when Hash
-               память[ k ] = [ память[ k ], v ]
+               память[ k ] = [ память[ k ], v.to_s ]
             when Array
-               память[ k ] << v
+               память[ k ] << v.to_s
             when String
-               память[ k ] << ', ' + v
+               память[ k ] << ', ' + v.to_s
             else
                $stderr.puts "Error on #{память[ k ]}, class #{память[ k ].class}" ; end
          else
-            память[ k ] = v ; end ; end ; end
+            память[ k ] = v.to_s ; end ; end ; end
 
    File.open( fn, 'w' ) do| f |
       f.puts ({ име => people[ име ] }).to_yaml.gsub( /  /, '   ' ).gsub( / - /, '  - ' ).gsub( /['\[\]]+/, '' ).gsub( /\s+$/, '' )
       end ; end
 
-services.each do| име, служба |
+@services.each do| име, служба |
    име = име.split( '/' )
    FileUtils.mkdir_p File.join( folder, име[ 0 ] )
    File.open( File.join( folder, име[ 0 ], име[ 1 ].to_s ), 'w' ) do| f |
-      f.puts служба.to_yaml.gsub( /  /, '   ' ).gsub( / - /, '  - ' ).gsub( /'/, '' ).gsub( /\s+$/, '' ).gsub( /: !/, ':' )
+      f.puts служба.to_yaml.gsub( /  /, '   ' ).gsub( / - /, '  - ' ).gsub( /''/, '' ).gsub( /\s+$/, '' ).gsub( /: !/, ':' )
    end
 end
 
@@ -864,14 +892,17 @@ Dir.foreach( "мѣсѧцесловъ/%02i" % month ) do| file |
    $stderr.print "имя ? "
    name = $stdin.gets.strip
    память = people[ name ]
-   событие = память[ 'событие' ]
-   служба = ( событие.is_a?( Array ) && событие[ 0 ] || событие )[ 'служба' ]
+   if !память
+      память = new_person
+      добавить_память people, память ; end
+   помин = память[ 'помин' ]
+   служба = ( помин.is_a?( Array ) && помин[ 0 ] || помин )[ 'служба' ]
    if !служба
       род = :male
       if память[ 'чин' ] =~ /мц/
          род = :female ; end
       $stderr.print "#{род}:\nрод ? "
-      род1 = $stdin.gets.strip
+      род1 = $stdin.gets.strip rescue 'f'
       if !род1.empty?
          род = /^m/ =~ род1 && :male || :female ; end
       petro = Petrovich.new род
@@ -901,6 +932,7 @@ File.open( fn, 'w' ) {| f | f.puts h.to_yaml.gsub(/\s+$/, '') }
 `git add #{fn}`
 
 files=`git status -s|grep "^[AM] "|sed "s/^.. //"`.split("\n")
+
 
 log >> { files: files.join(' ') }
 p = fork { exec "gvim -f #{files.join(' ')}" }
