@@ -19,3 +19,5 @@ tmp
 *~
 *.swp
 *.log
+.ruby-version
+.ruby-gemset
