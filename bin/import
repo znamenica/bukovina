@@ -31,7 +31,7 @@ Y
 rdoba :mixin => [ :case ], :log => { :functions => [ :* ], :prefix => [ :function_name, :function_line ] }
 
 Map = {
-   /[Сс]вятител|Свтт?\./i => 'свт.',
+   /[Сс]вятител|Свтт?\.|Cвт./i => 'свт.',
    /[Пп]раведн|Правв?\./i => 'прав.',
    /[Пп]роро|Прорр?\./i => 'прор.',
    /[Аа]постол|Апп?\./i => 'ап.',
@@ -360,7 +360,7 @@ def parse_trop memories, imeна, glas, text, cases
       rod1 = $stdin.gets.strip
       if !rod1.empty?
          rod = /^m/ =~ rod1 && :male || :female ; end
-      petro = Petrovich.new род
+      petro = Petrovich.new rod
    else
       imja = memories.key memory
    end
@@ -846,7 +846,7 @@ folder = 'памяти'
 people.each do| ime, memory |
    dir = File.join( folder, ime )
    FileUtils.mkdir_p dir
-   fn = File.join( dir, 'memory.ро.yml' )
+   fn = File.join( dir, 'память.ро.yml' )
    if File.exists? fn
       h = File.open( fn, 'r' ) {| f | YAML.load( f.read )[ ime ] }
       h.each do| k, v |
@@ -865,14 +865,14 @@ people.each do| ime, memory |
             memory[ k ] = v.to_s ; end ; end ; end
 
    File.open( fn, 'w' ) do| f |
-      f.puts ({ ime => people[ ime ] }).to_yaml.gsub( /  /, '   ' ).gsub( / - /, '  - ' ).gsub( /['\[\]]+/, '' ).gsub( /\s+$/, '' )
+      f.puts ({ ime => people[ ime ] }).to_yaml.gsub( /  /, '   ' ).gsub( / - /, '  - ' ).gsub( /(['\[\]]+|"|\s+$)/, '' )
       end ; end
 
 @services.each do| ime, sluzxba |
    ime = ime.split( '/' )
    FileUtils.mkdir_p File.join( folder, ime[ 0 ] )
    File.open( File.join( folder, ime[ 0 ], ime[ 1 ].to_s ), 'w' ) do| f |
-      f.puts sluzxba.to_yaml.gsub( /  /, '   ' ).gsub( / - /, '  - ' ).gsub( /''/, '' ).gsub( /\s+$/, '' ).gsub( /: !/, ':' )
+      f.puts sluzxba.to_yaml.gsub( /  /, '   ' ).gsub( / - /, '  - ' ).gsub( /(''|"|\s+$)/, '' ).gsub( /: !/, ':' )
    end
 end
 
@@ -895,8 +895,8 @@ Dir.foreach( "мѣсѧцесловъ/%02i" % month ) do| file |
    while !memory
      name = $stdin.gets.strip
      memory = people[ name ] ; end
-   помин = memory[ 'помин' ]
-   sluzxba = ( помин.is_a?( Array ) && помин[ 0 ] || помин )[ 'служба' ]
+   pomin = memory[ 'помин' ]
+   sluzxba = ( pomin.is_a?( Array ) && pomin[ 0 ] || pomin )[ 'служба' ]
    if !sluzxba
       rod = :male
       if memory[ 'чин' ] =~ /мц/
@@ -927,7 +927,7 @@ Dir.foreach( "мѣсѧцесловъ/%02i" % month ) do| file |
 
 h = people.keys.reduce({}) {| h, key | h[ key ] = nil ; h }
 fn = File.join( "мѣсѧцесловъ/%02i/%02i.ро.yml" % [ month, day ] )
-File.open( fn, 'w' ) {| f | f.puts h.to_yaml.gsub(/\s+$/, '') }
+File.open( fn, 'w' ) {| f | f.puts h.to_yaml.gsub(/("|\s+$)/, '') }
 
 `git add #{fn}`
 
