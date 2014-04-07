@@ -490,7 +490,7 @@ def parse_tokens memories, tokens, store_name = 'вики'
       if person.чин && !person.чин.empty?
          if person.чин[ -1 ] == person.чин[ -2 ]
             cxin = person.чин[ 0..-2 ]
-            person.чин = чин
+            person.чин = cxin
          else
             cxin = person.чин ; end
       else
