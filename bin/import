@@ -301,7 +301,7 @@ def parse_trop memories, imeна, glas, text, cases
    if imeна[ 0 ] =~ /[Ии]н/
       imeна.shift ; end
    names = imeна.map {|o| o !~ /[Тт]ропарь|[Кк]ондак|[Мм]олитва|[Вв]еличание/ && o || nil }
-   kind = ( imeна - names ).last.downcase
+   kind = ( imeна - names ).last.downcase rescue nil
 
    cxin = names[ 0 ] =~ /^[а-яё]/ && names.shift || ''
 
