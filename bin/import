@@ -156,7 +156,7 @@ def поплести_память memory, person
    memory.прозвище = prozvisce + memory.прозвище
    ( memory.описание << ( person.описание - ( memory.описание & person.описание ) ) ).uniq!
    memory.чин = ( memory.чин.split(',') + ( person.чин.split(',') - ( memory.чин.split(',') & person.чин.split(',') ) ) ).join( ',' ) rescue memory.чин || person.чин
-   memory.помин.год = ( memory.помин.год.split(',') + ( person.помин.год.split(',') - ( memory.помин.год.split(',') & person.помин.год.split(',') ) ) ).join( ',' ) rescue memory.помин.год || person.помин.год
+   memory.событие.год = ( memory.событие.год.split(',') + ( person.событие.год.split(',') - ( memory.событие.год.split(',') & person.событие.год.split(',') ) ) ).join( ',' ) rescue memory.событие.год || person.событие.год
    memory.собор = memory.собор + ( person.собор - ( memory.собор & person.собор ) )
    if !memory.вики && person.вики
       memory.вики = person.вики ; end
@@ -391,7 +391,10 @@ def new_person
    event.год = []
    event.дата = nil
    event.описание = nil
-   event.служба = nil
+   memin = Hashie::Mash.new
+   memin.дата = nil
+   memin.описание = nil
+   memin.служба = nil
    person = Hashie::Mash.new
    person.имя = ''
    person.прозвище = []
@@ -403,7 +406,8 @@ def new_person
    person.бытие = nil
    person.отечник = nil
    person.образ = []
-   person.помин = event
+   person.событие = event
+   person.помин = memin
    person ; end
 
 def parse_tokens memories, tokens, store_name = 'вики'
@@ -421,7 +425,7 @@ def parse_tokens memories, tokens, store_name = 'вики'
             if !line.empty?
                god = line.join( ' ' ).gsub( / ([-\/]) /, '\1' )
                log > { Год: god }
-               person.помин.год << god
+               person.событие.год << god
                line = [] ; end
             sklad = nil
          when /^([А-ЯЁ][а-яё]+)\./
@@ -499,10 +503,10 @@ def parse_tokens memories, tokens, store_name = 'вики'
    # set год
    god = []
    memories.reverse.each do| person |
-      if person.помин.год && !person.помин.год.empty?
-         god = person.помин.год
+      if person.событие.год && !person.событие.год.empty?
+         god = person.событие.год
       else
-         person.помин.год = god ; end ; end ; end
+         person.событие.год = god ; end ; end ; end
 
 def и_исключение slovo
    exceptions = [
@@ -826,14 +830,20 @@ people.each do| imja, memory |
 people.keys.each do| imja |
    memory = people[ imja ]
    log > { imja: imja, memory: memory }
-   memory.помин.год = memory.помин.год.select{|a|!a.empty?}.join( ' ' ).strip
-   memory.помин.описание ||= 'прств'
+   memory.событие.год = memory.событие.год.select{|a|!a.empty?}.join( ' ' ).strip
+   memory.событие.описание ||= 'прств'
+   if memory.событие.год.to_i > 1700
+     memory.помин.описание ||= 'прств'
+     memory.событие.дата = sprintf( "%.2i.%.2i", day, month )
+   else
+     memory.помин.описание ||= 'само'
+   end
    memory.помин.дата = sprintf( "%.2i.%.2i", day, month )
    memory.помин.служба = memory.помин.служба && memory.помин.служба.split( '/' ).last
    memory.фамилия = memory.фамилия.select{|a|!a.empty?}.join( ' ' ).strip
    memory.прозвище = memory.прозвище.select{|a|!a.empty?}.join( ' ' ).strip
    memory.описание = memory.описание.select{|a|!a.empty?}.join( ' ' ).strip
-   if memory.помин.год =~ /19(\d\d)/
+   if memory.событие.год =~ /19(\d\d)/
       num = $1.to_i 
       if num >= 17 && num <= 48
          memory.собор << 'слав,нмр' ; end ; end
