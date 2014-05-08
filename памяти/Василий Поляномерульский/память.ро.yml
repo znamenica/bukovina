@@ -3,10 +3,19 @@
    имя: Василий
    прозвище: Поляномерульский
    чин: прп
-   бытие: http://pravicon.com/info-1944
-   образ: http://pravicon.com/icon-1399
-   помин:
+   собор: слав
+   бытие: http://azbyka.ru/days/sv-vasilij-poljanomerulskij
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/911/p17v6qmi0qikq1m6n2q7g8ueje3.jpg
+    - http://pravicon.com/icon-1399
+   событие:
       год: 1767
-      дата: 15.04
+      дата: 25.04
+      описание: прств
+   помин:
+    - дата: 25.04
       собор: рум
       описание: прств
+    - дата: 15.04
+      собор: рум
+      описание: само
