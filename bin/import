@@ -788,17 +788,17 @@ agent = Mechanize.new
 
 people.each do| imja, memory |
    log >> { memory: memory }
-   names = imja.split( /\s+/ )
+   names = imja.strip.split( /\s+/ )
    if names.empty?
       next ; end
 
    log > { name: names }
-   page = agent.get 'http://pravicon.com/'
-   f = page.forms.first
-   f.search = names.shift
-   f.selectdb = memory.чин == 'обр' && 'b' || 's'
-   log >> { form: f }
    begin
+      page = agent.get 'http://pravicon.com/'
+      f = page.forms.first
+      f.search = names.shift
+      f.selectdb = memory.чин == 'обр' && 'b' || 's'
+      log >> { form: f }
       content = f.submit( f.buttons.last ).content
       doc = Nokogiri::HTML content
    rescue
@@ -841,14 +841,25 @@ people.keys.each do| imja |
    memory.помин.дата = sprintf( "%.2i.%.2i", day, month )
    memory.помин.служба = memory.помин.служба && memory.помин.служба.split( '/' ).last
    memory.фамилия = memory.фамилия.select{|a|!a.empty?}.join( ' ' ).strip
-   memory.прозвище = memory.прозвище.select{|a|!a.empty?}.join( ' ' ).strip
-   memory.описание = memory.описание.select{|a|!a.empty?}.join( ' ' ).strip
+   if memory.прозвище.all? {|x| /^[А-ЯЁ][а-яё]+(ий|ая|ое)$/ =~ x }
+     memory.прозвище = memory.прозвище.select{|a|!a.empty?}.reverse.join( ' ' ).strip
+     memory.описание = memory.описание.select{|a|!a.empty?}.reverse.join( ' ' ).strip
+   else
+     memory.описание = memory.прозвище.select{|a|!a.empty?}.concat(memory.описание.select{|a|!a.empty?}).reverse.join( ' ' ).strip
+     memory.прозвище = ''
+   end
    if memory.событие.год =~ /19(\d\d)/
       num = $1.to_i 
       if num >= 17 && num <= 48
          memory.собор << 'слав,нмр' ; end ; end
    memory.собор = memory.собор.select{|a|!a.empty?}.join( ',' ).strip
    memory.образ = memory.образ.select{|a|!a.empty?}.join( ',' ).strip
+   if memory.описание =~ /Богородиц[аы]/
+      memory.прозвище = ''
+      memory.описание = 'образ Богородицы'
+      memory.событие.описание = 'явл'
+      memory.чин = 'обр'
+   end
 
    people[ imja ] = memory.to_hash.reject! {| _, z | z.nil? || z.empty? } ; end
 
