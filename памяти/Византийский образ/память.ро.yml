@@ -3,9 +3,15 @@
    имя: Византийский
    описание: образ Богородицы
    чин: обр
+   вики: http://drevo-info.ru/articles/10493.html
    бытие: http://azbyka.ru/days/ikona-vizantijskaja
    образ: http://azbyka.ru/days/assets/img/icons/185/p188asfcci17n01tmd1rla1ker8nf3.jpg
-   помин:
+   событие:
       год: 732
       дата: 07.04
+      описание: явл
+   помин:
+    - дата: 01.05
+      описание: прен
+    - дата: 07.04
       описание: явл
