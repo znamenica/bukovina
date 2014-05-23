@@ -774,7 +774,7 @@ assign_trops( ( prav_ru.css '.trop' ),
               people, @services ) do| trop |
    names = trop.css( '.trop_title' ).inner_text.strip.gsub( /[,'\(\)]+/, '' ).split( /\s+/ )
    glas = trop.css( '.trop_glas' ).inner_text.scan(/\d+/).last
-   text = trop.css( '.trop_text' ).inner_text.strip.gsub( /\s*\//, ' /' ).sub( /(?:\/\s*)?\/([^\/]+)$/, '//\1' )
+   text = trop.css( '.trop_text' ).inner_text.strip.gsub( /\s*(\/+)\s*/, ' \1 ' ).sub( /(?:\/\s*)?\/([^\/]+)$/, '//\1' )
    log * ( "#"*80 )
    log >> { names: names }
    [ names, glas, text, [ :dative, :genitive ] ] ; end
@@ -897,7 +897,7 @@ people.each do| ime, memory |
    end
 end
 
-$stderr.puts people.keys.join( "\n" )
+$stderr.puts people.keys.sort.join( "\n" )
 
 Dir.foreach( "мѣсѧцесловъ/%02i" % month ) do| file |
    file =~ /^#{sprintf "%02i", day}.*\.hip$/ || next
