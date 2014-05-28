@@ -3,9 +3,15 @@
    имя: Пахомий
    прозвище: Великий
    чин: прп
-   бытие: http://pravicon.com/info-3175
-   образ: http://pravicon.com/icon-2682
-   помин:
-      год: IV
-      дата: 29.12
+   вики: http://drevo-info.ru/articles/3395.html
+   бытие: http://azbyka.ru/days/sv-pahomij-velikij
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/5522/p17v9g1in66g11icqes4jpn1fkr3.jpg
+    - http://pravicon.com/icon-2682
+   событие:
+      год: 348
       описание: прств
+   помин:
+      дата: 15.05
+      описание: само
+      служба: Пахомию Великому служба
