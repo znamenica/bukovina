@@ -5,11 +5,16 @@
    чин: сщмч
    вики: http://drevo-info.ru/articles/1052.html
    бытие: http://azbyka.ru/days/sv-patrikij-prusskij-brusskij
-   образ: http://drevo-info.ru/images/003/010763.jpg
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/5112/p18mj0crhc6ta1cc8isv1sdu19rj4.jpg
+    - http://drevo-info.ru/images/003/010763.jpg
    событие:
       год: ок. 100/362
       описание: прств
+      образ: http://azbyka.ru/days/assets/img/saints/5112/p18mj0crha1b4s1v9bkeb1m72eeg3.jpg
    помин:
       дата: 19.05
       описание: само
-      служба: Патрикию Прусскому служба
+      служба:
+       - Патрикию Прусскому служба
+       - Патрикию, Акакию, Менандру и Полиену Прусским служба
