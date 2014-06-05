@@ -883,7 +883,7 @@ people.each do| ime, memory |
             else
                $stderr.puts "Error on #{memory[ k ]}, class #{memory[ k ].class}" ; end
          else
-            memory[ k ] = v.to_s ; end ; end ; end
+            memory[ k ] = v.to_s ; end ; end ; end if h
 
    File.open( fn, 'w' ) do| f |
       f.puts ({ ime => people[ ime ] }).to_yaml.gsub( /  /, '   ' ).gsub( / - /, '  - ' ).gsub( /(['\[\]]+|"|\s+$)/, '' )
