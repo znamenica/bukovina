@@ -1,11 +1,17 @@
 ---
 Пахомий Кенский:
    имя: Пахомий
-   прозвище: Кенский настоятель
+   описание: настоятель Кенский, ученик и сомолитвенник Александра Ошевенского
    чин: прп
+   собор: слав,рус,кар
+   вики: http://drevo-info.ru/articles/8556.html
    бытие: http://azbyka.ru/days/sv-pahomij-kenskij
-   образ: http://pravicon.com/icon-2683
-   помин:
-      год: XVI
-      дата: 12.01
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/2190/p18dqecia8abgi9h1q4o1mdl3du3.jpg
+    - http://pravicon.com/icon-2683
+   событие:
+      год: ок. 1515
       описание: прств
+   помин:
+      дата: сб.по крщ
+      описание: само
