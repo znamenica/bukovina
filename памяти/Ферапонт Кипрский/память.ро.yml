@@ -4,13 +4,15 @@
    описание: святитель Кипрский
    чин: стсвт
    вики: http://drevo-info.ru/articles/5896.html
-   образ: http://pravicon.com/icon-3137
+   бытие: http://azbyka.ru/days/sv-ferapont-kiprskij
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/5327/p18n66khu41tpi1m3mio3vbu14t84.jpg
+    - http://pravicon.com/icon-3137
    событие:
-    - год: 806
-      описание: прен
     - год: 284-305
       описание: прств
+    - год: 806 
+      описание: прен
    помин:
-      дата: 14.05
-      собор: греч
+      дата: 25.05
       описание: само
