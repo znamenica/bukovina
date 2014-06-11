@@ -1,0 +1,15 @@
+---
+Пятидесятница:
+   имя: Пятидесятница, Троица
+   чин: 12
+   бытие: http://azbyka.ru/days/prazdnik-den-svjatoj-troicy-pjatidesjatnica
+   событие:
+      год: I
+      описание: само
+   помин:
+      дата: птдс
+      описание: само
+      служба:
+       - Пятидесятнице служба
+       - http://azbyka.ru/days/caa/230
+       - http://azbyka.ru/days/caa/68
