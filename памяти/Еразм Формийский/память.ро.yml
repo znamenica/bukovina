@@ -1,13 +1,14 @@
 ---
 Еразм Формийский:
    имя: Еразм
-   описание: святитель Формийский, Кампанийский
+   прозвище: Охридский, Формийский
    чин: исвт
-   вики: http://drevo-info.ru/articles/5738.html
-   бытие: http://azbyka.ru/days/sv-erazm-formijskij-kampanijskij
+   вики: http://drevo-info.ru/articles/13567.html
    событие:
       год: 303
       описание: прств
    помин:
-      дата: 04.05
+      дата: 02.06
+      собор: греч
       описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_02.pdf
