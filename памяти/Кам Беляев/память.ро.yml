@@ -7,8 +7,12 @@
    чин: сщмч
    собор: слав,нмр
    вики: http://drevo-info.ru/articles/17857.html
+   бытие: http://azbyka.ru/days/sv-petr-beljaev
+   образ: http://azbyka.ru/days/assets/img/saints/2363/p18pehm7uk109o1h0411canaifqe3.jpg
    событие:
-      год: 1918
+    - год: 1874
+      описание: ржд
+    - год: 1918
       дата: 22.05
       описание: прств
    помин:
