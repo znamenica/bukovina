@@ -1,0 +1,19 @@
+---
+Пименовский образ:
+   имя: Пименовский
+   описание: образ Богородицы
+   чин: обр
+   вид: Путеводица-Перивлепта
+   вики: http://drevo-info.ru/articles/4179.html
+   бытие: http://azbyka.ru/days/ikona-pimenovskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/261/80b1d047423ec4b9b47fe97f253b3e67.jpg
+    - http://drevo-info.ru/images/001/000667.jpg
+   событие:
+    - год: 1381/1386
+      описание: прен.1
+    - год: XVI
+      описание: прен.2
+   помин:
+      дата: 06.06
+      описание: само
