@@ -1,12 +1,31 @@
 ---
 Курский-Коренной образ:
-   имя: Курской-коренной Знамение
+   имя: Курский-Коренной
    описание: образ Богородицы
    чин: обр
+   вид: Знамение образ
    вики: http://drevo-info.ru/articles/4457.html
    бытие: http://azbyka.ru/days/ikona-znamenie-kurskaja-korennaja
-   помин:
-      год: 1898
+   образ:
+    - http://drevo-info.ru/images/001/000736.jpg
+    - http://azbyka.ru/days/assets/img/icons/252/p18iodi6cegj71uoafldhvc3a74.jpg
+    - http://azbyka.ru/days/assets/img/icons/252/5456e287fd7362eaa7c4626206948f4f.jpg
+    - http://azbyka.ru/days/assets/img/icons/252/ea778103a5949acba55e93f39fcc98aa.jpg
+    - http://azbyka.ru/days/assets/img/icons/252/59d27bd5c93d057bbed6df2fb3fe686d.jpg
+   событие:
+    - год: 1295
+      дата: 08.09
+      описание: явл
+    - год: 1898
       дата: 08.03
-      описание: прств
+      описание: спас
+   помин:
+    - дата: 08.03
+      описание: спас
+    - дата: пт. по всех
+      описание: само
+    - дата: 08.09
+      описание: явл
       служба: Курскому-Коренному образу служба
+    - дата: 27.11
+      описание: само

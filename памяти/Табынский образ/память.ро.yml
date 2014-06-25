@@ -1,0 +1,16 @@
+---
+Табынский образ:
+   имя: Табынский
+   описание: образ Богородицы
+   чин: обр
+   бытие: http://azbyka.ru/days/ikona-tabynskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/262/p188nmob024ak179a1vov1bsho353.jpg
+    - http://azbyka.ru/days/assets/img/icons/262/p188nmob031dfguhm1sue26j102k4.jpg
+   событие:
+      год: 1594-1597
+      описание: явл
+   помин:
+      дата: 07.06
+      описание: само
+      служба: Табынскому образу служба
