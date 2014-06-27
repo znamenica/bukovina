@@ -3,12 +3,15 @@
    имя: Ярославский
    описание: образ Богородицы
    чин: обр
-   вид: Киево-Печерский
-   вики: http://drevo-info.ru/articles/5792.html
-   бытие: http://azbyka.ru/days/ikona-terebenskaja-terebinskaja
+   бытие: http://azbyka.ru/days/ikona-jaroslavskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/314/095e8aed7008416b21b0eec5d82ea216.jpg
+    - http://azbyka.ru/days/assets/img/icons/314/642d0120e394fc84b3301f7077d396df.jpg
+    - http://azbyka.ru/days/assets/img/icons/314/f28d0faf10655ce5f3f7eecfe308639f.jpg
+    - http://azbyka.ru/days/assets/img/icons/314/1304bfb1323f4776376073572f8c37b9.jpg
    событие:
-      год: 1823
-      описание: чудо
+      год: XIII
+      описание: явл
    помин:
-      дата: 14.05
-      описание: чудо
+      дата: 08.06
+      описание: само
