@@ -1,16 +1,26 @@
 ---
 Кирилл Александрийский:
    имя: Кирилл
-   прозвище: Александрийский святитель
+   описание: святитель Александрийский
    чин: свт
+   собор: копт,3вс
    вики: http://drevo-info.ru/articles/6095.html
    отечник: http://azbyka.ru/otechnik/Kirill_Aleksandrijskij
-   бытие: http://pravicon.com/info-2668
-   образ: http://pravicon.com/icon-2155
-   помин:
+   бытие: http://azbyka.ru/days/sv-kirill-aleksandrijskij
+   образ:
+    - http://pravicon.com/icon-2155
+    - http://drevo-info.ru/images/001/001066.jpg
+   событие:
       год: 444
-      дата: 18.01
       описание: прств
+   помин:
+    - дата: 18.01
+      описание: само
       служба:
        - Афанасий Великий/Афанасию Великому и Кириллу Александрийскому служба
+       - http://azbyka.ru/days/caa/391
+    - дата: 09.06
+      описание: само
+      служба:
        - Кириллу Александрийскому служба
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_09.pdf
