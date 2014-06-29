@@ -1,12 +1,19 @@
 ---
 Василий Парийский:
    имя: Василий
-   прозвище: святитель Парийский, преподобный
+   описание: святитель Парийский, преподобный
    чин: исвт
-   вики: http://drevo-info.ru/articles/5549.html
+   вики:
+    - http://drevo-info.ru/articles/5549.html
+    - http://ru.wikipedia.org/wiki/Василий_Парийский
    бытие: http://pravicon.com/info-1941
-   образ: http://pravicon.com/icon-1396
-   помин:
-      год: после 754
-      дата: 12.04
+   образ:
+    - http://upload.wikimedia.org/wikipedia/commons/7/74/Vasily_of_Pariya.jpg
+    - http://pravicon.com/icon-1396
+   событие:
+      год: по 754
       описание: прств
+   помин:
+      дата: 12.04
+      описание: само
+      служба: Василию Парийскому служба
