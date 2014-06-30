@@ -1,0 +1,26 @@
+---
+Милующая образ:
+   имя: Милующая, Достойно есть
+   описание: образ Богородицы
+   чин: обр
+   вики: http://drevo-info.ru/articles/18937.html
+   бытие: http://azbyka.ru/days/ikona-abulskaja
+   образ:
+    - http://drevo-info.ru/images/002/005471.jpg
+    - http://azbyka.ru/days/assets/img/icons/267/d480e6af48702b66de1789589ceabdbe.jpg
+   событие:
+    - год: 982
+      дата: 11.06
+      описание: явл
+      место: близ нынещнего Андреевского скита, Афон
+    - год: с 982
+      описание: прен
+      место: Успенская церква, Карея, Афон
+   помин:
+      дата: 11.06
+      описание: явл
+      служба:
+       - Милующей образу служба
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_11.pdf
+       - http://azbyka.ru/days/caa/555
+       - http://azbyka.ru/days/caa/556
