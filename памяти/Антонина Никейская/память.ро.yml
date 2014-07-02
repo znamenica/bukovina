@@ -3,12 +3,17 @@
    имя: Антонина
    прозвище: Никейская
    чин: мц
+   собор: виз
    вики: http://drevo-info.ru/articles/6134.html
    бытие: http://azbyka.ru/days/sv-antonina-nikejskaja
    образ:
     - http://drevo-info.ru/images/001/001083.jpg
     - http://pravicon.com/icon-1235
-   помин:
+   событие:
       год: 302-305
-      дата: 01.03
       описание: прств
+   помин:
+    - дата: 01.03
+      описание: само
+    - дата: 13.06
+      описание: само
