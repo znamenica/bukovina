@@ -1,0 +1,19 @@
+---
+Московский Боголюбский образ:
+   имя: Московский
+   вид: Боголюбский образ
+   описание: образ Богородицы
+   бытие: http://azbyka.ru/days/ikona-bogoljubskaja-moskovskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/84/p1888gn93vj5q1ams1memc0c19u45.jpg
+    - http://azbyka.ru/days/assets/img/icons/84/p1888gn5271nk22d11m4q1lc01b2t3.jpg
+    - http://azbyka.ru/days/assets/img/icons/84/p1888gn9401c1j1tk18gpvkrl1e6.jpg
+   чин: обр
+   событие:
+    - год: 1157
+      описание: напис
+    - год: 1771
+      описание: чудо
+   помин:
+      дата: 18.06
+      описание: само
