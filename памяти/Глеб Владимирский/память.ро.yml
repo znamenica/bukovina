@@ -1,0 +1,29 @@
+---
+Глеб Владимирский:
+   имя: в наречении Глеб, в крещении Георгий
+   описание: князь Владимирский, сын Андрея Боголюбского
+   чин: блгв
+   собор: слав,рус,влад
+   вики: http://drevo-info.ru/articles/10908.html
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/3705/p18q846v031nq81no214r31koh8796.jpg
+    - http://azbyka.ru/days/assets/img/saints/3705/p18q846v0316c41k1g192u14t9hpu7.jpg
+    - http://azbyka.ru/days/assets/img/saints/3705/p18q846v0219ikv4b1r0a17v34pk5.jpg
+    - http://azbyka.ru/days/assets/img/saints/3705/p18q846v019n1e2cc431qg5ouc3.jpg
+   событие:
+    - год: ок.1156
+      описание: ржд
+    - год: 1175
+      описание: прств
+      место: Владимир
+    - год: 1175
+      описание: пгрб
+      место: Успенский собор. Владимир
+    - год: 1702
+      описание: просл
+   помин:
+      дата: 20.06
+      описание: само
+      служба:
+       - Глебу Владимирскому служба
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_20.pdf
