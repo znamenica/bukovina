@@ -5,7 +5,10 @@
    чин: стсвт
    вики: http://drevo-info.ru/articles/6272.html
    бытие: http://azbyka.ru/days/sv-evsevij-samosatskij
-   образ: http://pravicon.com/icon-1707
+   образ:
+    - http://pravicon.com/icon-1707
+    - http://azbyka.ru/days/assets/img/saints/4487/p17uifk34011fj1udq4hr1i9k1o944.jpg
+    - http://azbyka.ru/days/assets/img/saints/4487/p17uifk34015ego2217cfn2o1aum3.jpg
    событие:
     - год: до 361
       описание: свят
@@ -14,4 +17,6 @@
    помин:
       дата: 22.06
       описание: само
-      служба: Евсевию Самосатскому служба
+      служба:
+       - Евсевию Самосатскому служба
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_22.pdf
