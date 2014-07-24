@@ -6,7 +6,7 @@
    вики:
     - http://drevo-info.ru/articles/3589.html
     - http://ru.wikipedia.org/wiki/Владимирская_икона_Божией_Матери
-   бытие: http://azbyka.ru/days/sv-konstantin-velikij
+   бытие: http://azbyka.ru/days/ikona-vladimirskaja
    образ: http://drevo-info.ru/images/001/000068.jpg
    событие:
     - год: I
@@ -29,5 +29,9 @@
       служба: Владимирскому образу на сретение служба
     - дата: 23.06
       описание: застп
+      служба:
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
+       - http://azbyka.ru/days/caa/720
+       - http://azbyka.ru/days/caa/546
     - дата: 26.08
       описание: прен.3

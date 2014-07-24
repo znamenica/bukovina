@@ -1,0 +1,27 @@
+---
+Агриппина Римляныня:
+   имя: Агриппина
+   описание: Римляныня
+   чин: мц
+   собор: итал
+   вики: http://drevo-info.ru/articles/10913.html
+   бытие: http://azbyka.ru/days/sv-agrippina-rimljanynja
+   образ:
+    - http://pravicon.com/icon-1059
+    - http://azbyka.ru/days/assets/img/saints/5808/ecb2f0d7b4d06f7542b7068f001c1724.jpg
+    - http://azbyka.ru/days/assets/img/saints/5808/717e55ae3bc59ea256d6c67cb30eb932.jpg
+   событие:
+    - год: 253-260
+      описание: прств
+    - год: 253-300
+      описание: прен
+      место: Сицилия
+    - год: XI
+      описание: прен
+      место: Константинополь. Византия
+   помин:
+      дата: 23.06
+      описание: само
+      служба:
+       - Агриппине Римляныне служба
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
