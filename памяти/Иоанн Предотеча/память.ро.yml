@@ -9,11 +9,13 @@
     - http://drevo-info.ru/articles/3825.html
     - https://ru.wikipedia.org/wiki/Иоанн_Креститель
    бытие: http://azbyka.ru/days/sv-prorok-i-krestitel-ioann-predtecha
+   образ: http://drevo-info.ru/images/001/000575.jpg
    событие:
-    - год: I до РХ
+    - год: I до нэ
       описание: зач
-    - год: I до РХ
+    - год: I до нэ
       описание: ржд
+      образ: http://azbyka.ru/days/assets/img/holidays/89/p185aaigl41jik1ct7v1migpb3u3.jpg
     - год: I
       описание: прств
     - год: IV
@@ -44,7 +46,11 @@
       служба: Иоанну Предотече на зачатие служба
     - дата: 24.06
       описание: ржд
-      служба: Иоанну Предотече на рождество служба
+      служба:
+       - Иоанну Предотече на рождество служба
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_24.pdf
+       - http://azbyka.ru/days/caa/73
+       - http://azbyka.ru/days/caa/74
     - дата: 29.08
       описание: прств
       служба: Иоанну Предотече на усекновение служба
