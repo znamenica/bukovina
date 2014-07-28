@@ -1,0 +1,42 @@
+---
+Кам Муромский:
+   имя: Пётр, в иночестве Давыд
+   отчество: Юрьевич
+   описание: князь Муромский
+   чин: блгв
+   собор: слав,рус,влад,ряз
+   вики:
+    - http://drevo-info.ru/articles/10927.html
+    - http://ru.wikipedia.org/wiki/Давыд_Юрьевич
+    - http://ru.wikipedia.org/wiki/Пётр_и_Феврония
+   бытие: http://azbyka.ru/days/sv-petr-v-inochestve-david-muromskij
+   образ: http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Petr_of_Murom.jpg/405px-Petr_of_Murom.jpg
+   событие:
+    - год: до 1176
+      описание: ржд
+      место: Муром
+    - год: ок. 1200-1203
+      описание: брак
+    - год: ок.1228
+      описание: иноч
+      образ: http://drevo-info.ru/images/002/007991.jpg
+    - год: 1228
+      дата: 02.04/25.06
+      описание: прств
+      место: Муром
+    - год: 1547
+      описание: просл
+    - год: 1992
+      дата: 06.09
+      описание: прен
+      место: Свято-Троицкий женский монастырь. Муром
+   помин:
+    - дата: вс. до 06.09
+      описание: прен
+    - дата: 25.06
+      описание: прств
+      служба:
+       - Каму и Февронии Муромским служба
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_25.pdf
+       - http://azbyka.ru/days/caa/731
+       - http://azbyka.ru/days/caa/475
