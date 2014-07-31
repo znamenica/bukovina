@@ -1,10 +1,10 @@
 ---
-Сергий Валаамский:
-   имя: Сергий
-   прозвище: Валаамский
+Герман Валаамский:
+   имя: Герман
+   описание: чудотворец Валаамский
    чин: прп
-   бытие: http://azbyka.ru/days/sv-sergij-valaamskij-1
-   образ: http://pravicon.com/icon-2861
+   вики: http://ru.wikipedia.org/wiki/Сергий_Валаамский
+   бытие: http://azbyka.ru/days/sv-german-valaamskij
    образ:
     - http://pravicon.com/icon-1530
     - http://upload.wikimedia.org/wikipedia/commons/0/0a/SergiyandHermanofValaam.jpg
@@ -23,6 +23,6 @@
    помин:
     - дата: 28.06
       описание: само
-      служба: Сергию и Герману Валаамским служба
+      служба: Сергий Валаамский/Сергию и Герману Валаамским служба
     - дата: 11.09
       описание: прен.2

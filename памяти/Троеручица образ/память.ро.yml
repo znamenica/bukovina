@@ -1,0 +1,32 @@
+---
+Троеручица образ:
+   имя: Троеручица
+   описание: образ Богородицы
+   чин: обр
+   вики: http://drevo-info.ru/articles/10959.html
+   бытие: http://azbyka.ru/days/ikona-troeruchica
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/120/964ac7eb7be9ac3ccdf079b5ed84fd13.jpg
+    - http://azbyka.ru/days/assets/img/icons/120/93d72262835f30fd6c39b193301c49d5.jpg
+    - http://azbyka.ru/days/assets/img/icons/120/799897f9ddcfdd64d5b3f52792e0cf93.jpg
+    - http://azbyka.ru/days/assets/img/icons/120/f1b747fda118d80f895c2bda9a7b23ea.jpg
+   событие:
+    - год: VIII
+      описание: явл
+      место: Сербия
+    - год: VIII
+      описание: прен
+      место: Саввы Освященного лавра
+    - год: XII-XIII
+      описание: прен
+      место: Хилендарский монастырь. Афон
+   помин:
+    - дата: 28.06
+      описание: само
+      служба:
+       - Троеручице образу служба
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_28.pdf
+       - http://azbyka.ru/days/caa/584
+       - http://azbyka.ru/days/caa/585
+    - дата: 12.07
+      описание: само
