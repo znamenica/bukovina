@@ -1,14 +1,20 @@
 ---
 Иоанн Богослов:
    имя: Иоанн
+   отчество: Зеведеевич
    прозвище: Богослов
-   чин: ап12
-   собор: апп
+   описание: Благовестник
+   чин: ап
+   собор: ап12
    вики: http://drevo-info.ru/articles/227.html
    бытие: http://azbyka.ru/days/sv-ioann-bogoslov
-   образ: http://azbyka.ru/days/assets/img/saints/2126/p18f53la1rsdirpme716bfqgj3.jpg
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/2126/p18f53la1rsdirpme716bfqgj3.jpg
+    - http://pravicon.com/icon-1929
    событие:
-      год: 98-117
+    - год: I
+      описание: ржд
+    - год: 98-117
       дата: 26.09
       описание: прств
    помин:
