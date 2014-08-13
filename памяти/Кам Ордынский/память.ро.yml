@@ -18,4 +18,7 @@
    помин:
       дата: 30.06
       описание: само
-      служба: Каму Ордынскому служба
+      служба:
+       - Каму Ордынскому служба
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_30.pdf
+       - http://azbyka.ru/days/caa/469
