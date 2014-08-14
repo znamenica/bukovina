@@ -1,0 +1,23 @@
+---
+Ахтырский образ:
+   имя: Ахтырский
+   описание: образ Богородицы
+   чин: обр
+   вики: http://drevo-info.ru/articles/6725.html
+   бытие: http://azbyka.ru/days/ikona-ahtyrskaja
+   образ:
+    - http://drevo-info.ru/images/001/001208.jpg
+    - http://drevo-info.ru/images/001/001207.jpg
+   событие:
+      год: 1739
+      дата: 02.07
+      описание: явл
+      место: Ахтырка. Харьковская губерния
+   помин:
+      дата: 02.07
+      описание: прств
+      служба:
+       - Ахтырскому образу служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_02.pdf
+       - http://azbyka.ru/days/caa/542
+       - http://azbyka.ru/days/caa/541
