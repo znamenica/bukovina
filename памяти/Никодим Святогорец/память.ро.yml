@@ -28,4 +28,6 @@
       дата: 05.06
       собор: греч
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_01.pdf
+      служба:
+       - Никодиму Святогорцу служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_01.pdf
