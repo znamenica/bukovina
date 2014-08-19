@@ -706,7 +706,7 @@ log * ( "*"*80 )
 
 uri = 'http://drevo-info.ru/articles/list/14.html?page='
 date_link = 'http://drevo-info.ru' +
-(1..4).each do| i |
+(1..13).each do| i |
    drevo_cal = Nokogiri::HTML( open "#{uri}#{i}" )
    li =
    drevo_cal.css( 'li' ).each do| li |
