@@ -1,0 +1,21 @@
+---
+Песчанский образ:
+   имя: Песчанский
+   описание: образ Богородицы
+   чин: обр
+   вид: Казанский образ
+   бытие: http://azbyka.ru/days/ikona-kazanskaja-peschanskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/273/p188ikbmij1p9nrbu1sdvoh61uc23.jpg
+    - http://azbyka.ru/days/assets/img/icons/273/p188ikbmij1ssv1e28huk1p6uq4u4.jpg
+    - http://azbyka.ru/days/assets/img/icons/273/p188ikbmik1gps1hb0bb01v5tcv35.jpg
+   событие:
+      год: 1754
+      описание: явл
+      место: Воскресенская церковь. Изюм. Харьковская губерния
+   помин:
+    - дата: 08.07
+      описание: явл
+      служба:
+       - Песчанскому образу служба
+       - http://azbyka.ru/days/caa/575

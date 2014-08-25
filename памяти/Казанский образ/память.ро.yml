@@ -1,0 +1,26 @@
+---
+Казанский образ:
+   имя: Казанский
+   описание: образ Богородицы
+   чин: обр
+   вид: Влахернский образ
+   вики: http://drevo-info.ru/articles/7646.html
+   бытие: http://azbyka.ru/days/ikona-kazanskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/20/ff619117df270a18adf410d4f44bf465.jpg
+    - http://azbyka.ru/days/assets/img/icons/20/e5b2f5b9170a702ad780cb8204aaf70e.jpg
+    - http://azbyka.ru/days/assets/img/icons/20/4f7ee0da04b463ecc7e523c86cbe7874.jpg
+   событие:
+    - год: 1579
+      описание: явл
+    - год: по 1612
+      описание: просл
+   помин:
+    - дата: 08.07
+      описание: явл
+      служба:
+       - Казанскому образу служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_08.pdf
+       - http://azbyka.ru/days/ikona-kazanskaja
+    - дата: 22.10
+      описание: само
