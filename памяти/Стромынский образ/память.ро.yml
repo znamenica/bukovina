@@ -1,12 +1,16 @@
 ---
 Стромынский образ:
    имя: Стромынский
-   вид: Кипрский
+   вид: Кипрский образ
    описание: образ Богородицы
    чин: обр
+   вики: http://drevo-info.ru/articles/6396.html
    бытие: http://azbyka.ru/days/ikona-kiprskaja-stromynskaja
    образ: http://azbyka.ru/days/assets/img/icons/197/p17ucuje5s1jdd4l4fc58cb150d4.jpg
-   помин:
+   событие:
       год: 1841
       дата: 16.02
-      описание: исцел
+      описание: чудо
+   помин:
+      дата: 16.02
+      описание: чудо

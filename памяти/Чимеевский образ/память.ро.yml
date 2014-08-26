@@ -5,10 +5,18 @@
    чин: обр
    вид: Казанский образ
    бытие: http://azbyka.ru/days/ikona-kazanskaja-chimeevskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/296/p188iklr7uh4r1bon10b3lhjhqm3.jpg
+    - http://azbyka.ru/days/assets/img/icons/296/p188iklupk1k6cjakrqt3k4124v5.jpg
+    - http://azbyka.ru/days/assets/img/icons/296/p188iklupm20k1mdh17ua12fj1huu6.jpg
    событие:
-      год: нач.XVIII
+    - год: нач.XVIII
       описание: явл
       место: близ. Чимеево село. Нияп река. Сибирь
+    - год: 2004
+      дата: 22.03
+      собор: рус
+      описание: просл
    помин:
       дата: 08.07
       описание: само
