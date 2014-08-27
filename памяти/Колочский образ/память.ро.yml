@@ -5,6 +5,9 @@
    чин: обр
    вики: http://drevo-info.ru/articles/6392.html
    бытие: http://azbyka.ru/days/ikona-kolochskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/286/780622a88ab6981803a10c65417e0332.jpg
+    - http://azbyka.ru/days/assets/img/icons/286/c7a01ff8d9292651db378f8d2f71db03.jpg
    событие:
     - год: 1413
       описание: явл
@@ -24,3 +27,4 @@
    помин:
       дата: 09.07
       описание: само
+      служба: http://azbyka.ru/days/caa/611
