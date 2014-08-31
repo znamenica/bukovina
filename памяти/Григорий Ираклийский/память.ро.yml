@@ -4,14 +4,23 @@
    фамилия: Каллидос
    описание: святитель Ираклийский и Редестосский
    чин: свт
-   собор: слав,нмр
-   бытие: http://azbyka.ru/days/sv-grigorij-iraklijskij
-   образ: http://azbyka.ru/days/assets/img/saints/6542/p17uunn5lsf5v1aget4r4l81t133.jpg
+   вики: http://drevo-info.ru/articles/11386.html
+   бытие:
+    - http://azbyka.ru/days/sv-grigorij-iraklijskij
+    - http://orthodoxosleimon.blogspot.com/2010/02/1844-1925.html
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/6542/p17uunn5lsf5v1aget4r4l81t133.jpg
+    - http://drevo-info.ru/images/002/003404.jpg
    событие:
     - год: 1925
+      дата: 12.07
       описание: прств
     - год: по 1925
-      собор: кпц
+      собор: виз
+      описание: просл
+    - год: 2003
+      дата: 23.09
+      собор: рус
       описание: просл
    помин:
       дата: 12.07

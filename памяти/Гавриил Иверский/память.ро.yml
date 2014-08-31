@@ -1,11 +1,17 @@
 ---
 Гавриил Иверский:
    имя: Гавриил
-   описание: Иверский
+   описание: Иверский, Святогорец
    чин: прп
+   бытие: http://azbyka.ru/days/sv-gavriil-svjatogorec
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/4476/p18ra55vbjm8qh9v5go6j6161g4.jpg
+    - http://azbyka.ru/days/assets/img/saints/4476/p18ra55vbheqvfnijt01p4d4g13.jpg
    событие:
       год: X
       описание: прств
    помин:
-      дата: 13.05
+    - дата: 13.05
+      описание: само
+    - дата: 12.07
       описание: само

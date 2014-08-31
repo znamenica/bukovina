@@ -1,0 +1,23 @@
+---
+Иоанн Варяг:
+   имя: Иоанн
+   прозвище: Варяг
+   описание: сын Феодора Варяга
+   чин: мч
+   собор: слав,рус,бпеч,киев
+   вики: http://drevo-info.ru/articles/13387.html
+   бытие: http://azbyka.ru/days/sv-ioann-pecherskij
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/370/p18ra6e5bmln4nsi1j4crtg18go5.jpg
+    - http://drevo-info.ru/images/003/011019.jpg
+   событие:
+      год: 983
+      описание: прств
+   помин:
+    - дата: 12.07
+      описание: само
+      служба:
+       - Божидар Варяг/Божидару и Иоанну Варягам служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_12.pdf
+    - дата: 28.09
+      описание: само

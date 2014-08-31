@@ -6,7 +6,7 @@
    чин: блпр
    собор: слав,рус,твер
    вики: http://drevo-info.ru/articles/8371.html
-   бытие: http://pravicon.com/info-1821
+   бытие: http://azbyka.ru/days/sv-arsenij-novgorodskij
    образ: http://pravicon.com/icon-1266
    событие:
     - год: 1570
@@ -20,4 +20,6 @@
       описание: обр,тез
     - дата: 12.07
       описание: прств
-      служба: Арсению Новгородскому служба
+      служба:
+       - Арсению Новгородскому служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_12.pdf

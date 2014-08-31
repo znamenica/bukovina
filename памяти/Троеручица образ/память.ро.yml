@@ -24,9 +24,11 @@
     - дата: 28.06
       описание: само
       служба:
-       - Троеручице образу служба
        - http://azbyka.ru/days/assets/upload/minei/06/minea_06_28.pdf
        - http://azbyka.ru/days/caa/584
        - http://azbyka.ru/days/caa/585
     - дата: 12.07
       описание: само
+      служба:
+       - Троеручице образу служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_12.pdf
