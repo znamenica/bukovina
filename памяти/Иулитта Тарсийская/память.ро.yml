@@ -5,10 +5,13 @@
    чин: мц
    вики: http://drevo-info.ru/articles/11021.html
    бытие: http://azbyka.ru/days/sv-iulitta-tarsijskaja
-   образ: http://drevo-info.ru/images/001/002533.jpg
+   образ:
+    - http://drevo-info.ru/images/001/002533.jpg
+    - http://azbyka.ru/days/assets/img/saints/4702/81ad4d901945d099ddbcea0ce2adf570.jpg
    событие:
     - год: ок. 305
       описание: прств
+      образ: http://azbyka.ru/days/assets/img/saints/4702/50281c011ab6fa76d897b9b797e9d7df.jpg
     - год: 322-337
       описание: обр
    помин:

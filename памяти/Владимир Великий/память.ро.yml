@@ -4,7 +4,7 @@
    отчество: Святославич
    описание: князь великий Киевский, внук Ольги Русской
    чин: рап
-   собоо: слав,рус,вол,гал,киев
+   собор: слав,рус,вол,гал,киев
    вики: http://drevo-info.ru/articles/6457.html
    бытие: http://azbyka.ru/days/sv-vel-kn-vladimir-v-kreshchenii-vasilij
    образ:
@@ -18,4 +18,9 @@
    помин:
       дата: 15.07
       описание: само
-      служба: Владимиру Великому служба
+      служба:
+       - Владимиру Великому служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_15.pdf
+       - http://azbyka.ru/days/caa/275
+       - http://azbyka.ru/days/caa/496
+       - http://azbyka.ru/days/caa/274
