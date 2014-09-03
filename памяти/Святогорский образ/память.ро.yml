@@ -1,0 +1,24 @@
+---
+Святогорский образ:
+   имя: Святогорский образ
+   описание: образ Богородицы
+   чин: обр
+   вид: Путеводительница образ
+   вики: http://drevo-info.ru/articles/6462.html
+   бытие: http://azbyka.ru/days/ikona-svjatogorskaja
+   образ:
+    - http://drevo-info.ru/images/002/004236.jpg
+    - http://azbyka.ru/days/assets/img/icons/52/p188nh154n1c531hl11a6f1jre1fqa5.jpg
+    - http://azbyka.ru/days/assets/img/icons/52/p188nh154o1tkkdmc1qcs16jr18jh6.jpg
+    - http://azbyka.ru/days/assets/img/icons/52/p188nh118s11d91i51m59t961lvl3.jpg
+   событие:
+    - год: 1569
+      описание: явл
+    - год: 1569
+      описание: прем
+      место: Псково-Святогорская Успенский монастырь. (ныне Пушкинские горы). Псковщина
+   помин:
+    - дата: 17.07
+      описание: само
+    - дата: 01.10
+      описание: само

@@ -1,0 +1,28 @@
+---
+Иринарх Соловецкий:
+   имя: Иринарх
+   описание: настоятель Соловецкий
+   чин: прп
+   вики: http://drevo-info.ru/articles/1802.html
+   бытие: http://azbyka.ru/days/sv-irinarh-soloveckij
+   образ:
+    - http://pravicon.com/icon-2055
+    - http://drevo-info.ru/images/001/000868.jpg
+    - http://azbyka.ru/days/assets/img/saints/2400/p18riechp816tb13d22pa2382k53.jpg
+   событие:
+    - год: XVI
+      описание: ржд
+    - год: вид.XVI
+      описание: иноч
+      место: Соловецкий монастыре. Соловки
+    - год: 1628
+      описание: прств
+    - год: 1628
+      описание: пгрб
+      место: заалтарье. Спасо-Преображенский собор. Соловки
+   помин:
+      дата: 17.07
+      описание: само
+      служба:
+       - Иринарху Соловецкому служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_17.pdf
