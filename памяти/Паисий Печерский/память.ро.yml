@@ -1,0 +1,20 @@
+---
+Паисий Печерский:
+   имя: Паисий
+   описание: Печерский, в Дальних Пещерах
+   чин: прп
+   собор: слав,рус,дпеч,печ,пев
+   вики: http://drevo-info.ru/articles/6473.html
+   бытие: http://azbyka.ru/days/sv-paisij-pecherskij
+   образ:
+    - http://pravicon.com/icon-2650
+    - http://drevo-info.ru/images/003/009408.jpg
+   событие:
+      год: XIV
+      описание: прств
+   помин:
+      дата: 19.07
+      описание: само
+      служба:
+       - Паисию Печерскому служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_19.pdf

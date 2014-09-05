@@ -1,18 +1,56 @@
 ---
 Серафим Саровский:
-   имя: Серафим
-   прозвище: второе обре́тение мощей Саровский чудотворец
+   имя: в иночестве Серафим, в крещении Прохор
+   отчество: Исидорович
+   фамилия: Мошнин
+   описание: чудотворец Саровский
    чин: прп
-   собор: кур,ниж,там,див
+   собор: кур,ниж,тамб,див
    вики: http://drevo-info.ru/articles/8522.html
-   бытие: http://pravicon.com/info-3347
-   образ: http://pravicon.com/icon-2857
-   помин:
-     - год: 1833
+   бытие: http://azbyka.ru/days/sv-serafim-sarovskij
+   образ:
+    - http://drevo-info.ru/images/002/004198.jpg
+    - http://pravicon.com/icon-2857
+    - http://azbyka.ru/days/assets/img/saints/1706/5e99ed1e9ed21ef7195a6f1a97b7f3f4.jpg
+    - http://azbyka.ru/days/assets/img/saints/1706/0924ae06d2085856aa990cc1a89a4a0b.jpg
+    - http://azbyka.ru/days/assets/img/saints/1706/22bc8d4e25f40306b5549f1146ada83d.jpg
+    - http://azbyka.ru/days/assets/img/saints/1706/914b84db58a2fe224e00c70fd7a4aa4a.jpg
+    - http://azbyka.ru/days/assets/img/saints/1706/cacc3493cd0b8ba4e9a60f72492e91de.jpg
+   отечник: http://azbyka.ru/otechnik/Serafim_Sarovskij/
+   событие:
+    - год: 1754
+      дата: 19.07
+      описание: ржд
+      место: Курск
+    - год: 1786
+      дата: 18.08
+      описание: иноч
+    - год: 1787
+      дата: дек
+      описание: дияк
+    - год: 1793
+      описание: свящ
+    - год: 1833
       дата: 02.01
       описание: прств
-      служба: Серафиму Саровскому служба
+    - год: 1903
+      дата: 19.07
+      описание: обр
+    - год: 1927
+      описание: хищ
+      образ: http://drevo-info.ru/images/002/009203.jpg
     - год: 1991
       дата: 02.01
-      описание: обрет 2
-      служба: Серафиму Саровскому служба
+      описание: обр.1
+      место: Свято-Троицкий Серафимо-Дивеевский монастырь. Дивеево
+   помин:
+    - дата: 02.01
+      описание: прств,обр.1
+      служба:
+       - Серафиму Саровскому служба
+       - http://azbyka.ru/days/caa/378
+       - http://azbyka.ru/days/caa/379
+       - http://azbyka.ru/days/caa/211
+    - дата: 19.07
+      описание: обр
+      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_19.pdf
