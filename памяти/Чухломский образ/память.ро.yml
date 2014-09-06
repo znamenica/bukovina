@@ -1,0 +1,23 @@
+---
+Чухломский образ:
+   имя: Чухломский, Галичский
+   описание: образ Богородицы
+   чин: обр
+   бытие: http://azbyka.ru/days/ikona-galichskaja-chuhlomskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/108/p188da115l11ohfi91sl7eja1efs3.jpg
+    - http://azbyka.ru/days/assets/img/icons/108/p188da16741j6rdt0gdfts6lvg6.jpg
+    - http://azbyka.ru/days/assets/img/icons/108/p188da1672102gkgp61089j1m0h5.jpg
+   событие:
+    - год: 1350
+      описание: явл
+      место: гора. близ. Галичское озеро
+    - год: 1929
+      описание: сокр
+   помин:
+    - дата: 28.05
+      описание: само
+    - дата: 20.07
+      описание: само
+    - дата: 15.08
+      описание: само      
