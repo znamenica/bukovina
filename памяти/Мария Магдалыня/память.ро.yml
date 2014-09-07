@@ -2,19 +2,42 @@
 Мария Магдалыня:
    имя: Мария
    прозвище: Магдалина, Магдалыня
+   описание: мироносица
    чин: рап
-   собор: мрнс
+   собор: плст,мрнс
    вики: http://drevo-info.ru/articles/13273.html
    бытие: http://azbyka.ru/days/sv-marija-magdalina
-   образ: http://azbyka.ru/days/assets/img/saints/5855/42b87de769867cae2481819f5b2c2e1d.jpg
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/5855/7400a9de2ae6af4606ccbadd1ea9bdaf.jpg
+    - http://azbyka.ru/days/assets/img/saints/5855/a76edfeb5b00746e8ba6be8fad8dc73b.jpg
+    - http://azbyka.ru/days/assets/img/saints/5855/42b87de769867cae2481819f5b2c2e1d.jpg
+    - http://azbyka.ru/days/assets/img/saints/5855/868c96f46c176c194a081c93fa4371c9.jpg
+    - http://azbyka.ru/days/assets/img/saints/5855/7f381fd66891595b5d885c6e7a773b6f.jpg
+    - http://azbyka.ru/days/assets/img/saints/5855/d53ad6ef6f569aea248fadc42c35b6c0.jpg
+    - http://azbyka.ru/days/assets/img/saints/5855/ddcc9e521628ff66c65a43096ef9b8f1.jpg
+    - http://azbyka.ru/days/assets/img/saints/5855/p18f54urj4q9j1v8liml17h58q83.jpg
+    - http://azbyka.ru/days/assets/img/saints/5855/4647a746ec5600d1348b931a34e89d69.jpg
    событие:
     - год: I
+      описание: ржд
+      место: Магдала. Геннисаретское озеро. Палестина
+    - год: I
       описание: прств
+      место: Ефес
     - год: 890-898
       описание: прен
+      место: Лазаревский монастырь. Константинополь
+    - год: XI-XIII
+      описание: прен.1
+      место: Латеранский собор. Рим
    помин:
     - дата: 04.05
       описание: прен
     - дата: 22.07
       описание: само
-      служба: Марии Магдалыне служба
+      служба:
+       - Марии Магдалыне служба
+       - Марии Магдалыне и Фоке Синопскому служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_22.pdf
+       - http://azbyka.ru/days/caa/281
+       - http://azbyka.ru/days/caa/282

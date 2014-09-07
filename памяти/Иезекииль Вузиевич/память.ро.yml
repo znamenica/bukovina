@@ -7,7 +7,12 @@
    собор: плст,месп,пев
    вики: http://drevo-info.ru/articles/13436.html
    бытие: http://azbyka.ru/days/sv-iezekiil
-   образ: http://drevo-info.ru/images/001/002582.jpg
+   образ:
+    - http://drevo-info.ru/images/001/002582.jpg
+    - http://azbyka.ru/days/assets/img/saints/4995/p18fa1nvp1i0k1ck9n5h5g110dj3.jpg
+    - http://azbyka.ru/days/assets/img/saints/4995/bb646efc27433c4ea6d4084df392f573.jpg
+    - http://azbyka.ru/days/assets/img/saints/4995/2aab1fa7bab05c90fb6802fb59b9df72.jpg
+    - http://azbyka.ru/days/assets/img/saints/4995/a79b810b1bb7179e94ff8030bb5acda4.jpg
    событие:
     - год: VII до нэ-VI до нэ
       описание: прств
