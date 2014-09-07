@@ -5,14 +5,30 @@
    чин: обр
    вики: http://drevo-info.ru/articles/11396.html
    бытие: http://azbyka.ru/days/ikona-pochaevskaja
-   образ: http://drevo-info.ru/images/001/001885.jpg
-   помин:
-    - дата: пт.свет
+   образ:
+    - http://drevo-info.ru/images/001/001885.jpg
+    - http://azbyka.ru/days/assets/img/icons/66/p18iofjs0i9e41mod1r6k36814eg4.jpg
+    - http://azbyka.ru/days/assets/img/icons/66/4985593d3b5a2e11af1e4301b0e23e1b.jpg
+    - http://azbyka.ru/days/assets/img/icons/66/p18iofjs0j1jfm18hj6p116tr1pja8.jpg
+   событие:
+    - год: 1240
       описание: явл
+      образ: http://azbyka.ru/days/assets/img/icons/66/p18iofjs0irirr7u1n831cc51ar53.jpg
+    - год: 1559
+      описание: прен
+    - год: 1597
+      описание: прен.1
+      место: скит. Почаевская гора
     - год: 1675
       дата: 23.07
       описание: избав
-      служба: Почаевскому образу служба
-    - год: 1559
-      дата: 08.09
-      описание: прен
+   помин:
+    - дата: пт.свет
+      описание: само
+    - дата: 23.07
+      описание: избав
+      служба:
+       - Почаевскому образу служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_23.pdf
+    - дата: 08.09
+      описание: прен.1
