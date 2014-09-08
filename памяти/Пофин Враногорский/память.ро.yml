@@ -3,9 +3,11 @@
    имя: Пофин
    описание: святитель Враногорский, Лионский
    чин: стсвт
-   собор: врнг,фран
+   собор: 43мл,галл,франц
    вики: http://drevo-info.ru/articles/1731.html
-   образ: http://drevo-info.ru/images/001/000170.jpg
+   образ:
+    - http://drevo-info.ru/images/001/000170.jpg
+    - http://drevo-info.ru/images/001/001004.jpg
    событие:
       год: 177
       описание: прств
