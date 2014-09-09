@@ -1,0 +1,30 @@
+---
+Климент Охридский:
+   имя: Климент
+   описание: святитель Охридский, Болгарский
+   чин: рап
+   собор: слав,болг,7чис,пис
+   вики: http://drevo-info.ru/articles/11697.html
+   бытие: http://azbyka.ru/days/sv-kliment-ohridskij
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/4171/67222604597a9b2ae34249203c11623f.jpg
+    - http://azbyka.ru/days/assets/img/saints/4171/3351247dc8939b858c2c1e7b3e9ff72e.jpg
+    - http://azbyka.ru/days/assets/img/saints/4171/b77c054ce69b2787f34cf18d75a84495.jpg
+    - http://azbyka.ru/days/assets/img/saints/4171/8a465a8f809aed50af03d4a82f38f60f.jpg
+    - http://azbyka.ru/days/assets/img/saints/4171/0426b60f9e8e5cb0ca42924c4798c5e2.jpg
+   событие:
+    - год: IX
+      описание: ржд
+    - год: 916
+      дата: 17.07
+      описание: прств
+    - год: 916
+      описание: пгбр
+      место: Охридский Пантелеимонский монастырь
+   помин:
+    - дата: 22.11
+      собор: болг
+      описание: само
+    - дата: 25.11
+      описание: само
+      служба: Клименту Охридскому служба
