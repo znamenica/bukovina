@@ -1,12 +1,23 @@
 ---
 Параскева Римская:
    имя: Параскева
-   прозвище: Римская
-   чин: мц
-   вики: http://drevo-info.ru/articles/9749.html
-   бытие: http://azbyka.ru/days/sv-paraskeva-rimskaja-1
-   образ: http://pravicon.com/icon-2668
-   помин:
-      год: ок. 66
-      дата: 20.03
+   описание: Римская
+   чин: прмц
+   вики: http://drevo-info.ru/articles/11628.html
+   бытие: http://azbyka.ru/days/sv-paraskeva-rimskaja
+   образ:
+    - http://pravicon.com/icon-2668
+    - http://azbyka.ru/days/assets/img/saints/5762/p18jj8a9um9rond1b02l6svo14.jpg
+    - http://azbyka.ru/days/assets/img/saints/5762/p18jj8a9un1u07rh91a8hb493gd6.jpg
+   событие:
+      год: II
       описание: прств
+      место: вид.ныне близ.Топлово. вид.Таврида
+   помин:
+      дата: 26.07
+      описание: само
+      служба:
+       - Параскеве Римской служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_26.pdf
+       - http://azbyka.ru/days/caa/519
+       - http://azbyka.ru/days/caa/520
