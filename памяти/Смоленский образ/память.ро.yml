@@ -1,13 +1,44 @@
 ---
 Смоленский образ:
-   имя: Смоленский
-   описание: образ Богородицы Умиление
+   имя: Смоленский, Путеводительница, Одигитрия
+   описание: образ Богородицы
    чин: обр
-   вики: http://drevo-info.ru/articles/8213.html
-   бытие: http://azbyka.ru/days/ikona-umilenie-smolenskaja
-   образ: http://azbyka.ru/days/assets/img/icons/59/9e2a82a121e13439869295611f71b91f.jpg
+   вики: http://drevo-info.ru/articles/11097.html
+   бытие: http://azbyka.ru/days/ikona-odigitrija-smolenskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/44/0c54b510f8a21b4e966eab5e11a0b613.jpg
+    - http://azbyka.ru/days/assets/img/icons/44/64710808ed61397b32cd051df201ed43.jpg
+    - http://azbyka.ru/days/assets/img/icons/44/90c084ec49ee24327d0e9112146f75a8.jpg
+    - http://azbyka.ru/days/assets/img/icons/44/87ec239ee8adfdc494676f073df12257.jpg
+    - http://azbyka.ru/days/assets/img/icons/44/7c239695ff366b65289c924bfdbe4864.jpg
+    - http://azbyka.ru/days/assets/img/icons/44/64606c534f76d064f181085ba9447aa1.jpg
+   событие:
+    - год: I
+      описание: напис
+    - год: I
+      описание: прен
+      место: Антиохия
+    - год: V
+      описание: прен.1
+      место: Влахернская церква. Константинополь. Византия
+    - год: 1046
+      описание: прен.2
+      место: Русь
+    - год: нач.XII
+      описание: прен.3
+      место: Успенский собор. Смоленск
+    - год: 1398
+      описание: прен.4
+      место: Благовещенский собор. Кремль. Москва
+    - год: 1456
+      описание: прен.5
+      место: Смоленск
+    - год: 1525
+      описание: чудо
    помин:
-      год: 1103
-      дата: 19.03
-      описание: явл
-      служба: Смоленскию образу служба
+      дата: 28.07
+      описание: чудо
+      служба:
+       - Смоленскому образу служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_28.pdf
+       - http://azbyka.ru/days/ikona-odigitrija-smolenskaja

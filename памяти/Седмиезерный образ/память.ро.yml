@@ -3,10 +3,13 @@
    имя: Седмиезерный
    описание: образ Богородицы
    чин: обр
-   вид: Путеводица образ
+   вид: Смоленский образ
    вики: http://drevo-info.ru/articles/11528.html
    бытие: http://azbyka.ru/days/ikona-odigitrija-sedmiezernaja
-   образ: http://drevo-info.ru/images/001/001930.jpg
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/51/p188lg2sqv2vabd1msh4v41ab25.jpg
+    - http://azbyka.ru/days/assets/img/icons/51/p188lg2r0fsec143r1dob1r611tkc3.jpg
+    - http://drevo-info.ru/images/001/001930.jpg
    событие:
     - год: 1615
       дата: 13.10
