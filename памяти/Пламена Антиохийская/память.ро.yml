@@ -1,0 +1,26 @@
+---
+Пламена Антиохийская:
+   имя: Серафима
+   описание: Римская, дева Антиохийская
+   чин: мц
+   собор: сир,рим
+   вики: http://drevo-info.ru/articles/1841.html
+   бытие: http://azbyka.ru/days/sv-serafima-rimskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/6041/p18sl0u3uv1smrbtj1us918kluno7.jpg
+    - http://azbyka.ru/days/assets/img/saints/6041/p18sl0q9gdntv1if61b1oi742j93.jpg
+    - http://azbyka.ru/days/assets/img/saints/6041/p18sl0q9gf98s1lk219nq7faqhp4.jpg
+    - http://drevo-info.ru/images/003/009490.jpg
+   событие:
+    - год: I-II
+      описание: ржд
+      место: Антиохия
+    - год: 117-138
+      описание: прств
+      место: Рим
+   помин:
+      дата: 29.07
+      описание: само
+      служба:
+       - Пламене Антиохийской служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_29.pdf
