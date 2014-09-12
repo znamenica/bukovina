@@ -2,14 +2,24 @@
 Сила Коринфский:
    имя: Сила
    описание: апостол от 70-ти, святитель Коринфский
-   чин: ап70
+   чин: ап
+   собор: ап70,греч
    вики: http://drevo-info.ru/articles/6547.html
-   образ: http://drevo-info.ru/images/001/001184.jpg
+   бытие: http://azbyka.ru/days/sv-sila-silos
+   образ:
+    - http://drevo-info.ru/images/001/001184.jpg
+    - http://pravicon.com/icon-2878
+    - http://drevo-info.ru/images/001/001185.jpg
+    - http://azbyka.ru/days/assets/img/saints/1175/adf6e264648e4cdff94c6193ae523e74.jpg
+    - http://azbyka.ru/days/assets/img/saints/1175/0a8feaf158661cade3f3b597d37924cc.jpg
    событие:
       год: I
       описание: прств
+      место: Коринф
    помин:
       дата: 30.07
       описание: само
-      служба: Силе Коринфскому, Силуану Солунскому, Крискенту Галатийскому, Епенету Карфагенскому,
+      служба:
+       - Силе Коринфскому, Силуану Солунскому, Крискенту Галатийскому, Епенету Карфагенскому,
          Андронику Сирмийско-Паннонскому служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_30.pdf
