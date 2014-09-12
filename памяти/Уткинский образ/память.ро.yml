@@ -4,7 +4,9 @@
    описание: образ Богородицы
    чин: обр
    вид: Ильинско-Черниговский образ
-   бытие: http://azbyka.ru/days/ikona-tambovskaja-utkinskaja
+   бытие:
+    - http://azbyka.ru/days/ikona-tambovskaja-utkinskaja
+    - http://www.eparhia-tmb.ru/o-eparxii/palomnicheskie-mesta/tambovskaya-ikona-bozhiej-materi/
    образ: http://drevo-info.ru/images/001/001687.jpg
    событие:
     - год: 1692
@@ -19,6 +21,9 @@
     - год: нач.XIX
       описание: чудо
    помин:
-      дата: 16.04
+    - дата: 16.04
       описание: явл
       служба: Уткинскому образу служба
+    - дата: 28.07
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_28.pdf
