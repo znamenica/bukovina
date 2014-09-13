@@ -3,9 +3,13 @@
    имя: Влахернский
    описание: образ Богородицы
    чин: обр
-   вики: http://drevo-info.ru/articles/10571.html
+   вики:
+    - http://drevo-info.ru/articles/10571.html
+    - https://ru.wikipedia.org/wiki/Влахернская_икона
    бытие: http://azbyka.ru/days/ikona-vlahernskaja
-   образ: http://drevo-info.ru/images/001/001733.jpg
+   образ:
+    - http://drevo-info.ru/images/001/001733.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/3/31/Vlahernskaya.jpg
    событие:
     - год: до 437 
       описание: явл
