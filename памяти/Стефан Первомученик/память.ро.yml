@@ -6,30 +6,41 @@
    собор: евр
    вики: http://drevo-info.ru/articles/2653.html
    бытие: http://azbyka.ru/days/sv-stefan
-   образ: http://drevo-info.ru/images/001/001189.jpg
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/221/p18facjf2h1l11i8e1pon1dil19ar7.jpg
+    - http://azbyka.ru/days/assets/img/saints/221/8c6da8441dca6f41404f9c06962beb5c.jpg
+    - http://drevo-info.ru/images/001/001189.jpg
    событие:
     - год: ок. 4
       описание: ржд
     - год: ок. 34
       описание: прств
-    - год: 428
-      дата: 15.09
+      образ:
+       - http://azbyka.ru/days/assets/img/saints/221/p18fachhb2rep5648qu1ivm1a324.JPG
+       - http://azbyka.ru/days/assets/img/saints/221/f1254e6cc4063e4bfb87fa28327eb3b7.jpg
+    - год: 415
       описание: обр
-    - год: 428
+      место: Гамла село. Палестина
+    - год: ок.428
       описание: прен
       место: Лаврентьевская церква. Константинополь
     - год: по 428
       дата: 02.08
-      описание: прен
+      описание: прен.1
       место: Стефановская церква. Константинополь
    помин:
     - дата: 15.06
       собор: греч
       описание: само
     - дата: 02.08
-      описание: прен
+      описание: прен.1
+      служба:
+       - Стефану Первомученику на пренесение мощей служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_02.pdf
     - дата: 15.09
       описание: обр
     - дата: 27.12
       описание: само
-      слежба: Стефану Первомученику служба
+      служба:
+       - Стефану Первомученику служба
+       - http://azbyka.ru/days/caa/83
