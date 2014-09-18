@@ -1,0 +1,28 @@
+---
+Толгский образ:
+   имя: Толгский
+   описание: образ Богородицы
+   чин: обр
+   вики: http://drevo-info.ru/articles/6607.html
+   бытие: http://azbyka.ru/days/ikona-tolgskaja
+   образ:
+    - http://drevo-info.ru/images/001/001191.jpg
+    - http://azbyka.ru/days/assets/img/icons/316/add43a539533b6c1d6424b3a33eb1a3e.jpg
+    - http://azbyka.ru/days/assets/img/icons/316/6a8c2dd53bc82144bd693bd898a34a24.jpg
+    - http://azbyka.ru/days/assets/img/icons/316/236810b3cdb4898363c8fa8f86e8f9a8.jpg
+   событие:
+    - год: 1314
+      дата: 08.08
+      описание: явл
+      место: Волги берег. Толжье. Ярославщина
+    - год: с 1314
+      описание: прен
+      место: Толгский Введенский монастырь. Ярославщина
+   помин:
+      дата: 08.08
+      описание: явл
+      служба:
+       - Толгскому образу служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_08.pdf
+       - http://azbyka.ru/days/caa/736
+       - http://azbyka.ru/days/caa/489
