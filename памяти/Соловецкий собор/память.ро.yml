@@ -1,13 +1,20 @@
 ---
 Соловецкий собор:
-   описание: собор святих Соловецких
+   описание: собор святых Соловецких
    чин: сбр
    вики: http://drevo-info.ru/articles/4972.html
-   образ: http://drevo-info.ru/images/002/008321.jpg
+   бытие: http://azbyka.ru/days/sv-sobor-soloveckih-svjatyh
+   образ:
+    - http://drevo-info.ru/images/002/008321.jpg
+    - http://azbyka.ru/days/assets/img/saints/6485/p191vptsrro3d1mhcg7f8344vv3.jpg
+    - http://azbyka.ru/days/assets/img/saints/6485/p181dg1189jfert2198c8rjehm3.jpg
    событие:
       год: XIX-XX
       описание: просл
    помин:
       дата: 09.08
       описание: само
-      служба: http://azbyka.ru/days/caa/124
+      служба:
+       - Соловецкому собору служба
+       - http://azbyka.ru/days/assets/upload/services/sluzhba_novomch._i_isp_soloveckim_0.pdf
+       - http://azbyka.ru/days/caa/124

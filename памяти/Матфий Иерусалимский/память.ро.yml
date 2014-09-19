@@ -1,0 +1,25 @@
+---
+Матфий Иерусалимский:
+   имя: Матфий
+   описание: апостол от 70-ти
+   чин: ап
+   собор: ап12,ап70,плст
+   вики: http://drevo-info.ru/articles/6610.html
+   бытие: http://azbyka.ru/days/sv-matfij
+   образ:
+    - http://drevo-info.ru/images/003/009510.jpg
+    - http://azbyka.ru/days/assets/img/saints/976/aa74fa954ca00da4928feed5f0b17cd3.jpg
+   событие:
+    - год: I до нэ
+      описание: ржд
+      место: Вифлеем
+    - год: ок. 63
+      описание: прств
+      образ: http://azbyka.ru/days/assets/img/saints/976/1e8f6d729b943455e3336234dbf20634.jpg
+      место: Иерусалим
+   помин:
+      дата: 09.08
+      описание: само
+      служба:
+       - Матфию Иерусалимскому служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_09.pdf
