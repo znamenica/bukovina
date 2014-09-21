@@ -1,0 +1,29 @@
+---
+Лаврентий Римский:
+   имя: Лаврентий
+   описание: архидиакон Римский
+   чин: сщмч
+   собор: рим
+   вики: http://drevo-info.ru/articles/6617.html
+   бытие: http://azbyka.ru/days/sv-lavrentij-rimskij
+   образ:
+    - http://drevo-info.ru/images/001/001193.jpg
+    - http://azbyka.ru/days/assets/img/saints/691/96c4e1060dc54401304f035c47330ecc.jpg
+    - http://azbyka.ru/days/assets/img/saints/691/b6d1e0a66e6476d6b5df3113013974aa.jpg
+    - http://azbyka.ru/days/assets/img/saints/691/6f9acb9efd778a054d70b18577602326.jpg
+    - http://pravicon.com/icon-2249
+   событие:
+    - год: 258
+      дата: вид.09.08
+      описание: прств
+      место: Рим
+    - год: 258
+      дата: 10.08
+      описание: пгрб
+      место: пещера. Рим
+   помин:
+      дата: 10.08
+      описание: пгрб
+      служба:
+       - Лаврентию Римскому служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_10.pdf
