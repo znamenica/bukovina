@@ -1,0 +1,34 @@
+---
+Страстная образ:
+   имя: Страстная
+   описание: образ Богородицы
+   чин: обр
+   вики: http://drevo-info.ru/articles/6645.html
+   бытие: http://azbyka.ru/days/ikona-strastnaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/192/1b994af2e06420e16a21e3cc3e469686.jpg
+    - http://drevo-info.ru/images/001/001201.jpg
+    - http://azbyka.ru/days/assets/img/icons/192/5e5cbc434f8f919dfb95f6822c7391a0.jpg
+    - http://azbyka.ru/days/assets/img/icons/192/c4d813e99c5ac197b1a1c971f6ba866c.jpg
+    - http://azbyka.ru/days/assets/img/icons/192/38897a6daecdb1b11c219594039e120b.jpg
+   событие:
+    - год: до 1641
+      описание: обр
+      место: Палицы
+    - год: 1641
+      дата: 13.08
+      описание: прен
+      место: Москва
+    - год: 1654
+      дата: 13.08
+      описание: прен.1
+      место: Страстной монастырь. Москва
+   помин:
+    - дата: вс.6.по пасхе
+      описание: само
+    - дата: 13.08
+      описание: прен,прен.1
+      служба:
+       - Страстной образу служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_13.pdf
+       - http://azbyka.ru/days/caa/487

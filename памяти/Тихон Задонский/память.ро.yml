@@ -7,8 +7,14 @@
    чин: свт
    собор: слав,рус,врнж,лип,твер,3рст
    вики: http://drevo-info.ru/articles/243.html
-   бытие: http://pravicon.com/info-3492
-   образ: http://pravicon.com/icon-3003
+   бытие: http://azbyka.ru/days/sv-tihon-zadonskij
+   образ:
+    - http://pravicon.com/icon-3003
+    - http://azbyka.ru/days/assets/img/saints/4142/c4255a33e9d0047cc0d7eaabea981f5b.jpg
+    - http://azbyka.ru/days/assets/img/saints/4142/p191vvhbht142aun610r01k841ek66.jpg
+    - http://azbyka.ru/days/assets/img/saints/4142/f04dd94be03314d2377e9a6c29275b73.jpg
+    - http://azbyka.ru/days/assets/img/saints/4142/p191vvhbhtfhajpgok4jbo1ah5.jpg
+   отечник: http://azbyka.ru/otechnik/Tihon_Zadonskij/
    событие:
     - год: 1783
       дата: 13.08
@@ -29,4 +35,8 @@
     - дата: 14.05
       описание: обр
     - дата: 13.08
-      описание: прств
+      описание: прств,обр.2
+      служба:
+       - Тихону Задонскому служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_13.pdf
+       - http://azbyka.ru/days/caa/453
