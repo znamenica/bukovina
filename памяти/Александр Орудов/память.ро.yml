@@ -7,11 +7,14 @@
    чин: присп
    собор: слав,нмр,нмс,вят
    вики: http://drevo-info.ru/articles/19484.html
-   бытие: http://co6op.narod.ru/kiril/htm/k19.html
+   бытие:
+    - http://co6op.narod.ru/kiril/htm/k19.html
+    - http://azbyka.ru/days/sv-aleksandr-urodov
    образ:
     - http://www.sanaxar.com/images/frontpage/4.jpg
     - http://newmartyros.ru/sites/default/files/icons/prpisp._aleksandr_urodov_.jpg
     - http://drevo-info.ru/images/002/008164.jpg
+    - http://pravicon.com/icon-1106
    событие:
     - год: 1876/1882
       дата: 23.04/04.04
