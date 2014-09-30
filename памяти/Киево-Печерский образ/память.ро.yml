@@ -2,16 +2,22 @@
 Киево-Печерский образ:
    имя: Киево-Печерский
    описание: образ Богородицы
-   вид: Успение
+   вид: Успение Богородицы образ
    чин: обр
    вики: http://drevo-info.ru/articles/10583.html
    бытие: http://azbyka.ru/days/ikona-pecherskaja-nerukotvorennaja
+   вики:
+    - http://azbyka.ru/days/assets/img/icons/219/p188nubv9srn7ka818pk18ul1c473.jpg
+    - http://azbyka.ru/days/assets/img/icons/219/p188nubv9usoi1b5s1a4hi9g1q2p4.jpg
    событие:
       год: 1073
       описание: прен
+      место: Киево-Печерская Лавра
    помин:
     - дата: 03.05
       описание: само
-      служба: Киево-Печерскию образу служба
+      служба:
+       - Киево-Печерскому образу служба
+       - http://azbyka.ru/days/caa/482
     - дата: 15.08
       описание: само

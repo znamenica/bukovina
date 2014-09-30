@@ -1,0 +1,22 @@
+---
+Премудрости Божией образ:
+   имя: Новгородский
+   описание: образ Премудрости Божией
+   чин: прем
+   бытие: http://azbyka.ru/days/ikona-sofija-premudrost-bozhija-novgorodskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/43/p188nj7bt4vs617ef3c7bj61flr7.jpg
+    - http://azbyka.ru/days/assets/img/icons/43/p188nj73ruq6n1se5pin1hth185j3.jpg
+    - http://azbyka.ru/days/assets/img/icons/43/p188nj7bt1184m14mgip45hje1l5.jpg
+    - http://azbyka.ru/days/assets/img/icons/43/p188nj7bt21srd1d90cp8gcn12bs6.jpg
+   событие:
+    - год: XV
+      описание: явл
+    - год: 1542
+      описание: чудо
+   помин:
+      дата: 15.08
+      описание: само
+      служба:
+       - Премудрости Божией образу служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_15.pdf

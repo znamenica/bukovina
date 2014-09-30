@@ -1,11 +1,26 @@
 ---
 Успение Богородицы:
-   имя: Успение Богородицы
-   описание: 
+   описание: Успение Богородицы
    чин: сбт
+   собор: 12пр
+   вики: http://drevo-info.ru/articles/1327.html
+   бытие: http://azbyka.ru/days/prazdnik-uspenie-presvjatoj-vladychicy-nashej-bogorodicy-i-prisnodevy-marii
+   событие:
+    - год: I
+      описание: само
+    - год: ок.V
+      описание: просл
    помин:
-      дата: 14.08
+    - дата: 14.08
       описание: пред
       служба:
        - Предпразднеству Успения Богородицы и Михею Морасфитянину служба
        - http://azbyka.ru/days/assets/upload/minei/08/minea_08_14.pdf
+    - дата: 15.08
+      описание: само
+      служба:
+       - Успению Богородицы служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_15.pdf
+       - http://azbyka.ru/days/caa/245
+       - http://azbyka.ru/days/caa/246
+       - http://azbyka.ru/days/caa/247
