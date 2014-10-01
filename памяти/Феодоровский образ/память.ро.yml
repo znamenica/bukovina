@@ -1,0 +1,39 @@
+---
+Феодоровский образ:
+   имя: Феодоровский, Костромской
+   описание: образ Богородицы
+   чин: обр
+   вики: http://drevo-info.ru/articles/9649.html
+   бытие: http://azbyka.ru/days/ikona-feodorovskaja
+   образ:
+    - http://drevo-info.ru/images/001/001608.jpg
+    - http://azbyka.ru/days/assets/img/icons/8/p18ioea8o6l9k1fh4pm540a1tjh4.jpg
+    - http://azbyka.ru/days/assets/img/icons/8/p18ioea8o5a7f1t151k3d1ftv8et3.jpg
+    - http://azbyka.ru/days/assets/img/icons/8/ac93e20e550d70b2476a979dc3128be0.jpg
+    - http://azbyka.ru/days/assets/img/icons/8/cb49d7fc46050091c5afc2c41754b492.jpg
+   событие:
+    - год: I
+      описание: напис
+      место: вид.Палестина
+    - год: до 1238
+      описание: обр
+      место: часовня. Городец
+    - год: 1239
+      описание: прств
+    - год: 1263-1276
+      описание: прен
+      место: Кострома
+    - год: 1613
+      описание: блслв
+    - год: XVII
+      описание: чудо
+   помин:
+    - дата: 14.03
+      описание: блгсл
+    - дата: 16.08
+      описание: само
+      служба:
+       - Феодоровскому образу служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_16.pdf
+       - http://azbyka.ru/days/caa/433
+       - http://azbyka.ru/days/caa/434
