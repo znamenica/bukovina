@@ -3,15 +3,21 @@
    имя: Иоанн
    описание: Рильский, Рыльский, небесный покрвитель Болгарского народа
    чин: прп
-   собор: слав,болг
+   собор: болг
    вики:
     - http://drevo-info.ru/articles/11563.html
     - http://ru.wikipedia.org/wiki/Иоанн_Рильский
-   бытие: http://www.nsad.ru/articles/svyatyni-evropy-ioann-rylskij
+   бытие:
+    - http://www.nsad.ru/articles/svyatyni-evropy-ioann-rylskij
+    - http://azbyka.ru/days/sv-ioann-rylskij
    образ:
     - http://drevo-info.ru/images/001/001940.jpg
     - http://krestobogorodsky.ru/wp-content/uploads/2012/11/7b36788d1a5e7727888120f2040776b9-e1351703891503.jpg
     - http://pravicon.com/icon-1972
+    - http://azbyka.ru/days/assets/img/saints/5253/p1920crdjlud298qpm3lksce33.jpg
+    - http://azbyka.ru/days/assets/img/saints/5253/7becf152946f9c98df11cb4fdd4f1700.jpg
+    - http://azbyka.ru/days/assets/img/saints/5253/f65d7e013098fe94a2e05f6bc64c4945.jpg
+    - http://azbyka.ru/days/assets/img/saints/5253/386355cff984355160808efb6d1a5b88.jpg
    событие:
     - год: ок. 876
       описание: ржд
@@ -49,6 +55,9 @@
       служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_01.pdf
     - дата: 18.08
       описание: прств
-      служба: Иоанну Рильскому служба
+      служба:
+       - Иоанну Рильскому служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_18.pdf
+       - http://azbyka.ru/days/caa/178
     - дата: 19.10
       описание: прен.4

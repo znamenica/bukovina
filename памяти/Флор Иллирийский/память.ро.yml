@@ -1,0 +1,29 @@
+---
+Флор Иллирийский:
+   имя: Флор
+   описание: Иллирийский, брат Лавра Иллирийского
+   вики: http://drevo-info.ru/articles/6727.html
+   бытие: http://azbyka.ru/days/sv-flor-illirijskij
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/4820/e4e18631799a115383f02619cbc7753e.jpg
+    - http://azbyka.ru/days/assets/img/saints/4820/2aa4b8e05f4e778dcb9bfe3e722d78ba.jpg
+    - http://azbyka.ru/days/assets/img/saints/4820/ad858c0b0a1b7342af73ad97a34900c2.jpg
+    - http://drevo-info.ru/images/002/004031.jpg
+   событие:
+    - год: I-II
+      описание: ржд
+      место: Византия
+    - год: II
+      описание: прств
+      место: Иллирия
+      образ: http://azbyka.ru/days/assets/img/saints/4820/2d80b1c536305c276c1f5b14e1140789.jpg
+    - год: до 1200
+      описание: прен
+      место: Константинополь
+   помин:
+      дата: 18.08
+      описание: само
+      служба:
+       - Флору и Лавру Иллирийским служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_18.pdf
+       - http://azbyka.ru/days/caa/466
