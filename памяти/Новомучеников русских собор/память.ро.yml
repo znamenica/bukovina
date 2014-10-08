@@ -1,11 +1,21 @@
 ---
 Новомучеников русских собор:
    описание: собор новомучеников и исповедников Русской Церкви
-   чин: соб
-   сокращение: нмр
+   чин: сбр
+   крат: нмр
+   собор: рус
    бытие: http://azbyka.ru/days/sv-sobor-novomuchenikov-i-ispovednikov-rossijskih
+   бытие: http://drevo-info.ru/articles/2769.html
+   образ:
+    - http://drevo-info.ru/images/002/004874.jpg
+    - http://drevo-info.ru/images/003/009804.jpg
+    - http://drevo-info.ru/images/003/009805.jpg
+    - http://drevo-info.ru/images/002/009189.jpg
+    - http://drevo-info.ru/images/002/004873.jpg
+   событие:
+      год: 1917-1918
+      описание: просл
    помин:
-      год: 2000
-      дата: 27.01
-      описание: прств
+      дата: вс.близ 25.01
+      описание: само
       служба: Новомучеников русских собору служба

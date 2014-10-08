@@ -1,14 +1,34 @@
 ---
 Геннадий Костромской:
-   имя: Геннадий
-   прозвище: Любимоградский, Костромской
+   имя: в иночестве Геннадий, в крещении Григорий
+   описание: настоятель Костромской, Любимоградский
    чин: прп
-   собор: слав,рус
+   собор: ряр
    вики: http://drevo-info.ru/articles/8750.html
    бытие: http://azbyka.ru/days/sv-gennadij-kostromskoj-i-ljubimogradskij
-   образ: http://pravicon.com/icon-1499
-   помин:
-      год: 1565
+   образ:
+    - http://pravicon.com/icon-1499
+    - http://drevo-info.ru/images/003/010324.jpg
+    - http://azbyka.ru/days/assets/img/saints/1151/p1904svnsj9nnv1h1tues8fh673.jpg
+    - http://azbyka.ru/days/assets/img/saints/1151/p1904svnslnvd9npdbp1n5ms9u4.jpg
+    - http://azbyka.ru/days/assets/img/saints/1151/p1904svnsm17r819arm2ehd9n575.jpg
+    - http://azbyka.ru/days/assets/img/saints/1151/d97977d745a55ac6750b653a0c27f384.jpg
+   событие:
+    - год: 1565
+      описание: ржд
+      место: Могилев
+    - год: до 1529
+      описание: иноч
+      место: Введенская Комельская обитель
+    - год: 1565
       дата: 23.01
       описание: прств
+    - год: 1646
+      дата: 19.08
+      описание: просл
+   помин:
+    - дата: 23.01
+      описание: прств
       служба: Геннадию Костромскому служба
+    - дата: 19.08
+      описание: обр

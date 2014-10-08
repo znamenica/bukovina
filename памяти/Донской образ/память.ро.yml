@@ -1,0 +1,36 @@
+---
+Донской образ:
+   имя: Донской
+   описание: образ Богородицы
+   чин: обр
+   вики: http://drevo-info.ru/articles/6743.html
+   бытие: http://azbyka.ru/days/ikona-donskaja
+   образ:
+    - http://drevo-info.ru/images/001/001209.jpg
+    - http://azbyka.ru/days/assets/img/icons/128/0cde4665702558e0984cc1d88813f47f.jpg
+    - http://azbyka.ru/days/assets/img/icons/128/e374fe1899b17dd7fb8f61057c4c0e02.jpg
+    - http://azbyka.ru/days/assets/img/icons/128/007fbaa7ad569d569cdab9326eb830eb.jpg
+    - http://azbyka.ru/days/assets/img/icons/128/9bf1a023ce9e93a49c850dab09beb467.jpg
+    - http://azbyka.ru/days/assets/img/icons/128/e0d221cace10a6ed8dce509d04d0c4f1.jpg
+    - http://azbyka.ru/days/assets/img/icons/128/bd5ed32efaa27290c9fa1e7f14dfa9dd.jpg
+   событие:
+    - год: 1380-1399
+      описание: напис
+    - год: 1591
+      описание: прен
+      место: Благовещенский собор. Кремль. Москва
+    - год: 1914-1919
+      описание: прем
+      место: Госудаственный исторический музей
+    - год: 1930
+      описание: прем
+      место: Государственная Третьяковская галерея
+   помин:
+      дата: 19.08
+      описание: само
+      служба:
+       - Донскому образу служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_19.pdf
+       - http://azbyka.ru/days/caa/552
+       - http://azbyka.ru/days/caa/553
+       - http://azbyka.ru/days/caa/554
