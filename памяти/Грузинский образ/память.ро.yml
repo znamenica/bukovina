@@ -1,0 +1,29 @@
+---
+Грузинский образ:
+   имя: Грузинский, Черногорский, Красногорский
+   описание: образ Богородицы
+   чин: обр
+   вики: http://drevo-info.ru/articles/8283.html
+   бытие: http://azbyka.ru/days/ikona-gruzinskaja
+   образ:
+    - http://drevo-info.ru/images/001/001425.jpg
+    - http://azbyka.ru/days/assets/img/icons/298/41d6399123b981ddc5e3de8d81b0e97e.jpg
+    - http://azbyka.ru/days/assets/img/icons/298/d4d7f96ffbee6b03c160744f57a71f53.jpg
+   событие:
+    - год: 1650
+      описание: прен
+      место: Красногорский монастырь. Архангелогородщина
+    - год: 1654
+      описание: прен.1
+      место: Москва
+    - год: 1658
+      собор: рус
+      описание: просл
+   помин:
+      дата: 22.08
+      описание: само
+      служба:
+       - Грузинскому образу служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_22.pdf
+       - http://azbyka.ru/days/caa/550
+       - http://azbyka.ru/days/caa/549
