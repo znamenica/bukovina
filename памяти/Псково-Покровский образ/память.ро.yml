@@ -1,0 +1,20 @@
+---
+Псково-Покровский образ:
+   имя: Псково-Покровский
+   описание: образ Богородицы
+   чин: обр
+   вид: Покрова Богородицы образ
+   вики: http://drevo-info.ru/articles/7397.html
+   бытие: http://azbyka.ru/days/ikona-pskovo-pokrovskaja-javlenie-bogomateri-starcu-dorofeju
+   событие:
+    - год: 1581
+      дата: 07.09
+      описание: явл
+    - год: 1581
+      описание: чудо
+   помин:
+      дата: 01.10
+      описание: само
+      служба:
+       - Псково-Покровскому образу служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_01.pdf

@@ -1,0 +1,19 @@
+---
+Покрова Богородицы образ:
+   имя: Покров Богородицы
+   описание: образ Богородицы
+   чин: обр
+   бытие: http://azbyka.ru/days/ikona-pokrov-presvjatoj-bogorodicy
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/318/p188li655m1rqq1q3u133s1fpk1acfc.jpg
+    - http://azbyka.ru/days/assets/img/icons/318/p188li5nmv15b8u3s1fortft1vo37.jpg
+    - http://azbyka.ru/days/assets/img/icons/318/p188li655n17busdod40695e0ed.jpg
+    - http://azbyka.ru/days/assets/img/icons/318/p188lhv0306phd92b351g354fo3.jpg
+    - http://azbyka.ru/days/assets/img/icons/318/p188li5h9vecqcl7103u7g51l705.jpg
+    - http://azbyka.ru/days/assets/img/icons/318/p188li655j1pte1114bd4107dir4a.jpg
+   событие:
+      год: I
+      описание: явл
+   помин:
+      дата: 01.10
+      описание: само

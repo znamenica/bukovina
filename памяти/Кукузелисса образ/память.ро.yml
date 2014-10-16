@@ -1,0 +1,15 @@
+---
+Кукузелисса образ:
+   имя: Кукузелисса
+   описание: образ Богородицы
+   чин: обр
+   бытие: http://azbyka.ru/days/ikona-kukuzelissa
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/202/p188krhis41f0p14ohi4mbdmt943.jpg
+    - http://azbyka.ru/days/assets/img/icons/202/p188krhis5gr71qep13i11g5d76m4.jpg
+   событие:
+      год: XII
+      описание: явл
+   помин:
+      дата: 01.10
+      описание: само

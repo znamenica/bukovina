@@ -4,6 +4,8 @@
    чин: прдм
    собор: груз
    вики: http://drevo-info.ru/articles/25665.html
+   бытие: http://azbyka.ru/days/sv-prazdnovanie-v-chest-hitona-gospodnja-i-stolpa-zhivotvorjashchego
+   образ: http://azbyka.ru/days/assets/img/saints/6508/p186i7j0mqhc2c6p1h4t14uhujq5.jpg
    событие:
       год: ок. 330
       описание: прств
@@ -14,3 +16,6 @@
     - дата: 01.10
       описание: само
       собор: груз
+      служба:
+       - Древу Животворящему служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_01.pdf
