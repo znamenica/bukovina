@@ -1,17 +1,25 @@
 ---
 Кассиан Грек:
-   имя: Кассиан, в миру Константин
+   имя: в иночестве Кассиан, в крещении Константин
    прозвище: Грек
    описание: чудотворец Угличский
    чин: прп
-   собор: cлав,рус,ряр
-   вики: http://drevo-info.ru/articles/4063.html
+   собор: ряр
+   вики: http://drevo-info.ru/articles/4061.html
    бытие: http://azbyka.ru/days/sv-kassian-uglichskij-grek
-   образ: http://pravicon.com/icon-2129
+   образ:
+    - http://pravicon.com/icon-2129
+    - http://azbyka.ru/days/assets/img/saints/4943/p186s970a91f1v17rb1r5m1nmd1jms3.jpg
+    - http://azbyka.ru/days/assets/img/saints/4943/p186sadehc1qshnhnuuj5okuo5.jpg
    событие:
-    - год: XV
+    - год: кон.XIV-нач.XV
+      описание: ржд
+    - год: кон.XIV-нач.XV
+      описание: крещ
+      тез: Константин Великий
+    - год: по 1477
       дата: 21.05
-      описание: тез
+      описание: иноч
     - год: 1504
       дата: 02.10
       описание: прств
@@ -20,7 +28,9 @@
       описание: слжб
    помин:
     - дата: 21.05
-      описание: тез
+      описание: крещ
     - дата: 02.10
       описание: прств
-      служба: Кассиану Греку служба
+      служба:
+       - Кассиану Греку служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_02.pdf

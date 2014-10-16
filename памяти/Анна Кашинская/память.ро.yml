@@ -4,16 +4,24 @@
    отчество: Дмитриевна
    описание: великая княгиня Кашинская
    чин: блгв
-   собор: слав,рус,твер
+   собор: твер
    вики: http://drevo-info.ru/articles/4059.html
    бытие: http://azbyka.ru/days/sv-anna-v-inochestve-efrosinja-kashinskaja
-   образ: http://drevo-info.ru/images/001/000633.jpg
+   образ:
+    - http://drevo-info.ru/images/001/000633.jpg
+    - http://azbyka.ru/days/assets/img/saints/5877/p1915e3uve1iq61hg923nraelia5.jpg
+    - http://azbyka.ru/days/assets/img/saints/5877/p1915e3uvf1s1r1hq01icr1nt97d0a.jpg
+    - http://azbyka.ru/days/assets/img/saints/5877/p1915e3uve17f4rmk1tipr7v14df6.jpg
+    - http://azbyka.ru/days/assets/img/saints/5877/p1915e3uvekdr1pga1kj10mndic4.jpg
+    - http://azbyka.ru/days/assets/img/saints/5877/p1915e3uvdej31l5luc8c7fd13.jpg
+    - http://azbyka.ru/days/assets/img/saints/5877/p1915e3uvfp2qg901a8q18j2at98.jpg
+    - http://azbyka.ru/days/assets/img/saints/5877/p1915e3uvf8gk17hj7uj1g0e1tsd7.jpg
    событие:
     - год: до 1294
       описание: ржд
     - год: 1294
       описание: брак
-      муж: Михаил Тверской
+      супруг: Михаил Тверской
     - год: 1338
       дата: 02.10
       описание: прств
@@ -42,6 +50,7 @@
       описание: прств
       служба:
        - Анне Кашинской служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_02.pdf
        - http://azbyka.ru/days/caa/137
        - http://azbyka.ru/days/caa/138
     - дата: нд.по 02.10
