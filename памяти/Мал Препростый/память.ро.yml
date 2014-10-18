@@ -3,10 +3,22 @@
    имя: Павел
    прозвище: Препростый
    чин: прп
+   собор: копт
    вики: http://drevo-info.ru/articles/2222.html
    бытие: http://azbyka.ru/days/sv-pavel-preprostyj
-   помин:
-      год: IV
-      дата: 07.03
+   образ:
+    - http://drevo-info.ru/images/003/010512.jpg
+    - http://azbyka.ru/days/assets/img/saints/3446/p18i7dibcg5qi1qtl1k3l1u3d1nec4.jpg
+    - http://azbyka.ru/days/assets/img/saints/3446/p18i7dibce99v1b8f3bi1pjieii3.jpg
+    - http://azbyka.ru/days/assets/img/saints/3446/p18i7dibcganhmh91541r34flc5.jpg
+   событие:
+    - год: III
+      описание: брак
+    - год: 340
       описание: прств
+   помин:
+    - дата: 07.03
+      описание: само
+    - дата: 04.10
+      описание: само
       служба: Малу Препростому служба
