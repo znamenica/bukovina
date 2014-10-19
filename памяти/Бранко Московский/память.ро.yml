@@ -1,27 +1,53 @@
 ---
 Бранко Московский:
-   имя: Алексий, в миру Елевферий, в крещении Симеон
+   имя: в иночестве Алексий, в крещении Елевферий (Симеон)
    отчество: Фёдорович
    описание: святитель Московский и всея Руси, чудотворец, Киевский
    фамилия: Бяконт
    чин: свт
-   собор: слав,рус,вор,влад,лип,киев,мск,ниж,сам,мсвт
+   собор: врнж,влад,лип,киев,мск,ниж,сам,мсвт
    вики: http://drevo-info.ru/articles/5196.html
    бытие: http://azbyka.ru/days/sv-aleksij-moskovskij
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/872/bd14f5ab847613dd10a31c2af6e61541.jpg
+    - http://azbyka.ru/days/assets/img/saints/872/p19053nrt31u1g1a2i4d61q6kk507.jpg
+    - http://azbyka.ru/days/assets/img/saints/872/p19053nrt5bca1p95qgo6nreoh8.jpg
+    - http://azbyka.ru/days/assets/img/saints/872/8a9af556d9f1d9887de9506c5df860eb.jpg
+    - http://azbyka.ru/days/assets/img/saints/872/4fb671d3b077b7a8a2f108e04a8357da.jpg
+    - http://azbyka.ru/days/assets/img/saints/872/9e07ee6e99f0aa44174724b252e83119.jpg
+    - http://azbyka.ru/days/assets/img/saints/872/p19053mn6l5h3nc4m4h1o045hl4.jpg
+    - http://azbyka.ru/days/assets/img/saints/872/8c0285665222d2deadc171088d81037b.jpg
+   отечник: http://azbyka.ru/otechnik/Aleksij_Moskovskij/
    событие:
     - год: 1304
-      дата: 12.02
+      дата: осень
       описание: ржд
-    - год: 1378
-      дата: 12.02
-      описание: прств
+      место: Москва
+    - год: ок.1324
+      описание: иноч
+      место: вид.Богоявленский монастырь. Загородье. Москва
+    - год: 1352
+      дата: 06.12
+      описание: свят
     - год: 1431
       дата: 20.05
       описание: обр
+    - год: 1596
+      дата: 05.10
+      собор: рус
+      чин: мсвт
+      описание: просл
    помин:
     - дата: 12.02
       описание: прств
-      служба: Бранку Московскому служба
+      служба:
+       - Бранку Московскому служба
+       - http://azbyka.ru/days/caa/141
+       - http://azbyka.ru/days/caa/142
+       - http://azbyka.ru/days/caa/145
     - дата: 20.05
       описание: обр
-      служба: Бранку Московскому на обретение мощей служба
+      служба:
+       - Бранку Московскому на обретение мощей служба
+       - http://azbyka.ru/days/caa/143
+       - http://azbyka.ru/days/caa/144
