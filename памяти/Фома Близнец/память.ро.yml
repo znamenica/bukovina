@@ -5,19 +5,28 @@
    чин: ап
    собор: инд,ап12
    вики: http://drevo-info.ru/articles/4113.html
-   образ: http://drevo-info.ru/images/001/000646.jpg
+   образ:
+    - http://drevo-info.ru/images/001/000646.jpg
+    - http://azbyka.ru/days/assets/img/saints/1409/6cbf570c6b88c5448144ca262e25cc54.jpg
+    - http://azbyka.ru/days/assets/img/saints/1409/17c321df97ea7dcc32946269c7f88511.jpg
+    - http://azbyka.ru/days/assets/img/saints/1409/adb480e26dc4a1220a5af0a74e739a6c.jpg
    событие:
     - год: до 30
       описание: ржд
       место: Пансады. Галилея
     - год: 33
       описание: увер
+      образ:
+       - http://azbyka.ru/days/assets/img/saints/1409/8bedb852abb2c164fdbe3c314994bac7.jpg
+       - http://azbyka.ru/days/assets/img/saints/1409/fcd368ffbc7c700b33de371ca5ba7a41.jpg
+       - http://azbyka.ru/days/assets/img/saints/1409/ed7cc193e4fd68510af7d1c10cf0eb0b.jpg
+       - http://azbyka.ru/days/assets/img/saints/1409/c4c83927066a8fd8f38047b4c187b8e5.jpg
     - год: I
       описание: прств
       место: Мелипура. Индия
     - год: 527-565
       описание: прен
-      место: Свято-Апостольская церква. Кинстантинополь
+      место: Свято-Апостольская церква. Константинополь
    помин:
     - дата: 17.04
       описание: увер
@@ -25,4 +34,7 @@
       описание: прен
     - дата: 06.10
       описание: само
-
+      служба:
+       - Фоме Близнецу служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_06.pdf
+       - http://azbyka.ru/days/caa/271
