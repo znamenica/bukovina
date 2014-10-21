@@ -5,11 +5,20 @@
    чин: мц
    вики: http://drevo-info.ru/articles/4123.html
    бытие: http://azbyka.ru/days/sv-pelagija-tarsijskaja
-   образ: http://pravicon.com/icon-2688
+   образ:
+    - http://pravicon.com/icon-2688
+    - http://drevo-info.ru/images/001/000649.jpg
+    - http://azbyka.ru/days/assets/img/saints/6318/p190i1465dvcibg71159tpv1j6s3.jpg
    событие:
-      год: ок. 290
+    - год: сер.III
+      описание: ржд
+      место: Тарс. Малая Азия
+    - год: 287/290
       описание: прств
+      образ: http://azbyka.ru/days/assets/img/saints/6318/59b9c255794f445cdfe897b1c7938816.jpg
    помин:
-      дата: 04.05
+    - дата: 04.05
       описание: само
       служба: Пелагии Тарсийской служба
+    - дата: 07.10
+      описание: само

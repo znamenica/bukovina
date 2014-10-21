@@ -1,10 +1,30 @@
 ---
 Дубенский образ:
-   имя: Дубенский, Красногорский
+   имя: Дубенский (Дубицкий), Красногорский
    описание: образ Богородицы
    чин: обр
-   бытие: http://azbyka.ru/days/ikona-dubenskaja-krasnogorskaja
-   образ: http://azbyka.ru/days/assets/img/icons/309/p188di6ilm2ik1v231d541d3r1m605.jpg
+   вид: Умиление образ
+   вики: https://ru.wikipedia.org/wiki/Дубенская_Красногорская_икона_Божией_Матери
+   бытие:
+    - http://azbyka.ru/days/ikona-dubenskaja-krasnogorskaja
+    - http://www.pravenc.ru/text/180510.html
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/309/p188di6ilm2ik1v231d541d3r1m605.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/0/0b/Our_Lady_Dubenskaya_%28litografiya%29.jpg
+   событие:
+    - год: XVII
+      описание: явл
+      место: дуб. Черкасщина
+    - год: XVII
+      описание: прен
+      место: Георгие-Победоносецкая церковь. вид.Красногорский Покровский монастырь. Золотоношье
+    - год: 1680-1687
+      описание: прен.1
+      место: Покровский собор. Красногорский Покровский монастырь. Золотоношье
+    - год: 1923
+      описание: утр
    помин:
-      дата: препл
+    - дата: 25.01
+      описание: само
+    - дата: препл
       описание: само
