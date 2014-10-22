@@ -1,0 +1,20 @@
+---
+Волынский собор:
+   описание: собор святых Волынских
+   чин: сбр
+   крат: вол
+   вики: http://drevo-info.ru/articles/16267.html
+   бытие: http://azbyka.ru/days/sv-sobor-volynskih-svjatyh
+   образ: http://drevo-info.ru/images/002/006998.jpg
+   событие:
+    - год: 1831
+      дата: 10.10
+      описание: покая
+    - год: XIX
+      описание: просл
+   помин:
+      дата: 10.10
+      описание: покая
+      служба:
+       - Волынскому собору служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_10.pdf

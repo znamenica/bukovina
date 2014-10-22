@@ -1,16 +1,20 @@
 ---
 Амвросий Оптинский:
-   имя: Амвросий, в крещении Александр
+   имя: в иночестве Амвросий, в крещении Александр
    отчество: Михайлович
    фамилия: Гренков
    описание: иеросхимонах Оптинский
    чин: прп
-   собор: слав,рус,опт,врнж,лип,тамб
+   собор: опт,врнж,лип,тамб
    вики: http://drevo-info.ru/articles/6307.html
    бытие: http://azbyka.ru/days/sv-amvrosij-optinskij
    образ:
     - http://pravicon.com/icon-1140
     - http://drevo-info.ru/images/001/001121.jpg
+    - http://azbyka.ru/days/assets/img/saints/3712/56690aaecea55cdf48db2752aaec34b3.jpg
+    - http://azbyka.ru/days/assets/img/saints/3712/p1918p81mp81c18371a2v168p83b4.jpg
+    - http://azbyka.ru/days/assets/img/saints/3712/p1918p81mnn6q1q2s1s0v7791lhs3.jpg
+   отечник: http://azbyka.ru/otechnik/Amvrosij_Optinskij/
    событие:
     - год: 1812
       дата: 23.11
@@ -46,6 +50,7 @@
       описание: прств
       служба:
        - Амвросию Оптинскому служба
-       - http://azbyka.ru/days/caa/168
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_10.pdf
        - http://azbyka.ru/days/caa/157
+       - http://azbyka.ru/days/caa/168
        - http://azbyka.ru/days/caa/158
