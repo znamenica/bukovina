@@ -1,0 +1,16 @@
+---
+Вододательница образ:
+   имя: Вододательница
+   описание: образ Богородицы
+   чин: обр
+   бытие: http://azbyka.ru/days/ikona-vododatelnica
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/53/p188b70r6d60n16ku3h18a21li93.jpg
+    - http://azbyka.ru/days/assets/img/icons/53/p188b70t8neqi16kr10db1o5cipe5.jpg
+   событие:
+      год: XVIII-XX
+      описание: явл
+      место: Севастийскосвятская церковь. Новоспасская площадь. Москва
+   помин:
+      дата: 11.10
+      описание: само

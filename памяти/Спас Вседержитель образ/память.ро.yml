@@ -1,0 +1,22 @@
+---
+Спас Вседержитель образ:
+   имя: Спас Вседержитель
+   описание: образ Спаса Христа
+   чин: спас
+   вики: https://ru.wikipedia.org/wiki/Спас_Вседержитель
+   образ:
+    - https://upload.wikimedia.org/wikipedia/commons/8/83/Spas_Vsederzhitel_Feofan_Grek_Novgorod.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/4/4c/Cefalu_Christus_Pantokrator.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/7/7f/Empress_Zoe_mosaic_Hagia_Sophia.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/7/75/Codex_Bruchsal_1_01v_cropped.jpg
+   событие:
+    - год: IV-VI
+      описание: напис
+      место: Византия
+    - год: VII
+      описание: чудо
+      место: Берит (ныне Бейрут)
+      бытие: http://lib.eparhia-saratov.ru/books/05d/dimitrii_rost/dimitrii_rost1/886.html
+   помин:
+      дата: 11.10
+      описание: чудо

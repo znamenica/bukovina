@@ -1,10 +1,13 @@
 ---
 Спас Всемилостивый:
    описание: Спас Всемилостивый
-   чин: спс
+   чин: спас
+   вид: Спас Вседержитель образ
    вики: http://drevo-info.ru/articles/1860.html
    бытие: http://azbyka.ru/days/prazdnik-prazdnestvo-vsemilostivomu-spasu-i-presvjatoj-bogorodice-1164
-   образ: http://pravicon.com/icon-2849
+   образ:
+    - http://pravicon.com/icon-2849
+    - https://upload.wikimedia.org/wikipedia/commons/7/7e/Spas-Vsemilostivy.png
    событие:
       год: 1164
       описание: просл
