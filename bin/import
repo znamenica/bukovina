@@ -957,7 +957,7 @@ files=`git status -s|grep "^[AM] "|sed "s/^.. //"`.split("\n")
 
 
 log >> { files: files.join(' ') }
-p = fork { exec "gvim -f #{files.join(' ')}" }
+p = fork { exec "gvim -f мѣсѧцесловъ/%02i/%02i.ро.yml" % [ month, day ] }
 Process.wait p
 
 files.each do| file |
