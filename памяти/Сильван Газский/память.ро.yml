@@ -1,15 +1,22 @@
 ---
 Сильван Газский:
-   имя: Сильван, Силуан
+   имя: Сильван (Силуан)
    описание: святитель Газский
    чин: стсвт
-   собор: вои
+   собор: вои,плст
    вики: http://drevo-info.ru/articles/2450.html
-   бытие: http://azbyka.ru/days/sv-silvan-gazskij-1
+   бытие:
+    - http://azbyka.ru/days/sv-silvan-gazskij
+    - http://azbyka.ru/days/sv-silvan-gazskij-1
    образ: http://pravicon.com/icon-2882
    событие:
-      год: 311
+    - год: III
+      описание: ржд
+      место: Газа. Палестина
+    - год: 311
       описание: прств
+      место: Фена. Палестина
+      образ: http://azbyka.ru/days/assets/img/saints/1980/p18m66bmvkr382jatj416ma57d3.jpg
    помин:
     - дата: 04.05
       описание: само
