@@ -1,17 +1,14 @@
 ---
 Ярославский образ:
-   имя: Ярославский
+   имя: Одигитрий
    описание: образ Богородицы
    чин: обр
-   бытие: http://azbyka.ru/days/ikona-jaroslavskaja
-   образ:
-    - http://azbyka.ru/days/assets/img/icons/314/095e8aed7008416b21b0eec5d82ea216.jpg
-    - http://azbyka.ru/days/assets/img/icons/314/642d0120e394fc84b3301f7077d396df.jpg
-    - http://azbyka.ru/days/assets/img/icons/314/f28d0faf10655ce5f3f7eecfe308639f.jpg
-    - http://azbyka.ru/days/assets/img/icons/314/1304bfb1323f4776376073572f8c37b9.jpg
+   бытие: http://azbyka.ru/days/ikona-odigitrija-jaroslavskaja
    событие:
-      год: XIII
+      год: 
+      дата:
       описание: явл
    помин:
-      дата: 08.06
+      дата: 12.10
       описание: само
+      служба:
