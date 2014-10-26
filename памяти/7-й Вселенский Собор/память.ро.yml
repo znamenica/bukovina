@@ -7,8 +7,10 @@
       год: 787
       описание: само
       место: Никея
-      образ: http://drevo-info.ru/images/002/007096.jpg
+      образ:
+       - http://drevo-info.ru/images/002/007096.jpg
+       - https://scontent-a-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10711049_782638268446446_8537982480838529515_n.jpg?oh=c60011e276ce9eb9fe8714f9bfa65211&oe=54F30BE4
    помин:
-      дата: 12.10
+      дата: нд.20.по птдс
       описание: само
       служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_11.pdf

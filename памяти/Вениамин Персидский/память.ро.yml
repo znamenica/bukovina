@@ -1,16 +1,22 @@
 ---
 Вениамин Персидский:
    имя: Вениамин
-   прозвище: Персидский
-   описание: диякон
+   описание: диякон Персидский
    чин: сщмч
+   собор: перс
    вики: http://drevo-info.ru/articles/4152.html
    бытие: http://azbyka.ru/days/sv-veniamin-persidskij
-   образ: http://pravicon.com/icon-1420
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/2271/p187c2j2v16ng1iei1dlm15op129j3.jpg
+    - http://azbyka.ru/days/assets/img/saints/2271/p187c2j76k1ktk1emg198mhk1smg5.jpg
+    - http://azbyka.ru/days/assets/img/saints/2271/p187c2j76krio16ji17i61d2t166n6.jpg
+    - http://pravicon.com/icon-1420
+   событие:
+      год: 418/424
+      описание: прств
+      место: Сузы. Персия
    помин:
-    - год: 418-424
-      дата: 31.03
-      описание: прств
-    - год: 418-424
-      дата: 13.10
-      описание: прств
+    - дата: 31.03
+      описание: само
+    - дата: 13.10
+      описание: само
