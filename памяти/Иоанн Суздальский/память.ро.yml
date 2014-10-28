@@ -1,14 +1,17 @@
 ---
 Иоанн Суздальский:
-   имя: Иоанн
+   имя: в иночестве Иоанн
    описание: святитель Суздальский
    чин: свт
-   собор: слав,рус
+   собор: рус
    вики:
     - http://drevo-info.ru/articles/7560.html
     - https://ru.wikipedia.org/wiki/Иоанн_(епископ_Суздальский)
-   бытие: http://pravicon.com/info-2499
-   образ: http://pravicon.com/icon-1981
+   бытие: http://azbyka.ru/days/sv-ioann-suzdalskij-i-nizhegorodskij
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/1908/6950ee9eb3a1184850f458c6ba48b9e7.jpg
+    - http://azbyka.ru/days/assets/img/saints/1908/b527837cdc4df2e1143b75132dd370ef.jpg
+    - http://pravicon.com/icon-1981
    событие:
     - год: до 1350
       описание: иноч
@@ -24,6 +27,9 @@
    помин:
     - дата: 15.10
       описание: прств
+      служба:
+       - Иоанну Суздальскому служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_15.pdf
     - дата: 20.08
       описание: прен
       служба:
