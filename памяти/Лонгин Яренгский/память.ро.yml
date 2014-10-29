@@ -3,13 +3,14 @@
    имя: Лонгин
    прозвище: Яренгский, Соловецкий
    чин: прп
-   собор: слав,рус,сол
+   собор: сол
    бытие:
     - http://www.solovki.ca/saints_11/11_04.php
     - http://azbyka.ru/days/sv-longin-jarengskij
    образ:
     - http://azbyka.ru/days/assets/img/saints/4732/p187oi16e61j50apr8a91vtq1ui93.jpg
     - http://www.solovki.ca/saints_11/images/ioann_longin_2010_001.jpg
+    - http://pravicon.com/icon-2289
    событие:
     - год: 1561
       описание: прств
@@ -30,6 +31,8 @@
        - http://azbyka.ru/days/assets/upload/minei/07/minea_07_03.pdf
     - дата: 16.10
       описание: само
-      служба: Лонгину Яренгскому служба
+      служба:
+       - Лонгину Яренгскому служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_16.pdf
     - дата: сб.по 30.10
       описание: само
