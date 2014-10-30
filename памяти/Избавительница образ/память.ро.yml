@@ -3,10 +3,35 @@
    имя: Избавительница
    прозвище: образ Богородица
    чин: обр
+   вики: http://drevo-info.ru/articles/4186.html
    бытие: http://azbyka.ru/days/ikona-izbavitelnica
-   образ: http://azbyka.ru/days/assets/img/icons/25/aa45e9d0f0e52e97c3a0629c01819bdd.jpg
-   помин:
-      год: XVIII-XIX
-      дата: 17.04
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/25/aa45e9d0f0e52e97c3a0629c01819bdd.jpg
+    - http://azbyka.ru/days/assets/img/icons/25/e3dcf21e6ddc61cb185c3c283fd80ecf.jpg
+    - http://azbyka.ru/days/assets/img/icons/25/aca9bfe95aa5899f73e88ba0a2b7a154.jpg
+    - http://kotlovka.ru/pgallery/albums/userpics/10002/824_87.jpg
+   событие:
+    - год: XVII
       описание: явл
-      служба: Избавительнице образу служба
+    - год: XVIII-XIX
+      описание: прем
+      место: Пантелеимонов монастырь. Афон
+    - год: 1841
+      описание: чудо
+      место: Маврония (или Спарта)
+    - год: 1889
+      дата: 20.07
+      описание: прен
+      место: Ново-Афонская Симоно-Кананитская обитель. Новый Афон. Абхазия
+   помин:
+    - дата: ср.2.по пасхе
+      описание: само
+      служба:
+       - http://azbyka.ru/days/caa/217
+    - дата: 17.10
+      описание: само
+      служба:
+       - Избавительнице образу служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_17.pdf
+       - http://azbyka.ru/days/caa/216
+       - http://azbyka.ru/days/caa/215
