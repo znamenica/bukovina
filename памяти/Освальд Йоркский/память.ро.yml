@@ -1,11 +1,32 @@
 ---
 Освальд Йоркский:
    имя: Освальд
-   прозвище: Йоркский
+   описание: Йоркский, Вустерский
    чин: свт
-   вики: http://drevo-info.ru/articles/5744.html
-   помин:
-      год: 992
+   собор: норт,англ
+   вики:
+    - http://drevo-info.ru/articles/5744.html
+    - http://en.wikipedia.org/wiki/Oswald_of_Worcester
+   бытие:
+    - http://www.catholicireland.net/saintoftheday/st-oswald-912-992-english-monk-bishop/
+    - http://www.reu.org/public/saints/OSWALD.HTM
+   образ:
+    - http://www.catholicireland.net/wp-content/uploads/2014/02/oswald.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/0/04/Oswald_and_Eadnoth.jpg
+   событие:
+    - год: 912/925
+      дата: 29.02
+      описание: ржд
+      место: Англия
+    - год: 962
+      описание: свят
+    - год: 992
       дата: 29.02
       описание: прств
-      служба: Освальду Йоркскому служба
+      место: Свято-Мариининский монастырь
+   помин:
+      дата: 29.02
+      описание: прств
+      служба:
+       - Освальду Йоркскому служба
+       - http://www.orthodoxengland.btinternet.co.uk/servoswd.htm

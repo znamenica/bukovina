@@ -6,13 +6,16 @@
    описание: святитель Ковровский
    чин: исвт
    собор: нмр,нмс,мск,полт
-   вики: http://drevo-info.ru/articles/5608.html
+   вики:
+    - http://drevo-info.ru/articles/5608.html
+    - http://ru.wikipedia.org/wiki/Афанасий_(Сахаров)
    бытие: http://azbyka.ru/days/sv-afanasij-saharov
    образ:
     - http://drevo-info.ru/images/002/008083.jpg
     - http://azbyka.ru/days/assets/img/saints/3354/p182j82i65d7m1s321nrk1rna9ld4.jpg
     - http://azbyka.ru/days/assets/img/saints/3354/p182j82i64fkg10gt1hdv1nsneho3.jpg
     - http://pravicon.com/icon-1293
+   отечник: http://azbyka.ru/otechnik/Afanasij_Saharov/
    событие:
     - год: 1887
       дата: 02.07
@@ -57,3 +60,4 @@
        - Афанасию Ковровскому служба
        - http://azbyka.ru/days/worship/594
        - http://azbyka.ru/days/caa/691
+       - http://korolev.msk.ru/books/11/Sluzhba_s_akafistom_Afanasiyu_Pesnopiscu.txt
