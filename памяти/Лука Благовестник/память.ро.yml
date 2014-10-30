@@ -2,25 +2,47 @@
 Лука Благовестник:
    имя: Лука
    описание: апостол от 70-ти, благовестник
-   чин: ап70
-   собор: сир,копт,лек,бмз
-   вики: http://drevo-info.ru/articles/10326.html
-   бытие: http://azbyka.ru/days/sv-luka-evangelist
+   чин: ап
+   собор: ап70,сир,копт,лек,бмз
+   вики:
+    - http://drevo-info.ru/articles/10326.html
+    - http://ru.wikipedia.org/wiki/Лука_(евангелист)
+    - http://traditio-ru.org/wiki/Апостол_Лука
+   бытие:
+    - http://azbyka.ru/days/sv-luka-evangelist
+    - http://www.pravmir.ru/apostol-luka/
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/1302/p193vgllhsk678d8rpd1qufa6f3.jpg
+    - http://azbyka.ru/days/assets/img/saints/1302/p190h1903f25l17k41bjg17038m63.jpg
+    - http://azbyka.ru/days/assets/img/saints/1302/p18f53bdmp18tq1cnn40n2o45ro5.jpg
+    - http://azbyka.ru/days/assets/img/saints/1302/p18f538q4sp151h49b0g19ja4ic3.jpg
+    - http://azbyka.ru/days/assets/img/saints/1302/p18f53bdmq1ug0me7bri8jobp96.jpg
+    - http://azbyka.ru/days/assets/img/saints/1302/p18f53bdmrm7u1get16t41g111ofr7.jpg
+    - http://azbyka.ru/days/assets/img/saints/1302/2e9529b9d69a9790bed82845b0983a3b.jpg
+    - http://azbyka.ru/days/assets/img/saints/1302/f752e2e357ae1ca2cecc255965d1214f.jpg
+    - http://azbyka.ru/days/assets/img/saints/1302/5e014de7b87394d0a6bc9eb92446351f.jpg
+    - http://azbyka.ru/days/assets/img/saints/1302/aa03543cfbc287d4f3d5f49aeca43bac.jpg
+    - http://azbyka.ru/days/assets/img/saints/1302/69889e34cbe65c5553915d9c9a868ada.jpg
+    - http://azbyka.ru/days/assets/img/saints/1302/859373bc4fbf054911b946cd80aba751.jpg
    событие:
     - год: I до нэ-I
-      описание: прств
+      описание: ржд
       место: Антиохия. Сирия
     - год: I
       описание: прств
       место: Фивы. Египет
     - год: 527-565
       описание: прен
-      место: Свято-Апостольская церква. Кинстантинополь
+      место: Свято-Апостольская церква. Константинополь
    помин:
     - дата: 22.04
       описание: само
     - дата: 20.06
       описание: прен
-      служба: Луке Благовестнику служба
     - дата: 18.10
       описание: само
+      служба:
+       - Луке Благовестнику служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_18.pdf
+       - http://azbyka.ru/days/caa/270
+       - http://azbyka.ru/days/caa/177
