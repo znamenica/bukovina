@@ -4,23 +4,35 @@
    отчество: Иванович
    фамилия: Рюрикович
    описание: царевич Угличский и Московский
-   чин: блгв
-   собор: слав,рус,мск,ряр
-   вики: http://drevo-info.ru/articles/5800.html
+   чин: стц
+   собор: мск,ряр
+   вики:
+    - http://drevo-info.ru/articles/5800.html
+    - https://ru.wikipedia.org/wiki/Дмитрий_Углицкий
    бытие: http://azbyka.ru/days/sv-dimitrij-uglichskij-i-moskovskij
-   образ: http://drevo-info.ru/images/001/001825.jpg
+   образ:
+    - http://drevo-info.ru/images/001/001825.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tsarevitch_Dmitrij_N.Novgorod.jpg/509px-Tsarevitch_Dmitrij_N.Novgorod.jpg
+    - http://www.calend.ru/img/content_images/i2/2074_or.jpg
    событие:
     - год: 1582
       дата: 19.10
-      описание: рожд
+      описание: ржд
+    - год: 1582
+      дата: по 19.10
+      описание: крещ
+      тез: Дмитрий Солунский
     - год: 1591
       дата: 15.05
       описание: прств
+      место: Углич
     - год: 1606
       дата: 03.07
       описание: обр
     - год: 1606
+      дата: по 03.07
       описание: прен
+      место: Архангельский собор. Кремль. Москва
    помин:
     - дата: 15.05
       описание: прств
@@ -32,4 +44,5 @@
       описание: прен
       служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_03.pdf
     - дата: 19.10
-      описание: рожд
+      описание: ржд
+      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_19.pdf
