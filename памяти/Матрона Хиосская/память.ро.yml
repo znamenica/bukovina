@@ -5,7 +5,9 @@
    прозвище: Хиосская, настоятельница Хиосского монастыря в Меса Дидима
    чин: прп
    вики: http://drevo-info.ru/articles/25821.html
-   образ: http://drevo-info.ru/images/003/009832.jpg
+   образ:
+    - http://drevo-info.ru/images/003/009832.jpg
+    - http://pravicon.com/icon-2417
    событие:
     - год: XIV-XV
       описание: ржд

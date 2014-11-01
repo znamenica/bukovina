@@ -4,15 +4,22 @@
    описание: отрок Веркольский
    чин: прав
    собор: слав,рус
-   вики: http://drevo-info.ru/articles/10919.html
+   вики:
+    - http://drevo-info.ru/articles/10919.html
+    - http://ru.wikipedia.org/wiki/Артемий_Веркольский
    бытие: http://azbyka.ru/days/sv-artemij-verkolskij
    образ:
+    - http://azbyka.ru/days/assets/img/saints/402/p1918fntkp1ciq1q9t1h1o8i01s7l5.jpg
+    - http://azbyka.ru/days/assets/img/saints/402/p1918fntkq11madu418mo1sm51j8c7.jpg
+    - http://azbyka.ru/days/assets/img/saints/402/p1918fntkp2pd1hlo17hm8utl9r4.jpg
+    - http://azbyka.ru/days/assets/img/saints/402/p1918fntkp14611qlgb3ckdss006.jpg
+    - http://azbyka.ru/days/assets/img/saints/402/22892e14d352dd8a8ffa818f4a084bd1.jpg
     - http://pravicon.com/icon-1278
     - http://drevo-info.ru/images/002/004028.jpg
-    - http://azbyka.ru/days/assets/img/saints/402/22892e14d352dd8a8ffa818f4a084bd1.jpg
+    - http://www.ikona-kiot.ru/wp-content/uploads/artemiy-verkolskiy-1.jpg
    событие:
     - год: 1532
-      описание: прств
+      описание: ржд
       место: Верколь. Двинский округ
     - год: 1545
       описание: прств
@@ -29,3 +36,4 @@
        - http://azbyka.ru/days/caa/640
     - дата: 20.10
       описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_20.pdf
