@@ -1,0 +1,25 @@
+---
+Иларион Великий:
+   имя: Иларион
+   описание: Великий, ученик Антония Великого
+   чин: прп
+   собор: плст,кипр
+   вики: http://drevo-info.ru/articles/2489.html
+   бытие: http://azbyka.ru/days/sv-ilarion-velikij
+   образ:
+    - http://pravicon.com/icon-1896
+    - http://drevo-info.ru/images/001/000245.jpg
+    - http://azbyka.ru/days/assets/img/saints/1140/29eb6a681f87a60ecae057625263fd62.jpg
+   событие:
+    - год: 291
+      описание: ржд
+      место: Тавафа. Палестина
+    - год: 371-372
+      описание: прств
+      место: Епископи село (ныне Айис Ларкос). Пафосье. Кипр
+   помин:
+      дата: 21.10
+      описание: само
+      служба:
+       - Илариону Великому служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_21.pdf

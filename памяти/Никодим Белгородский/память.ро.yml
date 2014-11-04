@@ -8,7 +8,9 @@
    собор: нмр,нмб,нмс,спб,мск
    вики: http://drevo-info.ru/articles/8453.html
    бытие: http://azbyka.ru/days/sv-nikodim-kononov
-   образ: http://drevo-info.ru/images/002/009167.jpg
+   образ:
+    - http://drevo-info.ru/images/002/009167.jpg
+    - http://azbyka.ru/days/assets/img/saints/4954/p18807idppslphk5ur41323e8p5.jpg
    событие:
     - год: 1871
       дата: 18.06
