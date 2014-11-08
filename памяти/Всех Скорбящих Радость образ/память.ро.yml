@@ -3,8 +3,23 @@
    имя: Всех Скорбящих Радость
    описание: образ Богородицы
    чин: обр
-   вики: http://drevo-info.ru/articles/13455.html
-   образ: http://drevo-info.ru/images/001/002587.jpg
-   помин:
+   вики:
+    - http://drevo-info.ru/articles/13455.html
+    - http://ru.wikipedia.org/wiki/Всех_Скорбящих_Радость
+   бытие: http://azbyka.ru/days/ikona-vseh-skorbjashchih-radost
+   образ:
+    - http://drevo-info.ru/images/001/002587.jpg
+    - http://azbyka.ru/days/assets/img/icons/126/273472c53a5f04112517089e0bac6f9b.jpg
+   событие:
+    - год: 1683-1685
+      описание: напис
+    - год: 1688
       описание: чудо
-      служба: Всех Скорбящих Радосте образу служба
+    - год: 1863
+      описание: просл
+   помин:
+      дата: 24.10
+      описание: чудо
+      служба:
+       - Всех Скорбящих Радости образу служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_24.pdf

@@ -4,7 +4,13 @@
    отчество: Васильевич
    фамилия: Верховский
    чин: прп
+   вики:
+    - http://drevo-info.ru/articles/21489.html
+    - http://ru.wikipedia.org/wiki/Зосима_(Верховский)
    бытие: http://azbyka.ru/days/sv-zosima-verhovskij
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/5113/p17v9b05rqdub164i8hladj6r43.jpg
+    - http://azbyka.ru/days/assets/img/saints/5113/1f0556e1fd48f5d22e2cc4b938223a1f.jpg
    отечник: http://azbyka.ru/otechnik/Zosima_Verhovskij/
    событие:
     - год: 1768
@@ -28,4 +34,5 @@
       описание: прств
       служба:
        - Зосиме Верховскому служба
+       - http://azbyka.ru/days/worship/548
        - http://azbyka.ru/days/sv-zosima-verhovskij
