@@ -1,0 +1,25 @@
+---
+Мартирий Константинопольский:
+   имя: Мартирий
+   описание: инодьякон Константинопольский
+   чин: мч
+   собор: виз
+   вики: http://drevo-info.ru/articles/11568.html
+   бытие: http://azbyka.ru/days/sv-martirij-konstantinopolskij
+   образ:
+    - http://pravicon.com/icon-2401
+    - http://azbyka.ru/days/assets/img/saints/1789/p17vjjsiclgri17qa1ab0ued1tol3.jpg
+   событие:
+    - год: ок. 355
+      описание: прств
+      место: Константинополь
+      образ: http://azbyka.ru/days/assets/img/saints/1789/p17vjjsojbh9b6s41l7ccshe074.jpg
+    - год: 397-403
+      описание: прен
+      место: церковь. Константинополь
+   помин:
+      дата: 25.10
+      описание: само
+      служба:
+       - Маркиан Чтец/Маркиану Чтецу и Мартирию Константинопольскому служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_25.pdf
