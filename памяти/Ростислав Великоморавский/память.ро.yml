@@ -3,8 +3,10 @@
    имя: Ростислав
    описание: князь Великоморавский
    чин: рап
-   собор: слав
-   вики: http://drevo-info.ru/articles/5781.html
+   собор: чех,мрв
+   вики:
+    - http://drevo-info.ru/articles/5781.html
+    - http://ru.wikipedia.org/wiki/Ростислав_(князь_Великой_Моравии)
    бытие: http://azbyka.ru/days/sv-rostislav-velikomoravskij
    образ:
     - http://azbyka.ru/days/assets/img/saints/385/p18ma8dt1af1q1sb21v2cdrq8cj5.jpg

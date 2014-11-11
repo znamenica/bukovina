@@ -6,8 +6,13 @@
    собор: 40мп
    вики: http://drevo-info.ru/articles/5406.html
    бытие: http://azbyka.ru/days/sv-afrikan-petrijskij-afrikanskij
-   образ: http://pravicon.com/icon-2986
-   помин:
+   образ:
+    - http://pravicon.com/icon-2986
+    - http://azbyka.ru/days/assets/img/saints/3956/p18im2cab2832141uaf61kit1kqb7.jpg
+   событие:
       год: 249-251
-      дата: 13.03
       описание: прств
+      место: Африка
+   помин:
+      дата: 13.03
+      описание: само

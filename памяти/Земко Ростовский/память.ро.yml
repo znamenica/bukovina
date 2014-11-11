@@ -5,8 +5,15 @@
    прозвище: святитель Ростовский
    фамилия: Туптало
    чин: свт
-   собор: слав,рус,каз,киев,ряр,полт,3рст
-   вики: http://drevo-info.ru/articles/6218.html
+   собор: кзк,киев,ряр,полт,3рст
+   вики:
+    - http://drevo-info.ru/articles/6218.html
+    - http://ru.wikipedia.org/wiki/Димитрий_Ростовский
+   бытие: http://azbyka.ru/days/sv-dimitrij-rostovskij
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/799/c23bb738d60a3b27e49d1a06e0082031.jpg
+    - https://scontent-b.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/10801674_790158864361053_1647160111722823662_n.jpg?oh=53c689f0c93aae81c4fd94c7218268d4&oe=54DFB2C6
+   отечник: http://azbyka.ru/otechnik/Dmitrij_Rostovskij/
    событие:
     - год: 1651
       дата: дек
@@ -45,3 +52,8 @@
       описание: обр
     - дата: 28.10
       описание: прств
+      служба:
+       - Земку Ростовскому служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_28.pdf
+       - http://azbyka.ru/days/caa/102
+       - http://azbyka.ru/days/caa/103
