@@ -1,12 +1,29 @@
 ---
 Неделя Римляныня:
    имя: Анастасия
-   прозвище: Римская, Римляныня
-   чин: мц
-   вики: http://drevo-info.ru/articles/5564.html
-   бытие: http://azbyka.ru/days/sv-anastasija-rimskaja
-   образ: http://azbyka.ru/days/assets/img/saints/5995/p18imr9nu51p9o1rhm1gtv1bhb8ev5.jpg
-   помин:
-      год: ок. 68
-      дата: 15.04
+   прозвище: Римляныня, Солунская, Старшая
+   чин: прмц
+   собор: рим
+   вики:
+    - http://drevo-info.ru/articles/2519.html
+    - http://ru.wikipedia.org/wiki/Анастасия_Римляныня
+   бытие: http://azbyka.ru/days/sv-anastasija-rimljanynja
+   образ: http://drevo-info.ru/images/001/000248.jpg
+   событие:
+    - год: 230-236
+      описание: ржд
+      место: Рим
+    - год: 237-256
+      описание: иноч
+      место: Римье
+    - год: 250/256
       описание: прств
+      образ: http://azbyka.ru/days/assets/img/saints/5822/80f61fb28b878cf5c712fbbc686ebe8d.jpg
+   помин:
+      дата: 29.10
+      описание: само
+      служба:
+       - Неделе Римляныне служба
+       - Неделе Римляныне и Авраамию Затворнику служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_29.pdf
+       - http://azbyka.ru/days/caa/293
