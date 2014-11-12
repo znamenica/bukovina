@@ -1,17 +1,37 @@
 ---
 Марк Благовестник:
-   имя: Марк, Иоанн
-   описание: Евангелист, апостол от 70-ти
-   чин: ап70
-   вики: http://drevo-info.ru/articles/10392.html
+   имя: Марк (Иоанн)
+   описание: Евангелист, апостол от 70-ти, племянник Варнавы Саламинского
+   чин: ап
+   собор: ап70,копт,плст,стсвт
+   вики:
+    - http://drevo-info.ru/articles/10392.html
+    - http://ru.wikipedia.org/wiki/Апостол_Марк
+    - http://ru.wikipedia.org/wiki/Марк_(апостол_от_70)
+    - http://ru.wikipedia.org/wiki/Марк-Иоанн
    бытие: http://azbyka.ru/days/sv-mark-ioann-evangelist
-   образ: http://drevo-info.ru/images/001/001704.jpg
+   образ:
+    - http://drevo-info.ru/images/001/001704.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/a782f1a861e1976a0e67837c59bf4090.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/fa480e7f212f88930c977c76e75604c2.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/p190h1utp11lf11n5ahbd1hmjddf3.png
+    - http://azbyka.ru/days/assets/img/saints/839/1c8e6109dce2f8140679a7d4b7823110.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/p18f817cnfnt53ds1767lvj160v4.JPG
+    - http://azbyka.ru/days/assets/img/saints/839/p190h1utp45tv1qn1rslov110ge4.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/680661975c9e8aed357dcbf3727f0e48.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/30470bd6ceb670b94eb40372599ae09d.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/1a30dcac4d709a9a01bc20b0c7b682fe.jpg
    событие:
+    - год: нач.I
+      описание: ржд
+      место: Иерусалим
     - год: 63
       дата: 04.04
       описание: прств
+      место: Александрия. Египет
     - год: 820
       описание: прен
+      место: Марко-Благовестницкая церковь. Венеция. Италия
    помин:
     - дата: 25.04
       описание: само

@@ -2,20 +2,33 @@
 Тешич Саламинский:
    имя: Варнава, Иосиф
    описание: апостол от 70-ти, родом с Кипра, святитель Саламинский
-   чин: ап70
-   вики: http://drevo-info.ru/articles/112.html
+   чин: ап70,кипр
+   вики:
+    - http://drevo-info.ru/articles/112.html
+    - https://ru.wikipedia.org/wiki/Варнава_(апостол_от_70)
    бытие: http://azbyka.ru/days/sv-varnava-iosif
    образ:
     - http://drevo-info.ru/images/001/000016.jpg
     - http://azbyka.ru/days/assets/img/saints/2745/6ce5d4e63cfa4ca791f73cb8146c3d13.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/8/8e/Barnabas.jpg
    событие:
+    - год: I до нэ-I
+      описание: ржд
+      место: Саламин. Кипр
     - год: ок. 62
       описание: прств
+      место: Саламин. Кипр
       образ: http://azbyka.ru/days/assets/img/saints/2745/586ed8f4faf7e278fe2d29926598a86f.jpg
-    - год: 478 
+    - год: 478
       описание: обр
+      место: Саламин. Кипр
+    - год: 478
+      описание: прен
+      место: Константинополь
    помин:
-      дата: 11.06
+    - дата: 22.04
+      описание: само
+    - дата: 11.06
       описание: само
       служба:
        - Тешичу Саламинскому служба

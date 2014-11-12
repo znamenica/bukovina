@@ -8,7 +8,9 @@
     - http://drevo-info.ru/articles/2519.html
     - http://ru.wikipedia.org/wiki/Анастасия_Римляныня
    бытие: http://azbyka.ru/days/sv-anastasija-rimljanynja
-   образ: http://drevo-info.ru/images/001/000248.jpg
+   образ:
+    - http://drevo-info.ru/images/001/000248.jpg
+    - http://days.pravoslavie.ru/jpg/ib4590.jpg
    событие:
     - год: 230-236
       описание: ржд
@@ -20,10 +22,12 @@
       описание: прств
       образ: http://azbyka.ru/days/assets/img/saints/5822/80f61fb28b878cf5c712fbbc686ebe8d.jpg
    помин:
-      дата: 29.10
+    - дата: 29.10
       описание: само
       служба:
        - Неделе Римляныне служба
        - Неделе Римляныне и Авраамию Затворнику служба
        - http://azbyka.ru/days/assets/upload/minei/10/minea_10_29.pdf
        - http://azbyka.ru/days/caa/293
+    - дата: 30.10
+      описание: само
