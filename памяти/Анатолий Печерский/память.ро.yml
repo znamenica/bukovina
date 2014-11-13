@@ -8,8 +8,11 @@
    бытие: http://azbyka.ru/days/sv-anatolij-pecherskij-1
    образ: http://azbyka.ru/days/assets/img/saints/5342/p18qj2cmgelmbviq1ric1ib68ro3.jpg
    событие:
-      год: XII
+    - год: XII
       описание: прств
+    - год: XII
+      описание: пгрб
+      место: Антониевы пещеры. Киев
    помин:
     - дата: 03.07
       описание: само

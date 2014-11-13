@@ -1,0 +1,27 @@
+---
+Урван Македонский:
+   имя: Урван
+   описание: апостол от 70-ти, святитель Македонский
+   чин: ап
+   собор: ап70,мак,стсвтт
+   вики:
+    - http://drevo-info.ru/articles/8109.html
+    - https://ru.wikipedia.org/wiki/Урван
+   бытие: http://azbyka.ru/days/sv-urvan
+   образ: http://pravicon.com/icon-3021
+   событие:
+    - год: I
+      описание: прств
+      место: вид.Македония
+      образ: http://azbyka.ru/days/assets/img/saints/4454/p18973n6o219khh2lqulco2es93.jpg
+    - год: вид.IV
+      описание: прен
+      место: Пиги. Константинополь
+   помин:
+      дата: 31.10
+      описание: само
+      образ: http://azbyka.ru/days/assets/img/saints/3763/p17vjk9ail1h964c91jplunq4it3.jpg
+      служба:
+       - Апеллий Смирнский/Апеллию Смирнскому с иными служба
+       - Апеллий Смирнский/Апеллию Смирнскому с иными и Епимаху Александрийскому служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_31.pdf
