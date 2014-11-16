@@ -1,16 +1,48 @@
 ---
 Стефан Мироточивый:
-   имя: Симеон, в миру Стефан
-   прозвище: Мироточивый, Сербский царь
-   фамилия: Неманя
-   описание: отец Саввы Сербского
+   имя: в наречении Неманя, в иночестве Симеон, в крещении Стефан
+   отчество: Завидович
+   прозвище: Мироточивый
+   описание: царь Сербский, отец Саввы Сербского
    чин: прп
+   собор: серб,аф
+   вики: https://ru.wikipedia.org/wiki/Стефан_Неманя
    бытие: http://azbyka.ru/days/sv-simeon-mirotochivyj-v-miru-stefan-nemanja
-   образ: http://azbyka.ru/days/assets/img/saints/354/p18fa88p6f1ipv13kgc2j1rbfu4p3.jpg
-   помин:
-      год: 1200
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/354/p18fa88p6f1ipv13kgc2j1rbfu4p3.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/6/6b/Svsimeon.jpg
+    - http://azbyka.ru/days/assets/img/saints/354/5b8f8d1a1e35e8b436a14ae9e847ae71.jpg
+    - http://azbyka.ru/days/assets/img/saints/354/3e7f0b7487b54896e654ce1cd92522f1.jpg
+    - http://azbyka.ru/days/assets/img/saints/354/76592e0c0320acad01425dac8f3635f7.jpg
+    - http://azbyka.ru/days/assets/img/saints/354/7afea14309c75604ffd473dd047861cf.jpg
+    - http://azbyka.ru/days/assets/img/saints/354/1e6622505585c110cb7b2461c109f382.jpg
+    - http://azbyka.ru/days/assets/img/saints/354/afc063fabbe8ce7c3d552f19e2ca143c.jpg
+    - http://azbyka.ru/days/assets/img/saints/354/0db471eb0f216968b29d981a2db73327.jpg
+    - http://azbyka.ru/days/assets/img/saints/354/92062257d40a15fc35d56f5c9b6f8cdf.jpg
+    - http://azbyka.ru/days/assets/img/saints/354/p1907b80hd1d051kqummf32u1mnf4.jpg
+    - http://azbyka.ru/days/assets/img/saints/354/p1907b80hcnc4h1l19971fpb1kdo3.jpg
+    - http://azbyka.ru/days/assets/img/saints/354/p1907b80hd123261d1igj92hsg85.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/7/7d/Stefan_Nemanja.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/c/c1/Св.Симеон_Српски_и_Св.Стефан_Првовенчани_и_Св._Владислав_%28манастир_Крушедол%29.jpg
+   событие:
+    - год: 1114
+      описание: ржд
+      место: Рибница
+    - год: 1196
+      описание: иноч
+    - год: 1200
       дата: 13.02
+      описание: прств
+      место: Хиландар монастырь. Афон
+    - год: кон.1207
+      описание: прен
+      место: Богородицкий храм. Студеница монастырь. Сербия
+   помин:
+    - дата: 13.02
       описание: прств
       служба:
        - Стефану Мироточивому служба
        - Симеону Мироточивому и Савве Сербскому служба
+    - дата: 03.11
+      собор: греч
+      описание: само

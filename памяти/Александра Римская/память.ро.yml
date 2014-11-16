@@ -5,10 +5,13 @@
    чин: мц
    вики: http://drevo-info.ru/articles/5636.html
    бытие: http://azbyka.ru/days/sv-aleksandra-rimskaja
-   образ: http://pravicon.com/icon-1117
+   образ:
+    - http://pravicon.com/icon-1117
+    - http://drevo-info.ru/images/001/000963.jpg
    событие:
       год: 303/304/314
       описание: прств
+      место: вид.Римье
    помин:
       дата: 23.04
       описание: само
