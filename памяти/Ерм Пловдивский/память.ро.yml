@@ -1,13 +1,17 @@
 ---
 Ерм Пловдивский:
-   имя: Ерм, Ермий
-   описание: святитель Пловдивский, Филиппопольский, апостол от 70-ти
-   чин: ап70
+   имя: Ерм (Ерма, Ермий)
+   описание: грек, святитель Пловдивский (Филиппопольский), апостол от 70-ти
+   чин: ап
+   собор: ап70,свт
    вики: http://drevo-info.ru/articles/4308.html
    бытие:
     - http://azbyka.ru/days/sv-erm-erma
     - http://azbyka.ru/days/sv-erm-ermij
-   образ: http://drevo-info.ru/images/003/010833.jpg
+   образ:
+    - http://drevo-info.ru/images/003/010833.jpg
+    - http://azbyka.ru/days/assets/img/saints/2329/p189h88ufr15rq4ki1mreeb81cf73.jpg
+    - http://azbyka.ru/days/assets/img/saints/2329/p189h8959o7m55cngd8fle11bs5.jpg
    событие:
       год: I
       описание: прств
