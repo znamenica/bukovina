@@ -3,18 +3,22 @@
    имя: Александра
    описание: дева Анкирская
    чин: мц
-   вики: http://drevo-info.ru/articles/7800.html
+   вики:
+    - http://drevo-info.ru/articles/7800.html
+    - http://ru.wikipedia.org/wiki/Семь_святых_дев
    бытие: http://azbyka.ru/days/sv-aleksandra-ankirskaja-korinfskaja
    образ:
     - http://azbyka.ru/days/assets/img/saints/6228/p189mg7dlmid817h91pq0alv1rnh5.jpg
+    - http://azbyka.ru/days/assets/img/saints/6228/p190p6bh0s14g6gsig89di0o325.jpg
     - http://pravicon.com/icon-1114
    событие:
       год: 303-304
       дата: 18.05
       описание: прств
+      место: Анкира
    помин:
     - дата: 18.05
-      описание: прств
+      описание: само
       служба: Богдан Анкирский/Мученикам Анкирским и Лампсакским служба
     - дата: 06.11
       описание: само

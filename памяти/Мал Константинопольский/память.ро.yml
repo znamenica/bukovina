@@ -1,0 +1,25 @@
+---
+Мал Константинопольский:
+   имя: Павел
+   описание: исповедник первосвятитель Константинопольский I
+   чин: стсвт
+   собор: мак?,виз,арм
+   вики: http://drevo-info.ru/articles/7806.html
+   бытие: http://azbyka.ru/days/sv-pavel-i-konstantinopolskij
+   образ:
+    - http://drevo-info.ru/images/001/001866.jpg
+    - http://azbyka.ru/days/assets/img/saints/2083/p189menpv2o3b2hger61shdqne3.jpg
+    - http://azbyka.ru/days/assets/img/saints/2083/p189menpvi1t0mut61h23pll1s4u5.jpg
+   событие:
+    - год: кон.III
+      описание: ржд
+      место: Солунь. Македония
+    - год: 350
+      описание: прств
+      место: Кукуз. Армения
+   помин:
+      дата: 06.11
+      описание: само
+      служба:
+       - Малу Константинопольскому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_06.pdf

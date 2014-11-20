@@ -3,7 +3,9 @@
    имя: Клавдия
    описание: дева Анкирская
    чин: мц
-   вики: http://drevo-info.ru/articles/7802.html
+   вики:
+    - http://drevo-info.ru/articles/7802.html
+    - http://ru.wikipedia.org/wiki/Семь_святых_дев
    бытие: http://azbyka.ru/days/sv-klavdija-ankirskaja-korinfskaja
    образ:
     - http://azbyka.ru/days/assets/img/saints/5850/p18mg74g321p631nok16dt1qefslc3.jpg
@@ -12,6 +14,7 @@
       год: 303-304
       дата: 18.05
       описание: прств
+      место: Анкира
    помин:
     - дата: 18.05
       описание: само

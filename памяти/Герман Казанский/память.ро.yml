@@ -1,13 +1,17 @@
 ---
 Герман Казанский:
-   имя: Герман, в крещении Григорий
-   описание: святитель Казанский
+   имя: в иночестве Герман, в крещении Григорий
+   описание: святитель Казанский и Свияжский
    фамилия: Садырев-Полевой
    чин: свт
-   собор: слав,рус,каз,твер
-   вики: http://drevo-info.ru/articles/4311.html
+   собор: каз,твер
+   вики:
+    - http://drevo-info.ru/articles/4311.html
+    - http://ru.wikipedia.org/wiki/Герман_(Садырев-Полев)
    бытие: http://azbyka.ru/days/sv-german-kazanskij-i-svijazhskij
-   образ: http://drevo-info.ru/images/001/000698.jpg
+   образ:
+    - http://drevo-info.ru/images/001/000698.jpg
+    - http://azbyka.ru/days/assets/img/saints/2495/p1918fqjp71ijvt7i19h8be216hm3.jpg
    событие:
     - год: XV-XVI
       описание: ржд
@@ -29,11 +33,12 @@
    помин:
     - дата: 23.06
       описание: прен.1
-      служба:
-       - Герману Казанскому служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
-       - http://azbyka.ru/days/caa/114
+      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
     - дата: 25.09
       описание: прен
     - дата: 06.11
       описание: прств
+      служба:
+       - Герману Казанскому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_06.pdf
+       - http://azbyka.ru/days/caa/114

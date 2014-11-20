@@ -1,20 +1,44 @@
 ---
 Варлаам Хутынский:
    имя: Варлаам
-   описание: настоятель Хутынский
+   описание: настоятель Хутынский, Новгородский
    чин: прп
-   вики: http://drevo-info.ru/articles/11615.html
+   вики:
+    - http://drevo-info.ru/articles/11615.html
+    - http://ru.wikipedia.org/wiki/Варлаам_Хутынский
    бытие: http://azbyka.ru/days/sv-varlaam-hutynskij
    образ:
     - http://drevo-info.ru/images/001/001952.jpg
     - http://pravicon.com/icon-1365
+    - http://azbyka.ru/days/assets/img/saints/3197/14c578c7d5af5dd18db9944de768d472.jpg
+    - http://azbyka.ru/days/assets/img/saints/3197/p190rvuf3cv9bmqc5gj1et71e6e4.jpg
+    - http://azbyka.ru/days/assets/img/saints/3197/8c8eb3d472bdc5487b8c4ba794a9e0d0.jpg
+    - http://azbyka.ru/days/assets/img/saints/3197/0dfab60d643d62911b4695a3f9f7a4e2.jpg
+    - http://azbyka.ru/days/assets/img/saints/3197/p190rvuf3d18u01hl82qg1c5j1oqq5.jpg
    событие:
-      год: 1192
+    - год: нач.XII
+      описание: ржд
+      место: Новгород
+    - год: перв.пол.XII
+      описание: иноч
+      место: Лисичий монастырь. Новгородщина
+    - год: 1192
+      дата: 06.11
       описание: прств
+      место: вид.Преображенский Хутынский монастырь. Новгородщина
+    - год: кон.XIII
+      описание: почит
+    - год: 1461
+      описание: просл
    помин:
-    - дата: 06.06
-      описание: обр
     - дата: пт. по всех
       описание: само
+    - дата: 06.06
+      описание: обр
     - дата: 06.11
       описание: прств
+      служба:
+       - Варлааму Хутынскому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_06.pdf
+       - http://azbyka.ru/days/caa/303
+       - http://azbyka.ru/days/caa/184
