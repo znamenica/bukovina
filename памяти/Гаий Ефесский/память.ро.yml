@@ -1,10 +1,12 @@
 ---
 Гаий Ефесский:
    имя: Гаий
-   описание: святитель Ефесский
+   описание: коринфянин, святитель Ефесский
    чин: ап
    собор: ап70,свт
-   вики: http://drevo-info.ru/articles/7763.html
+   вики:
+    - http://drevo-info.ru/articles/7763.html
+    - http://ru.wikipedia.org/wiki/Гаий_Коринфянин
    бытие: http://azbyka.ru/days/sv-gaij
    событие:
       год: I
