@@ -1,14 +1,51 @@
 ---
 Кирилл Новоезерский:
    имя: Кирилл
-   прозвище: Новоезерский чудотворец
+   описание: священноинок и чудотворец Новоезерский
    чин: прп
-   собор: слав
-   вики: http://drevo-info.ru/articles/8900.html
+   собор: влгд?
+   вики:
+    - http://drevo-info.ru/articles/8900.html
+    - https://ru.wikipedia.org/wiki/Кирилл_Новоезерский
    бытие: http://azbyka.ru/days/sv-kirill-novoezerskij-novgorodskij
-   образ: http://pravicon.com/icon-2162
-   помин:
-      год: 1532
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/182/p19051ngbot2a1b7v1bbc1mh71sc14.jpg
+    - http://azbyka.ru/days/assets/img/saints/182/p19051ngbp1j8k1iqa3cp1jl81qbi5.jpg
+    - http://azbyka.ru/days/assets/img/saints/182/p19051ngbqiuf1an71pt978g1ct86.jpg
+    - http://azbyka.ru/days/assets/img/saints/182/p19051ngbr1cm11eso1def1i0tm0f7.jpg
+    - http://pravicon.com/icon-2162
+   событие:
+    - год: сер.XV
+      описание: ржд
+      место: Галич. Костромщина
+    - год: нач.XVI
+      описание: иноч
+      место: Комельская пустынь
+    - год: XV-XVI
+      описание: свящ
+    - год: 1532
       дата: 04.02
       описание: прств
-      служба: Кириллу Новоезерскому служба
+      место: Новоезерская обитель. Красный остров. Белое озеро
+    - год: 1649
+      дата: 07.11
+      описание: обр
+    - год: 1652
+      описание: прен
+      место: Новоезерская обитель. Красный остров. Белое озеро
+    - год: с 1919
+      лата: июнь
+      описание: утр
+   помин:
+    - дата: 04.02
+      описание: прств
+      служба:
+       - Кириллу Новоезерскому служба
+       - http://azbyka.ru/days/caa/305
+    - дата: 22.08
+      описание: прен
+    - дата: 07.11
+      описание: обр
+      служба:
+       - Кириллу Новоезерскому на обретение мощей служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_07.pdf
