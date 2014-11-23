@@ -7,7 +7,12 @@
    чин: сщмч
    собор: нмр,бут
    вики: http://drevo-info.ru/articles/5609.html
-   образ: http://drevo-info.ru/images/002/008969.jpg
+   бытие:
+    - http://azbyka.ru/days/sv-pavel-ansimov
+    - http://kuz3.pstbi.ru/bin/code.exe/frames/m/ind_oem.html/ans
+   образ:
+    - http://drevo-info.ru/images/002/008969.jpg
+    - http://azbyka.ru/days/assets/img/saints/810/p189ugkckho1k1tq72q91ol2ngj3.jpg
    событие:
     - год: 1891
       дата: 24.08
