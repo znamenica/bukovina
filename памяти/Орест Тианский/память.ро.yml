@@ -1,0 +1,23 @@
+---
+Орест Тианский:
+   имя: Орест
+   описание: врач Тианский
+   чин: мч
+   собор: капд,лек
+   вики: http://drevo-info.ru/articles/2563.html
+   бытие: http://azbyka.ru/days/sv-orest-tianskij-kappadokijskij
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/3974/p18a0rd70tdle1ckb1u3j8952t04.jpg
+    - http://drevo-info.ru/images/002/006275.jpg
+    - http://pravicon.com/icon-2613
+   событие:
+      год: 304
+      описание: прств
+      место: Тиана. Каппадокия
+      образ: http://azbyka.ru/days/assets/img/saints/3974/p18a0rd70t35d11p15fu1i3a1fvt3.jpg
+   помин:
+      дата: 10.11
+      описание: само
+      служба:
+       - Оресту Тианскому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_10.pdf
