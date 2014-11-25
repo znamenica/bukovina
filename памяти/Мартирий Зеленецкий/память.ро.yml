@@ -1,14 +1,33 @@
 ---
 Мартирий Зеленецкий:
-   имя: Мартирий
-   прозвище: Зеленецкий, Великолукский
+   имя: в иночестве Мартирий, в крещении Мина
+   отчество: Космич
+   опсиание: настоятель Зеленецкий, Великолукский
    чин: прп
-   собор: слав,рус
+   собор: нов?
    вики: http://drevo-info.ru/articles/12421.html
    бытие: http://azbyka.ru/days/sv-martirij-zeleneckij
-   образ: http://pravicon.com/icon-2400
-   помин:
-      год: 1603
+   образ:
+    - http://pravicon.com/icon-2400
+    - http://drevo-info.ru/images/001/002184.jpg
+    - http://azbyka.ru/days/assets/img/saints/758/p18i52iov91gq9g37bjq111fau47.jpg
+    - http://azbyka.ru/days/assets/img/saints/758/p18i52ifp2dp08b6851jpkdis3.jpg
+    - http://azbyka.ru/days/assets/img/saints/758/p18i52ifp417g31gqa1u3o1qqb108i4.jpg
+    - http://azbyka.ru/days/assets/img/saints/758/1ca5f73303484d3178623da52cc7f5d3.jpg
+    - http://azbyka.ru/days/assets/img/saints/758/0a6217b214353ea3f254e60ffeffaad8.jpg
+   событие:
+    - год: перв.пол.XVI
+      описание: ржд
+      место: Великие Луки
+    - год: 1603
       дата: 01.03
       описание: прств
-      служба: Мартирию Зеленецкому служба
+   помин:
+    - дата: 01.03
+      описание: прств
+    - дата: 11.11
+      описание: само
+      служба:
+       - Мартирию Зеленецкому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_11.pdf
+       - http://azbyka.ru/days/caa/657

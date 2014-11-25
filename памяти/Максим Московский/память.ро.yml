@@ -3,8 +3,10 @@
    имя: Максим
    описание: Московский, юродивый Христа ради
    чин: блж
-   собор: слав,рус,мск
-   вики: http://drevo-info.ru/articles/6650.html
+   собор: мск
+   вики:
+    - http://drevo-info.ru/articles/6650.html
+    - http://ru.wikipedia.org/wiki/Максим_Московский
    бытие: http://azbyka.ru/days/sv-maksim-moskovskij
    образ:
     - http://drevo-info.ru/images/002/007078.jpg
@@ -31,4 +33,6 @@
        - http://azbyka.ru/days/assets/upload/minei/08/minea_08_13.pdf
     - дата: 11.11
       описание: прств
-      служба: Максиму Московскому служба
+      служба:
+       - Максиму Московскому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_11.pdf
