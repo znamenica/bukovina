@@ -1,16 +1,71 @@
 ---
 Иоанн Златоуст:
    имя: Иоанн
-   прозвище: Златоуст, Константинопольский святитель
+   отчество: Секундович
+   прозвище: Златоуст (Златоустый)
+   описание: святитель Константинопольский
    чин: свт
    собор: трисв
-   вики: http://drevo-info.ru/articles/114.html
-   бытие: http://pravicon.com/info-2462
-   образ: http://pravicon.com/icon-1942
-   помин:
-    - описание: прств
-      служба: Иоанну Златоусту служба
+   вики:
+    - http://drevo-info.ru/articles/114.html
+    - https://ru.wikipedia.org/wiki/Иоанн_Златоуст
+   бытие: http://azbyka.ru/days/sv-ioann-zlatoust
+   образ:
+    - http://pravicon.com/icon-1942
+    - http://drevo-info.ru/images/001/000707.jpg
+    - http://drevo-info.ru/images/001/000017.jpg
+    - http://azbyka.ru/days/assets/img/saints/3938/p193vff80e16p31tcd160e2p61reb3.JPG
+    - http://azbyka.ru/days/assets/img/saints/3938/p1904ui29p1vpkvgl9ru2v6lp94.jpg
+    - http://azbyka.ru/days/assets/img/saints/3938/p1904ui29o165r9n5qiq152jlgp3.jpg
+    - http://azbyka.ru/days/assets/img/saints/3938/p193vi115747j1kv312gt16og17ni3.jpg
+    - http://azbyka.ru/days/assets/img/saints/3938/e1529dd76d993b5250284a845d6599c8.jpg
+    - http://azbyka.ru/days/assets/img/saints/3938/57a9c021095b83b19725aeba03851a92.jpg
+    - http://azbyka.ru/days/assets/img/saints/3938/f33f8241a860e909685b0ca333c7d360.jpg
+    - http://azbyka.ru/days/assets/img/saints/3938/1444444915e288c5a5646a3233bf91c3.jpg
+    - http://azbyka.ru/days/assets/img/saints/3938/df98751d6eab46c99456f64066b57db7.jpg
+    - http://azbyka.ru/days/assets/img/saints/3938/f2f01a334306f7bd3f840feee4174945.jpg
+    - http://azbyka.ru/days/assets/img/saints/3938/e09c26fd5935d815cbfa9c9d85b58c4c.jpg
+    - http://azbyka.ru/days/assets/img/saints/3938/71a4419eb0cd7dc3a3257da7b96323d2.jpg
+   отечник: http://azbyka.ru/otechnik/Ioann_Zlatoust/
+   событие:
+    - год: ок.347
+      описание: ржд
+      место: Антиохия (ныне Сирия)
+    - год: 367
+      описание: крещ
+      место: Антиохия (ныне Сирия)
+    - год: по 372
+      описание: иноч
+    - год: 381
+      описание: дияк
+    - год: 396
+      описание: свящ
+    - год: 398
+      описание: свят
     - год: 407
-      дата: 27.01
+      дата: 14.09
+      описание: прств
+    - год: 439
+      описание: прен
+      место: Константинополь
+      образ: http://azbyka.ru/days/assets/img/saints/3938/eb0e41dd7256a92278857a75c9464d04.jpg
+    - год: 1204
+      описание: прен.1
+      место: Рим. Италия
+    - год: 2004
+      дата: 14.11
+      описание: прен.2
+      место: Константинополь
+   помин:
+    - дата: 27.01
       описание: перен
       служба: Иоанну Златоусту о перенесении мощей служба
+    - дата: 14.09
+      описание: прств
+    - дата: 13.11
+      описание: прств
+      служба:
+       - Иоанну Златоусту служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_13.pdf
+       - http://azbyka.ru/days/caa/80
+       - http://azbyka.ru/days/caa/81
