@@ -1,12 +1,28 @@
 ---
 Нил Мироточивый:
    имя: Нил
-   описание: Афонский, Мироточивый
+   прозвище: Мироточивый
+   описание: священноинок Афонский
    чин: прп
+   собор: аф
    вики: http://drevo-info.ru/articles/14109.html
    бытие: http://azbyka.ru/days/sv-nil-mirotochivyj
-   образ: http://drevo-info.ru/images/001/002874.jpg
+   образ:
+    - http://drevo-info.ru/images/001/002874.jpg
+    - http://pravicon.com/icon-2579
+    - http://azbyka.ru/days/assets/img/saints/3101/p190om2ss41kqv1mpq1aaa1q191j8t3.jpg
+    - http://azbyka.ru/days/assets/img/saints/3101/p190om4fbt16ojl6u1parf141cn5.jpg
+    - http://azbyka.ru/days/assets/img/saints/3101/9b1f587b2e11675152d44580293a5164.jpg
    событие:
+    - год: вид.XVI
+      описание: ржд
+      место: Петрово село. Заикония. Греция
+    - год: XVI-XVII
+      описание: иноч
+    - год: XVI-XVII
+      описание: дияк
+    - год: XVI-XVII
+      описание: свящ
     - год: 1651
       дата: 12.11
       описание: прств
@@ -14,9 +30,11 @@
       дата: 07.05
       описание: обр
    помин:
-    - дата: 12.11
-      описание: прств
-      служба: Нилу Мироточивому служба
     - дата: 07.05
       собор: греч
       описание: обр
+    - дата: 12.11
+      описание: прств
+      служба:
+       - Нилу Мироточивому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_12.pdf
