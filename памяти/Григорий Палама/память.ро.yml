@@ -1,16 +1,39 @@
 ---
 Григорий Палама:
-   имя: Георгий, Георгий
-   прозвище: Киево-Печерских Григорий Киево-печерских всех отцов Фессалонитский
-      Палама святитель Амастридский 805, Амастридский святитель
-   фамилия: Неделю Великий
-   чин: свт,прп, свт
-   вики: http://drevo-info.ru/articles/9280.html, http://drevo-info.ru/articles/9280.html
-   бытие: http://azbyka.ru/days/sv-grigorij-palama, http://azbyka.ru/days/sv-georgij-amastridskij
-   помин:
-    - год: переходящее празднование во 2-ю поста
-      дата: 03.03
+   имя: Григорий
+   прозвище: Палама
+   описание: святитель Солунский (Фессалоникский, Фессалонитский)
+   чин: свт
+   собор: аф
+   вики:
+    - http://drevo-info.ru/articles/2283.html
+    - http://ru.wikipedia.org/wiki/Григорий_Палама
+   бытие:
+    - http://azbyka.ru/days/sv-grigorij-palama
+    - http://palama.ru/
+   образ:
+    - http://drevo-info.ru/images/001/000217.jpg
+    - http://azbyka.ru/days/assets/img/saints/305/e69e15675322983b2d0416957c20093a.jpg
+    - http://azbyka.ru/days/assets/img/saints/305/d84784657a80ff795531f487b1bdef14.jpg
+    - http://azbyka.ru/days/assets/img/saints/305/p18gehee2n1qqdn6a33l3tb10vk5.jpg
+    - http://azbyka.ru/days/assets/img/saints/305/p18gehee2mbdi1jfu15jmqjs1k6b4.jpg
+    - http://azbyka.ru/days/assets/img/saints/305/p18gehee2m1kdi1pe811imea6c943.jpg
+   отечник: http://azbyka.ru/otechnik/Grigorij_Palama/
+   событие:
+    - год: 1296
+      описание: ржд
+      место: Константинополь/Малая Азия
+    - год: ок.1316
+      описание: иноч
+      место: Афон
+    - год: 1359
+      дата: 14.11
       описание: прств
-      служба: Георгию Амастридскому служба
-    - {год=>802-811, дата=>21.02, описание=>прств}
-   образ: http://drevo-info.ru/images/002/008577.jpg
+      место: Солунь
+   помин:
+    - дата: нд.2.поста
+      описание: само
+      служба: Григорию Паламе служба
+    - дата: 14.11
+      описание: прств
+      служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_14.pdf
