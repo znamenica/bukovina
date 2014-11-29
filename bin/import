@@ -842,13 +842,8 @@ people.keys.each do| imja |
    memory.помин.дата = sprintf( "%.2i.%.2i", day, month )
    memory.помин.служба = memory.помин.служба && memory.помин.служба.split( '/' ).last
    memory.фамилия = memory.фамилия.select{|a|!a.empty?}.join( ' ' ).strip
-   if memory.прозвище.all? {|x| /^[А-ЯЁ][а-яё]+(ий|ая|ое)$/ =~ x }
-     memory.прозвище = memory.прозвище.select{|a|!a.empty?}.reverse.join( ' ' ).strip
-     memory.описание = memory.описание.select{|a|!a.empty?}.reverse.join( ' ' ).strip
-   else
-     memory.описание = memory.прозвище.select{|a|!a.empty?}.concat(memory.описание.select{|a|!a.empty?}).reverse.join( ' ' ).strip
-     memory.прозвище = ''
-   end
+   memory.описание = memory.прозвище.select{|a|!a.empty?}.concat(memory.описание.select{|a|!a.empty?}).reverse.join( ' ' ).strip
+   memory.прозвище = ''
    if memory.событие.год =~ /19(\d\d)/
       num = $1.to_i 
       if num >= 17 && num <= 48
