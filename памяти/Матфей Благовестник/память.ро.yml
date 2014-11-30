@@ -3,11 +3,16 @@
    имя: Матфей, Левий
    отчество: Алфеевич
    описание: благовестник, брат Иакова Алфеева, мытарь
-   чин: ап12
-   собор: ап12,плст
+   чин: ап
+   собор: ап12,плст,эфи
    вики: http://drevo-info.ru/articles/11658.html
    бытие: http://azbyka.ru/days/sv-matfej-levij
-   образ: http://drevo-info.ru/images/001/001963.jpg
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/3146/642a10064634eeed717abaa8e97b1a7b.jpg
+    - http://drevo-info.ru/images/001/001963.jpg
+    - http://azbyka.ru/days/assets/img/saints/3146/b9d66a4d087feb48b7a32749a8f64dc4.jpg
+    - http://azbyka.ru/days/assets/img/saints/3146/p193vgom40g3j13r71u7uecq1jm75.jpg
+    - http://azbyka.ru/days/assets/img/saints/3146/p18f82b1v51tknfmo18r01t9l1pfj3.jpg
    событие:
       год: 60
       описание: прств
@@ -15,4 +20,7 @@
    помин:
       дата: 30.06
       описание: само
-      служба: Матфею Благовестнику служба
+      служба:
+       - Матфею Благовестнику служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_16.pdf
+       - http://azbyka.ru/days/caa/272
