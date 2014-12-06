@@ -4,14 +4,19 @@
    отчество: Ярославич
    описание: великий князь Тверской
    чин: блгв
+   собор: твер?
    вики: http://drevo-info.ru/articles/11678.html
-   образ: http://drevo-info.ru/images/003/010932.jpg
+   бытие: http://azbyka.ru/days/sv-mihail-jaroslavich-tverskoj
+   образ:
+    - http://drevo-info.ru/images/003/010932.jpg
+    - http://azbyka.ru/days/assets/img/saints/776/0afce3ab61471109688ba7a2fbbb34a2.jpg
+    - http://azbyka.ru/days/assets/img/saints/776/6fe565cd4d63fc41a03aa3f7546e28dd.jpg
    событие:
     - год: 1272
       описание: ржд
     - год: 1294
       описание: брак
-      жена: Анна Кашинская
+      супруг: Анна Кашинская
     - год: 1318
       описание: прств
     - год: 1318
@@ -34,4 +39,8 @@
       описание: брак
     - дата: 22.11
       описание: само
-      служба: Михаилу Тверскому служба
+      служба:
+       - Михаилу Тверскому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_22.pdf
+       - http://azbyka.ru/days/assets/upload/daily_menaion/03_November/nov22.pdf
+       - http://azbyka.ru/days/caa/321
