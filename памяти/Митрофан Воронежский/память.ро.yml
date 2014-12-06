@@ -5,13 +5,15 @@
    прозвище: святитель Воронежский
    фамилия: Никаноров
    чин: свт
-   собор: слав,нмр,влад,врнж,ива,кстр,лип,3рст
-   вики: http://drevo-info.ru/articles/4315.html
+   собор: влад,врнж,ива,кстр,лип,3рст
+   вики:
+    - http://drevo-info.ru/articles/4315.html
+    - http://ru.wikipedia.org/wiki/Митрофан_Воронежский
    бытие: http://azbyka.ru/days/sv-mitrofan-v-shime-makarij
    образ:
-    - http://drevo-info.ru/pictures/7261.html
     - http://drevo-info.ru/images/002/007261.jpg
     - http://pravicon.com/icon-2456
+    - http://azbyka.ru/days/assets/img/saints/3195/p191tu88511i681q4219ktd5i10v63.jpg
    отечник: http://azbyka.ru/otechnik/Mitrofan_Voronezhskij/
    событие:
     - год: 1623
@@ -50,6 +52,11 @@
       дата: вид.04.09
       описание: прен
    помин:
+    - описание: само
+      служба:
+       - Митрофану Воронежскому служба
+       - http://azbyka.ru/days/caa/40
+       - http://azbyka.ru/days/caa/41
     - дата: 07.08
       описание: просл,обр
       служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_07.pdf
@@ -57,7 +64,4 @@
       описание: обр.2,прен
     - дата: 23.11
       описание: прств
-      служба:
-       - Митрофану Воронежскому служба
-       - http://azbyka.ru/days/caa/40
-       - http://azbyka.ru/days/caa/41
+      служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_23.pdf
