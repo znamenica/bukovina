@@ -3,7 +3,7 @@
    имя: Меркурий
    описание: князь, мораванин, воин Смоленский
    чин: мч
-   собор: слав,рус,смо,мрв,чсл
+   собор: смо,мрв
    вики:
     - http://drevo-info.ru/articles/7995.html
     - http://ru.wikipedia.org/wiki/Меркурий_Смоленский
@@ -12,9 +12,16 @@
     - http://pravicon.com/icon-2438
     - https://upload.wikimedia.org/wikipedia/commons/3/38/Mercury_of_Smolensk.jpg
    событие:
-      год: 1239
+    - год: нач.XIII
+      описание: ржд
+      место: Моравия
+    - год: 1239
       описание: прств
+      место: Долгомостье. Смоленщина
    помин:
       дата: 24.11
       описание: само
-      служба: Меркурию Мораванину служба
+      служба:
+       - Меркурию Мораванину служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_24.pdf
+       - http://azbyka.ru/days/assets/upload/daily_menaion/03_November/nov24.pdf
