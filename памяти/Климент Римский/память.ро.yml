@@ -1,0 +1,47 @@
+---
+Климент Римский:
+   имя: Климент
+   описание: папа Римский
+   чин: стсвт
+   собор: тавр?,рим
+   вики:
+    - http://drevo-info.ru/articles/11694.html
+    - http://ru.wikipedia.org/wiki/Климент_I_(папа_римский)
+   бытие: http://azbyka.ru/days/sv-kliment-1
+   образ:
+    - http://pravicon.com/icon-2183
+    - http://azbyka.ru/days/assets/img/saints/4906/166e8ba1c85b68d51c24161b45fe098e.jpg
+    - http://azbyka.ru/days/assets/img/saints/4906/p18avocq0nr6sd141e2d1t1upjb3.jpg
+    - http://azbyka.ru/days/assets/img/saints/4906/p18avocq0nltja6r6brb1pv44.jpg
+    - http://azbyka.ru/days/assets/img/saints/4906/p18avocq0nc8l1q2h4m316s61kk95.jpg
+   событие:
+    - год: нач.I
+      описание: ржд
+      место: Рим
+    - год: ок.66
+      описание: свят
+      место: Рим
+    - год: 101/103
+      описание: прств
+      место: Казачья бухта. Корсунь. Таврида
+    - год: 855-867
+      описание: прен
+      место: Апостольская церков. Корсунь
+      образ: http://azbyka.ru/days/assets/img/saints/4906/22550c30facdbc7927444d66330e96d2.jpg
+    - год: 868
+      описание: прен.часть
+      место: Рим
+    - год: 988-1015
+      описание: прен.глава
+      место: Десятинная церковь. Киев
+    - год: по XI
+      описание: прен.глава.1
+      место: Феодосиевы пещеры. Киев
+   помин:
+      дата: 25.11
+      описание: само
+      служба:
+       - Клименту Римскому служба
+       - Введение Богородицы/Введения Богородицы отданию, Клименту Римскому и Каму Александрийскому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_25.pdf
+       - http://azbyka.ru/days/caa/67

@@ -3,7 +3,9 @@
    описание: Введение Богородицы
    чин: сбт
    собор: 12пр
-   вики: http://drevo-info.ru/articles/797.html
+   вики:
+    - http://drevo-info.ru/articles/797.html
+    - http://ru.wikipedia.org/wiki/Введение_во_храм_Пресвятой_Богородицы
    бытие: http://azbyka.ru/days/prazdnik-vvedenie-vhod-vo-hram-presvjatoj-vladychicy-nashej-bogorodicy-i-prisnodevy-marii
    событие:
     - год: I до нэ
@@ -32,3 +34,6 @@
        - http://azbyka.ru/days/caa/238
     - дата: 25.11
       описание: отд
+      служба:
+       - Введение Богородицы/Введения Богородицы отданию, Клименту Римскому и Каму Александрийскому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_25.pdf

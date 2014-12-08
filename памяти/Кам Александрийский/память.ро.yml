@@ -1,10 +1,31 @@
 ---
 Кам Александрийский:
    имя: Пётр
-   прозвище: Александрийский
-   чин: мч
-   собор: 10ма,копт
-   вики: http://drevo-info.ru/articles/18648.html
+   описание: святитель Александрийский, I
+   чин: стсвт
+   собор: копт
+   вики:
+    - http://drevo-info.ru/articles/14117.html
+    - http://ru.wikipedia.org/wiki/Петр_Александрийский
+   бытие: http://azbyka.ru/days/sv-petr-i-aleksandrijskij
+   образ:
+    - http://drevo-info.ru/images/001/001970.jpg
+    - http://azbyka.ru/days/assets/img/saints/524/5c7bdffa3f40e51b1427ddd8ed654285.jpg
+    - http://azbyka.ru/days/assets/img/saints/524/fd194fcb285c69525199737948cfb509.jpg
+    - http://azbyka.ru/days/assets/img/saints/524/p18f86bpvp3djstkfb1qcd1njc3.jpg
    событие:
-      год: III
+    - год: сер.III
+      описание: ржд
+      место: Александрия
+    - год: вид.300
+      описание: свят
+    - год: 311
       описание: прств
+      место: Александрия
+   помин:
+      дата: 25.11
+      описание: само
+      служба:
+       - Каму Александрийскому служба
+       - Введение Богородицы/Введения Богородицы отданию, Клименту Римскому и Каму Александрийскому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_25.pdf
