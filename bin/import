@@ -567,7 +567,7 @@ def tokenize_line li, base
          li_e.name == 'a'
          link = true
          if text !~ /^(?:[\dIVX]+|[^\(\),;А-Я]+[\dIVX]+)$/ &&
-            li_e.attr( 'href' ) !~ /(\/(find|p-znaki|p-san|p-tip)|#)/
+            li_e.attr( 'href' ) !~ /(\/(find|p-znaki|p-san|p-tip|kalendar|glas\.|recept)|#)/
             log >> "Ссылка"
             url = li_e.attr( 'href' )
             url =~ /^http/ && url || ( base + url )
