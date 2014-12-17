@@ -6,7 +6,9 @@
    собор: арм
    вики: http://drevo-info.ru/articles/2680.html
    бытие: http://azbyka.ru/days/sv-irinarh-sevastijskij
-   образ: http://pravicon.com/icon-2054
+   образ:
+    - http://pravicon.com/icon-2054
+    - http://azbyka.ru/days/assets/img/saints/4126/ee091ff1986bf48a10fb7ee31768ac41.jpg
    событие:
       год: 303
       описание: прств

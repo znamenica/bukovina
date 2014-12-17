@@ -1,18 +1,22 @@
 ---
 Акакий Синайский:
    имя: Акакий
-   описание: Синайский, в иже Лествице
+   описание: инок Синайский, о котором повествует Лествица
    чин: прп
    вики: http://drevo-info.ru/articles/8089.html
    бытие: http://azbyka.ru/days/sv-akakij-sinajskij
-   образ: http://azbyka.ru/days/assets/img/saints/3812/d17c72cc0caf1607b86d3a3f2c83c2e4.jpg
+   образ:
+    - http://pravicon.com/icon-1077
+    - http://azbyka.ru/days/assets/img/saints/3812/d17c72cc0caf1607b86d3a3f2c83c2e4.jpg
    событие:
       год: VI
       описание: прств
+      место: вид.Екатеринская обитель. Синай
    помин:
-      дата: 07.07
+      дата: 29.11
       описание: само
       служба:
        - Акакию Синайскому служба
        - Фома Малеин/Фоме Малеину и Акакию Синайскому служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_07.pdf
+       - Парамон Вифинский/Парамону Вифинскому, Филумену Анкирскому и Акакию Синайскому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_29.pdf
