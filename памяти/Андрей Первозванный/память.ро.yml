@@ -7,10 +7,17 @@
    чин: ап
    собор: ап12,слав,рус,кар,киев,тавр
    вики: http://drevo-info.ru/articles/4481.html
-   бытие: http://pravicon.com/info-1766
+   бытие: http://azbyka.ru/days/sv-andrej-pervozvannyj
    образ:
     - http://drevo-info.ru/images/003/009528.jpg
     - http://drevo-info.ru/images/001/000745.jpg
+    - http://azbyka.ru/days/assets/img/saints/635/p193vht599p031mukcpm17m11f373.jpg
+    - http://azbyka.ru/days/assets/img/saints/635/52c4eb69044a166b5c2a8297eba626ee.jpg
+    - http://azbyka.ru/days/assets/img/saints/635/2db01e24f58cd62a5c5f3bf48bd6778e.jpg
+    - http://azbyka.ru/days/assets/img/saints/635/28b3b22f60db228fd867e3cdc5201488.jpg
+    - http://azbyka.ru/days/assets/img/saints/635/566b887f4369edf25fda7af6b771482e.jpg
+    - http://azbyka.ru/days/assets/img/saints/635/c58c7ad83f818655e2882b6b8a8a162a.jpg
+    - http://azbyka.ru/days/assets/img/saints/635/39293f6e4d1184de26248c448d3b68f7.jpg
     - http://pravicon.com/icon-1186
    событие:
     - год: I до нэ-I
@@ -35,3 +42,9 @@
       описание: рус
     - дата: 30.11
       описание: само
+      служба:
+       - Андрею Первозванному служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_30.pdf
+       - http://azbyka.ru/days/caa/266
+       - http://azbyka.ru/days/caa/267
+       - http://azbyka.ru/days/caa/268
