@@ -1,11 +1,13 @@
 ---
 Ираклемон Оксиринфский:
-   имя: Ираклемон, Иракламвон
-   описание: Оксиринфский, Фиваидский
+   имя: Ираклемон (Иракламвон, Ираклеон)
+   описание: пустынник Оксиринфский, Фиваидский
    чин: прп
-   собор: копт
+   собор: фив
    вики: http://drevo-info.ru/articles/10860.html
-   бытие: http://azbyka.ru/days/sv-iraklemon-iraklamvon-fivaidskij
+   бытие:
+    - http://azbyka.ru/days/sv-iraklemon-iraklamvon-fivaidskij
+    - http://azbyka.ru/days/sv-iraklemon-irakleon-oksirinfskij-egipetskij
    событие:
       год: IV
       описание: прств

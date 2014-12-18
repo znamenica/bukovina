@@ -1,11 +1,13 @@
 ---
 Иоанн Оксиринфский:
    имя: Иоанн
-   описание: Оксиринфский, Фиваидский
+   описание: пустынник Оксиринфский, Фиваидский
    чин: прп
-   собор: копт
+   собор: фив
    вики: http://drevo-info.ru/articles/10857.html
-   бытие: http://azbyka.ru/days/sv-ioann-egipetskij
+   бытие:
+    - http://azbyka.ru/days/sv-ioann-egipetskij
+    - http://azbyka.ru/days/sv-ioann-oksirinfskij-egipetskij
    образ: http://azbyka.ru/days/assets/img/saints/1649/p18q37fghd74i1ffo4igla7jb33.jpg
    событие:
       год: IV

@@ -1,11 +1,13 @@
 ---
 Андрей Оксиринфский:
    имя: Андрей
-   описание: Оксиринфский, Фиваидский
+   описание: пустынник Оксиринфский, Фиваидский
    чин: прп
-   собор: копт
+   собор: фив
    вики: http://drevo-info.ru/articles/10858.html
-   бытие: http://azbyka.ru/days/sv-andrej-fivaidskij
+   бытие:
+    - http://azbyka.ru/days/sv-andrej-fivaidskij
+    - http://azbyka.ru/days/sv-andrej-oksirinfskij-egipetskij
    событие:
       год: IV
       описание: прств

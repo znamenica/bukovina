@@ -1,11 +1,13 @@
 ---
 Боголюб Оксиринфский:
    имя: Феофил
-   описание: Оксиринфский, Фиваидский
+   описание: пустынник Оксиринфский, Фиваидский
    чин: прп
-   собор: копт
+   собор: фив
    вики: http://drevo-info.ru/articles/10859.html
-   бытие: http://azbyka.ru/days/sv-feofil-fivaidskij
+   бытие:
+    - http://azbyka.ru/days/sv-feofil-fivaidskij
+    - http://azbyka.ru/days/sv-feofil-oksirinfskij-egipetskij
    событие:
       год: IV
       описание: прств
