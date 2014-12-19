@@ -1,12 +1,16 @@
 ---
 Савва Звенигородский:
    имя: Савва
-   прозвище: Звенигородский, Сторожевский
+   описание: инок Троице-Сергиевский, настоятель Звенигородский, отшельник Сторожевский
    чин: прп
-   собор: слав,рус,мск,рднж
-   вики: http://drevo-info.ru/articles/4499.html
-   бытие: http://azbyka.ru/days/sv-savva-storozhevskij
-   бытие: http://azbyka.ru/days/sv-savva-storozhevskij-zvenigorodskij
+   собор: мск,рднж
+   вики:
+    - http://drevo-info.ru/articles/4499.html
+    - https://ru.wikipedia.org/wiki/Савва_Сторожевский
+   бытие:
+    - http://azbyka.ru/days/sv-savva-storozhevskij
+    - http://azbyka.ru/days/sv-savva-storozhevskij-zvenigorodskij
+    - http://www.pravmir.ru/prepodobnyj-savva-storozhevskij-i-segodnya-isceleniya-dayushhij/
    образ:
     - http://drevo-info.ru/images/002/007033.jpg
     - http://drevo-info.ru/images/001/000755.jpg
@@ -17,9 +21,13 @@
    событие:
     - год: XIV
       описание: ржд
+    - год: сер.XIV
+      описание: иноч
+      место: Троице-Сергиева обитель. Московщина
     - год: 1406
       дата: 03.12
       описание: прств
+      место: Сторожеская обитель. Московщина
     - год: до 1539
       описание: почит
     - год: 1547
@@ -28,6 +36,9 @@
     - год: 1652
       дата: 19.01
       описание: обр
+    - год: 1919
+      дата: 17.03
+      описание: утр
     - год: 1998
       дата: 10.08
       описание: обр.1
@@ -43,6 +54,10 @@
       описание: обр.1,прен
     - дата: 03.12
       описание: прств
+      служба:
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_03.pdf
+       - http://azbyka.ru/days/assets/upload/services/dec03-141dab.pdf
+    - описание: само
       служба:
        - Савве Звенигородскому служба
        - http://azbyka.ru/days/caa/337
