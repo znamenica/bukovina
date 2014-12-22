@@ -44,14 +44,21 @@
    помин:
     - дата: 20.06
       описание: прен
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_20.pdf
+      служба:
+       - Гурию Казанскому на пренесение мощей служба
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_20.pdf
     - дата: 04.10
       описание: обр
       служба:
+       - Гурию Казанскому на обретение мощей служба
        - Гурию и Варсонофию Казанским на обретение мощей служба
        - http://azbyka.ru/days/assets/upload/minei/10/minea_10_04.pdf
     - дата: 05.12
       описание: прств
+      служба:
+       - Гурию Казанскому на преставление служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_05.pdf
+    - описание: само
       служба:
        - Гурию Казанскому служба
        - http://azbyka.ru/days/caa/140
