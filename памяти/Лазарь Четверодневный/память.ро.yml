@@ -38,4 +38,6 @@
        - http://azbyka.ru/days/caa/176
     - дата: 17.10
       описание: прен
-      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_17.pdf
+      служба:
+       - Лазарю Четверодневному на пренесение мощей служба
+       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_17.pdf

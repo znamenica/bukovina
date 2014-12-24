@@ -1,0 +1,23 @@
+---
+Анфиса Римская:
+   имя: Анфиса
+   описание: жена Римская, жона римского сановника
+   чин: мц
+   собор: ари,рим
+   вики: http://drevo-info.ru/articles/4527.html
+   бытие:
+    - http://azbyka.ru/days/sv-anfisa-rimskaja
+    - http://3rm.info/31354-pamyat-svyatyh-muchenikov-v-afrike-ot-arian-postradavshih.html
+   образ: http://drevo-info.ru/images/001/000773.jpg
+   событие:
+    - год: вид.кон.IV
+      описание: брак
+    - год: до 398
+      описание: крещ
+      место: вид.Медиолан
+    - год: V
+      описание: прств
+      место: Рим
+   помин:
+      дата: 08.12
+      описание: само
