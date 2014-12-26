@@ -1,28 +1,58 @@
 ---
 Ангелина Сербская:
    имя: Ангелина
-   отчество: Андреевна
-   фамилия: Бранкович
-   описание: деспотисса Сербская
+   отчество: Андреевна (Геориевна)
+   фамилия: по мужу Бранкович, в девичесвте Арианитова
+   описание: деспотисса (правительница) Сербская
    чин: прп
-   вики: http://drevo-info.ru/articles/11473.html
+   собор: серб,блгвв
+   вики:
+    - http://drevo-info.ru/articles/11473.html
+    - https://ru.wikipedia.org/wiki/Ангелина_Сербская
    бытие: http://azbyka.ru/days/sv-angelina-serbskaja-brankovich
    образ:
+    - http://iconexpo.ru/pics/1_614.jpg
+    - http://ikona-na-zakaz.ru/images/icon155.jpg
+    - http://www.ikona-kiot.ru/wp-content/uploads/angelina-serbskaya-3.jpg
+    - http://www.ikona-kiot.ru/wp-content/uploads/angelina-serbskaya-1.jpg
     - http://drevo-info.ru/images/001/001919.jpg
     - http://azbyka.ru/days/assets/img/saints/5752/d9f0526815ed8debbf4c4e5724b0544d.jpg
     - http://azbyka.ru/days/assets/img/saints/5752/p18cg9ehp032a1e71849pitiro3.jpg
    событие:
-    - год: XV
+    - год: сер.XV
       описание: ржд
+    - год: до 1476
+      описание: брак
+      супруг: Стефан Бранкович
     - год: ок.1509
       описание: иноч
+      место: Срем. Сербия
     - год: 1520
+      дата: 30.07
       описание: прств
+      место: вид.Крушедольская обитель. Сербия
+    - год: 1520
+      описание: пгрб
+      место: Крушедольская обитель. Сербия
+    - год: по 1520
+      описание: часть.1.прен
+      место: Хоповская обитель. Сербия
+    - год: по 1520
+      собор: серб
+      описание: просл
+    - год: 1716 
+      описание: часть.2.утр
+    - год: XX
+      описание: часть.1.прен
+      место: Франция
    помин:
     - дата: 01.07
       описание: само
       служба: Ангелине Сербской служба
     - дата: 30.07
       собор: серб
-      описание: само
+      описание: прств
       служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_30.pdf
+    - дата: 10.12
+      описание: брак
+      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_10.pdf
