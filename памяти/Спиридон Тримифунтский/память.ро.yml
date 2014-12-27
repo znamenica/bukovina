@@ -1,19 +1,32 @@
 ---
 Спиридон Тримифунтский:
    имя: Спиридон
-   описание: Тримифунтский
+   описание: чудотворец и святитель Тримифунтский
    чин: свт
-   собор: 1вс,кипр,греч,слав
+   собор: 1вс,кипр,гост,рус
    вики: http://drevo-info.ru/articles/4563.html
-   бытие: http://pravicon.com/info-3435
+   бытие: http://azbyka.ru/days/sv-spiridon-trimifuntskij
    образ:
-    - http://pravicon.com/icon-2946
+    - http://azbyka.ru/days/assets/img/saints/4234/01f46c20ef56c42f45cba241eb38abf9.jpg
+    - http://azbyka.ru/days/assets/img/saints/4234/p19a09je6ku8612sep4c4vl17mt3.jpg
+    - http://azbyka.ru/days/assets/img/saints/4234/fc3aa1a79c3b23e55c120d96c7b6719d.jpg
+    - http://azbyka.ru/days/assets/img/saints/4234/a401378c34046a7d75692cbb87157696.jpg
+    - http://azbyka.ru/days/assets/img/saints/4234/5df4fb7d40a47b0ca1f975413e589840.jpg
+    - http://azbyka.ru/days/assets/img/saints/4234/a22d9cd534c7c8ad6b3b0508137276f0.jpg
+    - http://azbyka.ru/days/assets/img/saints/4234/p18fac61nsjq21454kbs1br6h463.jpg
+    - http://azbyka.ru/days/assets/img/saints/4234/654f88f1c81dec0ffc11dd8604f0f642.jpg
+    - http://azbyka.ru/days/assets/img/saints/4234/4bfb5631fe364be710f8de34e253d3e6.jpg
+    - http://azbyka.ru/days/assets/img/saints/4234/e1dcbd6c3468067c5b56cfffe3d45d4e.jpg
     - http://drevo-info.ru/images/001/000791.jpg
     - http://drevo-info.ru/images/001/000790.jpg
+    - http://pravicon.com/icon-2946
    событие:
     - год: кон.III
       описание: ржд
       место: Кипр
+    - год: кон.III-нач.IV
+      описание: брак
+      место: вид.Кипр
     - год: 306-325
       описание: свят
     - год: ок.348
@@ -37,3 +50,8 @@
       описание: чудо
     - дата: 12.12
       описание: само
+      служба:
+       - Спиридону Тримифунтскому служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_12.pdf
+       - http://azbyka.ru/days/caa/351
+       - http://azbyka.ru/days/caa/352
