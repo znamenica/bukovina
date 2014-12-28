@@ -1,13 +1,15 @@
 ---
-Михаил Гусев:
+Михаил Дивеевский:
    имя: Михаил
    отчество: Иванович
    фамилия: Гусев
-   описание: священник Троицкий
+   описание: священник Дивеевский, Кулебакский, брат Иакова Дивеевского
    чин: сщмч
    собор: нмр,ниж,див
    вики: http://drevo-info.ru/articles/22565.html
-   бытие: http://azbyka.ru/days/sv-mihail-gusev
+   бытие:
+    - http://azbyka.ru/days/sv-mihail-gusev
+    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu1sy4ZcW0AeCKUe8gUW88UfOuWeCQ*
    образ: http://drevo-info.ru/images/002/009127.jpg
    событие:
     - год: 1890
