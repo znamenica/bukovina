@@ -9,4 +9,6 @@
    помин:
       дата: нд.2.пред рх
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_11.pdf
+      служба:
+       - Праотцев собору служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_11.pdf
