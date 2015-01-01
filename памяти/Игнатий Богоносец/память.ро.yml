@@ -1,14 +1,52 @@
 ---
 Игнатий Богоносец:
    имя: Игнатий
-   прозвище: святитель, Богоносец
+   прозвище: Богоносец
+   описание: святитель Антиохийский; ученик Иоанна Богослова
    чин: стсвт
    собор: пев
    вики: http://drevo-info.ru/articles/8349.html
-   бытие: http://pravicon.com/info-2396
-   образ: http://pravicon.com/icon-1868
-   помин:
-      год: 107
-      дата: 29.01
+   бытие: http://azbyka.ru/days/sv-ignatij-bogonosec
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/606/13e1c38cf3f77e609661f26447ca4803.jpg
+    - http://azbyka.ru/days/assets/img/saints/606/6ee6699c72af19ce1fed8d19eafa1366.jpg
+    - http://azbyka.ru/days/assets/img/saints/606/61e624771d8e5eb89eabf9d0a4f4c368.jpg
+    - http://azbyka.ru/days/assets/img/saints/606/291e3c9de03025711289600f2650eecd.jpg
+    - http://azbyka.ru/days/assets/img/saints/606/47dda40bc53a53bba9708e590d80edc0.jpg
+    - http://azbyka.ru/days/assets/img/saints/606/4cd4338ec7d9dea3330192b81baa37e2.jpg
+    - http://azbyka.ru/days/assets/img/saints/606/19217c3b3e7507a1955ca26a1173ec69.jpg
+    - http://azbyka.ru/days/assets/img/saints/606/d9a70f2efa28ecbca40036622ea3dadf.jpg
+    - http://pravicon.com/icon-1868
+   отечник: http://azbyka.ru/otechnik/Ignatij_Antiohijskij/
+   событие:
+    - год: нач.I
+      описание: ржд
+      место: Сирия
+    - год: 107
       описание: прств
-      служба: Игнатию Богоносцу служба
+      образ:
+       - http://azbyka.ru/days/assets/img/saints/606/p18voe5g152kn35ic36191g14td4.jpg
+       - http://azbyka.ru/days/assets/img/saints/606/p18voe5g16p5l1162dsm1jmp1pgo5.jpg
+       - http://azbyka.ru/days/assets/img/saints/606/c18d897e94c360e0b0eace16bc498937.jpg
+       - http://azbyka.ru/days/assets/img/saints/606/fe4649382b5eb2c806571c8dd29ff65d.jpg
+       - http://azbyka.ru/days/assets/img/saints/606/p18voe5g13c4v1d8m3251ut2149d3.jpg
+      место: Рим
+    - год: 108
+      описание: прен
+      образ: http://azbyka.ru/days/assets/img/saints/606/b23c8141fd17c7b1a9f95d8cdc54605a.jpg
+      место: Антиохье
+    - год: 438
+      описание: прен.1
+      место: Антиохия
+    - год: 540/637
+      описание: прен.2
+      место: Клименто-Римская церковь. Рим
+   помин:
+    - дата: 20.12
+      описание: само
+      служба:
+       - Игнатию Богоносцу служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_20.pdf
+       - http://azbyka.ru/days/caa/360
+    - дата: 29.01
+      описание: прен
