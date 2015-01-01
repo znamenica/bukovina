@@ -1,13 +1,30 @@
 ---
 Иулиания Никомидийская:
    имя: Иулиания
-   прозвище: Никомидийская
+   отчество: Африкановна
+   описание: дева Никомидийская
    чин: мч
-   помин:
-      дата: 21.12
-      год: 304
-      описание: прств
-   служба: Иулиании Никомидийской служба
+   собор: виф
    вики: http://drevo-info.ru/articles/4692.html
    бытие: http://azbyka.ru/days/sv-iulianija-nikomidijskaja
-   образ: http://pravicon.com/icon-2094
+   образ:
+    - http://pravicon.com/icon-2094
+    - http://azbyka.ru/days/assets/img/saints/5688/p18voecfm6hfkhq41s25g831eh04.jpg
+    - http://azbyka.ru/days/assets/img/saints/5688/p18voecfm618pkstj1s5k11umn4j3.jpg
+    - http://azbyka.ru/days/assets/img/saints/5688/7542233884a57b1feb1e6914b3239673.jpg
+    - http://azbyka.ru/days/assets/img/saints/5688/1b34a32290a7b934fb5c9fc0f4f9d0e5.jpg
+   событие:
+    - год: вт.пол.III
+      описание: ржд
+      место: Никомидия. Вифиния
+    - год: 304
+      описание: прств
+      место: Никомидия. Вифиния
+      образ: http://azbyka.ru/days/assets/img/saints/5688/p18voecfm71ft0tn534k1s9q1hus5.jpg
+   помин:
+      дата: 21.12
+      описание: само
+      служба:
+       - Иулиании Никомидийской служба
+       - Рождество Христово/Предпразнеству Рождества Христова и Иулиании Никомидийской служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_21.pdf
