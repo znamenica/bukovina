@@ -1,13 +1,47 @@
 ---
 Неделя Узорешительница:
-   имя: Неделя, Анастасия
+   имя: Анастасия
    прозвище: Узорешительница
-   чин: мц
-   служба: Неделе Узорешительнице служба
+   описание: римлянка; дева; ученица Златорода Римлянина; мученица Иллирийская
+   чин: вмц
+   собор: рим,лек,илл
    вики: http://drevo-info.ru/articles/8368.html
    бытие: http://azbyka.ru/days/sv-anastasija-uzoreshitelnica
-   образ: http://pravicon.com/icon-1162
-   помин:
-      год: ок. 304
-      дата: 22.12
+   образ:
+    - http://drevo-info.ru/images/001/001452.jpg
+    - http://azbyka.ru/days/assets/img/saints/5872/817e25a0d7dd10ccb6a5a9642a533589.jpg
+    - http://azbyka.ru/days/assets/img/saints/5872/82465bacdfe9d88cb7eaa49fc28f12f4.jpg
+    - http://azbyka.ru/days/assets/img/saints/5872/c405394fcf6c868bf9c0c22621f8bbff.jpg
+    - http://azbyka.ru/days/assets/img/saints/5872/4584e48d554d2b383c7a7a1bc493a996.jpg
+    - http://azbyka.ru/days/assets/img/saints/5872/80a84bf3ce08301667018e50848dea47.jpg
+    - http://azbyka.ru/days/assets/img/saints/5872/p18f0607m8e2havq192tcrh26h3.jpg
+    - http://azbyka.ru/days/assets/img/saints/5872/e33949638e494fb347dd91902f373411.jpg
+    - http://azbyka.ru/days/assets/img/saints/5872/4584e48d554d2b383c7a7a1bc493a996.jpg
+    - http://azbyka.ru/days/assets/img/saints/5872/64b240448a14bcca505a304128df9129.jpg
+    - http://pravicon.com/icon-1162
+   событие:
+    - год: вт.вол.III
+      описание: ржд
+      место: Рим
+    - год: вт.вол.III
+      описание: брак
+      супруг: Помплий
+    - год: ок. 304
       описание: прств
+      образ: http://azbyka.ru/days/assets/img/saints/5872/8c847614a0fefbfa867c79292f66550a.jpg
+      место: Иллирия
+    - год: V
+      описание: прен
+      место: Константинополь
+    - год: по V
+      описание: прен
+      часть: глава,десн
+      место: Неделе-Узорешительницкая обитель. Афонье. Греция
+   помин:
+      дата: 22.12
+      описание: само
+      служба:
+       - Неделе Узорешительнице служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_22.pdf
+       - http://azbyka.ru/days/caa/366
+       - http://azbyka.ru/days/caa/367
