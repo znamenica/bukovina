@@ -901,7 +901,7 @@ Dir.foreach( "мѣсѧцесловъ/%02i" % month ) do| file |
    path = File.join( "мѣсѧцесловъ/%02i" % month, file )
    hip = File.open( path, 'r', encoding: 'Windows-1251' ) {| f | f.readlines }
    hip.map! do| line |
-      line.encode( 'UTF-8' ).gsub( /\s*\(с\. \d+\)\s*|\s*\(с\.\s*$|^\d+\)\s*|\s+$/, '' ).gsub( /\s+/, ' ')
+      line.encode( 'UTF-8' ).gsub( /\s*\(с\. \d+\)\s*|\s*\(с\.\s*$|^\d+\)\s*|\s+$/, ' ' ).gsub( /\s+/, ' ').gsub(/^\s+|\s+$/,'')
    end
    heap = hip[0...20].grep( /./ ).join( "\n" )
    heap << "\n" + '*' * 80
