@@ -2,11 +2,25 @@
 Трех Радостей образ:
    имя: Три Радости
    прозвище: образ Богородицы
-   чин: мц
-   служба: Трех Радостей образу служба
+   чин: обр
    вики: http://drevo-info.ru/articles/4757.html
    бытие: http://azbyka.ru/days/ikona-treh-radostej
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/162/p188nnvl8c8vl1de7pf41mvd1iss3.jpg
+    - http://azbyka.ru/days/assets/img/icons/162/p188nnvrg0m5d1jacdk713ot1vge8.jpg
+    - http://azbyka.ru/days/assets/img/icons/162/p188nnvrfv1tqgopof9k1fbqi66.jpg
+    - http://azbyka.ru/days/assets/img/icons/162/p188nnvl8c8vl1de7pf41mvd1iss3.jpg
+   событие:
+    - год: до нач.XVIII
+      описание: обр
+      место: Италия
+    - год: нач.XVIII
+      описание: прен
+      место: Свято-Троицкая на Грязех церковь. Москва
    помин:
-      год: 1392
       дата: 26.12
-      описание: прств
+      описание: само
+      служба:
+       - Трех Радостей образу служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_26.pdf
+       - http://azbyka.ru/days/caa/370

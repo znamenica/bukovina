@@ -49,8 +49,16 @@
        - http://azbyka.ru/days/caa/228
        - http://azbyka.ru/days/caa/229
        - http://azbyka.ru/days/caa/227
+    - дата: сб.по рх
+      описание: сбпо
+      служба:
+       - Субботе по Рождестве Христовом служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_26.pdf
     - дата: нд.по рх
       описание: ндпо
-      служба: Неделе по Рождестве Христовом служба
+      крат: ндрх
+      служба:
+       - Неделе по Рождестве Христовом служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_26.pdf
     - дата: 31.12
       описание: отд
