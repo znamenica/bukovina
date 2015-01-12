@@ -4,8 +4,16 @@
    чин: мчч
    вики: http://drevo-info.ru/articles/8458.html
    бытие: http://azbyka.ru/days/sv-mucheniki-14-000-mladencev-ot-iroda-v-vifleeme-izbiennye
-   помин:
-      год: I
-      дата: 29.12
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/6395/p185pb4u461309crpkg1i5pf693.jpg
+    - http://azbyka.ru/days/assets/img/saints/6395/p185pb565u1f6t5m24rbn3j1vsa9.jpg
+   событие:
+      год: ок.1
       описание: прств
-      служба: 14000 младенцам Вифлеемским служба
+      образ: http://azbyka.ru/days/assets/img/saints/6395/p185pb4u4615n614oq1d7g1medcs75.jpg
+   помин:
+      дата: 29.12
+      описание: само
+      служба:
+       - 14000-м младенцам Вифлеемским служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_29.pdf

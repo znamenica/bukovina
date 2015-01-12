@@ -5,11 +5,20 @@
    прозвище: Псалмопевец
    описание: царь Иерусалимский; богоотец
    чин: прор
-   собор: пра,ботц,сбдц,ндрх
+   собор: пра,ботц,сбдц,ндрх,прав
    вики:
     - http://drevo-info.ru/articles/641.html
     - https://ru.wikipedia.org/wiki/Давид
-   образ: http://drevo-info.ru/images/001/000101.jpg
+   бытие: http://azbyka.ru/days/sv-david-car
+   образ:
+    - http://drevo-info.ru/images/001/000101.jpg
+    - http://azbyka.ru/days/assets/img/saints/1753/p18imauto4184j48apsfcign9f3.jpg
+    - http://azbyka.ru/days/assets/img/saints/1753/p18f4leo0f4ag2oq1sm5pek1q0p5.jpg
+    - http://azbyka.ru/days/assets/img/saints/1753/fadf394475f8a74b3ee82a93b000837d.jpg
+    - http://azbyka.ru/days/assets/img/saints/1753/p18vtmileg171sobdk6s2f71q0i5.jpg
+    - http://azbyka.ru/days/assets/img/saints/1753/d928756906c5c80901893a0e9589e0ba.jpg
+    - http://azbyka.ru/days/assets/img/saints/1753/p18vtmiled1c9gv61j8h1h5v1fd3.jpg
+    - http://azbyka.ru/days/assets/img/saints/1753/p18vtmilefc58k5gs2019h01sbc4.jpg
    событие:
     - год: вид. 1045 до нэ
       описание: ржд
@@ -18,5 +27,5 @@
       описание: прств
       место: Иерусалим
    помин:
-    - описание: само
+      описание: само
       служба: Любиму Псалмопевцу служба
