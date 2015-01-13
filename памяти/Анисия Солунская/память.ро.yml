@@ -1,15 +1,31 @@
 ---
 Анисия Солунская:
    имя: Анисия
-   прозвище: Солунская, Фессалоникийская
+   описание: уроженка и мученица Солунская, Фессалоникийская
    чин: мц
+   собор: мак
    вики: http://drevo-info.ru/articles/4787.html
    бытие: http://azbyka.ru/days/sv-anisija-solunskaja-fessalonikijskaja
-   образ: http://pravicon.com/icon-1199
-   помин:
-      год: 298
-      дата: 30.12
+   образ:
+    - http://pravicon.com/icon-1199
+    - http://azbyka.ru/days/assets/img/saints/5976/p18dclrpuft5m67ead83j416n73.jpg
+    - http://azbyka.ru/days/assets/img/saints/5976/p18vtmg1m2e1inotul1lns1gi53.jpg
+    - http://azbyka.ru/days/assets/img/saints/5976/p18dclrpufd5h9rcbiipv9jic4.jpg
+    - http://azbyka.ru/days/assets/img/saints/5976/p18vtmg1m5cr4kbm19g91hjv1p6a5.jpg
+   событие:
+    - год: вт.пол.III
+      описание: ржд
+      место: Солунь. Македония 
+    - год: 298
       описание: прств
+      место: вид.Солунь. Македония 
+    - год: до XXI
+      описание: прен
+      место: Дмитрие-Солунская церковь. Салоники. Греция
+   помин:
+      дата: 30.12
+      описание: само
       служба:
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_30.pdf
        - Анисии Солунской служба
        - Анисии Солунской, Мелании Римской и Зотику Сиропитателю служба      

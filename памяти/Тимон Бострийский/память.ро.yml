@@ -1,15 +1,19 @@
 ---
-Тимон Семидесятник:
+Тимон Бострийский:
    имя: Тимон
    прозвище: диякон, апостол от 70-ти, святитель Бострийский
    чин: ап
-   собор: ап70,4да
+   собор: ап70,4да,араб
    вики: http://drevo-info.ru/articles/2009.html
    бытие: http://azbyka.ru/days/sv-timon
-   образ: http://drevo-info.ru/images/002/004175.jpg
+   образ:
+    - http://drevo-info.ru/images/002/004175.jpg
+    - http://azbyka.ru/days/assets/img/saints/2952/p18dcm1r3g14tj1uml1l3g532ej34.jpg
+    - http://azbyka.ru/days/assets/img/saints/2952/p18dcm1r3g1fvh14n7a5b14th2d63.jpg
    событие:
       год: I
       описание: прств
+      место: вид.Бостра. Аравия
    помин:
       дата: 30.12
       описание: само

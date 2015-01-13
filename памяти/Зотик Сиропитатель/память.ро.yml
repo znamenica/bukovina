@@ -2,12 +2,19 @@
 Зотик Сиропитатель:
    имя: Зотик
    прозвище: Сиропитатель
-   чин: сщмч
+   описание: священник Константинопольский
+   чин: сщстц
    вики: http://drevo-info.ru/articles/4789.html
    бытие: http://azbyka.ru/days/sv-zotik-siropitatel
-   образ: http://pravicon.com/icon-1841
-   помин:
+   образ:
+    - http://drevo-info.ru/images/002/008117.jpg
+    - http://pravicon.com/icon-1841
+   событие:
       год: ок. 340
-      дата: 30.12
       описание: прств
-      служба: Зотику Сиропитателю служба
+   помин:
+      дата: 30.12
+      описание: само
+      служба:
+       - Зотику Сиропитателю служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_30.pdf
