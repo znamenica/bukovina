@@ -1,17 +1,48 @@
 ---
 Василий Великий:
    имя: Василий
-   прозвище: Великий, Каппадокийский, Кесарии Каппадокийской святитель
+   прозвище: Великий
+   описание: святитель Каппадокийский, Кесарии Каппадокийской, сын Емилии Кесарийской
    чин: свт
-   собор: трисв
+   собор: трисв,капд
    вики: http://drevo-info.ru/articles/213.html
    отечник: http://azbyka.ru/otechnik/Vasilij_Velikij/
    бытие: http://pravicon.com/info-1929
-   образ: http://pravicon.com/icon-1384
-   помин:
-      год: 379
-      дата: 1.01
+   образ:
+    - http://pravicon.com/icon-1384
+    - http://drevo-info.ru/images/002/004034.jpg
+    - http://drevo-info.ru/images/001/000286.jpg
+    - http://azbyka.ru/days/assets/img/saints/4221/p193vfa7nk111pc1k1l4h5m21a663.JPG
+    - http://azbyka.ru/days/assets/img/saints/4221/p18vtnjaqk177l1i131vb61j6k1bnr4.jpg
+    - http://azbyka.ru/days/assets/img/saints/4221/p18vtnjaqi8gno3414m618f6ioi3.jpg
+    - http://azbyka.ru/days/assets/img/saints/4221/300000c92275676334855c766f6c2598.jpg
+    - http://azbyka.ru/days/assets/img/saints/4221/81dadfae56812a1d743a7038c63690da.jpg
+    - http://azbyka.ru/days/assets/img/saints/4221/edd640c01ec1a4af67eab8392cd11b91.jpg
+    - http://azbyka.ru/days/assets/img/saints/4221/a77703232aba085d82a926482c52ca79.jpg
+    - http://azbyka.ru/days/assets/img/saints/4221/95e556f27cbdb49b6af9c38ef3bb845b.jpg
+   отечник: http://azbyka.ru/otechnik/Vasilij_Velikij/
+   событие:
+    - год: ок.330
+      описание: ржд
+      место: Аннеса/Аниса. Каппадокия
+    - год: ок.357
+      описание: крещ
+      место: Кесария. Каппадокия
+    - год: 362
+      описание: дияк
+    - год: 364
+      описание: свящ
+    - год: 370
+      описание: свят
+    - год: 379
       описание: прств
+      место: вид.Кесария. Каппадокия
+   помин:
+      дата: 01.01
+      описание: само
       служба:
        - Василию Великому служба
        - Обрезание Христово/Обрезанию Христову и Василию Великому служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_01.pdf
+       - http://azbyka.ru/days/caa/374
+       - http://azbyka.ru/days/caa/375

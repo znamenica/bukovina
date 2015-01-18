@@ -1,12 +1,29 @@
 ---
 Емилия Кесарийская:
    имя: Емилия
-   прозвище: Кесарийская
-   чин: прав
+   описание: жительница Кесарийская; мать Василия Великого, Григория Нисского, Кама
+      Севастийского, Макрины Феклы, Феозвы Диякониссы, Навкратия Пустынника; инокиня
+      Каппадокийская
+   чин: прп
+   собор: капд,правв
    вики: http://drevo-info.ru/articles/22846.html
    бытие: http://azbyka.ru/days/sv-emilija-kesarijskaja-kappadokijskaja
-   образ: http://pravicon.com/icon-1783
-   помин:
-      год: 510
-      дата: 01.01
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/6097/p18dd48414fia172tahg7tg446.jpg
+    - http://azbyka.ru/days/assets/img/saints/6097/p18dd484141hbvpds1e941j51nkq5.jpg
+    - http://azbyka.ru/days/assets/img/saints/6097/p18dd484141qmrpp11k7c1h54l5m4.jpg
+    - http://azbyka.ru/days/assets/img/saints/6097/p18dd4840l71k1et41uai1tvg1rk3.jpg
+    - http://pravicon.com/icon-1783
+    - http://drevo-info.ru/images/002/007883.jpg
+   событие:
+    - год: 305-315
+      описание: ржд
+      место: Кесария. Каппадокия
+    - год: ок.330
+      описание: брак
+      супруг: Василий
+    - год: ок.378/ок.388
       описание: прств
+   помин:
+      дата: 01.01
+      описание: само

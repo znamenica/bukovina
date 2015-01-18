@@ -1,11 +1,20 @@
 ---
 Обрезание Христово:
    описание: Обрезание Христово
+   крат: обрз
    бытие: http://azbyka.ru/days/prazdnik-obrezanie-gospodne
+   вики: http://drevo-info.ru/articles/1097.html
+   образ: http://drevo-info.ru/images/001/002041.jpg
+   событие:
+    - год: I
+      описание: само
+    - год: IV
+      описание: просл
    помин:
-      год: I
       дата: 01.01
       описание: само
       служба:
        - Обрезанию Христову служба
        - Обрезанию Христову и Василию Великому служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_01.pdf
+       - http://azbyka.ru/days/caa/376

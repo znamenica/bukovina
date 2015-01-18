@@ -1,11 +1,18 @@
 ---
 Василий Мученик:
    имя: Василий
-   прозвище: Анкирский
+   описание: мученик Анкирский
    чин: мч
+   собор: гал
    вики: http://drevo-info.ru/articles/5443.html
    бытие: http://azbyka.ru/days/sv-vasilij-ankirskij
-   помин:
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/465/p18vtnnpg11pin1f5fhs81p41h4l4.jpg
+    - http://azbyka.ru/days/assets/img/saints/465/p18upc9hvae9m1s0q11pefb01oh3.jpg
+   событие:
       год: ок. 362
-      дата: 1.01
       описание: прств
+      место: Анкира. Галатия
+   помин:
+      дата: 01.01
+      описание: само
