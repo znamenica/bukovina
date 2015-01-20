@@ -1,13 +1,30 @@
 ---
 Гордий Каппадокийский:
    имя: Гордий
-   прозвище: Каппадокийский
+   описание: сотник; уроженец и мученик Каппадокийский
    чин: мч
+   собор: капд,воев
    вики: http://drevo-info.ru/articles/8528.html
    бытие: http://azbyka.ru/days/sv-gordij-kappadokijskij
-   образ: http://pravicon.com/icon-1556
-   помин:
-      год: ок. 314-320
-      дата: 03.01
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/4984/p18dir2k6o14k81esdcth1ldf1233.jpg
+    - http://drevo-info.ru/images/002/005795.jpg
+    - http://days.pravoslavie.ru/jpg/ib3923.jpg
+    - http://pravicon.com/icon-1556
+   событие:
+    - год: вид.вт.пол.III
+      описание: ржд
+      место: Кесария. Каппадокия
+    - год: ок. 320
       описание: прств
-      служба: Гордию Каппадокийскому служба
+      место: вид. Кесария. Каппадокия
+      образ:
+       - http://azbyka.ru/days/assets/img/saints/4984/p18dir2k6o11fujas15c71blq1tq24.jpg
+       - http://days.pravoslavie.ru/jpg/ib3924.jpg
+   помин:
+      дата: 03.01
+      описание: само
+      служба:
+       - Гордию Каппадокийскому служба
+       - Богоявление/Предпразнеству Богоявления, Малахии Завулонову и Гордию Каппадокийскому служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_03.pdf
