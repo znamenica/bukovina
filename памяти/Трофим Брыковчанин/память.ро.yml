@@ -1,22 +1,20 @@
 ---
-Александр Органов:
-   имя: Александр
-   отчество: Александрович
-   фамилия: Органов
-   описание: священник
+Трофим Брыковчанин:
+   имя: Трофим
+   отчество: Григорьевич
+   фамилия: Мячин
+   описание: брыковчанин; священник
    чин: сщмч
    собор: нмр,сам
-   вики: http://drevo-info.ru/articles/11976.html
-   бытие:
-    - http://azbyka.ru/days/sv-aleksandr-organov
-    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuCs8CUfOuW660fdOfVc8qYs00*euKesO0hdC0iceXb**
+   вики: http://drevo-info.ru/articles/11981.html
+   бытие: http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuAvyScfG0Gs8vYe8kUUy0ccuvUv8KWeCQ*
    событие:
-    - год: 1873
+    - год: 1888
       описание: ржд
-      место: Туарин село. Самарская губерния
-    - год: 1917-1923
+      место: Брыковка (Бриковка) село. Саратовская губерния
+    - год: вид.1910
       описание: дияк
-    - год: 1917-1923
+    - год: вид.1910
       описание: свящ
     - год: 1938
       дата: 01.01
