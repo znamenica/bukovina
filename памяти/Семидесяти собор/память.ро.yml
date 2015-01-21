@@ -1,12 +1,21 @@
 ---
 Семидесяти собор:
-   имя: Семидесяти Собор
    описание: 70-ти апостолов собор
-   чин: ап70
+   чин: апп
+   крат: ап70
    вики: http://drevo-info.ru/articles/14421.html
    бытие: http://azbyka.ru/days/sv-sobor-70-ti-apostolov
+   образ:
+    - http://drevo-info.ru/images/001/003026.jpg
+    - http://azbyka.ru/days/assets/img/saints/6402/p18vviv9at1oia180g1748us9g7f3.jpg
+    - http://azbyka.ru/days/assets/img/saints/6402/p18disd1n0rq71aev13h5166s1bo23.jpg
+   событие:
+      год: II-IX
+      описание: просл
    помин:
-      год: 212
       дата: 04.01
-      описание: прств
-      служба: Семидесяти собору служба
+      описание: само
+      служба:
+       - Семидесяти собору служба
+       - Богоявление/Предпразнеству Богоявления, Семидесяти собору и Феоктисту Кукумскому служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_04.pdf

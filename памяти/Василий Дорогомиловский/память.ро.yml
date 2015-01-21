@@ -6,9 +6,11 @@
    описание: священник Ильминский, Чикишлярский, протоиерей Свеаборгский, Огородницкий,
       Дорогомиловский
    чин: сщмч
-   собор: нмр,бут,мск?
+   собор: нмр,бут,мск?,пенз?
    вики: http://drevo-info.ru/articles/3243.html
-   бытие: http://azbyka.ru/days/sv-vasilij-jagodin
+   бытие:
+    - http://azbyka.ru/days/sv-vasilij-jagodin
+    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuTcuuYe8oUUe1Ve8iceG0*euKesO0hdC0iceXb**
    событие:
     - год: 1870
       дата: 11.04
