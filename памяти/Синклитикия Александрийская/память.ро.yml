@@ -1,13 +1,31 @@
 ---
 Синклитикия Александрийская:
    имя: Синклитикия
-   прозвище: Александрийская
+   описание: Александрийская
    чин: прп
+   собор: мак,копт
    вики: http://drevo-info.ru/articles/8550.html
    бытие: http://azbyka.ru/days/sv-sinklitikija-aleksandrijskaja
-   образ: http://pravicon.com/icon-2912
-   помин:
-      год: ок. 350
-      дата: 05.01
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/5999/p18djnp2b8kmkn99ab8mo0m354.jpg
+    - http://azbyka.ru/days/assets/img/saints/5999/p18vvj5f98s2lhh3psk19g31m843.jpg
+    - http://azbyka.ru/days/assets/img/saints/5999/p18djnp2b81r551ahnrvr13rvdqq3.jpg
+    - http://drevo-info.ru/images/002/007776.jpg
+    - http://azbyka.ru/days/assets/img/saints/217/p18djnv3l31dr31glb1s3r8p267j3.jpg
+    - http://pravicon.com/icon-2912
+   событие:
+    - год: ок.267
+      описание: ржд
+      место: Македония
+    - год: кон.III-нач.IV
+      описание: иноч
+      место: Александрия. Египет
+    - год: ок.350
       описание: прств
-      служба: Предпразнеству Богоявления, Феопемпту и Феоне Никомидийским и Синклитикии Александрийской служба
+      место: Александрия. Египет
+   помин:
+      дата: 05.01
+      описание: само
+      служба:
+       - Богоявление/Предпразнеству Богоявления, Феопемпту и Феоне Никомидийским и Синклитикии Александрийской служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_05.pdf
