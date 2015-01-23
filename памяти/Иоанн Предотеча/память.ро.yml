@@ -10,6 +10,7 @@
     - https://ru.wikipedia.org/wiki/Иоанн_Креститель
    бытие: http://azbyka.ru/days/sv-prorok-i-krestitel-ioann-predtecha
    образ: http://drevo-info.ru/images/001/000575.jpg
+   служба: http://azbyka.ru/days/caa/109
    событие:
     - год: I до нэ
       описание: зач
@@ -53,11 +54,15 @@
    помин:
     - дата: 07.01
       описание: сбр,прен.дес
-      служба: Иоанну Предотечу о соборе служба
+      служба:
+       - Иоанну Предотечу о соборе служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_07.pdf
       вики: http://drevo-info.ru/articles/8561.html
     - дата: 24.02
       описание: обр.гл.1,обр.гл.2
-      служба: Иоанну Предотече на обретение главы первое и второе служба
+      служба:
+       - Иоанну Предотече на обретение главы первое и второе служба
+       - http://azbyka.ru/days/caa/108
     - дата: 25.05
       описание: обр.гл.3
       служба: Иоанну Предотече на обретение главы третее служба
@@ -67,6 +72,8 @@
        - Иоанну Предотече на рождество служба
        - http://azbyka.ru/days/assets/upload/minei/06/minea_06_24.pdf
        - http://azbyka.ru/days/caa/73
+       - http://azbyka.ru/days/caa/106
+       - http://azbyka.ru/days/caa/107
        - http://azbyka.ru/days/caa/74
     - дата: 20.07
       описание: осв

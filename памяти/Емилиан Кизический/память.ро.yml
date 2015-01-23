@@ -1,21 +1,24 @@
 ---
 Емилиан Кизический:
    имя: Емилиан
-   прозвище: исповедник и святитель Кизический
+   описание: исповедник; святитель Кизический
    чин: исвт
    вики: http://drevo-info.ru/articles/3678.html
    бытие: http://azbyka.ru/days/sv-emilian-kizicheskij
    образ:
+    - http://azbyka.ru/days/assets/img/saints/2969/p18dju9fcelct1a0o11f51muc1h5q3.jpg
     - http://drevo-info.ru/images/002/007008.jpg
     - http://pravicon.com/icon-1782
+   служба: Емилиану Кизическому служба
    событие:
       год: 815-820
       описание: прств
    помин:
     - дата: 08.01
       описание: само
+      служба:
+       - Егорий Хозевит/Егорию Хозевиту, Емилиану Кизическому и Домнике Константинопольской служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_08.pdf
     - дата: 08.08
       описание: само
-      служба:
-       - Емилиану Кизическому служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_08.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_08.pdf
