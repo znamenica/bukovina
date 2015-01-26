@@ -1,26 +1,39 @@
 ---
 Михаил Клопский:
-   имя: Михаил
+   имя: в крещении Михаил
    отчество: Максимович
-   прозвище: Новгородский, Клопский, юродивый Христа ради
+   описание: подвижник Новгородский и Клопский, юродивый Христа ради; родственник Дмитрия
+      Донского
    чин: прп
-   собор: слав,рус
+   собор: нвг?,блжж,мск?
    вики: http://drevo-info.ru/articles/4875.html
    бытие: http://azbyka.ru/days/sv-mihail-klopskij
-   образ: http://drevo-info.ru/images/001/000853.jpg
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/941/p18dpok743faj1vbi1bvb37lr275.jpg
+    - http://azbyka.ru/days/assets/img/saints/941/67452f0fbcd0a5f7b647c99b9ee46796.jpg
+    - http://drevo-info.ru/images/001/000853.jpg
+    - http://azbyka.ru/days/assets/img/saints/941/p18dpok743b772c1j9glonf393.JPG
+    - http://azbyka.ru/days/assets/img/saints/941/df110b5e4f5bc8b8c7e81a986fce7b10.jpg
+   служба:
+    - Михаилу Клопскому служба
+    - http://azbyka.ru/days/caa/384
    событие:
     - год: XIV
       описание: ржд
+      место: Москва
     - год: до 1412
       описание: иноч
+      место: Клопская обитель. Новгород
     - год: ок. 1453-1456
+      дата: 11.01
       описание: прств
+      место: Клопская обитель. Новгород
     - год: 1547
       собор: рус
       описание: просл
    помин:
     - дата: 11.01
       описание: прств
+      место: http://azbyka.ru/days/assets/upload/minei/01/minea_01_11.pdf
     - дата: 23.06
       описание: само
-      служба: Михаилу Клопскому служба
