@@ -4,7 +4,7 @@
    фамилия: Рублёв
    описание: богомаз, ученик Феофана Грека
    чин: прп
-   собор: слав,рус,мск,рднж,бмз
+   собор: мск,рднж,бмз
    вики:
     - http://drevo-info.ru/articles/2086.html
     - http://ru.wikipedia.org/wiki/Андрей_Рублёв
@@ -14,6 +14,9 @@
    образ:
     - http://drevo-info.ru/images/001/000196.jpg
     - http://pravicon.com/icon-1180
+   служба:
+    - Андрею Рублёву служба
+    - http://azbyka.ru/days/caa/733
    событие:
     - год: ок.1370
       описание: ржд
@@ -34,6 +37,3 @@
        - http://azbyka.ru/days/assets/upload/minei/06/minea_06_13.pdf
     - дата: 04.07
       описание: само
-      служба:
-       - Андрею Рублёву служба
-       - http://azbyka.ru/days/caa/733

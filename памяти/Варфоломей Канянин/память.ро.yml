@@ -13,6 +13,9 @@
     - http://azbyka.ru/days/assets/img/saints/5421/19c5f491a9d4d5dd19fe25d163a85dbf.jpg
     - http://azbyka.ru/days/assets/img/saints/5421/bd381d049055f4c0b2e568b41ad3c078.jpg
     - http://azbyka.ru/days/assets/img/saints/5421/ee487205afa6418897c3d0f09a17f6e0.jpg
+   служба:
+    - Варфоломею Канянину служба
+    - http://azbyka.ru/days/caa/162
    событие:
     - год: I
       описание: прств
@@ -33,9 +36,10 @@
     - дата: 11.06
       описание: само
       служба:
-       - Варфоломею Канянину служба
        - Варфоломею Канянину и Тешичу Саламинскому служба
        - http://azbyka.ru/days/assets/upload/minei/06/minea_06_11.pdf
-       - http://azbyka.ru/days/caa/162
     - дата: 25.08
       описание: прен
+      служба:
+       - Варфоломею Канянину на пренесение мощей и Титу Критскому служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_25.pdf

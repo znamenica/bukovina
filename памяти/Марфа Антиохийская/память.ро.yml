@@ -6,6 +6,7 @@
    вики: http://drevo-info.ru/articles/18061.html
    бытие: http://azbyka.ru/days/sv-marfa-antiohijskaja
    образ: http://pravicon.com/icon-2406
+   служба: Марфе Антиохийской служба
    событие:
     - год: VI
       описание: прств
@@ -18,4 +19,6 @@
    помин:
       дата: 04.07
       описание: само
-      служба: Марфе Антиохийской служба
+      служба:
+       - Андрей Критский/Андрею Критскому и Марфе Антиохийской служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_04.pdf

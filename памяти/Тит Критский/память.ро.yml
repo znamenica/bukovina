@@ -1,0 +1,38 @@
+---
+Тит Критский:
+   имя: Тит
+   описание: святитель Гортинский и Критский, апостол от 70-ти
+   чин: ап
+   собор: ап70,крит,ксвт
+   вики: http://drevo-info.ru/articles/11286.html
+   бытие: http://azbyka.ru/days/sv-tit
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/1832/p183kk0qubdo71e16t5d1e6lbbt5.jpg
+    - http://azbyka.ru/days/assets/img/saints/1832/p192i8fnci1thq1m82ku9gccf93.jpg
+    - http://azbyka.ru/days/assets/img/saints/1832/p183kjvho51vjj1cfaa3k1cci17p73.jpg
+    - http://azbyka.ru/days/assets/img/saints/1832/p192i8fncj126q19f4117dhoe1sqt4.jpg
+   событие:
+    - год: нач.I
+      описание: ржд
+      место: Крит
+    - год: кон.I-нач.II
+      описание: прств
+      место: Крит
+    - год: кон.I-нач.II
+      описание: пгрб
+      место: Крит
+    - год: III-823
+      описание: прен
+      место: собор. Крит
+    - год: 823
+      описание: утр.оснч
+      место: Крит
+    - год: по 823
+      описание: прен
+      место: Марковская церковь. Венеция. Италия
+   помин:
+      дата: 25.08
+      описание: само
+      служба:
+       - Варфоломей Канянин/Варфоломею Канянину на пренесение мощей и Титу Критскому служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_25.pdf
