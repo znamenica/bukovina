@@ -1,12 +1,29 @@
 ---
 Млекопитательница образ:
-   имя: Млекопитательница, Галактотрофуса, Типикарница
+   имя: Млекопитательница (Галактотрофуса), Типикарница
    описание: образ Богородицы
    чин: обр
+   собор: хлдр
    вики: http://drevo-info.ru/articles/8447.html
    бытие: http://azbyka.ru/days/ikona-mlekopitatelnica
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/290/d870fd011ef09be87e763f424e27ef83.jpg
+    - http://drevo-info.ru/images/002/007091.jpg
+    - http://azbyka.ru/days/assets/img/icons/290/ef14b2a0f3a6be63df57fe9ee02b2a41.jpg
+    - http://azbyka.ru/days/assets/img/icons/290/6ab4c7fbc86a0fd90eaeb7466483ae34.jpg
+    - http://azbyka.ru/days/assets/img/icons/290/83f310eb28a29884f2d5857607bcce0e.jpg
+   служба:
+    - Млекопитательнице образу служба
+    - http://azbyka.ru/days/caa/567
+    - http://azbyka.ru/days/caa/387
+   событие:
+    - год: V-VI
+      описание: обр
+      место: Великая Саввина лавра. Вади-Кедрон. Иудейская пустыня
+    - год: XIII
+      описание: прен
+      место: Карейская келья. Хиландарская обитель. Афон
    помин:
-      год: V-VI
       дата: 12.01
       описание: прств
-      служба: Млекопитательнице образу служба
+      служба: http://azbyka.ru/days/assets/upload/minei/01/minea_01_12.pdf
