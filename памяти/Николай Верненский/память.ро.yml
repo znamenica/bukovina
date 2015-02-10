@@ -8,7 +8,14 @@
    собор: нмр,нмк,бря,лип,полт
    вики: http://drevo-info.ru/articles/2447.html
    бытие: http://azbyka.ru/days/sv-nikolaj-mogilevskij-alma-atinskij
-   образ: http://drevo-info.ru/images/003/009609.jpg
+   образ:
+    - http://drevo-info.ru/images/003/009609.jpg
+    - http://azbyka.ru/days/assets/img/saints/6492/p18ki43gkqkrj1cmta01189v1p363.jpg
+    - http://azbyka.ru/days/assets/img/saints/6492/p181ufc0kb11sc1tme1lig13v9bsq3.jpg
+   служба:
+    - Николаю Верненскому служба
+    - http://azbyka.ru/days/worship/610
+    - http://azbyka.ru/days/caa/12
    событие:
     - год: 1877
       дата: 09.04
@@ -54,7 +61,3 @@
       описание: обр
     - дата: 12.10
       описание: прств
-      служба:
-       - Николаю Верненскому служба
-       - http://azbyka.ru/days/worship/610
-       - http://azbyka.ru/days/caa/12

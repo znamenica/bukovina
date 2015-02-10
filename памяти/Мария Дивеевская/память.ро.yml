@@ -8,7 +8,10 @@
    собор: див,ниж,тамб?
    вики: http://drevo-info.ru/articles/21897.html
    бытие: http://azbyka.ru/days/sv-marija-diveevskaja-fedina
-   образ: http://pravicon.com/icon-2366
+   образ:
+    - http://pravicon.com/icon-2366
+    - http://azbyka.ru/days/assets/img/saints/2544/p181ub0fgh18t394n1mfupqbs2a3.jpg
+    - http://azbyka.ru/days/assets/img/saints/2544/p192i8kmq1l931vpuhsqpf6ugs3.jpg
    служба: Пелагия Дивеевская/Пелагии, Параскеве и Марии Дивеевским служба
    событие:
     - год: ок.1870

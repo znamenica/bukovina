@@ -1,12 +1,22 @@
 ---
 Екатеринбургский собор:
    имя: Екатеринбургский собор
-   описание: собор Екатеринбургских святых
+   описание: собор святых Екатеринбургских
    чин: сбр
    вики: http://drevo-info.ru/articles/15744.html
    бытие: http://azbyka.ru/days/sv-sobor-ekaterinburgskih-svjatyh
+   образ:
+    - http://drevo-info.ru/images/003/010478.jpg
+    - http://azbyka.ru/days/assets/img/saints/6410/p17vjnor5bckv17f724l1hd71foc3.jpg
+   служба:
+    - Екатеринбургскому собору служба
+    - http://nikolskiyhram.ucoz.ru/index/sluzhba_soboru_ekaterinburgskikh_svjatykh/0-196
+   событие:
+    - год: XVII-1961
+      описание: прств
+    - год: 2010
+      собор: рус
+      описание: просл
    помин:
-      год: 1441–1467
       дата: 29.01
       описание: само
-      служба: Екатеринбургскому собору служба

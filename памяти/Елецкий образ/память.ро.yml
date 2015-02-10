@@ -14,6 +14,7 @@
     - http://azbyka.ru/days/caa/608
    образ:
     - http://azbyka.ru/days/assets/img/icons/307/p188g3dh1v8oi13ot1o4t14bs18g44.jpg
+    - http://azbyka.ru/days/assets/img/icons/102/p188b6rq5rmoq90310dh1h8s14353.jpg
     - http://drevo-info.ru/images/002/007915.jpg
     - http://drevo-info.ru/images/002/007960.jpg
    событие:
@@ -33,3 +34,4 @@
       описание: явл
     - дата: 26.08
       описание: явл
+      служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_26.pdf

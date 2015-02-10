@@ -4,7 +4,7 @@
    прозвище: Богоносец
    описание: святитель Антиохийский; ученик Иоанна Богослова
    чин: стсвт
-   собор: пев
+   собор: пев,рим,сир
    вики: http://drevo-info.ru/articles/8349.html
    бытие: http://azbyka.ru/days/sv-ignatij-bogonosec
    образ:
@@ -18,6 +18,9 @@
     - http://azbyka.ru/days/assets/img/saints/606/d9a70f2efa28ecbca40036622ea3dadf.jpg
     - http://pravicon.com/icon-1868
    отечник: http://azbyka.ru/otechnik/Ignatij_Antiohijskij/
+   служба:
+    - Игнатию Богоносцу служба
+    - http://azbyka.ru/days/caa/360
    событие:
     - год: нач.I
       описание: ржд
@@ -45,9 +48,10 @@
     - дата: 20.12
       описание: само
       служба:
-       - Игнатию Богоносцу служба
        - Рождество Христово/Предпразнеству Рождества Христова и Игнатию Богоносцу служба
        - http://azbyka.ru/days/assets/upload/minei/12/minea_12_20.pdf
-       - http://azbyka.ru/days/caa/360
     - дата: 29.01
       описание: прен
+      служба:
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_29.pdf
+       - Игнатию Богоносцу на пренесение мощей служба

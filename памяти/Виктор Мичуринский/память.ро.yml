@@ -10,7 +10,9 @@
    бытие:
     - http://azbyka.ru/days/sv-viktor-ellanskij
     - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuReuiUfS4ee8YUUeWesevU668UsOWfv8KWeCQ*
-   образ: http://drevo-info.ru/images/003/011196.jpg
+   образ:
+    - http://drevo-info.ru/images/003/011196.jpg
+    - http://azbyka.ru/days/assets/img/saints/4867/p181udjk9913sk7kmnod1m5h134h3.jpg
    событие:
     - год: 1874
       дата: 16.09
