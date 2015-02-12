@@ -1,0 +1,26 @@
+---
+Ипполит Остийский:
+   имя: Ипполит
+   описание: святитель Остийский, мученик Римский
+   чин: мсвт
+   собор: рим,сард
+   вики: http://drevo-info.ru/articles/12196.html
+   бытие: http://pravicon.com/info-2557
+   образ:
+    - http://pravicon.com/icon-2040
+    - http://azbyka.ru/days/assets/img/saints/4380/93e20c7f1839dd822b8ae3aa50d251c6.jpg
+    - http://azbyka.ru/days/assets/img/saints/4380/19594a57951d0e5bcf345b51f2f51dd9.jpg
+   отечник: http://azbyka.ru/otechnik/Ippolit_Rimskij/
+   служба: Ипполиту Остийскому служба
+   событие:
+    - год: 236/237/ок.252
+      описание: прств
+      место: Сардиния
+    - год: 236/237
+      дата: 13.08
+      описание: пгрб
+      место: Рим
+   помин:
+      дата: 30.01
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/01/minea_01_30.pdf

@@ -2,12 +2,26 @@
 Вселенские учители:
    описание: Вселенские учители и святители
    чин: сбр
-   сокращение: трисв
+   крат: 3вус
    вики: http://drevo-info.ru/articles/4357.html
    бытие: http://azbyka.ru/days/sv-sobor-vselenskih-uchitelej-i-svjatitelej-vasilija-velikogo-grigorija-bogoslova-i-ioanna-zlatoustogo
-   образ: http://pravicon.com/icon-1465
-   помин:
-      год: III
-      дата: 30.01
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/6411/p193vhvq1884b1qek1de6kkp1rd73.jpg
+    - http://azbyka.ru/days/assets/img/saints/6411/p19050nijjcpq1gk81gpg1gmea3q3.jpg
+    - http://azbyka.ru/days/assets/img/saints/6411/p18f4la10s116b9hvhe2amvc903.jpg
+    - http://pravicon.com/icon-1465
+    - http://drevo-info.ru/images/001/000708.jpg
+   служба:
+    - Вселенским учителям служба
+    - http://azbyka.ru/days/caa/493
+    - http://azbyka.ru/days/caa/494
+    - http://azbyka.ru/days/caa/406
+   событие:
+    - год: III-IV
       описание: прств
-      служба: Вселенским учителям служба
+    - год: 1084
+      описание: просл
+   помин:
+      дата: 30.01
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/01/minea_01_30.pdf

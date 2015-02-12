@@ -10,6 +10,10 @@
    образ:
     - http://drevo-info.ru/images/001/001225.jpg
     - http://drevo-info.ru/images/002/007200.jpg
+   служба:
+    - Пимену Великому служба
+    - http://azbyka.ru/days/caa/13
+    - http://azbyka.ru/days/caa/14
    событие:
     - год: ок. 340
       описание: ржд
@@ -23,4 +27,4 @@
    помин:
       дата: 27.08
       описание: само
-      служба: Пимену Великому служба
+      служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_27.pdf
