@@ -1,17 +1,33 @@
 ---
 Трифон Апамейский:
    имя: Трифон
-   прозвище: Апамейский
+   описание: уроженец Апамейский; мученик Никейский
    чин: мч
-   собор: слав
+   собор: чрнг,рус,фриг,виф
    вики: http://drevo-info.ru/articles/12230.html
    бытие: http://azbyka.ru/days/sv-trifon-apamejskij
-   образ: http://pravicon.com/icon-3012
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/1484/fb0faf64ded1fcfb1f510293558ee896.jpg
+    - http://azbyka.ru/days/assets/img/saints/1484/d255d02594485396690c01b5a0058114.jpg
+    - http://pravicon.com/icon-3012
+    - http://drevo-info.ru/images/001/002124.jpg
+    - http://azbyka.ru/days/assets/img/saints/1484/97218ab2f09f61f9db678f4db217972d.jpg
+    - http://azbyka.ru/days/assets/img/saints/1484/82b6fd6c6fde7ce4d902a2f7987120e4.jpg
+   служба:
+    - Трифону Апамейскому служба
+    - http://azbyka.ru/days/caa/534
+    - http://azbyka.ru/days/caa/409
+   событие:
+    - год: перв.пол.III
+      описание: ржд
+      место: Кампсада. Апамье. Фригия
+    - год: 250
+      описание: прств
+      место: Никея. Вифиния (ныне Изник. Турция)
+      образ: http://azbyka.ru/days/assets/img/saints/1484/e90b38c4a651ebd4cd3215a12a4199c9.jpg
    помин:
-      год: 250
       дата: 01.02
       описание: прств
       служба:
-       - Трифону Апамейскому служба
        - Сретения Христова Предпразднеству и Трифону Апамейскому служба
-
+       - http://azbyka.ru/days/assets/upload/minei/02/minea_02_01.pdf
