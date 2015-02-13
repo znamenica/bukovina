@@ -1,12 +1,20 @@
 ---
 Трифена Кизическая:
    имя: Трифена
-   прозвище: Кизическая
+   отчество: Анастасьевна
+   описание: жительница Кизическая; растерзана быком
    чин: мц
+   собор: миз
    вики: http://drevo-info.ru/articles/3341.html
    бытие: http://azbyka.ru/days/sv-trifena-kizicheskaja
-   образ: http://pravicon.com/icon-3010
-   помин:
+   образ:
+    - http://pravicon.com/icon-3010
+    - http://azbyka.ru/days/assets/img/saints/6341/p18er09auf1scm1efg18squ8avkf4.jpg
+   событие:
       год: I
+      описание: прств
+      место: Кизик. Мизия (ныне Белкиз. Турция)
+      образ: http://azbyka.ru/days/assets/img/saints/6341/p18er09auel9u1n1nbae8fr7lb3.jpg
+   помин:
       дата: 31.01
       описание: прств

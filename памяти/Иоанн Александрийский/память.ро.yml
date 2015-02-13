@@ -1,9 +1,9 @@
 ---
 Иоанн Александрийский:
    имя: Иоанн
-   описание:  бессребреник и чудотворец Александрийский
+   описание: бессребреник и чудотворец Александрийский
    чин: бср,мч
-   собор: копт,вои,лек
+   собор: вкпт,нкпт,вои,лек
    вики: http://drevo-info.ru/articles/15456.html
    бытие: http://azbyka.ru/days/sv-kir-aleksandrijskij
    образ: http://drevo-info.ru/images/002/003397.jpg
@@ -12,7 +12,7 @@
       описание: ржд
     - год: 311
       описание: прств
-      место: Каноб город. Нижний Египет
+      место: Каноб (Каноп) город. Нижний Египет
       образ: http://azbyka.ru/days/assets/img/saints/3160/p18eqeopdg91brn81oci1a7k1d263.jpg
     - год: 311
       описание: пгрб
@@ -31,6 +31,7 @@
       описание: само
       служба:
        - Кир Александрийский/Киру и Иоанну Александрийским служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_28.pdf
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_31.pdf
     - дата: 28.06
       описание: прен
+      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_28.pdf
