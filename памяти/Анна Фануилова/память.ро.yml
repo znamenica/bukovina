@@ -1,13 +1,31 @@
 ---
 Анна Фануилова:
    имя: Анна
-   прозвище: Фануилова дочь, Пророчица
+   отчество: Фануиловна
+   фамилия: Асирова
+   описание: дщерь Фануилева, пророчица Иерусалимская
    чин: прор
+   собор: плст
    вики: http://drevo-info.ru/articles/11292.html
    бытие: http://azbyka.ru/days/sv-anna-prorochica
-   образ: http://pravicon.com/icon-1206
-   помин:
-      год: I
-      дата: 03.02
+   образ:
+    - http://pravicon.com/icon-1206
+    - http://drevo-info.ru/images/003/010387.jpg
+    - http://azbyka.ru/days/assets/img/saints/5649/a48e659ccd2e3b9be480476092cf7965.jpg
+    - http://azbyka.ru/days/assets/img/saints/5649/c5852eb3ed7665a9c6bb3507ade36fdf.jpg
+    - http://azbyka.ru/days/assets/img/saints/5649/p190516istvcu1hdf1mll140jo4f5.jpg
+    - http://azbyka.ru/days/assets/img/saints/5649/p1905164qnbtr20p3e81co918503.jpg
+   событие:
+    - год: ок.83 до РХ
+      описание: ржд
+    - год: вид.ок.67 до РХ
+      описание: брак
+    - год: 1-30
       описание: прств
-      служба: Симеону Богоприимцу и Анне Фануиловой служб
+      место: вид.Иерусалим
+   помин:
+    - дата: 03.02
+      описание: само
+      служба: Симеон Богоприимец/Симеону Богоприимцу и Анне Фануиловой служба
+    - дата: 28.08
+      описание: само
