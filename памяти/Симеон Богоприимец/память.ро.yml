@@ -5,11 +5,41 @@
    чин: прав
    вики: http://drevo-info.ru/articles/8961.html
    бытие: http://azbyka.ru/days/sv-simeon-bogopriimec
-   образ: http://pravicon.com/icon-2889
-   помин:
-      год: I
-      дата: 03.02
+   образ:
+    - http://pravicon.com/icon-2889
+    - http://drevo-info.ru/images/001/002302.jpg
+    - http://azbyka.ru/days/assets/img/saints/4565/p18faa7des19991fticcm1u5f1msr3.jpg
+    - http://azbyka.ru/days/assets/img/saints/4565/e49a91bf80042f4bca7a35eb84728b5f.jpg
+    - http://azbyka.ru/days/assets/img/saints/4565/973e3334f55de62422e83e813f633d1f.jpg
+    - http://azbyka.ru/days/assets/img/saints/4565/e2e7155ff02d9509f1a7dd2fc92e8b4a.jpg
+    - http://azbyka.ru/days/assets/img/saints/4565/4cf88a3807a7f386417b7b28ba4dfc98.jpg
+    - http://azbyka.ru/days/assets/img/saints/4565/p18fa36na91tsvve3ucd1ul67b93.JPG
+   служба:
+    - Симеону Богоприимцу служба
+    - http://azbyka.ru/days/caa/407
+    - http://azbyka.ru/days/caa/408
+   событие:
+    - год: ок.360 до нэ-ок.330 до нэ
+      описание: ржд
+    - год: 1-30
       описание: прств
+      место: вид.Палестина
+    - год: по I
+      описание: обр
+      место: Иерусалим. Палестина
+    - год: VI
+      описание: прен
+      место: Константинополь. Византия
+    - год: XIII
+      описание: прен.1
+      место: Задар. Венецианская республика (ныне Хорватия)
+    - год: 2010
+      дата: окт
+      описание: прен.2
+      место: Иерусалим. Палестина
+   помин:
+      дата: 03.02
+      описание: само
       служба:
-       - Симеону Богоприимцу служба
        - Симеону Богоприимцу и Анне Фануиловой служба
+       - http://azbyka.ru/days/assets/upload/minei/02/minea_02_03.pdf
