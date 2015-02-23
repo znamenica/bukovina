@@ -3,7 +3,7 @@
    имя: Кирилл
    описание: священноинок и чудотворец Новоезерский
    чин: прп
-   собор: влгд?
+   собор: влгд?,блзр
    вики:
     - http://drevo-info.ru/articles/8900.html
     - https://ru.wikipedia.org/wiki/Кирилл_Новоезерский
@@ -14,13 +14,16 @@
     - http://azbyka.ru/days/assets/img/saints/182/p19051ngbqiuf1an71pt978g1ct86.jpg
     - http://azbyka.ru/days/assets/img/saints/182/p19051ngbr1cm11eso1def1i0tm0f7.jpg
     - http://pravicon.com/icon-2162
+   служба:
+    - Кириллу Новоезерскому служба
+    - http://azbyka.ru/days/caa/305
    событие:
     - год: сер.XV
       описание: ржд
       место: Галич. Костромщина
     - год: нач.XVI
       описание: иноч
-      место: Комельская пустынь
+      место: Комельская пустынь. Вологодщина
     - год: XV-XVI
       описание: свящ
     - год: 1532
@@ -39,9 +42,7 @@
    помин:
     - дата: 04.02
       описание: прств
-      служба:
-       - Кириллу Новоезерскому служба
-       - http://azbyka.ru/days/caa/305
+      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_04.pdf
     - дата: 22.08
       описание: прен
     - дата: 07.11
