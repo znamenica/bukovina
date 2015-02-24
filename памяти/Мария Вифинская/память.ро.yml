@@ -1,12 +1,31 @@
 ---
 Мария Вифинская:
-   имя: Мария, именовавшаяся Марином
-   прозвище: Вифинская
+   имя: в наречении Мария, в иночестве Марин
+   отчество: Евгеньевна
+   описание: Вифинская; дочь Евгения Вифинского
    чин: прп
+   собор: копт,виф
    вики: http://drevo-info.ru/articles/9102.html
    бытие: http://azbyka.ru/days/sv-marija-vifinskaja
-   образ: http://pravicon.com/icon-2362
-   помин:
-      год: VI
-      дата: 12.02
+   образ:
+    - http://pravicon.com/icon-2362
+    - http://azbyka.ru/days/assets/img/saints/5604/p19053vtr81j2b13jh1k177mv1hc83.jpg
+    - http://azbyka.ru/days/assets/img/saints/5604/p18enqh02pqhb118s1t761q3d32e4.jpg
+    - http://azbyka.ru/days/assets/img/saints/5604/p19053vtr91o441p8mraf1mpfuta4.jpg
+    - http://azbyka.ru/days/assets/img/saints/5604/p18enqh02prmo16bd1qis1et21qra5.jpg
+   событие:
+    - год: вид.кон.V
+      описание: ржд
+      место: вид.Вифиния
+    - год: VI
       описание: прств
+      место: Александрье. Египет
+    - год: по VI
+      описание: прен
+      место: Константинополь. Византия
+    - год: 1113
+      описание: прен.1
+      место: Венеция
+   помин:
+      дата: 12.02
+      описание: само

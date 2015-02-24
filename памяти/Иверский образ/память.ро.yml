@@ -3,6 +3,7 @@
    имя: Иверский, Портаитисса, Вратарница
    описание: образ Богородицы
    чин: обр
+   собор: аф,рус
    вики: http://drevo-info.ru/articles/9023.html
    бытие: http://azbyka.ru/days/ikona-iverskaja
    образ:
@@ -15,6 +16,10 @@
     - http://azbyka.ru/days/assets/img/icons/98/a87e208ff8ef447726418969ad4c7826.jpg
     - http://azbyka.ru/days/assets/img/icons/98/51acd46b4f237d518a87c1668d8db321.jpg
     - http://azbyka.ru/days/assets/img/icons/98/08b64aae9af181b328633f3cdc9b7826.jpg
+    - http://drevo-info.ru/images/001/001539.jpg
+   служба:
+    - Иверскому образу служба
+    - http://azbyka.ru/days/caa/415
    событие:
     - год: 829-842
       описание: прем
@@ -38,10 +43,13 @@
       дата: 24.05
       собор: рус
       описание: просл
+      о: 23.04
    помин:
     - дата: 12.02
       описание: прем
-      служба: Иверскому образу на премещение служба
+      служба:
+       - Иверскому образу на премещение служба
+       - http://azbyka.ru/days/assets/upload/minei/02/minea_02_12.pdf
     - дата: 23.04
       описание: обр
     - дата: 13.10
@@ -51,4 +59,3 @@
        - http://azbyka.ru/days/assets/upload/minei/10/minea_10_13.pdf
     - дата: вт.свет
       описание: само
-      служба: Иверскому образу служба
