@@ -1,10 +1,10 @@
 ---
 Всеволод Псковский:
    имя: в наречении Всеволод, в крещении Гавриил
-   отчество: Мстиславич
-   описание: Новгородский, Псковский князь, чудотворец
+   отчество: Мстиславович
+   описание: князь Новгородский, Вышгородский, Псковский, чудотворец
    чин: блгв
-   собор: пск,нов?
+   собор: пск,нов?,вышг
    вики: http://drevo-info.ru/articles/12744.html
    бытие: http://azbyka.ru/days/sv-vsevolod-v-kreshchenii-gavriil-novgorodskij
    образ:
@@ -12,6 +12,11 @@
     - http://azbyka.ru/days/assets/img/saints/129/p19053ctf71118ke4v0sa69le44.jpg
     - http://azbyka.ru/days/assets/img/saints/129/p19053ctf5mm01k344ki1gbd12jp3.jpg
     - http://pravicon.com/icon-1464
+   служба:
+    - Всеволоду Псковскому служба
+    - http://azbyka.ru/days/caa/326
+    - http://azbyka.ru/days/caa/327
+    - http://azbyka.ru/days/caa/328
    событие:
     - год: 1092
       описание: ржд
@@ -19,6 +24,7 @@
     - год: 1138
       дата: 11.02
       описание: прств
+      место: вид.Псков
     - год: 1138
       дата: по 11.02
       описание: пгрб
@@ -37,14 +43,9 @@
       дата: 22.04
       описание: прен
    помин:
-    - описание: само
-      служба:
-       - Всеволоду Псковскому служба
-       - http://azbyka.ru/days/caa/326
-       - http://azbyka.ru/days/caa/327
-       - http://azbyka.ru/days/caa/328
     - дата: 11.02
       описание: прств
+      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_11.pdf
     - дата: 22.04
       описание: прен
       служба:

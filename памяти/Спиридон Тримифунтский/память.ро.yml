@@ -3,7 +3,7 @@
    имя: Спиридон
    описание: чудотворец и святитель Тримифунтский
    чин: свт
-   собор: 1вс,кипр,гост,рус
+   собор: 1вс,кипр,крк,рус
    вики: http://drevo-info.ru/articles/4563.html
    бытие: http://azbyka.ru/days/sv-spiridon-trimifuntskij
    образ:
@@ -20,6 +20,10 @@
     - http://drevo-info.ru/images/001/000791.jpg
     - http://drevo-info.ru/images/001/000790.jpg
     - http://pravicon.com/icon-2946
+   служба:
+    - Спиридону Тримифунтскому служба
+    - http://azbyka.ru/days/caa/351
+    - http://azbyka.ru/days/caa/352
    событие:
     - год: кон.III
       описание: ржд
@@ -40,7 +44,7 @@
       место: Сербия
     - год: 1816
       описание: прен.2
-      место: Корфу остров
+      место: Керкира остров (ныне Корфу остров). Ионическое море
     - год: 1816
       дата: 11.08
       описание: чудо
@@ -50,8 +54,4 @@
       описание: чудо
     - дата: 12.12
       описание: само
-      служба:
-       - Спиридону Тримифунтскому служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_12.pdf
-       - http://azbyka.ru/days/caa/351
-       - http://azbyka.ru/days/caa/352
+      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_12.pdf

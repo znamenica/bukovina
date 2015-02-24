@@ -1,14 +1,37 @@
 ---
 Власий Севастийский:
    имя: Власий
-   прозвище: Севастийский святитель
-   чин: стсвт
-   собор: скот
+   описание: святитель Севастийский; обезглавлен
+   чин: мсвт
+   собор: скот,арм
    вики: http://drevo-info.ru/articles/1061.html
    бытие: http://azbyka.ru/days/sv-vlasij-sevastijskij
-   образ: http://pravicon.com/icon-1457
-   помин:
-      год: ок. 316
-      дата: 11.02
+   образ:
+    - http://pravicon.com/icon-1457
+    - http://drevo-info.ru/images/002/007313.jpg
+    - http://azbyka.ru/days/assets/img/saints/815/p19053a779mjcmr117vndoh1g8a5.jpg
+    - http://azbyka.ru/days/assets/img/saints/815/p19053a7787agqsr4i8q910m24.jpg
+    - http://azbyka.ru/days/assets/img/saints/815/p19053a77agc41r1n6rr3updv36.jpg
+    - http://azbyka.ru/days/assets/img/saints/815/p19053a77557n1ab31s5r12jmsul3.jpg
+    - http://azbyka.ru/days/assets/img/saints/815/p18f06v244tjn4tevlt1rlo1nod3.jpg
+    - http://azbyka.ru/days/assets/img/saints/815/7259160d139659d7ad98f3d46e5e66cf.jpg
+    - http://azbyka.ru/days/assets/img/saints/815/06b1885a2eff933602390f700f488751.jpg
+    - http://azbyka.ru/days/assets/img/saints/815/1f53a063aa3de90c265de53c6820f1de.jpg
+    - http://azbyka.ru/days/assets/img/saints/815/dcd10dc3d9637e3387f5a0d5345c0705.jpg
+   служба:
+    - Власию Севастийскому служба
+    - http://azbyka.ru/days/caa/401
+   событие:
+    - год: ок. 316
       описание: прств
-      служба: Власию Севастийскому служба
+      место: Севастия. Армения
+      образ:
+       - http://azbyka.ru/days/assets/img/saints/815/a62f2a66aacc1ac7023ac1a0e8e23c7d.jpg
+       - http://azbyka.ru/days/assets/img/saints/815/988b2ab013b52f4b5800d16811cd8698.jpg
+    - год: вид.XIII
+      описание: прен
+      место: Западная Европа
+   помин:
+      дата: 11.02
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_11.pdf
