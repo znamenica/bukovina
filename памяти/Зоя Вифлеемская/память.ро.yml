@@ -1,12 +1,20 @@
 ---
 Зоя Вифлеемская:
    имя: Зоя
-   прозвище: Вифлеемская
+   описание: бывшая блудница; инокиня Вифлеемская
    чин: прп
+   собор: плст
    вики: http://drevo-info.ru/articles/9110.html
    бытие: http://azbyka.ru/days/sv-zoja-vifleemskaja
-   образ: http://pravicon.com/icon-1843
-   помин:
+   образ:
+    - http://pravicon.com/icon-1843
+    - http://azbyka.ru/days/assets/img/saints/6316/ccb2b75ab1295c1a53722110338599ee.jpg
+    - http://azbyka.ru/days/assets/img/saints/6316/p1907aqs0c1iq4qrr3q81o1v1f414.jpg
+    - http://azbyka.ru/days/assets/img/saints/6316/p1907aqs0a10q2er112qq1kt71sc13.jpg
+   событие:
       год: V
-      дата: 13.02
       описание: прств
+      место: вид.Павлинская обитель. Вифлеем. Палестина
+   помин:
+      дата: 13.02
+      описание: само

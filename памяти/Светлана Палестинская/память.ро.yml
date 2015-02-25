@@ -1,12 +1,22 @@
 ---
 Светлана Палестинская:
    имя: Фотиния
-   прозвище: Палестинская
+   описание: девица Палестинская
    чин: прп
+   собор: плст
    вики: http://drevo-info.ru/articles/9111.html
    бытие: http://azbyka.ru/days/sv-svetlana-fotinija
-   образ: http://pravicon.com/icon-3184
-   помин:
-      год: V
-      дата: 13.02
+   образ:
+    - http://pravicon.com/icon-3184
+    - http://azbyka.ru/days/assets/img/saints/5660/af1560b0ab2bc1695445262e3f55aad2.jpg
+    - http://azbyka.ru/days/assets/img/saints/5660/p1907b1amnk7t1of1r24otq1q5q3.jpg
+    - http://azbyka.ru/days/assets/img/saints/5660/p1907b1amo9t99nd11er1hpl16m84.jpg
+   событие:
+    - год: вид.перв.пол.V
       описание: прств
+    - год: вид.перв.пол.V
+      описание: пгрб
+      место: Кесария. Палестина
+   помин:
+      дата: 13.02
+      описание: само

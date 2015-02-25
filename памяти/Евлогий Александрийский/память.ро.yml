@@ -1,12 +1,23 @@
 ---
 Евлогий Александрийский:
    имя: Евлогий
-   прозвище: Александрийский святитель
+   описание: святитель Александрийский; настоятель Антиохийской Богородицкой Юстиниановой
+      обители
    чин: свт
+   собор: копт
    вики: http://drevo-info.ru/articles/9112.html
    бытие: http://azbyka.ru/days/sv-evlogij-aleksandrijskij
-   образ: http://pravicon.com/icon-1693
-   помин:
-      год: 607-608
-      дата: 13.02
+   образ:
+    - http://pravicon.com/icon-1693
+    - http://azbyka.ru/days/assets/img/saints/2889/p1907aidhpct9176d16jl98d1jvt3.jpg
+    - http://azbyka.ru/days/assets/img/saints/2889/p1907aidhqisimigvb11iaf16i54.jpg
+    - http://azbyka.ru/days/assets/img/saints/2889/p18eo58tmr602160m183g176u1qkg3.jpg
+    - http://azbyka.ru/days/assets/img/saints/2889/p18eo58tms16tj1q2emip103e13qn4.jpg
+   событие:
+    - год: 580-581
+      описание: свят
+    - год: 607-608
       описание: прств
+   помин:
+      дата: 13.02
+      описание: само

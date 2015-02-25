@@ -1,13 +1,24 @@
 ---
 Мартиниан Кесарийский:
    имя: Мартиниан
-   прозвище: Кесарийский, Палестинский
+   описание: пустынник Кесарийский, Палестинский, Афинский
    чин: прп
+   собор: плст,греч
    вики: http://drevo-info.ru/articles/9109.html
    бытие: http://azbyka.ru/days/sv-martinian-kesarijskij-palestinskij
-   образ: http://pravicon.com/icon-2398
-   помин:
-      год: V
-      дата: 13.02
+   образ:
+    - http://pravicon.com/icon-2398
+    - http://azbyka.ru/days/assets/img/saints/4810/p18eo52243v1ag9ln4c14s91da13.jpg
+    - http://azbyka.ru/days/assets/img/saints/4810/p18eo522451jo1j4s1dgivimovq4.jpg
+    - http://azbyka.ru/days/assets/img/saints/4810/p18eo522451bv11n591r0l4gao5m5.jpg
+   служба: Мартиниану Кесарийскому служба
+   событие:
+    - год: IV
+      описание: ржд
+    - год: ок.422
       описание: прств
-      служба: Мартиниану Кесарийскому служба
+      место: Афины
+   помин:
+      дата: 13.02
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_13.pdf
