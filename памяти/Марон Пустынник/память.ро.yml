@@ -1,13 +1,22 @@
 ---
 Марон Пустынник:
    имя: Марон
-   прозвище: Сирийский, Пустынник
+   описание: пустынник Киррский (Сирийский); имел беспокровное житие
    чин: прп
+   собор: сир
    вики: http://drevo-info.ru/articles/5210.html
    бытие: http://azbyka.ru/days/sv-maron-sirijskij
-   образ: http://pravicon.com/icon-2392
-   помин:
-      год: 423
-      дата: 14.02
+   образ:
+    - http://pravicon.com/icon-2392
+    - http://drevo-info.ru/images/001/000911.jpg
+    - http://azbyka.ru/days/assets/img/saints/317/p1907bk2hc18rcavl1i35h77p375.jpg
+    - http://azbyka.ru/days/assets/img/saints/317/p1907bk2hbo6i17jo0iphj1u8r3.jpg
+   служба: Марону Пустыннику служба
+   событие:
+      год: 410-433
       описание: прств
-      служба: Марону Пустыннику служба
+      место: Каррская гора. Сирия
+   помин:
+      дата: 14.02
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_14.pdf
