@@ -10,6 +10,7 @@
     - http://pravicon.com/icon-1281
     - http://azbyka.ru/days/assets/img/saints/2465/p1907ctgnl313152t1cvostiod3.jpg
     - http://azbyka.ru/days/assets/img/saints/2465/p1907ctgnmrgjlk11b4i1ubf1gsc4.jpg
+   служба: Архиппу Колосскому служба
    событие:
     - год: I до нэ-I
       описание: ржд
@@ -21,7 +22,7 @@
    помин:
     - дата: 19.02
       описание: само
-      служба: Архиппу Колосскому служба
+      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_19.pdf
     - дата: 22.11
       описание: само
       служба:
