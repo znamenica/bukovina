@@ -1,11 +1,22 @@
 ---
 Евгений Антиохийский:
    имя: Евгений
-   прозвище: Антиохийский
+   описание: священноинок Антиохийский
    чин: присп
+   собор: сир,арав
    вики: http://drevo-info.ru/articles/12356.html
    бытие: http://azbyka.ru/days/sv-evgenij-antiohijskij
-   помин:
-      год: 363
-      дата: 19.02
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/378/p1907d7f0tjqd1k4q7enad1taj3.jpg
+    - http://azbyka.ru/days/assets/img/saints/378/p18fij72ve9sl8eu1t9vcj7sc13.jpg
+    - http://azbyka.ru/days/assets/img/saints/378/p18fij72vf1g6d1ecf1fu81lk5v9f4.jpg
+   событие:
+    - год: вид.до 362
+      описание: свящ
+      место: вид.Антиохия. Сирия
+    - год: 363
       описание: прств
+      место: Оасим. Аравия/Антидоя. Финикия
+   помин:
+      дата: 19.02
+      описание: само

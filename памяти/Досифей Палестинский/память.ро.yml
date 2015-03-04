@@ -1,0 +1,23 @@
+---
+Досифей Палестинский:
+   имя: Досифей
+   описание: инок Палестинский, вид.уроженец Газский, вид.газянин; ученик аввы Дорофея
+   чин: прп
+   собор: плст
+   бытие:
+    - http://azbyka.ru/days/sv-dosifej-palestinskij
+    - http://calendar.rop.ru/svyat1/feb19-dosifei.html
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/4605/p18fij4jhf1tge1ogt16vva4p1hnf4.jpg
+    - http://azbyka.ru/days/assets/img/saints/4605/p18fij4jhejh4b1r1e1p14vun2f3.jpg
+    - http://azbyka.ru/days/assets/img/saints/4605/p18fij4jhg1ooa18t81rn41u3t1utu5.jpg
+   событие:
+    - год: кон.VI
+      описание: ржд
+      место: вид.Газа. Палестина
+    - год: нач.VII
+      описание: прств
+      место: Серидова обитель. Палестина
+   помин:
+      дата: 19.02
+      описание: само
