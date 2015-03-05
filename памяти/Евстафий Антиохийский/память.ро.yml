@@ -1,16 +1,32 @@
 ---
 Евстафий Антиохийский:
    имя: Евстафий
-   прозвище: Антиохийский святитель
+   описание: святитель Берийский, Антиохийский
    чин: свт
-   собор: 1вс
+   собор: памф,сир,фрак,1вс
    вики: http://drevo-info.ru/articles/9279.html
    бытие: http://azbyka.ru/days/sv-evstafij-antiohijskij
-   образ: http://pravicon.com/icon-1711
-   помин:
-      год: 337
-      дата: 21.02
+   образ:
+    - http://pravicon.com/icon-1711
+    - http://azbyka.ru/days/assets/img/saints/4425/p18i503d9k10do5mpro15rfhn84.jpg
+    - http://azbyka.ru/days/assets/img/saints/4425/p17v9a2v6s1bpjsmmuoeufn1ckg3.jpg
+    - http://azbyka.ru/days/assets/img/saints/4425/p18i503d9jgja19luef34k11mg43.jpg
+   отечник: http://azbyka.ru/otechnik/Evstafij_Antiohijskij/
+   событие:
+    - год: вт.пол.III
+      описание: ржд
+      место: Сид. Памфилия
+    - год: 325
+      описание: свят
+    - год: 337/ок.346
       описание: прств
+      место: Филиппы (ныне Кавала). Фракия/Траянополь
+    - год: 482
+      описание: прен
+      место: Антиохия. Сирия
+   помин:
+      дата: 21.02
+      описание: само
       служба:
-       - Евстафию Антиохийскому служба
-       - Тимофею Олимпийскому и Евстафию Антиохийскому служба
+       - Тимофей Олимпийский/Тимофею Олимпийскому и Евстафию Антиохийскому служба
+       - http://azbyka.ru/days/assets/upload/minei/02/minea_02_21.pdf
