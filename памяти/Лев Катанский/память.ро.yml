@@ -1,13 +1,27 @@
 ---
 Лев Катанский:
    имя: Лев
-   прозвище: Катанский святитель
-   чин: прсвт
+   описание: святитель Катанский
+   чин: свт
+   собор: сиц
    вики: http://drevo-info.ru/articles/5273.html
    бытие: http://azbyka.ru/days/sv-lev-katanskij
-   образ: http://pravicon.com/icon-2258
-   помин:
-      год: ок. 780
-      дата: 20.02
+   образ:
+    - http://pravicon.com/icon-2258
+    - http://drevo-info.ru/images/002/006199.jpg
+    - http://azbyka.ru/days/assets/img/saints/3983/p18fio6mac11qvv4an087bl1jg54.jpg
+    - http://azbyka.ru/days/assets/img/saints/3983/p18i4vn7l1c1d1mm81ckm1i9m1c513.jpg
+    - http://azbyka.ru/days/assets/img/saints/3983/p18i4vn7l14rs1tprlpa1seo1qk54.jpg
+    - http://azbyka.ru/days/assets/img/saints/3983/p18i4vn7l2ihk1ion1c671b38n5h5.jpg
+    - http://azbyka.ru/days/assets/img/saints/3983/p18fio6maajpt195f1p6c1cpnvcj3.jpg
+   служба: Льву Катанскому служба
+   событие:
+    - год: до 780
+      описание: свят
+      место: вид.Катания. Сицилия
+    - год: ок. 780
       описание: прств
-      служба: Льву Катанскому служба
+   помин:
+      дата: 20.02
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_20.pdf
