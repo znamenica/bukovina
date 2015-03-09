@@ -1,13 +1,43 @@
 ---
 Поликарп Смирнский:
    имя: Поликарп
-   прозвище: Смирнский святитель
-   чин: стсвт
+   описание: святитель Смирнский; ученик Иоанна Богослова; муж апостольский; убит мечём
+   чин: мсвт
+   собор: лид,мап
    вики: http://drevo-info.ru/articles/9316.html
    бытие: http://azbyka.ru/days/sv-polikarp-smirnskij
-   образ: http://pravicon.com/icon-2737
-   помин:
-      год: 167
-      дата: 23.02
+   образ:
+    - http://pravicon.com/icon-2737
+    - http://azbyka.ru/days/assets/img/saints/2314/p18i50q1bu1levastj8u1nf710j86.jpg
+    - http://azbyka.ru/days/assets/img/saints/2314/p18i50q1bt4k99jc120m1v3c1hu5.jpg
+    - http://azbyka.ru/days/assets/img/saints/2314/fb7e27b4ac4983fa5b1d60d03dba871d.jpg
+    - http://azbyka.ru/days/assets/img/saints/2314/6a13284131d13e96157fb0c4ef0c003a.jpg
+    - http://azbyka.ru/days/assets/img/saints/2314/5361542d6c18ad1d95e55f71920c3cef.jpg
+    - http://azbyka.ru/days/assets/img/saints/2314/3be996302b8e21320cbcb50c3e6a43e1.jpg
+    - http://azbyka.ru/days/assets/img/saints/2314/p18i50q1btfso15v31mou1ignu1f4.jpg
+   отечник: http://azbyka.ru/otechnik/Polikarp_Smirnskij/
+   служба: Поликарпу Смирнскому служба
+   событие:
+    - год: ок.80
+      описание: ржд
+      место: вид.Смирна (ныне Измир. Турция). Лидия
+    - год: ок.98-105
+      описание: дияк
+      место: вид.Смирна (ныне Измир. Турция). Лидия
+    - год: ок.98-105
+      описание: свящ
+      место: вид.Смирна (ныне Измир. Турция). Лидия
+    - год: вид.по 105
+      описание: свят
+      место: вид.Смирна (ныне Измир. Турция). Лидия
+    - год: 169
       описание: прств
-      служба: Поликарпу Смирнскому служба
+      место: вид.Смирна (ныне Измир. Турция). Лидия
+      образ:
+       - http://azbyka.ru/days/assets/img/saints/2314/bc9e04c0d2a983f211de060da2ce48fa.jpg
+       - http://azbyka.ru/days/assets/img/saints/2314/bf7414b12c8fba178c9993ac6e0da01f.jpg
+   помин:
+      дата: 23.02
+      календарь: рпц,змин
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_23.pdf

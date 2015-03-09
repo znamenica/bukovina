@@ -4,7 +4,7 @@
    прозвище: Палама
    описание: святитель Солунский (Фессалоникский, Фессалонитский)
    чин: свт
-   собор: аф
+   собор: аф,греч,мак
    вики:
     - http://drevo-info.ru/articles/2283.html
     - http://ru.wikipedia.org/wiki/Григорий_Палама
@@ -19,6 +19,7 @@
     - http://azbyka.ru/days/assets/img/saints/305/p18gehee2mbdi1jfu15jmqjs1k6b4.jpg
     - http://azbyka.ru/days/assets/img/saints/305/p18gehee2m1kdi1pe811imea6c943.jpg
    отечник: http://azbyka.ru/otechnik/Grigorij_Palama/
+   служба: Григорию Паламе служба
    событие:
     - год: 1296
       описание: ржд
@@ -32,8 +33,8 @@
       место: Солунь
    помин:
     - дата: нд.2.поста
+      календарь: рпц
       описание: само
-      служба: Григорию Паламе служба
     - дата: 14.11
       описание: прств
       служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_14.pdf
