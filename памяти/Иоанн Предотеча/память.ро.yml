@@ -5,25 +5,56 @@
    прозвище: Пророк, Предотеча (Предтеча)
    описание: креститель Господнь
    чин: прор
+   собор: плст
    вики:
     - http://drevo-info.ru/articles/3825.html
     - https://ru.wikipedia.org/wiki/Иоанн_Креститель
    бытие: http://azbyka.ru/days/sv-prorok-i-krestitel-ioann-predtecha
-   образ: http://drevo-info.ru/images/001/000575.jpg
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/3544/p18fa1cofidsib2j1f201h2e1hco7.JPG
+    - http://azbyka.ru/days/assets/img/saints/3544/0cea59cd6552193bf2bd78e7ba8de857.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/25b3a6a3b8dc4c87451f9cbd6152fb44.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/a25bcd764b43d4c16884a9fd1a4a910f.jpg
+     -http://azbyka.ru/days/assets/img/saints/3544/233d55804fcde85b107afafccdd51474.jpg
+    - http://drevo-info.ru/images/001/000575.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/ca6cbb86f042274cfc224769de76953d.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/f77627c50600dcc0a721d7a4387521c6.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/f705998dc1311bb05222a7148bfff18c.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/e39eedd85359ee2e92a36925065d1e2e.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/d1af6c35f02acb9950ec2bb4c530ab84.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/7500409812bf70672ace973ca41da14e.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/bf96fef2fd8cd3ee05a7e468cb1dcb5f.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/034e97778d3047915dd83ed2c5fdadac.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/604c1af27f0a2a88b15f9c5b82c740a6.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/fe60ebe9ed41e84adca5aa268141a346.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/30d07bd756662a347124c7816b188006.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/p18fa1cofh1udh1cqtfrtr4a3i5.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/p18fa1cofibep1aqo1asn19mn1ptk6.JPG
+    - http://azbyka.ru/days/assets/img/saints/3544/p18fa1cofivajplljgl1r2u1tr28.JPG
+    - http://azbyka.ru/days/assets/img/saints/3544/ca6cbb86f042274cfc224769de76953d.jpg
+    - http://azbyka.ru/days/assets/img/saints/3544/f705998dc1311bb05222a7148bfff18c.jpg
    служба: http://azbyka.ru/days/caa/109
    событие:
-    - год: I до нэ
+    - год: 2 до нэ
       описание: зач
-    - год: I до нэ
+    - год: 1 до нэ
       описание: ржд
-      образ: http://azbyka.ru/days/assets/img/holidays/89/p185aaigl41jik1ct7v1migpb3u3.jpg
-    - год: I
+      образ:
+       - http://azbyka.ru/days/assets/img/holidays/89/p185aaigl41jik1ct7v1migpb3u3.jpg
+       - http://azbyka.ru/days/assets/img/saints/3544/4c3d84fb67b542700b3a4b87c11f61cb.jpg
+       - http://azbyka.ru/days/assets/img/saints/3544/d5d8e8fdc42d0e95fead981b867c869a.jpg
+    - год: ок. 32
       описание: прств
+      место: Иерусалим. Палестина
+      образ: http://azbyka.ru/days/assets/img/saints/3544/f3228cb539ae7e6bd813927a1d7a055d.jpg
     - год: IV
       описание: обр.гл.1
       вики:
        - https://ru.wikipedia.org/wiki/Обретение_главы_Иоанна_Предтечи
        - http://drevo-info.ru/articles/3827.html
+      образ:
+       - http://azbyka.ru/days/assets/img/saints/3544/9b5fbbff8275e6fab9e5182f49e3601b.jpg
+       - http://azbyka.ru/days/assets/img/saints/3544/p18fa1cofh1hlv17411o41kl48o83.jpg
     - год: 452
       дата: 18.02
       описание: обр.гл.2
@@ -59,10 +90,12 @@
        - http://azbyka.ru/days/assets/upload/minei/01/minea_01_07.pdf
       вики: http://drevo-info.ru/articles/8561.html
     - дата: 24.02
+      календарь: рпц
       описание: обр.гл.1,обр.гл.2
       служба:
        - Иоанну Предотече на обретение главы первое и второе служба
        - http://azbyka.ru/days/caa/108
+       - http://azbyka.ru/days/assets/upload/minei/02/minea_02_24.pdf
     - дата: 25.05
       описание: обр.гл.3
       служба: Иоанну Предотече на обретение главы третее служба
