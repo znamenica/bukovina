@@ -3,10 +3,14 @@
    имя: Межетский
    описание: образ Богородицы
    чин: обр
+   собор: киев
    вики: http://drevo-info.ru/articles/9323.html
    бытие: http://azbyka.ru/days/ikona-mezhetskaja
    образ: http://azbyka.ru/days/assets/img/icons/235/p188l9u6ph1cre10d21q261b7smgt5.jpg
-   помин:
+   событие:
       год: 1492
+      описание: явл
+      место: Киевщина
+   помин:
       дата: 26.02
-      описание: прств
+      описание: само

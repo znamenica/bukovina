@@ -3,19 +3,20 @@
    имя: Севастиан
    прозвище: настоятель Сохотский, Пошехонский
    чин: прп
-   собор: ряр
+   собор: ряр,рмнв
    вики: http://drevo-info.ru/articles/4624.html
    бытие: http://azbyka.ru/days/sv-sevastian-sohotskij
    образ:
     - http://drevo-info.ru/images/003/010471.jpg
     - http://azbyka.ru/days/assets/img/saints/934/p17vk1vnmm6a4vkd13go1mo0b8l3.jpg
+   служба: Севастиану Пошехонскому служба
    событие:
       год: ок.1500/1542
       описание: прств
       место: вид.Спасо-Преображенский монастырь. Романовье. Сохоть река. Ярославщина
    помин:
-      дата: 26.02,18.12
+    - дата: 26.02
       описание: само
-      служба:
-       - Севастиану Пошехонскому служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_18.pdf
+    - дата: 18.12
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_18.pdf
