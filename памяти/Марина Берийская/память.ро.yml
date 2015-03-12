@@ -1,14 +1,26 @@
 ---
 Марина Берийская:
    имя: Марина
-   прозвище: Сирийская, Берийская
+   описание: затворница и постница Берийская (Алеппская), Сирийская
    чин: прп
+   собор: сир
    вики: http://drevo-info.ru/articles/9397.html
    бытие: http://azbyka.ru/days/sv-marina-berijskaja-makedonskaja
    образ:
     - http://drevo-info.ru/images/002/008838.jpg
     - http://pravicon.com/icon-2360
-   помин:
-      год: ок. 450
-      дата: 28.02
+    - http://azbyka.ru/days/assets/img/saints/5689/p18i523ltp1ttvlh8hs1562b113.jpg
+    - http://azbyka.ru/days/assets/img/saints/5689/2b5431599892383b4ae236cb14a1217e.jpg
+    - http://azbyka.ru/days/assets/img/saints/5689/p1907hhljnkm312hn1viajfjv2q3.jpg
+    - http://azbyka.ru/days/assets/img/saints/5689/p1907hhljps9nic3jpk10pi1sb74.jpg
+   событие:
+    - год: вт.пол.IV
+      описание: ржд
+      место: Берия (Веррия, ныне Алеппо). Сирия
+    - год: ок. 450
       описание: прств
+      место: вид.близ.Берия (Веррия, ныне Алеппо). Сирия
+   помин:
+      дата: 28.02
+      календарь: рпц,греч
+      описание: само

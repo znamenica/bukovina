@@ -1,14 +1,26 @@
 ---
 Кира Берийская:
    имя: Кира
-   прозвище: Сирийская, Берийская
+   описание: затворница и постница Берийская (Алеппская), Сирийская
    чин: прп
+   собор: сир
    вики: http://drevo-info.ru/articles/9398.html
    бытие: http://azbyka.ru/days/sv-kira-berijskaja-makedonskaja
    образ:
+    - http://azbyka.ru/days/assets/img/saints/5950/p18i526qfju5irr1dt7gtjvo83.jpg
     - http://drevo-info.ru/images/002/008839.jpg
     - http://pravicon.com/icon-2150
-   помин:
-      год: ок. 450
-      дата: 28.02
+    - http://azbyka.ru/days/assets/img/saints/5950/p18i526qfkr781fqi18efd98qa54.jpg
+    - http://azbyka.ru/days/assets/img/saints/5689/2b5431599892383b4ae236cb14a1217e.jpg
+    - http://azbyka.ru/days/assets/img/saints/5950/b8c7fc90483037ecc9d7d3b37fc8525a.jpg
+   событие:
+    - год: вт.пол.IV
+      описание: ржд
+      место: Берия (Веррия, ныне Алеппо). Сирия
+    - год: ок. 450
       описание: прств
+      место: вид.близ.Берия (Веррия, ныне Алеппо). Сирия
+   помин:
+      дата: 28.02
+      календарь: рпц,греч
+      описание: само

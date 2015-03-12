@@ -1,12 +1,27 @@
 ---
 Василий Десятоградец:
    имя: Василий
-   прозвище: Десятоградец, Декаполит
+   прозвище: Десятоградец (Декаполит)
+   описание: инок; исповедник
    чин: присп
+   собор: плст
    вики: http://drevo-info.ru/articles/9389.html
    бытие: http://azbyka.ru/days/sv-vasilij-dekapolit
-   помин:
-      год: ок. 750
-      дата: 28.02
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/1732/p18i52drbhnqf36id1524ou113.jpg
+    - http://azbyka.ru/days/assets/img/saints/1732/p1907h1fac1tef1mt85pg17ef10i63.jpg
+    - http://azbyka.ru/days/assets/img/saints/1732/f638aa6e69dfac0f32e045466d143307.jpg
+   служба: Василию Десятоградцу служба
+   событие:
+    - год: вид.сер.VII
+      описание: ржд
+    - год: 750
       описание: прств
-      служба: Василию Десятоградцу служба
+      место: вид.Десятоградие. Палестина
+   помин:
+      дата: 28.02
+      календарь: рпц
+      описание: прств
+      служба:
+       - http://azbyka.ru/days/assets/upload/services/minea_02_28_1.pdf
+       - http://azbyka.ru/days/assets/upload/minei/02/minea_02_28.pdf
