@@ -1,11 +1,18 @@
 ---
 Троадий Неокесарийский:
    имя: Троадий
-   прозвище: Неокесарийский
+   описание: Неокесарийский
    чин: мч
+   собор: понт
    вики: http://drevo-info.ru/articles/3000.html
-   бытие: http://azbyka.ru/days/sv-troadij-neokesarijskij
-   помин:
-      год: III
-      дата: 02.03
+   бытие:
+    - http://azbyka.ru/days/sv-troadij-neokesarijskij
+    - http://calendar.rop.ru/svyat1/mar02-troadij.html
+   событие:
+      год: 249-251
       описание: прств
+      место: Неокесария. Понт (ныне Никсар. Турция)
+   помин:
+      дата: 02.03
+      календарь: рпц
+      описание: само
