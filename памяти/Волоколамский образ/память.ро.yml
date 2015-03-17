@@ -2,12 +2,26 @@
 Волоколамский образ:
    имя: Волоколамский
    описание: образ Богородицы
-   исток: Владимирский образ
+   вид: Владимирский образ
    чин: обр
+   собор: звнг,влкл
    вики: http://drevo-info.ru/articles/9459.html
    бытие: http://azbyka.ru/days/ikona-volokolamskaja
-   образ: http://drevo-info.ru/images/001/001568.jpg
+   образ:
+    - http://drevo-info.ru/images/001/001568.jpg
+    - http://azbyka.ru/days/assets/img/icons/135/p188b7620591m1d6g11qv8721a663.jpg
+    - http://azbyka.ru/days/assets/img/icons/135/p188b765rl9781u6o48h2631rlr5.jpg
+    - http://azbyka.ru/days/assets/img/icons/135/p18iodahul1kcig5e1visfi5gh4.jpg
+   событие:
+    - год: 1572
+      дата: до 02.03
+      описание: напис
+      место: вид.Звенигород
+    - год: 1572
+      дата: 02.03
+      описание: прен
+      место: Успенская Иосифова обитель. Волоколамщина
    помин:
-      год: 1572
       дата: 03.03
+      календарь: рпц
       описание: прен

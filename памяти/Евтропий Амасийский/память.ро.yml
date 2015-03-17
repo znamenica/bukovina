@@ -1,14 +1,27 @@
 ---
 Евтропий Амасийский:
    имя: Евтропий
-   прозвище: Амасийский
-   описание: брат Клеоника Амасийского
+   описание: мученик Амасийский; брат Клеоника Амасийского; распят
    чин: мч
+   собор: понт
    вики: http://drevo-info.ru/articles/9464.html
    бытие: http://azbyka.ru/days/sv-evtropij-amasijskij
-   образ: http://pravicon.com/icon-1723
-   помин:
-      год: ок. 308
-      дата: 03.03
+   образ:
+    - http://pravicon.com/icon-1723
+    - http://drevo-info.ru/images/001/001570.jpg
+    - http://azbyka.ru/days/assets/img/saints/432/0e0ea89004245f3f9f461892fdcc1edf.jpg
+   событие:
+      год: 308
       описание: прств
-      служба: Евтропию и Клеонику Амасийским и Василиску Команскому служба
+      место: Амасия. Понт
+      образ:
+       - http://azbyka.ru/days/assets/img/saints/432/e2159807acd04d669acf2f67f6a5d9ab.jpg
+       - http://azbyka.ru/days/assets/img/saints/432/3b427fa5d356bdd9043a9f2d22ebdd7e.jpg
+   помин:
+      дата: 03.03
+      календарь: рпц
+      описание: само
+      бытие: http://calendar.rop.ru/svyat1/mar03-evtropij-kleonik.html
+      служба:
+       - Евтропию и Клеонику Амасийским и Василиску Команскому служба
+       - http://azbyka.ru/days/assets/upload/services/minea_03_03.pdf

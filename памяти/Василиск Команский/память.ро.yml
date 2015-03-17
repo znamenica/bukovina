@@ -1,20 +1,33 @@
 ---
 Василиск Команский:
    имя: Василиск
-   описание: Команский, племянник Феодора Тирона
+   описание: уроженец и мученик Команский; племянник Феодора Тирона; обезглавлен
    чин: мч
+   собор: понт,абх
    вики: http://drevo-info.ru/articles/9463.html
    бытие: http://azbyka.ru/days/sv-vasilisk-komanskij
    образ:
     - http://pravicon.com/icon-1408
     - http://drevo-info.ru/images/002/007493.jpg
+    - http://drevo-info.ru/images/002/008597.jpg
+    - http://azbyka.ru/days/assets/img/saints/2278/p18gefhkagp2gfdm1tvelht1m7k3.jpg
+    - http://azbyka.ru/days/assets/img/saints/2278/p1907k9ucallpqqu1m6b1lpq9md3.jpg
+   служба: Василиску Команскому служба
    событие:
-      год: ок. 308
+    - год: вт.пол.III
+      описание: ржд
+      место: Команы. Понт/Команы. Абхазия
+    - год: 308
       описание: прств
+      место: Команы. Понт/Команы. Абхазия
+      образ: http://azbyka.ru/days/assets/img/saints/432/3b427fa5d356bdd9043a9f2d22ebdd7e.jpg
    помин:
     - дата: 03.03
+      календарь: рпц
       описание: само
-      служба: Евтропий Амасийский/Евтропию и Клеонику Амасийским и Василиску Команскому служба
+      бытие: http://calendar.rop.ru/svyat1/mar03-evtropij-kleonik.html
+      служба:
+       - Евтропий Амасийский/Евтропию и Клеонику Амасийским и Василиску Команскому служба
+       - http://azbyka.ru/days/assets/upload/services/minea_03_03.pdf
     - дата: 22.05
       описание: само
-      служба: Василиску Команскому служба
