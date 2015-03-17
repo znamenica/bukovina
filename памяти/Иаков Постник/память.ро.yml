@@ -1,15 +1,22 @@
 ---
 Иаков Постник:
    имя: Иаков
-   прозвище: Кармильский, Постник
-   описание: в Сирии, в Парфирионе Финикийском
+   описание: постник и пещерник Парфирионский (Финикия), Сирийский, Кармильский
    чин: прп
+   собор: сир,финк
    вики: http://drevo-info.ru/articles/5349.html
-   бытие: http://azbyka.ru/days/sv-iakov-postnik
+   бытие:
+    - http://azbyka.ru/days/sv-iakov-postnik
+    - http://calendar.rop.ru/svyat1/mar04-iakov-postnik.html
    образ:
     - http://drevo-info.ru/images/002/008595.jpg
+    - http://azbyka.ru/days/assets/img/saints/4007/p18gejh9ia1kq816ut11f414821a1f3.jpg
     - http://pravicon.com/icon-1852
-   помин:
+   событие:
       год: VI
-      дата: 04.03
       описание: прств
+      место: пещера. Кармильская гора. Финикия
+   помин:
+      дата: 04.03
+      календарь: рпц
+      описание: само

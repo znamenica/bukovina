@@ -1,21 +1,25 @@
 ---
 Иулиания Птолемаидская:
    имя: Иулиания
-   прозвище: Птолемаидская
-   описание: сестра Мала Птолемаидского
+   описание: мученица Птолемаидская; сестра Мала Птолемаидского; обеглавлена
    чин: мц
-   собор: финк
+   собор: финк,отяз
    вики: http://drevo-info.ru/articles/6700.html
-   бытие: http://azbyka.ru/days/sv-iulianija-ptolemaidskaja
+   бытие:
+    - http://azbyka.ru/days/sv-iulianija-ptolemaidskaja
+    - http://calendar.rop.ru/svyat1/mar04-pavel-iulianiya.html
    образ:
     - http://pravicon.com/icon-2096
     - http://azbyka.ru/days/assets/img/saints/6337/p18gejtsie1dvt1vd4lvv124m16h74.jpg
     - http://azbyka.ru/days/assets/img/saints/6337/p18gejtsifk8s1e13m22dbilhj5.jpg
-   помин:
+   событие:
       год: ок. 273
       описание: прств
       место: Птолемаида. Финикия
       образ: http://azbyka.ru/days/assets/img/saints/5176/p18gejvv613f01f24ikjb0p073.jpg
    помин:
-      дата: 17.08
+    - дата: 04.03
+      календарь: рпц
+      описание: само
+    - дата: 17.08
       описание: само

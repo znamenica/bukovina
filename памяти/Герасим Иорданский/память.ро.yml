@@ -1,16 +1,32 @@
 ---
 Герасим Иорданский:
    имя: Герасим
-   прозвище: Иорданский
+   описание: пустынник Фиваидский, Иорданский; настоятель Вайфаглский
    чин: прп
-   собор: скот
+   собор: звер,плст,лик,фивд
    вики: http://drevo-info.ru/articles/9466.html
-   бытие: http://azbyka.ru/days/sv-gerasim-iordanskij
+   бытие:
+    - http://azbyka.ru/days/sv-gerasim-iordanskij
+    - http://calendar.rop.ru/svyat1/mar04-gerasim-iordan.html
    образ:
     - http://pravicon.com/icon-1522
     - http://drevo-info.ru/images/002/008596.jpg
-   помин:
-      год: 475
-      дата: 04.03
+    - http://azbyka.ru/days/assets/img/saints/3826/p18i7c38bjhsc541jgmtv41omp7.jpg
+    - http://azbyka.ru/days/assets/img/saints/3826/p18i7c46141tmd1c1d1i1tgkt2i9.jpg
+    - http://azbyka.ru/days/assets/img/saints/3826/p18i7c2t1p1easan41trj1un81ti64.jpg
+    - http://azbyka.ru/days/assets/img/saints/3826/5a52adc922b64581c54a0a8d3736965c.jpg
+    - http://azbyka.ru/days/assets/img/saints/3826/a9cf2e3b561c7d0900ee07834159a921.jpg
+    - http://azbyka.ru/days/assets/img/saints/3826/fbed34c4cfc27c166d42248fae456193.jpg
+   служба: Герасиму Иорданскому служба
+   событие:
+    - год: вид.вт.пол.IV
+      описание: ржд
+      место: Ликия
+    - год: 475
       описание: прств
-      служба: Герасиму Иорданскому служба
+      место: вид.близ.Вайфаглская обитель. Палестина
+   помин:
+      дата: 04.03
+      календарь: рпц,греч
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_04.pdf

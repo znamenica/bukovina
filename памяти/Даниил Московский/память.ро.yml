@@ -2,14 +2,64 @@
 Даниил Московский:
    имя: Даниил
    отчество: Александрович
-   прозвище: Московский
-   описание: князь
+   описание: князь Московский; сын Александра Невского и Вассы Праведницы
    чин: блгв
-   вики: http://drevo-info.ru/articles/14688.html
-   бытие: http://azbyka.ru/days/sv-daniil-moskovskij-1
-   образ: http://pravicon.com/icon-1605
-   помин:
-      год: 1303
+   собор: прпп,мск,влад?
+   вики:
+    - http://drevo-info.ru/articles/14688.html
+    - https://ru.wikipedia.org/wiki/Даниил_Александрович
+   бытие:
+    - http://azbyka.ru/days/sv-daniil-moskovskij-1
+    - http://calendar.rop.ru/svyat1/mar04-daniil-moskovskij.html
+   образ:
+    - http://pravicon.com/icon-1605
+    - http://azbyka.ru/days/assets/img/saints/4972/p1907tf642ek71ellia61a7lkt43.jpg
+    - http://azbyka.ru/days/assets/img/saints/4972/p19flaumu21jln958brt17ubvln3.png
+    - http://azbyka.ru/days/assets/img/saints/4972/p19flaumu31ro5urf1qv1i8hj1j4.jpg
+    - http://azbyka.ru/days/assets/img/saints/4972/p1907tf6431dnddbmtgntfv1lnc6.jpg
+    - http://azbyka.ru/days/assets/img/saints/4972/p1907tf643n201ish1eg9v4be7b4.jpg
+    - http://azbyka.ru/days/assets/img/saints/4972/p1907tf6431o641nc210iefqh16855.jpg
+    - http://drevo-info.ru/images/001/003134.jpg
+    - http://azbyka.ru/days/assets/img/saints/4972/fecef97d2b96cbed05e750dbcd77e3b4.jpg
+    - http://azbyka.ru/days/assets/img/saints/4972/a7d19c4e406b0df3524dad6f0dec67cf.jpg
+    - http://azbyka.ru/days/assets/img/saints/4972/edc3c186e32da3d626456b2169f4f399.jpg
+   служба:
+    - Даниилу Московскому служба
+    - http://azbyka.ru/days/caa/23
+    - http://azbyka.ru/days/caa/24
+    - http://azbyka.ru/days/caa/25
+    - http://azbyka.ru/days/caa/26
+   событие:
+    - год: 1261
+      дата: ноя/дек
+      описание: ржд
+      место: вид.Владимир
+    - год: до 1288
+      описание: брак
+      супруг: Евдокия Александровна
+    - год: 1303
       дата: 04.03
       описание: прств
-      служба: Даниилу Московскому служба
+      место: Москва
+    - год: 1303
+      описание: схим
+    - год: 1303
+      дата: по 04.03
+      описание: пгрб
+      место: кладбище. Данилова обитель. Москва
+    - год: 1652
+      описание: обр
+    - год: 1652
+      дата: 30.08
+      описание: прен
+      место: Седьмисоборская церковь. Москва
+    - год: 1791
+      собор: мск
+      описание: просл
+   помин:
+    - дата: 04.03
+      календарь: рпц
+      описание: прств
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_04.pdf
+    - дата: 30.08
+      описание: обр,прен

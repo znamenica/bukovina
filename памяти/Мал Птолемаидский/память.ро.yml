@@ -1,17 +1,22 @@
 ---
 Мал Птолемаидский:
    имя: Павел
-   прозвище: Птолемаидский
+   описание: мученик Птолемаидский; брат Иулиании Птолемаидской; обеглавлен
    чин: мч
-   собор: финк
+   собор: финк,отяз
    вики: http://drevo-info.ru/articles/6699.html
-   бытие: http://azbyka.ru/days/sv-pavel-ptolemaidskij
+   бытие:
+    - http://azbyka.ru/days/sv-pavel-ptolemaidskij
+    - http://calendar.rop.ru/svyat1/mar04-pavel-iulianiya.html
    образ: http://azbyka.ru/days/assets/img/saints/6337/p18gejtsie1dvt1vd4lvv124m16h74.jpg
-   помин:
+   событие:
       год: ок. 273
       описание: прств
       место: Птолемаида. Финикия
       образ: http://azbyka.ru/days/assets/img/saints/5176/p18gejvv613f01f24ikjb0p073.jpg
    помин:
-      дата: 17.08
+    - дата: 04.03
+      календарь: рпц
+      описание: само
+    - дата: 17.08
       описание: само

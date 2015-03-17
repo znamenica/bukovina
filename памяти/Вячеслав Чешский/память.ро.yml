@@ -1,20 +1,45 @@
 ---
 Вячеслав Чешский:
-   имя: Вячеслав, Вацлав, Винчеслав
+   имя: Вячеслав (Вацлав, Винчеслав, Венцель)
    отчество: Вратиславич
-   прозвище: Чешский
-   описание: князь страстотерпец
+   фамилия: Пржемыслович
+   описание: князь и страстотерпец Чешский; заколот в голову
    чин: блгв
-   вики: http://drevo-info.ru/articles/2157.html
-   бытие: http://azbyka.ru/days/sv-vjacheslav-cheshskij
+   собор: стцц
+   вики:
+    - http://drevo-info.ru/articles/2157.html
+    - https://ru.wikipedia.org/wiki/Святой_Вацлав
+   бытие:
+    - http://azbyka.ru/days/sv-vjacheslav-cheshskij
+    - http://calendar.rop.ru/svyat1/mar04-vyacheslav.html
    образ:
+    - http://azbyka.ru/days/assets/img/saints/614/p18i7c7d1c10lo15oegm01d6ub5q3.jpg
     - http://pravicon.com/icon-1469
     - http://drevo-info.ru/images/001/000201.jpg
-   помин:
-    - год: 935
+    - http://azbyka.ru/days/assets/img/saints/614/b5f50f873c374ed070b23847d16f9d44.jpg
+    - http://azbyka.ru/days/assets/img/saints/614/p18i7c7d1c1en7dj0rjt15s51ckk4.jpg
+    - http://azbyka.ru/days/assets/img/saints/614/p18i7c8pp81dvmh9c1p2n518tcb.jpg
+    - http://azbyka.ru/days/assets/img/saints/614/p18i7c8dlc1avc1fp71dgm1583vf89.jpg
+    - http://azbyka.ru/days/assets/img/saints/614/p18i7c7mqljs81tg41c8g4o91pm77.jpg
+   служба:
+    - Вячеславу Чешскому служба
+    - http://azbyka.ru/days/caa/128
+   событие:
+    - год: ок.907
+      описание: ржд
+      место: Прага. Чехия
+    - год: 935/929
       дата: 28.09
       описание: прств
-      служба: Вячеславу Чешскому служба
+      место: Болеславль. Чехия (ныне Старый Болеслав)
     - год: 938
       дата: 04.03
       описание: прен
+      место: Витская церковь. Прага. Чехия
+   помин:
+    - дата: 04.03
+      календарь: рпц
+      описание: прен
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_04.pdf
+    - дата: 28.09
+      описание: прств
