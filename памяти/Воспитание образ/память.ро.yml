@@ -3,10 +3,22 @@
    имя: Воспитание
    пописание: образ Богородицы
    чин: обр
+   собор: мск
    вики: http://drevo-info.ru/articles/9524.html
-   бытие: http://azbyka.ru/days/ikona-vospitanie
+   бытие:
+    - http://azbyka.ru/days/ikona-vospitanie
+    - http://calendar.rop.ru/icons1/mar05-ikona-vospytanie.html
    образ: http://drevo-info.ru/images/001/001581.jpg
+   служба:
+    - Воспитанию образу служба
+    - http://azbyka.ru/days/caa/426
+    - http://azbyka.ru/days/caa/427
+   событие:
+    - год: X-XX
+      описание: напис
+    - год: вид.XX
+      описание: прен
+      место: Казанский собор. Москва
    помин:
       дата: 05.03
       описание: прств
-      служба: Воспитанию образу служба

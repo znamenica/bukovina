@@ -2,15 +2,20 @@
 Адриан Пошехонский:
    имя: Адриан
    отчество: Григорьевич
-   описание: Ярославский, Пошехонский
-   чин: прмч
-   собор: ряр
+   описание: инок и настоятель Ярославский, Пошехонский; задушен
+   чин: прстц
+   собор: ряр,комл,пшхн,рост,мчч
    вики: http://drevo-info.ru/articles/9478.html
-   бытие: http://azbyka.ru/days/sv-adrian-poshehonskij
+   бытие:
+    - http://azbyka.ru/days/sv-adrian-poshehonskij
+    - http://calendar.rop.ru/svyat1/mar05-adrian-poshehonskij.html
    образ:
     - http://pravicon.com/icon-1067
     - http://azbyka.ru/days/assets/img/saints/1595/60df58569bf2274bbb7e203fccac72da.jpg
     - http://azbyka.ru/days/assets/img/saints/1595/p18i7cvniu1kda1t9o1t0d17tc1fso4.jpg
+   служба:
+    - Адриану Пошехонскому служба
+    - http://azbyka.ru/days/caa/319
    событие:
     - год: нач.XVI
       описание: ржд
@@ -27,20 +32,19 @@
     - год: 1550
       дата: 06.03
       описание: прств
-      место: Пошехоная обитель
+      место: Пошехонская обитель
     - год: 1625
       дата: 19.11
       описание: обр
     - год: 1625
       дата: 17.12
       описание: прен
-      место: храм. Пошехоная обитель
+      место: храм. Пошехонская обитель
    помин:
       дата: 05.03
+      календарь: рпц
       описание: прств
-      служба:
-       - Адриану Пошехонскому служба
-       - http://azbyka.ru/days/caa/319
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_05.pdf
     - год: 1625
       дата: 19.11
       описание: обр

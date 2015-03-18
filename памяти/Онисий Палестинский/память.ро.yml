@@ -1,11 +1,17 @@
 ---
 Онисий Палестинский:
    имя: Онисий
-   прозвище: Усуровский, Палестинский, Исаврийский
+   описание: мученик Усуровский, Палестинский, Исаврийский
    чин: мч
+   собор: плст
    вики: http://drevo-info.ru/articles/3002.html
-   бытие: http://azbyka.ru/days/sv-onisij-usurovskij-isavrijskij
-   помин:
+   бытие:
+    - http://azbyka.ru/days/sv-onisij-usurovskij-isavrijskij
+    - http://calendar.rop.ru/svyat1/mar05-onisij.html
+   событие:
       год: I
-      дата: 05.03
       описание: прств
+      место: Палестина
+   помин:
+      дата: 05.03
+      описание: само

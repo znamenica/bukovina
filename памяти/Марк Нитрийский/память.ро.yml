@@ -1,13 +1,25 @@
 ---
 Марк Нитрийский:
    имя: Марк
-   прозвище: Нитрийский, Египетский
-   описание: постник
+   описание: постник Нитрийский (Нижний Египет), Египетский
    чин: прп
+   собор: нитр,греч
    вики: http://drevo-info.ru/articles/5355.html
-   бытие: http://azbyka.ru/days/sv-mark-nitrijskij
-   образ: http://pravicon.com/icon-2379
-   помин:
-      год: V
-      дата: 05.03
+   бытие:
+    - http://azbyka.ru/days/sv-mark-nitrijskij
+    - http://calendar.rop.ru/svyat1/mar05-mark.html
+   образ:
+    - http://pravicon.com/icon-2379
+    - http://azbyka.ru/days/assets/img/saints/150/p18geoavvq10ii1gpcq2h1t0u13eq5.jpg
+    - http://azbyka.ru/days/assets/img/saints/150/p18geoa7u61qhe1so110jm1sl616nq3.jpg
+   событие:
+    - год: сер.IV
+      описание: ржд
+      место: Афины. Греция
+    - год: сер.V
       описание: прств
+      место: вид.Нитрийская гора. Нижний Египет
+   помин:
+      дата: 05.03
+      календарь: рпц,греч
+      описание: само
