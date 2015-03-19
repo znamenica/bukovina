@@ -3,10 +3,41 @@
    имя: Ченстоховский, Непобедимая Победа
    прозвище: образ Богородицы
    чин: обр
+   собор: плст,виз,киев,льв,чнст
    вики: http://drevo-info.ru/articles/4022.html
-   бытие: http://azbyka.ru/days/ikona-chenstohovskaja
-   помин:
-      год: I
-      дата: 06.03
+   бытие:
+    - http://azbyka.ru/days/ikona-chenstohovskaja
+    - http://calendar.rop.ru/icons1/mar06-ikona-chenstokovskaya.html
+   служба:
+    - Ченстоховскому образу служба
+    - http://www.russkie-idut.ru/vesti/akafist.htm
+    - http://azbyka.ru/days/caa/490
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/114/p18iode51scmu1vnmam57ls1l993.jpg
+    - http://azbyka.ru/days/assets/img/icons/114/p18iode51tb0q9q9bflpu97np4.jpg
+    - http://drevo-info.ru/images/001/000618.jpg
+    - http://azbyka.ru/days/assets/img/icons/114/cd7e5a7e78eb06f234d57e9935dc0420.jpg
+    - http://azbyka.ru/days/assets/img/icons/114/61127ef8f5d12228a464b1553df1a2ed.jpg
+   событие: 
+    - год: до 66
       описание: напис
-      служба: Ченстоховскому образу служба
+      место: Сионская горница. Иерусалим. Палестина
+    - год: 66-67
+      описание: прем
+      место: Пелла местечко. вид.Палестина
+    - год: 326
+      описание: прем.1
+      место: Константинополь. Византия
+    - год: X
+      описание: прем.2
+      место: Киев. Русь
+    - год: вид.1268-1270
+      описание: прем.3
+      место: Бельзский замок. Львов
+    - год: 1352
+      описание: прен
+      место: Ясная Ченстоховская гора. Польша
+   помин:
+      дата: 06.03
+      календарь: рпц
+      описание: само

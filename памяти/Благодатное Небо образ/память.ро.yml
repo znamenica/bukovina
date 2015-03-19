@@ -3,19 +3,30 @@
    имя: Благодатное Небо, Что тебя наречём
    прозвище: образ Богородицы
    чин: обр
+   собор: смо,мск
    вики: http://drevo-info.ru/articles/9538.html
-   бытие: http://azbyka.ru/days/ikona-blagodatnoe-nebo
+   бытие:
+    - http://azbyka.ru/days/ikona-blagodatnoe-nebo
+    - http://calendar.rop.ru/icons1/mar06-ikona-nebo.html
    образ:
     - http://azbyka.ru/days/assets/img/icons/154/p1888dabk21akp106u1sfv11pf2rn9.jpg
     - http://drevo-info.ru/images/001/001587.jpg
+   служба:
+    - Благодатному Небу образу служба
+    - http://azbyka.ru/days/caa/428
    событие:
-      год: XIV
+    - год: вид.XIV
       описание: явл
+    - год: XIV
+      описание: прен
+      место: Смоленск
+    - год: 1389-1425
+      описание: прен
+      место: Михайло-Архангельский собор. Кремль. Москва
    помин:
     - дата: 06.03
+      календарь: рпц
       описание: само
-      служба:
-       - Благодатному Небу образу служба
-       - http://azbyka.ru/days/caa/428
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_06.pdf
     - дата: всех
       описание: само
