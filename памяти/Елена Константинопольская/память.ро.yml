@@ -1,17 +1,39 @@
 ---
 Елена Константинопольская:
    имя: Елена
-   описание: Константинопольская
+   описание: царица Константинопольская
    чин: рап
+   собор: виз,блгвв
    вики: http://drevo-info.ru/articles/1189.html
    бытие: http://azbyka.ru/days/sv-elena-konstantinopolskaja
-   образ: http://drevo-info.ru/images/001/000127.jpg
+   образ:
+    - http://drevo-info.ru/images/001/000127.jpg
+    - http://azbyka.ru/days/assets/img/saints/5883/p1909eore31qjr7jbt7c1if61ch04.jpg
+    - http://azbyka.ru/days/assets/img/saints/5883/4603ffeec38463d33523468a8bfb155d.jpg
+    - http://azbyka.ru/days/assets/img/saints/5883/2698658ce2ba4105d3e63103611c67c2.jpg
+    - http://azbyka.ru/days/assets/img/saints/5883/p1909errs4vq35eg5qc1rf013tv9.jpg
    событие:
-      год: 327/328/326
+    - год: 326-328
       описание: прств
+      место: вид.Константинополь. Византия
+    - год: 326-328
+      описание: пгрб
+      место: Двунадесятиапостольская церковь. Константинополь. Византия
+    - год: вид.по.XII
+      описание: прен
+      место: Сен-Дени улица-92. Сен-Лё-Сен-Жиль. Париж. Франция
    помин:
     - дата: 06.03
       описание: само
     - дата: 21.05
       описание: само
-      служба: Константин Великий/Константину Великому и Елене Константинопольской служба
+      образ:
+       - http://azbyka.ru/days/assets/img/saints/5883/0fa628799521cf5500372f3f2a8d894f.jpg
+       - http://azbyka.ru/days/assets/img/saints/5883/b9315735bd4fa6f29ab4e6e8dc26a4f2.jpg
+       - http://azbyka.ru/days/assets/img/saints/5883/19f5e5703d845feffdb9c29d8b9f4c8b.jpg
+       - http://azbyka.ru/days/assets/img/saints/5883/efbf6892a9818eca7e5f25c6fb7bd5f2.jpg
+       - http://azbyka.ru/days/assets/img/saints/5883/p18f54gcsd1sal14ppdpk1ermfq23.jpg
+      служба:
+       - Константин Великий/Константину Великому и Елене Константинопольской служба
+       - http://azbyka.ru/days/caa/279
+       - http://azbyka.ru/days/caa/280

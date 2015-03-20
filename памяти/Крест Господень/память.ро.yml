@@ -1,18 +1,33 @@
 ---
 Крест Господень:
-   имя: Крест Господень
-   чин: крст
-   вики: http://drevo-info.ru/articles/16665.html
-   бытие: http://azbyka.ru/days/prazdnik-perenesenie-iz-malty-v-gatchinu-chasti-dreva-zhivotvorjashchego-kresta-gospodnja-filermskoj-ikony-bozhiej-mate
+   описание: Крест Господень
+   чин: прдм
    образ: http://days.pravoslavie.ru/Images/is900.jpg
-   служба: Кресту Господеню служба
+   служба: Кресту Господню служба
    событие:
-      год: 1799
+    - год: 326
+      описание: обр
+      бытие: http://calendar.rop.ru/svyat1/mar06-obretenie-kresta.html
+      место: Иерусалимье. Палестина
+    - год: 335
+      дата: 14.09
+      описание: вздв
+      место: Воскресенская церковь. Голгофа. Иерусалимье. Палестина
+      образ: http://azbyka.ru/days/assets/img/saints/5883/d3378b2a37fcf5fd02e54d9e27ca90b6.jpg
+    - год: 1799
       дата: авг
       описание: прен
+      предмет: часть
       вики: http://drevo-info.ru/articles/16665.html
-      место: Гатчина
+      бытие: http://azbyka.ru/days/prazdnik-perenesenie-iz-malty-v-gatchinu-chasti-dreva-zhivotvorjashchego-kresta-gospodnja-filermskoj-ikony-bozhiej-mate
+      место: Гатчина. Санкт-Петербургская губерния
    помин:
-      дата: 12.10
+    - дата: 06.03
+      календарь: рпц
+      описание: обр
+      служба: Кресту Господню на обретение служба
+    - дата: 14.09
+      описание: вздв
+    - дата: 12.10
       описание: прен
       служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_12.pdf

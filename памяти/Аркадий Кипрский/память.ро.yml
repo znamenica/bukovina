@@ -1,11 +1,18 @@
 ---
 Аркадий Кипрский:
    имя: Аркадий
-   прозвище: Кипрский
+   описание: Кипрский
    чин: прп
+   собор: кипр
    вики: http://drevo-info.ru/articles/3009.html
-   бытие: http://azbyka.ru/days/sv-arkadij-kiprskij
-   помин:
-      год: IV
-      дата: 06.03
+   бытие:
+    - http://azbyka.ru/days/sv-arkadij-kiprskij
+    - http://calendar.rop.ru/svyat1/mar06-arkadij.html
+   событие: 
+      год: по 363
       описание: прств
+      место: Кипр
+   помин:
+      дата: 06.03
+      календарь: рпц
+      описание: само
