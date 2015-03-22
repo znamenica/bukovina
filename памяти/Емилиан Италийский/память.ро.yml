@@ -1,10 +1,19 @@
 ---
 Емилиан Италийский:
-   имя: Емилиан, в миру Викторин
-   прозвище: Италийский
+   имя: в иночестве Емилиан, в крещении Викторин
+   описание: римлянин; инок Италийский
    чин: прп
+   собор: рим,итал
    вики: http://drevo-info.ru/articles/5380.html
-   бытие: http://azbyka.ru/days/sv-emilian-italijskij
+   бытие:
+    - http://azbyka.ru/days/sv-emilian-italijskij
+    - http://calendar.rop.ru/svyat1/mar07-emelian-italijskij.html
+   образ: http://azbyka.ru/days/assets/img/saints/2366/p18gh7h3f014l38viuk512l81gui3.jpg
+   событие:
+      год: IV-X
+      описание: прств
+      место: вид.Италия
    помин:
       дата: 07.03
+      календарь: рпц
       описание: прств

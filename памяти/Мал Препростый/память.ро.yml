@@ -2,23 +2,29 @@
 Мал Препростый:
    имя: Павел
    прозвище: Препростый
+   описание: пустынник Красноморский (Внутеннепустынский, Египетский); простосердечный
+      и незлобивый
    чин: прп
-   собор: копт
+   собор: крмр
    вики: http://drevo-info.ru/articles/2222.html
-   бытие: http://azbyka.ru/days/sv-pavel-preprostyj
+   бытие:
+    - http://azbyka.ru/days/sv-pavel-preprostyj
+    - http://calendar.rop.ru/svyat1/mar07-pavel-preprostyj.html
    образ:
     - http://drevo-info.ru/images/003/010512.jpg
     - http://azbyka.ru/days/assets/img/saints/3446/p18i7dibcg5qi1qtl1k3l1u3d1nec4.jpg
     - http://azbyka.ru/days/assets/img/saints/3446/p18i7dibce99v1b8f3bi1pjieii3.jpg
     - http://azbyka.ru/days/assets/img/saints/3446/p18i7dibcganhmh91541r34flc5.jpg
+   служба: Малу Препростому служба
    событие:
-    - год: III
+    - год: вид.вт.пол.III
       описание: брак
     - год: 340
       описание: прств
+      место: вид.Красноморская (Внутренняя) пустыня. Египет
    помин:
     - дата: 07.03
+      календарь: рпц
       описание: само
     - дата: 04.10
       описание: само
-      служба: Малу Препростому служба

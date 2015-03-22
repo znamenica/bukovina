@@ -1,24 +1,33 @@
 ---
 Споручница Грешных образ:
    имя: Споручница Грешных
-   описание: образ Богородицы в Николаевском Одрине
+   описание: образ Богородицы в Одрине (Орёл)
+   вид: Корецкий образ
    чин: обр
-   бытие: http://azbyka.ru/days/ikona-sporuchnica-greshnyh
-   образ: http://azbyka.ru/days/assets/img/icons/188/c39401e03b0adbb9d597cba4a4638938.jpg
+   собор: одр
+   бытие:
+    - http://azbyka.ru/days/ikona-sporuchnica-greshnyh
+    - http://calendar.rop.ru/icons1/mar07-ikona-sporuchnica.html
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/188/c39401e03b0adbb9d597cba4a4638938.jpg
+    - http://drevo-info.ru/images/001/000941.jpg
+   служба:
+    - Споручнице Грешных образу служба
+    - http://azbyka.ru/days/caa/429
+    - http://azbyka.ru/days/caa/430
    событие:
     - год: 1843
       описание: явл
-    - год: 1848
-      описание: спис
+      место: часовня. Николаевская Одрина обитель. Одрин. Орловская губерния
+    - год: 1843
+      описание: прен
+      место: церковь. Николаевская Одрина обитель. Одрин. Орловская губерния
+    - год: 1843
+      описание: чудо
    помин:
     - дата: 07.03
+      календарь: рпц
       описание: само
-      служба:
-       - Споручнице Грешных образу служба
-       - http://azbyka.ru/days/caa/429
-       - http://azbyka.ru/days/caa/430
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_07.pdf
     - дата: 29.05
       описание: само
-    - дата: чт. по птдс
-      описание: само
-      
