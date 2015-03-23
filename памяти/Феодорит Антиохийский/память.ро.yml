@@ -5,7 +5,9 @@
    чин: сщмч
    собор: сир,отяз
    вики: http://drevo-info.ru/articles/5378.html
-   бытие: http://azbyka.ru/days/sv-feodorit-antiohijskij
+   бытие:
+    - http://azbyka.ru/days/sv-feodorit-antiohijskij
+    - http://calendar.rop.ru/svyat1/mar08-feodorit-antiohijskij.html
    событие:
       год: ок. 361-363
       описание: прств
@@ -15,4 +17,5 @@
       собор: греч
       описание: само
     - дата: 08.03
+      календарь: рпц
       описание: само

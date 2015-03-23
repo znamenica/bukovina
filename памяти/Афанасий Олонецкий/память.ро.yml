@@ -1,13 +1,24 @@
 ---
 Афанасий Олонецкий:
    имя: Афанасий
-   прозвище: Мурманский
-   описание: настоятель
+   описание: инок и настоятель Олонецкий, Мурманский (Онежский)
    чин: прп
-   собор: слав,рус
+   собор: онеж
    вики: http://drevo-info.ru/articles/9543.html
-   бытие: http://azbyka.ru/days/sv-afanasij-murmanskij-muromskij
+   бытие:
+    - http://azbyka.ru/days/sv-afanasij-murmanskij-muromskij
+    - http://calendar.rop.ru/svyat1/mar08-lazar-afanasij.html
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/3723/p18i7eahkm1op11cdk1047178jd3a3.jpg
+    - http://azbyka.ru/days/assets/img/saints/3723/p18gjifddv1tol1vkt12b11af81t143.jpg
+   событие:
+    - год: вид.вт.пол.XV
+      описание: прств
+      место: Успенская обитель. Мурманский остров. Онежье
+    - год: вид.вт.пол.XV
+      описание: пгрб
+      место: часовня. вид.Успенская обитель. Мурманский остров. Онежье
    помин:
-      год: XV
       дата: 08.03
+      календарь: рпц
       описание: прств
