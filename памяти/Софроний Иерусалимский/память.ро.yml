@@ -1,15 +1,34 @@
 ---
 Софроний Иерусалимский:
    имя: Софроний
-   прозвище: Иерусалимский
-   описание: I первосвятитель
+   прозвище: Премудрый
+   описание: первосвятитель Иерусалимский; писатель Лимонаря; друг Иоанна Мосха
    чин: свт
-   собор: пис
+   собор: пис,плст,сир,копт
    вики: http://drevo-info.ru/articles/7907.html
    бытие: http://azbyka.ru/days/sv-sofronij-ierusalimskij
-   образ: http://pravicon.com/icon-2941
-   помин:
-      год: 638-644
-      дата: 11.03
+   образ:
+    - http://pravicon.com/icon-2941
+    - http://azbyka.ru/days/assets/img/saints/5034/p1909g18rq1isjg91l551ptd8k73.jpg
+    - http://azbyka.ru/days/assets/img/saints/5034/p18i7rspcr1aqf1sgg17pjhi1nql3.jpg
+    - http://azbyka.ru/days/assets/img/saints/5034/p18i7rspcsuhiq9ng79l4veqo4.jpg
+   отечник: http://azbyka.ru/otechnik/Sofronij_Ierusalimskij/
+   служба: Софронию Иерусалимскому служба
+   событие:
+    - год: вид.сер.VI
+      описание: ржд
+      место: Дамаск. Сирия
+    - год: вид.вт.пол.VI
+      описание: иноч
+      место: вид.Александрия. Египет
+    - год: 634
+      описание: свят
+      место: вид.Палестина
+    - год: 644
       описание: прств
-      служба: Софронию Иерусалимскому служба
+      место: Иерусалим. Палестина
+   помин:
+      дата: 11.03
+      календарь: рпц
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_11.pdf
