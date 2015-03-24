@@ -2,13 +2,38 @@
 Симеон Новый Богослов:
    имя: Симеон
    прозвище: Новый Богослов
-   описание: настоятель Мамантовской и Мариининской обителей
+   описание: настоятель Мамантовский (Константинополь) и Марининский (Босфор)
    чин: прп
+   собор: пафл,виз,босф
    вики: http://drevo-info.ru/articles/9621.html
-   бытие: http://azbyka.ru/days/sv-simeon-novyj-bogoslov
-   образ: http://pravicon.com/icon-2895
-   помин:
-      год: 1022
-      дата: 12.03
+   бытие:
+    - http://azbyka.ru/days/sv-simeon-novyj-bogoslov
+    - http://calendar.rop.ru/svyat1/mar12-simeon-novyj.html
+   образ:
+    - http://pravicon.com/icon-2895
+    - http://drevo-info.ru/images/001/003160.jpg
+    - http://drevo-info.ru/images/003/009379.jpg
+    - http://azbyka.ru/days/assets/img/saints/681/p18h88056014cq1t413vb1a3c15n85.jpg
+    - http://azbyka.ru/days/assets/img/saints/681/p17v9h5ai212d866ktq6cuob0u3.jpg
+    - http://azbyka.ru/days/assets/img/saints/681/p18i7s6dg383cjub14fllok1cq55.jpg
+    - http://azbyka.ru/days/assets/img/saints/681/p18h88055u10tnc661csvr5mlb3.jpg
+    - http://azbyka.ru/days/assets/img/saints/681/p18h88055v1uft1bj41kad1kja1fhn4.jpg
+    - http://azbyka.ru/days/assets/img/saints/681/p18i7s6dg0indm491ppdsot1qbh3.jpg
+   отечник: http://azbyka.ru/otechnik/Simeon_Novyj_Bogoslov/
+   служба:
+    - Симеону Новому Богослову служба
+    - http://azbyka.ru/days/caa/592
+   событие:
+    - год: 944
+      описание: ржд
+      место: Галат. Пафлагония
+    - год: 969-980
+      описание: иноч
+      место: вид.Студийская обитель. Константинополь. Византия
+    - год: 1022
       описание: прств
-      служба: Симеону Богослову служба
+      место: Марининская обитель. Босфорье
+   помин:
+      дата: 12.03
+      календарь: рпц
+      описание: само

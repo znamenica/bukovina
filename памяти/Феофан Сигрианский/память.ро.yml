@@ -1,16 +1,42 @@
 ---
 Феофан Сигрианский:
-   имя: Феофан
-   прозвище: Сигрианский
-   описание: настоятель обители Великое Поле
+   имя: в крещении Феофан
+   отчество: Исаакович
+   описание: чиновник; инок Калонимский (Мраморное море); исповедник; настоятель
+      Великопольский (обитель Великое Поле), Сигрианский; против исламистов
    чин: присп
+   собор: виз,двор,7вс,пптд,прис
    вики: http://drevo-info.ru/articles/4162.html
-   бытие: http://azbyka.ru/days/sv-feofan-ispovednik-sigrianskij
+   бытие:
+    - http://azbyka.ru/days/sv-feofan-ispovednik-sigrianskij
+    - http://calendar.rop.ru/svyat1/mar12-feofan.html
    образ:
     - http://drevo-info.ru/images/002/006196.jpg
     - http://pravicon.com/icon-3126
-   помин:
-      год: 818
+    - http://azbyka.ru/days/assets/img/saints/412/p18h87mlfo16n01kd2101icchd474.jpg
+    - http://azbyka.ru/days/assets/img/saints/412/p18i7s4bqb1pbe1o9avi31apa1qru3.jpg
+    - http://azbyka.ru/days/assets/img/saints/412/p18h87mlfk52r184e772auc1vmf3.jpg
+    - http://azbyka.ru/days/assets/img/saints/412/p17v9i2gfqdh4vl0g4712m61hed3.jpg
+   отечник: http://azbyka.ru/otechnik/Feofan_Ispovednik/
+   служба: Феофану Сигрианскому служба
+   событие:
+    - год: ок. 760
+      описание: ржд
+      место: Константинополь. Византия
+    - год: 775-780
+      описание: брак
+      место: Мегало
+    - год: вид.(775-780)
+      описание: иноч
+      место: Сигриана горы. Пропонтида
+    - год: 818
       дата: 12.03
       описание: прств
-      служба: Феофану Сигрианскому служба
+      место: вид.Самофракия остров. вид.Пропонтида
+    - год: по 820
+      описание: прен
+      место: Великопольская обитель. Сигриана. Пропонтида
+   помин:
+      дата: 12.03
+      календарь: рпц
+      описание: прств

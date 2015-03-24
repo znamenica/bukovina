@@ -1,11 +1,24 @@
 ---
 Лиддский образ:
    имя: Лиддский
-   описание: образ Богородицы Нерукотворный на столпе в Лидде
+   описание: образ Богородицы, нерукотворный на столпе в Лидде
    чин: обр
+   собор: плст
    вики: http://drevo-info.ru/articles/9623.html
-   бытие: http://azbyka.ru/days/ikona-liddskaja-na-stolpe-v-lidde
-   помин:
-      год: I
-      дата: 12.03
+   бытие:
+    - http://azbyka.ru/days/ikona-liddskaja-na-stolpe-v-lidde
+    - http://calendar.rop.ru/icons1/mar12-ikona-liddskaya.html
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/28/p188ku2q1t17fu1fjtaph1t141vpq3.jpg
+    - http://azbyka.ru/days/assets/img/icons/28/p188ku3u1q1bsp1tba1l0umbv4cq5.jpg
+   событие:
+    - год: I
       описание: явл
+      место: Лидда. Иерусалимье. Палестина
+    - год: 361-363
+      описание: чудо
+      место: Лидда. Иерусалимье. Палестина
+   помин:
+      дата: 12.03
+      календарь: рпц
+      описание: само
