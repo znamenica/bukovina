@@ -1,11 +1,22 @@
 ---
 Христина Персидская:
    имя: Христина
-   прозвище: Персидская
+   описание: мученица Персидская; забичёвана
    чин: мц
+   собор: перс
    вики: http://drevo-info.ru/articles/5409.html
-   бытие: http://azbyka.ru/days/sv-hristina-persidskaja
-   помин:
+   бытие:
+    - http://azbyka.ru/days/sv-hristina-persidskaja
+    - http://calendar.rop.ru/svyat1/mar13-hristina.html
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/6349/p18h8besn11obklkbh5f12p3nuh3.jpg
+    - http://azbyka.ru/days/assets/img/saints/6349/p1909gnqkoprcc7i1hk71vpcoj63.jpg
+    - http://azbyka.ru/days/assets/img/saints/6349/p1909gnqkq89da3t2st1v661ut24.jpeg
+   событие:
       год: IV
-      дата: 13.03
       описание: прств
+      место: вид.Персия
+   помин:
+      дата: 13.03
+      календарь: рпц
+      описание: само

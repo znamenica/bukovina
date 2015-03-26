@@ -1,11 +1,18 @@
 ---
 Публий Петрийский:
    имя: Публий
-   прозвище: Петрийский, Африканский
+   описание: мученик Петрийский (Африканский)
    чин: мч
+   собор: 40мп,афр
    вики: http://drevo-info.ru/articles/5408.html
-   бытие: http://azbyka.ru/days/sv-publij-petrijskij-afrikanskij
-   помин:
-      год: III
-      дата: 13.03
+   бытие:
+    - http://azbyka.ru/days/sv-publij-petrijskij-afrikanskij
+    - http://calendar.rop.ru/svyat1/mar13-afrikan-publij.html
+   событие:
+      год: 249-251
       описание: прств
+      место: вид.Петрия. Африка
+   помин:
+      дата: 13.03
+      календарь: рпц
+      описание: само

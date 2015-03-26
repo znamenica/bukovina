@@ -1,12 +1,15 @@
 ---
 Молдавский образ:
-   имя: Молдавский
-   описание: образ Богородицы
+   имя: Молдавский, вид.Гербовский
+   описание: образ Богородицы; вид.тотже, что и Гербовский
    чин: обр
    бытие: http://azbyka.ru/days/ikona-moldavskaja
    образ:
     - http://azbyka.ru/days/assets/img/icons/214/p18ioe3664ml1fjn1harna51u4c3.jpg
     - http://azbyka.ru/days/assets/img/icons/214/p188la978t11vb1fiqfom1n9ieq13.jpg
+   событие:
+      год: вид.(XIII-XIX)
+      описание: напис
    помин:
       дата: 13.03
-      описание: прств
+      описание: само

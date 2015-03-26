@@ -1,12 +1,21 @@
 ---
 Александр Пиднский:
    имя: Александр
-   прозвище: Пиднский
+   описание: проповедник, священник и мученик Пиднский; обезглавлен
    чин: сщмч
+   собор: греч,мак
    вики: http://drevo-info.ru/articles/5410.html
-   бытие: http://azbyka.ru/days/sv-aleksandr-pidnskij
-   образ: http://pravicon.com/icon-1101
-   помин:
+   бытие:
+    - http://azbyka.ru/days/sv-aleksandr-pidnskij
+    - http://calendar.rop.ru/svyat1/mar13-alexandr.html
+   образ:
+    - http://pravicon.com/icon-1101
+    - http://azbyka.ru/days/assets/img/saints/241/p18h8a70tj1cqmu381dnobm8bq63.jpg
+   событие:
       год: 305-311
-      дата: 13.03
       описание: прств
+      место: Пидна. Солунье. Македония
+   помин:
+      дата: 13.03
+      календарь: рпц
+      описание: само
