@@ -1,0 +1,27 @@
+---
+Христофор Римлянин:
+   имя: Христофор
+   описание: римлянин
+   чин: прп
+   собор: рим,плст
+   вики: http://drevo-info.ru/articles/6921.html
+   бытие:
+    - http://azbyka.ru/days/sv-hristofor-rimljanin
+    - http://calendar.rop.ru/svyat1/aug30-hristofor.html
+   образ:
+    - http://pravicon.com/icon-3199
+    - http://azbyka.ru/days/assets/img/saints/3263/p183mni7fib6lr51u6hcba1psv3.jpg
+   событие:
+    - год: V-VI
+      описание: ржд
+      место: Рим
+    - год: V-VI
+      описание: иноч
+      место: Феодосиева обитель. Иерусалимье. Палестина
+    - год: VI
+      описание: прств
+      место: вид.Феодосиева обитель. Иерусалимье. Палестина
+   помин:
+      дата: 30.08
+      календарь: рпц,луг
+      описание: само

@@ -3,17 +3,29 @@
    имя: в иночестве Савва, в наречении Растко (Ростислав)
    отчество: Стефанович
    фамилия: Неманя
-   описание: святитель Сербский, I
+   описание: инок Пантелеймоновский, Ватопедский, настоятель Хилендарский; святитель
+      Сербский
    чин: свт
-   собор: серб,срс,аф
+   собор: серб,ссвт,аф,хлдр,тырн,злтб
    вики:
     - http://drevo-info.ru/articles/8633.html
     - https://ru.wikipedia.org/wiki/Савва_I_Сербский
+   бытие: http://azbyka.ru/days/sv-savva-i-serbskij
    отечник: http://azbyka.ru/otechnik/Savva_Serbskij/
    образ:
     - http://drevo-info.ru/images/001/001487.jpg
     - http://pravicon.com/icon-2814
     - https://upload.wikimedia.org/wikipedia/commons/8/8f/Der_Heilige_Sava_von_Serbien.jpg
+    - http://azbyka.ru/days/assets/img/saints/769/p19009e7cqv981pg11lt6hr88k94.jpg
+    - http://azbyka.ru/days/assets/img/saints/769/p19009e7cra6h1fpi18lj1hs26o05.jpg
+    - http://azbyka.ru/days/assets/img/saints/769/p19009e7cp92g5n610a6qv8nnj3.jpg
+    - http://azbyka.ru/days/assets/img/saints/769/p19009e7cssl07c823ucfqi0o6.jpg
+    - http://azbyka.ru/days/assets/img/saints/769/d58130a74755bc4d243e0b2966cfd648.jpg
+    - http://azbyka.ru/days/assets/img/saints/769/21ed294d8e8b9669dbdda2dab3d3a85a.jpg
+    - http://azbyka.ru/days/assets/img/saints/769/604a2223883adcf52a1163a3f4f8e4ee.jpg
+    - http://azbyka.ru/days/assets/img/saints/769/66ea41262e37c6210b0b244cdd8ff894.jpg
+    - http://azbyka.ru/days/assets/img/saints/769/d7f8bcfdae7cef6b0f7820adecedb584.jpg
+    - http://azbyka.ru/days/assets/img/saints/769/15712e0099e12171a5469414b98b258f.jpg
    служба: Савве Сербскому служба
    событие:
     - год: 1169
@@ -26,6 +38,10 @@
     - год: 1196
       описание: срет
       место: Ватопедский монастырь. Афон
+      образ:
+       - http://azbyka.ru/days/assets/img/saints/769/p19009e7cs1o71bm01g0l4of15pu7.jpg
+       - http://azbyka.ru/days/assets/img/saints/769/661fe80ece766a07172416afe21c99a6.jpg
+       - http://azbyka.ru/days/assets/img/saints/769/9f9a1ee6bc22a18513a5598226fce6c0.jpg
     - год: 1196-1207
       описание: дияк
       место: Хилендарский монастырь. Афон
@@ -35,6 +51,7 @@
     - год: 1219
       дата: 15.08
       описание: свят
+      место: Никея. Вифиния (ныне Изник. Турция)
     - год: 1237
       дата: 14.01
       описание: прств
@@ -45,7 +62,7 @@
       место: Тырново. Болгария
     - год: 1236
       описание: прен
-      место: Вознесенский монастырь. Милешево. Приеполье. Златибор
+      место: Вознесенский монастырь. Милешево село. Приеполье. Златибор
     - год: 1594
       дата: 27.04
       описание: утр
@@ -55,6 +72,9 @@
     - дата: 12.01
       описание: прств
       служба: http://azbyka.ru/days/assets/upload/minei/01/minea_01_12.pdf
+    - дата: 14.01
+      собор: греч
+      описание: само
     - дата: 06.05
       описание: прен
     - дата: 03.11

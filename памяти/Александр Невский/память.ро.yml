@@ -2,13 +2,16 @@
 Александр Невский:
    имя: в крещении Александр, в схиме Алексий
    прозвище: Невский
-   описание: великий князь
+   описание: великий князь Новгородский, Переславский, Киевский, Владимирский
    чин: блгв
-   собор: влад,ниж,ряр,спб,тул,клвн,нов?
+   собор: влад,ниж,ряр,спб,тул,клвн,нов?,прзл,киев?
    вики:
     - http://drevo-info.ru/articles/3682.html
     - http://ru.wikipedia.org/wiki/Александр_Ярославич_Невский
-   бытие: http://azbyka.ru/days/sv-aleksandr-nevskij-v-shime-aleksij
+   бытие:
+    - http://azbyka.ru/days/sv-aleksandr-nevskij-v-shime-aleksij
+    - http://calendar.rop.ru/svyat1/aug30-alexandr-nevskij.html
+    - http://www.saint.gr/839/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/61/p193vhr0cj9mpjsnughf2gqp3.jpg
     - http://azbyka.ru/days/assets/img/saints/61/b59178dbe5da21542f621b63cb4fff6d.jpg
@@ -16,6 +19,11 @@
     - http://drevo-info.ru/images/001/000531.jpg
     - http://drevo-info.ru/images/001/000757.jpg
     - http://azbyka.ru/days/assets/img/saints/61/a4a48c0ecec100df3f26da991cac2a00.jpg
+   служба:
+    - Александру Невскому служба
+    - http://azbyka.ru/days/caa/18
+    - http://azbyka.ru/days/caa/19
+    - http://azbyka.ru/days/caa/20
    событие:
     - год: 1220
       дата: 30.05
@@ -23,7 +31,10 @@
       место: Переяславль-Залесский
     - год: 1239
       описание: брак
-      супруг: Александра Полоцкая
+      супруг: Александра Брячиславовна Полоцкая
+    - год: до 1261
+      описание: брак.1
+      супруг: Васса Праведница
     - год: 1263
       дата: до 14.11
       описание: иноч
@@ -33,7 +44,7 @@
     - год: 1263
       дата: 14.11
       описание: прств
-      место: Городец. Волга река.
+      место: Городец. Волга река
     - год: 1723
       дата: 14.07
       описание: прен
@@ -50,14 +61,13 @@
     - дата: 16.07
       собор: макр
       описание: само
-      служба:
-       - Александру Невскому служба
-       - http://azbyka.ru/days/caa/18
-       - http://azbyka.ru/days/caa/18
-       - http://azbyka.ru/days/caa/20
     - дата: 30.08
+      календарь: рпц,греч
       описание: прен.1
-      служба: Александру Невскому на пренесение мощей служба
+      бытие: http://www.saint.gr/3085/saint.aspx
+      служба:
+       - Александру Невскому на пренесение мощей служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_30.pdf
     - дата: 23.11
       описание: прств
       служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_23.pdf

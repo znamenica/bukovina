@@ -1,20 +1,64 @@
 ---
 Александр Свирский:
-   имя: Александр, в миру Амос
+   имя: в иночестве Александр, в крещении Амос
    отчество: Степанович
-   прозвище: Свирский
+   описание: настоятель Свирский
    чин: прп
-   собор: слав,рус,нвг,спб,кар
-   вики: http://drevo-info.ru/articles/11321.html
-   бытие: http://azbyka.ru/days/sv-aleksandr-svirskij
+   собор: нов,спб,кар,лдг
+   вики:
+    - http://drevo-info.ru/articles/11321.html
+    - https://ru.wikipedia.org/wiki/Александр_Свирский
+   бытие:
+    - http://azbyka.ru/days/sv-aleksandr-svirskij
+    - http://calendar.rop.ru/svyat1/aug30-alexandr-svirskij.html
+    - http://www.saint.gr/3371/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/001859.jpg
     - http://pravicon.com/icon-1107
-   помин:
-      год: 1533
+    - http://azbyka.ru/days/assets/img/saints/1742/p18ionp9hntrfs2q1s671koq1fas5.jpg
+    - http://azbyka.ru/days/assets/img/saints/1742/224d654508c0bd9ecb206bb43307a02a.jpg
+    - http://azbyka.ru/days/assets/img/saints/1742/bb68fd25980f1c3ece0b02e25c82a9dc.jpg
+    - http://azbyka.ru/days/assets/img/saints/1742/605f63d230c28baa69e0a500ee994c7e.jpg
+    - http://azbyka.ru/days/assets/img/saints/1742/19352df0bdf7bbc71735ed04da68cb98.jpg
+    - http://azbyka.ru/days/assets/img/saints/1742/8c06ebf59a5456fb27ee9c19e6e9d8da.jpg
+    - http://azbyka.ru/days/assets/img/saints/1742/4bc0bca63d43528831a5e29f953958ad.jpg
+    - http://azbyka.ru/days/assets/img/saints/1742/p18ionp9hi11kb133iggmiru1pkb3.jpg
+    - http://azbyka.ru/days/assets/img/saints/1742/7e9a014db381d581bc9cf17928a0aed3.jpg
+   служба:
+    - Александру Свирскому служба
+    - http://azbyka.ru/days/caa/21
+    - http://azbyka.ru/days/caa/22
+   отечник: http://azbyka.ru/otechnik/Aleksandr_Svirskij/
+   событие:
+    - год: 1448
+      дата: 15.06
+      описание: ржд
+      место: вид.Мандеры село. Ояти река. Ладога
+    - год: 1448
+      дата: по 15.06
+      описание: крещ
+      тез: Амос Пророк
+    - год: 1474
+      описание: иноч
+      место: Спасо-Преображенская обитель. Валаам остров. Ладога
+    - год: 1508
+      описание: свящ
+      место: Новгород
+    - год: 1533
       дата: 30.08
       описание: прств
-      год: 
+      место: Свято-Троицкая Свирская обитель. Ладога
+    - год: 1547
+      собор: рус
+      описание: просл
+      место: Москва
+    - год: 1641
       дата: 17.04
-      описание: прен
-      служба: Александру Свирскому служба
+      описание: обр
+   помин:
+    - дата: 17.04
+      описание: обр
+    - дата: 30.08
+      календарь: рпц,греч
+      описание: прств
+      служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_30.pdf

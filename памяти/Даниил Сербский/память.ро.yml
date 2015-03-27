@@ -1,14 +1,17 @@
 ---
 Даниил Сербский:
    имя: Даниил
-   описание: святитель Сербский, безмолвник Афонский
+   описание: безмолвник Афонский; святитель Сербский, вторый
    чин: свт
-   собор: серб,ссвт,аф,прпп
+   собор: серб,ссвт,аф,прпп,кнчл
    вики: http://drevo-info.ru/articles/8997.html
    бытие: http://azbyka.ru/days/sv-daniil-ii-serbskij
    образ:
     - http://azbyka.ru/days/assets/img/saints/3053/p18voe9m9v1kn912djl0212971o1i4.jpg
+    - http://azbyka.ru/days/assets/img/saints/3053/p18voe9m9t90udc5et1ddac23.jpg
+    - http://azbyka.ru/days/assets/img/saints/3053/e99e024cfe005bdfb3fb2eacd453a10b.jpg
     - http://pravicon.com/icon-1607
+   служба: Даниилу Сербскому служба
    событие:
     - год: вт.пол.XIII
       описание: ржд
@@ -26,6 +29,4 @@
    помин:
       дата: 20.12
       описание: само
-      служба:
-       - Даниилу Сербскому служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_20.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_20.pdf

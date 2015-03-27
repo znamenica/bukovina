@@ -1,12 +1,15 @@
 ---
 Ефрем Сербский:
    имя: Ефрем
-   описание: первосвятитель Сербский, II, святитель Печский
+   описание: святитель Печский; первосвятитель Сербский, вторый
    чин: прсвт
-   собор: слав,срс,болг,аф
+   собор: серб,ссвт,болг,аф
    вики: http://drevo-info.ru/articles/6154.html
    бытие: http://azbyka.ru/days/sv-efrem-ii-serbskij
-   образ: http://drevo-info.ru/images/002/004560.jpg
+   образ:
+    - http://drevo-info.ru/images/002/004560.jpg
+    - http://azbyka.ru/days/assets/img/saints/4779/p183mltb1n12umuo716am1p45oq3.jpg
+   служба: Ефрему Сербскому служба
    событие:
     - год: ок. 1312
       дата: 14/15.06
@@ -24,6 +27,4 @@
    помин:
       дата: 15.06
       описание: само
-      служба:
-       - Ефрему Сербскому служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_15.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_15.pdf
