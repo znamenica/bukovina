@@ -1,14 +1,32 @@
 ---
 Феогност Киевский:
    имя: Феогност
-   прозвище: Киевский
-   описание: Киевский и всея Руси святитель
+   описание: грек; святитель Киевский и всея Руси
    чин: свт
-   собор: слав,рус,бря,вол,гал,киев,мск
+   собор: бря,вол,гал,киев,мск
    вики: http://drevo-info.ru/articles/9646.html
-   бытие: http://azbyka.ru/days/sv-feognost-kievskij
-   образ: http://azbyka.ru/days/assets/img/saints/3118/p18h8osbmm9mm1rqbbih1mqn1ooq3.jpg
+   бытие:
+    - http://azbyka.ru/days/sv-feognost-kievskij
+    - http://www.saint.gr/51/saint.aspx
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/3118/p18h8osbmm9mm1rqbbih1mqn1ooq3.jpg
+    - http://drevo-info.ru/images/002/007312.jpg
+    - http://www.saint.gr/photos/standard/0314/AgiosTheognostos01.jpg
+   событие:
+    - год: 1328
+      описание: свят
+      место: Константинополь. Византия
+    - год: 1353
+      дата: 11.03
+      описание: прств
+      место: вид.Москва
+    - год: 1353
+      дата: по 11.03
+      описание: пгрб
+      место: Успенский собор. Кремль. Москва
+    - год: 1471
+      описание: обр
    помин:
-      год: 1353
       дата: 14.03
+      календарь: рпц,греч
       описание: прств

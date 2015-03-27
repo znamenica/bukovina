@@ -1,18 +1,34 @@
 ---
 Ростислав Киевский:
-   имя: Ростислав, в крещении Михаил
-   отчество: Мстиславич
-   прозвище: Киевский
-   описание: великий князь
+   имя: в наречении Ростислав, в крещении Михаил
+   отчество: Мстиславович
+   описание: князь Смоленский, Новгородский; великий князь Киевский; сын Мстислава Великого
    чин: блгв
-   собор: слав,рус,блр,киев,смо
+   собор: блр,киев,смо,нов?
    вики: http://drevo-info.ru/articles/6143.html
-   бытие: http://azbyka.ru/days/sv-rostislav-v-kreshchenii-mihail-mstislavich-kievskij
+   бытие:
+    - http://azbyka.ru/days/sv-rostislav-v-kreshchenii-mihail-mstislavich-kievskij
+    - http://calendar.rop.ru/svyat1/mar14-rostislav.html
+    - http://www.saint.gr/1386/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/001087.jpg
     - http://pravicon.com/icon-2798
-   помин:
-      год: 1167
+    - http://azbyka.ru/days/assets/img/saints/507/p1909gr47h1a9ph7m12j511juldl3.jpg
+    - http://azbyka.ru/days/assets/img/saints/507/p18i7svq1lofg1gq9182onub1hcv3.jpg
+    - http://azbyka.ru/days/assets/img/saints/507/53d1e05f16dc44650e9ca37e8882a6d1.jpg
+   служба: Ростиславу Киевскому служба
+   событие:
+    - год: до 1127
+      описание: ржд
+    - год: 1167/1168
       дата: 14.03
       описание: прств
-      служба: Ростиславу Киевскому служба
+      место: Заруба село. Смоленщина
+    - год: 1167/1168
+      дата: вид.по 14.03
+      описание: пгрб
+      место: Фёдровская обитель. Киев
+   помин:
+      дата: 14.03
+      календарь: рпц,греч
+      описание: прств

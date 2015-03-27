@@ -1,11 +1,30 @@
 ---
 Себежский образ:
    имя: Себежский, Опочецкий
-   прозвище: Икона Богородицы Умиление
+   описание: образ Богородицы
    чин: обр
+   вид: Умиление образ
+   собор: пск
    бытие: http://azbyka.ru/days/ikona-umilenie-sebezhskaja-opocheckaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/220/p18ioe5tvh97h1o5j6k01i9641a3.jpg
+    - http://azbyka.ru/days/assets/img/icons/220/p18ioe5tvi1vfvgk1g5jeqt18l84.jpg
+    - http://azbyka.ru/days/assets/img/icons/220/p188npq0iua6ve0f1ft31tikp6g3.jpg
+   служба:
+    - Себежскому образу служба
+    - http://azbyka.ru/days/caa/579
+   событие:
+    - год: до 1634
+      описание: обр
+      место: Себеж. Псковщина
+    - год: до 1634
+      описание: прен
+      место: Спасо-Преображенская церковь. Опочка. Псковщина
+    - год: 1634
+      описание: знам
+    - год: ок. 1917
+      описание: утр
    помин:
-      год: 1634
       дата: 14.03
-      описание: прств
-      служба: знам
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_14.pdf

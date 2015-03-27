@@ -1,12 +1,18 @@
 ---
 Евсхимон Лампсакийский:
-   имя: Евсхимон, Евсхим
-   прозвище: Лампсакийский, Исповедник
-   описание: святитель
+   имя: Евсхимон (Евсхим)
+   описание: исповедник и святитель Лампсакийский; умер в ссылке
    чин: исвт
    вики: http://drevo-info.ru/articles/9645.html
-   бытие: http://azbyka.ru/days/sv-evshimon-evshim-lampsakijskij
+   собор: греч
+   бытие:
+    - http://azbyka.ru/days/sv-evshimon-evshim-lampsakijskij
+    - http://calendar.rop.ru/svyat1/mar14-evshimon-isp.html
+    - http://www.saint.gr/50/saint.aspx
+   событие:
+      год: 829-842
+      описание: прств
    помин:
-      год: IX
       дата: 14.03
+      календарь: рпц,греч
       описание: прств

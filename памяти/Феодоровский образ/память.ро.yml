@@ -3,37 +3,45 @@
    имя: Феодоровский, Костромской
    описание: образ Богородицы
    чин: обр
+   собор: грдц,плст,кстр
    вики: http://drevo-info.ru/articles/9649.html
-   бытие: http://azbyka.ru/days/ikona-feodorovskaja
+   бытие:
+    - http://azbyka.ru/days/ikona-feodorovskaja
+    - http://www.saint.gr/1383/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/001608.jpg
     - http://azbyka.ru/days/assets/img/icons/8/p18ioea8o6l9k1fh4pm540a1tjh4.jpg
     - http://azbyka.ru/days/assets/img/icons/8/p18ioea8o5a7f1t151k3d1ftv8et3.jpg
     - http://azbyka.ru/days/assets/img/icons/8/ac93e20e550d70b2476a979dc3128be0.jpg
+    - http://days.pravoslavie.ru/jpg/ib4576.jpg
     - http://azbyka.ru/days/assets/img/icons/8/cb49d7fc46050091c5afc2c41754b492.jpg
+   служба:
+    - Феодоровскому образу служба
+    - http://azbyka.ru/days/caa/433
+    - http://azbyka.ru/days/caa/434
    событие:
     - год: I
       описание: напис
       место: вид.Палестина
     - год: до 1238
       описание: обр
-      место: часовня. Городец
+      место: часовня. Городечье
     - год: 1239
-      описание: прств
+      описание: блслв
     - год: 1263-1276
       описание: прен
       место: Кострома
+    - год: вид.1276
+      описание: прен.1
+      место: Феодоро-Стратилатская церковь. Кострома
     - год: 1613
-      описание: блслв
+      описание: блслв.1
     - год: XVII
       описание: чудо
    помин:
     - дата: 14.03
-      описание: блгсл
+      описание: блслв.1
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_14.pdf
     - дата: 16.08
       описание: само
-      служба:
-       - Феодоровскому образу служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_16.pdf
-       - http://azbyka.ru/days/caa/433
-       - http://azbyka.ru/days/caa/434
+      служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_16.pdf

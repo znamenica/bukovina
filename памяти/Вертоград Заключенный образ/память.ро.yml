@@ -1,0 +1,17 @@
+---
+Вертоград Заключенный образ:
+   имя: Вертоград Заключенный
+   описание: образ Богородицы
+   чин: обр
+   собор: песн?
+   бытие: http://azbyka.ru/days/ikona-vertograd-zakljuchennyj
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/209/p188anpfuc1onb95vjk0fiajfh3.jpg
+    - http://azbyka.ru/days/assets/img/icons/209/p188anpjoc13rbju116ri24o1fmc5.jpg
+    - http://azbyka.ru/days/assets/img/icons/209/p188anpjoe11b2i315cm5g81g796.jpg
+   событие:
+      год: вид.XVII
+      описание: напис
+   помин:
+      дата: 14.03
+      описание: само

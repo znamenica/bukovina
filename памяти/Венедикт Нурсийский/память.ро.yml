@@ -5,10 +5,27 @@
    чин: прп
    собор: итал
    вики: http://drevo-info.ru/articles/1766.html
-   бытие: http://azbyka.ru/days/sv-venedikt-nursijskij
+   бытие:
+    - http://azbyka.ru/days/sv-venedikt-nursijskij
+    - http://calendar.rop.ru/svyat1/mar14-venedikt.html
+    - http://www.saint.gr/48/saint.aspx
    образ: 
     - http://drevo-info.ru/images/001/001369.jpg
     - http://pravicon.com/icon-1419
+    - http://azbyka.ru/days/assets/img/saints/850/4b680618ea551d2a89ccb7ba4edb0fc9.jpg
+    - http://azbyka.ru/days/assets/img/saints/850/f8e3a37c5df82c381e9217b46148419e.jpg
+    - http://azbyka.ru/days/assets/img/saints/850/df7af233e8986c1110ecda44699629ec.jpg
+    - http://azbyka.ru/days/assets/img/saints/850/p18i7srtfbvcsjnk1ebqcpt126k5.jpg
+    - http://azbyka.ru/days/assets/img/saints/850/p18i7srtfc1cksnl2gkggnj1ld16.jpg
+    - http://azbyka.ru/days/assets/img/saints/850/p18i7srtfc1sob19ormav1avn2f37.jpg
+    - http://azbyka.ru/days/assets/img/saints/850/p18i7srtfc1ovl177meh61fh91h0v8.jpg
+    - http://azbyka.ru/days/assets/img/saints/850/p18i7srtfcp941j5j1636128qkqo9.jpg
+    - http://azbyka.ru/days/assets/img/saints/850/p18i7srtfb1ouk16gf3sm1b6a1ii33.jpg
+    - http://azbyka.ru/days/assets/img/saints/850/p18i7srtfbq4g1hnlsns1b7l16v44.jpg
+   служба:
+    - Венедикту Нурсийскому служба
+    - http://azbyka.ru/days/caa/432
+   отечник: http://azbyka.ru/otechnik/Benedikt_Nursijskij/
    событие:
     - год: 480
       описание: ржд
@@ -19,6 +36,6 @@
       место: Монтекассино. Италия
    помин:
       дата: 14.03
-      собор: зап
+      календарь: рпц,греч
       описание: прств
-      служба: Венедикту Нурсийскому служба
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_14.pdf
