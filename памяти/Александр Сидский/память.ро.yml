@@ -1,12 +1,19 @@
 ---
 Александр Сидский:
    имя: Александр
-   прозвище: Сидский, Памфилийский
-   описание: священник 
+   описание: священник Сидский (Памфилийский); обезглавлен
    чин: сщмч
+   собор: памф
    вики: http://drevo-info.ru/articles/5416.html
-   бытие: http://azbyka.ru/days/sv-aleksandr-sidskij-pamfilijskij
-   помин:
+   бытие:
+    - http://azbyka.ru/days/sv-aleksandr-sidskij-pamfilijskij
+    - http://calendar.rop.ru/svyat1/mar15-alexandr.html
+   событие:
       год: 270-275
-      дата: 15.03
       описание: прств
+      место: Сид. Памфилия (ныне Сиде. Турция)
+      образ: http://azbyka.ru/days/assets/img/saints/4781/p17vk2i1nv1e631kjflvsabvd463.jpg
+   помин:
+      дата: 15.03
+      каледарь: рпц
+      описание: само
