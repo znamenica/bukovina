@@ -5,12 +5,16 @@
    фамилия: Исаенкова
    описание: Херсонская
    чин: прп
-   собор: херс,пев,крыл
+   собор: херс,бкрн,крыл
    вики: http://drevo-info.ru/articles/18525.html
    бытие: http://www.pravoslavie.ks.ua/rubric/svyatyni-i-svyatye/article/prepodobnaya-evtropiya-hersonskaya
    образ:
     - http://pravicon.com/icon-4026
     - http://drevo-info.ru/images/002/005304.jpg
+   служба:
+    - Евтропии Херсонской служба
+    - http://pravoslavie.ks.ua/rubric/sluzhby/article/sluzhba-prepodobnoj-evtropii-hersonskoj/
+    - http://pravoslavie.ks.ua/rubric/hersonskim-svyatym/article/akafist--prepodobnoj-evtropii-hersonskoj/
    событие:
     - год: 1863
       дата: 24.11
@@ -23,6 +27,7 @@
     - год: 1968
       дата: 16.03
       описание: прств
+      место: вид.Херсон
     - год: 1968
       дата: по 16.03
       описание: пгрб
@@ -46,10 +51,6 @@
    помин:
     - дата: 16.03
       описание: прств
-      служба:
-       - Евтропии Херсонской служба
-       - http://pravoslavie.ks.ua/rubric/sluzhby/article/sluzhba-prepodobnoj-evtropii-hersonskoj/
-       - http://pravoslavie.ks.ua/rubric/hersonskim-svyatym/article/akafist--prepodobnoj-evtropii-hersonskoj/
     - дата: 30.10
       собор: херс
       описание: обр

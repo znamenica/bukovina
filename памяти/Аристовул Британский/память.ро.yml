@@ -3,15 +3,17 @@
    имя: Аристовул
    описание: апостол от 70-ти, святитель Вританийский (Британский), брат Тешича Саламинского
    чин: ап
-   собор: ап70,стсвтт,уэл,брит
+   собор: ап70,мсвтт,уэл,брит,кипр
    вики:
     - http://drevo-info.ru/articles/4294.html
     - https://ru.wikipedia.org/wiki/Аристовул_(апостол_от_70)
    бытие:
     - http://azbyka.ru/days/sv-aristovul-vritanijskij
     - http://www.saint.gr/63/saint.aspx
+    - http://calendar.rop.ru/svyat1/mar16-aristovul-ap.html
    образ:
     - http://drevo-info.ru/images/001/000694.jpg
+    - http://azbyka.ru/days/assets/img/saints/4372/9c4ad2581b07e0ddc0f6f7973decd896.jpg
     - http://pravicon.com/icon-1252
    событие:
     - год: I до нэ-I
@@ -22,11 +24,11 @@
       место: Уэльс. Британия
    помин:
     - дата: 15.03
-      календарь: 
+      календарь: греч
       описание: само
     - дата: 16.03
+      календарь: рпц
       описание: само
-      служба: Апеллий Семидесятник/Апеллию, Урвану, Аристовулу, Амплию, Наркиссу и Стахию Апостолам служба
     - дата: 31.10
       описание: само
       образ: http://azbyka.ru/days/assets/img/saints/3763/p17vjk9ail1h964c91jplunq4it3.jpg
