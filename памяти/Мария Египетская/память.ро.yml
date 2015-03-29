@@ -1,16 +1,35 @@
 ---
 Мария Египетская:
-   имя: Мария
-   прозвище: Египетская
+   имя: вид.в крещении Мария
+   описание: уроженка и жительница Египетская; пустынница Иорданская
    чин: прп
+   собор: копт,плст
    вики: http://drevo-info.ru/articles/9937.html
-   бытие: http://azbyka.ru/days/sv-marija-egipetskaja
-   образ: http://pravicon.com/icon-2367
+   бытие:
+      рус:
+       - http://azbyka.ru/days/sv-marija-egipetskaja
+       - http://azbyka.ru/otechnik/?Sofronij_Ierusalimskij/zhitie-prepodobnoj-materi-nashej-marii-egipetskoj
+   образ:
+    - http://pravicon.com/icon-2367
+    - http://azbyka.ru/days/assets/img/saints/6255/02fd1fcbee15d3f6918796efb2739a6f.jpg
+    - http://azbyka.ru/days/assets/img/saints/6255/7e66560c61cf2923b0c481830c60d393.jpg
+    - http://azbyka.ru/days/assets/img/saints/6255/p190a44s4511ctebv9r016r81hb25.jpg
+    - http://azbyka.ru/days/assets/img/saints/6255/56e86a026f5793da3c5fc87e3619ecaa.jpg
+    - http://drevo-info.ru/images/001/001649.jpg
+    - http://drevo-info.ru/images/002/006559.jpg
+   служба:
+    - Марии Египетской служба
+    - http://azbyka.ru/days/caa/172
+    - http://azbyka.ru/days/caa/173
+   событие:
+    - год: ок. 445
+      описание: ржд
+      место: Александрия. Египет
+    - год: ок. 521
+      описание: прств
+      место: Иорданская пустыня. Палестина
    помин:
-    - год: 522
-      дата: 01.04
-      описание: прств
-    - год: 522
-      дата: 5нед.пост
-      описание: прств
-      служба: Марии Египетской служба
+    - дата: 01.04
+      описание: само
+    - дата: нд.5.поста
+      описание: само
