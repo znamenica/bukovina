@@ -1,13 +1,39 @@
 ---
 Кирилл Иерусалимский:
    имя: Кирилл
-   прозвище: Иерусалимский святитель
+   описание: святитель Иерусалимский
    чин: свт
+   собор: плст,2вс
    вики: http://drevo-info.ru/articles/5429.html
-   бытие: http://azbyka.ru/days/sv-kirill-ierusalimskij
-   образ: http://pravicon.com/icon-2159
-   помин:
-      год: 386
-      дата: 18.03
+   бытие:
+    - http://azbyka.ru/days/sv-kirill-ierusalimskij
+    - http://calendar.rop.ru/svyat1/mar18-kirill-ierusalimskij.html
+    - http://www.saint.gr/2946/saint.aspx
+   образ:
+    - http://pravicon.com/icon-2159
+    - http://azbyka.ru/days/assets/img/saints/3604/p18i7vc14m16lobn1lb5qqn1p653.jpg
+    - http://azbyka.ru/days/assets/img/saints/3604/ef92b28e44f60f65630ec4567fdf1118.jpg
+    - http://azbyka.ru/days/assets/img/saints/3604/1ae44ad07bb5eefd84a59a1039bf67a5.jpg
+    - http://azbyka.ru/days/assets/img/saints/3604/p1909hkkokb2r33saqqpkkfcb5.jpg
+    - http://www.saint.gr/photos/standard/0318/AgiosKyrillos01.jpg
+    - http://www.saint.gr/photos/standard/0318/AgiosKyrillos02.jpg
+   служба: Кириллу Иерусалимскому служба
+   отечник: http://azbyka.ru/otechnik/Kirill_Ierusalimskij/
+   событие:
+    - год: 315
+      описание: ржд
+      место: Иерусалим. Палестина
+    - год: ок.333
+      описание: иноч
+    - год: 346
+      описание: свящ
+    - год: 350/351
+      описание: свят
+    - год: 386/387
       описание: прств
-      служба: Кириллу Иерусалимскому служба
+      место: Иерусалим. Палестина
+   помин:
+      дата: 18.03
+      календарь: рпц,греч
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_18.pdf

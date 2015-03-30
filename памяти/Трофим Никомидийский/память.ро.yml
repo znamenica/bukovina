@@ -1,12 +1,16 @@
 ---
 Трофим Никомидийский:
    имя: Трофим
-   прозвище: Никомидийский
+   описание: воин и мученик Никомидийский; сожжён язычниками; имя Трофим (Заключённый)
    чин: мч
+   собор: виф,вои
    вики: http://drevo-info.ru/articles/5427.html
-   бытие: http://azbyka.ru/days/sv-trofim-nikomidijskij
-   образ: http://pravicon.com/icon-3257
-   помин:
-      год: ок. 300
-      дата: 18.03
+   бытие:
+      ру: http://azbyka.ru/days/sv-trofim-nikomidijskij
+   образ:
+    - http://pravicon.com/icon-3257
+    - http://days.pravoslavie.ru/jpg/im4134.jpg
+   событие:
+      год: 298/300
       описание: прств
+      место: Никомидия. Вифиния

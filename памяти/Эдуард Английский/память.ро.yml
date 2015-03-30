@@ -1,16 +1,39 @@
 ---
 Эдуард Английский:
    имя: Эдуард
-   прозвище: Английский
-   описание: король
-   чин: мч
+   отчество: Эдгарович
+   описание: король Английский; сын Эдгара Миролюбивого
+   чин: стц
+   собор: брит
    вики: http://drevo-info.ru/articles/1621.html
-   бытие: http://pravicon.com/info-3609
+   бытие:
+      ру: http://pravicon.com/info-3609
+      гр: http://www.saint.gr/2942/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/000155.jpg
     - http://pravicon.com/icon-3205
-   помин:
-      год: 979
+    - http://www.saint.gr/photos/standard/0318/AgiosEdward02.jpg
+    - http://www.saint.gr/photos/standard/0318/AgiosEdward01.jpg
+    - http://www.saint.gr/photos/standard/0318/AgiosEdward03.jpg
+    - http://www.saint.gr/photos/standard/0318/AgiosEdward04.jpg
+    - http://www.saint.gr/photos/standard/0318/AgiosEdward05.jpg
+   служба: Эдуарду Английскому служба
+   событие:
+    - год: 960
+      описание: ржд
+    - год: 978/979
       дата: 18.03
       описание: прств
-      служба: Эдуарду Английскому служба
+      место: Корф замок. Британия
+    - год: 1008
+      собор: англ
+      описание: просл
+    - год: 1981
+      описание: обр
+    - год: вид.1981
+      описание: прен
+      место: Эдуардовская церковь. Бруквуд. Гилдфорд. Суррей
+   помин:
+      дата: 18.03
+      собор: сурж
+      описание: само

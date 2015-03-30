@@ -1,12 +1,16 @@
 ---
 Евкарпий Никомидийский:
    имя: Евкарпий
-   прозвище: Никомидийский
+   описание: воин и мученик Никомидийский; сожжён язычниками; имя Евкарпий (Плодотворность)
    чин: мч
+   собор: виф,вои
    вики: http://drevo-info.ru/articles/5428.html
-   бытие: http://azbyka.ru/days/sv-evkarpij-nikomidijskij
-   образ: http://pravicon.com/icon-1689
-   помин:
-      год: ок. 300
-      дата: 18.03
+   бытие:
+      ру: http://azbyka.ru/days/sv-evkarpij-nikomidijskij
+   образ:
+    - http://pravicon.com/icon-1689
+    - http://www.saint.gr/photos/standard/0318/AgiosEukarpion01.jpg
+   событие:
+      год: 298/300
       описание: прств
+      место: Никомидия. Вифиния
