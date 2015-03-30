@@ -1,10 +1,14 @@
 ---
 Марин Кесарийский:
    имя: Марин
-   прозвище: Кесарийский, Палестинский
+   описание: мученик Кесарийский (Палестинский); обезглавлен
    чин: мч
+   собор: плст
    вики: http://drevo-info.ru/articles/3655.html
-   бытие: http://azbyka.ru/days/sv-marin-kesarijskij-palestinskij
+   бытие:
+    - http://azbyka.ru/days/sv-marin-kesarijskij-palestinskij
+    - http://calendar.rop.ru/svyat1/mar17-marin.html
+    - http://www.saint.gr/3911/saint.aspx
    событие:
     - год: 260
       описание: прств
@@ -14,6 +18,7 @@
       место: Палестина
    помин:
     - дата: 17.03
+      календарь: рпц,греч
       описание: само
     - дата: 07.08
       описание: само

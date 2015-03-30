@@ -1,21 +1,66 @@
 ---
 Бранко Человек Божий:
    имя: Алексий
+   отчество: Евфимианович
    прозвище: Человек Божий
+   описание: нищий подвижник Эдесский (Месопотамия) и Римский
    чин: прп
+   собор: рим,греч,мспт
    вики: http://drevo-info.ru/articles/5351.html
-   бытие: http://azbyka.ru/days/sv-aleksij-chelovek-bozhij
-   образ: http://drevo-info.ru/images/001/000935.jpg
-   помин:
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-aleksij-chelovek-bozhij
+       - http://calendar.rop.ru/svyat1/mar17-alexij.html
+      гр: http://www.saint.gr/3907/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/001/000935.jpg
+    - http://drevo-info.ru/images/001/000934.jpg
+    - http://azbyka.ru/days/assets/img/saints/3594/p18i7v9vm2ipk1td5cmt1l9qdk94.jpg
+    - http://azbyka.ru/days/assets/img/saints/3594/p1909hdrqt1alei971vtu1t63och3.jpg
+    - http://azbyka.ru/days/assets/img/saints/3594/e4ec1090c7687ef3802ad585db7e0189.jpg
+    - http://azbyka.ru/days/assets/img/saints/3594/3fb1a38d6727f1f9dd2e70ae0bdbc119.jpg
+   служба:
+    - Бранку Человеку Божиему служба
+    - http://azbyka.ru/days/caa/435
+    - http://azbyka.ru/days/caa/436
+   событие:
+    - год: вид.ок.359
+      описание: ржд
+      место: Рим
+    - год: вид.ок.377
+      описание: брак
+      место: Рим
     - год: 411
-      дата: 17.07
-      собор: зап
+      дата: до 17.03
       описание: прств
-    - год: 411
-      дата: 3.11
-      собор: сир
-      описание: прств
+      место: Рим
     - год: 411
       дата: 17.03
+      описание: пгрб
+      место: Вонифатьевская церковь. Рим
+    - год: V-VI
+      описание: почит
+    - год: вид.1216
+      описание: обр
+    - год: 1414
+      предмет: глава
+      описание: прен
+      место: Святая лавра. Калаврит. Пелопоннес
+    - год: вид.XVII
+      предмет: рука
+      описание: прем
+      место: Софийский собор. Новгород
+    - год: по XVII
+      предмет: рука
+      описание: утр
+   помин:
+    - дата: 17.03
+      календарь: рпц,греч
+      описание: пгрб
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_17.pdf
+    - дата: 17.07
+      собор: зап
       описание: прств
-      служба: Бранку Человеку Божиему служба
+    - дата: 03.11
+      собор: сир
+      описание: прств

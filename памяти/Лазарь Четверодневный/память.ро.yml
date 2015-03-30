@@ -8,11 +8,14 @@
    вики:
     - http://drevo-info.ru/articles/11547.html
     - http://ru.wikipedia.org/wiki/Лазарь_из_Вифании
-   бытие: http://azbyka.ru/days/sv-lazar-chetverodnevnyj
+   бытие:
+      ру: http://azbyka.ru/days/sv-lazar-chetverodnevnyj
+      гр: http://www.saint.gr/3912/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/001933.jpg
     - http://days.pravoslavie.ru/jpg/ib3412.jpg
     - http://pravicon.com/icon-2255
+    - http://immorfou.org.cy/images/stories/ARAKAS/DSCF013.jpg
    событие:
     - год: I до нэ-I
       описание: ржд
@@ -26,6 +29,9 @@
       описание: прен
       место: Лазаре-Чертверодневнинский храм. Константинополь
    помин:
+    - дата: 17.03
+      календарь: греч
+      описание: само
     - дата: 04.05
       описание: само
       служба: Лазарю Четверодневному служба
