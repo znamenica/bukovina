@@ -1,9 +1,56 @@
 ---
 Пояс Богородицы:
    описание: Честной пояс Богородицы
-   чин: вщ
-   вики: http://drevo-info.ru/articles/24090.html
-   помин:
-      год: 942
-      дата: 12.04
+   чин: прдм
+   собор: виз,плст,капд
+   к: Мария Богородица
+   вики: http://drevo-info.ru/articles/19162.html
+   образ:
+    - http://drevo-info.ru/images/002/005589.jpg
+    - http://www.porphyrios.gr/files/jpg/%CE%95%CE%B9%CE%BA%CF%8C%CE%BD%CE%B5%CF%82/%CE%9A%CE%B1%CF%84%CE%AC%20%CE%B7%CE%BC%CE%B5%CF%81%CE%BF%CE%BC%CE%B7%CE%BD%CE%AF%CE%B1%20%28%CE%93%CE%B1%CE%BB%CE%B1%CE%BA%CF%84%CE%AF%CF%89%CE%BD%292/08%20%CE%91%CF%8D%CE%B3%CE%BF%CF%85%CF%83%CF%84%CE%BF%CF%82/31.jpg
+    - http://www.saint.gr/photos/standard/0831/AgiaZoni03.jpg
+    - http://www.porphyrios.gr/files/jpg/%CE%95%CE%B9%CE%BA%CF%8C%CE%BD%CE%B5%CF%82/%CE%A3%CF%85%CE%BB%CE%BB%CE%BF%CE%B3%CE%AE%20%CE%BC%CE%B5%20%CE%BA%CE%B1%CF%84%CE%AC%CF%84%CE%B1%CE%BE%CE%B7/%CE%A0%CE%B1%CE%BD%CE%B1%CE%B3%CE%AF%CE%B1%20%CE%98%CE%B5%CE%BF%CF%84%CF%8C%CE%BA%CE%BF%CF%82/%CE%A0%CE%B1%CE%BD%CE%B1%CE%B3%CE%AF%CE%B1%20%CE%91%CE%B3%CE%AF%CE%B1%20%CE%96%CF%8E%CE%BD%CE%B7%2001.jpg
+    - http://azbyka.ru/days/assets/img/holidays/86/p18jr4pektm78ed0jj9b1rd9o3.jpg
+   служба: http://azbyka.ru/days/caa/597
+   событие:
+    - год: I
+      описание: прбв
+      место: Палестина
+    - год: 402-408
       описание: прен
+      место: Халкопратийский Богородицкий храм. Константинополь. Византия
+    - год: 901-912
+      описание: взлж
+      имя: Положение пояса Богородицы
+      место: Константинополь. Византия
+      вики: http://drevo-info.ru/articles/2062.html
+      бытие:
+         ру:
+          - http://azbyka.ru/days/prazdnik-polozhenie-chestnogo-pojasa-presvjatoj-bogorodicy-395408
+          - http://calendar.rop.ru/svyat1/aug31-poyas.html
+         гр: http://www.saint.gr/866/saint.aspx
+      образ:
+       - http://www.saint.gr/photos/standard/0831/AgiaZoni02.jpg
+       - http://azbyka.ru/days/assets/img/holidays/86/p182drqo6n141on6r1r1n17miuns3.jpg
+    - год: 901-912
+      описание: полж.1
+      место: Влахернская церковь. Константинополь. Византия
+    - год: 912-942
+      описание: прем
+      место: Зила. Каппадокия (ныне Зиле. Турция)
+    - год: 942
+      описание: прен.1
+      вики: http://drevo-info.ru/articles/24090.html
+      бытие:
+         гр: http://www.saint.gr/243/saint.aspx
+      место: Влахернская церковь. Константинополь. Византия
+   помин:
+    - дата: 12.04
+      календарь: греч
+      описание: прен.1
+    - дата: 31.08
+      календарь: рпц,греч
+      описание: взлж
+      служба:
+       - Пояса Богородицы на положение служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_31.pdf
