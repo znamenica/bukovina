@@ -1,14 +1,28 @@
 ---
 Дария Римская:
    имя: Дария
-   прозвище: Римская
-   описание: жена Хрисанфа
+   описание: жена Хрисанфа; мученица Римская; зарыта в землю суеверами
    чин: мц
+   собор: рим,зцдс
    вики: http://drevo-info.ru/articles/8204.html
    бытие: http://azbyka.ru/days/sv-darija-rimskaja
-   образ: http://pravicon.com/icon-1613
-   помин:
-      год: 283
+   образ:
+    - http://pravicon.com/icon-1613
+    - http://azbyka.ru/days/assets/img/saints/5983/p18i9cejai1bdpfm3l5j5djf6i4.jpg
+    - http://azbyka.ru/days/assets/img/saints/5983/p18i9cejahenpr2k1bt61dgppmi3.jpg
+    - http://azbyka.ru/days/assets/img/saints/5983/p18i9cejaijsul9k1in62i85er5.jpg
+    - http://azbyka.ru/days/assets/img/saints/5983/p18i9cejaj1upbih1f11bha1r7d6.jpg
+    - http://azbyka.ru/days/assets/img/saints/5983/p18i9cejaj1atlqop1cqo1gck1njl8.jpg
+    - http://azbyka.ru/days/assets/img/saints/5983/p18i9cejajelfqmbfj1jo01gpf9.jpg
+    - http://azbyka.ru/days/assets/img/saints/5983/d07211ddcaec14f45ede59d3e304df88.jpg
+    - http://www.saint.gr/photos/standard/0319/AgiaDareia02.jpg
+    - http://www.apostoliki-diakonia.gr/gr_main/eortologio/Agion_pics/Mar_13.jpg
+   событие:
+    - год: ок.283
+      описание: брак
+      место: Рим
+      супруг: Златоцвет Римский
+    - год: 283
       дата: 19.03
       описание: прств
-      служба: Дарии Римской служба
+      место: Рим

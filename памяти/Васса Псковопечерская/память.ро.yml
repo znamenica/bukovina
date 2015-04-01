@@ -5,9 +5,15 @@
    чин: прп
    собор: пск,ппеч,клв,брак
    вики: http://drevo-info.ru/articles/9681.html
-   бытие: http://azbyka.ru/days/sv-vassa-pskovo-pecherskaja
-   образ: http://pravicon.com/icon-1412
-   служба: Вассе Псковопечерской служба
+   бытие:
+    - http://azbyka.ru/days/sv-vassa-pskovo-pecherskaja
+    - http://calendar.rop.ru/svyat1/mar19-vassa.html
+   образ:
+    - http://pravicon.com/icon-1412
+    - http://azbyka.ru/days/assets/img/saints/6350/p18hbgfd3b105t1e08nid146t14394.jpg
+   служба:
+    - Вассе Псковопечерской служба
+    - http://azbyka.ru/days/caa/642
    событие:
     - год: кон.XIV-нач.XV
       описание: ржд
@@ -23,4 +29,5 @@
       место: пещеры. Псковщина
    помин:
       дата: 19.03
+      календарь: рпц
       описание: само

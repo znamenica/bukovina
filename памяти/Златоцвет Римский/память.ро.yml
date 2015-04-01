@@ -1,13 +1,32 @@
 ---
 Златоцвет Римский:
    имя: Хрисанф
-   прозвище: Римский
-   описание: муж Дарии Римской
+   отчество: Полемонович
+   описание: египтянин; муж Дарии Римской; мученик Римский; зарыт в землю суеверами
    чин: мч
+   собор: рим,копт,зцдс
    вики: http://drevo-info.ru/articles/8211.html
    бытие: http://azbyka.ru/days/sv-hrisanf-rimskij
-   помин:
-      год: 283
+   образ:
+    - http://drevo-info.ru/images/002/008301.jpg
+    - http://azbyka.ru/days/assets/img/saints/1488/p18kn3gf1a99l10c1pnb1t4b1fbe4.jpg
+    - http://azbyka.ru/days/assets/img/saints/1488/p1909hpuct1gbm5cl1dj5r5a11a45.jpg
+    - http://azbyka.ru/days/assets/img/saints/1488/p1909hpucp19lc7dgq61pu8nc93.jpg
+    - http://azbyka.ru/days/assets/img/saints/1488/p1909hpucs1c481v7se0lmbuce24.jpg
+    - http://www.saint.gr/photos/standard/0319/AgiosChrysanthos01.jpg
+    - http://www.saint.gr/photos/standard/0319/AgiosChrysanthos02.jpg
+   событие:
+    - год: вид.сер.III
+      описание: ржд
+      место: Александрия. Египет
+    - год: ок.283
+      описание: крещ
+      место: Рим
+    - год: ок.283
+      описание: брак
+      место: Рим
+      супруг: Дария Римская
+    - год: 283
       дата: 19.03
       описание: прств
-      служба: Златоцвету и Дарии Римскима служба
+      место: Рим
