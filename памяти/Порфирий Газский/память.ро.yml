@@ -1,17 +1,22 @@
 ---
 Порфирий Газский:
    имя: Порфирий
-   описание: святитель Газский
+   описание:
+      ру: инок Нитрийский; святитель Газский
+      гр: Όσιος Πορφύριος επίσκοπος Γάζης
    чин: свт
    собор: плст,мак,нитр
    вики: http://drevo-info.ru/articles/9320.html
-   бытие: http://azbyka.ru/days/sv-porfirij-gazskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-porfirij-gazskij
+      гр: http://www.saint.gr/3661/saint.aspx
    образ:
     - http://drevo-info.ru/images/002/008859.jpg
     - http://pravicon.com/icon-2743
+    - http://www.saint.gr/photos/standard/0226/AgiosPorfyrios01.jpg
    служба: Порфирию Газскому служба
    событие:
-    - год: 346
+    - год: 346/348
       описание: ржд
       место: Солунь. Македония
     - год: ок.371

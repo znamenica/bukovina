@@ -1,11 +1,15 @@
 ---
 Межетский образ:
    имя: Межетский
-   описание: образ Богородицы
+   описание:
+      ру: образ Богородицы
+      гр: Σύναξη Υπεραγίας Θεοτόκου του Μεζχέτσκ εν Κιέβω Ρωσίας
    чин: обр
    собор: киев
    вики: http://drevo-info.ru/articles/9323.html
-   бытие: http://azbyka.ru/days/ikona-mezhetskaja
+   бытие:
+      ру: http://azbyka.ru/days/ikona-mezhetskaja
+      гр: http://www.saint.gr/3664/saint.aspx
    образ: http://azbyka.ru/days/assets/img/icons/235/p188l9u6ph1cre10d21q261b7smgt5.jpg
    событие:
       год: 1492
@@ -13,4 +17,5 @@
       место: Киевщина
    помин:
       дата: 26.02
+      календарь: греч
       описание: само

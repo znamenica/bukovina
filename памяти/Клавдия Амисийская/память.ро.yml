@@ -1,12 +1,15 @@
 ---
 Клавдия Амисийская:
    имя: Клавдия
-   прозвище: Амисийская
+   описание: дева Амисийская
    чин: мц
+   собор: капд,7да
    вики: http://drevo-info.ru/articles/9737.html
    бытие: http://azbyka.ru/days/sv-klavdija-amisijskaja-pontijskaja
-   образ: http://pravicon.com/icon-2177
-   помин:
-      год: 310
-      дата: 20.03
+   образ:
+    - http://pravicon.com/icon-2177
+    - http://www.saint.gr/photos/standard/0320/AgiaKlaudia01.jpg
+   событие:
+      год: 303-305/310
       описание: прств
+      место: Амис. Каппадокия

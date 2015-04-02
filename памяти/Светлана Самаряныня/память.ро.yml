@@ -1,11 +1,37 @@
 ---
 Светлана Самаряныня:
    имя: Фотина
-   прозвище: Самаряныня
+   описание:
+      ру: самаряныня; сестра Светуши, Восточки, Кириакии, Светы Римских и Параскевы
+         Самаряныни; жительница и проповедница Карфагенская; мученица Римская; уморена
+         суеверами в колодце
+      гр: Αγία Φωτεινή η Μεγαλομάρτυς η Σαμαρείτιδα
    чин: мц
+   собор: самр,карф,рим,мсмр,мр
    вики: http://drevo-info.ru/articles/9753.html
-   бытие: http://azbyka.ru/days/sv-fotina-svetlana-samarjanynja
-   помин:
-      год: ок. 66
-      дата: 20.03
+   бытие:
+      ру: http://azbyka.ru/days/sv-fotina-svetlana-samarjanynja
+      гр: http://www.saint.gr/3660/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/001/001619.jpg
+    - http://www.saint.gr/photos/standard/0226/AgiaPhotini02.jpg
+    - http://www.apostoliki-diakonia.gr/gr_main/eortologio/Agion_pics/Feb_16.jpg
+    - http://www.saint.gr/photos/standard/0226/AgiaPhotini03.jpg
+    - http://www.pigizois.net/sinaxaristis/02/26.jpg
+    - http://3.bp.blogspot.com/-LgxPbqdJibQ/TWfNqSfeyoI/AAAAAAAAAG4/jhKrmR0iSL8/s1600/IMGP2163.jpg
+   служба: Светлане Самаряныне служба
+   событие:
+    - год: вид.(кон.I до нэ-нач.I)
+      описание: ржд
+      место: Самария
+    - год: ок. 66
       описание: прств
+      место: Рим
+    - год: по I
+      описание: просл
+      чин: вмц
+      собор: виз
+   помин:
+      дата: 26.02
+      календарь: греч
+      описание: само

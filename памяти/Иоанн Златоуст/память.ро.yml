@@ -26,6 +26,7 @@
     - http://azbyka.ru/days/assets/img/saints/3938/f2f01a334306f7bd3f840feee4174945.jpg
     - http://azbyka.ru/days/assets/img/saints/3938/e09c26fd5935d815cbfa9c9d85b58c4c.jpg
     - http://azbyka.ru/days/assets/img/saints/3938/71a4419eb0cd7dc3a3257da7b96323d2.jpg
+    - http://www.pigizois.net/sinaxaristis/01/27.jpg
    отечник: http://azbyka.ru/otechnik/Ioann_Zlatoust/
    событие:
     - год: ок.347
@@ -42,6 +43,8 @@
       описание: свящ
     - год: 398
       описание: свят
+      бытие:
+         гр: http://www.saint.gr/3646/saint.aspx
     - год: 407
       дата: 14.09
       описание: прств
@@ -60,6 +63,9 @@
     - дата: 27.01
       описание: перен
       служба: Иоанну Златоусту о перенесении мощей служба
+    - дата: 26.02
+      собор: греч
+      описание: свящ
     - дата: 14.09
       описание: прств
     - дата: 13.11

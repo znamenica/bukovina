@@ -1,13 +1,26 @@
 ---
-Никита Исповедник:
+Никита Аполлониадский:
    имя: Никита
-   прозвище: Исповедник, Халкидонский
-   описание: Аполлониадский святитель
+   описание:
+      ру: исповедник и святитель Аполлониадский (Вифиния)
+      гр: Όσιος Νικήτας ο Ομολογητής επίσκοπος Απολλωνιάδος
    чин: исвт
+   собор: виф
    вики: http://drevo-info.ru/articles/5437.html
-   бытие: http://azbyka.ru/days/sv-nikita-ispovednik-apolloniadskij
-   помин:
-      год: ок. 813-820
-      дата: 20.03
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-nikita-ispovednik-apolloniadskij
+       - http://calendar.rop.ru/svyat1/mar20-nikita-isp.html
+      гр: http://www.saint.gr/3927/saint.aspx
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/2921/p1909i73h71l0u9pl1i9pnv81po23.jpg
+    - http://azbyka.ru/days/assets/img/saints/2921/p18hbi3auc1td81mi60h1lqn1od3.jpg
+    - http://azbyka.ru/days/assets/img/saints/2921/p18hbi3aud10nnqff148imls1bdf4.jpg
+   служба: Никите Аполлониадскому служба
+   событие:
+      год: 813-820
       описание: прств
-      служба: Никите Исповеднику служба
+   помин:
+      дата: 20.03
+      календарь: рпц,греч
+      описание: само

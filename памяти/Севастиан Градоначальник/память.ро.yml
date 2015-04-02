@@ -1,14 +1,32 @@
 ---
 Севастиан Градоначальник:
    имя: Севастиан
-   прозвище: Римский
-   описание: градоначальник Атталии
+   описание:
+      ру: градоначальник Атталийский (Памфилия) или Карфагена; дружинник Светланы
+         Самаряныни; мученик Римский; обезглавлен суеверами
+      гр: Άγιος Σεβαστιανός ο δούκας
    чин: мч
-   собор: влмж
-   вики: http://drevo-info.ru/articles/9744.html
-   бытие: http://azbyka.ru/days/sv-sevastian-rimskij
-   образ: http://azbyka.ru/days/assets/img/saints/77/bb43bf0b9195ddac02151ef286071e07.jpg
-   помин:
-      год: ок. 66
-      дата: 20.03
+   собор: влмж,памф,рим,мр
+   вики:
+    - http://drevo-info.ru/articles/9744.html
+    - http://drevo-info.ru/articles/5307.html
+   бытие:
+      ру: http://azbyka.ru/days/sv-sevastian-rimskij
+      гр: http://www.saint.gr/3650/saint.aspx
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/77/bb43bf0b9195ddac02151ef286071e07.jpg
+    - http://www.saint.gr/photos/standard/0226/AgiosSebastianos01.jpg
+   событие:
+    - год: вид.по 30
+      описание: ржд
+      место: Самария
+    - год: ок. 66
       описание: прств
+      место: Рим
+   помин:
+    - дата: 26.02
+      календарь: греч
+      описание: само
+    - дата: 20.03
+      календарь: рпц
+      описание: само
