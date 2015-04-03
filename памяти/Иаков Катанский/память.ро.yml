@@ -1,16 +1,33 @@
 ---
 Иаков Катанский:
    имя: Иаков
-   прозвище: Сицилийский
-   описание: исповедник, преподобный, святитель Катанский
-   чин: ипрсвт
+   описание:
+      ру: исповедник, преподобный, святитель Катанский (Сицилийский)
+      гр: Άγιος Ιάκωβος ο Ομολογητής ο Επίσκοπος
+   чин: исвт
+   собор: виз,прпп,кат
    вики: http://drevo-info.ru/articles/5434.html
-   бытие: http://azbyka.ru/days/sv-iakov-katanskij-sicilijskij
-   образ: http://pravicon.com/icon-1853
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-iakov-katanskij-sicilijskij
+       - http://calendar.rop.ru/svyat1/mar21-iakov.html
+      гр: http://www.saint.gr/3332/saint.aspx
+   образ:
+    - http://pravicon.com/icon-1853
+    - http://www.saint.gr/photos/standard/0321/AgiosIakovos01.jpg
+    - http://azbyka.ru/days/assets/img/saints/3908/p190a4b99mtl01kf1ldl1poq1nlu3.jpg
+    - http://azbyka.ru/days/assets/img/saints/3908/p18hbj2akk1hsi183apefa984vc3.jpg
+   служба: Иакову Катанскому служба
+   событие:
+    - год: вид.перв.пол.VIII
+      описание: иноч
+      место: Студийская обитель. Константинополь. Византия
+    - год: по 775
+      описание: прств
    помин:
-    - год: по 775
-      дата: 24.03
-      описание: прств
-    - год: по 775
-      дата: 21.03
-      описание: прств
+    - дата: 21.03
+      календарь: рпц,греч
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_21.pdf
+    - дата: 24.03
+      описание: само

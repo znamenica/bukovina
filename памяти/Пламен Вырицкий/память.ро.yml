@@ -3,12 +3,33 @@
    имя: в схиме Серафим, в крещении Василий, в иночестве Варнава
    отчество: Николаевич
    фамилия: Муравьёв
-   описание: Вырицкий
+   описание:
+      ру: купец; священносхинок Вырицкий
+      гр: Όσιος Σεραφείμ
    чин: прп
-   собор: спб,куп
-   вики: http://drevo-info.ru/articles/4902.html
-   бытие: http://azbyka.ru/days/sv-serafim-vyrickij
-   образ: http://drevo-info.ru/images/001/000859.jpg
+   собор: спб,ряр,куп,рыб,вырц
+   вики:
+    - http://drevo-info.ru/articles/4902.html
+    - https://ru.wikipedia.org/wiki/Серафим_Вырицкий
+   бытие:
+      ру: http://azbyka.ru/days/sv-serafim-vyrickij
+      гр: http://www.saint.gr/3339/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/001/000859.jpg
+    - http://azbyka.ru/days/assets/img/saints/4898/p1909idbrsiqq1btk1msmhhkgne3.jpg
+    - http://azbyka.ru/days/assets/img/saints/4898/815926f7479277574e8f2e974eb70ce4.jpg
+    - http://azbyka.ru/days/assets/img/saints/4898/12f94119a7a197429a16f6058b93a619.jpg
+    - http://azbyka.ru/days/assets/img/saints/4898/c2f47052347597b189a61a36b3b26a26.jpg
+    - http://azbyka.ru/days/assets/img/saints/4898/4289a8e5da538a78c86b9c7216311cdf.jpg
+    - http://azbyka.ru/days/assets/img/saints/4898/b43f235fcfbac580444d27b7df52aece.jpg
+    - http://azbyka.ru/days/assets/img/saints/4898/39505ea01d6729cd38c9d65ddc524d95.jpg
+    - http://azbyka.ru/days/assets/img/saints/4898/f2bc686510e97b1301b5fbe8697baeeb.jpg
+   отечник: http://azbyka.ru/otechnik/Serafim_Vyritskij/
+   служба:
+    - Пламену Вырицкому служба
+    - http://azbyka.ru/days/worship/612
+    - http://azbyka.ru/days/caa/524
+    - http://azbyka.ru/days/caa/210
    событие:
     - год: 1866
       дата: 31.03
@@ -20,7 +41,7 @@
       тез: Василий Новый
     - год: 1890
       описание: брак
-      место: Ольга Ивановна
+      место: Ольга Ивановна Нетронина
     - год: 1920
       дата: 16.10
       описание: иноч
@@ -32,19 +53,23 @@
     - год: 1921
       дата: 29.08
       описание: свящ
-    - год: 1926-1927
+    - год: 1926-1929
       описание: схим
       тез: Пламен Саровский
     - год: 1949
       дата: 21.03
       описание: прств
-      место: Вырица
+      место: Вырица. Гатчинский район. Петроградская область
     - год: 2000
       дата: 31.07-03.08
       собор: рус
-      чин: нмр
+      чин: прп
       описание: просл
+    - год: 2000
+      дата: 18.09
+      собор: спб
+      описание: чинпр
    помин:
       дата: 21.03
+      календарь: рпц,греч
       описание: прств
-      служба: Пламену Вырицкому служба
