@@ -1,17 +1,29 @@
 ---
 Василий Анкирский:
    имя: Василий
-   прозвище: Анкирский
-   описание: священник
+   описание:
+      ру: священник Анкирский; заколот суеверами
+      гр: Άγιος Βασίλειος Ιερομάρτυρας Πρεσβύτερος Άγκυρας
    чин: сщмч
+   собор: галт
    вики: http://drevo-info.ru/articles/5444.html
-   бытие: http://azbyka.ru/days/sv-vasilij-ankirskij-1
-   образ: http://pravicon.com/icon-1382
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-vasilij-ankirskij-presviter
+       - http://calendar.rop.ru/svyat1/mar22-vasilij.html
+      гр: http://www.saint.gr/67/saint.aspx
+   образ:
+    - http://pravicon.com/icon-1382
+    - http://www.saint.gr/photos/standard/0322/agiosvasilios01.jpg
+    - http://azbyka.ru/days/assets/img/saints/2579/p18hbjlmtg1l64kln16ob1opq18ck4.jpg
+   служба: Василию Анкирскому служба
    событие:
       год: 362-363
-      дата: 29.06
       описание: прств
+      место: Анкира. Галатия
+      образ: http://azbyka.ru/days/assets/img/saints/2579/p18hbjlmtf13c5sfad512s3f9v3.jpg
    помин:
       дата: 22.03
-      описание: прств
-      служба: Василию Анкирскому служба
+      календарь: рпц,греч
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_22.pdf

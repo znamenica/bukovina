@@ -1,11 +1,20 @@
 ---
 Дросида Антиохийская:
    имя: Дросида
-   прозвище: Антиохийская
+   отчество: Траяновна
+   описание: дева и мученица Антиохийская; не была крещена; сожжена суеверами
    чин: мц
+   собор: сир
    вики: http://drevo-info.ru/articles/9764.html
-   бытие: http://azbyka.ru/days/sv-drosida-rimskaja
-   помин:
+   бытие:
+    - http://azbyka.ru/days/sv-drosida-rimskaja
+    - http://calendar.rop.ru/svyat1/mar22-drosida.html
+   образ: http://www.saint.gr/photos/standard/0322/agiadrosida01.jpg
+   событие:
       год: 104-117
-      дата: 22.03
       описание: прств
+      место: Антиохия. Сирия/Рим
+   помин:
+      дата: 22.03
+      календарь: рпц
+      описание: само

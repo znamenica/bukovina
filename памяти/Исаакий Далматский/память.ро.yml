@@ -1,14 +1,18 @@
 ---
 Исаакий Далматский:
    имя: Исаакий
-   описание: настоятель обители Далматской
+   описание: пустынник; исповедник; настоятель Далматский
    чин: присп
    собор: виз
    вики: http://drevo-info.ru/articles/3627.html
-   бытие: http://azbyka.ru/days/sv-isaakij-dalmatskij
+   бытие:
+      - http://azbyka.ru/days/sv-isaakij-dalmatskij
+      - http://calendar.rop.ru/svyat1/mar22-isaakij-dalmatskij.html
    образ:
     - http://drevo-info.ru/images/001/000524.jpg
     - http://pravicon.com/icon-2064
+    - http://azbyka.ru/days/assets/img/saints/2650/0424d13e84d8b15e81d29ad88d0bfdb0.jpg
+    - http://azbyka.ru/days/assets/img/saints/2650/75088434d076abeebbe3de28e3b817b6.jpg
    событие:
     - год: III-IV
       описание: ржд
@@ -16,8 +20,10 @@
       описание: иноч
     - год: 383
       описание: прств
+      место: Далматова обитель. Константинополье. Византия
    помин:
     - дата: 22.03
+      календарь: рпц
       описание: само
     - дата: 30.05
       описание: само
