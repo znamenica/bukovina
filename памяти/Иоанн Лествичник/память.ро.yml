@@ -1,19 +1,49 @@
 ---
 Иоанн Лествичник:
    имя: Иоанн
+   отчество: Ксенофонтович
    прозвище: Лествичник
-   описание: настоятель Синайский
+   описание: отшельник Фолский; инок и настоятель Синайский
    чин: прп
+   собор: син
+   вики: http://drevo-info.ru/articles/9923.html
    бытие: http://azbyka.ru/days/sv-ioann-lestvichnik
    образ:
-    - http://azbyka.ru/days/assets/img/saints/4801/p18i7v6cq0h6oiru17vffns1rgj4.jpg
     - http://pravicon.com/icon-1953
+    - http://drevo-info.ru/images/001/001644.jpg
+    - http://azbyka.ru/days/assets/img/saints/4801/p18i7v6cpvbtm1kkj1or0ibn5jt3.jpg
+    - http://azbyka.ru/days/assets/img/saints/4801/p18i7v6cq01kp21tt313021nud5gn5.jpg
+    - http://azbyka.ru/days/assets/img/saints/4801/p18i7v6cq0h6oiru17vffns1rgj4.jpg
+    - http://azbyka.ru/days/assets/img/saints/4801/a068b181bcb2bae0dd7dc3b71c6809b3.jpg
+    - http://azbyka.ru/days/assets/img/saints/4801/ac62a2fa119f12a16035593455f779a1.jpg
+    - http://azbyka.ru/days/assets/img/saints/4801/9cad328fbf8375c378f8d53c57d03e81.jpg
+   служба: Иоанну Лествичнику служба
+   отечник: http://azbyka.ru/otechnik/Ioann_Lestvichnik/
+   событие:
+    - год: ок. 526/ок. 569/ок. 483
+      описание: ржд
+    - год: ок. 546/ок. 589/ок. 503
+      описание: иноч
+      место: Екатериниская обитель. Синай
+    - год: 601-606/644-649/558-563
+      описание: трд
+      образ:
+       - http://www.saint.gr/photos/standard/0330/IoannisKlimakas03.jpg
+       - http://azbyka.ru/days/assets/img/saints/4801/p18i7v6cq1nmjuhd9ut1jpf157c7.jpg
+       - http://azbyka.ru/days/assets/img/saints/4801/p18i7v6cq01vgt18c5194v1rd86ff6.jpg
+       - http://azbyka.ru/days/assets/img/saints/4801/p18f54lqvj3mdesouap1qsl1c7b3.JPG
+       - http://azbyka.ru/days/assets/img/saints/4801/6f3b2c7799957a27a5ca76eeafe63443.jpg
+       - http://azbyka.ru/days/assets/img/saints/4801/3f3c9bda59aa6905a9ff21119bcf0c61.jpg
+      бытие:
+         гр: http://www.saint.gr/135/saint.aspx
+      место: Синай
+    - год: ок. 606/649/563
+      описание: прств
+      место: Екатериниская обитель. Синай
    помин:
-    - год: VII
-      дата: 30.03
+    - дата: 30.03
       описание: прств
-      служба: Иоанну Лествичнику служба
-    - год: VI
-      дата: 4нд.пост
-      описание: прств
+    - дата: нд.4.пост
+      календарь: рпц,греч
+      описание: трд
       служба: Иоанну Лествичнику о лествице служба
