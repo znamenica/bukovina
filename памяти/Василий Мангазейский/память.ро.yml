@@ -9,7 +9,9 @@
    собор: сиб,ярс,турх
    вики: http://drevo-info.ru/articles/12556.html
    бытие:
-      ру: http://pravicon.com/info-1936
+      ру:
+       - http://azbyka.ru/days/sv-vasilij-mangazejskij
+       - http://calendar.rop.ru/svyat1/mar23-vasilij-mangazeiskij.html
       гр: http://www.saint.gr/1260/saint.aspx
    образ:
     - http://pravicon.com/icon-1391
@@ -43,7 +45,9 @@
     - дата: 22.03
       календарь: змин,греч
       описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_22.pdf
     - дата: 23.03
+      календарь: рпц
       описание: прств
     - дата: 10.05
       описание: прен.1
