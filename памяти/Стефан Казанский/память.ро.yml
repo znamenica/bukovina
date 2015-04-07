@@ -1,18 +1,17 @@
 ---
 Стефан Казанский:
    имя: Стефан
-   описание: Казанский
+   описание: татарин; мученик Казанский
    чин: мч
-   собор: 14мк
+   собор: 14мк,2пмк,каз?
    вики: http://drevo-info.ru/articles/5467.html
    бытие: http://azbyka.ru/days/sv-stefan-kazanskij-1
    образ:
     - http://drevo-info.ru/images/002/008522.jpg
     - http://pravicon.com/icon-2952
+    - http://azbyka.ru/days/assets/img/saints/3601/p18hnejdvqcv8cosc0l69kjbt4.jpg
+    - http://azbyka.ru/days/assets/img/saints/3601/p18hnejdvnnaedpf2uj3qm1b713.jpg
    событие:
       год: 1552
       описание: прств
-   помин:
-      дата: 24.03
-      описание: прств
-      служба: Петру и Стефану Казанским служба
+      место: вид.Казань

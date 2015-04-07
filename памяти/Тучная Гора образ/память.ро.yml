@@ -1,12 +1,49 @@
 ---
 Тучная Гора образ:
    имя: Тучная Гора
-   прозвище: образ Богородицы
+   описание:
+      ру: образ Богородицы
+      гр: Σύναξη της Υπεραγίας Θεοτόκου του Όρους του Συννέφου εν Τβερ της Ρωσίας
    чин: обр
+   собор: твер
    вики: http://drevo-info.ru/articles/10459.html
-   бытие: http://azbyka.ru/days/ikona-tuchnaja-gora
-   образ: http://drevo-info.ru/images/002/004671.jpg
-   помин:
-      год: XVII
-      дата: 24.03
+   бытие:
+      ру:
+       - http://azbyka.ru/days/ikona-tuchnaja-gora
+       - http://calendar.rop.ru/icons1/mar24-ikona-gora.html
+      гр: http://www.saint.gr/1628/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/002/004671.jpg
+    - http://www.saint.gr/photos/standard/0324/TheotokosOrousSynnefou01.jpg
+    - http://azbyka.ru/days/assets/img/icons/315/p18ioelqqg11a9gvgsop1peavo14.jpg
+    - http://azbyka.ru/days/assets/img/icons/315/p18ioelqqf1gro1ari4gjjg11mja3.jpg
+    - http://azbyka.ru/days/assets/img/icons/315/777809e9f6a535f117c8eae6c87ce7ac.jpg
+   служба: http://azbyka.ru/days/caa/441
+   событие:
+    - год: вид.до XVII
+      описание: напис
+      место: вид.монастырь. Тверь
+    - год: XVII
       описание: прен
+      место: Тверь
+    - год: XVIII
+      описание: чудо
+      место: Тверь
+    - год: 1866
+      дата: 15.07
+      описание: прен.1
+      место: Смоленская церковь. Тверь
+    - год: 1866
+      дата: 16.07
+      описание: освп
+      место: Смоленская церковь. Тверь
+    - год: по 1917
+      описание: утр
+   помин:
+    - дата: 24.03
+      календарь: рпц
+      описание: чудо
+    - дата: 16.07
+      описание: освп
+    - дата: 07.11
+      описание: само

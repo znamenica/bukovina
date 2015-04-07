@@ -8,7 +8,15 @@
    бытие:
     - http://azbyka.ru/days/prazdnik-vhod-gospoden-v-ierusalim
     - http://calendar.rop.ru/svyat1/verbnoe.html
-   служба: Цветной недели служба
+   образ:
+    - http://azbyka.ru/days/assets/img/holidays/12/p18is91jp21qlt1i2p8cd2aa5354.jpg
+    - http://azbyka.ru/days/assets/img/holidays/12/p181k4km2s1sjl1s0t16rhs82ea43.jpg
+    - http://azbyka.ru/days/assets/img/holidays/12/p18is91jp2143invf4hm1uplbk97.jpg
+    - http://azbyka.ru/days/assets/img/holidays/12/p18is91jp1i6215dfl4onqj10ja3.jpg
+   служба:
+    - Цветной недели служба
+    - http://azbyka.ru/days/caa/54
+    - http://azbyka.ru/days/caa/55
    событие:
       год: 33
       описание: само

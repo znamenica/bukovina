@@ -2,12 +2,25 @@
 Захария Отверстый:
    имя: Захария
    прозвище: Отверстый
-   описание: инок, иже в Латре
+   описание:
+      ру: отшельник; инок Латрский
+      гр: Όσιος Ζαχαρίας
    чин: прп
+   собор: кар
    вики: http://drevo-info.ru/articles/5461.html
-   бытие: http://azbyka.ru/days/sv-zaharija-otverstyj
-   образ: http://pravicon.com/icon-1820
-   помин:
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-zaharija-otverstyj
+       - http://calendar.rop.ru/svyat1/mar24-zahariya-monah.html
+      гр: http://www.saint.gr/84/saint.aspx
+   образ:
+    - http://pravicon.com/icon-1820
+    - http://azbyka.ru/days/assets/img/saints/1711/p18kpbv4k91e7g1ddf1mq01f81kg93.jpg
+   событие:
       год: IV
-      дата: 24.03
       описание: прств
+      место: вид.Латр гора. Кария
+   помин:
+      дата: 24.03
+      календарь: рпц,греч
+      описание: само
