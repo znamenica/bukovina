@@ -16,6 +16,7 @@
     - http://azbyka.ru/days/assets/img/saints/449/p18i9of74ik6hen61ba641l805.jpg
     - http://azbyka.ru/days/assets/img/saints/449/p18i9of74j1tu1n321ca91s3r1d396.jpg
     - http://azbyka.ru/days/assets/img/saints/449/5db516a999c1a594adaf1be4782b7072.jpg
+    - http://www.saint.gr/photos/standard/0320/AgiosEphrosinos01.jpg
    служба: Евфросину Синозерскому служба
    событие:
     - год: вид.сер.XVI
@@ -40,7 +41,10 @@
       описание: прен
       место: колокольня. Синичья пустынь. Синозерье. Новгородщина
    помин:
-      дата: 20.03
+    - дата: 20.03
       календарь: рпц,греч
       описание: прств
       служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_20.pdf
+    - дата: 25.03
+      календарь: греч
+      описание: прен
