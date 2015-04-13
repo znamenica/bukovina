@@ -1,0 +1,19 @@
+---
+Новолетье Церковное:
+   описание: новолетие церковное; индикт
+   чин: сбт
+   бытие:
+      ру: http://azbyka.ru/days/prazdnik-nachalo-indikta-cerkovnoe-novoletie
+      гр: http://www.saint.gr/896/saint.aspx
+   образ:
+    - http://www.saint.gr/filesnew/02/0896/photos/Indictio01.jpg
+    - http://www.saint.gr/filesnew/02/0896/photos/Indictio02.jpg
+   служба: Новолетья Церковного служба
+   событие:
+      год: по IV
+      описание: просл
+   помин:
+      дата: 01.09
+      календарь: рпц,греч
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_01.pdf

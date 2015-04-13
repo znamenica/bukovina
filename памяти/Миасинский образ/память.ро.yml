@@ -1,0 +1,28 @@
+---
+Миасинский образ:
+   имя: Миасинский, Азуровский
+   описание:
+      ру: образ Богородицы
+      гр: Ανάμνηση Θαύματος της Θεοτόκου στη Μονή των Μιασηνών
+   чин: обр
+   собор: виз,арм
+   бытие:
+      ру:
+       - http://azbyka.ru/days/ikona-miasinskaja
+       - http://calendar.rop.ru/icons1/sep01-ikona-miasinskaya.html
+      гр: http://www.saint.gr/890/saint.aspx
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/201/p188la79er12v5snj1i1t1ba11ub53.jpg
+    - http://calendar.rop.ru/icons1/photos/Miasinskaya.jpg
+   служба: Миасинскому образу служба
+   событие:
+    - год: 864
+      дата: вид.01.09
+      описание: обр
+    - год: 864
+      дата: 01.09
+      описание: прен
+   помин:
+      дата: 01.09
+      календарь: рпц,греч
+      описание: обр,прен

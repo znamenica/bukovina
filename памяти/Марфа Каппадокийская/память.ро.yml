@@ -1,0 +1,24 @@
+---
+Марфа Каппадокийская:
+   имя: Марфа
+   описание:
+      ру: жена Каппадокийская, мать Симеона Столпника
+      гр: Οσία Μάρθα μητέρα του οσίου Συμεών, που ασκήτευσε στο όρος θαυμαστό
+   чин: прав
+   собор: капд
+   бытие:
+      ру: http://pravicon.com/info-2912
+      гр: http://www.saint.gr/893/saint.aspx
+   образ:
+    - http://pravicon.com/icon-2409
+    - http://www.saint.gr/photos/standard/0901/OsiosSymeonStilitis02.jpg
+    - http://vatopaidi.files.wordpress.com/2011/01/st-simeon-the-stylite-and-st-genevieve.jpg
+   событие:
+      год: ок. 428
+      описание: прств
+      место: вид.Каппадокия
+   помин:
+      дата: 01.09
+      календарь: рпц,греч
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_01.pdf

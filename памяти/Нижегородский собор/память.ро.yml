@@ -5,7 +5,10 @@
    крат: ниж
    собор: рус
    вики: http://drevo-info.ru/articles/11362.html
-   образ: http://drevo-info.ru/images/002/005470.jpg
+   бытие: http://azbyka.ru/days/sv-sobor-nizhegorodskih-svjatyh
+   образ:
+    - http://drevo-info.ru/images/002/005470.jpg
+    - http://azbyka.ru/days/assets/img/saints/6491/p17vjcltp612sjd7edop1ekb19qo3.jpg
    событие:
       год: 2008
       собор: рус

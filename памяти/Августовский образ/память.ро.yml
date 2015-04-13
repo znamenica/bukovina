@@ -1,0 +1,33 @@
+---
+Августовский образ:
+   имя: Августовской
+   описание: образ Богородицы
+   чин: обр
+   вики: http://drevo-info.ru/articles/10043.html
+   бытие:
+    - http://azbyka.ru/days/ikona-avgustovskaja
+    - http://calendar.rop.ru/icons1/sep01-ikona-avgustovskaya.html
+   событие:
+    - год: 1914
+      дата: 01.09
+      описание: явл
+      место: Августовский лес. Сувалкская губерния (ныне Восточная Польша)
+      образ:
+       - http://azbyka.ru/days/assets/img/icons/76/p1887ns77i118a5l8holtjg1n283.jpg
+       - http://azbyka.ru/days/assets/img/icons/76/p1887nsase6pvqjn1d4v1eur1kn15.jpg
+       - http://azbyka.ru/days/assets/img/icons/76/p1887nsasehdpmte7ve1514npc6.jpg
+       - http://calendar.rop.ru/icons1/photos/Avgustovskaya.jpg
+    - год: 1916
+      дата: 31.03
+      собор: рус
+      описание: просл
+    - год: 2008
+      дата: 15.02
+      собор: рус
+      описание: просл.1
+      место: Москва
+      о: 01.09
+   помин:
+      дата: 01.09
+      календарь: рпц
+      описание: явл
