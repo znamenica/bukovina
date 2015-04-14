@@ -16,4 +16,6 @@
       дата: 01.09
       календарь: рпц,греч
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_01.pdf
+      служба:
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_01.pdf
+       - Новолетья Церковного и Симеону Столпнику служба
