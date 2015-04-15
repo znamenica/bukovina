@@ -1,20 +1,25 @@
 ---
 Финеес Израильский:
-   имя: Финеес
+   имя:
+      ру: Финеес
+      гр: Φινεές
    отчество: Елеазарович
    описание: первосвященник Израильский
    чин: прав
+   собор: 2пси,изр
    вики: http://drevo-info.ru/articles/7405.html
    бытие:
-    - http://azbyka.ru/days/sv-finees-pervosvjashchennik-izrailskij
-    - http://calendar.rop.ru/svyat1/mar12-finees.html
+      ру:
+       - http://azbyka.ru/days/sv-finees-pervosvjashchennik-izrailskij
+       - http://calendar.rop.ru/svyat1/mar12-finees.html
+      гр: http://www.saint.gr/3828/saint.aspx
    событие:
     - год: вид.XVII до нэ
       описание: ржд
     - год: ок. 1500 до нэ
       описание: прств
-      место: вид.Иерусалим. Израиль
+      место: вид.Иерусалим. Израиль. Палестина
    помин:
       дата: 12.03
-      календарь: рпц
+      календарь: рпц,греч
       описание: само

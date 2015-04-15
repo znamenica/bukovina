@@ -1,23 +1,45 @@
 ---
 Иоанн Ниститис:
-   имя: Иоанн
-   фамилия: Ниститис
-   описание: постник; преподобный; первосвятитель Константинопольский
+   имя:
+      ру: Иоанн
+      гр: Ιωάννης
+   фамилия:
+      ру: Ниститис
+      гр: Νηστευτής
+   описание:
+      ру: постник; преподобный; первосвятитель Константинопольский
+      гр: Πατριάρχης Κωνσταντινούπολης
    чин: свт
    собор: виз,3ск,прпп
    вики: http://drevo-info.ru/articles/11342.html
-   бытие: http://azbyka.ru/days/sv-ioann-postnik
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-ioann-postnik
+       - http://calendar.rop.ru/svyat1/sep02-ioann-konstantinopolskij.html
+      гр: http://www.saint.gr/926/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/003122.jpg
     - http://azbyka.ru/days/assets/img/saints/4125/b9bf836438cbd9581cd4a727339df49c.jpg
     - http://azbyka.ru/days/assets/img/saints/4125/c10c272d234dad071019573ea9c39b0b.jpg
+    - http://www.saint.gr/photos/standard/0902/AgiosIoannis02.jpg
+    - http://www.saint.gr/photos/standard/0902/AgiosIoannis01.jpg
    отечник: http://azbyka.ru/otechnik/Ioann_Postnik/
+   служба: Иоанну Ниститису служба
    событие:
     - год: 582
       описание: свят
-    - год: ок. 337/340
+      место: вид.Константинополь. Византия
+    - год: вид.582
+      описание: прдст
+      место: Константинополь. Византия
+    - год: 595
+      дата: 02.09
       описание: прств
       место: вид.Константинополь. Византия
    помин:
       дата: 02.09
-      описание: само
+      календарь: рпц,греч
+      описание: прств
+      служба:
+       - Мамант Кесарийский/Маманту Кесарийскому и Иоанну Ниститису служба
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_02.pdf

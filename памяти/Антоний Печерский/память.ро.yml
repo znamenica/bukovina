@@ -1,31 +1,45 @@
 ---
 Антоний Печерский:
-   имя: Антоний
-   описание: настоятель Киево-Печерский, Печерский
+   имя: в иночестве Антоний, в крещении Антипа
+   описание: настоятель Киево-Печерский
    чин: прп
-   собор: слав,рус,печ,бпеч,аф,киев
+   собор: бпеч,аф,киев,2пп,винн
    вики: http://drevo-info.ru/articles/6413.html
    бытие: http://azbyka.ru/days/sv-antonij-kievo-pecherskij
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/4251/f7c8078c44fcf9c503acd019c97d149b.jpg
+    - http://azbyka.ru/days/assets/img/saints/4251/fff229cc183be737db267b458b81de4a.jpg
+    - http://azbyka.ru/days/assets/img/saints/4251/p190i0kb8gmoq1fmq9r11vo1lvi3.jpg
+   служба:
+    - Антонию Печерскому служба
+    - http://azbyka.ru/days/caa/33
+    - http://azbyka.ru/days/caa/34
+    - http://azbyka.ru/days/caa/30
    событие:
     - год: 982/983
       описание: ржд
       место: Любеч. Черниговщина
+    - год: вид.нач.XI
+      описание: иноч
+      место: вид.Афон
     - год: 1073
       дата: 07.05
       описание: прств
+      место: Печерская обитель. Киев
+    - год: 1073
+      дата: по 07.05
+      описание: пгрб
+      место: Печерская обитель. Киев
+    - год: 1133
+      собор: рус
+      чин: прп
+      описание: просл
+    - год: 2015
+      дата: 19.03
+      собор: укр
+      чин: винн
+      описание: просл.1
    помин:
-    - дата: 10.07
+      дата: 10.07
       описание: само
-      служба:
-       - Антонию Печерскому служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_10.pdf
-       - http://azbyka.ru/days/caa/33
-       - http://azbyka.ru/days/caa/34
-       - http://azbyka.ru/days/caa/30
-    - дата: 02.09
-      описание: само
-      служба:
-       - Антонию и Богданку Печерским служба
-       - http://azbyka.ru/days/caa/31
-       - http://azbyka.ru/days/caa/32
-       - http://azbyka.ru/days/caa/29
+      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_10.pdf

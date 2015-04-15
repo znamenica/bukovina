@@ -1,35 +1,52 @@
 ---
 Богданко Печерский:
-   имя: Феодосий
-   описание: настоятель Киево-Печерский, Печерский
+   имя:
+      ру: в иночестве Феодосий
+      гр: Θεοδόσιος
+   описание: настоятель Киево-Печерский
    чин: прп
-   собор: слав,рус,печ,дпеч,киев,кур
+   собор: дпеч,киев,кур,2пп
    вики: http://drevo-info.ru/articles/6948.html
-   бытие: http://azbyka.ru/days/sv-feodosij-kievo-pecherskij
-   образ: http://drevo-info.ru/images/001/001242.jpg
+   бытие:
+      ру: http://azbyka.ru/days/sv-feodosij-kievo-pecherskij
+      гр: http://www.saint.gr/2601/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/001/001242.jpg
+    - http://azbyka.ru/days/assets/img/saints/4266/a29cff65b3d2dae2f7a5aa7cb609dd11.jpg
+    - http://azbyka.ru/days/assets/img/saints/4266/p190i0gk2tdhahrf1q981irif4l3.jpg
+    - http://azbyka.ru/days/assets/img/saints/4266/1c120b10ce4dd3c63ac52b9aa27e9429.jpg
+    - http://azbyka.ru/days/assets/img/saints/4266/0035bffeb1ae34b0dbf35e58db42f071.jpg
    отечник: http://azbyka.ru/otechnik/Feodosij_Pecherskij/
+   служба:
+    - Богданку Печерскому служба
+    - http://azbyka.ru/days/caa/35
+    - http://azbyka.ru/days/caa/36
    событие:
+    - год: ок. 1036
+      описание: ржд
+      место: Василев (ныне Васильков). Киевье
+    - год: 1050-1062
+      описание: иноч
+      место: Печерская обитель. Киев
     - год: 1074
       дата: 03.05
       описание: прств
+      место: Печерская обитель. Киев
+    - год: 1074
+      дата: по 03.05
+      описание: пгрб
+      место: Печерская обитель. Киев
     - год: 1091
       описание: обр
+      место: Феодосиевы пещеры. Киев
    помин:
     - дата: 03.05
       описание: прств
-      служба:
-       - Богданку Печерскому служба
-       - Антоний Печерский/Антонию и Богданку Печерским служба
-       - http://azbyka.ru/days/caa/31
-       - http://azbyka.ru/days/caa/32
-       - http://azbyka.ru/days/caa/29
     - дата: 14.08
       описание: прен
       служба:
        - Богданку Печерскому на пренесение мощей служба
        - http://azbyka.ru/days/assets/upload/minei/08/minea_08_14.pdf
     - дата: 02.09
+      календарь: греч
       описание: само
-      служба:
-       - http://azbyka.ru/days/caa/35
-       - http://azbyka.ru/days/caa/36

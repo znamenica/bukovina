@@ -3,11 +3,21 @@
    имя: Калужский
    описание: образ Богородицы
    чин: обр
+   собор: клг,тул
    вики: http://drevo-info.ru/articles/3930.html
-   бытие: http://azbyka.ru/days/ikona-kaluzhskaja
+   бытие:
+    - http://azbyka.ru/days/ikona-kaluzhskaja
+    - http://calendar.rop.ru/icons1/sep02-ikona-yavlenie.html
    образ:
     - http://drevo-info.ru/images/002/007155.jpg
     - http://drevo-info.ru/images/002/007143.jpg
+    - http://azbyka.ru/days/assets/img/icons/100/p188klqibddv316r3b3rj6elg23.jpg
+    - http://azbyka.ru/days/assets/img/icons/100/p188klqibe1ljq19tt1dbb1g0mpm54.jpg
+    - http://azbyka.ru/days/assets/img/icons/100/p188klqibf1q4q4ah1rijssoh4p5.jpg
+    - http://azbyka.ru/days/assets/img/icons/100/p188klrekf118gu01q6u8841ku69.jpg
+   служба:
+    - Калужскому образу служба
+    - http://azbyka.ru/days/caa/562
    событие:
     - год: 1748
       описание: явл
@@ -34,11 +44,10 @@
       описание: чудо.2
       служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_18.pdf
     - дата: 02.09
+      календарь: рпц
       описание: чудо
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_02.pdf
     - дата: 12.10
       описание: чудо.1
     - дата: вс.1.птрп
       описание: само
-      служба:
-       - Калужскому образу служба
-       - http://azbyka.ru/days/caa/562
