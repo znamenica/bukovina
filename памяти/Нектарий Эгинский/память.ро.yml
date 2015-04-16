@@ -1,28 +1,54 @@
 ---
 Нектарий Эгинский:
-   имя: в иночестве Нектарий, в крещении Анастасий
-   описание: святитель Пентапольский, Эгинский
+   имя:
+      ру: в иночестве Нектарий, в крещении Анастасий
+      гр: Νεκτάριος
+   описание:
+      ру: святитель Пентапольский, Эгинский
+      гр: Μητροπολίτης Πενταπόλεως Αιγύπτου
    чин: свт
-   собор: конс,фрак,пев
+   собор: фрак,пев,копт,эгин,аф?
    вики: http://drevo-info.ru/articles/11632.html
-   бытие: http://pravicon.com/info-3002
+   бытие:
+      ру: http://pravicon.com/info-3002
+      гр: http://www.saint.gr/2960/saint.aspx
    образ:
     - http://pravicon.com/icon-2503
     - http://drevo-info.ru/images/003/009537.jpg
     - http://drevo-info.ru/images/001/001960.jpg
+    - http://www.saint.gr/photos/standard/1109/AgiosNektarios03.jpg
+    - http://www.saint.gr/photos/standard/1109/AgiosNektarios02.jpg
+    - http://www.pigizois.net/sinaxaristis/11/09_nektarios.jpg
+    - http://www.saint.gr/photos/standard/1109/AgiosNektarios04.jpg
+    - http://www.saint.gr/photos/standard/1109/AgiosNektarios05.jpg
+    - - http://www.porphyrios.gr/files/jpg/%CE%95%CE%B9%CE%BA%CF%8C%CE%BD%CE%B5%CF%82/%CE%86%CE%B3%CE%B9%CE%BF%CE%BD%20%CE%8C%CF%81%CE%BF%CF%82/02%20%CE%92%CE%B1%CF%84%CE%BF%CF%80%CE%B1%CE%B9%CE%B4%CE%AF%CE%BF%CF%85/%CE%A6%CE%BF%CF%81%CE%B7%CF%84%CE%AD%CF%82%20%CF%83%CF%8D%CE%B3%CF%87%CF%81%CE%BF%CE%BD%CE%B5%CF%82/%CE%9D%CE%B5%CE%BA%CF%84%CE%AC%CF%81%CE%B9%CE%BF%CF%82%20%CE%A0%CE%B5%CE%BD%CF%84%CE%B1%CF%80%CF%8C%CE%BB%CE%B5%CF%89%CF%82%20%28%CE%99.%CE%9C.%CE%92%CE%B1%CF%84%CE%BF%CF%80%CE%B1%CE%B9%CE%B4%CE%AF%CE%BF%CF%85%29.jpg
+    - http://vatopaidi.files.wordpress.com/2010/11/st-nektarios-of-aigina-julia-bridget-hayes.jpg
+    - http://3.bp.blogspot.com/-ZIk_MvTPqbQ/TohJOqwmlTI/AAAAAAAAAVI/WWjXy8UjdPE/s1600/P9060145.JPG
+    - http://www.panagiavrioulon.gr/images/stories/diak/0002.jpg
+    - http://4.bp.blogspot.com/-RGCdq3grrZs/TkUc8A7wjxI/AAAAAAAAAQ4/DKPHkse3sJ4/s1600/St%2BNektarios4.jpg
+    - http://www.imga.gr/images/pitsidia_naos_ag_koudouma%20%2844%29.JPG
+    - http://www.porphyrios.gr/files/jpg/%CE%95%CE%B9%CE%BA%CF%8C%CE%BD%CE%B5%CF%82/%CE%86%CE%B3%CE%B9%CE%BF%CE%BD%20%CE%8C%CF%81%CE%BF%CF%82/%CE%9A%CE%B1%CF%81%CF%85%CE%AD%CF%82/%CE%A0%CE%B1%CF%87%CF%89%CE%BC%CE%B1%CE%AF%CE%BF%CE%B9/%CE%A6%CE%BF%CF%81%CE%B7%CF%84%CE%AD%CF%82/%CE%86%CE%B3%CE%B9%CE%BF%CE%B9/%CE%9D%CE%B5%CE%BA%CF%84%CE%AC%CF%81%CE%B9%CE%BF%CF%82%20%CE%A0%CE%B5%CE%BD%CF%84%CE%B1%CF%80%CF%8C%CE%BB%CE%B5%CF%89%CF%82.jpg
    отечник: http://azbyka.ru/otechnik/Nektarij_Eginskij/
+   служба:
+    - Нектарию Эгинскому служба
+    - http://azbyka.ru/days/caa/306
    событие:
     - год: 1846
+      дата: 01.10
       описание: ржд
       место: Селиврия. Константинополье. Фракия
-    - год: 1868
+    - год: 1876
       описание: иноч
-    - год: 1868
+      место: Новое Мони. Афон
+    - год: 1877
+      дата: 15.01
       описание: дияк
+      место: Афон
     - год: ок.1886
       описание: свящ
       место: Саввинский монастырь. Александрия. Египет
     - год: 1889
+      дата: 15.01
       описание: свят
     - год: 1920
       дата: 09.11
@@ -34,18 +60,40 @@
     - год: 1953
       дата: вид.21.08
       описание: прен
+      бытие:
+         гр:
+          - http://www.saint.gr/930/saint.aspx
+          - http://www.synaxarion.gr/gr/sid/538/sxsaintinfo.aspx
+      место: Свято-Троицкая обитель. Егина
+    - год: по 1953
+      описание: прен.1
+      предмет: глезно
+      место: Камарицкая лавра
+    - год: по 1953
+      описание: прен.2
+      предмет: позвонок
+      место: Крит
     - год: 1961
       дата: 20.04
       собор: виз
-      чин: конс
+      чин: свт
       описание: просл
+    - год: 1998
+      дата: 02.01
+      собор: алкс
+      описание: восст
+      бытие:
+         гр: http://www.apostoliki-diakonia.gr/gr_main/eortologio/eortologio.asp?file=jan/15.htm#12
    помин:
+    - дата: 15.01
+      собор: алкс
+      описание: восст
     - дата: 21.08
       собор: греч
       описание: прен
+    - дата: 03.09
+      календарь: греч
+      описание: прен
     - дата: 09.11
       описание: прств
-      служба:
-       - Нектарию Эгинскому служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_09.pdf
-       - http://azbyka.ru/days/caa/306
+      служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_09.pdf

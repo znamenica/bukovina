@@ -1,10 +1,9 @@
 ---
 Мария Магдалыня:
    имя: Мария
-   прозвище: Магдалина, Магдалыня
-   описание: мироносица
+   описание: магдалыня (магдалина); мироносица
    чин: рап
-   собор: плст,мрнс
+   собор: ап70,плст,мрнс,плст,лид,виз,рим
    вики: http://drevo-info.ru/articles/13273.html
    бытие: http://azbyka.ru/days/sv-marija-magdalina
    образ:
@@ -17,13 +16,17 @@
     - http://azbyka.ru/days/assets/img/saints/5855/ddcc9e521628ff66c65a43096ef9b8f1.jpg
     - http://azbyka.ru/days/assets/img/saints/5855/p18f54urj4q9j1v8liml17h58q83.jpg
     - http://azbyka.ru/days/assets/img/saints/5855/4647a746ec5600d1348b931a34e89d69.jpg
+   служба:
+    - Марии Магдалыне служба
+    - http://azbyka.ru/days/caa/281
+    - http://azbyka.ru/days/caa/282
    событие:
     - год: I
       описание: ржд
       место: Магдала. Геннисаретское озеро. Палестина
     - год: I
       описание: прств
-      место: Ефес
+      место: Ефес. Лидия
     - год: 890-898
       описание: прен
       место: Лазаревский монастырь. Константинополь
@@ -36,8 +39,5 @@
     - дата: 22.07
       описание: само
       служба:
-       - Марии Магдалыне служба
        - Марии Магдалыне и Фоке Синопскому служба
        - http://azbyka.ru/days/assets/upload/minei/07/minea_07_22.pdf
-       - http://azbyka.ru/days/caa/281
-       - http://azbyka.ru/days/caa/282

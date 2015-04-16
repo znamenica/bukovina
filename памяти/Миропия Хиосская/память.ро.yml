@@ -1,21 +1,21 @@
 ---
 Миропия Хиосская:
    имя: Миропия
-   описание: Хиосская
+   описание: ефесянка; мученица Хиосская
    чин: мц
+   собор: лид,хиос
    вики: http://drevo-info.ru/articles/2703.html
    бытие: http://azbyka.ru/days/sv-miropija-hiosskaja
    образ: http://azbyka.ru/days/assets/img/saints/5627/p18b7bdsadv0i1jmmoohtei1fhf3.jpg
+   служба: Миропии Хиосской служба
    событие:
     - год: нач.III
       описание: ржд
-      место: Ефес
+      место: Ефес. Лидия
     - год: ок. 251
       описание: прств
       место: Хиос остров
    помин:
       дата: 02.12
       описание: само
-      служба:
-       - Миропии Хиосской служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_02.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_02.pdf

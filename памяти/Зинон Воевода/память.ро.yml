@@ -1,11 +1,15 @@
 ---
 Зинон Воевода:
-   имя: Зинон
+   имя:
+      ру: Зинон
+      гр: Ζήνων
    описание: воевода Никомидийский; обезглавлен
    чин: мч
    собор: мн,виф,воев
    вики: http://drevo-info.ru/articles/3242.html
-   бытие: http://azbyka.ru/days/sv-zinon-nikomidijskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-zinon-nikomidijskij
+      гр: http://www.saint.gr/938/saint.aspx
    образ: http://drevo-info.ru/images/002/007151.jpg
    событие:
       год: 302
@@ -13,4 +17,5 @@
       место: Никомидия. Вифиния (ныне Исмид. Турция)
    помин:
       дата: 03.09
+      календарь: рпц,греч
       описание: само
