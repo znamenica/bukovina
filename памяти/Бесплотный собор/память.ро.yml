@@ -12,6 +12,7 @@
     - http://azbyka.ru/days/assets/img/saints/6523/p18faaljsg1hn5fqdm8r10p21o4p3.jpg
     - http://azbyka.ru/days/assets/img/saints/6523/p189qhga9118kb1oac1s7l1b6gese3.jpg
     - http://azbyka.ru/days/assets/img/saints/6523/p189qhga9ho5nm7j7f8i6b11kg5.jpeg
+   служба: Бесплотному собору служба
    событие:
       год: ок. 364
       описание: просл
@@ -19,6 +20,4 @@
    помин:
       дата: 08.11
       описание: само
-      служба:
-       - Бесплотному собору служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_08.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_08.pdf
