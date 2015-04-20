@@ -1,18 +1,12 @@
 ---
 Максим Антиохийский:
    имя: Максим
-   описание: Антиохийский
+   описание: воин Антиохийский; телохранитель Иулианов
    чин: мч
-   собор: вои
+   собор: вои,сир,2вах
    вики: http://drevo-info.ru/articles/2427.html
    бытие: http://azbyka.ru/days/sv-maksim-antiohijskij
-   образ: http://azbyka.ru/days/assets/img/saints/374/p18746ffso1hna1tefoqb1f55hc3.jpg
    событие:
       год: 361-363
       описание: прств
-      образ: http://azbyka.ru/days/assets/img/saints/374/p183nrvpm5kalov1p4qevump55.jpg
-   помин:
-    - дата: 05.09
-      описание: само
-    - дата: 09.10
-      описание: само
+      место: Антиохия. Сирия

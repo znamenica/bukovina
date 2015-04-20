@@ -1,18 +1,34 @@
 ---
 Афанасий Брестский:
-   имя: Афанасий
+   имя:
+      ру: в иночестве Афанасий
+      гр: Αθανάσιος
    фамилия: Филиппович
-   описание: настоятель Брестский
+   описание:
+      ру: настоятель Брестский; убит иезуитами латынами
+      гр: ηγούμενος Μονής Μπρέστ
    чин: прмч
-   собор: слав,рус,блр,киев
+   собор: блр,киев,брст,вилн
    вики: http://drevo-info.ru/articles/481.html
-   бытие: http://azbyka.ru/days/sv-afanasij-brestskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-afanasij-brestskij
+       - http://calendar.rop.ru/svyat1/sep05-afanasij.html
+      гр: http://www.saint.gr/2355/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/001247.jpg
+    - http://images.oca.org/icons/lg/September/0905athanasiusofbrest.JPG
     - http://pravicon.com/icon-1289
+    - http://azbyka.ru/days/assets/img/saints/5261/p191o914v7142j2bk1q9hf4kg8p4.jpg
+    - http://azbyka.ru/days/assets/img/saints/5261/75c8091f9475d9d3c3dda118562f13c5.jpg
+    - http://azbyka.ru/days/assets/img/saints/5261/2f3bcdeb63793264457d1a57f0339469.jpg
+   служба:
+    - Афанасию Брестскому служба
+    - http://azbyka.ru/days/caa/42
    событие:
     - год: ок.1597
       описание: ржд
+      место: вид.Брест
     - год: 1627
       описание: иноч
       место: Сошественский монастырь. Вильно
@@ -23,13 +39,24 @@
       описание: прств
       место: близ. Германовичи деревня. Брестье
     - год: 1649
+      дата: 01.05
       описание: обр
+    - год: 1649
+      дата: 02.05
+      описание: пгрб
+      место: Брест
+    - год: по 1649
+      описание: прен
+      предмет: часть
+      место: Афанасьевская церковь. Брест
+    - год: 1818
+      предмет: большая часть
+      описание: утр
    помин:
-    - дата: 05.09
-      описание: прств
-      служба:
-       - Афанасию Брестскому служба
-       - http://azbyka.ru/days/caa/42
     - дата: 20.07
       описание: обр
       служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_20.pdf
+    - дата: 05.09
+      календарь: рпц,греч,змин
+      описание: прств
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_05.pdf

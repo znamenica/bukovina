@@ -1,19 +1,13 @@
 ---
 Еввентий Антиохийский:
    имя: Еввентий (Иувентин)
-   прозвище: Антиохийский
+   описание: воин Антиохийский; телохранитель Иулианов
    чин: мч
-   собор: вои
+   собор: вои,сир,2вах
    вики: http://drevo-info.ru/articles/2426.html
    бытие: http://azbyka.ru/days/sv-iuventin-evventij-antiohijskij
-   образ:
-    - http://pravicon.com/icon-2084
-    - http://azbyka.ru/days/assets/img/saints/147/p18746epaun26pmbu8e1hmkjke3.jpg
+   образ: http://pravicon.com/icon-2084
    событие:
       год: 361-363
       описание: прств
-   помин:
-    - дата: 05.09
-      описание: само
-    - дата: 09.10
-      описание: само
+      место: Антиохия. Сирия
