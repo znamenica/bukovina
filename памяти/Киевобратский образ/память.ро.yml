@@ -1,0 +1,40 @@
+---
+Киевобратский образ:
+   имя: Киево-Братский
+   описание: образ Богородицы
+   чин: обр
+   собор: вышг,киев
+   вики: http://drevo-info.ru/articles/5996.html
+   бытие:
+      ру:
+       - http://azbyka.ru/days/ikona-kievo-bratskaja
+       - http://calendar.rop.ru/icons1/sep06-ikona-kievo-bratskaya.html
+      гр:
+       - http://www.saint.gr/1550/saint.aspx
+       - http://www.saint.gr/1548/saint.aspx
+       - http://www.saint.gr/1549/saint.aspx
+   образ:
+    - http://calendar.rop.ru/icons1/photos/KievoBratskaya.jpg
+    - http://azbyka.ru/days/assets/img/icons/155/p188km1chj8tt1vcg1fm5qnm194f3.jpg
+    - http://azbyka.ru/days/assets/img/icons/155/p188km1f7m16o01kk01uq512rl1dpe5.jpg
+    - http://azbyka.ru/days/assets/img/icons/155/p188km2bd51k9m1583124f1iap10rs6.jpg
+    - http://www.saint.gr/photos/standard/0510/TheotokosAdelfonKiebou01.jpg
+   служба: Киевобратскому образу служба
+   событие:
+    - год: 1654
+      описание: явл
+      место: Борисоглебская церковь. Вышгород. Киевщина
+    - год: 1662
+      описание: прем
+      место: Киево-Братская обитель. Киев
+    - год: XIX-XX
+      описание: утр
+   помин:
+    - дата: 10.05
+      календарь: греч
+      описание: явл
+    - дата: 02.06
+      описание: явл
+    - дата: 06.09
+      календарь: рпц,греч
+      описание: явл

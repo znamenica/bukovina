@@ -2,13 +2,17 @@
 Кирилл Гортинский:
    имя: Кирилл
    описание: святитель Гортинский
-   чин: стсвт
+   чин: мсвт
    собор: крит,ксвт
    вики: http://drevo-info.ru/articles/6388.html
-   бытие: http://azbyka.ru/days/sv-kirill-gortinskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-kirill-gortinskij
+       - http://calendar.rop.ru/svyat1/sep06-kirill.html
    образ:
     - http://drevo-info.ru/images/002/007254.jpg
     - http://pravicon.com/icon-2158
+   служба: Кириллу Гортинскому служба
    событие:
     - год: ок.208/ок.213/ок.219
       описание: ржд
@@ -20,12 +24,14 @@
       место: Ракса. вид.Крит
    помин:
     - дата: 14.06
-      месяцеслов: герм
+      месяцеслов: герм,г7д8
       описание: само
     - дата: 09.07
       описание: само
-      служба:
-       - Кириллу Гортинскому служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_09.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_09.pdf
+    - дата: 25.08
+      месяцеслов: г7д8
+      описание: само
     - дата: 06.09
+      календарь: рпц
       описание: само

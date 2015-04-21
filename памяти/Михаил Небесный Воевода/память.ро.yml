@@ -1,15 +1,48 @@
 ---
 Михаил Небесный Воевода:
    имя: Михаил
-   описание: Небесный Воевода (Архистратиг), Архангел
+   описание: Небесный Воевода (Архистратиг); Архангел
    чин: крлт
-   собор: бспл
+   собор: бспл,фриг
    вики: http://drevo-info.ru/articles/7863.html
-   образ: http://drevo-info.ru/images/001/001338.jpg
+   бытие:
+      ру: http://azbyka.ru/days/sv-arhangel-mihail
+   образ:
+    - http://drevo-info.ru/images/001/001338.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/ea40bdddd7cf239b42cb38a4be9e5e26.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/f044d0ed1cc8e3039f6f3e422b2b97ed.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/p18f82f1sv1nhdsej1ddu1pqs1n1v4.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/e5d0fe1e83ea716177da394bf1eb79d4.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/280975ba0eecbad6e6711d0ea99ccb8b.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/8df1130f4d24ef6cf76eec1ffd7a5c66.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/14ab41256a664a524c63437799c48ec0.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/d3062f8d20e1b838476791d873fc9513.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/264ff7457513da693c6a9c64b114e7e9.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/7283db874dfc23c7033ac5081443ce31.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/b02440f610cbd51365f79681e01f7e94.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/f2c24fb3e8d297573b50fddd0871d3ef.jpg
+    - http://azbyka.ru/days/assets/img/saints/326/p193vf2mrq12k71rjm10llgrj16053.png
+   служба: Михаилу Небесному Воеводе служба
    событие:
-      год: до I
+    - год: до I
       описание: явл
+    - год: IV
+      описание: чудо
+      описание_:
+         ру: Воспоминание чуда Архистратига Михаила, бывшего в Хо́нех (Коло́ссах)
+         гр: Ανάμνηση Θαύματος Αρχαγγέλου Μιχαήλ στις Χωναίς (ή Κολασσαίς)
+      место: Хоны. Херотопа. Фригия
+      вики: http://drevo-info.ru/articles/11384.html
+      бытие:
+         гр: http://www.saint.gr/2357/saint.aspx
+      образ:
+       - http://drevo-info.ru/images/002/007250.jpg
+       - http://azbyka.ru/days/assets/img/saints/326/778413508dcdfa7b9e6751fb0e290d52.jpg
+       - http://www.saint.gr/photos/standard/0906/ThaumaMixailXonais02.jpg
+       - http://www.pigizois.net/sinaxaristis/09/06.jpg
+       - http://upload.wikimedia.org/wikipedia/commons/c/c9/Michael_Miracle_Icon_Sinai_12th_century.jpg [α' μισό 12ου αι. μ.Χ.]
    помин:
       дата: 06.09
-      описание: само
-      служба: Михаилу Небесному Воеводе служба
+      календарь: рпц,греч
+      описание: чудо
+      служба: Михаилу Небесному Воеводе о чуде служба
