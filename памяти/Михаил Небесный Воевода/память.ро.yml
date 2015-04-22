@@ -22,7 +22,10 @@
     - http://azbyka.ru/days/assets/img/saints/326/b02440f610cbd51365f79681e01f7e94.jpg
     - http://azbyka.ru/days/assets/img/saints/326/f2c24fb3e8d297573b50fddd0871d3ef.jpg
     - http://azbyka.ru/days/assets/img/saints/326/p193vf2mrq12k71rjm10llgrj16053.png
-   служба: Михаилу Небесному Воеводе служба
+   служба:
+    - Михаилу Небесному Воеводе служба
+    - http://azbyka.ru/days/caa/47
+    - http://azbyka.ru/days/caa/48
    событие:
     - год: до I
       описание: явл
@@ -43,6 +46,9 @@
        - http://upload.wikimedia.org/wikipedia/commons/c/c9/Michael_Miracle_Icon_Sinai_12th_century.jpg [α' μισό 12ου αι. μ.Χ.]
    помин:
       дата: 06.09
-      календарь: рпц,греч
+      календарь: рпц,греч,змин
       описание: чудо
-      служба: Михаилу Небесному Воеводе о чуде служба
+      служба:
+       - Михаилу Небесному Воеводе о чуде служба
+       - Михаилу Небесному Воеводе о чуде и Архиппу Херотопскому служба
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_06.pdf
