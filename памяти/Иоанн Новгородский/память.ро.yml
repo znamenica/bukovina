@@ -8,9 +8,19 @@
    вики:
     - http://drevo-info.ru/articles/14900.html
     - https://ru.wikipedia.org/wiki/Иоанн_(архиепископ_Новгородский)
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-ioann-novgorodskij
+       - http://calendar.rop.ru/svyat1/sep07-ioann-novgorodskij.html
+      гр: http://www.saint.gr/941/saint.aspx
    образ:
+    - http://calendar.rop.ru/svyat1/photos/IoannNovgorod.jpg
     - http://drevo-info.ru/images/002/003213.jpg
     - https://upload.wikimedia.org/wikipedia/commons/8/85/John_of_Novgorod%27s_reliquary_%281559%2C_GRM%29_detail_by_shakko.jpg
+    - http://www.saint.gr/photos/standard/0907/AgiosJohnNovgorod01.jpg
+    - http://azbyka.ru/days/assets/img/saints/1413/3727c3dd35fbec619a3a5b97930ce7d6.jpg
+    - http://azbyka.ru/days/assets/img/saints/1413/47dcea2599cffc6595c0ce69f0acf68b.jpg
+   служба: Иоанну Новгородскому служба
    событие:
     - год: вид.1126-1132
       описание: прств
@@ -46,9 +56,9 @@
       честь: обр
    помин:
     - дата: 07.09
+      календарь: рпц,греч,змин
       описание: прств
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_07.pdf
     - дата: 01.12
       описание: обр
       служба: Иоанну Новгородскому на обретение мощей служба
-    - описание: само
-      служба: Иоанну Новгородскому служба

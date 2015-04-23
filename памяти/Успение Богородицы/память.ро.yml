@@ -5,6 +5,11 @@
    собор: 12пр
    вики: http://drevo-info.ru/articles/1327.html
    бытие: http://azbyka.ru/days/prazdnik-uspenie-presvjatoj-vladychicy-nashej-bogorodicy-i-prisnodevy-marii
+   служба:
+    - Успению Богородицы служба
+    - http://azbyka.ru/days/caa/245
+    - http://azbyka.ru/days/caa/246
+    - http://azbyka.ru/days/caa/247
    событие:
     - год: I
       описание: само
@@ -18,12 +23,7 @@
        - http://azbyka.ru/days/assets/upload/minei/08/minea_08_14.pdf
     - дата: 15.08
       описание: само
-      служба:
-       - Успению Богородицы служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_15.pdf
-       - http://azbyka.ru/days/caa/245
-       - http://azbyka.ru/days/caa/246
-       - http://azbyka.ru/days/caa/247
+      служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_15.pdf
     - дата: 23.08
       описание: отд
       служба:
