@@ -8,7 +8,9 @@
    вики:
     - http://drevo-info.ru/articles/4457.html
     - https://ru.wikipedia.org/wiki/Курская_Коренная_икона_Божией_Матери
-   бытие: http://azbyka.ru/days/ikona-znamenie-kurskaja-korennaja
+   бытие:
+    - http://azbyka.ru/days/ikona-znamenie-kurskaja-korennaja
+    - http://calendar.rop.ru/icons1/sep08-ikona-znamenie.html
    образ:
     - http://drevo-info.ru/images/001/000737.jpg
     - http://drevo-info.ru/images/001/000736.jpg
@@ -80,6 +82,7 @@
     - дата: пт.по всех
       описание: само
     - дата: 08.09
+      календарь: рпц
       описание: обр
     - дата: 27.11
       описание: вид

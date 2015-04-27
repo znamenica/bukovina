@@ -1,0 +1,23 @@
+---
+Росинская обитель:
+   имя: Росинская
+   описание:
+      ру: обитель
+      гр: Σύναξη της Παναγίας της Δροσιανής στην Νάξο
+   чин: обит
+   вид: Росинский образ
+   собор: накс
+   бытие:
+      гр: http://www.saint.gr/3487/saint.aspx
+   слики:
+    - http://www.saint.gr/photos/standard/0908/PanagiaDrosiani01.jpg
+    - http://www.saint.gr/photos/standard/0908/PanagiaDrosiani04.jpg
+    - http://www.saint.gr/photos/standard/0908/PanagiaDrosiani06.jpg
+    - http://www.saint.gr/photos/standard/0908/PanagiaDrosiani07.jpg
+    - http://www.saint.gr/photos/standard/0908/PanagiaDrosiani08.jpg
+    - http://www.saint.gr/photos/standard/0908/PanagiaDrosiani09.jpg
+    - http://www.saint.gr/photos/standard/0908/PanagiaDrosiani10.jpg
+   событие:
+      год: IV-VI
+      описание: обн
+      место: Наксос. Балканы

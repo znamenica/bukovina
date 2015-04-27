@@ -1,0 +1,18 @@
+---
+Врачевницкая обитель:
+   имя: Врачевницкая
+   описание:
+      ру: обитель
+      гр: Σύναξη της Παναγίας της Γιάτρισσας στη Μάνη
+   чин: обит
+   вид: Врачевница образ
+   собор: лако,меси
+   бытие:
+      гр: http://www.saint.gr/4145/saint.aspx
+   слики:
+    - http://www.im-manis.gr/images/stories/IERA_MONH/orizonties/10.jpg
+    - http://www.im-manis.gr/images/stories/IERA_MONH/orizonties/9.jpg
+   событие:
+      год: до 1863
+      описание: обн
+      место: Мессиния/Лакония

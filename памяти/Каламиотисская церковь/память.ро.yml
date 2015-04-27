@@ -1,0 +1,24 @@
+---
+Каламиотисская церковь:
+   имя: Каламиотисская (вид.Высокогорненская?), Анафская
+   описание:
+      ру: церковь
+      гр: Σύναξη της Παναγίας της Καλαμιώτισσας στην Ανάφη
+   чин: храм
+   собор: анаф
+   бытие:
+      гр: http://www.saint.gr/3479/saint.aspx
+   слики:
+    - http://www.saint.gr/photos/standard/0908/PanagiaKalamiotissa02.jpg
+    - http://www.saint.gr/photos/standard/0908/PanagiaKalamiotissa01.jpg
+    - http://www.saint.gr/photos/standard/0908/PanagiaKalamiotissa03.jpg [Το καθολικό της Παλαιάς Μονής Καλαμιωτίσσης Ανάφης]
+    - http://www.saint.gr/photos/standard/0908/PanagiaKalamiotissa04.jpg [Η νέα Μονή Καλαμιωτίσσης Ανάφης]
+    - http://www.saint.gr/photos/standard/0908/PanagiaKalamiotissa05.jpg [Το τέμπλο του Καθολικού της νέας μονής Καλαμιωτίσσης]
+   событие:
+      год: 1850
+      описание: обн
+      место: Анафа
+   помин:
+      дата: 08.09
+      календарь: греч
+      описание: само

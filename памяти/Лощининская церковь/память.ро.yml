@@ -1,0 +1,19 @@
+---
+Лощининская церковь:
+   имя: Лощнинская
+   описание:
+      ру: церковь
+      гр: Σύναξη της Παναγίας της Λαγκαδιώτισσας στην Χαλκίδα
+   чин: храм
+   вид: Лощининский образ
+   собор: халк
+   бытие:
+      гр: http://www.saint.gr/4299/saint.aspx
+   слики:
+    - http://thalassis.files.wordpress.com/2008/09/ce9ace91ce9dce91cea0ce99cea4cea3ce91038.jpg
+    - http://thalassis.files.wordpress.com/2008/09/ce9ace91ce9dce91cea0ce99cea4cea3ce91036.jpg
+    - http://i1.trekearth.com/photos/6565/lagkadiotissa_filtered.jpg
+   событие:
+      год: вид.по 1921
+      описание: обн
+      место: Халкида

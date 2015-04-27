@@ -1,0 +1,22 @@
+---
+Врисиянская церковь:
+   имя: Врисиянская, Месохорская, Карпатская
+   описание:
+      ру: церковь
+      гр: Σύναξη της Παναγίας της Βρυσιανής στο Μεσοχώρι Καρπάθου
+   чин: храм
+   собор: карп
+   бытие:
+      гр: http://www.saint.gr/3963/saint.aspx
+   слики:
+    - http://www.saint.gr/photos/standard/0908/PanagiaVrisiani04.jpg
+    - http://www.saint.gr/photos/standard/0908/PanagiaVrisiani02.jpg
+    - http://www.saint.gr/photos/standard/0908/PanagiaVrisiani03.jpg
+   событие:
+      год: по X
+      описание: обн
+      место: Месохоры. Карпаты
+   помин:
+      дата: 08.09
+      календарь: греч
+      описание: само
