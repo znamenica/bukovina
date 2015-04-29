@@ -4,9 +4,11 @@
    чин: мчч
    бытие: http://azbyka.ru/days/sv-sobor-novomuchenikov-i-ispovednikov-kazahstanskih
    крат: нмк
-   собор: нмр
+   собор: нмр,казх
    образ: http://azbyka.ru/days/assets/img/saints/6503/p182ebq75e11tji4t1t2j1i841ol83.jpg
-   служба: http://azbyka.ru/days/sv-sobor-novomuchenikov-i-ispovednikov-kazahstanskih
+   служба:
+    - http://azbyka.ru/days/sv-sobor-novomuchenikov-i-ispovednikov-kazahstanskih
+    - http://azbyka.ru/days/worship/5
    событие:
     - год: 1918-1950-е
       описание: прств

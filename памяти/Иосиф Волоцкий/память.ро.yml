@@ -1,15 +1,22 @@
 ---
 Иосиф Волоцкий:
-   имя: в иночестве Иосиф, в крещении Иван
+   имя:
+      ру: в иночестве Иосиф, в крещении Иоанн
+      гр: Ιωσήφ
    отчество: Санин
-   описание: чудотворец, настоятель Волоцкий (Волоколамский)
+   описание:
+      ру: чудотворец, настоятель Волоцкий (Волоколамский)
+      гр: ο θαυματουργός ο εν Βελόν
    чин: прп
-   собор: мск,твер
+   собор: мск,твер,брвс,влкл,куп
    вики:
     - http://drevo-info.ru/articles/1788.html
     - http://ru.wikipedia.org/wiki/Иосиф_Волоцкий
-   бытие: http://azbyka.ru/days/sv-iosif-volockij-volokolamskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-iosif-volockij-volokolamskij
+      гр: http://www.saint.gr/989/saint.aspx
    образ:
+    - http://www.saint.gr/photos/standard/0909/OsiosIosifBeloni01.jpg
     - http://drevo-info.ru/images/001/001858.jpg
     - http://azbyka.ru/days/assets/img/saints/4936/75c5bf105033ef35741c7cdc3411ac4d.jpg
     - http://azbyka.ru/days/assets/img/saints/4936/b9edfad0f3f2f049690b91eebd23169d.jpg
@@ -17,27 +24,39 @@
     - http://www.ikona-kiot.ru/wp-content/uploads/iosif-volotskiy-1.jpg
     - http://pravicon.com/icon-2023
    отечник: http://azbyka.ru/otechnik/Iosif_Volotskij/
+   служба:
+    - Иосифу Волоцкому служба
+    - http://azbyka.ru/days/caa/58
+    - http://azbyka.ru/days/caa/59
+    - http://azbyka.ru/days/caa/60
    событие:
     - год: 1439
       описание: ржд
     - год: ок.1459
       описание: иноч
-      место: Боровский монастырь
+      место: Богородицерождественская Пафнутьева обитель. Боровск
     - год: 1515
       дата: 09.09
       описание: прств
-      место: вид.Иосифо-Волоколамский монастырь
+      место: вид.Иосифо-Волоколамский монастырь. Волоколамье
+    - год: 1579
+      собор: рус
+      чин: прп?
+      описание: просл
+    - год: по 1579
+      описание: обр
+      место: вид.Иосифо-Волоколамский монастырь. Волоколамье
+    - год: по 1579
+      описание: прен
+      место: Успенский собор. Иосифо-Волоколамский монастырь. Волоколамье
     - год: 2001
       дата: 18.10
       описание: обр
    помин:
     - дата: 09.09
+      календарь: рпц
       описание: прств
-      служба:
-       - Иосифу Волоцкому служба
-       - http://azbyka.ru/days/caa/58
-       - http://azbyka.ru/days/caa/59
-       - http://azbyka.ru/days/caa/60
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_09.pdf
     - дата: 18.10
       описание: обр
       служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_18.pdf
