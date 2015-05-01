@@ -1,0 +1,37 @@
+---
+Мал Послушливый:
+   имя:
+      ру: в иночестве Павел
+      гр: Παύλος
+   прозвище:
+      ру: Послушливый
+      гр: Υπάκουος
+   описание:
+      ру: инок Печерский; в Дальних Пещерах
+      гр: «εν τω Σπηλαίω»
+   чин: прп
+   собор: дпеч
+   вики: http://drevo-info.ru/articles/7018.html
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-pavel-pecherskij-poslushlivyj
+       - http://calendar.rop.ru/svyat1/sep10-pavel-dp.html
+      гр: http://www.saint.gr/2629/saint.aspx
+   образ: http://www.saint.gr/photos/standard/0910/OsiosPaulosSpilaion01.jpg
+   служба: Малу Послушливому служба
+   событие:
+    - год: XIII-XIV
+      описание: иноч
+      место: вид.Печерская обитель. Киев
+      тез: Мал Никейский
+    - год: XIII-XIV
+      описание: прств
+      место: Печерская обитель. Киев
+    - год: XIII-XIV
+      описание: пгрб
+      место: Феодосиевы пещеры. Киев
+   помин:
+      дата: 10.09
+      календарь: рпц,греч
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_10.pdf

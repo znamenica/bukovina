@@ -1,16 +1,22 @@
 ---
 Климент Сардийский:
-   имя: Климент
-   описание: Сардийский, Римский
-   чин: ап70
+   имя:
+      ру: Климент (Клим)
+      гр: Κλήμης (Κλήμηντος, Κλήμεντος)
+   описание: святитель Сардийский
+   чин: ап
+   собор: ап70,свтт,лид,3апм
    вики: http://drevo-info.ru/articles/7017.html
-   бытие: http://azbyka.ru/days/sv-kliment-rimskij
+   бытие: http://azbyka.ru/days/sv-kliment
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/1011/p190h14pjo2urm501tvd2v31ep43.jpg
+    - http://azbyka.ru/days/assets/img/saints/1011/p190h15cda39h1gmbpnoid81p5u5.jpg
+    - http://azbyka.ru/days/assets/img/saints/1011/p183pkm5l412ji1i3erpn5aq12s27.jpg
+   служба: Клименту Сардийскому служба
    событие:
       год: I
       описание: прств
+      место: вид.Сарды. Лидия
    помин:
-    - дата: 10.09
+      дата: 22.04
       описание: само
-    - дата: 22.04
-      описание: само
-      служба: Клименту Сардийскому служба
