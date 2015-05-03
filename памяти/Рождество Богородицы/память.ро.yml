@@ -46,3 +46,9 @@
       календарь: рпц,змин,греч
       описание: само
       служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_08.pdf
+    - дата: 12.09
+      календарь: рпц,змин
+      описание: отд
+      служба:
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_12.pdf
+       - Отданию Рождества Богородицы служба

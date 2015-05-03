@@ -1,0 +1,31 @@
+---
+Корнут Никомидийский:
+   имя:
+      ру: Корнут
+      гр: Κουρνούτος
+   описание:
+      ру: святитель Никомидийский; мученик Иконийский; обезглавлен язычниками
+      гр: Ιερομάρτυρας επίσκοπος Ικονίου
+   чин: сщмч
+   собор: виф,лика
+   вики: http://drevo-info.ru/articles/7069.html
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-kornut-nikomidijskij-ikonijskij
+       - http://calendar.rop.ru/svyat1/sep12-kornut.html
+      гр: http://www.saint.gr/2410/saint.aspx
+   образ:
+    - http://pravicon.com/icon-2212
+    - http://azbyka.ru/days/assets/img/saints/4355/p183q1n0kh7tjmb61o551o9pn6t3.jpg
+    - http://www.saint.gr/photos/standard/0912/AgiosKornoutosIkoniou01.jpg
+   событие:
+    - год: вид.до 249
+      описание: свят
+      место: вид.Никомидия. Вифиния
+    - год: 249-259
+      описание: прств
+      место: вид.Икония. Ликаония (ныне Конья. Турция)
+   помин:
+      дата: 12.09
+      календарь: рпц,греч
+      описание: само

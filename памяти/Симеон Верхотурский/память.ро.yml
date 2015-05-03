@@ -1,11 +1,13 @@
 ---
 Симеон Верхотурский:
    имя: Симеон
-   описание: странник Верхотурский, подвижник Меркушинский
+   описание: странник Верхотурский; подвижник Меркушинский
    чин: прав
-   собор: ека,сиб,двор
+   собор: ека,сиб,двор,втур,алап
    вики: http://drevo-info.ru/articles/11413.html
-   бытие: http://azbyka.ru/days/sv-simeon-verhoturskij-merkushinskij
+   бытие:
+    - http://azbyka.ru/days/sv-simeon-verhoturskij-merkushinskij
+    - http://calendar.rop.ru/svyat1/sep12-simeon.html
    образ:
     - http://azbyka.ru/days/assets/img/saints/3849/2adae3ae59d2c249e4389ccba6445499.jpg
     - http://drevo-info.ru/images/003/009515.jpg
@@ -14,6 +16,8 @@
     - http://azbyka.ru/days/assets/img/saints/3849/p190orfjcgl3i1r3f1ffq1mo68sv5.jpg
     - http://azbyka.ru/days/assets/img/saints/3849/b8549755ce12f0289aecc490f171afe0.jpg
     - http://pravicon.com/icon-2891
+    - http://calendar.rop.ru/svyat1/photos/SimeonVerhotur.jpg
+   служба: http://azbyka.ru/days/caa/71
    событие:
     - год: ок.1607
       описание: ржд
@@ -21,14 +25,14 @@
       описание: прств
     - год: 1642
       описание: пгрб
-      место: близ.Михайло-Архангельская церковь. Меркушинское село
+      место: близ.Михайло-Архангельская церковь. Меркушинское село (ныне Алапаевье)
     - год: 1694
       дата: 18.12
       описание: просл
     - год: 1704
       дата: 12.09
       описание: прен
-      место: Верхотурский Николо-Мирликийский монастырь
+      место: Верхотурская Николо-Мирликийская обитель
     - год: 1992
       дата: 12.05
       описание: обр.2
@@ -36,12 +40,13 @@
     - дата: 12.05
       описание: обр.2
     - дата: 12.09
+      календарь: рпц,змин
       описание: прен
-      служба: Симеону Верхотурскому на пренесение мощей служба
+      служба:
+       - Симеону Верхотурскому на пренесение мощей служба
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_12.pdf
     - дата: 18.12
       описание: просл
       служба:
        - Симеону Верхотурскому на прославление служба
        - http://azbyka.ru/days/assets/upload/minei/12/minea_12_18.pdf
-    - описание: само
-      служба: http://azbyka.ru/days/caa/71

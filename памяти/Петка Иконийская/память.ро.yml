@@ -2,10 +2,13 @@
 Петка Иконийская:
    имя: Петка (Пятница, Пятина, Параскева)
    чин: вмц
+   собор: лика
    вики:
     - http://drevo-info.ru/articles/11585.html
     - http://ru.wikipedia.org/wiki/Святая_Параскева
-   бытие: http://azbyka.ru/days/sv-paraskeva-pjatnica
+   бытие:
+    - http://azbyka.ru/days/sv-paraskeva-pjatnica
+    - http://calendar.rop.ru/svyat1/oct28-paraskeva-ptc.html
    образ:
     - http://drevo-info.ru/images/001/001948.jpg
     - http://azbyka.ru/days/assets/img/saints/5675/2fdf480939846a7ae5c12cdaf507a98c.jpg
@@ -19,16 +22,20 @@
     - http://azbyka.ru/days/assets/img/saints/5675/0bf57704af4836760223a935d377ed87.jpg
     - http://azbyka.ru/days/assets/img/saints/5675/82b0fbd34ab3b0fa38aff608f27d22d3.jpg
     - http://azbyka.ru/days/assets/img/saints/5675/bfd2ee02f1d6c8597ded4c63c78adaf6.jpg
+   служба:
+    - Петке Иконийской служба
+    - http://azbyka.ru/days/caa/289
+    - http://azbyka.ru/days/caa/290
+    - http://azbyka.ru/days/caa/291
    событие:
-      год: III
+    - год: II-III
+      описание: ржд
+      место: вид.Икония. Ликаония (ныне Конья. Турция)
+    - год: III
       описание: прств
-      место: Икония
+      место: Икония. Ликаония (ныне Конья. Турция)
    помин:
       дата: 28.10
+      календарь: рпц
       описание: само
-      служба:
-       - Петке Иконийской служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_28.pdf
-       - http://azbyka.ru/days/caa/289
-       - http://azbyka.ru/days/caa/290
-       - http://azbyka.ru/days/caa/291
+      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_28.pdf
