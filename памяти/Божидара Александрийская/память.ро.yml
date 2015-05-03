@@ -1,15 +1,40 @@
 ---
 Божидара Александрийская:
-   имя: Феодора
-   описание: дева Александрийская
-   чин: мц
-   вики: http://drevo-info.ru/articles/5907.html
-   бытие: http://azbyka.ru/days/sv-feodora-aleksandrijskaja
+   имя:
+      ру: Феодора
+      гр: Θεοδώρα
+   прозвище: Младшая
+   описание:
+      ру: подвижница Александрийская
+      гр: από την Αλεξάνδρεια
+   чин: прп
+   вики: http://drevo-info.ru/articles/5909.html
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-feodora-aleksandrijskaja-mladshaja
+       - http://calendar.rop.ru/svyat1/sep11-feodora.html
+      гр: http://www.saint.gr/1001/saint.aspx
+   образ:
+    - http://www.saint.gr/photos/standard/0911/OsiaTheodora02.jpg
+    - http://www.saint.gr/photos/standard/0911/OsiaTheodora01.jpg
+   служба: Божидаре Александрийской служба
    событие:
-      год: 303-304
+    - год: вид.перв.пол.V
+      описание: брак
+      место: Александрия. Египет
+    - год: вид.перв.пол.V
+      описание: иноч
+      место: Александрия. Египет
+    - год: 474-491
       описание: прств
+      место: Александрия. Египет
    помин:
-    - дата: 05.04
+    - дата: 12.01
+      собор: греч
       описание: само
-    - дата: 27.05
+    - дата: 11.09
+      календарь: рпц,греч,змин
       описание: само
+      служба:
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_11.pdf
+       - Божидаре Александрийской и Автоному Италийскому служба
