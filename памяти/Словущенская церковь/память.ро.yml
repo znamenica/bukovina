@@ -1,0 +1,31 @@
+---
+Словущенская церковь:
+   имя: Словущенская
+   описание: Воскресенская церковь в Иерусалиме
+   чин: храм
+   честь: Воскресение Христово
+   вики: http://drevo-info.ru/articles/3775.html
+   бытие:
+    - http://azbyka.ru/days/prazdnik-pamjat-obnovlenija-osvjashchenija-hrama-voskresenija-hristova-v-ierusalime-voskresenie-slovushchee-335
+    - http://calendar.rop.ru/svyat1/sep13-hram.html
+   слика:
+    - http://upload.wikimedia.org/wikipedia/commons/3/38/5267-20080122-jerusalem-tomb-of-jesus.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/a/a0/Church_of_the_Holy_Sepulchre_in_Jerusalem.jpg
+    - http://www.saint.gr/photos/standard/0913/AnamnisiEgainionNaouAnastaseos01.jpg
+   событие:
+    - год: 335
+      описание: созд
+      место: Иерусалим
+    - год: 335
+      дата: 13.09
+      описание: обн
+      описание_: Воскресение словущее
+   помин:
+      дата: 13.09
+      описание: обн
+      календарь: рпц,греч
+      служба:
+       - Словущенской церкви на обновление служба
+       - Воздвижение Креста/Предпразднества Воздвижения Креста, Словущенской церкви на
+         обновление и Корнилию Сотнику служба
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_13.pdf

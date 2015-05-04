@@ -1,0 +1,27 @@
+---
+Аристид:
+   имя:
+      ру: Аристид
+      гр: Αριστείδης
+   описание:
+      ру: мудрец и мученик Афинский
+   чин: мч
+   собор: афин
+   бытие:
+      гр: http://www.saint.gr/2426/saint.aspx
+   образ:
+    - http://www.pigizois.net/sinaxaristis/09/13_aristidis.jpg
+    - http://www.saint.gr/photos/standard/0913/AgiosAristidis02.jpg
+    - http://www.saint.gr/photos/standard/0913/AgiosAristidis04.jpg
+   событие:
+    - год: вт.пол.I
+      описание: ржд
+      место: Афины
+    - год: 120
+      дата: 13.09
+      описание: прств
+      место: Афины
+   помин:
+      дата: 13.09
+      календарь: греч
+      описание: прств

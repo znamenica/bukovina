@@ -5,7 +5,9 @@
    чин: сщмч
    собор: галт,41мг
    вики: http://drevo-info.ru/articles/7073.html
-   бытие: http://azbyka.ru/days/sv-iulian-galatijskij
+   бытие:
+    - http://azbyka.ru/days/sv-iulian-galatijskij
+    - http://calendar.rop.ru/svyat1/sep12-iulian.html
    образ:
     - http://pravicon.com/icon-2087
     - http://azbyka.ru/days/assets/img/saints/2020/p183q1eisht3ojm83kj1g0iugv3.jpg
@@ -16,4 +18,5 @@
       место: Анкира. Галатия
    помин:
       дата: 13.09
+      календарь: рпц
       описание: само
