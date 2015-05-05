@@ -7,8 +7,10 @@
    собор: свпп,лика,исвр
    вики: http://drevo-info.ru/articles/5419.html
    бытие:
-    - http://azbyka.ru/days/sv-papa-larandskij
-    - http://www.saint.gr/3898/saint.aspx
+      ру: http://azbyka.ru/days/sv-papa-larandskij
+      гр:
+       - http://www.saint.gr/3898/saint.aspx
+       - http://www.saint.gr/2394/saint.aspx
    образ:
     - http://pravicon.com/icon-2661
     - http://azbyka.ru/days/assets/img/saints/1430/p18hb25inlhtcpr21dbv6ni11id3.jpg
@@ -19,3 +21,7 @@
     - год: 305-311
       описание: прств
       место: вид.Селевкия. Исаврия
+   помин:
+      дата: 14.09
+      календарь: греч
+      описание: само

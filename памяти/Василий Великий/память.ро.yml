@@ -4,7 +4,7 @@
    прозвище: Великий
    описание: святитель Каппадокийский, Кесарии Каппадокийской, сын Емилии Кесарийской
    чин: свт
-   собор: трисв,капд
+   собор: 3свт,капд
    вики: http://drevo-info.ru/articles/213.html
    отечник: http://azbyka.ru/otechnik/Vasilij_Velikij/
    бытие: http://pravicon.com/info-1929
@@ -21,6 +21,10 @@
     - http://azbyka.ru/days/assets/img/saints/4221/a77703232aba085d82a926482c52ca79.jpg
     - http://azbyka.ru/days/assets/img/saints/4221/95e556f27cbdb49b6af9c38ef3bb845b.jpg
    отечник: http://azbyka.ru/otechnik/Vasilij_Velikij/
+   служба:
+    - Василию Великому служба
+    - http://azbyka.ru/days/caa/374
+    - http://azbyka.ru/days/caa/375
    событие:
     - год: ок.330
       описание: ржд
@@ -41,8 +45,5 @@
       дата: 01.01
       описание: само
       служба:
-       - Василию Великому служба
        - Обрезание Христово/Обрезанию Христову и Василию Великому служба
        - http://azbyka.ru/days/assets/upload/minei/01/minea_01_01.pdf
-       - http://azbyka.ru/days/caa/374
-       - http://azbyka.ru/days/caa/375
