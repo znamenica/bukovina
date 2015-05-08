@@ -5,11 +5,31 @@
    чин: ап
    собор: ап70,евр,плст
    вики: http://drevo-info.ru/articles/2653.html
-   бытие: http://azbyka.ru/days/sv-stefan
+   бытие:
+      ру: http://azbyka.ru/days/sv-stefan
+      гр: http://www.saint.gr/3153/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/221/p18facjf2h1l11i8e1pon1dil19ar7.jpg
     - http://azbyka.ru/days/assets/img/saints/221/8c6da8441dca6f41404f9c06962beb5c.jpg
     - http://drevo-info.ru/images/001/001189.jpg
+    - http://www.saint.gr/photos/standard/0915/AgiosStephanos01.jpg
+    - http://www.pigizois.net/sinaxaristis/08/02.jpg
+    - http://www.saint.gr/photos/standard/0802/AgiosStefanos02.jpg
+    - http://www.saint.gr/photos/standard/1227/AgiosStefanosProtomartyras02.jpg
+    - http://www.saint.gr/photos/standard/1227/AgiosStefanosProtomartyras01.jpg
+    - http://www.saint.gr/photos/standard/1227/AgiosStefanosProtomartyras03.jpg
+    - http://www.saint.gr/photos/standard/1227/AgiosStefanosProtomartyras04.jpg
+    - http://www.saint.gr/photos/standard/1227/AgiosStefanosProtomartyras05.jpg
+    - http://www.saint.gr/photos/standard/1227/AgiosStefanosProtomartyras06.jpg [Απεικόνιση του 6ου αιώνα μ.Χ.]
+    - http://www.impaphou.org/images/sce/%CE%91%20%CE%A3%CF%84%CE%AD%CF%86%CE%B1%CE%BD%CE%BF%CF%82.jpg
+    - http://3.bp.blogspot.com/-mot6jTE33Ic/Ta2DRKMUd7I/AAAAAAAAAB4/WQZxN4Ek6bc/s1600/agios+stefanos+2.jpg
+    - http://www.saint.gr/photos/standard/1227/AgiosStefanosProtomartyras09.jpg
+    - http://www.imga.gr/images/pitsidia_naos_ag_koudouma%20%2841%29.JPG [Ι. Ν. Οσίων Παρθενίου και Ευμενίου των εν]
+    - http://www.saint.gr/photos/standard/1227/AgioiStefanosPaulosXiropatomou01.jpg [μέσα του 18 αι. μ.Χ., Nέα Σκήτη Άγιον Όρος]
+    - http://www.saint.gr/photos/standard/1227/AgioiStefanosNikolaosIoannisTheologos01.jpg [16ος και 18ος αι. μ.Χ. - Πρωτάτο, Άγιον Όρος]
+   служба:
+    - Стефану Первомученику служба
+    - http://azbyka.ru/days/caa/83
    событие:
     - год: ок. 4
       описание: ржд
@@ -21,9 +41,18 @@
     - год: 415
       описание: обр
       место: Гамла село. Палестина
+      описание_:
+         гр: Εύρεσις του Τιμίου Λειψάνου του Αγίου Πρωτομάρτυρα Στεφάνου
+      бытие:
+         ру: http://calendar.rop.ru/svyat1/sep15-stefan.html
+         гр: http://www.saint.gr/2438/saint.aspx
     - год: ок.428
       описание: прен
       место: Лаврентьевская церква. Константинополь
+      бытие:
+         гр: http://www.saint.gr/2191/saint.aspx
+      описание_:
+         гр: Ανακομιδή του Ιερού Λειψάνου του Αγίου Πρωτομάρτυρα Στεφάνου
     - год: по 428
       дата: 02.08
       описание: прен.1
@@ -33,16 +62,17 @@
       собор: греч
       описание: само
     - дата: 02.08
+      календарь: греч
       описание: прен.1
       служба:
        - Стефану Первомученику на пренесение мощей служба
        - http://azbyka.ru/days/assets/upload/minei/08/minea_08_02.pdf
     - дата: 15.09
+      календарь: рпц,греч
       описание: обр
     - дата: 27.12
+      календарь: греч
       описание: само
       служба:
-       - Стефану Первомученику служба
        - Стефану Первомученику и Божидару Писанному служба
        - http://azbyka.ru/days/assets/upload/minei/12/minea_12_27.pdf
-       - http://azbyka.ru/days/caa/83
