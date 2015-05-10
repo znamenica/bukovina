@@ -1,40 +1,62 @@
 ---
 Евфимия Всехвальная:
-   имя: Евфимия
+   имя:
+      ру: Евфимия
+      гр: Ευφημία
    отчество: Филофроновна
-   описание: Всехвальная
+   прозвище: Всехвальная
+   описание: великомученица Халкидонская (Византия)
    чин: вмц
-   собор: виз,4вс,виф
+   собор: виз,4вс,виф,лмнс
    вики: http://drevo-info.ru/articles/1767.html
-   бытие: http://azbyka.ru/days/sv-evfimija-vsehvalnaja
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-evfimija-vsehvalnaja
+       - http://calendar.rop.ru/svyat1/sep16-evfimiya.html
+      гр: http://www.saint.gr/2445/saint.aspx
    образ:
     - http://drevo-info.ru/images/002/007323.jpg
     - http://azbyka.ru/days/assets/img/saints/6028/468da71b00c4c2571da15bbca24c661e.jpg
     - http://azbyka.ru/days/assets/img/saints/6028/a134cccf874c13008372622e80e04eb1.jpg
     - http://azbyka.ru/days/assets/img/saints/6028/7b7db3f01226444f58990b48371228f0.jpg
+    - http://www.porphyrios.gr/files/jpg/%CE%95%CE%B9%CE%BA%CF%8C%CE%BD%CE%B5%CF%82/%CE%86%CE%B3%CE%B9%CE%BF%CE%BD%20%CE%8C%CF%81%CE%BF%CF%82/%CE%9A%CE%B1%CF%81%CF%85%CE%AD%CF%82/%CE%A0%CE%B1%CF%87%CF%89%CE%BC%CE%B1%CE%AF%CE%BF%CE%B9/%CE%A6%CE%BF%CF%81%CE%B7%CF%84%CE%AD%CF%82/%CE%86%CE%B3%CE%B9%CE%BF%CE%B9/%CE%95%CF%85%CF%86%CE%B7%CE%BC%CE%AF%CE%B1%20%CE%9C%CE%B5%CE%B3%CE%B1%CE%BB%CE%BF%CE%BC%CE%AC%CF%81%CF%84%CF%85%CF%82.jpg
+    - http://www.pigizois.net/sinaxaristis/09/16.jpg
+    - http://www.saint.gr/photos/standard/0916/AgiaEufimia02.jpg
+    - http://www.saint.gr/photos/standard/0916/AgiaEufimia05.jpg
+    - http://www.saint.gr/photos/standard/0916/AgiaEufimia03.jpg
+    - http://www.saint.gr/photos/standard/0916/AgiaEufimia06.jpg
+    - http://3.bp.blogspot.com/-LC46dSDC0GY/ThbS-xMrQ0I/AAAAAAAAFfM/UoQqfeV3Nwk/s1600/11.%2B%25CE%2595%25CE%25A5%25CE%25A6%25CE%2597%25CE%259C%25CE%2599%25CE%2591%2B%25CE%259C%25CE%2595%25CE%2593%25CE%2591%25CE%259B%25CE%259F%25CE%259C%25CE%2591%25CE%25A1%25CE%25A4%25CE%25A5%25CE%25A3%2B%25281%2529.jpg
+    - http://www.saint.gr/photos/standard/0916/AgiaEufimia08.jpg [ΑΨΜΑ´ (1741 μ.Χ.) Ἰουλίου 13, διὰ χειρὸς τοῦ Ἱεροθέου]
+   служба:
+    - Евфимии Всехвальной служба
+    - http://azbyka.ru/days/caa/85
    событие:
     - год: 304
       описание: прств
+      место: Халкидон. Византия
+    - год: по 304
+      описание: обр
       место: Халкидон. Византия
     - год: 451
       описание: чудо
     - год: 617
       описание: прен
-      место: Константинополь
+      место: Константинополь. Византия
     - год: VII-VIII
       описание: прен.1
       место: Лемнос остров
     - год: 796
       описание: прен.2
-      место: Константинополь
+      место: Константинополь. Византия
    помин:
     - дата: 11.07
+      календарь: змин
       описание: чудо
       служба:
        - Евфимии Всехвальной о чуде служба
+       - Евфимии Всехвальной о чуде и Ольге Русской на преставление служба
        - http://azbyka.ru/days/assets/upload/minei/07/minea_07_11.pdf
     - дата: 16.09
+      календарь: рпц,змин
       описание: само
-      служба:
-       - Евфимии Всехвальной служба
-       - http://azbyka.ru/days/caa/85
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_16.pdf

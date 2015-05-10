@@ -1,0 +1,33 @@
+---
+Призри на Смирение образ:
+   имя: Призри на Смирение
+   описание: образ Богородицы
+   чин: обр
+   собор: пск
+   вики: http://drevo-info.ru/articles/6093.html
+   бытие:
+    - http://azbyka.ru/days/ikona-prizri-na-smirenie
+    - http://calendar.rop.ru/icons1/sep16-ikona-smirenie.html
+   образ:
+    - http://calendar.rop.ru/icons1/photos/Prizri.jpg
+    - http://azbyka.ru/days/assets/img/icons/17/p18td2feeobo61ib519m1dd9ok73.png
+    - http://azbyka.ru/days/assets/img/icons/17/8a05c2a3af449f0847a44ce15066309a.jpg
+    - http://azbyka.ru/days/assets/img/icons/17/ecf2e06364602a14033714b3de04b41d.jpg
+    - http://drevo-info.ru/images/001/001065.jpg
+   служба:
+    - Призри на Смирение образу служба
+    - http://azbyka.ru/days/caa/630
+   событие:
+    - год: 1420
+      описание: явл
+      место: Псковщина
+    - год: 1420
+      дата: 16.09
+      описание: прен
+      место: Свято-Троицкий собор. Псков
+    - год: 1917
+      описание: утр
+   помин:
+      дата: 16.09
+      календарь: рпц
+      описание: прен
