@@ -6,8 +6,10 @@
    крат: 3мдв
    собор: пдун,плдв
    бытие:
-    - http://calendar.rop.ru/svyat1/sep15-maxim-askliada.html
-    - http://azbyka.ru/days/saint/364/4613/6290/group
+      ру:
+       - http://calendar.rop.ru/svyat1/sep15-maxim-askliada.html
+       - http://azbyka.ru/days/saint/364/4613/6290/group
+      гр: http://www.saint.gr/2454/saint.aspx
    образ: http://azbyka.ru/days/assets/img/saints/364/p183q4upa51iot1k73ngt7rp11215.jpg
    событие:
     - год: вт.пол.III
@@ -17,6 +19,9 @@
       описание: прств
       место: Салтис село. Филиппополье (Пловдивье). Фракия
    помин:
-      дата: 15.09
+    - дата: 15.09
       календарь: рпц
+      описание: само
+    - дата: 17.09
+      календарь: греч
       описание: само
