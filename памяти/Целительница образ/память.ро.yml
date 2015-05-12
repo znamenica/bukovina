@@ -1,0 +1,27 @@
+---
+Целительница образ:
+   имя: Целительница
+   описание: образ Богородицы
+   чин: обр
+   собор: груз,лек
+   вики: http://drevo-info.ru/articles/16062.html
+   бытие:
+    - http://azbyka.ru/days/ikona-celitelnica
+    - http://drevo-info.ru/articles/16062.html
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/73/p197tlcg0018m8vugt1m1anoib63.jpg
+    - http://drevo-info.ru/images/002/003869.jpg
+    - http://azbyka.ru/days/assets/img/icons/73/88b5b78d47dc5277d98890858faa8664.jpg
+    - http://azbyka.ru/days/assets/img/icons/73/76fbf1733b0f25d58ca45791579b0355.jpg
+    - http://azbyka.ru/days/assets/img/icons/73/61b9e376e2a4efa22da8d12acfcfe6ef.jpg
+   служба:
+    - Целительнице образу служба
+    - http://azbyka.ru/days/caa/589
+   событие:
+      год: IV
+      описание: напис
+      место: Грузия
+   помин:
+      дата: 18.09
+      календарь: рпц
+      описание: само

@@ -1,15 +1,29 @@
 ---
 Евмений Гортинский:
-   имя: в схиме Евмений, в крещении Эммануил, в рясе Мефодий
+   имя:
+      ру: в схиме Евмений, в крещении Эммануил, в рясе Мефодий
+      гр: Ευμένιος
    фамилия: Харитакис
-   описание: святитель Гортинский
+   описание:
+      ру: святитель Гортинский
+      гр: θαυματουργός, επίσκοπος Γορτύνης
    чин: прп
    собор: крит,ксвт,фив
    вики: http://drevo-info.ru/articles/3937.html
-   бытие: http://azbyka.ru/days/sv-evmenij-gortinskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-evmenij-gortinskij
+       - http://calendar.rop.ru/svyat1/sep18-pr-evmeni.html
+      гр: http://www.saint.gr/2473/saint.aspx
    образ:
     - http://pravicon.com/icon-1694
     - http://drevo-info.ru/images/002/004321.jpg
+    - http://azbyka.ru/days/assets/img/saints/1270/p183qbvu44kgs1of8md5jjj1cq83.jpg
+    - http://azbyka.ru/days/assets/img/saints/1270/p183qc025r9mqmc21pm87oehge5.jpg
+    - http://azbyka.ru/days/assets/img/saints/1270/p183qc025s1in514su1m6m1i4e15736.jpg
+    - http://www.pigizois.net/sinaxaristis/09/18.jpg
+    - http://drevo-info.ru/images/002/004321.jpg
+   служба: Евмению Гортинскому служба
    событие:
     - год: вид.вт.пол.VI
       описание: ржд
@@ -24,5 +38,6 @@
       место: Гортина. Крит
    помин:
       дата: 18.09
-      описание: само
-      служба: Евмению Гортинскому служба
+      календарь: рпц,греч,змин
+      описание: прств
+      служба: Евмению Гортинскому на преставление служба
