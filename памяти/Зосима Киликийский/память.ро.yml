@@ -5,16 +5,19 @@
    чин: прмч
    собор: плст,килк
    вики: http://drevo-info.ru/articles/7190.html
-   бытие: http://azbyka.ru/days/sv-zosima-kilikijskij
-   образ: http://azbyka.ru/days/assets/img/saints/5224/p183qj1rfi10ja195ga4s1vn31u073.jpg
+   бытие:
+    - http://azbyka.ru/days/sv-zosima-kilikijskij
+    - http://calendar.rop.ru/svyat1/sep19-zosima.html
    событие:
     - год: вид.III
       описание: ржд
     - год: IV
       описание: прств
       место: вид.Назарет. Палестина
+      образ: http://azbyka.ru/days/assets/img/saints/5224/p183qj1rfi10ja195ga4s1vn31u073.jpg
    помин:
     - дата: 04.01
       описание: само
     - дата: 19.09
+      календарь: рпц
       описание: само

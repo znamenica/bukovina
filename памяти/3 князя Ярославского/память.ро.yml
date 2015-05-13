@@ -1,0 +1,46 @@
+---
+3 князя Ярославского:
+   описание:
+      ру: 3 князя Ярославского
+      гр: Άγιοι Θεόδωρος ο πρίγκιπας και Δαβίδ και Κωνσταντίνος οι υιοί του
+   количество: 3
+   чин: блгвв
+   крат: 3кя
+   собор: смо,ряр,яро
+   бытие:
+      ру: http://azbyka.ru/days/saint/656/192/3707/group
+      гр: http://www.saint.gr/3846/saint.aspx
+   служба:
+    - 3-м князьям Ярославским служба
+    - http://azbyka.ru/days/caa/96
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/656/p18i7ck1iaik318ustk3qiirru6.jpg
+    - http://azbyka.ru/days/assets/img/saints/656/p18i7ck1i71se4ojjtfs1cve15rj3.jpg
+    - http://azbyka.ru/days/assets/img/saints/656/d5d17841fd638bee2aacfe04c8d23e7f.jpg
+    - http://azbyka.ru/days/assets/img/saints/656/p18i7ck1i81g8u1rvochh1njpc1o4.jpg
+    - http://www.saint.gr/photos/standard/0919/AgioiTheorosDavidConstantinos01.jpg
+   событие:
+    - год: XIII
+      описание: ржд
+    - год: 1298-1323
+      описание: прств
+      место: Ярославль
+    - год: 1463
+      дата: 05.03
+      описание: обр
+      место: Спасо-Преображенская обитель. Ярославль
+    - год: 1463
+      дата: 05.03
+      описание: прен
+      место: Феодоровский собор. Ярославль
+   помин:
+    - дата: 05.03
+      календарь: рпц
+      описание: прен
+      служба:
+       - 3-м князьям Ярославским на пренесение мощей служба
+       - http://azbyka.ru/days/assets/upload/minei/03/minea_03_05.pdf
+    - дата: 19.09
+      календарь: рпц,змин,греч
+      описание: прств
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_19.pdf

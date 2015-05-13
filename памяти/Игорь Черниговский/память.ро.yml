@@ -1,32 +1,48 @@
 ---
 Игорь Черниговский:
-   имя: Игорь, в крещении Георгий, в иночестве Гавриил, в схиме Игнатий
-   отчество: Ольгович
+   имя: в наречении Игорь, в крещении Георгий, в иночестве Гавриил, в схиме Игнатий
+   отчество: Олегович
    фамилия: Рюрикович
-   описание: страстотерпец, Черниговский, великий князь Киевский
+   описание: князь Черниговский; великий князь Киевский; страстотерпец Киевский; убиен
+      боярами
    чин: блгв
-   собор: слав,рус,бря,киев,тул
+   собор: бря,киев,тул,стцц,чрнг
    вики: http://drevo-info.ru/articles/11970.html
-   бытие: http://azbyka.ru/days/sv-igor-v-kreshchenii-georgij-chernigovskij-i-kievskij
+   бытие:
+    - http://azbyka.ru/days/sv-igor-v-kreshchenii-georgij-chernigovskij-i-kievskij
+    - http://calendar.rop.ru/svyat1/sep19-igor.html
    образ:
+    - http://azbyka.ru/days/assets/img/saints/3758/p190rv8t332jhru016l8161gr5f3.jpg
+    - http://azbyka.ru/days/assets/img/saints/3758/p190rvi0rg13djoud6kg73411ab5.jpg
     - http://azbyka.ru/days/assets/img/saints/3758/6c12f788158259c52ace481887297cef.jpg
     - http://azbyka.ru/days/assets/img/saints/3758/974baa2914db3919c94a45021d654fac.jpg
+    - http://azbyka.ru/days/assets/img/saints/3758/16e253b8d6371b1b9e4be2cb9f673cf5.jpg
+    - http://azbyka.ru/days/assets/img/saints/3758/5edfd1fb55ffee9eeb835ea242a84d52.jpg
     - http://drevo-info.ru/images/001/002047.jpg
     - http://drevo-info.ru/images/001/002046.jpg
+   служба:
+    - Игорю Черниговскому служба
+    - http://azbyka.ru/days/caa/98
+    - http://azbyka.ru/days/caa/97
    событие:
+    - год: 1147
+      дата: 05.01
+      описание: иноч
+    - год: 1147
+      описание: схим
     - год: 1147
       дата: 19.09
       описание: прств
+      место: близ. Десятинная церковь. Киев
     - год: 1150
       дата: 05.06
       описание: прен
+      место: Чернигов
    помин:
-    - дата: 19.09
-      описание: прств
-      служба:
-       - Игорю Черниговскому служба
-       - http://azbyka.ru/days/caa/98
-       - http://azbyka.ru/days/caa/97
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_05.pdf
     - дата: 05.06
       описание: прен
+      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_05.pdf
+    - дата: 19.09
+      описание: прств
+      календарь: рпц,змин
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_19.pdf
