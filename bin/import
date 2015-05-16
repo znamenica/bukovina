@@ -376,10 +376,10 @@ def parse_trop memories, imeна, glas, text, cases
       lservice = petro.lastname names.last, :dative ; end
    sluzxba = File.join( imja, [ fservice, lservice, 'служба' ].join( ' ' ) )
 
-   if memory.помин.служба
-      sluzxba = memory.помин.служба
+   if memory.служба
+      sluzxba = memory.служба
    else
-      memory.помин.служба = sluzxba
+      memory.служба = sluzxba
    end
    
    [ imja, sluzxba, [ kind, glas, text ] ] ; end
@@ -398,7 +398,6 @@ def new_person
    memin = Hashie::Mash.new
    memin.дата = nil
    memin.описание = nil
-   memin.служба = nil
    person = Hashie::Mash.new
    person.имя = ''
    person.прозвище = []
@@ -408,8 +407,9 @@ def new_person
    person.собор = []
    person.вики = nil
    person.бытие = nil
-   person.отечник = nil
    person.образ = []
+   person.отечник = nil
+   person.служба = nil
    person.событие = event
    person.помин = memin
    person ; end
@@ -843,7 +843,7 @@ people.keys.each do| imja |
      memory.помин.описание ||= 'само'
    end
    memory.помин.дата = sprintf( "%.2i.%.2i", day, month )
-   memory.помин.служба = memory.помин.служба && memory.помин.служба.split( '/' ).last
+   memory.служба = memory.служба && memory.служба.split( '/' ).last
    memory.фамилия = memory.фамилия.select{|a|!a.empty?}.join( ' ' ).strip
    memory.описание = memory.прозвище.select{|a|!a.empty?}.concat(memory.описание.select{|a|!a.empty?}).reverse.join( ' ' ).strip
    memory.прозвище = ''
@@ -915,8 +915,7 @@ Dir.foreach( "мѣсѧцесловъ/%02i" % month ) do| file |
    while !memory
      name = $stdin.gets.strip
      memory = people[ name ] ; end
-   pomin = memory[ 'помин' ]
-   sluzxba = ( pomin.is_a?( Array ) && pomin[ 0 ] || pomin )[ 'служба' ]
+   sluzxba = memory[ 'служба' ]
    if !sluzxba
       rod = :male
       if memory[ 'чин' ] =~ /мц/
@@ -955,8 +954,8 @@ files=`git status -s|grep "^[AM] "|sed "s/^.. //"`.split("\n")
 
 
 log >> { files: files.join(' ') }
-p = fork { exec "gvim -f мѣсѧцесловъ/%02i/%02i.ро.yml" % [ month, day ] }
-Process.wait p
+#p = fork { exec "gvim -f мѣсѧцесловъ/%02i/%02i.ро.yml" % [ month, day ] }
+#Process.wait p
 
 files.each do| file |
    `git add -f #{file}`
