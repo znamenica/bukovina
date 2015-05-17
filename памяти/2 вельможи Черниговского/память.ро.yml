@@ -1,26 +1,25 @@
 ---
-Михаил Черниговский:
-   имя: Михаил
-   прозвище: Чёрный
-   отчество: Всеволодович
-   описание: князь Новгородский, Черниговский; обезглавлен
-   чин: блгв
-   собор: бря,мск,тул,стцц,чрнг,нов?,2вч
+2 вельможи Черниговского:
+   описание: 2 вельможи Черниговского: князь Михаил и боярин Феодор; обезглавлены
+   количество: 2
+   чин: стцц
+   крат: 2вч
+   собор: чрнг,влмж
    вики: http://drevo-info.ru/articles/7201.html
-   бытие: http://azbyka.ru/days/sv-mihail-chernigovskij
+   бытие:
+    - http://azbyka.ru/days/sv-mihail-chernigovskij
+    - http://calendar.rop.ru/svyat1/sep20-mihail.html
    образ:
     - http://azbyka.ru/days/assets/img/saints/1639/p1907bnvt11bm2rumchg1elv45u3.jpg
     - http://pravicon.com/icon-2472
     - http://drevo-info.ru/images/002/009206.jpg
     - http://drevo-info.ru/images/001/003123.jpg
     - http://azbyka.ru/days/assets/img/saints/1639/f430ba3ba3ee87971192acf1460437d7.jpg
-   служба: Михаилу Черниговскому служба
+    - http://azbyka.ru/days/assets/img/saints/1639/p183qjqr9s6i2c9sg9lqqp1l5d4.jpg
+   служба:
+    - 2-м вельможам Черниговским служба
+    - http://azbyka.ru/days/caa/100
    событие:
-    - год: вид.1160-е
-      описание: ржд
-    - год: вид.кон.XII
-      описание: брак
-      супруг: Феофания
     - год: 1245
       дата: 14.02
       описание: прств
@@ -47,3 +46,11 @@
       дата: 21.11
       описание: прен.3
       место: Михайло-Архангельский собор. Кремль. Москва
+   помин:
+    - дата: 14.02
+      описание: прен.1
+      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_14.pdf
+    - дата: 20.09
+      календарь: рпц,змин
+      описание: прств
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_20.pdf
