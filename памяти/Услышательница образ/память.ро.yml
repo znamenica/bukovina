@@ -1,0 +1,21 @@
+---
+Услышательница образ:
+   имя: Услышательница, Зографский
+   описание: образ Богородицы
+   чин: обр
+   собор: зогр
+   бытие: http://azbyka.ru/days/ikona-uslyshatelnica-zografskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/3/p188nu77a7gcn9o0e5g3hgc9s3.jpg
+    - http://azbyka.ru/days/assets/img/icons/3/p188nu7vm41m9v1lvg1s2s112g1f0u5.jpg
+    - http://azbyka.ru/days/assets/img/icons/3/p188nu7vm5h3hp111hn4aeo1cnb6.jpg
+   служба:
+    - Услышательнице образу служба
+    - http://azbyka.ru/days/caa/738
+   событие:
+      год: до 1323
+      описание: чудо
+      место: собор. Зографская обитель. Афон
+   помин:
+      дата: 22.09
+      описание: само

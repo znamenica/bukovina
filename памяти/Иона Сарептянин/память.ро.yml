@@ -6,12 +6,17 @@
    собор: мпр
    вики: http://drevo-info.ru/articles/3972.html
    бытие:
+      ру:
+       - http://azbyka.ru/days/sv-iona
+       - http://calendar.rop.ru/svyat1/sep22-iona.html
       гр: http://www.saint.gr/1011/saint.aspx
    образ:
     - http://drevo-info.ru/images/002/007375.jpg
     - http://www.saint.gr/photos/standard/0921/ProfitisIonas01.jpg
     - http://www.porphyrios.gr/files/jpg/%CE%95%CE%B9%CE%BA%CF%8C%CE%BD%CE%B5%CF%82/%CE%86%CE%B3%CE%B9%CE%BF%CE%BD%20%CE%8C%CF%81%CE%BF%CF%82/%CE%9A%CE%B1%CF%81%CF%85%CE%AD%CF%82/%CE%A0%CE%B1%CF%87%CF%89%CE%BC%CE%B1%CE%AF%CE%BF%CE%B9/%CE%A4%CE%BF%CE%B9%CF%87%CE%BF%CE%B3%CF%81%CE%B1%CF%86%CE%AF%CE%B5%CF%82/%CE%A0%CF%81%CE%BF%CF%86%CE%AE%CF%84%CE%B5%CF%82/%CE%A0%CF%81%CE%BF%CF%86%CE%AE%CF%84%CE%B7%CF%82%20%CE%99%CF%89%CE%BD%CE%AC%CF%82%201.jpg
     - http://www.saint.gr/photos/standard/0921/ProfitisIonas02.jpg
+    - http://azbyka.ru/days/assets/img/saints/994/2016d72d297dcaf8a9308cd0566d811a.jpg
+    - http://azbyka.ru/days/assets/img/saints/994/674ba23c8fd80a42c9bf6b44322d5bdf.jpg
    служба: Ионе Сарептянину служба
    событие:
     - год: IX до нэ-VIII до нэ
@@ -24,5 +29,9 @@
       календарь: греч
       описание: само
     - дата: 22.09
-      календарь: рпц
+      календарь: рпц,змин
       описание: само
+      служба:
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_22.pdf
+       - Фока Синопский/Фоке Синопскому, Ионе Сарептянину, Ионе Палестинскому и Кодрату
+         Афинскому служба

@@ -1,22 +1,48 @@
 ---
 Фока Синопский:
-   имя: Фока
-   описание: святитель Синопский
-   чин: стсвт
+   имя:
+      ру: Фока
+      гр: Φωκάς
+   описание:
+      ру: святитель и чудотворец Синопский
+      гр: Ιερομάρτυρας ο Θαυματουργός
+   чин: мсвт
+   собор: пафл,виз
    вики: http://drevo-info.ru/articles/3968.html
-   бытие: http://azbyka.ru/days/sv-foka-sinopskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-foka-sinopskij
+       - http://calendar.rop.ru/svyat1/sep22-foka.html
+      гр: http://www.saint.gr/2482/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/2598/34b6e06ce7162cc155350b1c04b81f22.jpg
     - http://azbyka.ru/days/assets/img/saints/2598/8d23b7b8ef1626e2dcf7eb8ab717aed0.jpg
+    - http://drevo-info.ru/images/001/000606.jpg
+    - http://www.saint.gr/photos/standard/0922/AgiosFokas01.jpg
+    - http://www.porphyrios.gr/files/jpg/%CE%95%CE%B9%CE%BA%CF%8C%CE%BD%CE%B5%CF%82/%CE%A3%CF%85%CE%BB%CE%BB%CE%BF%CE%B3%CE%AE%20%CE%BC%CE%B5%20%CE%BA%CE%B1%CF%84%CE%AC%CF%84%CE%B1%CE%BE%CE%B7/%CE%86%CE%B3%CE%B9%CE%BF%CE%B9/%CE%A6%CF%89%CE%BA%CE%AC%CF%82%20%CE%A3%CE%B9%CE%BD%CF%8E%CF%80%CE%B7%CF%82%20%CE%99%CE%B5%CF%81%CE%BF%CE%BC%CE%AC%CF%81%CF%84%CF%85%CF%82%201.jpg
+   служба: Фоке Синопскому служба
    событие:
     - год: I
       описание: ржд
-      служба: Синоп
+      служба: Синоп. Пафлагония
     - год: 117
       описание: прств
+      служба: вид.Синоп. Пафлагония
     - год: 403/404
       описание: прен
-      место: Константинополь
+      место: Константинополь. Византия
+    - год: по X
+      предмет: часть.черепа
+      описание: прен.1
+      место: Ксенофонтская обитель. Афон
+    - год: по X
+      предмет: часть
+      описание: прен.2
+      место: Ставроникитская обитель. Афон
+    - год: по X
+      предмет: часть.1
+      описание: прен.3
+      место: Сумельская обитель. Бермудские острова
    помин:
     - дата: 22.07
       описание: прен
@@ -25,4 +51,7 @@
        - http://azbyka.ru/days/assets/upload/minei/07/minea_07_22.pdf
     - дата: 22.09
       описание: само
-      служба: Фоке Синопскому служба
+      календарь: рпц,змин,греч
+      служба:
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_22.pdf
+       - Фоке Синопскому, Ионе Сарептянину, Ионе Палестинскому и Кодрату Афинскому служба
