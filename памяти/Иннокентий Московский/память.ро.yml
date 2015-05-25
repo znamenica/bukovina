@@ -7,7 +7,10 @@
    чин: свт
    собор: мсвт,мск,рднж,спб,сиб
    вики: http://drevo-info.ru/articles/10932.html
-   бытие: http://azbyka.ru/days/sv-innokentij-veniaminov
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-innokentij-veniaminov
+       - http://calendar.rop.ru/svyat1/sep23-innokenti.html
    образ:
     - http://drevo-info.ru/images/001/001778.jpg
     - http://azbyka.ru/days/assets/img/saints/5010/p18ia2igi9d779j517g5jcpg85.jpg
@@ -20,6 +23,9 @@
     - http://azbyka.ru/days/assets/img/saints/5010/p18ia2igi94lb102sb0ghep1uf26.jpg
     - http://pravicon.com/icon-1917
    отечник: http://azbyka.ru/otechnik/Innokentij_Moskovskij/
+   служба:
+    - Иннокентию Московскому служба
+    - http://azbyka.ru/days/caa/147
    событие:
     - год: 1797
       дата: 26.08
@@ -45,11 +51,12 @@
     - год: 1879
       дата: по 31.03
       описание: пгрб
-      место: Духовский храм. Троице-Сергиева Лавра
+      место: Свято-Духовский храм. Троице-Сергиева Лавра
     - год: 1977
       дата: 23.09
       собор: рус
       описание: просл
+      описание_: Прославление свт. Иннокентия, митр. Московского
     - год: 1977
       собор: амер
       описание: просл.1
@@ -62,9 +69,7 @@
    помин:
     - дата: 31.03
       описание: прств
-      служба:
-       - Иннокентию Московскому служба
-       - http://azbyka.ru/days/caa/147
     - дата: 23.09
-      собор: рус
+      календарь: рпц,змин
       описание: просл
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_23.pdf

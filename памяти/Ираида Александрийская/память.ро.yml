@@ -1,14 +1,20 @@
 ---
 Ираида Александрийская:
    имя: Ираида (Раиса)
-   описание: мученица Антинопольская; жительница Александрийская
+   описание: жительница Александрийская; мученица Антинопольская
    чин: мц
    собор: 153а,копт
    вики: http://drevo-info.ru/articles/2134.html
-   бытие: http://azbyka.ru/days/sv-iraida
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-iraida
+       - http://calendar.rop.ru/svyat1/sep23-iraida.html
+      гр: http://www.saint.gr/2332/saint.aspx
    образ:
     - http://pravicon.com/icon-2780
     - http://drevo-info.ru/images/001/000197.jpg
+    - http://www.saint.gr/photos/standard/0923/AgiaRhais02.jpg
+    - http://www.saint.gr/photos/standard/0923/AgiaRhais01.jpg
    событие:
     - год: вт.пол.III
       описание: ржд
@@ -23,5 +29,5 @@
     - дата: 07.06
       описание: само
     - дата: 23.09
-      календарь: рпц
+      календарь: рпц,греч
       описание: само

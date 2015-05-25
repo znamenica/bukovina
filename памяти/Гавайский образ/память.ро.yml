@@ -1,0 +1,20 @@
+---
+Гавайский образ:
+   имя: Гавайский, Мироточивый
+   описание: образ Богородицы
+   чин: обр
+   вид: Иверский образ
+   собор: гава
+   бытие: http://azbyka.ru/days/ikona-iverskaja-gavajskaja-mirotochivaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/334/p193impkedgq314ob7ic1vpccrv3.jpg
+    - http://azbyka.ru/days/assets/img/icons/334/p193imsk51gp1i98160tbbk13qt3.jpg
+   событие:
+      год: 2007
+      дата: 23.09
+      описание: чудо
+      место: Гонолулу. Гавайи
+   помин:
+      дата: 23.09
+      собор: русз
+      описание: чудо
