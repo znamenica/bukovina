@@ -1,15 +1,35 @@
 ---
 Владислав Сербский:
-   имя: Стефан, Владислав
-   прозвище: Сербский
-   чин: прав
-   собор: слав,серб
-   бытие: http://pravicon.com/info-1999
-   образ: http://pravicon.com/icon-1456
+   имя: в наречении Стефан, вид.в крещении Владислав
+   описание: князь Черностенский, Зетский; король Сербский
+   чин: блгв
+   собор: чрнс,зета,серб?
+   вики: http://drevo-info.ru/articles/13417.html
+   бытие:
+      ру: http://pravicon.com/info-1999
+      ср: http://www.svetosavlje.org/biblioteka/prolog/index.php?m=9&d=24&a=1&date=9-2006
+   образ:
+    - http://pravicon.com/icon-1456
+    - http://drevo-info.ru/images/001/002579.jpg [Фреска Милешевского монастыря]
+    - http://azbyka.ru/days/assets/img/saints/5068/aab227e4b727b7853e1b0e7ade1d2d4b.jpg
+    - http://azbyka.ru/days/assets/img/saints/5068/9a20b96d56a6e2f75a81b6bc6aa95c8d.jpg
+    - http://azbyka.ru/days/assets/img/saints/5068/a95c951105ea6150cb329bc4f420a406.jpg
+    - http://azbyka.ru/days/assets/img/saints/5068/67764b9af16765e49b50de2fc827ca87.jpg
+    - http://azbyka.ru/days/assets/img/saints/5068/ff9644b7352d6229e266b722e679eb8e.jpg
+   служба: http://azbyka.ru/days/worship/642
    событие:
-      год: 1243
+    - год: вид.вт.пол.XII
+      описание: ржд
+    - год: по 1267
       описание: прств
+      место: вид.Дубровник. Зета
+    - год: по 1267
+      описание: пгрб
+      место: Милешевская обитель. Сербия
    помин:
-      дата: 30.07
-      собор: серб
+    - дата: 30.07
+      календарь: суст
+      описание: обр
+    - дата: 24.09
+      календарь: охр,г7д9,рпц
       описание: само

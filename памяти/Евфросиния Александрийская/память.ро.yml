@@ -1,14 +1,44 @@
 ---
 Евфросиния Александрийская:
-   имя: Евфросиния
-   прозвище: Александрийская
-   описание: дщерь Пафнутия Александрийского
+   имя: вид.в крещении Евфросиния
+   прозвище: евнух Смарагд
+   описание: дочь Пафнутия Александрийского; инокиня Александрийская
    чин: прп
    вики: http://drevo-info.ru/articles/4002.html
-   бытие: http://azbyka.ru/days/sv-evfrosinija-aleksandrijskaja
-   образ: http://pravicon.com/icon-1749
-   помин:
-      год: V
-      дата: 15.02
+   бытие:
+      ру: http://azbyka.ru/days/sv-evfrosinija-aleksandrijskaja
+      гр: http://www.saint.gr/2511/saint.aspx
+   образ:
+    - http://pravicon.com/icon-1749
+    - http://drevo-info.ru/images/002/007298.jpg
+    - http://www.saint.gr/photos/standard/0925/OsiaEufrosini02.jpg
+    - http://www.pigizois.net/sinaxaristis/09/25.jpg
+    - http://azbyka.ru/days/assets/img/saints/6087/p18609jcnh1mep1lg4cqr1k52vpt3.jpg
+    - http://azbyka.ru/days/assets/img/saints/6087/p1907c2behn924mm15od8se17c3.jpg
+    - http://azbyka.ru/days/assets/img/saints/6087/p18eo7kbeslch1h2d1eme1869jba3.jpg
+   служба: Евфросинии Александрийской служба
+   событие:
+    - год: ок.410
+      описание: ржд
+      место: Александрия
+    - год: вид.до 428
+      описание: иноч
+    - год: вид.445-466
       описание: прств
-      служба: Евфросинии Александрийской служба
+    - год: по X
+      предмет: часть
+      описание: прен
+      место: Киккская обитель
+    - год: по X
+      предмет: часть.1
+      описание: прен.1
+      место: Ксениевская чесовня. Аттика
+   помин:
+    - дата: 15.02
+      календарь: г7д9
+      описание: само
+    - дата: 24.09
+      описание: само
+    - дата: 25.09
+      календарь: г7д9,греч
+      описание: само

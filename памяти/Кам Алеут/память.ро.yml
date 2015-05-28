@@ -1,13 +1,16 @@
 ---
 Кам Алеут:
-   имя: Пётр
-   описание: алеут
+   имя: в крещении Пётр
+   описание: алеут; умучен латынами
    чин: мч
-   собор: пма,лат,ситк
+   собор: пма,ситк
    вики: http://drevo-info.ru/articles/20558.html
+   бытие:
+      ан: http://oca.org/saints/lives/2015/09/24/102713-martyr-peter-the-aleut
    образ:
     - http://drevo-info.ru/images/002/006552.jpg
     - http://drevo-info.ru/images/002/006553.jpg
+    - http://images.oca.org/icons/lg/September/0924peter-aleut.jpg
    событие:
     - год: кон.XVIII-нач.XIX
       описание: ржд
@@ -20,6 +23,6 @@
       чин: ситк
       описание: просл
    помин:
-      дата: 12.12
+      дата: 24.09
       собор: аме
       описание: само

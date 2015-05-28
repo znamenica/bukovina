@@ -1,0 +1,25 @@
+---
+Дрелевский образ:
+   имя:
+      ру: Дрелевский, Драпаниотисса
+      гр: Δραπανιώτισσας
+   описание: образ Богородицы
+   чин: обр
+   собор: 
+   вид: Черницкий образ
+   бытие:
+      гр: http://www.saint.gr/4/saint.aspx
+   образ:
+    - http://users.sch.gr/aiasgr/Image/Theotokos_Maria/Panagia_h_Eleousa/Panagia_Axion_Esti_h_Eleousa_06_%28Drapaniwtissa%29.jpg
+    - http://2.bp.blogspot.com/-gL65oois1tk/Tn0LEBn9_3I/AAAAAAAAYPY/X6OwvSyRpUI/s1600/DSC_0065.JPG
+    - http://diakonima.wpengine.netdna-cdn.com/wp-content/uploads/2013/10/drapaniwtissa_epistrofh22.jpg
+   событие:
+    - год: вид.по 1813
+      описание: напис
+    - год: по 1813
+      описание: прен
+      место: Дионисие-Закинфская церковь. Дрелево. Кефалония
+   помин:
+      дата: 24.09
+      календарь: греч
+      описание: само

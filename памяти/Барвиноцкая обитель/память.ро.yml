@@ -1,0 +1,21 @@
+---
+Барвиноцкая обитель:
+   имя:
+      ру: Барвиноцкая
+      гр: Παναγίας Μυρσινιδίου
+   описание:
+      ру: обитель
+      гр: Ιερά Μονή
+   чин: обит
+   вид: Черницкий образ
+   собор: хиос
+   бытие:
+      гр: http://www.saint.gr/4284/saint.aspx
+   слики:
+    - http://www.diakopes.gr/files/1/Media/2012/08/03/m_mersinidiou_01.jpg
+    - http://www.homeroupolis.info/images/mersinidi1.jpg
+    - http://www.ecclesia.gr/greek/monshrines/mirsinidi.gif
+   событие:
+      год: 1887
+      описание: созд
+      место: Вронтада. Хиос остров
