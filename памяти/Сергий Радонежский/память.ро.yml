@@ -1,20 +1,45 @@
 ---
 Сергий Радонежский:
-   имя: в иночестве Сергий, в крущении Варфоломей
+   имя:
+      ру: в иночестве Сергий, в крещении Варфоломей
+      гр: Σέργιος
    отчество: Кириллович
-   описание: Радонежский, сын Кирилла и Марии Радонежских
+   описание:
+      ру: бояринич; инок Хотьковский; отшельник Радонежский; сын Кирилла и Марии Радонежских
+      гр: Θαυματουργός Ηγούμενος Ραδονεξίας
    чин: прп
-   собор: слав,рус,влад,мск,рднж
+   собор: влад,мск,рднж,рост,хтьк
    вики: http://drevo-info.ru/articles/153.html
-   бытие: http://azbyka.ru/days/sv-sergij-radonezhskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-sergij-radonezhskij
+       - http://www.drevne.ru/lib/radonezh_1.htm
+      гр: http://www.saint.gr/2009/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/000019.jpg
     - http://pravicon.com/icon-2868
+    - http://azbyka.ru/days/assets/img/saints/4152/8f201b0b04cc4270cbb508a66c9ae3d5.jpg
+    - http://azbyka.ru/days/assets/img/saints/4152/4d61f596cfffd5e8b00e94d9ebe7eb06.jpg
+    - http://azbyka.ru/days/assets/img/saints/4152/564c7eb2d12807fe9dff1cf031b1d288.jpg
+    - http://azbyka.ru/days/assets/img/saints/4152/8d777b4d25790b6cff3184143f22f5f2.jpg
+    - http://azbyka.ru/days/assets/img/saints/4152/b19d77992d4609ffc793e53d6cd186fd.jpg
+    - http://azbyka.ru/days/assets/img/saints/4152/p193vdr2v5abg1l7a17hmrpj1emg3.JPG
+    - http://azbyka.ru/days/assets/img/saints/4152/53dcc5aeb128710ad0c88061ed79f84d.jpg
+    - http://azbyka.ru/days/assets/img/saints/4152/b6ac1080c9007e7f6aef19935398e07d.jpg
+    - http://azbyka.ru/days/assets/img/saints/4152/236e48ff719e5357e1682d248ac372db.jpg
+    - http://azbyka.ru/days/assets/img/saints/4152/d9e49041ed8986dc709995b2ec6843e9.jpg
+    - http://azbyka.ru/days/assets/img/saints/4152/e24c5553b53dca2e855043c400cd057d.jpg
+    - http://azbyka.ru/days/assets/img/saints/4152/d2a5c7b332fcc2cb519668327353337f.jpg
+    - http://azbyka.ru/days/assets/img/saints/4152/1ef3dff476c293a94d6eb8eab0f932e5.jpg
+    - http://www.saint.gr/photos/standard/0925/OsiosSergios01.jpg
+   служба:
+    - Сергию Радонежскому служба
+    - http://azbyka.ru/days/caa/113
    событие:
     - год: 1314
       дата: 03.05
       описание: ржд
-      место: Варницы. Ростовье
+      место: Варницы село. Ростовье
     - год: 1337
       описание: иноч
       место: вид. Покровская обитель. Хотьково
@@ -26,31 +51,28 @@
     - год: 1422
       дата: 05.07
       описание: обр
+      образ: http://azbyka.ru/days/assets/img/saints/4152/793e35ff9d92eb6c747ae65bcab2939a.jpg
     - год: 1920
+      предмет: тело
       образ: http://drevo-info.ru/images/002/009195.jpg
       описание: хищ
     - год: 1946
       описание: обр.1
+    - год: по XVII
+      предмет: часть
+      описание: прен
+      место: Свято-Троицкая Александро-Невская лавра. Санкт-Петербург
    помин:
     - дата: 05.07
+      календарь: змин
       описание: обр
       служба:
        - Сергию Радонежскому на обретение мощей служба
        - http://azbyka.ru/days/assets/upload/minei/07/minea_07_05.pdf
        - http://azbyka.ru/days/caa/112
-    - дата: 07.07
-      описание: само
-      служба:
-       - Сергию и Никону Радонежским служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_06.pdf
     - дата: 25.09
+      календарь: рпц,змин,греч
       описание: прств
       служба:
-       - Сергию Радонежскому служба
-       - http://azbyka.ru/days/caa/113
-    - дата: 27.09
-      описание: само
-      служба:
-       - Сергию и Никону Радонежским служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_06.pdf
-
+       - Сергию Радонежскому на преставление служба
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_25.pdf

@@ -1,9 +1,9 @@
 ---
 Никон Радонежский:
    имя: в иночестве Никон
-   описание: Радонежский, ученик и келейник Сергия Радонежского
+   описание: ученик и келейник Сергия Радонежского; настоятель Радонежский
    чин: прп
-   собор: влад,мск,рднж
+   собор: влад,мск,рднж,юпол,српх,снрж
    вики: http://drevo-info.ru/articles/11655.html
    бытие: http://azbyka.ru/days/sv-nikon-radonezhskij
    образ:
@@ -12,6 +12,9 @@
     - http://azbyka.ru/days/assets/img/saints/1494/p18aib2tmp7ni18a1oa7jie1805.jpg
     - https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/1511003_314777452054360_4651202553479622697_n.jpg?oh=0f125364be3431517e82af6ae89762e7&oe=54D685D9&__gda__=1423077400_532837b46179a707cb071ac21e3fa084
     - https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10806426_314776642054441_6528989750085085854_n.jpg?oh=a69f671ba306047eec7f77578d5bf072&oe=5513775C&__gda__=1428167478_b4a917fce5f4d665c63f7b4d4e4eda4e
+   служба:
+    - Никону Радонежскому служба
+    - http://azbyka.ru/days/caa/318
    событие:
     - год: сер.XIV
       описание: ржд
@@ -30,19 +33,7 @@
       собор: рус
       описание: просл
    помин:
-    - дата: 07.07
-      описание: само
-      служба:
-       - Сергию и Никону Радонежским служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_06.pdf
-    - дата: 27.09
-      описание: само
-      служба:
-       - Сергию и Никону Радонежским служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_06.pdf
-    - дата: 17.11
+      дата: 17.11
+      календарь: змин
       описание: прств
-      служба:
-       - Никону Радонежскому служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_17.pdf
-       - http://azbyka.ru/days/caa/318
+      служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_17.pdf

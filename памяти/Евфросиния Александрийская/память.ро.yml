@@ -6,7 +6,9 @@
    чин: прп
    вики: http://drevo-info.ru/articles/4002.html
    бытие:
-      ру: http://azbyka.ru/days/sv-evfrosinija-aleksandrijskaja
+      ру:
+       - http://azbyka.ru/days/sv-evfrosinija-aleksandrijskaja
+       - http://calendar.rop.ru/svyat1/sep25-evfros-alex.html
       гр: http://www.saint.gr/2511/saint.aspx
    образ:
     - http://pravicon.com/icon-1749
@@ -16,7 +18,9 @@
     - http://azbyka.ru/days/assets/img/saints/6087/p18609jcnh1mep1lg4cqr1k52vpt3.jpg
     - http://azbyka.ru/days/assets/img/saints/6087/p1907c2behn924mm15od8se17c3.jpg
     - http://azbyka.ru/days/assets/img/saints/6087/p18eo7kbeslch1h2d1eme1869jba3.jpg
-   служба: Евфросинии Александрийской служба
+   служба:
+    - Евфросинии Александрийской служба
+    - http://azbyka.ru/days/caa/403
    событие:
     - год: ок.410
       описание: ржд
@@ -40,5 +44,6 @@
     - дата: 24.09
       описание: само
     - дата: 25.09
-      календарь: г7д9,греч
+      календарь: рпц,г7д9,греч,змин
       описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_25.pdf

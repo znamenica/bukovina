@@ -6,7 +6,9 @@
    чин: прп
    собор: бря,влад,сузд,чрнг
    вики: http://drevo-info.ru/articles/7345.html
-   бытие: http://azbyka.ru/days/sv-evfrosinija-v-miru-feodulija-suzdalskaja
+   бытие:
+    - http://azbyka.ru/days/sv-evfrosinija-v-miru-feodulija-suzdalskaja
+    - http://calendar.rop.ru/svyat1/sep25-evfros-suzd.html
    служба:
     - Евфросинии Суздальской служба
     - http://azbyka.ru/days/caa/92
@@ -39,4 +41,6 @@
       описание: чинпр
       служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_18.pdf
     - дата: 25.09
+      календарь: рпц,змин
       описание: прств
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_25.pdf
