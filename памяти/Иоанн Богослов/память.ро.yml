@@ -3,23 +3,60 @@
    имя: Иоанн
    отчество: Зеведеевич
    прозвище: Богослов
-   описание: Благовестник
+   описание: брат Иакова Зеведеева; апостол от 12-ти; благовестник
    чин: ап
-   собор: ап12
+   собор: ап12,плст,патм,свтт
    вики: http://drevo-info.ru/articles/227.html
-   бытие: http://azbyka.ru/days/sv-ioann-bogoslov
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-ioann-bogoslov
+       - http://calendar.rop.ru/svyat1/sep26-ioann.html
+      гр: http://www.saint.gr/2500/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/2126/p18f53la1rsdirpme716bfqgj3.jpg
     - http://pravicon.com/icon-1929
+    - http://www.saint.gr/photos/standard/0926/AgiosIoannisTheologos08.jpg [γ' τέταρτο 14ου
+      αι. μ.Χ. - Mονή Bατοπαιδίου, Άγιον Όρος]
+    - http://www.saint.gr/photos/standard/0926/AgiosIoannis01.jpg
+    - http://www.patmosmonastery.gr/images/img1721062.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/9/9a/Rublev_ioann_bogoslov.jpg [Αντρέι
+      Ρουμπλιόβ, 1408 μ.Χ.]
+    - http://www.saint.gr/photos/standard/0508/AgiosIoannisTheologos01.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/c/c4/John_Evangelist.jpg
+    - http://www.pigizois.net/sinaxaristis/05/08.jpg
+    - http://www.saint.gr/photos/standard/0508/AgiosIoannisTheologos05.jpg
+    - http://www.saint.gr/photos/standard/0926/AgiosIoannisTheologos09.jpg [Φανάρι,
+      Κωνσταντινούπολη]
+    - http://1.bp.blogspot.com/-aOtmOSbTd6A/TVvD_NNtgfI/AAAAAAAAABY/7dg4gGRx-Nw/s1600/Photo+%255B17%255D.jpg
+      [Αγγελική Τσέλιου© (diaxeirosaggelikistseliou. blogspot.com)]
+    - http://www.churchofcyprus.org.cy/pictures/4101.jpg [18ος αιώνας μ.Χ]
+    - http://www.churchofcyprus.org.cy/pictures/4102.jpg [18ος αιώνας μ.Χ, Μονή Παναγίας
+      Τοχνίου, Μάνδρες Ἀμμοχώστου ]
+    - http://www.pigizois.net/sinaxaristis/09/26_exoria.jpg
+    - http://www.pigizois.net/sinaxaristis/09/26.jpg
+    - http://www.pigizois.net/sinaxaristis/05/08_theologos.jpg
+    - http://194.177.217.107/scanned/icons/32_B_8bit_PE-IC14-DS2-Q4.jpg [Εμμανουήλ Λαμπάρδος,
+      1602 μ.Χ.]
+    - http://www.saint.gr/photos/standard/1227/AgioiStefanosNikolaosIoannisTheologos01.jpg
+      [16ος και 18ος αι. μ.Χ. - Πρωτάτο, Άγιον Όρος]
+   служба:
+    - Иоанну Богослову служба
+    - http://azbyka.ru/days/caa/116
+    - http://azbyka.ru/days/caa/117
+    - http://azbyka.ru/days/caa/118
+    - http://azbyka.ru/days/caa/122
    событие:
-    - год: I
+    - год: вид.1-20
       описание: ржд
+      место: Палестина
     - год: 98-117
       дата: 26.09
       описание: прств
+      место: Патмос остров. Греция
    помин:
     - дата: 08.05
       описание: само
-      служба: Иоанну Богослову служба
     - дата: 26.09
+      календарь: рпц,греч,змин
       описание: прств
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_26.pdf

@@ -29,6 +29,7 @@
     - http://213.171.53.29/foto_1/ob4-12v.jpg
    служба:
     - Тихону Московскому служба
+    - http://azbyka.ru/days/worship/611
     - http://azbyka.ru/days/caa/119
     - http://azbyka.ru/days/caa/120
     - http://azbyka.ru/days/caa/121
@@ -95,6 +96,8 @@
       календарь: рпц
       описание: прств
     - дата: 26.09
+      календарь: рпц,змин
       описание: просл
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_26.pdf
     - дата: 05.11
       описание: прдст
