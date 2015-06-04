@@ -1,0 +1,26 @@
+---
+Гедеон Израильский:
+   имя: Гедеон
+   отчество: Иоасович
+   описание: судия Израильский
+   чин: прав
+   собор: суд,плст
+   вики: http://drevo-info.ru/articles/16133.html
+   бытие:
+      ру: http://azbyka.ru/days/sv-gedeon-sudija-izrailskij
+      гр: http://www.saint.gr/2503/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/002/007374.jpg
+    - http://azbyka.ru/days/assets/img/saints/2648/p182f1dk3svn71htopda1eov1c843.jpg
+    - http://azbyka.ru/days/assets/img/saints/2648/p182f1dpgn1d1i4hf39n10svhj85.jpg
+   событие:
+    - год: вид.XV до нэ
+      описание: ржд
+      место: Офра. Палестина
+    - год: XIV до нэ
+      описание: прств
+      место: вид.Офра. Палестина
+   помин:
+      дата: 26.09
+      календарь: рпц,греч
+      описание: само
