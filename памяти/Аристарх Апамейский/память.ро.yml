@@ -1,13 +1,23 @@
 ---
 Аристарх Апамейский:
-   имя: Аристарх
-   прозвище: Апамейский, апостол от 70-ти
-   чин: ап70
+   имя:
+      ру: Аристарх
+      гр: Αρίσταρχος
+   описание: апостол от 70-ти; святитель Апамейский (Сирия)
+   чин: ап
+   собор: ап70,мсвтт,сир,рим,маза,апта
    вики: http://drevo-info.ru/articles/4021.html
    бытие: http://azbyka.ru/days/sv-aristarh
-   образ: http://pravicon.com/icon-1250
-   помин:
-      год: ок. 67
-      дата: 15.04
+   образ:
+    - http://pravicon.com/icon-1250
+    - http://drevo-info.ru/images/001/000617.jpg
+    - http://azbyka.ru/days/assets/img/saints/1278/p18ion4d2o18m0foh49j1en8tgj3.jpg
+    - http://azbyka.ru/days/assets/img/saints/1278/fb83de3ebc9a76e058b2893bf6fa1143.jpg
+    - http://www.saint.gr/photos/standard/0414/AgiosAristarxos01.jpg
+   событие:
+    - год: 33-67
+      описание: свят
+      место: вид.Апамеи. Сирия
+    - год: ок. 67
       описание: прств
-      служба: Аристарху Апамейскому служба
+      место: Рим

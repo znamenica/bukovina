@@ -1,9 +1,11 @@
 ---
 Марк Благовестник:
-   имя: Марк (Иоанн)
-   описание: Евангелист, апостол от 70-ти, племянник Варнавы Саламинского
+   имя:
+      ру: в наречении Марк, в наречении Иоанн
+      гр: Μάρκος
+   описание: благовестник; апостол от 70-ти; племянник Варнавы Саламинского
    чин: ап
-   собор: ап70,копт,плст,стсвт
+   собор: ап70,копт,плст,мсвтт,маза
    вики:
     - http://drevo-info.ru/articles/10392.html
     - http://ru.wikipedia.org/wiki/Апостол_Марк
@@ -12,15 +14,21 @@
    бытие: http://azbyka.ru/days/sv-mark-ioann-evangelist
    образ:
     - http://drevo-info.ru/images/001/001704.jpg
-    - http://azbyka.ru/days/assets/img/saints/839/a782f1a861e1976a0e67837c59bf4090.jpg
-    - http://azbyka.ru/days/assets/img/saints/839/fa480e7f212f88930c977c76e75604c2.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/p193vgtn6a1qcech511146su1d8m3.jpg
     - http://azbyka.ru/days/assets/img/saints/839/p190h1utp11lf11n5ahbd1hmjddf3.png
+    - http://azbyka.ru/days/assets/img/saints/839/p18f817cneihd168n17hc1jatl773.jpg
+
     - http://azbyka.ru/days/assets/img/saints/839/1c8e6109dce2f8140679a7d4b7823110.jpg
     - http://azbyka.ru/days/assets/img/saints/839/p18f817cnfnt53ds1767lvj160v4.JPG
     - http://azbyka.ru/days/assets/img/saints/839/p190h1utp45tv1qn1rslov110ge4.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/a782f1a861e1976a0e67837c59bf4090.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/fa480e7f212f88930c977c76e75604c2.jpg
     - http://azbyka.ru/days/assets/img/saints/839/680661975c9e8aed357dcbf3727f0e48.jpg
     - http://azbyka.ru/days/assets/img/saints/839/30470bd6ceb670b94eb40372599ae09d.jpg
     - http://azbyka.ru/days/assets/img/saints/839/1a30dcac4d709a9a01bc20b0c7b682fe.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/267a365d6b47a9f410ef24c770501cac.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/a782f1a861e1976a0e67837c59bf4090.jpg
+    - http://azbyka.ru/days/assets/img/saints/839/fa480e7f212f88930c977c76e75604c2.jpg
    событие:
     - год: нач.I
       описание: ржд
@@ -36,8 +44,6 @@
     - дата: 25.04
       описание: само
       служба: Марку Благовестнику служба
-    - дата: 27.09
-      описание: само
     - дата: 30.10
       описание: само
     - дата: 22.11
