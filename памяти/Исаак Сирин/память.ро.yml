@@ -1,11 +1,35 @@
 ---
 Исаак Сирин:
    имя: Исаак
-   прозвище: Сирин, Ниневийский святитель
+   описание: сирин; затворник; святитель Ниневийский; пустынник, отшельник
    чин: прсвт
    вики: http://drevo-info.ru/articles/2547.html
-   образ: http://drevo-info.ru/images/003/010359.jpg
-   помин:
-      год: VII
-      дата: 28.01
+   бытие:
+      гр: http://www.saint.gr/3534/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/003/010359.jpg
+    - http://www.porphyrios.gr/files/jpg/%CE%95%CE%B9%CE%BA%CF%8C%CE%BD%CE%B5%CF%82/%CE%9A%CE%B1%CF%84%CE%AC%20%CE%B7%CE%BC%CE%B5%CF%81%CE%BF%CE%BC%CE%B7%CE%BD%CE%AF%CE%B1%20%28%CE%94%CE%B9%CE%AC%CF%86%CE%BF%CF%81%CE%BF%CE%B9%29/01%20%CE%99%CE%B1%CE%BD%CE%BF%CF%85%CE%AC%CF%81%CE%B9%CE%BF%CF%82/28%20%CE%99%CF%83%CE%B1%CE%AC%CE%BA%20%CE%A3%CF%8D%CF%81%CE%BF%CF%82%20%CE%8C%CF%83%CE%B9%CE%BF%CF%82.jpg
+    - http://www.saint.gr/photos/standard/0928/OsiosIsaakSyros02.jpg
+    - http://www.pigizois.net/vivlia/isaak_o_siros/isaak%20o%20siros.jpg
+    - http://www.saint.gr/photos/standard/0928/OsiosIsaakSyros04.jpg
+    - http://www.saint.gr/photos/standard/0928/OsiosIsaakSyros05.jpg
+    - http://www.saint.gr/photos/standard/0928/OsiosIsaakSyros06.jpg
+    - http://www.saint.gr/photos/standard/0928/OsiosIsaakSyros07.jpg
+    - http://www.impantokratoros.gr/dat/402CC44A/%5Bel%5Dimage1.png
+   служба: Исааку Сирину служба
+   событие:
+    - год: VI-VII
+      писание: ржд
+      место: Ниневия
+    - год: VI-VII
+      писание: иноч
+      место: обитель. Ниневье
+    - год: VII
       писание: прств
+      место: вид.Ниневийская пустыня
+   помин:
+    - дата: 28.01
+      описание: само
+    - дата: 28.09
+      календарь: греч
+      описание: само

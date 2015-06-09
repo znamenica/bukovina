@@ -1,0 +1,25 @@
+---
+Ближнепечерский собор:
+   описание: собор Киево-Печерских святых в Ближних пещерах почивающих
+   чин: прп
+   крат: бпеч
+   собор: печ
+   вики: http://drevo-info.ru/articles/4250.html
+   бытие: http://azbyka.ru/days/sv-sobor-prepodobnyh-otcov-kievo-pecherskih-v-blizhnih-peshcherah-prp-antonija-pochivajushchih
+   служба:
+    - Ближнепечерскому собору служба
+    - http://azbyka.ru/days/caa/127
+   событие:
+    - год: 1670
+      собор: киев
+      описание: просл
+      о: сб.по отд.вздв
+    - год: 1886
+      собор: киев
+      описание: просл.1
+      о: 28.09
+   помин:
+      дата: 28.09
+      календарь: рпц,змин
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_28.pdf

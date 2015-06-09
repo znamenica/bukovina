@@ -1,13 +1,57 @@
 ---
 Неофит Затворник:
-   имя: Неофит
-   прозвище: Затворник, Кипрский
+   имя:
+      ру: Неофит
+      гр: Νεόφυτος
+   описание:
+      ру: отшельник и затворник Кипрский
+      гр: έγκλειστος που ασκήτευσε στην Κύπρο
    чин: прп
+   собор: кипр
    вики: http://drevo-info.ru/articles/13282.html
-   бытие: http://pravicon.com/info-3007
-   образ: http://pravicon.com/icon-2508
-   помин:
-      год: не ранее 1220
-      дата: 24.01
-      собор: греч
+   бытие:
+      ру: http://pravicon.com/info-3007
+      гр:
+       - http://www.saint.gr/237/saint.aspx
+       - http://www.saint.gr/287/saint.aspx
+       - http://www.synaxarion.gr/gr/sid/1879/sxsaintinfo.aspx
+   образ:
+    - http://pravicon.com/icon-2508
+    - http://drevo-info.ru/images/001/002548.jpg
+    - http://www.saint.gr/photos/standard/0412/OsiosNeofitos01.jpg
+    - http://www.saint.gr/photos/standard/0412/OsiosNeofitos02.jpg
+    - http://vatopaidi.files.wordpress.com/2010/01/ag-neofytos-egkleistos-toihografia-1183-iero-egkleistras-moni-ag-neofytou-pafos-kypros.jpg
+      [Τοιχογραφία του 1193 μ.Χ. (λεπτομέρεια παραστάσεως)]
+   служба:
+    - Неофиту Затворнику служба
+    - http://pravoslavie.ks.ua/rubric/akafisty/article/akafist-prepodobnomu-neofitu-zatvorniku-kiprskomu
+   событие:
+    - год: 1134
+      описание: ржд
+      место: Левкара. Кипр
+    - год: ок.1219
       описание: прств
+      место: обитель. Пафос. Кипр
+    - год: 1152-1158
+      описание: иноч
+      место: вид. Иоанно-Златоустинская обитель. Кипр
+    - год: вид.по XIII
+      описание: прен
+      место: Неофитская обитель. Кипр
+      бытие:
+         гр: http://www.saint.gr/2472/saint.aspx
+      описание_: Εύρεσις Ιερών Λειψάνων οσίου Νεοφύτου του εν Κύπρω Εγκλείστου
+    - год: вид.по XIII
+      предмет: часть
+      описание: прен.1
+      место: Киккская обитель. Кипр
+   помин:
+    - дата: 24.01
+      собор: греч,кипр
+      описание: само
+    - дата: 12.04
+      собор: греч,кипр
+      описание: прств
+    - дата: 28.09
+      собор: греч,кипр
+      описание: обр,прен

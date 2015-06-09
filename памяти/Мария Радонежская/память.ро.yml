@@ -1,15 +1,29 @@
 ---
-Кирилл Радонежский:
-   имя: Мария
-   прозвище: Радонежская
-   описание: мать Сергия Радонежского
+Мария Радонежская:
+   имя: в крещении Мария
+   описание: мать Сергия Радонежского; инокиня и судотворица Радонежская и Хотьковская
    чин: прп
-   собор: слав,рус,рад
+   собор: рднж,брак,ряр,кмб,рост
    вики: http://drevo-info.ru/articles/13880.html
    бытие: http://azbyka.ru/days/sv-marija-radonezhskaja
-   образ: http://pravicon.com/icon-2163
-   помин:
-      год: XVI–XVII
-      дата: 18.01
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/5832/p1900e56sko436j9ethuf1qok4.jpg
+    - http://azbyka.ru/days/assets/img/saints/5832/cfbcaddfb0417156c8859e14c1facd39.jpg
+    - http://azbyka.ru/days/assets/img/saints/5832/p1900e56sl17t21sqe1vofm751g235.jpg
+    - http://azbyka.ru/days/assets/img/saints/5832/p1900e56sjb1t1kp21gcn1fbm1edg3.jpg
+   событие:
+    - год: вид.вт.пол.XIII
+      описание: брак
+      супруг: Кирилл Радонежский
+    - год: 1328-1337
+      описание: иноч
+    - год: 1328-1337
+      описание: схим
+    - год: 1337
       описание: прств
-      служба: Кирилл Радонежский/Кириллу и Марии Радонежским служба
+      место: Покровская обитель. Хотьково
+    - год: 1992
+      дата: 21.03
+      собор: рус
+      описание: просл
+      бытие: http://azbyka.ru/tserkov/svyatye/trubachev_kanonizatsiya_svyatyh_09-all.shtml
