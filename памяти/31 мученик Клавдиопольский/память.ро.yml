@@ -11,7 +11,9 @@
    собор: виф
    бытие:
       ру: http://calendar.rop.ru/svyat1/sep28-alexandr-alfei-zosima.html
-      гр: http://www.saint.gr/2468/saint.aspx
+      гр:
+       - http://www.saint.gr/2468/saint.aspx
+       - http://www.saint.gr/2470/saint.aspx
    событие:
       год: IV
       описание: прств

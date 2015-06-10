@@ -3,21 +3,19 @@
    имя: Спиридон
    описание: просфорник Печерский, в Ближних Пещерах
    чин: прп
-   собор: бпеч
+   собор: бпеч,снп
    вики: http://drevo-info.ru/articles/7739.html
    бытие: http://azbyka.ru/days/sv-spiridon-pecherskij
    образ:
     - http://pravicon.com/icon-2945
+   слика:
     - http://azbyka.ru/days/assets/img/saints/2995/p18978gep0brfh5h18v9jbg7sr3.jpg
     - http://azbyka.ru/days/assets/img/saints/3552/2d0a6042d6b0c54e4c42900ddc856b91.jpg
+   служба: Спиридону Просфорнику служба
    событие:
-      год: 1162-1171
+    - год: вид.до 1162
+      описание: иноч
+      место: вид.Печерская обитель. Киев
+    - год: 1162-1171
       описание: прств
       место: Антониевы пещеры. Киев
-   помин:
-      дата: 31.10
-      описание: само
-      образ: http://azbyka.ru/days/assets/img/saints/2995/p18978gigd5e047n1q7qelegfq5.jpg
-      служба:
-       - Спиридону и Никодиму Просфорникам служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_31.pdf

@@ -1,17 +1,23 @@
 ---
 Вячеслав Чешский:
-   имя: Вячеслав (Вацлав, Винчеслав, Венцель)
+   имя:
+      ру: Вячеслав (Вацлав, Винчеслав, Венцель)
+      гр: Βιασεσλάβος
    отчество: Вратиславич
    фамилия: Пржемыслович
-   описание: князь и страстотерпец Чешский; заколот в голову язычниками; внук Людмилы Чешской
+   описание:
+      ру: князь и страстотерпец Чешский; заколот в голову язычниками; внук Людмилы Чешской
+      гр: Πρίγκιπας της Τσεχίας
    чин: блгв
    собор: стцц
    вики:
     - http://drevo-info.ru/articles/2157.html
     - https://ru.wikipedia.org/wiki/Святой_Вацлав
    бытие:
-    - http://azbyka.ru/days/sv-vjacheslav-cheshskij
-    - http://calendar.rop.ru/svyat1/mar04-vyacheslav.html
+      ру:
+       - http://azbyka.ru/days/sv-vjacheslav-cheshskij
+       - http://calendar.rop.ru/svyat1/mar04-vyacheslav.html
+      гр: http://www.saint.gr/3799/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/614/p18i7c7d1c10lo15oegm01d6ub5q3.jpg
     - http://pravicon.com/icon-1469
@@ -21,6 +27,8 @@
     - http://azbyka.ru/days/assets/img/saints/614/p18i7c8pp81dvmh9c1p2n518tcb.jpg
     - http://azbyka.ru/days/assets/img/saints/614/p18i7c8dlc1avc1fp71dgm1583vf89.jpg
     - http://azbyka.ru/days/assets/img/saints/614/p18i7c7mqljs81tg41c8g4o91pm77.jpg
+    - http://www.saint.gr/photos/standard/0928/AgiosWenceslaus01.jpg
+    - http://www.saint.gr/photos/standard/0928/AgiosWenceslaus02.jpg
    служба:
     - Вячеславу Чешскому служба
     - http://azbyka.ru/days/caa/128
@@ -42,6 +50,6 @@
       описание: прен
       служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_04.pdf
     - дата: 28.09
-      календарь: рпц,змин
+      календарь: рпц,змин,греч
       описание: прств
       служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_28.pdf
