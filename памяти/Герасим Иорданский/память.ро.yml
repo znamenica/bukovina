@@ -3,20 +3,26 @@
    имя: Герасим
    описание: пустынник Фиваидский, Иорданский; настоятель Вайфаглский
    чин: прп
-   собор: звер,плст,лик,фивд
+   собор: звер,плст,лик,фивд,вайф
    вики: http://drevo-info.ru/articles/9466.html
    бытие:
-    - http://azbyka.ru/days/sv-gerasim-iordanskij
-    - http://calendar.rop.ru/svyat1/mar04-gerasim-iordan.html
+      ру:
+       - http://azbyka.ru/days/sv-gerasim-iordanskij
+       - http://calendar.rop.ru/svyat1/mar04-gerasim-iordan.html
+      гр: http://www.saint.gr/3791/saint.aspx
    образ:
     - http://pravicon.com/icon-1522
-    - http://drevo-info.ru/images/002/008596.jpg
+    - http://drevo-info.ru/images/002/008596.jpg [Фреска храма св. Николая Орфанос. Салоники. XIV в.]
     - http://azbyka.ru/days/assets/img/saints/3826/p18i7c38bjhsc541jgmtv41omp7.jpg
     - http://azbyka.ru/days/assets/img/saints/3826/p18i7c46141tmd1c1d1i1tgkt2i9.jpg
     - http://azbyka.ru/days/assets/img/saints/3826/p18i7c2t1p1easan41trj1un81ti64.jpg
     - http://azbyka.ru/days/assets/img/saints/3826/5a52adc922b64581c54a0a8d3736965c.jpg
     - http://azbyka.ru/days/assets/img/saints/3826/a9cf2e3b561c7d0900ee07834159a921.jpg
     - http://azbyka.ru/days/assets/img/saints/3826/fbed34c4cfc27c166d42248fae456193.jpg
+    - http://drevo-info.ru/images/001/001572.jpg
+    - http://www.pigizois.net/sinaxaristis/03/04.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/a/ac/Gerasimus_of_Jordan.jpg
+    - http://www.apostoliki-diakonia.gr/gr_main/eortologio/Agion_pics/Mar_2.jpg
    служба: Герасиму Иорданскому служба
    событие:
     - год: вид.вт.пол.IV
@@ -25,6 +31,10 @@
     - год: 475
       описание: прств
       место: вид.близ.Вайфаглская обитель. Палестина
+    - год: вид.по X
+      предмет: часть
+      описание: прен
+      место: Прусская обитель. Харьяна
    помин:
       дата: 04.03
       календарь: рпц,греч

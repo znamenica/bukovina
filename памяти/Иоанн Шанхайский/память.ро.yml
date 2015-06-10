@@ -1,19 +1,78 @@
 ---
 Иоанн Шанхайский:
-   имя: Иоанн
+   имя: в иночестве Иоанн, в крещении Михаил
+   прозвище: Жан Босой
+   отчество: Борисович
    фамилия: Максимович
-   описание: святитель Шанхайский Чудотворец чудотворц
+   описание: священноинок Мильковский; святитель и чудотворец Шанхайский, Брюссельский,
+      Сан-Францисский
    чин: свт
+   собор: полт,харь,шанх,бльг,сфрн
    вики: http://drevo-info.ru/articles/6258.html
    бытие: http://azbyka.ru/days/sv-ioann-chudotvorec-maksimovich
-   образ: http://pravicon.com/icon-1975
+   образ:
+    - http://pravicon.com/icon-1975
+    - http://drevo-info.ru/images/001/001106.jpg [Икона из Ирландии.]
+    - http://drevo-info.ru/images/001/001109.jpg [Икона из храма во имя всех святых в земле
+      Российской просиявших, Париж.]
+    - http://azbyka.ru/days/assets/img/saints/124/p1916cblbt1nrvch91phq19qm1i975.jpg
+    - http://azbyka.ru/days/assets/img/saints/124/p1916cblbs1j0828992d7li2ch4.jpg
+    - http://azbyka.ru/days/assets/img/saints/124/7a79f44007954b41ec1c7298a5569f74.jpg
+    - http://azbyka.ru/days/assets/img/saints/124/e574b23ff66f82cfb9e3a23b59112345.jpg
+    - http://azbyka.ru/days/assets/img/saints/124/0eb00d6b407a4313a7bf31b9f9660f60.jpg
+    - http://azbyka.ru/days/assets/img/saints/124/p1916cblbq18ofmfh6681t6r1ki33.jpg
+    - http://azbyka.ru/days/assets/img/saints/124/p1916cblbt1nrvch91phq19qm1i975.jpg
+   отечник:
+      ру:
+       - http://azbyka.ru/otechnik/Ioann_Maksimovich/
+       - http://petkohinov.com/pravoslavie/rus/ioannm/
+   служба:
+    - Иоанну Шанхайскому служба
+    - http://azbyka.ru/days/assets/upload/services/SLUZHBA_St_John.pdf
+    - http://azbyka.ru/days/worship/643
+    - http://azbyka.ru/days/caa/741
    событие:
-      год: 1966
+    - год: 1896
+      дата: 04.06
+      описание: ржд
+      место: Адамовка село. Харьковская губерния
+    - год: 1896
+      дата: вид.по 04.06
+      описание: крещ
+      тез: Михаил Небесный Воевода
+    - год: 1926
+      описание: иноч
+      место: Введенская обитель. Мильково. Браничевье. Сербия
+    - год: 1926
+      описание: дияк
+      место: вид.Введенская обитель. Мильково. Браничевье. Сербия
+    - год: 1926
+      дата: 21.11
+      описание: свящ
+      место: вид.Введенская обитель. Мильково. Браничевье. Сербия
+    - год: 1934
+      дата: май
+      описание: свят
+    - год: 1966
       дата: 19.06
       описание: прств
+      место: Сиэтл. Америка
+    - год: 1994
+      описание: обр
+    - год: 1994
+      дата: 19.06
+      собор: русз
+      описание: просл
+    - год: 2008
+      дата: 11.06
+      собор: рус
+      описание: просл.1
    помин:
-      дата: 19.06
+    - дата: сб. близ 19.06
+      собор: русз
+      описание: просл
+    - дата: 19.06
       описание: прств
-      служба:
-       - Иоанну Шанхайскому служба
-       - http://azbyka.ru/days/assets/upload/services/SLUZHBA_St_John.pdf
+    - дата: 29.09
+      собор: русз
+      описание: обр
