@@ -1,10 +1,27 @@
 ---
 Михаил Киевский:
-   имя: Михаил
-   описание: святитель Киевский
+   имя:
+      ру: вид.в иночестве Михаил
+      гр: Μιχαήλ
+   описание:
+      ру: серб, болгарин или сириец; святитель Киевский
+      гр: πρώτος Μητροπολίτης Κιέβου και πάσης Ρωσίας ο θαυματουργός
    чин: свт
-   собор: слав,болг,серб,рус,киев
+   собор: болг?,серб?,киев
    вики: http://drevo-info.ru/articles/7376.html
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/sep30-mihail.html
+       - http://azbyka.ru/days/sv-mihail-kievskij-i-vseja-rusi
+      гр: http://www.saint.gr/1015/saint.aspx
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/4466/af71a08520c42715fe4138d6fba884cf.jpg
+    - http://azbyka.ru/days/assets/img/saints/4466/987d4063e03f09703494f3a0a10d5d36.jpg
+    - http://azbyka.ru/days/assets/img/saints/4466/1e62933aaf82894dea42506c34a821e8.jpg
+    - http://www.saint.gr/photos/standard/0930/AgiosMichaelKiev01.jpg
+   служба:
+    - Михаилу Киевскому служба
+    - http://azbyka.ru/days/caa/131
    событие:
     - год: 992
       дата: 15.06
@@ -26,9 +43,10 @@
       описание: утр
    помин:
     - дата: 15.06
+      календарь: змин
       описание: прств
+      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_15.pdf
     - дата: 30.09
+      календарь: рпц,змин,ждр
       описание: прен.1
-      служба:
-       - Михаилу Киевскому служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_15.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_30.pdf
