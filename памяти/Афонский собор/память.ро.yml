@@ -3,11 +3,19 @@
    описание: собор преподобных на Афонской Горе просиявших
    чин: прпп
    крат: аф
+   вики: http://drevo-info.ru/articles/19014.html
    бытие: http://azbyka.ru/days/sv-prepodobnye-otcy-vo-svjatoj-gore-afonskoj-prosijavshie
-   образ: http://azbyka.ru/days/assets/img/saints/6461/p18pr0e6c0lojmsa3cht3n9ev7.jpg
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/6461/p18pr0e6c0lojmsa3cht3n9ev7.jpg
+    - http://drevo-info.ru/images/002/007119.jpg [XVIII в.]
+   служба:
+    - Афонскому собору служба
+    - http://azbyka.ru/days/caa/730
+   событие:
+      год: вид.XX
+      собор: рус
+      описание: просл
    помин:
       дата: нд.2.по птдс
+      календарь: рпц
       описание: само
-      служба:
-       - Афонскому собору служба
-       - http://azbyka.ru/days/caa/730

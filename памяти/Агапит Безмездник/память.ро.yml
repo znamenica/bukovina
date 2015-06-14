@@ -1,20 +1,60 @@
 ---
 Агапит Безмездник:
-   имя: Агапит
-   описание: врач безмездный, Печерский, в Ближних пещерах
+   имя:
+      ру: Агапит
+      гр: Αγαπητός
+   описание:
+      ру: врач (лечец) безмездный (безмездник) Печерский, в Ближних пещерах
+      гр: εν τω σπηλαίω του Αναργύρου ιατρού
    чин: прп
-   собор: слав,рус,бпеч,печ,киев
+   собор: бпеч,киев,лек
    вики: http://drevo-info.ru/articles/10794.html
-   бытие: http://azbyka.ru/days/sv-agapit-pecherskij
-   образ: http://drevo-info.ru/images/002/006812.jpg
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-agapit-pecherskij
+       - http://calendar.rop.ru/svyat1/jun01-agapit.html
+      гр: http://www.saint.gr/435/saint.aspx
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/4673/p1901vv6q819vo129d1qq21nt11qvpa.jpg
+    - http://azbyka.ru/days/assets/img/saints/4673/p1901vv6q51c5vu13qsarha10f53.jpg
+    - http://drevo-info.ru/images/002/006812.jpg
+    - http://azbyka.ru/days/assets/img/saints/4673/p1901vv6q71lho1k9e11s8151r1t458.jpg
+    - http://azbyka.ru/days/assets/img/saints/4673/p1901vv6q71pogubksb11vktqrq7.jpg
+    - http://azbyka.ru/days/assets/img/saints/4673/p1901vv6q610oumqt1l9cmk61chm5.jpg
+    - http://azbyka.ru/days/assets/img/saints/4673/p1901vv6q686t1onk1unt1is4hj04.jpg
+    - http://azbyka.ru/days/assets/img/saints/4673/p190204d4l1e4htn4uuq11601bq73.jpg
+   служба:
+    - Агапиту Безмезднику служба
+    - http://azbyka.ru/days/caa/492
+    - http://azbyka.ru/days/caa/181
    событие:
-      год: кон.XI-нач.XII
+    - год: кон.XI-нач.XII
       описание: прств
+      место: Печерская обитель. Киев
+    - год: кон.XI-нач.XII
+      описание: пгрб
+      место: Антониевы пещеры. Киев
+    - год: до 1643
+      собор: киев
+      описание: просл
+    - год: 1643
+      собор: киев
+      чин: бпеч
+      описание: просл.1
+    - год: 1762
+      собор: рус
+      описание: просл.2
+    - год: 1775
+      собор: рус
+      описание: просл.3
+    - год: 1784
+      собор: рус
+      описание: просл.4
    помин:
-      дата: 01.06
+    - дата: 31.05
+      календарь: азар
       описание: само
-      служба:
-       - Агапиту Безмезднику служба
-       - http://azbyka.ru/days/caa/492
-       - http://azbyka.ru/days/caa/181
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_01.pdf
+    - дата: 01.06
+      календарь: рпц,змин,греч
+      описание: само
+      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_01.pdf

@@ -1,0 +1,27 @@
+---
+Периплептийская обитель:
+   имя: Периплептийская
+   описание:
+      ру: обитель Успенская
+      гр: Παναγίας Περιβλέπτου Πολιτικών
+   чин: обит
+   собор: прпт
+   бытие:
+      гр:
+       - http://www.saint.gr/4317/saint.aspx
+       - http://www.saint.gr/4318/saint.aspx
+   слики:
+    - http://media.evia-guide.gr/files/imagecache/preview/evia-mones-panagia-perivleptou01.jpg
+    - http://media.evia-guide.gr/files/imagecache/preview/evia-mones-panagia-perivleptou02.jpg
+    - http://media.evia-guide.gr/files/imagecache/preview/evia-mones-panagia-perivleptou03.jpg
+   событие:
+      год: вид.XI
+      описание: обн
+      место: Периплептия
+   помин:
+    - дата: пн.по птдс
+      календарь: греч
+      описание: само
+    - дата: 15.08
+      календарь: греч
+      описание: само
