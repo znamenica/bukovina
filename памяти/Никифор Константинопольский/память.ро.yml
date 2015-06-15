@@ -1,22 +1,32 @@
 ---
 Никифор Константинопольский:
-   имя: Никифор
+   имя:
+      ру: Никифор
+      гр: Νικηφόρος
    отчество: Феодорович
-   прозвище: Исповедник
-   описание: советник; первосвятитель Константинопольский; изгнанник Хрисопольский (?),
-      Проконниский
+   описание:
+      ру: исповедник; советник; первосвятитель Константинопольский; изгнанник
+         Хриопольский (?), Проконниский
+      гр: Ομολογητής Πατριάρχης Κωνσταντινούπολης
    чин: исвт
    собор: 7вс,виз,двор,проп
    вики: http://drevo-info.ru/articles/10808.html
    бытие:
-    - http://azbyka.ru/days/sv-nikifor-ispovednik
-    - http://calendar.rop.ru/svyat1/mar13-nikifor.html
+      ру:
+       - http://azbyka.ru/days/sv-nikifor-ispovednik
+       - http://calendar.rop.ru/svyat1/mar13-nikifor.html
+      гр: http://www.saint.gr/460/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/002826.jpg
     - http://pravicon.com/icon-2533
     - http://azbyka.ru/days/assets/img/saints/2625/c604b3a611d582e7ff99d460e7e32229.jpg
     - http://azbyka.ru/days/assets/img/saints/2625/p190rp1h1c1d4a6on1lodpeq147h3.jpg
     - http://azbyka.ru/days/assets/img/saints/2625/fc784d49be258b68f7ef4f0da9de6531.jpg
+    - http://www.pigizois.net/sinaxaristis/03/13.jpg
+    - http://www.apostoliki-diakonia.gr/gr_main/eortologio/img/jun/june27.jpg
+    - http://www.saint.gr/photos/standard/0602/agiosnikiforos02.jpg
+    - http://www.saint.gr/photos/standard/0602/agiosnikiforos03.jpg
+    - http://1.bp.blogspot.com/-gSxsmBzwTQA/UIVh_uxEZpI/AAAAAAAAAhQ/fdVqXK4ijPM/s1600/%CE%91%CE%93%CE%99%CE%9F%CE%A3+%CE%9D%CE%99%CE%9A%CE%97%CE%A6%CE%9F%CE%A1%CE%9F%CE%A3.jpg
    отечник: http://azbyka.ru/otechnik/Nikifor_Konstantinopolskij/
    служба: Никифору Константинопольскому служба
    событие:
@@ -41,11 +51,12 @@
       место: Софийский собор. Константинополь. Византия
    помин:
     - дата: 13.03
-      календарь: рпц
+      календарь: рпц,змин
       описание: прен
       служба:
        - Никифору Константинопольскому на пренесение мощей служба
        - http://azbyka.ru/days/assets/upload/minei/03/minea_03_13.pdf
     - дата: 02.06
+      календарь: рпц,греч,змин
       описание: прств
       служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_02.pdf

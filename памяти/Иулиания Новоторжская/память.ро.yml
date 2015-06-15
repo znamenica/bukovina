@@ -2,11 +2,21 @@
 Иулиания Новоторжская:
    имя: в крещении Иулиания
    описание: княгиня Вяземская и Новоторжская
-   чин: мч
-   собор: смо,твер,блгвв
+   чин: мц
+   собор: смо,твер,блгвв,правв
    вики: http://drevo-info.ru/articles/4695.html
-   бытие: http://azbyka.ru/days/sv-iulianija-vjazemskaja
-   образ: http://pravicon.com/icon-2091
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-iulianija-vjazemskaja
+       - http://calendar.rop.ru/svyat1/jun02-iulianiya.html
+   образ:
+    - http://pravicon.com/icon-2091
+    - http://azbyka.ru/days/assets/img/saints/6125/p18voeil45jk4154jrfo1734ovd4.jpg
+    - http://azbyka.ru/days/assets/img/saints/6125/d7e49b9e23dc5e8927ad62beffca6945.jpg
+    - http://azbyka.ru/days/assets/img/saints/6125/p18voeil462m91s85273ordie5.jpg
+   служба:
+    - Иулиании Новоторжской служба
+    - http://azbyka.ru/days/caa/364
    событие:
     - год: XIV
       описание: крещ
@@ -20,16 +30,16 @@
     - год: 1407
       дата: весна
       описание: пгрб
-      место:  Спасо-Преображенский собор. Торжок
+      место: Спасо-Преображенский собор. Торжок
     - год: 1819
       дата: 02.06
       описание: обр
    помин:
     - дата: 02.06
+      календарь: рпц,змин
       описание: обр
+      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_02.pdf
     - дата: 21.12
+      календарь: змин
       описание: крещ
-      служба:
-       - Иулиании Новоторжской служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_02.pdf
-       - http://azbyka.ru/days/caa/364
+      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_02.pdf

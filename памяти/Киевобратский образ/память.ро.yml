@@ -1,7 +1,11 @@
 ---
 Киевобратский образ:
-   имя: Киево-Братский
-   описание: образ Богородицы
+   имя:
+      ру: Киево-Братский
+      гр: των αδελφών του Κιέβου
+   описание:
+      ру: образ Богородицы
+      гр: Υπεραγίας Θεοτόκου
    чин: обр
    собор: вышг,киев
    вики: http://drevo-info.ru/articles/5996.html
@@ -14,6 +18,7 @@
        - http://www.saint.gr/1548/saint.aspx
        - http://www.saint.gr/1549/saint.aspx
    образ:
+    - http://pravicon.com/icon-158
     - http://calendar.rop.ru/icons1/photos/KievoBratskaya.jpg
     - http://azbyka.ru/days/assets/img/icons/155/p188km1chj8tt1vcg1fm5qnm194f3.jpg
     - http://azbyka.ru/days/assets/img/icons/155/p188km1f7m16o01kk01uq512rl1dpe5.jpg
@@ -34,6 +39,7 @@
       календарь: греч
       описание: явл
     - дата: 02.06
+      календарь: рпц,греч
       описание: явл
     - дата: 06.09
       календарь: рпц,греч

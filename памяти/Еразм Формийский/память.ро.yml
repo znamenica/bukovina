@@ -1,14 +1,25 @@
 ---
 Еразм Формийский:
-   имя: Еразм
-   прозвище: Охридский, Формийский
+   имя:
+      ру: Еразм
+      гр: Έρασμος
+   описание:
+      ру: исповедник; святитель Формийский; проповедник Ликийский, Сирмийский
+      гр: Ιερομάρτυρας
    чин: исвт
+   собор: итал,лик,срем,проп
    вики: http://drevo-info.ru/articles/13567.html
+   бытие:
+      гр: http://www.saint.gr/457/saint.aspx
+   образ:
+    - http://www.saint.gr/photos/standard/0602/AgiosErasmos01.jpg
+    - http://www.apostoliki-diakonia.gr/gr_main/eortologio/img/jun/june31.jpg
    событие:
       год: 303
       описание: прств
+      место: Формий. Италия
    помин:
       дата: 02.06
-      собор: греч
+      календарь: греч,змин
       описание: само
       служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_02.pdf

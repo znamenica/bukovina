@@ -1,15 +1,34 @@
 ---
 Константин Агарянин:
-   имя: Константин
-   прозвище: Агарянин
-   описание: Афонский
+   имя:
+      ру: в крещении Константин
+      гр: Κωνσταντίνος
+   прозвище:
+      ру: Агарянин
+      гр: εξ Αγαρηνών
+   описание: агарянин; крещеник Афонский; повешен агарянами
    чин: мч
-   собор: аф
+   собор: митл,аф,виз
    вики: http://drevo-info.ru/articles/11217.html
+   бытие:
+      гр: http://www.saint.gr/451/saint.aspx
+   образ:
+    - http://xristianos.gr/forum/eikones/agioi_tis_orthodoksias/agios_konstantinos_neomarturas_eks_agarinwn_328.jpg
+    - http://xristianos.gr/forum/eikones/agioi_tis_orthodoksias/agios_konstantinos_neomarturas_eks_agarinwn_058.jpg
+   служба: Константину Агарянину служба
    событие:
-      год: 1819
+    - год: вид.кон.XVIII
+      описание: ржд
+      место: Псилометопо село. Митилен остров
+    - год: вид.нач.1819
+      описание: крещ
+      место: Кавсокаливская обитель. Афон
+    - год: 1819
       дата: 02.06
       описание: прств
+      образ: http://4.bp.blogspot.com/-ajwHK_7WWLk/T8khU4NoLWI/AAAAAAAALZU/vLPBa9HJ9iM/s1600/401077-33.jpg
+      место: Константинополь. Византия
    помин:
       дата: 02.06
+      календарь: греч,г7д8
       описание: прств
