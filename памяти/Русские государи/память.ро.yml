@@ -1,0 +1,26 @@
+---
+Русские государи:
+   описание: собор святых русских государей
+   чин: блгвв
+   крат: русг
+   собор: рус
+   вики: http://drevo-info.ru/articles/27703.html
+   образ: http://drevo-info.ru/images/003/011041.jpg
+   служба:
+    - Русскому собору служба
+    - http://azbyka.ru/days/caa/728
+    - http://azbyka.ru/days/assets/upload/services/2nd-Sunday-p-Pentecost_ned2-384932_1.pdf
+   событие:
+    - год: 2013
+      собор: пнаф
+      описание: просл
+    - год: 2014
+      дата: 15.07
+      описание: чинпр
+      бытие:
+       - http://www.pravmir.ru/na-afone-pochtili-sobor-vseh-svyatyih-russkih-gosudarey/#ixzz38qrvdrC4
+       - http://afonit.info/index.php/novosti/novosti-russkogo-monastyrya/3447-sobor-vsekh-svyatykh-russkikh-gosudarej
+   помин:
+      дата: 15.07
+      собор: пнаф
+      описание: само
