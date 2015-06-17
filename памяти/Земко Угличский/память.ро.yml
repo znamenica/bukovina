@@ -1,19 +1,41 @@
 ---
 Земко Угличский:
-   имя: Димитрий
+   имя:
+      ру: Димитрий
+      гр: Δημήτριος
    отчество: Иванович
    фамилия: Рюрикович
-   описание: царевич Угличский и Московский
+   описание:
+      ру: царевич Угличский и Московский
+      гр: Μοσχοβίτης, ο Θαυματουργός
    чин: стц
-   собор: мск,ряр
+   собор: мск,ряр,угл
    вики:
     - http://drevo-info.ru/articles/5800.html
     - https://ru.wikipedia.org/wiki/Дмитрий_Углицкий
-   бытие: http://azbyka.ru/days/sv-dimitrij-uglichskij-i-moskovskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-dimitrij-uglichskij-i-moskovskij
+       - http://calendar.rop.ru/svyat1/jun03-dimitrij.html
+      гр: http://www.saint.gr/1597/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/001825.jpg
     - https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tsarevitch_Dmitrij_N.Novgorod.jpg/509px-Tsarevitch_Dmitrij_N.Novgorod.jpg
     - http://www.calend.ru/img/content_images/i2/2074_or.jpg
+    - http://www.saint.gr/photos/standard/0515/AgiosDimitriosPrigipas01.jpg
+    - http://vatopaidi.files.wordpress.com/2011/05/tsarevich-dmitri.jpg
+    - http://www.saint.gr/photos/standard/0515/AgiosDimitriosPrigipas03.jpg
+    - http://azbyka.ru/days/assets/img/saints/817/p190otoph917c91edn14l4fvc1laf4.jpg
+    - http://azbyka.ru/days/assets/img/saints/817/5afc46ca180b0da2c94d77f67fd9ce63.jpg
+    - http://azbyka.ru/days/assets/img/saints/817/19b4fff38fe45f2677b4f7492628016b.jpg
+    - http://azbyka.ru/days/assets/img/saints/817/995df1ff73bb9f814ee6d10714a5fc96.jpg
+    - http://azbyka.ru/days/assets/img/saints/817/f9789cbc51523b2e4a9af5308320eef5.jpg
+    - http://azbyka.ru/days/assets/img/saints/817/e7ecd2060b40f987815d528237f5e97f.jpg
+    - http://azbyka.ru/days/assets/img/saints/817/p190otoph81qdj199k139u1p4d8pf3.jpg
+   служба:
+    - Земко Угличскому служба
+    - http://azbyka.ru/days/caa/726
+    - http://azbyka.ru/days/caa/727
    событие:
     - год: 1582
       дата: 19.10
@@ -30,19 +52,22 @@
       дата: 03.07
       описание: обр
     - год: 1606
-      дата: по 03.07
+      дата: вид.по 03.07
       описание: прен
       место: Архангельский собор. Кремль. Москва
+      описание_:
+         гр: Μετακομιδή του Ιερού λειψάνου του Αγίου Δημήτριου του Μοσχοβίτη του Θαυματουργού
+      бытие:
+         гр: http://www.saint.gr/1598/saint.aspx
    помин:
     - дата: 15.05
+      календарь: греч
       описание: прств
-      служба:
-       - Земко Угличскому служба
-       - http://azbyka.ru/days/caa/726
-       - http://azbyka.ru/days/caa/727
     - дата: 03.06
+      календарь: рпц,змин,греч
       описание: прен
       служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_03.pdf
     - дата: 19.10
+      календарь: змин
       описание: ржд
       служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_19.pdf
