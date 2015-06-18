@@ -1,16 +1,21 @@
 ---
 Марфа Вифанская:
-   имя: Марфа
-   прозвище: Вифанская
+   имя:
+      ру: Марфа
+      гр: Μάρθα
+   описание:
+      ру: уроженка и жительница Вифанская; сестра Марии Вифинской и Лазаря Четверодневного
+      гр: αδελφή του Λαζάρου
    чин: прав
-   собор: мрнс
+   собор: мрнс,плст,ммвф
    вики: http://drevo-info.ru/articles/17533.html
    бытие: http://azbyka.ru/days/sv-marfa-vifanskaja
-   образ: http://pravicon.com/icon-2407
+   образ:
+    - http://pravicon.com/icon-2407
+    - http://www.saint.gr/photos/standard/0604/AgiaMartha02.jpg
+    - http://4.bp.blogspot.com/-l2gjaRqnhmw/Ta2BK_lFPuI/AAAAAAAAABs/gDuAsixk1b4/s1600/agia+martha+2.jpg
+      [Καζακίδου Μαρία© (byzantineartkazakidou. blogspot.com)]
+    - http://www.saint.gr/photos/standard/0604/AgiaMartha01.jpg
    событие:
       год: I
       описание: прств
-   помин:
-      дата: 04.06
-      описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_04.pdf

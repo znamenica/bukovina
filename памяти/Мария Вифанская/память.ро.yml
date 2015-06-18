@@ -1,16 +1,18 @@
 ---
 Мария Вифанская:
-   имя: Мария
-   прозвище: Вифанская
+   имя:
+      ру: Мария
+      гр: Μαρία
+   описание:
+      ру: уроженка и жительница Вифанская; сестра Марфы Вифинской и Лазаря Четверодневного
+      гр: αδελφή του Λαζάρου
    чин: прав
-   собор: мрнс
+   собор: мрнс,плст,ммвф
    вики: http://drevo-info.ru/articles/17533.html
    бытие: http://azbyka.ru/days/sv-marija-vifanskaja
-   образ: http://pravicon.com/icon-2365
+   образ:
+    - http://pravicon.com/icon-2365
+    - http://www.saint.gr/photos/standard/0604/AgiaMaria01.jpg
    событие:
       год: I
       описание: прств
-   помин:
-      дата: 04.06
-      описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_04.pdf
