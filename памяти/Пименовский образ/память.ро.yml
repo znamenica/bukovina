@@ -3,17 +3,35 @@
    имя: Пименовский
    описание: образ Богородицы
    чин: обр
-   вид: Путеводица-Перивлепта
+   вид: Перивлептский образ
+   собор: лако,мск
    вики: http://drevo-info.ru/articles/4179.html
-   бытие: http://azbyka.ru/days/ikona-pimenovskaja
+   бытие:
+    - http://azbyka.ru/days/ikona-pimenovskaja
+    - http://calendar.rop.ru/icons1/jun06-ikona-pimenovskaya.html
    образ:
     - http://azbyka.ru/days/assets/img/icons/261/80b1d047423ec4b9b47fe97f253b3e67.jpg
+    - http://azbyka.ru/days/assets/img/icons/261/a5ee8726e64a07915603ba72e056dc62.jpg
+    - http://azbyka.ru/days/assets/img/icons/261/p188lhk96i1njtrhq1m011ct514603.jpg
     - http://drevo-info.ru/images/001/000667.jpg
+    - http://calendar.rop.ru/icons1/photos/Pimenovskaya.jpg
    событие:
+    - год: до 1386
+      описание: напис
+      место: вид.Перивлептская обитель. Мистра. Лакония
     - год: 1381/1386
+      описание: прен
+      место: Успенский собор. Кремль. Москва
+    - год: по перв.пол.XVI
       описание: прен.1
-    - год: XVI
+      место: Благовещенский собор. Кремль. Москва
+    - год: вид.по XVI
       описание: прен.2
+      место: Мироваренная палата. Кремль. Москва
+    - год: 1930
+      описание: утр
+      место: Третьяковская галерея
    помин:
       дата: 06.06
+      календарь: рпц
       описание: само

@@ -3,20 +3,25 @@
    имя: Тихвинский
    описание: образ Богородицы
    чин: обр
-   вики: http://drevo-info.ru/articles/3742.html
-   бытие: http://azbyka.ru/days/sv-david-solunskij-fessalonikijskij
+   собор: плст,сир,виз,тихв
+   вид: Влахернский образ
+   вики:
+    - http://drevo-info.ru/articles/3742.html
+    - https://ru.wikipedia.org/wiki/Тихвинская_икона_Божией_Матери
    образ:
     - http://drevo-info.ru/images/001/000551.jpg
     - http://drevo-info.ru/images/001/000550.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/8/8f/Тихвинская_икона_Божией_Матери.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/4/48/Тихвинская_икона_Божией_Матери_в_окладе.jpg
+   служба:
+    - Тихвинскому образу служба
+    - http://azbyka.ru/days/caa/583
+    - http://azbyka.ru/days/caa/582
+    - http://azbyka.ru/days/caa/581
    событие:
-    - год: I
+    - год: вид.по V
       описание: напис
-    - год: I
-      описание: прен
-      место: Антиохия
-    - год: V
-      описание: прен.1
-      место: Влахернская церква. Константинополь. Византия
+      место: вид.Константинополь. Византия
     - год: 1383
       дата: 26.06
       описание: прен.2
@@ -39,10 +44,6 @@
       место: Тихвинский Успенский монастырь. Тихвин
    помин:
       дата: 26.06
+      календарь: змин
       описание: прен.2
-      служба:
-       - Тихвинскому образу служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_26.pdf
-       - http://azbyka.ru/days/caa/583
-       - http://azbyka.ru/days/caa/582
-       - http://azbyka.ru/days/caa/581
+      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_26.pdf
