@@ -1,5 +1,7 @@
 require "bukovina/version"
 
 module Bukovina
-  # Your code goes here...
+   def self.run
+      require File.join( File.dirname( __FILE__ ), 'config/environment.rb' )
+   end
 end
