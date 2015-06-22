@@ -1,7 +1,7 @@
 ---
 Гавриил Крылатец:
-   имя: Гавриил
-   описание: Архангел, сила Божия
+   имя: Гавриил (сила Божия)
+   описание: архангел
    чин: крлт
    собор: бспл
    вики:
@@ -19,6 +19,9 @@
     - http://azbyka.ru/days/assets/img/saints/5473/p18f4kbga35ncu8eoo1123i14sl3.jpg
     - http://azbyka.ru/days/assets/img/saints/5473/p18f4kbga4fe2hhc16v71o7kpe66.JPG
     - http://azbyka.ru/days/assets/img/saints/5473/p193vf4g5q1loi1a70181nr2d1m1p3.png
+   служба:
+    - http://azbyka.ru/days/caa/261
+    - http://azbyka.ru/days/caa/262
    событие:
     - год: I-V
       описание: блгвщ
@@ -27,17 +30,14 @@
        - http://azbyka.ru/days/assets/img/saints/6475/p17ud0jm4o11801htg100ap3po2p4.jpg
     - год: XVII
       описание: освящ
-  помин:
+   помин:
     - дата: 26.03
       описание: блгвщ
       служба: Гавриилу Крылатцу о благовещении служба
     - дата: 13.07
+      календарь: змин
       описание: освящ
       служба:
        - Гавриилу Крылатцу о соборе служба
        - Гавриилу Крылатцу о соборе и Стефану Савваиту служба
        - http://azbyka.ru/days/assets/upload/minei/07/minea_07_13.pdf
-    - описание: само
-      служба:
-       - http://azbyka.ru/days/caa/261
-       - http://azbyka.ru/days/caa/262

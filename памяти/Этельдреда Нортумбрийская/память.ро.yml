@@ -1,24 +1,46 @@
 ---
 Этельдреда Нортумбрийская:
-   имя: Этельдреда
-   описание: королева Нортумбрийская, настоятельница Элийская
+   имя:
+      ру: Этельдреда, Одри
+      ан: Etheldreda (Æthelthryth, Æþelðryþe), Audrey
+   отчество: Аннична
+   описание:
+      ру: сестра Витбурги Холкемской, Сексбурги Элийской, Этельбурги Фаремутерской;
+         королевна Саффолкская; королева Фенландская и Нортумбрийская; настоятельница
+         Элийская
+      ан:  East Anglian princess, a Fenland and Northumbrian queen and Abbess of Ely
    чин: прп
-   собор: келт,брит
-   вики: http://drevo-info.ru/articles/6284.html
-   образ: http://drevo-info.ru/images/001/001518.jpg
+   собор: норт,ванг
+   вики:
+      ру: http://drevo-info.ru/articles/6284.html
+      ан: https://en.wikipedia.org/wiki/Etheldreda
+   бытие:
+      ан: http://faculty.virginia.edu/OldEnglish/anthology/aethel.html
+      гр: http://www.saint.gr/617/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/001/001518.jpg
+    - http://drevo-info.ru/images/001/001518.jpg
+    - https://pyhiinvaeltaja.files.wordpress.com/2010/07/etheldreda.jpg
+    - http://www.crestinortodox.ro/files/image/sfanta-etheldreda-10.jpg
+    - http://0.static.wix.com/media/ce9794_384e98957dab92e6c7450a244cd77c6f.jpg
    событие:
-    - год: VI-VII
+    - год: ок.636
       описание: ржд
-      место: Экснинг. Саффолк. Англия
-    - год: VI-VII
+      место: Экснинг. Саффолк. Восточная Англия
+    - год: ок.652
       описание: брак
-      муж: Тонберт
-    - год: VI-VII
+      муж: Тонберт Гырвский
+    - год: 660
       описание: брак.1
       муж: Эгфрид Нортумбрийский
+    - год: 670
+      описание: иноч
     - год: 679
+      дата: 23.06
       описание: прств
+      место: Элийская обитель. Эли. Кембриджшир. Восточная Англия
    помин:
       дата: 23.06
-      собор: зап
-      описание: само
+      собор: сурж
+      календарь: греч
+      описание: прств
