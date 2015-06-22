@@ -20,4 +20,4 @@ tmp
 *.log
 .ruby-version
 .ruby-gemset
-lib/db/**
+lib/db/*.sqlite3*
