@@ -6,6 +6,11 @@ end
    find_or_create Memory, short_name: short_name
 end
 
+То(/^многосвязное свойство "(.*)" памяти "(.*)" действенно$/) do |attr, short_name|
+   memory = Memory.where( short_name: short_name ).first
+   expect( memory ).to have_and_belong_to_many( attr.to_sym )
+end
+
 То(/^сохранивши память "([^"]*)" будет существовать$/) do |short_name|
    @record.save
    it = Memory.where( short_name: short_name ).first
