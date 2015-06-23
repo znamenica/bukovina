@@ -8,12 +8,12 @@ gem 'rdoba', :git => 'https://github.com/3aHyga/rdoba.git'
 #gem 'petrovich', :path => '/usr/local/home/majioa/git/petrovich-ruby/'
 
 group :development do
-#   gem 'cucumber'
-#   gem 'shoulda'
+   gem 'cucumber'
+   gem 'shoulda-matchers', github: 'majioa/shoulda-matchers'
+   gem 'rspec-expectations'
    gem 'activerecord'
-#   gem 'sinatra-activerecord', '~> 2.0.0.rc2'
+   gem 'database_cleaner'
    gem 'sqlite3'
-#   gem 'rake'
 end
 
 require 'rubygems/package'
