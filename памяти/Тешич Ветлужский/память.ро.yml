@@ -1,25 +1,37 @@
 ---
 Тешич Ветлужский:
-   имя: Варнава
-   прозвище: Ветлужский
+   имя:
+      ру: Варнава (Тешич)
+   описание:
+      ру: отшельник Ветлужский
+      гр: του ποταμού Βετολούγκα
    чин: прп
-   собор: слав,рус,ниж
+   собор: ниж,вуст,врна
    вики: http://drevo-info.ru/articles/6108.html
-   бытие: http://azbyka.ru/days/sv-varnava-vetluzhskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-varnava-vetluzhskij
+       - http://calendar.rop.ru/svyat1/jun11-varnava-vetluzskij.html
+      гр: http://www.saint.gr/3361/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/350/p18jgu5m4713kd16n4ms4t1j139n3.jpg
     - http://azbyka.ru/days/assets/img/saints/350/p18jgu5m4710ck1bbc5be1k881eb25.jpg
+   служба: Тешичу Ветлужскому служба
    событие:
-    - год: ср. XIV
+    - год: вид.вт.пол.XIV
       описание: ржд
+      место: Великий Устюг
+    - год: вид.вт.пол.XIV
+      описание: свящ
+      место: вид.Великий Устюг
     - год: 1445
       дата: 11.06
       описание: прств
+      место: клеть (ныне Варнавинская пустынь. Варнавино посёлок). Нижегородщина
     - год: 1639
       описание: обр
    помин:
       дата: 11.06
+      календарь: рпц,змин,греч
       описание: прств
-      служба:
-       - Тешичу Ветлужскому служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_11.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_11.pdf

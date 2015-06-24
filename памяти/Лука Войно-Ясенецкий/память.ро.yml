@@ -1,17 +1,27 @@
 ---
 Лука Войно-Ясенецкий:
-   имя: в иночестве Лука, в крещении Валентин
-   отчество: Феликсович
-   фамилия: Войно-Ясенецкий
-   описание: профессор, доктор медицины, врач Ардатовский, Фатежский, Переславзалесский,
-      Красноярский; врач, протоиерей Ташкентский; святитель Симферопольский и Крымский,
-      Тамбовкий и Мичуринский, Красноярский
+   имя:
+      ру: в иночестве Лука, в крещении Валентин
+      гр: Λουκάς, Βαλεντίν
+   отчество:
+      ру: Феликсович
+      гр: του Φέλιξ
+   фамилия:
+      ру: Войно-Ясенецкий
+      гр: Βόινο-Γιασενέτσκι
+   описание:
+      ру: профессор, доктор медицины, врач Ардатовский, Фатежский, Переславзалесский,
+         Красноярский; врач, протоиерей Ташкентский; святитель Симферопольский и Крымский,
+         Тамбовкий и Мичуринский, Красноярский
+      гр: Αρχιεπίσκοπος Συμφερουπόλεως και Κριμαίας
    чин: исвт
-   собор: нмр,врнж,тавр,кур,ряр,уч,прзл,ардт,фатж,тшкт
+   собор: нмр,врнж,тавр,кур,ряр,уч,керч,прзл,ардт,фатж,тшкт,тамб,мичу,кряр,симф
    вики: http://drevo-info.ru/articles/4137.html
    бытие:
-    - http://azbyka.ru/days/sv-luka-vojno-jaseneckij
-    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu9sueU60W0feahfWqTsOKhdSOee8YUUe0fdOrWe8oUZ8Kfe8fVfe8ctmY*
+      ру:
+       - http://azbyka.ru/days/sv-luka-vojno-jaseneckij
+       - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu9sueU60W0feahfWqTsOKhdSOee8YUUe0fdOrWe8oUZ8Kfe8fVfe8ctmY*
+      гр: http://www.saint.gr/1972/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/4100/c0e1fecb5c3d8f9831cee51d51ae478d.jpg
     - http://azbyka.ru/days/assets/img/saints/4100/0201db7c1885b3229dec81e934d53481.jpg
@@ -21,6 +31,14 @@
     - http://213.171.53.29/foto_1/oal-24p.jpg
     - http://213.171.53.29/foto_1/oal-24q.jpg
     - http://213.171.53.29/foto_1/oal-24n.jpg
+    - http://www.saint.gr/photos/standard/0611/AgiosLoukas09.jpg
+    - http://www.saint.gr/photos/standard/0611/AgiosLoukas10.jpg [Λυδία Γουριώτη©
+      (lydiagourioti-iconography.blogspot.com)]
+    - http://farm3.staticflickr.com/2861/9326944934_17acf8dfe6_o.jpg [Μιχαήλ Χατζημιχαήλ© www.michaelhadjimichael.com]
+    - http://www.saint.gr/photos/standard/0611/AgiosLoukas01.jpg
+    - http://www.saint.gr/photos/standard/0611/AgiosLoukas02.jpg
+    - http://www.imverias.gr/dev/media/16112008113-001.jpg
+    - http://farm3.staticflickr.com/2886/8821794794_87e77d9593_o.jpg [Μιχαήλ Χατζημιχαήλ© www.michaelhadjimichael.com]
    служба:
     - Луке Войно-Ясенецкому служба
     - http://azbyka.ru/days/caa/424
@@ -70,9 +88,17 @@
       описание: просл.1
       о: 29.05
     - год: 1996
-      дата: 07.03
+      дата: 04.03
       описание: обр
       место: близ.Всехсвятская церковь. Симферополь. Крым
+    - год: 1996
+      дата: 04.03
+      описание: прен
+      место: Всехсвятская церковь. Симферополь. Крым
+    - год: 1996
+      дата: 07.03
+      описание: прен
+      место: Свято-Троицкий собор. Симферополь. Крым
     - год: 2000
       дата: 31.07-03.08
       собор: рус
@@ -96,4 +122,7 @@
     - дата: 05.03
       описание: обр
     - дата: 29.05
+      описание: прств
+    - дата: 11.06
+      календарь: греч
       описание: прств

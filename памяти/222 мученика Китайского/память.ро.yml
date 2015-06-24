@@ -1,19 +1,39 @@
 ---
 222 мученика Китайского:
-   описание: 222 мученика Китайского
+   описание:
+      ру: 222 мученика Китайского
+      гр: Άγιος Μητροφάνης Τσί-Σούνγκ και οι μαζί μ' αυτόν μαρτυρήσαντες: Τατιανή η
+         Πρεσβυτέρα του, Ησαΐας και Ιωάννης οι γιοι του, Μαρία η νύφη του, Αγία Ία
+         (ή Ίγια) η διδασκάλισσα και άλλοι 222 Κινέζοι Μάρτυρες
    чин: мчч
-   крат: 222
+   крат: 222м
    собор: кит
    вики: http://drevo-info.ru/articles/2446.html
+   бытие:
+      ру: http://www.chinese.orthodoxy.ru/russian/kb3/Martyrs1.htm
+      гр: http://www.saint.gr/567/saint.aspx
    образ:
     - http://drevo-info.ru/images/002/007053.jpg
     - http://iconsv.ru/index.php?option=com_joomgallery&func=watermark&id=7936&catid=1914&orig=1&no_html=1&Itemid=1
     - http://iconsv.ru/index.php?option=com_joomgallery&func=watermark&id=7935&catid=1914&orig=1&no_html=1&Itemid=1
+    - http://www.saint.gr/photos/standard/0611/AgiosMitrofanis01.jpg
+    - http://vatopaidi.files.wordpress.com/2010/06/oi-agioi-neomartyres-tis-kinas-21.jpg
+    - http://vatopaidi.files.wordpress.com/2010/06/oi-agioi-kinezoi-neomartyres-3.jpg
+   служба: 222-м мученикам Китайским служба
    событие:
-      год: 1900 
-      дата: 11.06 
+    - год: 1900 
+      дата: 07.06-12.06
       описание: прств
       место: Пекин
+    - год: 1902
+      собор: рус
+      чин: кит
+      описание: просл
+    - год: 1903
+      дата: 11.06
+      описание: чинпр
    помин:
       дата: 11.06
+      собор: русз,кит
+      календарь: греч
       описание: прств
