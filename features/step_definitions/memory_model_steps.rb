@@ -1,5 +1,5 @@
-Допустим(/^есть новая пустая запись памяти$/) do
-   @record = Memory.all.build
+Допустим(/^создадим новую память с полями:$/) do |table|
+   find_or_create Memory, table.rows_hash
 end
 
 Допустим(/^есть память "(.*)"$/) do |short_name|
@@ -11,8 +11,7 @@ end
    expect( memory ).to have_and_belong_to_many( attr.to_sym )
 end
 
-То(/^сохранивши память "([^"]*)" будет существовать$/) do |short_name|
-   @record.save
+То(/^память "([^"]*)" будет существовать$/) do |short_name|
    it = Memory.where( short_name: short_name ).first
    expect( it ).to be_persisted
 end

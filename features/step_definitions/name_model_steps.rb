@@ -1,10 +1,5 @@
-Допустим(/^есть новая пустая запись имени$/) do
-   @record = Name.all.build
-end
-
-Если(/^(?:задаём )?поле '(.*)' значением '(.*)'$/) do |field, value|
-   method_name = :"#{field}="
-   @record.send method_name, value
+Допустим(/^создадим новое имя с полями:$/) do |table|
+   find_or_create Name, table.rows_hash
 end
 
 Допустим(/^есть русское имя (.*)$/) do |name|
@@ -19,8 +14,7 @@ end
    end
 end
 
-То(/^сохранивши русское имя (.*) будет существовать$/) do |name|
-   @record.save
+То(/^русское имя (.*) будет существовать$/) do |name|
    it = Name.where( text: name ).first
    expect( it ).to be_persisted
 end
