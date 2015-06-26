@@ -1,5 +1,6 @@
 class Name < ActiveRecord::Base
-   has_and_belongs_to_many :memories
+   has_many :memories, through: :memory_names
+   has_many :memory_names
 
    enum language_code: [ :цс, :ру, :ср, :гр, :ан, :лт ]
 

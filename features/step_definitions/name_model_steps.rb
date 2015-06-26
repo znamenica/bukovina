@@ -19,9 +19,11 @@ end
    expect( it ).to be_persisted
 end
 
-То(/^многосвязное свойство "(.*)" имени "(.*)" действенно$/) do |attr, nametext|
+То(/^многоимущие свойства "(.*)" имени "(.*)" действенны$/) do |attrs, nametext|
    name = Name.where( text: nametext ).first
-   expect( name ).to have_and_belong_to_many( attr.to_sym )
+   attrs.split( /,\s*/ ).each do |attr|
+      expect( name ).to have_many( attr.to_sym )
+   end
 end
 
 То(/^свойство '(.*)' имени "(.*)" является перечислителем$/) do |attr, nametext|

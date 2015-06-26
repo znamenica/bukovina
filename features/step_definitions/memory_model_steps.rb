@@ -6,9 +6,11 @@ end
    find_or_create Memory, short_name: short_name
 end
 
-То(/^многосвязное свойство "(.*)" памяти "(.*)" действенно$/) do |attr, short_name|
+То(/^многоимущие свойства "(.*)" памяти "(.*)" действенны$/) do |attrs, short_name|
    memory = Memory.where( short_name: short_name ).first
-   expect( memory ).to have_and_belong_to_many( attr.to_sym )
+   attrs.split( /,\s*/ ).each do |attr|
+      expect( memory ).to have_many( attr.to_sym )
+   end
 end
 
 То(/^память "([^"]*)" будет существовать$/) do |short_name|
