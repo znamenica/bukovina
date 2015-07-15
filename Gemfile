@@ -10,6 +10,7 @@ gem 'rdoba', :git => 'https://github.com/3aHyga/rdoba.git'
 group :development do
    gem 'cucumber'
    gem 'shoulda-matchers', github: 'majioa/shoulda-matchers'
+   gem 'flag_shih_tzu'
    gem 'rspec-expectations'
    gem 'activerecord'
    gem 'database_cleaner'
@@ -35,7 +36,6 @@ class Gem::Package::TarWriter
 
          prefix = (parts + [nxt]).join "/"
          name = newname
-
       end
 
       return name, prefix

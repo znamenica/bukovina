@@ -11,4 +11,15 @@ namespace :db do
    task :load_config => :environment do
       Rails.application
    end
+
+   desc 'Validate seed'
+   task :validate => :load_config do
+      app = Rails.application
+      app.validate
+      if !app.errors.empty?
+         app.errors.each do |e|
+            STDERR.puts e
+         end
+      end
+   end
 end
