@@ -1,19 +1,36 @@
 ---
 Евфимий Великий:
-   имя: вид.в крещении Евфимий
+   имя:
+      ру: вид.в крещении Евфимий
+      гр: Ευθύμιος
    отчество: Павлович
-   прозвище: Великий
+   прозвище:
+      ру: Великий
+      гр: Μέγας
    описание: священноинок Мелетинский; настоятель Зифский
    чин: прп
    собор: арм,зиф
    вики:
     - http://drevo-info.ru/articles/8712.html
     - http://ru.wikipedia.org/wiki/Евфимий_Великий
-   бытие: http://azbyka.ru/days/sv-evfimij-velikij
-   образ: http://pravicon.com/icon-1731
+   бытие:
+      ру: http://azbyka.ru/days/sv-evfimij-velikij
+      гр: http://www.saint.gr/3322/saint.aspx
+   образ:
+    - http://pravicon.com/icon-1731
+    - http://www.saint.gr/photos/standard/0120/OsiosEuthimiosMegas06.jpg [Λυδία Γουριώτη©
+      (http://lydiagourioti-iconography.blogspot.com)]
+    - http://www.porphyrios.gr/files/jpg/%CE%95%CE%B9%CE%BA%CF%8C%CE%BD%CE%B5%CF%82/%CE%86%CE%B3%CE%B9%CE%BF%CE%BD%20%CE%8C%CF%81%CE%BF%CF%82/%CE%9A%CE%B1%CF%81%CF%85%CE%AD%CF%82/%CE%A0%CE%B1%CF%87%CF%89%CE%BC%CE%B1%CE%AF%CE%BF%CE%B9/%CE%A6%CE%BF%CF%81%CE%B7%CF%84%CE%AD%CF%82/%CE%86%CE%B3%CE%B9%CE%BF%CE%B9/%CE%95%CF%85%CE%B8%CF%8D%CE%BC%CE%B9%CE%BF%CF%82%20%CE%9C%CE%AD%CE%B3%CE%B1%CF%82%20%CE%8C%CF%83%CE%B9%CE%BF%CF%82.jpg
+    - http://www.pigizois.net/sinaxaristis/01/20.jpg
+    - http://www.apostoliki-diakonia.gr/gr_main/eortologio/Agion_pics/Jan_7.jpg
+    - http://www.saint.gr/photos/standard/0120/OsiosEuthimiosMegas09.jpg
+    - http://www.saint.gr/photos/standard/0120/OsiosEuthimiosMegas04.jpg
+    - http://www.saint.gr/photos/standard/0120/OsiosEuthimiosMegas05.jpg
+    - http://www.saint.gr/photos/standard/0117/AgioiAntoniosEuthimiosSavvasIgiasmenos01.jpg
+      [1766 μ.Χ. - Nέα Σκήτη, Άγιον Όρος]
    служба: Евфимию Великому служба
    событие:
-    - год: ок.376
+    - год: 377
       описание: ржд
       место: Мелитины. Армения
     - год: вид.кон.IV
@@ -26,8 +43,30 @@
       дата: 20.01
       описание: прств
       место: Евфимиева лавра. Зифская пустыня. Палестина
+    - год: вид.по V
+      описание: обр
+      описание_: Μετάθεση των ιερών λειψάνων του Οσίου Ευθυμίου του Μεγάλου
+      бытие:
+         гр: http://www.saint.gr/4008/saint.aspx
+    - год: по V
+      описание: прен
+      предмет: часть
+      место: Великая лавра. Афон
+    - год: по V
+      описание: прен.1
+      предмет: часть.1
+      место: Иверская обитель. Афон
+    - год: по V
+      описание: прен.2
+      предмет: часть.2
+      место: Калавритская пещера. Кипр
+    - год: по XVIII
+      описание: прен.3
+      предмет: часть.3
+      место: Свято-Троицкая Александро-Невская лавра. Санкт-Петербург
    помин:
     - дата: 20.01
       описание: прств
     - дата: 07.05
+      календарь: греч
       описание: обр

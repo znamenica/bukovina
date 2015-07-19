@@ -1,20 +1,28 @@
 ---
 13 отцов Сирийских:
-   описание: 13 отцов Сирийских, Каппадокийских
+   описание:
+      ру: 13 отцов Сирийских и Каппадокийских: Иоанн Зедазенский и 12 его учеников
+      гр: Ιωάννης και οι μαθητές αυτού
    чин: прпп
    крат: 13ос
-   собор: кртл,сир,шмгв
+   собор: груз,сир,капд
    вики: http://drevo-info.ru/articles/23267.html
+   бытие:
+      гр: http://www.saint.gr/4012/saint.aspx
    образ:
     - http://drevo-info.ru/images/002/008197.jpg
     - http://drevo-info.ru/images/002/008196.jpg
     - https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10484944_576049822521167_341005545152365245_n.jpg
     - http://azbyka.ru/days/assets/img/saints/930/p18m8pm4d7qei16m51b461uqd2l83.jpg
+    - http://www.saint.gr/photos/standard/0507/AgiosIoannisDodekaMathites01.jpg
+    - http://www.saint.gr/photos/standard/0507/AgiosIoannisDodekaMathites02.jpg
    событие:
     - год: VI
       описание: прств
+      место: Грузия
     - год: вид.вт.пол.X
       описание: просл
    помин:
       дата: 07.05
+      календарь: греч
       описание: само

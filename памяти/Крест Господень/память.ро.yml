@@ -3,7 +3,9 @@
    описание: Крест Господень
    чин: прдм
    бытие: http://www.saint.gr/136/saint.aspx
-   образ: http://days.pravoslavie.ru/Images/is900.jpg
+   образ:
+    - http://days.pravoslavie.ru/Images/is900.jpg
+    - http://www.saint.gr/photos/easter/Stavroproskiniseos01.jpg
    служба: Кресту Господню служба
    событие:
     - год: 326
@@ -15,6 +17,17 @@
       описание: вздв
       место: Воскресенская церковь. Голгофа. Иерусалимье. Палестина
       образ: http://azbyka.ru/days/assets/img/saints/5883/d3378b2a37fcf5fd02e54d9e27ca90b6.jpg
+    - год: 351/346
+      дата: 07.05
+      описание: явл
+      вики: http://drevo-info.ru/articles/23497.html
+      описание_:
+         ру: явление Креста Господня в Иерусалиме
+         гр: Ανάμνηση του εν τω ουρανώ φανέντος σημείου του Τιμίου Σταυρού επί Κωνσταντίου
+      бытие:
+         ру: http://azbyka.ru/days/prazdnik-vospominanie-javlenija-na-nebe-kresta-gospodnja-v-ierusalime-351
+         гр: http://www.saint.gr/4001/saint.aspx
+      место: Иерусалимье. Палестина
     - год: 1799
       дата: авг
       описание: прен
@@ -30,6 +43,9 @@
     - дата: нд.3.поста
       каледарь: греч
       описание: само
+    - дата: 07.05
+      описание: явл
+      служба: Кресту Господню на явление в небе служба
     - дата: 14.09
       описание: вздв
     - дата: 12.10

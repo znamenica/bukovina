@@ -1,40 +1,62 @@
 ---
 Нил Мироточивый:
-   имя: Нил
-   прозвище: Мироточивый
-   описание: священноинок Афонский
+   имя:
+      ру: Нил
+      гр: Νείλος
+   прозвище:
+      ру: Мироточивый
+      гр: Μυροβλύτης
+   описание:
+      ру: священноинок Афонский
    чин: прп
    собор: аф
    вики: http://drevo-info.ru/articles/14109.html
-   бытие: http://azbyka.ru/days/sv-nil-mirotochivyj
+   бытие:
+      ру: http://azbyka.ru/days/sv-nil-mirotochivyj
+      гр: http://www.saint.gr/3012/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/002874.jpg
     - http://pravicon.com/icon-2579
     - http://azbyka.ru/days/assets/img/saints/3101/p190om2ss41kqv1mpq1aaa1q191j8t3.jpg
     - http://azbyka.ru/days/assets/img/saints/3101/p190om4fbt16ojl6u1parf141cn5.jpg
     - http://azbyka.ru/days/assets/img/saints/3101/9b1f587b2e11675152d44580293a5164.jpg
+    - http://www.saint.gr/photos/standard/1112/OsiosNeilosMyroblitis02.jpg
+    - http://www.saint.gr/photos/standard/1112/OsiosNeilosMyroblitis01.jpg
+   служба: Нилу Мироточивому служба
    событие:
     - год: вид.XVI
       описание: ржд
-      место: Петрово село. Заикония. Греция
-    - год: XVI-XVII
+      место: Петрово село. Заикония. Греция/Кинурия
+    - год: вид.кон.XVI-нач.XVII
       описание: иноч
-    - год: XVI-XVII
+      место: Великая лавра. Афон
+    - год: вид.кон.XVI-нач.XVII
       описание: дияк
-    - год: XVI-XVII
+    - год: вид.кон.XVI-нач.XVII
       описание: свящ
     - год: 1651
       дата: 12.11
       описание: прств
+      место: Великая лавра. Афон
     - год: 1815
       дата: 07.05
       описание: обр
+      бытие:
+         гр: http://www.saint.gr/3011/saint.aspx
+    - год: по 1815
+      описание: прен
+      предмет: рука
+      место: Кавсокаливская обитель. Афон
+    - год: по 1815
+      описание: прен.1
+      предмет: часть
+      место: Малевская обитель. Кинурия
    помин:
     - дата: 07.05
-      собор: греч
+      календарь: греч
       описание: обр
+      служба: Нилу Мироточивому на обретение мощей служба
     - дата: 12.11
       описание: прств
-      служба:
-       - Нилу Мироточивому служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_12.pdf
+      календарь: змин,греч
+      служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_12.pdf
