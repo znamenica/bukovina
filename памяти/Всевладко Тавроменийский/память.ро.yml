@@ -1,24 +1,36 @@
 ---
 Всевладко Тавроменийский:
-   имя: Панкратий
-   прозвище: святитель Тавроменийский
-   чин: стсвт
+   имя:
+      ру: Панкратий
+      гр: Παγκράτιος
+   описание:
+      ру: святитель и мученик Тавроменийский; убит еретиками
+      гр: Ιερομάρτυρας επίσκοπος Ταυρομενίας
+   чин: мсвт
+   собор: сир,сиц
    вики: http://drevo-info.ru/articles/5162.html
-   бытие: http://azbyka.ru/days/sv-pankratij-tavromenijskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-pankratij-tavromenijskij
+       - http://calendar.rop.ru/svyat1/jul09-pankratij.html
+      гр: http://www.saint.gr/2013/saint.aspx
    образ:
     - http://drevo-info.ru/images/003/009385.jpg
     - http://pravicon.com/icon-2658
+    - http://www.pigizois.net/sinaxaristis/07/09.jpg
+    - http://www.saint.gr/photos/standard/0709/AgiosPagratios02.jpg
+   служба: Всевладку Тавроменийскому служба
    событие:
     - год: I
       описание: ржд
-      место: Антиохия
-    - год: I
+      место: Антиохия. Сирия
+    - год: вид.I
       описание: прств
+      место: вид.Тавромения. Сицилия
    помин:
     - дата: 09.02
       описание: само
     - дата: 09.07
       описание: само
-      служба:
-       - Всевладку Тавроменийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_09.pdf
+      календарь: змин,греч
+      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_09.pdf

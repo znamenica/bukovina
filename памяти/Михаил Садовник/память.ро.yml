@@ -1,19 +1,62 @@
 ---
 Михаил Садовник:
-   имя: Михаил
-   описание: садовник Афинский
+   имя:
+      ру: в крещении Михаил
+      гр: Μιχαήλ
+   фамилия:
+      ру: Пакнана (Бакнана)
+      гр: Πακνανάς (Μπακνανάς)
+   описание:
+      ру: садовник Афинский
+      гр: κηπουρός      
    чин: мч
-   собор: греч
+   собор: афи
    вики:
-    - http://drevo-info.ru/articles/6332.html
-    - http://drevo-info.ru/articles/11371.html
+      ру:
+       - http://drevo-info.ru/articles/6332.html
+       - http://drevo-info.ru/articles/11371.html
+      гр: http://el.wikipedia.org/wiki/Μιχαήλ_Μπακνανάς
+      ан: https://en.wikipedia.org/wiki/Michael_Paknanas
+   бытие:
+      гр:
+       - http://www.saint.gr/644/saint.aspx
+       - http://voutsinasilias.blogspot.gr/2015/06/blog-post_22.html
+       - http://www.pigizois.net/sinaxaristis/06/30_06.htm
+      ан: http://www.johnsanidopoulos.com/2010/06/saint-michael-paknanas-gardner-from.html
+   образ:
+    - http://stavrodromi.files.wordpress.com/2010/07/agios-filippos_032a.jpg [Φορητή
+      ικόνα που βρίσκεται στον Ιερό Ναό Αγίου Φιλίππου Βλασσαρούς Αθηνών. Ιστορήθηκε
+      στην Ιερά Μονή Αγίου Δημητρίου Στεφανίου Κορινθίας.]
+    - http://2.bp.blogspot.com/-bmqCJ_qgh5Y/UdyFYrNU1rI/AAAAAAAAH6Q/oC2AOxaeHck/s1600/003a.jpg
+      [Φορητή εικόνα που βρίσκεται στον Ιερό Ναό Αναλήψεως Κυρίου Ν. Κόσμου Αθηνών.]
+    - http://1.bp.blogspot.com/-_NOn3wtUAqg/UdyGQjHUZdI/AAAAAAAAH60/K6kgYH2m-Ac/s1600/007a.jpg
+      [Τοιχογραφία δια χειρός Φωτίου Κόντογλου στο παρεκκλήσιο της Αγίας Ειρήνης
+      οικογένειας Πεσμαζόγλου στην Κηφισιά Αττικής.]
+    - http://2.bp.blogspot.com/-9sFN2WuAkP0/UdyEpOs1iwI/AAAAAAAAH6A/SC_TMN9z4DY/s1600/001a.jpg
+      [Ψηφιδωτή τοιχογραφία που βρίσκεται στον Ιερό Ναό Αγίου Ανδρέου Δήμου Αγίας
+      Παρασκευής Αττικής]
+    - http://1.bp.blogspot.com/-6vYh6A9j91g/U2D6IAPjLkI/AAAAAAAADf4/yLiPcmVGg1E/s1600/156237_121567284572028_7139128_n+-+%CE%91%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF.jpg
+    - http://3.bp.blogspot.com/-snWU6P4m_YA/U2D6GE1EhKI/AAAAAAAADfg/oP_iUfnQD6s/s1600/261823_180173128711443_6854420_n+-+%CE%91%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF.jpg
+    - http://3.bp.blogspot.com/-O5ODEYTNSQE/U2D6DET8x3I/AAAAAAAADe0/FB5oMaFCSJk/s1600/148153_121568917905198_2672859_n+-+%CE%91%CE%BD%CF%84%CE%AF%CE%B3%CF%81%CE%B1%CF%86%CE%BF.jpg
+    - http://4.bp.blogspot.com/-naIZ7yTxLcQ/U2ymX2Uq4nI/AAAAAAAADpk/AQxRe_2UzA4/s1600/299186_233269240068498_332614114_n.jpg
+     [Χείρ Θεοδώρου Τσουμελέκα]
+   служба: Михаилу Садовнику служба
    событие:
-      год: 1770/1771
+    - год: 1753
+      описание: ржд
+      место: Тисио. Афины
+    - год: 1771/1770
+      дата: 09.07
       описание: прств
+      образ: http://1.bp.blogspot.com/-TMRKr0O2Qso/UdyGWqyOhAI/AAAAAAAAH64/ap-lFyL9ymg/s1600/paknanas1.jpg
+         [Φορητή εικόνα που φυλάσσεται στον ιστορικό Ιερό Ναό Αγίας Φωτεινής Ιλισσού
+         Αθηνών, ο οποίος βρίσκεται πλησίον των στύλων του Ολυμπίου Διός, όπου έλαβε
+         χώρα και το ένδοξο μαρτύριο του Αγίου.]
+      место: Неос-Козмос. Афины
    помин:
-    - дата: 09.07
-      собор: греч
-      описание: само
     - дата: 30.06
       собор: греч
       описание: само
+    - дата: 09.07
+      календарь: греч,скср
+      описание: прств

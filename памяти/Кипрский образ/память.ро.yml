@@ -4,7 +4,9 @@
    описание: образ Богородицы
    чин: обр
    вики: http://drevo-info.ru/articles/6396.html
-   бытие: http://azbyka.ru/days/ikona-kiprskaja
+   бытие:
+    - http://azbyka.ru/days/ikona-kiprskaja
+    - http://calendar.rop.ru/icons1/jul09-ikona-kiprskaya.html
    образ: http://azbyka.ru/days/assets/img/icons/166/c3c71dbf5a61da816eff57e5c636ea8e.jpg
    событие:
       год: 392
@@ -15,8 +17,9 @@
     - дата: 20.04
       описание: явл
     - дата: 09.07
+      календарь: рпц
       описание: само
-    - дата: нед.прав
+    - дата: нд.1.поста
       описание: чудо
     - дата: пн.по птдс
       описание: само

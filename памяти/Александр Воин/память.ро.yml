@@ -1,18 +1,16 @@
 ---
 Александр Воин:
    имя: Александр
-   описание: воин Римский
+   описание: воин; сожжён язычниками
    чин: мч
-   собор: вои
-   вики: http://drevo-info.ru/articles/5791.html
-   бытие: http://azbyka.ru/days/sv-aleksandr-rimskij
-   образ:
-    - http://azbyka.ru/days/assets/img/saints/567/p18mb17uotl5o8mn1r0l160bciv3.jpg
-    - http://azbyka.ru/days/assets/img/saints/567/p18mb17uou1urf106s7bnjo5n0s6.jpg
+   собор: вои,пкоа
+   вики: http://drevo-info.ru/articles/6391.html
+   образ: http://azbyka.ru/days/assets/img/saints/910/p18r74a2alt5e1o961ufd1svjo933.jpg
    событие:
-      год: 284-305
+      год: 361-363
       описание: прств
+      место: вид.Египет
    помин:
-      дата: 13.05
+      дата: 17.12
+      календарь: г7д9
       описание: само
-      служба: http://azbyka.ru/days/worship/638
