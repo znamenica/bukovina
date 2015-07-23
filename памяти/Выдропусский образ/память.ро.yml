@@ -9,6 +9,11 @@
    образ:
     - http://azbyka.ru/days/assets/img/icons/35/p188lcri981rj21qd1g8ak421a683.jpg
     - http://azbyka.ru/days/assets/img/icons/35/p188lcroi91t67m791q3o105o1chq5.jpg
+   служба:
+    - Выдропусскому образу служба
+    - http://nbt.rop.ru/?q=texts/akafist/289 [Текст утвержден Священным Синодом Русской
+      Православной Церкви 25 декабря 2013 года (журнал № 149)]
+    - http://azbyka.ru/days/caa/605
    событие:
     - год: XV
       описание: просл
@@ -19,6 +24,3 @@
    помин:
       дата: 28.07
       описание: само
-      служба:
-       - Выдропусскому образу служба
-       - http://azbyka.ru/days/caa/605

@@ -1,12 +1,16 @@
 ---
 Радонежские новомученики:
    описание: собор новомучеников и исповедников Радонежских
-   чин: мчч
+   чин: мчсс
    крат: нмрд
    собор: нмр
    вики: http://drevo-info.ru/articles/20729.html
    бытие: http://azbyka.ru/days/sv-sobor-novomuchenikov-i-ispovednikov-radonezhskih
    образ: http://azbyka.ru/days/assets/img/saints/6531/p18b2c8ape1jp91v1n1o4a72ks2c3.jpg
+   служба:
+    - http://nbt.rop.ru/?q=texts/sluzhba/176 [Текст утвержден Священным Синодом Русской
+      Православной Церкви 27 января 2011 года (журнал № 162)]
+    - http://azbyka.ru/days/assets/upload/services/slugba_sobor-novomuchenikov-i-ispovednikov-radonezhskih.pdf
    событие:
       год: 2011
       дата: 17.02
@@ -15,4 +19,3 @@
    помин:
       дата: 27.11
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/services/slugba_sobor-novomuchenikov-i-ispovednikov-radonezhskih.pdf

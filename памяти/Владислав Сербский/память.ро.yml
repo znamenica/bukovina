@@ -16,7 +16,10 @@
     - http://azbyka.ru/days/assets/img/saints/5068/a95c951105ea6150cb329bc4f420a406.jpg
     - http://azbyka.ru/days/assets/img/saints/5068/67764b9af16765e49b50de2fc827ca87.jpg
     - http://azbyka.ru/days/assets/img/saints/5068/ff9644b7352d6229e266b722e679eb8e.jpg
-   служба: http://azbyka.ru/days/worship/642
+   служба:
+    - http://nbt.rop.ru/?q=texts/sluzhba/280 [Текст утвержден Священным Синодом Русской
+      Православной Церкви 25 декабря 2013 года (журнал № 147)]
+    - http://azbyka.ru/days/worship/642
    событие:
     - год: вид.вт.пол.XII
       описание: ржд

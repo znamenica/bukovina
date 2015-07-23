@@ -9,6 +9,11 @@
    образ:
     - http://drevo-info.ru/images/002/008392.jpg
     - http://drevo-info.ru/images/001/001860.jpg
+   служба:
+    - Колыванскому собору служба
+    - http://nbt.rop.ru/?q=texts/sluzhba/182 [ссылка: Текст утвержден Священным Синодом 
+      Русской Православной Церкви 26 января 2003 года (журнал № 88)]
+    - http://azbyka.ru/days/assets/upload/services/slugba_sobor-svjatyh-estonskoj-zemli.pdf
    событие:
       год: 2002
       дата: 09.07
@@ -17,6 +22,3 @@
    помин:
       дата: 18.11
       описание: само
-      служба:
-       - Колыванскому собору служба
-       - http://azbyka.ru/days/assets/upload/services/slugba_sobor-svjatyh-estonskoj-zemli.pdf

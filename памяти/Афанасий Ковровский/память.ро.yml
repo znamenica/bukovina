@@ -5,7 +5,7 @@
    фамилия: Сахаров
    описание: святитель Ковровский
    чин: исвт
-   собор: нмр,нмс,мск,полт
+   собор: нмр,нмс,мск,полт,кирс,птшк
    вики:
     - http://drevo-info.ru/articles/5608.html
     - http://ru.wikipedia.org/wiki/Афанасий_(Сахаров)
@@ -16,6 +16,13 @@
     - http://azbyka.ru/days/assets/img/saints/3354/p182j82i64fkg10gt1hdv1nsneho3.jpg
     - http://pravicon.com/icon-1293
    отечник: http://azbyka.ru/otechnik/Afanasij_Saharov/
+   служба:
+    - Афанасию Ковровскому служба
+    - http://nbt.rop.ru/?q=texts/sluzhba/211 [Текст утвержден Священным Синодом Русской
+      Православной Церкви 4 октября 2012 года (журнал № 97)]
+    - http://azbyka.ru/days/worship/594
+    - http://azbyka.ru/days/caa/691
+    - http://korolev.msk.ru/books/11/Sluzhba_s_akafistom_Afanasiyu_Pesnopiscu.txt
    событие:
     - год: 1887
       дата: 02.07
@@ -40,12 +47,17 @@
     - год: 1962
       дата: 15.10
       описание: прств
-      место: Петушки
+      место: Петушки. вид.Петушинский район. Владимирская область
+    - год: 2000
+      дата: 31.07-03.08
+      собор: рус
+      чин: сщисп,нмр
+      описание: просл
     - год: 2000
       дата: 07.08
       собор: рус
       чин: нмр
-      описание: просл
+      описание: чинпр
     - год: 2000
       дата: 02.10
       описание: обр
@@ -56,8 +68,3 @@
    помин:
       дата: 15.10
       описание: прств
-      служба:
-       - Афанасию Ковровскому служба
-       - http://azbyka.ru/days/worship/594
-       - http://azbyka.ru/days/caa/691
-       - http://korolev.msk.ru/books/11/Sluzhba_s_akafistom_Afanasiyu_Pesnopiscu.txt

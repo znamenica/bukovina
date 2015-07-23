@@ -11,6 +11,11 @@
     - http://drevo-info.ru/images/003/009384.jpg
     - http://pravicon.com/icon-2537
    отечник: http://azbyka.ru/otechnik/Nikodim_Svjatogorets/
+   служба:
+    - Никодиму Святогорцу служба
+    - http://nbt.rop.ru/?q=texts/akafist/276 [Текст утвержден Священным Синодом Русской
+      Православной Церкви 25 декабря 2012 года (журнал № 131)]
+    - http://azbyka.ru/days/caa/593
    событие:
     - год: 1749
       описание: ржд
@@ -29,8 +34,6 @@
       описание: просл
    помин:
       дата: 14.07
+      календарь: змин
       описание: прств
-      служба:
-       - Никодиму Святогорцу служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_01.pdf
-       - http://azbyka.ru/days/caa/593
+      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_01.pdf

@@ -23,7 +23,10 @@
     - http://www.pigizois.net/sinaxaristis/03/04.jpg
     - http://upload.wikimedia.org/wikipedia/commons/a/ac/Gerasimus_of_Jordan.jpg
     - http://www.apostoliki-diakonia.gr/gr_main/eortologio/Agion_pics/Mar_2.jpg
-   служба: Герасиму Иорданскому служба
+   служба:
+    - Герасиму Иорданскому служба
+    - http://nbt.rop.ru/?q=texts/akafist/286 [Текст утвержден Священным Синодом Русской
+      Православной Церкви 25 декабря 2012 года (журнал № 131)]
    событие:
     - год: вид.вт.пол.IV
       описание: ржд

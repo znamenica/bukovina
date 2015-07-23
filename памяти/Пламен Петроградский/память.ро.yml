@@ -11,6 +11,11 @@
    образ:
     - http://drevo-info.ru/images/001/000305.jpg
     - http://drevo-info.ru/images/001/000303.jpg
+   служба:
+    - Пламену Петроградский служба
+    - http://nbt.rop.ru/?q=texts/akafist/245 [Текст утвержден Священным Синодом Русской
+      Православной Церкви 15 апреля 2008 года (журнал № 14)]
+    - http://azbyka.ru/days/caa/591
    событие:
     - год: 1856
       дата: 09.01
@@ -54,10 +59,7 @@
       чин: нмр
       описание: чинпр
    помин:
-    - дата: 28.11
+      дата: 28.11
+      календарь: змин
       описание: прств
-    - описание: само
-      служба:
-       - Пламену Петроградский служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_28.pdf
-       - http://azbyka.ru/days/caa/591
+      служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_28.pdf

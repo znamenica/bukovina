@@ -1,7 +1,7 @@
 ---
 Фома Близнец:
    имя: Фома
-   прозвище: Дидим, Близнец
+   прозвище: Близнец (Дидим)
    чин: ап
    собор: инд,ап12
    вики: http://drevo-info.ru/articles/4113.html
@@ -10,6 +10,11 @@
     - http://azbyka.ru/days/assets/img/saints/1409/6cbf570c6b88c5448144ca262e25cc54.jpg
     - http://azbyka.ru/days/assets/img/saints/1409/17c321df97ea7dcc32946269c7f88511.jpg
     - http://azbyka.ru/days/assets/img/saints/1409/adb480e26dc4a1220a5af0a74e739a6c.jpg
+   служба:
+    - Фоме Близнецу служба
+    - http://nbt.rop.ru/?q=texts/akafist/259 [Текст утвержден Священным Синодом Русской
+      Православной Церкви 25 декабря 2012 года (журнал № 131)]
+    - http://azbyka.ru/days/caa/271
    событие:
     - год: до 30
       описание: ржд
@@ -33,8 +38,6 @@
     - дата: 20.06
       описание: прен
     - дата: 06.10
+      календарь: змин
       описание: само
-      служба:
-       - Фоме Близнецу служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_06.pdf
-       - http://azbyka.ru/days/caa/271
+      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_06.pdf
