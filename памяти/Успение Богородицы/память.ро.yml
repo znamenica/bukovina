@@ -7,6 +7,7 @@
    бытие: http://azbyka.ru/days/prazdnik-uspenie-presvjatoj-vladychicy-nashej-bogorodicy-i-prisnodevy-marii
    служба:
     - Успению Богородицы служба
+    - http://ustavschik.livejournal.com/229504.html
     - http://azbyka.ru/days/caa/245
     - http://azbyka.ru/days/caa/246
     - http://azbyka.ru/days/caa/247
@@ -17,14 +18,17 @@
       описание: просл
    помин:
     - дата: 14.08
+      календарь: рпц,змин
       описание: пред
       служба:
        - Предпразднеству Успения Богородицы и Михею Морасфитянину служба
        - http://azbyka.ru/days/assets/upload/minei/08/minea_08_14.pdf
     - дата: 15.08
+      календарь: рпц,змин
       описание: само
       служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_15.pdf
     - дата: 23.08
+      календарь: рпц,змин
       описание: отд
       служба:
        - Отданию Успения Богородицы служба

@@ -3,9 +3,10 @@
    имя: Елеазар
    отчество: Спиридонович
    фамилия: Спиридонов
-   описание: священник Евпаторийский, брат Земка Спиридонова, покровитель Евпатории
+   описание: священник Евпаторийский, брат Земка Спиридонова, покровитель Евпатории; мученик
+      Колымский; уморен безбожниками
    чин: сщмч
-   собор: нмр,тавр
+   собор: нмр,тавр,колм
    вики: http://drevo-info.ru/articles/26048.html
    бытие:
     - http://azbyka.ru/days/sv-eleazar-evpatorijskij-spiridonov
@@ -13,6 +14,9 @@
    образ:
     - http://azbyka.ru/days/assets/img/saints/5135/p18autl9d3j4u1c181rsq51a1dkl4.jpg
     - http://azbyka.ru/days/assets/img/saints/5135/p18autl9d319mu1t5g16vu1l4g3ve3.jpg
+   служба:
+    - http://ustavschik.livejournal.com/47527.html
+    - http://www.pigizois.net/rosika/eleazaros/ag_tis_rosias_eleazaros.pdf
    событие:
     - год: 1873/1874
       описание: ржд
@@ -41,7 +45,7 @@
     - год: 2000
       дата: 31.07-03.08
       собор: рус
-      чин: нмр
+      чин: сщмч,нмр
       описание: просл.1
     - год: 2000
       дата: 07.08

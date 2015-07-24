@@ -1,24 +1,33 @@
 ---
-Константин Богоявленский:
+Константин Меркушинский:
    имя: Константин
    отчество: Стефанович
    фамилия: Богоявленский
-   описание: священник
+   описание: священник Меркушинский
    чин: сщмч
-   собор: слав,нмр
-   бытие: http://azbyka.ru/days/sv-konstantin-bogojavlenskij
-   образ: http://azbyka.ru/days/assets/img/saints/2717/p18rc4h1s868s17iu6ku506hti5.jpg
+   собор: нмр,втур
+   бытие:
+    - http://azbyka.ru/days/sv-konstantin-bogojavlenskij
+    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu-feCivu8fdOrVeeWd66eifS5Wc8rWe8oUYS8Zt80hfe8ctk*
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/2717/p18rc4h1s868s17iu6ku506hti5.jpg
+    - http://213.171.53.29/foto_1/oek-27.jpg
+   служба: http://ustavschik.livejournal.com/234434.html
    событие:
     - год: 1896
       описание: ржд
     - год: 1918
       дата: 14.07
       описание: прств
+      место: Меркушино село. Верхотурский уезд. Пермская губерния
     - год: 1918
+      дата: по 14.07
       описание: пгрб
-      место: Меркушино. Верхотурский уезд
+      место: близ.Михайло-Архангельска церковь. Меркушино село. Верхотурский уезд. Пермская губерния
     - год: 2002
       дата: 04.07
+      собор: рус
+      чин: сщмч,нмр
       описание: просл
    помин:
       дата: 14.07

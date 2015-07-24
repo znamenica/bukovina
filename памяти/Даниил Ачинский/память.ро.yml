@@ -12,6 +12,10 @@
    образ:
     - http://drevo-info.ru/images/002/006605.jpg
     - https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Daniel_Achinsk.png/388px-Daniel_Achinsk.png
+   служба:
+    - Даниилу Ачинскому служба
+    - http://ustavschik.livejournal.com/232772.html
+    - http://pravoslavie.poltava.ua/sacred/texts/divine_poltava_saints/1278535163/
    событие:
     - год: 1784
       дата: 12.12
@@ -38,6 +42,3 @@
     - дата: 16.12
       собор: сиб
       описание: само
-      служба:
-       - Даниилу Ачинскому служба
-       - http://pravoslavie.poltava.ua/sacred/texts/divine_poltava_saints/1278535163/

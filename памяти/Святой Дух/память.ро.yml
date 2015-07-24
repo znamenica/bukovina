@@ -8,7 +8,9 @@
    бытие:
       гр: http://www.saint.gr/1833/saint.aspx
    образ: http://www.porphyrios.gr/files/jpg/%CE%95%CE%B9%CE%BA%CF%8C%CE%BD%CE%B5%CF%82/%CE%86%CE%B3%CE%B9%CE%BF%CE%BD%20%CE%8C%CF%81%CE%BF%CF%82/14%20%CE%91%CE%B3%CE%AF%CE%BF%CF%85%20%CE%A0%CE%B1%CF%8D%CE%BB%CE%BF%CF%85/%CE%9D%CE%AD%CE%B1%20%CE%A3%CE%BA%CE%AE%CF%84%CE%B7/%CE%99%CE%B7%CF%83%CE%BF%CF%8D%CF%82%20%CE%A7%CF%81%CE%B9%CF%83%CF%84%CF%8C%CF%82/%CE%86%CE%B3%CE%B9%CE%BF%20%CE%A0%CE%BD%CE%B5%CF%8D%CE%BC%CE%B1.jpg
-   служба: http://azbyka.ru/days/caa/231
+   служба:
+    - http://azbyka.ru/days/caa/231
+    - http://ustavschik.livejournal.com/231537.html
    событие:
       дата: II-V
       описание: просл

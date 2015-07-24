@@ -1,17 +1,24 @@
 ---
 Далмат Исетский:
-   имя: Далмат, в крещении Дмитрий
+   имя: в иночестве Далмат, в крещении Димитрий
    отчество: Иванович
    фамилия: Мокринский
-   описание: Исетский, Пермский монастырь основатель Пермский Далматовский
+   описание: инок и основатель Исетский (Пермский)
    чин: прп
-   собор: слав,рус,сиб,кзк,со
+   собор: сиб,кзк,со,кург
    вики: http://drevo-info.ru/articles/23406.html
-   бытие: http://azbyka.ru/days/sv-dalmat-isetskij-mokrinskij-permskij
+   бытие:
+    - http://azbyka.ru/days/sv-dalmat-isetskij-mokrinskij-permskij
+    - http://ustavschik.livejournal.com/225626.html
    образ:
     - http://pravicon.com/icon-1597
     - http://drevo-info.ru/images/002/008364.jpg
     - http://vecherka.su/pics/uploads/archive2010/03_2010/26032010/24.jpg
+   служба:
+    - Далмату Исетскому служба
+    - http://ustavschik.livejournal.com/100854.html
+    - http://ustavschik.livejournal.com/101080.html
+    - http://azbyka.ru/days/caa/732
    событие:
     - год: 1594
       описание: ржд
@@ -31,11 +38,9 @@
     - год: до 1871
       описание: почит
     - год: 2004
+      собор: кург
       описание: просл
       букы: http://ustavschik.livejournal.com/225626.html#cutid1
    помин:
       дата: 25.06
       описание: прств
-      служба:
-       - Далмату Исетскому служба
-       - http://azbyka.ru/days/caa/732
