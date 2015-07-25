@@ -6,6 +6,12 @@
    собор: рус
    вики: http://drevo-info.ru/articles/6323.html
    образ: http://drevo-info.ru/images/002/004022.jpg
+   служба:
+    - Оптинским старцам служба
+    - http://ustavschik.livejournal.com/212014.html
+    - http://azbyka.ru/days/assets/upload/services/sluzhba_elders.doc
+    - http://azbyka.ru/days/caa/161
+    - http://azbyka.ru/days/caa/160
    событие:
       год: 2000
       дата: 31.07-03.08
@@ -14,10 +20,6 @@
       описание: просл
    помин:
       дата: 11.10
+      календарь: змин
       описание: само
-      служба:
-       - Оптинским старцам служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_11.pdf
-       - http://azbyka.ru/days/assets/upload/services/sluzhba_elders.doc
-       - http://azbyka.ru/days/caa/161
-       - http://azbyka.ru/days/caa/160
+      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_11.pdf

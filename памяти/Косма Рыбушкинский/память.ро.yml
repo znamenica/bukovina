@@ -5,10 +5,13 @@
    фамилия: Петриченко
    описание: священник Рыбушкинский
    чин: сщмч
-   собор: нмр,сар
+   собор: нмр,нмср,сар
    вики: http://drevo-info.ru/articles/21741.html
    бытие: http://azbyka.ru/days/sv-kosma-rybushkinskij-petrichenko
    образ: http://drevo-info.ru/images/002/007058.jpg
+   служба:
+    - Косме Рыбушкинскому служба
+    - http://azbyka.ru/days/assets/upload/services/sluzhba_kosme_saratovskomu.pdf
    событие:
     - год: 1869
       описание: ржд
@@ -29,6 +32,3 @@
    помин:
       дата: 03.11
       описание: прств
-      служба:
-       - Косме Рыбушкинскому служба
-       - http://azbyka.ru/days/assets/upload/services/sluzhba_kosme_saratovskomu.pdf

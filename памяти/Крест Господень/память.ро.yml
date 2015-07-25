@@ -6,7 +6,10 @@
    образ:
     - http://days.pravoslavie.ru/Images/is900.jpg
     - http://www.saint.gr/photos/easter/Stavroproskiniseos01.jpg
-   служба: Кресту Господню служба
+   служба:
+    - Кресту Господню служба
+    - http://akathistos.livejournal.com/47469.html
+    - http://akathistos.livejournal.com/47771.html
    событие:
     - год: 326
       описание: обр

@@ -1,7 +1,7 @@
 ---
 Лонгин Сотник:
    имя: Лонгин
-   прозвище: Сотник
+   описание: сотник
    чин: мч
    собор: капд
    вики:
@@ -11,6 +11,9 @@
    образ:
     - http://pravicon.com/icon-2288
     - http://azbyka.ru/days/assets/img/saints/5107/fa46c5a69694cd15b984f55844ca0af7.jpg
+   служба:
+    - Лонгину Сотнику служба
+    - http://ustavschik.livejournal.com/217007.html
    событие:
       год: I
       описание: прств
@@ -19,6 +22,4 @@
    помин:
       дата: 16.10
       описание: само
-      служба:
-       - Лонгину Сотнику служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_16.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_16.pdf

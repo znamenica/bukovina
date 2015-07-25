@@ -64,6 +64,9 @@
       образ:
        - http://azbyka.ru/days/assets/img/saints/3544/9b5fbbff8275e6fab9e5182f49e3601b.jpg
        - http://azbyka.ru/days/assets/img/saints/3544/p18fa1cofh1hlv17411o41kl48o83.jpg
+    - год: вид.IV
+      описание: прен
+      место: Антиохия. Сирия
     - год: 452
       дата: 18.02
       описание: обр.гл.2
@@ -76,6 +79,9 @@
     - год: 956
       описание: прен.дес
       место: Константинополь
+      служба:
+       - http://ustavschik.livejournal.com/219637.html
+       - http://www.mineya.ru/files/dafnopaty.pdf
     - год: 1799
       дата: авг
       описание: прен.дес.1

@@ -1,15 +1,19 @@
 ---
-Александр Медем:
+Александр Сызраньский:
    имя: Александр
    отчество: Оттонович (Антонович)
-   фамилия: Медем
+   фамилия: фон Медем
+   описание: житель Хвалынский; мученик Сызраньский; уморен в темнице безбожниками
    чин: мч
-   собор: нмр,ива,сам,сар
+   собор: нмр,нмср,ива,сам,сар,курл?
    вики: http://drevo-info.ru/articles/21798.html
-   бытие: http://azbyka.ru/days/sv-aleksandr-medem
+   бытие:
+    - http://azbyka.ru/days/sv-aleksandr-medem
+    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuAdOGZf00*euKesO0hdC*UXi9WfeqiceXb**
    образ:
     - http://drevo-info.ru/images/002/007045.jpg
     - http://azbyka.ru/days/assets/img/saints/1313/p18a28lma11ehag4e1g091ifi12bt3.jpg
+    - http://213.171.53.29/foto_1/o25-12a.jpg
    событие:
     - год: 1877
       описание: ржд
@@ -22,7 +26,7 @@
     - год: 1931
       дата: 19.03
       описание: прств
-      место: тюрьма. Сызрань
+      место: темница. Сызрань. Саратовская область
     - год: 2000
       дата: 31.07-03.08
       собор: рус
