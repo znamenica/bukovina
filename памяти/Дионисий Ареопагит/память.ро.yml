@@ -4,15 +4,14 @@
    прозвище: Ареопагит
    описание: святитель Афинский и Парижский, апостол от 70-ти
    чин: ап
-   собор: ап70,галл
-   вики:
-    - http://drevo-info.ru/articles/4701.html
-    - http://drevo-info.ru/articles/4149.html
+   собор: ап70,галл,мсвтт
+   вики: http://drevo-info.ru/articles/4701.html
    бытие: http://azbyka.ru/days/sv-dionisij-areopagit
    образ:
     - http://azbyka.ru/days/assets/img/saints/2474/p18f4tctvn13e91hpl19rm13091kg83.jpg
     - http://azbyka.ru/days/assets/img/saints/2474/2757e8c73c2a6fa251a725ff0f74b706.jpg
    отечник: http://azbyka.ru/otechnik/Dionisij_Areopagit/
+   служба: Дионисию Ареопагиту служба
    событие:
     - год: I
       описание: брак
@@ -23,7 +22,6 @@
       место: Мученичья гора. Лютеция (ныне Париж). Галлия
    помин:
       дата: 03.10
+      календарь: змин
       описание: само
-      служба:
-       - Дионисию Ареопагиту служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_03.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_03.pdf
