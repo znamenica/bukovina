@@ -3,12 +3,15 @@
    имя: вид.в иночестве Иаков
    описание: святитель Ростовский
    чин: свт
-   собор: ряр,рсвт
+   собор: ряр,рост?
    вики: http://drevo-info.ru/articles/4450.html
    бытие: http://azbyka.ru/days/sv-iakov-rostovskij
    образ:
     - http://azbyka.ru/days/assets/img/saints/1666/p18b2bha0890a90dpfu1jrj10ma3.jpg
     - http://azbyka.ru/days/assets/img/saints/1666/p18b2bha081o21ed0gc1kb4gd14.jpg
+   служба:
+    - Иакову Ростовскому служба
+    - http://azbyka.ru/days/caa/329
    событие:
     - год: нач.XIV
       описание: ржд
@@ -24,12 +27,12 @@
     - год: по 1392
       описание: почит
     - год: 1549
+      собор: рус
+      чин: свт
       описание: просл
+      место: Москва
    помин:
-    - дата: 27.11
+      дата: 27.11
+      календарь: змин
       описание: прств
       служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_27.pdf
-    - описание: само
-      служба:
-       - Иакову Ростовскому служба
-       - http://azbyka.ru/days/caa/329
