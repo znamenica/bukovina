@@ -1,14 +1,50 @@
 ---
 Илия Фесвитянин:
-   имя: Илии
-   описание: Фесвитянин
+   имя:
+      ру: Илии
+      гр: Ηλίας
+   описание:
+      ру: фесвитянин
+      гр: Θεσβίτης
    чин: прор
    вики: http://drevo-info.ru/articles/6475.html
-   бытие: http://azbyka.ru/days/sv-ilija-fesvitjanin
+   бытие:
+      ру: http://azbyka.ru/days/sv-ilija-fesvitjanin
+      гр: http://www.saint.gr/732/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/001164.jpg
     - http://drevo-info.ru/images/001/001163.jpg
     - http://azbyka.ru/days/assets/img/saints/2864/4b8f95e53fb05e6688a0d04fe5ead3ec.jpg
+    - http://vatopaidi.files.wordpress.com/2009/07/ilias11.jpg [Βυζαντινή τοιχογραφία στο
+      Πρωτάτο των Καρυών στο Άγιο Όρος, φιλοτεχνημένη από τον Μανουήλ Πανσέληνος (περ.
+      1290)]
+    - http://3.bp.blogspot.com/-oQRi-thzIa0/TVvErdUp32I/AAAAAAAAABc/EFrqab_FEI8/s1600/Photo+%255B35%255D.jpg
+      [Αγγελική Τσέλιου© (diaxeirosaggelikistseliou. blogspot.com)]
+    - https://lh5.googleusercontent.com/-rO4194IsUBs/TYOuoDq5bJI/AAAAAAAAAD8/wPY-4ukexos/s1600/P3180010.JPG
+      [Αγγελική Τσέλιου© (diaxeirosaggelikistseliou. blogspot.com)]
+    - http://vatopaidi.files.wordpress.com/2012/01/profitis-ilias.gif
+    - http://www.saint.gr/filesnew/02/0732/photos/ProphitisIlias16.jpg [Mονή Σταυρονικήτα,
+      Άγιον Όρος (Κρητική Σχολή, Mιχαήλ Δαμασκηνός)]
+    - http://www.saint.gr/filesnew/02/0732/photos/ProphitisIlias02.jpg
+    - http://www.saint.gr/filesnew/02/0732/photos/ProphitisIlias03.jpg [Λυδία Γουριώτη©
+      (http://lydiagourioti-iconography.blogspot.com)]
+    - http://www.saint.gr/filesnew/02/0732/photos/ProphitisIlias07.jpg
+    - http://www.apostoliki-diakonia.gr/gr_main/catehism/theologia_zoi/art/Boiotia/images/Xristianiki_Boiotia_27.jpg
+      [Τοιχογραφία του 17ου αιώνα (Ι. Ν. Αγ. Γεωργίου Ακραιφνίου)]
+    - http://1.bp.blogspot.com/-aokIwcpfa4s/ToMfrnVu12I/AAAAAAAAAAc/HQaSkqdWtiY/s1600/saint-prophete-elie.jpg
+    - http://vatopaidi.files.wordpress.com/2010/07/cf80cf81cebfcf86ceb7cf84ceb7cf82-1.jpg
+    - http://vatopaidi.files.wordpress.com/2010/07/prophitisilias-ceb1cf85cf81ceb1-cebbceb5cf80cf84ceb71.jpg
+    - http://stamatis-skliris.gr/_wg/wp-content/uploads/2012/07/022-x900.jpg [π. Σταμάτης Σκλήρης© (stamatis-skliris.gr)]
+    - http://stamatis-skliris.gr/_wg/wp-content/uploads/2012/07/hlias-1200.jpg [π. Σταμάτης Σκλήρης© (stamatis-skliris.gr)]
+    - http://stamatis-skliris.gr/_wg/wp-content/uploads/2012/06/ilias3.jpg [π. Σταμάτης Σκλήρης© (stamatis-skliris.gr)]
+    - http://stamatis-skliris.gr/_wg/wp-content/uploads/2012/06/ilias.jpg [π. Σταμάτης Σκλήρης© (stamatis-skliris.gr)]
+    - http://s9.postimg.org/5rh7tufzz/Prophitis_Ilias26.jpg [Δια χειρός Ευαγ. Τσόλη]
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Άγιον%20Όρος/Καρυές/Παχωμαίοι/Φορητές/Άγιοι/Ηλίας%20Θεσβίτης%20Προφήτης.jpg
+   служба:
+    - Илии Фесвитянину служба
+    - http://azbyka.ru/days/caa/264
+    - http://azbyka.ru/days/caa/501
+    - http://azbyka.ru/days/caa/674
    событие:
     - год: IX до нэ
       описание: ржд
@@ -18,12 +54,11 @@
       образ:
        - http://drevo-info.ru/images/001/001165.jpg
        - http://azbyka.ru/days/assets/img/saints/2864/8eacff6a4b197fba2395d50046da26b8.jpg
+       - http://s8.postimg.org/eobsqf6vp/Prophitis_Ilias19.jpg [Π. Κούβαρη και Ι. Χ. Θωμάς©]
+       - http://stamatis-skliris.gr/_wg/wp-content/uploads/2012/07/hlias-8a-1200.jpg [π.
+         Σταμάτης Σκλήρης© (stamatis-skliris.gr)]
    помин:
       дата: 20.07
+      календарь: рпц,греч,змин
       описание: само
-      служба:
-       - Илия Фесвитянину служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_20.pdf
-       - http://azbyka.ru/days/caa/264
-       - http://azbyka.ru/days/caa/501
-       - http://azbyka.ru/days/caa/674
+      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_20.pdf
