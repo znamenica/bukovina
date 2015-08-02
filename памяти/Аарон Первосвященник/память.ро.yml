@@ -2,8 +2,9 @@
 Аарон Первосвященник:
    имя: Аарон
    отчество: Амрамович
-   описание: первосвященник, старший брат Моисея Пророка
+   описание: первосвященник; старший брат Моисея Пророка
    чин: прав
+   собор: плст
    вики: http://drevo-info.ru/articles/2353.html
    бытие: http://azbyka.ru/days/sv-aaron-pervosvjashchennik
    образ:
@@ -11,6 +12,7 @@
     - http://azbyka.ru/days/assets/img/saints/3715/p18f05bkq8tj8tv015m04g71teu4.jpg
     - http://azbyka.ru/days/assets/img/saints/3715/p18f05bkq6a9o1s2pkso141s126k3.jpg
     - http://azbyka.ru/days/assets/img/saints/3715/7e8bec37fd1aa1e9409fea7c18990f56.jpg
+   служба: Аарону Первосвященнику служба
    событие:
     - год: ок.1568 до РХ
       описание: ржд
@@ -19,7 +21,6 @@
       место: Ор гора. вид.Синайская пустыня
    помин:
       дата: 20.07
+      календарь: змин
       описание: само
-      служба:
-       - Аарону Первосвященнику служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_20.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_20.pdf

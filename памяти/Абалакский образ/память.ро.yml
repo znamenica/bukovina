@@ -10,15 +10,16 @@
     - http://drevo-info.ru/images/001/000734.jpg
     - http://drevo-info.ru/images/001/000735.jpg
     - http://azbyka.ru/days/assets/img/icons/117/p18b4bf4vjntmh554bjnpgssq4.jpg
+   служба:
+    - Абалакскому образу служба
+    - http://azbyka.ru/days/caa/334
    событие:
       год: 1636
       описание: напис
       место: Тобольск
    помин:
     - дата: 20.07
+      календарь: рпц
       описание: само
-      служба:
-       - Абалакскому образу служба
-       - http://azbyka.ru/days/caa/334
     - дата: 27.11
       описание: вид

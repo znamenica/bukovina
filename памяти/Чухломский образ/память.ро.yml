@@ -3,7 +3,10 @@
    имя: Чухломский, Галичский
    описание: образ Богородицы
    чин: обр
-   бытие: http://azbyka.ru/days/ikona-galichskaja-chuhlomskaja
+   собор: галч?,чухл?
+   бытие:
+    - http://azbyka.ru/days/ikona-galichskaja-chuhlomskaja
+    - http://calendar.rop.ru/icons1/jul20-ikona-galichskaya.html
    образ:
     - http://azbyka.ru/days/assets/img/icons/108/p188da115l11ohfi91sl7eja1efs3.jpg
     - http://azbyka.ru/days/assets/img/icons/108/p188da16741j6rdt0gdfts6lvg6.jpg
@@ -18,6 +21,7 @@
     - дата: 28.05
       описание: само
     - дата: 20.07
+      календарь: рпц
       описание: само
     - дата: 15.08
       описание: само      
