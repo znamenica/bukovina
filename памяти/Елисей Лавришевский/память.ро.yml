@@ -2,8 +2,8 @@
 Елисей Лавришевский:
    имя: Елисей
    отчество: Тройнатович
-   описание: Лавришевский, княжич
-   чин: прмч
+   описание: княжич; основатель и настоятель Лавришевский; убит слугою
+   чин: прстц
    собор: блр
    вики: http://drevo-info.ru/articles/7650.html
    бытие: http://azbyka.ru/days/sv-elisej-lavrishevskij
@@ -12,6 +12,10 @@
     - http://azbyka.ru/days/assets/img/saints/313/p188imidch1jvlsb810o21fsa1roh3.jpg
     - http://azbyka.ru/days/assets/img/saints/313/p188imigt7iqac2o1pip12sjpvg5.jpg
     - http://azbyka.ru/days/assets/img/saints/313/p188imigt91s6u132ig9a2421m6.jpg
+   служба:
+    - http://ustavschik.livejournal.com/130279.html
+    - http://www.lavrishevo.org/content/service/service.pdf
+    - http://www.lavrishevo.org/content/service/akafist.pdf
    событие:
     - год: до 1225 
       описание: иноч
@@ -21,9 +25,10 @@
     - год: ок. 1505
       описание: чудо
     - год: 1514
+      собор: блр
       описание: просл
     - год: по 1514
-      описание: утр
+      описание: сокр
    помин:
       дата: 23.10
       описание: прств
