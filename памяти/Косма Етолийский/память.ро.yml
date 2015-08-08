@@ -1,12 +1,13 @@
 ---
-Косма Этолийский:
+Косма Етолийский:
    имя: в иночестве Косма, в крещении Константин
-   описание: уроженец Этолийский, священноинок Афонский, равноапостольник Албанский
+   описание: уроженец Етолийский; священноинок Афонский; равноапостольник Албанский;
+      предан иудеями; убиен агарянами
    чин: прмч
-   собор: аф,рапп,этол,иуд
+   собор: аф,рапп,этол?
    вики:
-    - http://drevo-info.ru/articles/13512.html
-    - http://orthodoxwiki.org/Cosmas_of_Aetolia
+      ру: http://drevo-info.ru/articles/13512.html
+      ан: http://orthodoxwiki.org/Cosmas_of_Aetolia
    бытие: http://azbyka.ru/days/sv-kosma-etolijskij
    образ:
     - http://drevo-info.ru/images/002/004595.jpg
@@ -15,6 +16,14 @@
     - http://azbyka.ru/days/assets/img/saints/4159/p183kjivftb7d5311cjkavg12r25.jpg
     - http://azbyka.ru/days/assets/img/saints/4159/p183kjivfrrdp1g1d166d1ps014213.jpg
     - http://drevo-info.ru/images/001/002612.jpg
+   служба:
+    - http://www.psaltologion.com/attachment.php?attachmentid=17018&d=1251286043 [творение инока
+      Герасима Микрагианнанита, на греческом языке, файл в формате WinWord, прикрепленный к
+      сообщению на форуме «Ψαλτολόγιον»]
+    - http://www.agiooros.net/forum/viewtopic.php?p=124958
+    - http://www.serfes.org/writtings/stcosmas.htm
+    - http://anemi.lib.uoc.gr//metadata/a/a/6/metadata-265-0000235.tkl
+    - http://anemi.lib.uoc.gr/php/pdf_split.php?filename=/var/www/tkl-portal-neo//metadata/a/a/6/attached-metadata-265-0000235/114281.pdf&pageno=1&pagenum=36
    событие:
     - год: 1714
       описание: ржд
@@ -36,7 +45,7 @@
       собор: виз
       чин: сщмч
       описание: просл
-      установ: 24.08
+      о: 24.08
    помин:
       дата: 24.08
       описание: прств
