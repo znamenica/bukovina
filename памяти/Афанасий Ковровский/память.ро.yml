@@ -5,7 +5,7 @@
    фамилия: Сахаров
    описание: святитель Ковровский
    чин: исвт
-   собор: нмр,нмс,мск,полт,кирс,птшк
+   собор: нмр,нмс,нмб,мск,полт,кирс?,птшк?
    вики:
     - http://drevo-info.ru/articles/5608.html
     - http://ru.wikipedia.org/wiki/Афанасий_(Сахаров)
@@ -23,6 +23,8 @@
     - http://azbyka.ru/days/worship/594
     - http://azbyka.ru/days/caa/691
     - http://korolev.msk.ru/books/11/Sluzhba_s_akafistom_Afanasiyu_Pesnopiscu.txt
+    - http://www.spasi.ru/answer/1754.htm
+    - http://ustavschik.livejournal.com/36992.html?view=1052032#t1052032
    событие:
     - год: 1887
       дата: 02.07
@@ -64,7 +66,7 @@
     - год: 2000
       дата: 16.10
       описание: прен
-      место: Богородице-Рождественский монастырь. Владимир
+      место: Богородице-Рождественская обитель. Владимир
    помин:
       дата: 15.10
       описание: прств

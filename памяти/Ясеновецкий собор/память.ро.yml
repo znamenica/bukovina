@@ -1,17 +1,25 @@
 ---
 Ясеновецкий собор:
-   описание: собор новомучеников Ясеновецких (Ясеновацких)
+   описание: собор новомучеников Ясеновецких (Ясеновацких), или Сербских
    чин: мчч
    крат: нмя
-   собор: серб,хрв,ясен
-   бытие: http://azbyka.ru/days/sv-sobor-novomuchenikov-jasenovackih
+   собор: серб?,хрв?,ясен?
+   бытие:
+    - http://azbyka.ru/days/sv-sobor-novomuchenikov-jasenovackih
+    - http://ustavschik.livejournal.com/207696.html
    образ:
     - http://azbyka.ru/days/assets/img/saints/6496/p181uuqof8hic12qi1ph4are6an3.jpg
     - http://azbyka.ru/days/assets/img/saints/6496/p181uuqof99jr1k5g6sk1ka71bt94.jpg
+   служба:
+    - Ясеновецкому собору служба
+    - http://www.svetosavlje.org/biblioteka/Bogosluzbeni/SluzbaNovomucenicimaSrpskim/SluzbaNovomucenicimaSrpskim.htm
+      [творение святителя Николая, епископа Жичского и Охридского, в стихах на сербском
+      языке, на сайте «Светосавље». Церковнославянские тропарь и кондак Сербским новомученикам
+      из книги «Слава и боль Сербии»]
    событие:
       год: 1941-1945
       описание: прств
-      место: Ясеновац. Хорватия
+      место: Ясеновац лагерь. Хорватия
    помин:
       дата: 31.08
       собор: серб

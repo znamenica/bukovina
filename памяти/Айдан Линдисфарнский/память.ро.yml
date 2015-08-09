@@ -3,7 +3,7 @@
    имя: Айдан
    описание: инок Ионский; святитель Нортумбрийский; настоятель Линдисфарнский
    чин: свт
-   собор: норт,ион
+   собор: норт?,ион?
    вики: http://drevo-info.ru/articles/18405.html
    бытие:
       гр: http://www.saint.gr/859/saint.aspx
@@ -11,7 +11,10 @@
     - http://drevo-info.ru/images/002/008079.jpg
     - http://drevo-info.ru/images/002/005385.jpg
     - http://www.saint.gr/photos/standard/0831/AgiosAidan02.jpg
-   служба: Айдану Линдисфарнскому служба
+   служба:
+    - Айдану Линдисфарнскому служба
+    - http://www.orthodoxengland.btinternet.co.uk/servaida.htm [на английском языке,
+      творение чтеца Исаака Ламбертсена, сайт «Православная Англия»]
    событие:
     - год: до 635
       описание: иноч
