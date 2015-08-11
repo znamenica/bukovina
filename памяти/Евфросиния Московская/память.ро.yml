@@ -3,20 +3,24 @@
    имя: в иночестве Евфросиния, в крещении Евдокия
    отчество: Дмитриевна
    описание: княгиня великая благоверная Московская
-   чин: прп
-   собор: слав,рус,мск,рднж
+   чин: прпж
+   собор: мск,рднж,здем,блгвв
    вики: http://drevo-info.ru/articles/18083.html
    бытие: http://azbyka.ru/days/sv-evdokija-v-inokinjah-evfrosinija-moskovskaja
    образ:
     - http://azbyka.ru/days/assets/img/saints/6141/87d4afe865cacec3906a2cd9f55964c8.jpg
     - http://drevo-info.ru/images/002/005072.jpg
+   служба:
+    - Евфросинии Московской служба
+    - http://azbyka.ru/days/caa/499
+    - http://azbyka.ru/days/caa/498
    событие:
     - год: ок.1354
       описание: ржд
     - год: 1366
       дата: 18.01
-      муж: Дмитрий Донской
       описание: брак
+      супруг: Дмитрий Донской
     - год: 1407
       дата: 17.05
       описание: иноч
@@ -30,9 +34,6 @@
     - дата: 17.05
       описание: иноч
     - дата: 07.07
+      календарь: змин
       описание: прств
-      служба:
-       - Евфросинии Московской служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_07.pdf
-       - http://azbyka.ru/days/caa/499
-       - http://azbyka.ru/days/caa/498
+      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_07.pdf

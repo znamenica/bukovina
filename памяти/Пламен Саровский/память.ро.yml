@@ -5,7 +5,7 @@
    фамилия: Мошнин
    описание: столпник, молчальник, затворник, старец, чудотворец Саровский
    чин: прп
-   собор: кур,ниж,тамб,див,со,стлп
+   собор: кур,ниж,тамб,див,сарв?,со?,стлп?
    вики: http://drevo-info.ru/articles/8522.html
    бытие: http://azbyka.ru/days/sv-serafim-sarovskij
    образ:
@@ -16,7 +16,14 @@
     - http://azbyka.ru/days/assets/img/saints/1706/22bc8d4e25f40306b5549f1146ada83d.jpg
     - http://azbyka.ru/days/assets/img/saints/1706/914b84db58a2fe224e00c70fd7a4aa4a.jpg
     - http://azbyka.ru/days/assets/img/saints/1706/cacc3493cd0b8ba4e9a60f72492e91de.jpg
+    - http://pics.livejournal.com/ustavschik/pic/0002gb4s
    отечник: http://azbyka.ru/otechnik/Serafim_Sarovskij/
+   служба:
+    - Пламену Саровскому служба
+    - http://azbyka.ru/days/caa/378
+    - http://azbyka.ru/days/caa/379
+    - http://azbyka.ru/days/caa/211
+    - http://ustavschik.livejournal.com/206168.html
    событие:
     - год: 1754
       дата: 19.07
@@ -58,17 +65,13 @@
     - год: 1991
       дата: вид.02.01
       описание: прен
-      место: Свято-Троицкий Серафимов Дивеевский монастырь. Дивеево
+      место: Свято-Троицкая Серафимова обитель. Дивеево
    помин:
     - дата: 02.01
+      календарь: змин
       описание: прств,обр.1
       служба: http://azbyka.ru/days/assets/upload/minei/01/minea_01_02.pdf
     - дата: 19.07
+      календарь: змин
       описание: обр
       служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_19.pdf
-    - описание: само
-      служба:
-       - Пламену Саровскому служба
-       - http://azbyka.ru/days/caa/378
-       - http://azbyka.ru/days/caa/379
-       - http://azbyka.ru/days/caa/211

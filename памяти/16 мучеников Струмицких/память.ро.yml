@@ -1,14 +1,16 @@
 ---
 16 мучеников Струмицких:
-   имя: Феодор
    описание: 16 мучеников Струмицких (Тивериопольских)
    чин: мчч
    собор: 16мс
    вики: http://drevo-info.ru/articles/8090.html
+   служба:
+    - http://anemi.lib.uoc.gr/metadata/a/3/f/metadata-155-0000095.tkl
+    - http://anemi.lib.uoc.gr/php/pdf_split.php?filename=/var/www/tkl-portal-neo//metadata/a/3/f/attached-metadata-155-0000095/114369.pdf&pageno=1&pagenum=33
    событие:
     - год: 361
       описание: прств
-      место: Струмица
+      место: Струмица (быв.Тивериополь)
     - год: по 1913
       описание: прен
       место: Килкис. Македония

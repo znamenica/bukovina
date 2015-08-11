@@ -5,11 +5,13 @@
    фамилия: Короткова
    описание: черница Владчнинская; поварица и старица Бородинская
    чин: прп
-   собор: дргб,серп,мск,брдн
+   собор: дргб?,серп?,мск?,брдн?
    вики: http://drevo-info.ru/articles/18547.html
    бытие: http://www.glinskie.ru/common/message.php?table=calend&num=1310
    образ: http://drevo-info.ru/images/002/005317.jpg
-   служба: Рахили Бородинской служба
+   служба:
+    - Рахили Бородинской служба
+    - http://akafist.narod.ru/R/Rakhil_Borodinskaia.htm
    событие:
     - год: 1833
       описание: ржд

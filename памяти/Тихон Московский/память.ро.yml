@@ -33,6 +33,12 @@
     - http://azbyka.ru/days/caa/119
     - http://azbyka.ru/days/caa/120
     - http://azbyka.ru/days/caa/121
+    - http://lestovka.tripod.com/minea/TIKHON.ZIP
+    - http://kotlovka.ru/index.php?option=com_content&task=view&id=902 [из архива Православного
+      Свято-Тихоновского Гуманитарного Университета.]
+    - http://akafist.narod.ru/T/Tikhon_Patriarch.htm
+    - http://kotlovka.ru/index.php?option=com_content&task=view&id=2601 [составлен Александром
+      Трофимовым, на информационном портале «Котловка.ру»]
    событие:
     - год: 1865
       дата: 19.01
@@ -89,6 +95,11 @@
       собор: рус
       чин: мсвт
       описание: просл.2
+    - год: 2007
+      дата: 20.11
+      описание: основ
+      о: 05.11
+      бытие: http://ustavschik.livejournal.com/28636.html
    помин:
     - дата: 09.02
       описание: обр
@@ -98,6 +109,8 @@
     - дата: 26.09
       календарь: рпц,змин
       описание: просл
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_26.pdf
+      служба:
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_26.pdf
+       - http://www.orthlib.ru/worship/mineya/sep/26tikhon.rar
     - дата: 05.11
       описание: прдст

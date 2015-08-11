@@ -5,7 +5,9 @@
    крат: сар
    собор: рус
    вики: http://drevo-info.ru/articles/21722.html
-   бытие: http://azbyka.ru/days/sv-sobor-saratovskih-svjatyh
+   бытие:
+    - http://azbyka.ru/days/sv-sobor-saratovskih-svjatyh
+    - http://ustavschik.livejournal.com/202781.html
    образ:
     - http://drevo-info.ru/images/002/007051.jpg
     - http://azbyka.ru/days/assets/img/saints/6500/p17vjd0ia7be41rni1b8kl3id1q3.jpg

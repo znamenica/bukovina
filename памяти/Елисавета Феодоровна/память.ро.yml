@@ -2,7 +2,7 @@
 Елисавета Феодоровна:
    имя: в крешении Елисавета
    отчество: Феодоровна
-   описание: княгиня великая, жена Сергея Александровича
+   описание: княгиня великая
    чин: прмц
    собор: слав,нмр,ека,спб
    вики: http://drevo-info.ru/articles/1713.html
@@ -14,13 +14,22 @@
     - http://azbyka.ru/days/assets/img/saints/6265/3a1d945b76fb66b526ff1108c6517b2c.jpg
     - http://azbyka.ru/days/assets/img/saints/6265/32df50ba63bf40d535508a37a6b68839.jpg
     - http://azbyka.ru/days/assets/img/saints/6265/24958109371280ceee1d68b087d9c354.jpg
+   служба:
+    - Елисавете Феодоровне служба
+    - http://azbyka.ru/days/sv-elisaveta-feodorovna
+    - http://azbyka.ru/days/worship/600
+    - http://azbyka.ru/days/caa/189
+    - http://ustavschik.livejournal.com/4127.html
    событие:
     - год: 1864
       дата: 20.10
       описание: ржд
     - год: 1891
       дата: 13.04
-      описание: првсл
+      описание: крещ
+    - год: вид.1891
+      описание: брак
+      супруг: Сергей Александрович
     - год: 1918
       дата: 05.07
       образ: http://drevo-info.ru/images/002/009196.jpg
@@ -40,9 +49,4 @@
    помин:
       дата: 05.07
       описание: прств
-      служба:
-       - Елисавете Феодоровне служба
-       - Елисавете Феодоровне и Варваре Алапаевской
-       - http://azbyka.ru/days/sv-elisaveta-feodorovna
-       - http://azbyka.ru/days/worship/600
-       - http://azbyka.ru/days/caa/189
+      служба: Елисавете Феодоровне и Варваре Алапаевской

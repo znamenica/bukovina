@@ -6,7 +6,9 @@
    чин: прп
    собор: аф?
    вики: https://ru.wikipedia.org/wiki/Порфирий_(Баирактарис)
-   бытие: http://azbyka.ru/days/sv-porfirij-kavsokalivit-bairaktaris
+   бытие:
+    - http://www.porphyrios.net/
+    - http://azbyka.ru/days/sv-porfirij-kavsokalivit-bairaktaris
    образ:
     - http://azbyka.ru/days/assets/img/saints/6579/p1910h2ql618l91pml1vjf1e6b1o1s3.jpg
     - http://azbyka.ru/days/assets/img/saints/6579/p1910h2ql81kn91l341e0ifra1put5.jpg
@@ -15,6 +17,7 @@
    отечник: http://azbyka.ru/otechnik/Porfirij_Kavsokalivit/
    служба:
     - Порфирию Кавсокаливиту служба
+    - https://dl.dropboxusercontent.com/u/26640656/porphyrios-net/Paraklhtikos-Kanonas-Agiou-Porphyriou.pdf
    событие:
     - год: 1906
       дата: 07.02

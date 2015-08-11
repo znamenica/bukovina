@@ -4,7 +4,10 @@
    чин: сбр
    вики: http://drevo-info.ru/articles/26370.html
    образ: http://drevo-info.ru/images/003/010239.jpg
-   служба: Святогорскому собору служба
+   служба:
+    - Святогорскому собору служба
+    - http://www.ortodox.donbass.com/svjati/tropar_i_kondak.htm
+    - http://www.ortodox.donbass.com/svjati/molitva.htm
    событие:
     - год: 2008
       дата: 08.05

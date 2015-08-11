@@ -5,7 +5,7 @@
    фамилия: Троицкий
    описание: святитель Верейский, викарий Московский
    чин: мсвт
-   собор: нмр,мск,спб,нмс,уч,рднж?
+   собор: нмр,мск,спб,нмс,уч?,рднж?,српх?
    вики: http://drevo-info.ru/articles/8302.html
    бытие:
     - http://azbyka.ru/days/sv-ilarion-troickij
@@ -22,6 +22,7 @@
     - http://nbt.rop.ru/?q=texts/sluzhba/256 [Текст утвержден Священным Синодом Русской
       Православной Церкви 16 июля 2013 года (журнал № 83)]
     - http://azbyka.ru/days/assets/upload/services/sv_ilarion.doc
+    - http://ustavschik.livejournal.com/200858.html
    событие:
     - год: 1886
       дата: 13.09

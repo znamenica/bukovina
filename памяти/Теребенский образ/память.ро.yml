@@ -2,13 +2,16 @@
 Теребенский образ:
    имя: Теребенский
    описание: образ Богородицы
-   чин: прп
+   чин: обр
    вики: http://drevo-info.ru/articles/15047.html
    бытие: http://azbyka.ru/days/ikona-terebenskaja-terebinskaja
    образ: http://azbyka.ru/days/assets/img/icons/41/p188nn55s2bbs1uuvsbrhk513733.jpg
    событие:
-      год: 1564
+    - год: 1564
       описание: явл
+      место: близ.Теребенская пустынь
+    - год: по 1564
+      описание: утр
    помин:
       дата: 14.05
       описание: само

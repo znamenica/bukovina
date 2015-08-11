@@ -2,9 +2,9 @@
 Макарий Московский:
    имя: в иночестве Макарий, в крещении Михаил
    отчество: Леонтьевич
-   описание: святитель Московский и всея Руси
+   описание: инок Боровский; святитель Московский и всея Руси
    чин: свт
-   собор: мсвт,мск,нов?,нсвт?
+   собор: мсвт,мск,нов?,нсвт?,брвс?
    вики: http://drevo-info.ru/articles/19468.html
    бытие: http://azbyka.ru/days/sv-makarij
    образ:
@@ -13,6 +13,17 @@
     - http://azbyka.ru/days/assets/img/saints/2562/d74663a16fc066b21e51ede0152ea3f1.jpg
     - http://azbyka.ru/days/assets/img/saints/2562/p18vtn4q9v1h9d160d1di7ctc1giv3.jpg
     - http://pravicon.com/icon-2325
+   служба:
+    - Макарию Московскому служба
+    - http://azbyka.ru/days/caa/149
+    - http://azbyka.ru/days/caa/148
+    - http://www.lestovka.ru/minea/MAKARIJ.ZIP [(творение архимандрита Макария (Веретенникова),
+      на сайте «Лестовка»]
+    - http://ustavschik.livejournal.com/57489.html [составлен Дмитрием Урушевым (РПСЦ),
+      в «Уставных заметках»]
+    - http://kazan.eparhia.ru/bogoslugenie/akafisti/svytilym/makariymoskiy/ [творение архимандрита
+      Макария (Веретенникова), на сайте «Православие в Татарстане»]
+    - http://www.mineya.ru/files/novoprosl.pdf
    событие:
     - год: ок.1482
       описание: ржд
@@ -44,11 +55,7 @@
       чин: мсвт
       описание: просл.1
    помин:
-    - дата: 30.12
+      дата: 30.12
+      календарь: змин
       описание: прств
       служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_30.pdf
-    - описание: само
-      служба:
-       - Макарию Московскому служба
-       - http://azbyka.ru/days/caa/149
-       - http://azbyka.ru/days/caa/148

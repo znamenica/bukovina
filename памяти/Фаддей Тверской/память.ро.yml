@@ -6,7 +6,7 @@
    описание: священноинок Смоленский, Минский, Уфимский, Петрозаводский, святитель
       Волынский, Владикавказский, Астраханский, Саратовский, Тверской и Кашинский
    чин: мсвт
-   собор: нмр,твер,ниж?
+   собор: нмр,твер,лукя?,каз?,смо?,мин?,уфа?,птрз?,вол?,алан?,астр?,сар?,каш?
    вики: http://drevo-info.ru/articles/8326.html
    бытие:
     - http://azbyka.ru/days/sv-faddej-uspenskij
@@ -16,6 +16,12 @@
     - http://213.171.53.29/foto_1/oep-45k.jpg
     - http://azbyka.ru/days/assets/img/saints/2023/cee486022b9e97510482970a1a97d2b2.jpg
    отечник: http://azbyka.ru/otechnik/Faddej_Uspenskij/
+   служба:
+    - Фаддею Тверскому служба
+    - http://azbyka.ru/days/assets/upload/services/56-14.-7-dekabrya-2014-goda.-Nedelya-26-po-Pyatidesyatnice.-Poprazdnstvo-Vvedeniya.-Vmch.-Ekateriny.-Glas-1.doc
+    - http://azbyka.ru/days/caa/171
+    - http://www.sobor-vosneseniy.ru/sluf.htm
+    - http://www.sobor-vosneseniy.ru/akaff.htm
    событие:
     - год: 1872
       дата: 12.11
@@ -63,8 +69,3 @@
       описание: обр
     - дата: 18.12
       описание: прств
-    - описание: само
-      служба:
-       - Фаддею Тверскому служба
-       - http://azbyka.ru/days/assets/upload/services/56-14.-7-dekabrya-2014-goda.-Nedelya-26-po-Pyatidesyatnice.-Poprazdnstvo-Vvedeniya.-Vmch.-Ekateriny.-Glas-1.doc
-       - http://azbyka.ru/days/caa/171
