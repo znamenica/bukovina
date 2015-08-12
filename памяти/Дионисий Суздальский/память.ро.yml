@@ -5,8 +5,15 @@
    чин: свт
    собор: киев,влад,кстр,ниж,рднж
    вики: http://drevo-info.ru/articles/6299.html
-   бытие: http://azbyka.ru/days/sv-dionisij-suzdalskij
+   бытие:
+    - http://azbyka.ru/days/sv-dionisij-suzdalskij
+    - http://www.blagoslovenie.su/jitie/dionisiy_svt_jitie.php
    образ: http://drevo-info.ru/images/002/007311.jpg
+   служба:
+    - Дионисию Суздальскому служба
+    - http://azbyka.ru/days/caa/646
+    - http://www.blagoslovenie.su/jitie/dionisiy_svt_sluzhba.php
+    - http://www.blagoslovenie.su/jitie/dionisiy_svt_akafist.php
    событие:
     - год: нач.XIV
       описание: прств
@@ -25,10 +32,8 @@
       описание: почит
    помин:
     - дата: 26.06
+      календарь: змин
       описание: тез
       служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_26.pdf
     - дата: 15.10
       описание: прств
-      служба:
-       - Дионисию Суздальскому служба
-       - http://azbyka.ru/days/caa/646

@@ -1,20 +1,20 @@
 ---
 Псково-Печерский собор:
-   имя: Собор
-   фамилия: Неделю Пятидесятнице
-   описание: отцов Псково-печерских Псково-Печерских
-   чин: прп
+   описание: собор отцов Псково-печерских
+   чин: прпп
    крат: ппеч
-   собор: слав,рус
+   собор: пск?,рус?
    бытие: http://azbyka.ru/days/sv-sobor-prepodobnyh-otcov-pskovo-pecherskih
    образ: http://azbyka.ru/days/assets/img/saints/6473/p1880rnisknpeo931o73oj91hn23.jpg
+   служба:
+    - Псково-Печерскому собору служба
+    - http://azbyka.ru/days/worship/641
+    - http://azbyka.ru/days/caa/207
+    - http://www.mineya.ru/files/novoprosl.pdf
+    - http://www.pskovo-pechersky-monastery.ru/russian/saint/akafist/
    событие:
       год: 1980-е
       описание: просл
    помин:
       дата: нд.4.по птдс
       описание: само
-      служба:
-       - Псково-Печерскому собору служба
-       - http://azbyka.ru/days/worship/641
-       - http://azbyka.ru/days/caa/207

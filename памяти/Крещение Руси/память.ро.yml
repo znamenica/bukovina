@@ -3,7 +3,9 @@
    описание: Крещение Руси
    чин: сбт
    собор: рус
-   служба: http://ustavschik.livejournal.com/229273.html
+   служба:
+    - http://ustavschik.livejournal.com/229273.html
+    - http://ustavschik.livejournal.com/188527.html
    событие:
       год: вид.XX
       описание: просл

@@ -11,6 +11,11 @@
    образ:
     - http://drevo-info.ru/images/001/000248.jpg
     - http://days.pravoslavie.ru/jpg/ib4590.jpg
+   служба:
+    - Неделе Римляныне служба
+    - http://azbyka.ru/days/caa/293
+    - http://voutsinasilias.blogspot.com/2009/10/29.html [творение инока Герасима Микрагианнанита,
+      на греческом языке, сообщение в блоге Илии Вуцинаса]
    событие:
     - год: 230-236
       описание: ржд
@@ -23,11 +28,10 @@
       образ: http://azbyka.ru/days/assets/img/saints/5822/80f61fb28b878cf5c712fbbc686ebe8d.jpg
    помин:
     - дата: 29.10
+      календарь: змин
       описание: само
       служба:
-       - Неделе Римляныне служба
        - Неделе Римляныне и Авраамию Затворнику служба
        - http://azbyka.ru/days/assets/upload/minei/10/minea_10_29.pdf
-       - http://azbyka.ru/days/caa/293
     - дата: 30.10
       описание: само

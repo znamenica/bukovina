@@ -10,6 +10,13 @@
     - http://azbyka.ru/days/assets/img/icons/25/e3dcf21e6ddc61cb185c3c283fd80ecf.jpg
     - http://azbyka.ru/days/assets/img/icons/25/aca9bfe95aa5899f73e88ba0a2b7a154.jpg
     - http://kotlovka.ru/pgallery/albums/userpics/10002/824_87.jpg
+   служба:
+    - Избавительнице образу служба
+    - http://azbyka.ru/days/caa/216
+    - http://azbyka.ru/days/caa/215
+    - http://ustavschik.livejournal.com/37533.html
+    - http://kazan.eparhia.ru/bogoslugenie/akafisti/bogieymateri/ikonibogieymateri/izbavcaikna/
+    - http://korolev.msk.ru/minea/apr1/apr181.html
    событие:
     - год: XVII
       описание: явл
@@ -28,10 +35,8 @@
       описание: само
       служба:
        - http://azbyka.ru/days/caa/217
+       - http://korolev.msk.ru/minea/apr1/apr192.html
     - дата: 17.10
+      календарь: змин
       описание: само
-      служба:
-       - Избавительнице образу служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_17.pdf
-       - http://azbyka.ru/days/caa/216
-       - http://azbyka.ru/days/caa/215
+      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_17.pdf

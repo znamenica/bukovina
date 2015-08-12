@@ -4,7 +4,7 @@
    фамилия: Кочуров
    описание: протоиерей Чикагский, Царскосельский, Петроградский, первоновомученик
    чин: сщмч
-   собор: нмр,врнж,лип,ряз,спб,клв
+   собор: нмр,врнж,лип,ряз,спб,клвн,данк?,ньёр?,цсел?,чика?
    вики: http://drevo-info.ru/articles/11748.html
    бытие: http://azbyka.ru/days/sv-ioann-carskoselskij-kochurov
    образ:
@@ -12,6 +12,11 @@
     - http://azbyka.ru/days/assets/img/saints/6521/p189727k1u116v1ho71ur8100g1gil3.jpg
     - http://azbyka.ru/days/assets/img/saints/6521/p189727k1v1am31njp1nr615sdndt4.jpg
     - http://azbyka.ru/days/assets/img/saints/6521/p185f7do0gcsnudpo1d6sd1d53.jpg
+   служба:
+    - Иоанну Царскосельскому служба
+    - http://www.vob.ru/saints/shmc/in_kochur/main.htm
+    - http://azbyka.ru/days/caa/683
+    - http://www.stlukeorthodox.com/html/saints/stjohnofchicago/textofservice.cfm
    событие:
     - год: 1871
       дата: 13.06
@@ -34,11 +39,13 @@
       собор: рус
       чин: нмр
       описание: просл
+    - год: 2000
+      дата: 07.08
+      собор: рус
+      чин: нмр
+      описание: чинпр
     - год: 2006
       описание: обр
    помин:
       дата: 31.10
       описание: прств
-      служба:
-       - Иоанну Царскосельскому служба
-       - http://azbyka.ru/days/caa/683

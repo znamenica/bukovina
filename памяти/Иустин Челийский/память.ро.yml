@@ -1,5 +1,5 @@
 ---
-Иустин Попович:
+Иустин Челийский:
    имя:
       ру: в иночестве Иустин, в крещении Благое
       се: в иночестве Јустин, в крещении Благоје
@@ -10,7 +10,7 @@
    описание: защитник славянства; учитель Карловацкий, Призренский, Битольский; доктор
       богословских наук, профессор богословия; архимандрит Челийский
    чин: прп
-   собор: слав,серб?,уч,чели
+   собор: серб?,уч?,чели?
    вики: http://drevo-info.ru/articles/14841.html
    бытие:
       ру: http://azbyka.ru/days/sv-iustin-chelijskij-popovich
@@ -32,6 +32,11 @@
    отечник:
       ру: http://azbyka.ru/otechnik/Iustin_Popovich/
       се: http://www.knjizara.com/celije/sabrana_dela.html
+   служба:
+    - http://ustavschik.livejournal.com/164736.html
+    - http://www.pouke.org/upload/fajlovi/knjige/Ava%20Justin/Akatist%20Avi%20Justinu%20Celijskom.pdf
+    - http://www.bsn.org.rs/razgovori//viewtopic.php?topic=747&forum=13
+    - http://www.russian-church.de/muc/ve_divo/detail.php?nr=1289&kategorie=ve_divo
    событие:
     - год: 1894
       дата: 25.03
@@ -74,6 +79,8 @@
       описание: прен.1
       место: Михайло-Архангельская церковь. Челийская обитель. Валево. Сербия
    помин:
-      дата: 01.06
-      календарь: рпц
+    - дата: 25.03
       описание: прств
+    - дата: 01.06
+      календарь: рпц
+      описание: прен
