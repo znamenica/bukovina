@@ -12,7 +12,9 @@
    чин: сщмч
    собор: птгр?,прж?,галл?,верз?,нмгл
    вики: http://drevo-info.ru/articles/18979.html
-   бытие: http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu8euKje8qcfG02f8XWs8Wd660hdC0ZdO8ctk*
+   бытие:
+    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu8euKje8qcfG02f8XWs8Wd660hdC0ZdO8ctk*
+    - http://ustavschik.livejournal.com/199930.html
    образ:
     - http://c1.staticflickr.com/3/2219/2335840724_18607eafdd.jpg
     - http://www.saint.gr/filesnew/09/4381/photos/AgiosDimitrioosKlepinin02.jpg

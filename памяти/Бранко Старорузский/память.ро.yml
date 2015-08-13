@@ -3,12 +3,16 @@
    имя: в крещении Алексий
    отчество: Александрович
    фамилия: Веселовский
-   описание: священник Клементьевский, Старорузский
+   описание: священник Клементьевский (Руза), Старорузский (Руза)
    чин: сщмч
-   собор: нмр,бут,мск
+   собор: нмр,бут,можа?,руза?
    вики: http://drevo-info.ru/articles/3441.html
-   бытие: http://azbyka.ru/days/sv-aleksij-veselovskij
-   образ: http://azbyka.ru/days/assets/img/saints/4941/p18b4tphtjpkq1ko1ciskqk1ujd3.jpg
+   бытие:
+    - http://azbyka.ru/days/sv-aleksij-veselovskij
+    - http://kuz1.pstbi.ccas.ru/bin/db.exe/no_dbpath/docum/ans/ans/newmr/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu0dS4ZeuuWsOeceG0*euKesOKd660fdOfVc8qYs8uWeCQ*
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/4941/p18b4tphtjpkq1ko1ciskqk1ujd3.jpg
+    - http://drevo-info.ru/images/001/000460.jpg
    событие:
     - год: 1873
       дата: 15.02
@@ -23,15 +27,19 @@
     - год: 1937
       дата: 28.11
       описание: прств
-      место: Бутово. Московье
+      место: Бутово посёлок. Московская область
+    - год: 1937
+      дата: вид.28.11
+      описание: пгрб
+      место: Бутово посёлок. Московская область
     - год: 2000
       дата: 31.07-03.08
       собор: рус
-      чин: нмр
+      чин: сщмч
       описание: просл
+      о: нмр
     - год: 2000
       дата: 07.08
-      собор: рус
       чин: нмр
       описание: чинпр
    помин:
