@@ -8,12 +8,13 @@
     - http://azbyka.ru/days/ikona-sporitelnica-hlebov
     - http://www.optina.ru/pub/p16/    
    образ: http://azbyka.ru/days/assets/img/icons/264/p193bap9qc1pabet8sknn6pv9c3.jpg
+   служба:
+    - Спорительнице Хлебов образу служба
+    - http://azbyka.ru/days/caa/580
+    - http://www.optina.ru/sluzhba_sporit/
    событие:
       год: 1842-1891
       описание: напис
    помин:
       дата: 15.10
       описание: само
-      служба:
-       - Спорительнице Хлебов образу служба
-       - http://azbyka.ru/days/caa/580

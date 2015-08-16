@@ -10,7 +10,9 @@
    собор: кит
    вики: http://drevo-info.ru/articles/2446.html
    бытие:
-      ру: http://www.chinese.orthodoxy.ru/russian/kb3/Martyrs1.htm
+      ру: 
+       - http://www.chinese.orthodoxy.ru/russian/kb3/Martyrs1.htm
+       - http://ustavschik.livejournal.com/89148.html
       гр: http://www.saint.gr/567/saint.aspx
    образ:
     - http://drevo-info.ru/images/002/007053.jpg
@@ -19,21 +21,29 @@
     - http://www.saint.gr/photos/standard/0611/AgiosMitrofanis01.jpg
     - http://vatopaidi.files.wordpress.com/2010/06/oi-agioi-neomartyres-tis-kinas-21.jpg
     - http://vatopaidi.files.wordpress.com/2010/06/oi-agioi-kinezoi-neomartyres-3.jpg
-   служба: 222-м мученикам Китайским служба
+   служба:
+    - 222-м мученикам Китайским служба
+    - http://ustavschik.livejournal.com/89148.html
+    - http://ustavschik.livejournal.com/185639.html
+    - http://www.pigizois.net/arxeia/sigxronoi_agioi.doc
+    - http://www.orthodox.cn/liturgical/ServiceChineseMartyrs_ru.htm
+    - http://www.pravoslav.de/acolouthiae/offices/kitayskii.pdf
+    - http://pravoslavie.domainbg.com/pdf/cnmartyrs.pdf
+    - http://www.orthodox.cn/liturgical/ServiceChineseMartyrs_en.htm
+    - http://www.asna.ca/resources/akathist-chinese-martyrs-1900.pdf
+    - http://akafist.narod.ru/M/Ch_Mar.htm
+    - http://www.orthodox.cn/liturgical/ia-the-teacher_en.htm
    событие:
     - год: 1900 
       дата: 07.06-12.06
       описание: прств
       место: Пекин
-    - год: 1902
-      собор: рус
-      чин: кит
+    - год: вид.1997
+      собор: русз
+      чин: мчч
       описание: просл
-    - год: 1903
-      дата: 11.06
-      описание: чинпр
    помин:
       дата: 11.06
-      собор: русз,кит
+      собор: русз
       календарь: греч
       описание: прств

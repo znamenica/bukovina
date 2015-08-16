@@ -9,7 +9,11 @@
    образ:
     - http://drevo-info.ru/images/003/011770.jpg
     - http://gazeta-nedelya.info/media/k2/items/cache/587746ff6320613e33bbe5dba0deac7f_XL.jpg
-   служба: Глинскому собору служба
+   служба:
+    - Глинскому собору служба
+    - http://ustavschik.livejournal.com/193534.html
+    - http://ustavschik.livejournal.com/193805.html
+    - http://ustavschik.livejournal.com/193704.html
    событие:
     - год: 2008
       дата: 25.04
