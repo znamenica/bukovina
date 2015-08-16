@@ -1,26 +1,46 @@
 ---
 Владимир Великий:
    имя: в наречении Владимир, в крещении Василий
-   отчество: Святославич
-   описание: князь великий Киевский, внук Ольги Русской
+   отчество: Святославович
+   описание: князь великий Киевский; внук Ольги Русской
    чин: рап
-   собор: слав,рус,вол,гал,киев
+   собор: вол,гал,киев
    вики: http://drevo-info.ru/articles/6457.html
-   бытие: http://azbyka.ru/days/sv-vel-kn-vladimir-v-kreshchenii-vasilij
+   бытие:
+      ру: http://azbyka.ru/days/sv-vel-kn-vladimir-v-kreshchenii-vasilij
+      ук: http://news.church.ua/2015/07/23/zhitije-svyatogo-rivnoapostolnogo-knyazya-volodimira-tekst/
    образ:
     - http://drevo-info.ru/images/002/007636.jpg
     - http://drevo-info.ru/images/001/001156.jpg
+   служба:
+    - Владимиру Великому служба
+    - http://azbyka.ru/days/caa/275
+    - http://azbyka.ru/days/caa/496
+    - http://azbyka.ru/days/caa/274
+    - http://www.ex.ua/92749529
+    - http://ierokirik.livejournal.com/34073.html
+    - http://fs42.www.ex.ua/get/4c97d7f2550b63d6ad8747803f4f7bbd/180476214/Vladimir_ucs18_.djvu
+    - http://file.qip.ru/file/1fHxFKFM/Vladimir.html
    событие:
-    - год: вид.1642
+    - год: 955-963
       описание: ржд
+    - год: 988
+      дата: вид.06.01
+      описание: крещ
     - год: 1015
+      дата: 15.07
       описание: прств
+      место: Берестов. Киевье
+    - год: 1015
+      дата: по 15.07
+      описание: пгрб
+      место: Десятинная церковь. Киев
+    - год: кон.1240
+      описание: утр
+    - год: до кон.XIV
+      описание: почит
    помин:
       дата: 15.07
+      календарь: змин,скал
       описание: само
-      служба:
-       - Владимиру Великому служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_15.pdf
-       - http://azbyka.ru/days/caa/275
-       - http://azbyka.ru/days/caa/496
-       - http://azbyka.ru/days/caa/274
+      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_15.pdf
