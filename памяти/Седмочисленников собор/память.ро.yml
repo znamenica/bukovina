@@ -6,12 +6,12 @@
    крат: 7чис
    вики: http://drevo-info.ru/articles/111.html
    образ: http://drevo-info.ru/images/002/004574.jpg
+   служба: Седмочисленников собору служба
    событие:
       год: 869-910
       описание: прств
    помин:
       дата: 27.07
+      календарь: змин
       описание: само
-      служба:
-       - Седмочисленников собору служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_27.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_27.pdf
