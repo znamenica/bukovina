@@ -1,9 +1,9 @@
 ---
 Климент Охридский:
    имя: Климент
-   описание: славянин, святитель Охридский, Болгарский, Велико-Македонский
+   описание: славянин; святитель Охридский (Болгарский), Велико-Македонский
    чин: рап
-   собор: слав,болг,7чис,пис
+   собор: слав,болг,7чис,пис?
    вики: http://drevo-info.ru/articles/11697.html
    бытие: http://azbyka.ru/days/sv-kliment-ohridskij
    образ:
@@ -12,6 +12,7 @@
     - http://azbyka.ru/days/assets/img/saints/4171/b77c054ce69b2787f34cf18d75a84495.jpg
     - http://azbyka.ru/days/assets/img/saints/4171/8a465a8f809aed50af03d4a82f38f60f.jpg
     - http://azbyka.ru/days/assets/img/saints/4171/0426b60f9e8e5cb0ca42924c4798c5e2.jpg
+   служба: Клименту Охридскому служба
    событие:
     - год: IX
       описание: ржд
@@ -26,7 +27,6 @@
       собор: болг
       описание: само
     - дата: 25.11
+      календарь: змин
       описание: само
-      служба:
-       - Клименту Охридскому служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_25.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_25.pdf

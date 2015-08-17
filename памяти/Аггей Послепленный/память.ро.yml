@@ -3,12 +3,13 @@
    имя: Аггей
    описание: послепленный
    чин: прор
-   собор: 12мп
+   собор: 12мп,вавл?,плст?
    вики: http://drevo-info.ru/articles/4116.html
    бытие: http://azbyka.ru/days/sv-aggej
    образ:
     - http://drevo-info.ru/images/002/004368.jpg
     - http://azbyka.ru/days/assets/img/saints/973/51479714a557afc60ac727e9f02392f3.jpg
+   служба: Аггею Послепленному служба
    событие:
     - год: вид.VI до нэ
       описание: ржд
@@ -18,7 +19,6 @@
       место: вид.Палестина
    помин:
       дата: 16.12
+      календарь: змин
       описание: само
-      служба:
-       - Аггею Послепленному служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_16.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_16.pdf
