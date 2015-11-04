@@ -1,14 +1,15 @@
 ---
 Пахомий Кенский:
-   имя: Пахомий
+   имя: в иночестве Пахомий
    описание: настоятель Кенский, ученик и сомолитвенник Александра Ошевенского
    чин: прп
-   собор: кар
+   собор: кар,нов
    вики: http://drevo-info.ru/articles/8556.html
    бытие: http://azbyka.ru/days/sv-pahomij-kenskij
    образ:
     - http://azbyka.ru/days/assets/img/saints/2190/p18dqecia8abgi9h1q4o1mdl3du3.jpg
     - http://azbyka.ru/days/assets/img/saints/2190/p18dqecian1rha1o2tk551tmru664.jpg
+    - http://drevo-info.ru/images/003/012389.jpg
     - http://pravicon.com/icon-2683
    событие:
     - год: нач.XV
@@ -20,5 +21,8 @@
       описание: пгрб
       место: вид.Спасо-Преображенский храм. Спасо-Преображенская Кенская обитель
    помин:
-      дата: сб.по крщ
+    - дата: сб.по крщ
+      описание: само
+    - дата: 15.05
+      собор: греч
       описание: само
