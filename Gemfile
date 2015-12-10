@@ -9,6 +9,7 @@ gem 'rdoba', :git => 'https://github.com/3aHyga/rdoba.git'
 
 group :development do
    gem 'cucumber'
+   gem 'spork'
    gem 'shoulda-matchers', github: 'majioa/shoulda-matchers'
    gem 'flag_shih_tzu'
    gem 'rspec-expectations'

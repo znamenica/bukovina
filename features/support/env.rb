@@ -1,21 +1,26 @@
-require 'config/environment'
+require 'spork'
 
-require 'pry'
-require 'database_cleaner'
-require 'rspec/expectations'
-require 'shoulda-matchers'
+Spork.prefork do
+   require 'config/environment'
 
-ENV[ 'RAILS_ENV' ] = 'cucumber'
-DatabaseCleaner.strategy = :truncation
+   require 'pry'
+   require 'database_cleaner'
+   require 'rspec/expectations'
+   require 'shoulda-matchers'
 
-Rails.application
+   ENV[ 'RAILS_ENV' ] = 'cucumber'
+   DatabaseCleaner.strategy = :truncation
 
-Shoulda::Matchers.configure do |config|
-   config.integrate do |with|
-      with.test_framework :rspec_exp
-      with.library :active_model
-      with.library :active_record
+   Rails.application
+
+   Shoulda::Matchers.configure do |config|
+      config.integrate do |with|
+         with.test_framework :rspec_exp
+         with.library :active_model
+         with.library :active_record
+      end
    end
+
+   at_exit { DatabaseCleaner.clean }
 end
 
-at_exit { DatabaseCleaner.clean }
