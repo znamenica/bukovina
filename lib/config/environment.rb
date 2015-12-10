@@ -2,6 +2,7 @@ require 'bukovina'
 require 'active_record'
 require 'yaml'
 require 'pry'
+require 'rdoba'
 require 'rdoba/merge'
 
 class Hash

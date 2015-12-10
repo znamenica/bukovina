@@ -149,7 +149,7 @@ private
 
    def parse_token token, context
 #            binding.pry
-      when 'вид.'
+      if token == 'вид.' #NOTE may be erroneouse
          context[ :attrs ].last[ :feasibly ] = true
       else
          matched =
