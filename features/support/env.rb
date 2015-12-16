@@ -1,16 +1,17 @@
 require 'spork'
 
 Spork.prefork do
-   require 'config/environment'
+   require_relative '../../config/environment'
 
    require 'pry'
    require 'database_cleaner'
    require 'rspec/expectations'
    require 'shoulda-matchers'
 
-   ENV[ 'RAILS_ENV' ] = 'cucumber'
+   ENV[ 'RAILS_ENV' ] ||= 'cucumber'
    DatabaseCleaner.strategy = :truncation
 
+   Rails.migrate
    Rails.application
 
    Shoulda::Matchers.configure do |config|

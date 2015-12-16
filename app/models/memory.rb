@@ -3,4 +3,8 @@ class Memory < ActiveRecord::Base
    has_many :memory_names
 
    validates_presence_of :short_name
-end
+
+   scope :by_short_name, ->(name) { where( short_name: name ) }
+
+   def to_s
+      memory_names.join( ' ' ) ; end ; end

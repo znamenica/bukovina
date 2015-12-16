@@ -1,3 +1,0 @@
----
-adapter: sqlite3
-database: lib/db/development.sqlite3

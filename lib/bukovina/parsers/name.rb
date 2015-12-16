@@ -17,6 +17,7 @@ class Bukovina::Parsers::Name
       'в схиме' => :схимное,
    }
 
+   # TODO добавить проверку регвыра в проверяльщик модели
    RUSSIAN_CAPITAL = 'А-ЯЁ'
    RUSSIAN_STROKE = 'а-яё'
    SERBIAN_CAPITAL = 'ЂЈ-ЋЏА-ИК-Ш'
@@ -34,7 +35,7 @@ class Bukovina::Parsers::Name
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}][#{SERBIAN_STROKE}]*$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}][#{GREEK_STROKE}#{GREEK_ACCENT}]*$/, }
 
-   RE = /#{STATES.keys.join('|')}|вид\.|[#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}](\s*[,()])?/
+   RE = /(#{STATES.keys.join('|')}|вид\.)|([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)(\s*[,()])?/
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
@@ -88,95 +89,100 @@ private
 
    def parse_line nameline, language_code = :ру
       language_code = language_code.to_sym
-      context = { attrs: [] }
-      nameline.scan( RE ) do |token|
-         context[ :attrs ] << {
+      context = { models: { name: [], memory_name: [] } }
+      nameline.scan( RE ) do |(pref, token, sepa)|
+         name = {
             language_code: language_code,
          }
+         context[ :models ][ :name ] << name
+         context[ :models ][ :memory_name ] << { name: name }
 
-         apply_separator sepa.strip, context
-         parse_token token, context ; end
+#         binding.pry
+         apply_pref( pref, token, context )
+         apply_token( validate_token( token, context ), context )
+         apply_separator( token, sepa&.strip, context ) ; end
 
-      context[ :attrs ]
+#      binding.pry
+      context[ :models ]
 
    rescue BukovinaError => e
       @errors << e
       {}; end
 
-   def apply_token context
-      token = ( context.delete( :tokens ) || [] ).join(' ')
-      case token
-      when /#{STATES.keys.join('|')}/
-         context[ :attrs ].last[ :state ] = STATES[ token ]
-      else
-         context[ :attrs ].last[ :text ] = token
+   def apply_token token, context
+      if token
+         context[ :models ][ :name ].last[ :text ] = token
          case context[ :mode ]
-         when :next
          when :alias
-            context[ :aliases ] << token
-         else
-            aliases = context.delete( :aliases )
-            dup = aliases.dup
-            i = -1
-            dup.each do |name|
-               context[ :attrs ][ i ][ :aliases ] = aliases - [ name ]
-               dup.delete( name )
-               i -= -1 ; end
+            context[ :models ][ :name ].last[ :aliases ] ||= []
+            prev = context[ :models ][ :name ][ -2 ]
+            context[ :models ][ :name ].last[ :aliases ] << prev[ :text ]
+            end ; end
+#      else
+#         aliases = context.delete( :aliases )
+#         dup = aliases.dup
+#         i = -1
+#         dup.each do |name|
+#            context[ :attrs ][ i ][ :aliases ] = aliases - [ name ]
+#            dup.delete( name )
+#            i -= -1 ; end
 
-            if aliases.nil?
-               raise BukovinaInvalidContext, "Invalid context "
-                     "'#{context[ :mode ]}' for token #{token}"
-               end ; end
+#            if aliases.nil?
+#               raise BukovinaInvalidContext, "Invalid context "
+#                     "'#{context[ :mode ]}' for token #{token}"
+#               end ; end
 
-         if token[ 0 ].capitalize != token[ 0 ]
-            @errors << "Invalid token '#{token}' for language "
-                       "'#{context[ :attrs].last[ :language_code]}'" ; end ; end
+#         if token[ 0 ].capitalize != token[ 0 ]
+#            @errors << "Invalid token '#{token}' for language "
+#                       "'#{context[ :attrs].last[ :language_code]}'" ; end
 
    rescue BukovinaError => e
-      @errors << e
-      {} ; end
+      @errors << e ; end
 
    def apply_separator token, sepa, context
       case sepa
-      when ','
+      when ',', nil
          context[ :mode ] ||= :next
       when '('
          context[ :mode ] = :alias
-         context[ :aliases ] = []
       when ')'
-         context.delete( :mode ) ; end
-   end
-
-   def parse_token token, context
-#            binding.pry
-      if token == 'вид.' #NOTE may be erroneouse
-         context[ :attrs ].last[ :feasibly ] = true
+         context.delete( :mode )
       else
-         matched =
-         MATCH_TABLE.to_a.reduce(nil) do |s, (code, re)|
-            if s
-               next s; end
+         @errors << "Невернъ разделитель: #{sepa} при словце #{token}" ; end ; end
 
-            if re =~ token
-               if context[ :attrs ].last[ :language_code ] == code
-                  token
-               else
-                  raise BukovinaInvalidLanguage, "Invalid language '"
-                        "#{context[ :attr].last[ :language_code]}' for the "
-                        "#token '#{token}'"
-                  nil ; end ; end ; end
+   def apply_pref pref, token, context
+      case pref
+      when /#{STATES.keys.join('|')}/
+         context[ :models ][ :memory_name ].last[ :state ] = STATES[ token ]
+      when 'вид.'
+         mods = context[ :models ][ :memory_name ].last[ :feasibly ] = true
+      when nil
+      else
+         @errors << "Невернъ предникъ: #{pref} при словце #{token}" ; end ; end
 
-         if matched
-            context [ :tokens ] ||= []
-            context [ :tokens ] << matched
-         else
-            raise BukovinaInvalidLanguage, "Invalid language '"
-                  "#{context[ :attr].last[ :language_code]}' specified"
-            end ; end
+   def validate_token token, context
+      matched =
+      MATCH_TABLE.to_a.reduce( nil ) do |s, (code, re)|
+         if s
+            next s; end
+
+         if re =~ token
+            if context[ :models ][ :name ].last[ :language_code ] == code
+               token
+            else
+               raise BukovinaInvalidLanguage, "Invalid language '"            \
+                  "#{context[ :models ][ :name ].last[ :language_code ]}' "   \
+                  "for the #token '#{token}'" ; end ; end ; end
+
+      if ! matched
+         raise BukovinaInvalidLanguage, "Invalid language '"
+            "#{context[ :attr ].last[ :language_code ]}' specified" ; end
+            
+      matched
 
    rescue BukovinaError => e
       @errors << e
-      {} ; end
+      nil ; end
 
    def initialize
       @errors = [] ; end ; end
