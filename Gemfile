@@ -13,7 +13,7 @@ group :development do
    gem 'shoulda-matchers', github: 'majioa/shoulda-matchers'
    gem 'flag_shih_tzu'
    gem 'rspec-expectations'
-   gem 'activerecord'
+   gem 'activerecord', '~> 4.2.5'
    gem 'database_cleaner'
    gem 'sqlite3'
 end
