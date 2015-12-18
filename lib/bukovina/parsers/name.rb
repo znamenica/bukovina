@@ -50,15 +50,14 @@ class Bukovina::Parsers::Name
             else
                raise BukovinaNullNameLine, "Null name line #{name.inspect}"
                      " for the language #{language_code}" ; end ; end
-
          names =
          begin
-            binding.pry
-            names.transpose
+            syns = names.map { |n| n[ :name ] }.transpose
          rescue TypeError
             raise BukovinaTypeError, "#{$!}: for name #{name}"
          rescue IndexError
             raise BukovinaIndexError, "#{$!}: for name #{name}" ; end
+=begin
 
          names.each do |name_dup|
             dupes = name_dup.map { |n| n[ :text ] }.compact
@@ -70,6 +69,8 @@ class Bukovina::Parsers::Name
          if empty
             raise BukovinaEmptyRecord, "Empty record found for the names "
                   "hash: #{name.inspect}" ; end
+=end
+         binding.pry
          names
       when String
          parse_line name
@@ -87,12 +88,11 @@ private
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
 
-   def parse_line nameline, language_code = :ру
-      language_code = language_code.to_sym
+   def parse_line nameline, language_code = 'ру'
       context = { models: { name: [], memory_name: [] } }
       nameline.scan( RE ) do |(pref, token, sepa)|
          name = {
-            language_code: language_code,
+            language_code: language_code.to_s,
          }
          context[ :models ][ :name ] << name
          context[ :models ][ :memory_name ] << { name: name }
@@ -102,7 +102,7 @@ private
          apply_token( validate_token( token, context ), context )
          apply_separator( token, sepa&.strip, context ) ; end
 
-#      binding.pry
+#3      binding.pry
       context[ :models ]
 
    rescue BukovinaError => e
@@ -167,7 +167,7 @@ private
             next s; end
 
          if re =~ token
-            if context[ :models ][ :name ].last[ :language_code ] == code
+            if context[ :models ][ :name ].last[ :language_code ] == code.to_s
                token
             else
                raise BukovinaInvalidLanguage, "Invalid language '"            \

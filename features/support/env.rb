@@ -11,7 +11,6 @@ Spork.prefork do
    ENV[ 'RAILS_ENV' ] ||= 'cucumber'
    DatabaseCleaner.strategy = :truncation
 
-   Rails.migrate
    Rails.application
 
    Shoulda::Matchers.configure do |config|
