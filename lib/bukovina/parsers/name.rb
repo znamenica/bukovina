@@ -35,7 +35,7 @@ class Bukovina::Parsers::Name
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}][#{SERBIAN_STROKE}]*$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}][#{GREEK_STROKE}#{GREEK_ACCENT}]*$/, }
 
-   RE = /(#{STATES.keys.join('|')}|вид\.)|([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)(\s*[,()])?/
+   RE = /((?:вид\.)?(?:#{STATES.keys.join('|')})?(?:\s*))([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)(\s*[,()])?/
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
