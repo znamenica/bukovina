@@ -35,7 +35,7 @@ class Bukovina::Parsers::Name
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}][#{SERBIAN_STROKE}]*$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}][#{GREEK_STROKE}#{GREEK_ACCENT}]*$/, }
 
-   RE = /((?:вид\.)?(?:#{STATES.keys.join('|')})?(?:\s*))([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)(\s*[,()])?/
+   RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)(\s*[,()])?/
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
@@ -90,19 +90,18 @@ private
 
    def parse_line nameline, language_code = 'ру'
       context = { models: { name: [], memory_name: [] } }
-      nameline.scan( RE ) do |(pref, token, sepa)|
-         name = {
-            language_code: language_code.to_s,
-         }
+      nameline.scan( RE ) do |(pref, state, token, sepa)|
+         name = { language_code: language_code.to_sym }
          context[ :models ][ :name ] << name
          context[ :models ][ :memory_name ] << { name: name }
 
 #         binding.pry
-         apply_pref( pref, token, context )
+         apply_pref( pref, context )
+         apply_state( state, context )
          apply_token( validate_token( token, context ), context )
          apply_separator( token, sepa&.strip, context ) ; end
 
-#3      binding.pry
+#      binding.pry
       context[ :models ]
 
    rescue BukovinaError => e
@@ -150,15 +149,14 @@ private
       else
          @errors << "Невернъ разделитель: #{sepa} при словце #{token}" ; end ; end
 
-   def apply_pref pref, token, context
-      case pref
-      when /#{STATES.keys.join('|')}/
-         context[ :models ][ :memory_name ].last[ :state ] = STATES[ token ]
-      when 'вид.'
-         mods = context[ :models ][ :memory_name ].last[ :feasibly ] = true
-      when nil
-      else
-         @errors << "Невернъ предникъ: #{pref} при словце #{token}" ; end ; end
+   def apply_pref pref, context
+      if pref
+         context[ :models ][ :memory_name ].last[ :feasibly ] = true ; end ; end
+
+   def apply_state state, context
+      if state
+         context[ :models ][ :memory_name ].last[ :state ] = STATES[ state ]
+         end ; end
 
    def validate_token token, context
       matched =
@@ -167,7 +165,7 @@ private
             next s; end
 
          if re =~ token
-            if context[ :models ][ :name ].last[ :language_code ] == code.to_s
+            if context[ :models ][ :name ].last[ :language_code ] == code.to_sym
                token
             else
                raise BukovinaInvalidLanguage, "Invalid language '"            \
