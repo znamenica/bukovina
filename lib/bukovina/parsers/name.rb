@@ -50,9 +50,12 @@ class Bukovina::Parsers::Name
             else
                raise BukovinaNullNameLine, "Null name line #{name.inspect}"
                      " for the language #{language_code}" ; end ; end
-         names =
+
          begin
-            syns = names.map { |n| n[ :name ] }.transpose
+            names[1..-1].each do |n|
+               n[ :name ].each.with_index do |x, i|
+                  x[ :similar_to ] = names[ 0 ][ :name ][ i ]
+                  end ; end
          rescue TypeError
             raise BukovinaTypeError, "#{$!}: for name #{name}"
          rescue IndexError
