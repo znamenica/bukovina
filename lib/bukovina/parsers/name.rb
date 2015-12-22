@@ -55,6 +55,7 @@ class Bukovina::Parsers::Name
             names[1..-1].each do |n|
                n[ :name ].each.with_index do |x, i|
                   x[ :similar_to ] = names[ 0 ][ :name ][ i ]
+                  names[ 0 ][ :name ] << x
                   end ; end
          rescue TypeError
             raise BukovinaTypeError, "#{$!}: for name #{name}"
@@ -73,8 +74,8 @@ class Bukovina::Parsers::Name
             raise BukovinaEmptyRecord, "Empty record found for the names "
                   "hash: #{name.inspect}" ; end
 =end
-         binding.pry
-         names
+#         binding.pry
+         names[ 0 ]
       when String
          parse_line name
       when NilClass
@@ -168,12 +169,14 @@ private
             next s; end
 
          if re =~ token
+#            binding.pry
             if context[ :models ][ :name ].last[ :language_code ] == code.to_sym
                token
-            else
-               raise BukovinaInvalidLanguage, "Invalid language '"            \
-                  "#{context[ :models ][ :name ].last[ :language_code ]}' "   \
-                  "for the #token '#{token}'" ; end ; end ; end
+#            else
+#               raise BukovinaInvalidLanguage, "Invalid language '"            \
+#                  "#{context[ :models ][ :name ].last[ :language_code ]}' "   \
+#                  "for the #token '#{token}'" ;
+               end ; end ; end
 
       if ! matched
          raise BukovinaInvalidLanguage, "Invalid language '"
