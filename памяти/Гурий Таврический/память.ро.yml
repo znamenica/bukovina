@@ -7,7 +7,10 @@
    чин: свт
    собор: пев,уч,флкл,сар?,пекн,кит,чбкс,смфр
    вики: http://drevo-info.ru/articles/11211.html
-   образ: http://drevo-info.ru/images/002/008686.jpg
+   образ:
+    - http://drevo-info.ru/images/002/008686.jpg
+    - http://ic.pics.livejournal.com/ustavschik/15640054/27331/27331_original.jpg
+   служба: http://ustavschik.livejournal.com/240592.html
    событие:
     - год: 1814
       описание: ржд
