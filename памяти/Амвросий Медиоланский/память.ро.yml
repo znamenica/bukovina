@@ -9,7 +9,14 @@
    образ:
     - http://drevo-info.ru/images/001/000167.jpg
     - http://azbyka.ru/days/assets/img/saints/5025/06a62c016c639d954be8680061e5e510.jpg
+    - http://krestobogorodsky.ru/wp-content/uploads/2012/12/%D0%B0%D0%BC%D0%B2%D1%80%D0%BE%D1%81%D0%B8%D0%B9_%D0%BC%D0%B5%D0%B4%D0%B8%D0%BE%D0%BB%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9.jpg
    отечник: http://azbyka.ru/otechnik/Amvrosij_Mediolanskij/
+   служба:
+    - Амвросию Медиоланскому служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_07.pdf
+    - http://ustavschik.livejournal.com/242159.html
+    - http://www.optina.ru/files/sluzhba_amvr_mediolanskomu.pdf
+    - http://osanna.russportal.ru/index.php?id=liturg_book.menaion_sept_aug.december_m0703
    событие:
     - год: 340
       описание: ржд
@@ -34,9 +41,5 @@
       дата: пасха
       описание: прств
    помин:
-    - дата: 07.12
+      дата: 07.12
       описание: свят
-    - описание: само
-      служба:
-       - Амвросию Медиоланскому служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_07.pdf
