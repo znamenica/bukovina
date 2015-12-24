@@ -35,7 +35,7 @@ class Bukovina::Parsers::Name
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}][#{SERBIAN_STROKE}]*$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}][#{GREEK_STROKE}#{GREEK_ACCENT}]*$/, }
 
-   RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)(\s*[,()])?/
+   RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)?(?:\s*([,()])\s*)?/
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
@@ -52,11 +52,16 @@ class Bukovina::Parsers::Name
                      " for the language #{language_code}" ; end ; end
 
          begin
-            names[1..-1].each do |n|
-               n[ :name ].each.with_index do |x, i|
-                  x[ :similar_to ] = names[ 0 ][ :name ][ i ]
-                  names[ 0 ][ :name ] << x
-                  end ; end
+            names[1..-1].each do |ns|
+               ns[ :name ].each.with_index do |n, i|
+                  if names[ 0 ][ :name ][ i ].has_key?( :text )
+                     n[ :similar_to ] = names[ 0 ][ :name ][ i ] ; end
+                  names[ 0 ][ :name ] << n ; end
+               ns[ :memory_name ].each.with_index do |mn, i|
+                  if mn[ :name ].has_key?( :text ) &&
+                     ! names[ 0 ][ :name ][ i ].has_key?( :text )
+                     names[ 0 ][ :memory_name ][ i ][ :name ] = mn[ :name ]
+                     end ; end ; end
          rescue TypeError
             raise BukovinaTypeError, "#{$!}: for name #{name}"
          rescue IndexError
@@ -74,10 +79,11 @@ class Bukovina::Parsers::Name
             raise BukovinaEmptyRecord, "Empty record found for the names "
                   "hash: #{name.inspect}" ; end
 =end
+         names[ 0 ][ :name ].delete_if { |n| !n[ :text ] }
 #         binding.pry
          names[ 0 ]
       when String
-         parse_line name
+         parse_line( name )
       when NilClass
       else
          raise BukovinaInvalidClass, "Invalid class #{name.class} "
@@ -93,19 +99,17 @@ private
    # выход: обработанный словарь данных
 
    def parse_line nameline, language_code = 'ру'
-      context = { models: { name: [], memory_name: [] } }
-      nameline.scan( RE ) do |(pref, state, token, sepa)|
-         name = { language_code: language_code.to_sym }
-         context[ :models ][ :name ] << name
-         context[ :models ][ :memory_name ] << { name: name }
+      name = { language_code: language_code.to_sym }
+      context = {
+         language_code: language_code.to_sym,
+         models: { name: [ name ], memory_name: [ { name: name } ] } }
 
-#         binding.pry
+      nameline.scan( RE ) do |(pref, state, token, sepa)|
          apply_pref( pref, context )
          apply_state( state, context )
          apply_token( validate_token( token, context ), context )
          apply_separator( token, sepa&.strip, context ) ; end
 
-#      binding.pry
       context[ :models ]
 
    rescue BukovinaError => e
@@ -142,14 +146,22 @@ private
    rescue BukovinaError => e
       @errors << e ; end
 
+   def new_record context
+      name = { language_code: context[ :language_code ] }
+      context[ :models ][ :name ] << name
+      context[ :models ][ :memory_name ] << { name: name } ; end
+
    def apply_separator token, sepa, context
       case sepa
-      when ',', nil
+      when ','
          context[ :mode ] ||= :next
+         new_record( context )
       when '('
          context[ :mode ] = :alias
+         new_record( context )
       when ')'
          context.delete( :mode )
+      when nil
       else
          @errors << "Невернъ разделитель: #{sepa} при словце #{token}" ; end ; end
 
