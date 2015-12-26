@@ -6,11 +6,15 @@
       ср: Свете Марта и Марија
    чин: правв
    крат: ммвф
-   собор: мрнс,плст
+   собор: мрнс,плст?
    вики: http://drevo-info.ru/articles/17533.html
    бытие: http://azbyka.ru/days/sv-marfa-vifanskaja
    образ: http://pravicon.com/icon-2407
-   служба: Марфе и Марии Вифанским служба
+   служба:
+    - Марфе и Марии Вифанским служба
+    - http://korolev.msk.ru/minea/apr2/apr2339.html
+    - http://korolev.msk.ru/minea/apr2/apr2340.html
+    - http://kazan.eparhia.ru/bogoslugenie/akafisti/muhekam/marfaimariasetrlara/
    событие:
       год: I
       описание: прств
@@ -18,4 +22,7 @@
       дата: 04.06
       каленларь: змин,греч,серб,охр
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_04.pdf
+      служба:
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_04.pdf
+       - http://voutsinasilias.blogspot.com/2009/06/4.html [творение инока
+         Герасима Микрагианнанита]
