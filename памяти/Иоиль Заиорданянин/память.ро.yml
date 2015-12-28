@@ -2,28 +2,35 @@
 Иоиль Заиорданянин:
    имя: Иоиль
    отчество: Вафуилович
+   описание: из колена рувимова или гадова; заиорданянин
    чин: прор
-   собор: плст
+   собор: плст?,изуе
    вики:
     - http://drevo-info.ru/articles/7614.html
     - http://ru.wikipedia.org/wiki/Иоиль_(пророк)
    бытие:
-    - http://azbyka.ru/days/sv-ioil
-    - http://www.wco.ru/biblio/books/proroki/H07-T.htm
+      ру:
+       - http://azbyka.ru/days/sv-ioil
+       - http://www.wco.ru/biblio/books/proroki/H07-T.htm
+       - http://calendar.rop.ru/svyat1/oct19-ioil.html
+      гр: http://www.saint.gr/2766/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/2890/b6a6cc3643fc490dc7c907ba49c59ec2.jpg
     - http://azbyka.ru/days/assets/img/saints/2890/d307d84cda50128357646d3bc9438d89.jpg
     - http://azbyka.ru/days/assets/img/saints/2890/abd46e5ab210a225c9b14c257b37b1a1.jpg
+    - http://www.saint.gr/photos/standard/1019/ProfitisIoil02.jpg
+    - http://www.saint.gr/photos/standard/1019/ProfitisIoil01.jpg
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Συλλογή%20με%20κατάταξη/Προφήτες/Ιωήλ%20Προφήτης%2001.jpg
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Συλλογή%20με%20κατάταξη/Προφήτες/Ιωήλ%20Προφήτης%2002.jpg
+   служба: Иоилю Заиорданянину служба
    событие:
     - год: IX до нэ-VIII до нэ
+      описание: ржд
+      место: Заиорданье. Палестина
+    - год: 800 до нэ
       описание: прств
-      место: Заиорданье
-    - год: VIII до нэ
-      описание: прств
+      место: вид.Палестина
    помин:
       дата: 19.10
+      календарь: рпц,греч
       описание: само
-      служба:
-       - Иоилю Заиорданянину служба
-       - Иоилю Заиорданянину и Уару Египетскому служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_19.pdf

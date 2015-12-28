@@ -1,13 +1,15 @@
 ---
 Уар Египетский:
    имя: Уар
-   описание: воевода и мученик Египетский
+   описание: воевода и мученик Египетский; умучен язычниками
    чин: мч
-   собор: воев,копт
+   собор: воев?,копт?,у7у,уекп,изуе
    вики:
     - http://drevo-info.ru/articles/4208.html
     - http://ru.wikipedia.org/wiki/Уар
-   бытие: http://azbyka.ru/days/sv-uar-egipetskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-uar-egipetskij
+      гр: http://www.saint.gr/2767/saint.aspx
    образ:
     - http://pravicon.com/icon-3018
     - http://drevo-info.ru/images/001/002081.jpg
@@ -16,18 +18,23 @@
     - http://azbyka.ru/days/assets/img/saints/5475/p18felgn8m1tol19t972h3tu135p3.jpg
     - http://azbyka.ru/days/assets/img/saints/5475/d28a91acdf9d8a503ac1df381880173c.jpg
     - http://www.stoletie.ru/upload/iblock/073/16_preview.jpg
+    - http://www.saint.gr/photos/standard/1019/AgiosOuaros01.jpg
+    - http://www.saint.gr/photos/standard/1019/AgiosOuaros02.jpg
    служба:
     - Уару Египетскому служба
     - http://ustavschik.livejournal.com/234679.html
    событие:
-      год: 307
+    - год: 307
       описание: прств
       место: Египет
+    - год: вид.307
+      описание: прен
+      место: Едра. Фаворье. Палестина
+    - год: по V
+      описание: прен.1
+      предмет: частица
+      место: Киккская обитель. Кипр
    помин:
       дата: 19.10
-      календарь: змин
+      календарь: греч
       описание: само
-      служба:
-       - Уару Египетскому и Клеопатре Палестинской служба
-       - Иоиль Заиорданянин/Иоилю Заиорданянину и Уару Египетскому служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_19.pdf

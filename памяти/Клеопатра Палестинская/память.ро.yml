@@ -1,21 +1,27 @@
 ---
 Клеопатра Палестинская:
-   имя: Клеопатра
-   описание: блаженная, Палестинская
+   имя:
+      ру: Клеопатра
+      гр: Κλεοπάτρα
+   прозвище: Блаженная
+   описание: праведная Палестинская
    чин: прав
-   собор: плст
+   собор: плст?,кпи,уекп
    вики: http://drevo-info.ru/articles/7615.html
-   бытие: http://azbyka.ru/days/sv-kleopatra-palestinskaja
-   образ: http://azbyka.ru/days/assets/img/saints/6219/p187u4lpcsfms1r6p1gen64q8753.jpg
+   бытие:
+      ру: http://azbyka.ru/days/sv-kleopatra-palestinskaja
+      гр: http://www.saint.gr/2769/saint.aspx
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/6219/p187u4lpcsfms1r6p1gen64q8753.jpg
+    - http://www.saint.gr/photos/standard/1019/OsiaKleopatra01.jpg
    событие:
-    - год: III
+    - год: вт.пол.III
       описание: ржд
       место: Едра. Фаворье. Палестина
     - год: 327
       описание: прств
+      место: вид.Едра. Фаворье. Палестина
    помин:
       дата: 19.10
+      календарь: греч
       описание: само
-      служба:
-       - Уар Египетский/Уару Египетскому и Клеопатре Палестинской служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_19.pdf
