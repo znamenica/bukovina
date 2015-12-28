@@ -193,11 +193,13 @@
          ру: Валентин, Алексей,
          гр: ', Αλέξιος,'
          ср: ',,Сергије'
+         ан: 'Valentin, , Sergius'
          """
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - &2
+           :language_code: :ру
            :text: Валентин
          - &1
            :language_code: :ру
@@ -205,8 +207,15 @@
          - :language_code: :гр
            :text: Αλέξιος
            :similar_to: *1
-         - :language_code: :ср
+         - &3
+           :language_code: :ср
            :text: Сергије
+         - :language_code: :ан
+           :text: Valentin
+           :similar_to: *2
+         - :language_code: :ан
+           :text: Sergius
+           :similar_to: *3
          """
       А обработанные данные памятного имени будут выглядеть как:
          """

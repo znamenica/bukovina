@@ -30,15 +30,21 @@ class Bukovina::Parsers::Name
    GREEK_CAPITAL = 'ͶͲΑ-ΫϏϒϓϔϘϚϜϠϞϴϷϹϺϾϿἈ-ἏἘ-ἝἨ-ἯἸ-ἿὈ-ὍὙ-ὟὨ-Ὧᾈ-ᾏᾘ-ᾟᾨ-ᾯᾸ-ᾼῈ-ῌῘ-ΊῨ-ῬῸ-ῼΩ'
    GREEK_STROKE = 'ά-ώϐϑϕ-ϗϙϛϝ-ϟϡ-ϳϵ-϶ϸϻϼᴦ-ᴪἀ-ἇἐ-ἕἠ-ἧἰ-ἷὀ-ὅὐ-ὗὠ-ὧὰ-ᾇᾐ-ᾗᾠ-ᾧᾰ-ᾷῂ-ῇῐ-ῗῠ-ῧῲ-ῷͻ-ͽͷ'
    GREEK_ACCENT = 'ͺ͵΄᾽ι᾿῀῁῍῎῏῝῞῟῭΅`´῾'
+   ENGLISH_CAPITAL = 'A-Z'
+   ENGLISH_STROKE = 'a-z'
 
-   UPCHAR = RUSSIAN_CAPITAL + SERBIAN_CAPITAL + GREEK_CAPITAL + GREEK_ACCENT
-   DOWNCHAR = RUSSIAN_STROKE + SERBIAN_STROKE + GREEK_STROKE + GREEK_ACCENT
+   UPCHAR = RUSSIAN_CAPITAL + SERBIAN_CAPITAL + GREEK_CAPITAL + GREEK_ACCENT +
+      ENGLISH_CAPITAL
+   DOWNCHAR = RUSSIAN_STROKE + SERBIAN_STROKE + GREEK_STROKE + GREEK_ACCENT +
+      ENGLISH_STROKE
    CHAR = DOWNCHAR + UPCHAR
 
    MATCH_TABLE = {
       :ру => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}][#{RUSSIAN_STROKE}]*$/,
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}][#{SERBIAN_STROKE}]*$/,
-      :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}][#{GREEK_STROKE}#{GREEK_ACCENT}]*$/, }
+      :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}][#{GREEK_STROKE}#{GREEK_ACCENT}]*$/,
+      :ан => /^[#{ENGLISH_CAPITAL}#{ENGLISH_STROKE}][#{ENGLISH_STROKE}]*$/,
+   }
 
    RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)?(?:\s*([,()\/\-])\s*)?/
    # вход: значение поля "имя" включая словарь разных языков
@@ -72,12 +78,18 @@ class Bukovina::Parsers::Name
 
          names[1..-1].each do |ns|
             ns[ :name ].each.with_index do |n, i|
-               if names[ 0 ][ :name ][ i ].has_key?( :text )
-                  n[ :similar_to ] = names[ 0 ][ :name ][ i ] ; end
+               has_name =
+               names[ 0 ][ :name ].select.with_index do |x, j|
+                  j % names[ 0 ][ :memory_name ].size == i &&
+                     x.has_key?( :text ) ; end
+
+               if ! has_name.empty?
+                  n[ :similar_to ] = has_name.first ; end
                names[ 0 ][ :name ] << n ; end
+
             ns[ :memory_name ].each.with_index do |mn, i|
                if mn[ :name ].has_key?( :text ) &&
-                  ! names[ 0 ][ :name ][ i ].has_key?( :text )
+                  ! names[ 0 ][ :memory_name ][ i ][ :name ].has_key?( :text )
                   names[ 0 ][ :memory_name ][ i ][ :name ] = mn[ :name ]
                   end ; end ; end
 #         rescue TypeError
