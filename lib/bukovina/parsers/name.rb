@@ -8,6 +8,9 @@ class Bukovina::Parsers::Name
    class BukovinaInvalidLanguageError < BukovinaError; end
    class BukovinaInvalidContext < BukovinaError; end
    class BukovinaInvalidCharError < BukovinaError; end
+   class BukovinaInvalidTokenError < BukovinaError; end
+   class BukovinaInvalidEnumeratorError < BukovinaError; end
+   class BukovinaInvalidVariatorError < BukovinaError; end
    class BukovinaEmptyRecord < BukovinaError; end
    class BukovinaNullNameLine < BukovinaError; end
 
@@ -37,7 +40,7 @@ class Bukovina::Parsers::Name
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}][#{SERBIAN_STROKE}]*$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}][#{GREEK_STROKE}#{GREEK_ACCENT}]*$/, }
 
-   RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)?(?:\s*([,()])\s*)?/
+   RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)?(?:\s*([,()\/\-])\s*)?/
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
@@ -60,6 +63,9 @@ class Bukovina::Parsers::Name
 
          invalid_index = names[1..-1].any? do |ns|
             ns[ :memory_name ].size != names[ 0 ][ :memory_name ].size ; end
+
+         # remove enumerator error
+         @errors.select! { |x| !x.is_a?( BukovinaInvalidEnumeratorError ) }
 
          if invalid_index
             raise BukovinaIndexError, "#{$!}: for name #{name}" ; end
@@ -94,7 +100,7 @@ class Bukovina::Parsers::Name
          names[ 0 ]
       when String
          names = parse_line( name )
-         names[ :name ].delete_if { |n| !n[ :text ] }
+         names[ :name ]&.delete_if { |n| !n[ :text ] }
          names
       when NilClass
       else
@@ -134,6 +140,10 @@ private
       if token
          context[ :models ][ :name ].last[ :text ] = token
          case context[ :mode ]
+         when :prefix
+            context[ :models ][ :memory_name ][ -2 ][ :mode ] = :prefix
+         when :ored
+            context[ :models ][ :memory_name ][ -2 ][ :mode ] = :ored
          when :alias
             prev = context[ :models ][ :name ][ 0..-2 ].select do |n|
                ! n.has_key?( :similar_to ) ; end.last
@@ -168,6 +178,9 @@ private
    def apply_separator token, sepa, context
       case sepa
       when ','
+         if !token
+            @errors << BukovinaInvalidEnumeratorError.new(
+               "Invalid enumerator ',' token" ) ; end
          context[ :mode ] ||= :next
          new_record( context )
       when '('
@@ -175,9 +188,16 @@ private
          new_record( context )
       when ')'
          context.delete( :mode )
-      when nil
-      else
-         @errors << "Невернъ разделитель: #{sepa} при словце #{token}" ; end ; end
+      when '/'
+         if !token
+            @errors << BukovinaInvalidVariatorError.new(
+               "Invalid variator '/' token" ) ; end
+         context[ :mode ] = :ored
+         new_record( context )
+      when '-'
+         context[ :mode ] = :prefix
+         new_record( context )
+      when nil ; end ; end
 
    def apply_pref pref, context
       if pref

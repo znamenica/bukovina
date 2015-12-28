@@ -18,8 +18,11 @@
 То(/^в списке ошибок будет "([^"]*)"$/) do |text|
    name = Bukovina::Parsers::Name
    types = {
-      'ошибка неверного признака' => name::BukovinaIndexError,
+      'ошибка индекса' => name::BukovinaIndexError,
       'ошибка неверного языка' => name::BukovinaInvalidLanguageError,
       'ошибка неверной буквы языка' => name::BukovinaInvalidCharError,
+      'ошибка неверного признака' => name::BukovinaInvalidTokenError,
+      'ошибка неверного заменятеля' => name::BukovinaInvalidVariatorError,
+      'ошибка неверного перечислителя' => name::BukovinaInvalidEnumeratorError,
    }
    expect( @namer.errors ).to match_array( [ types[ text ] ] ) ; end
