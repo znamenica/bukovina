@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150624205400) do
+ActiveRecord::Schema.define(version: 20151230125200) do
 
   create_table "memories", force: :cascade do |t|
     t.string   "short_name"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20150624205400) do
     t.integer  "language_code",              null: false
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.integer  "similar_to_id"
   end
 
   add_index "names", ["text", "type", "language_code"], name: "index_names_on_text_and_type_and_language_code", unique: true
