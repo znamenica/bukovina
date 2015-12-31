@@ -11,6 +11,17 @@ module MacrosSupport
             [ attr, value ] ; end ; end.to_h
       model.where( search_attrs ).first_or_create attrs.merge( search_attrs ) ; end
 
+   def get_type type_name
+      { 'целый' => :integer, 'строка' => :string }[ type_name ] ; end
+
+   def extract_key_to r, key
+      similar_to = r.delete( key )
+      if similar_to
+         s = similar_to.deep_dup
+         s[ :language_code ] =
+         Name.language_codes[ similar_to[ :language_code ] ]
+         r[ key ] = Name.where( s ).first ; end ; end
+
    def merge_array table, options = {}
       table.map do |e|
          [ options[ :merge ] ].compact.flatten.select{ |h| e[ h ] }.each do |h|
