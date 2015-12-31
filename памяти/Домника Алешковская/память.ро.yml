@@ -10,7 +10,9 @@
    бытие:
     - http://blagodat-hram.prihod.ru/saintofhram/view/id/3460
     - http://www.pravoslavie.ks.ua/rubric/svyatyni-i-svyatye/article/blazhennaya-domnika-aleshkovskaya
-   служба: http://www.pravoslavie.ks.ua/?ch=slu_sv&article=Domnika_sl
+   служба:
+    - http://www.pravoslavie.ks.ua/?ch=slu_sv&article=Domnika_sl
+    - http://pravoslavie.ks.ua/?ch=eparh_akaf&article=ak_Domni_2009
    событие:
     - год: 1881
       описание: ржд
