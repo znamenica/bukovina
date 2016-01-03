@@ -1,21 +1,27 @@
 ---
 Иулия Анкирская:
-   имя: Иулия
+   имя:
+      ру: Иулия
+      гр: Ιουλία
    описание: дева Анкирская
    чин: мц
+   собор: мчал,галт?
    вики:
     - http://drevo-info.ru/articles/7804.html
     - http://ru.wikipedia.org/wiki/Семь_святых_дев
    бытие: http://azbyka.ru/days/sv-iulija-ankirskaja-korinfskaja
-   образ: http://azbyka.ru/days/assets/img/saints/6032/p18mg718k1nve1ct2o421kan1l9v3.jpg
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/6032/p18mg718k1nve1ct2o421kan1l9v3.jpg
+    - http://www.rel.gr/photo/albums/userpics/10039/16~1.jpg
+    - http://www.saint.gr/filesnew/02/0514/photos/AgiaIoulia03.jpg
+    - http://www.saint.gr/filesnew/02/0514/photos/AgiaIoulia04.jpg
+    - http://images.fineartamerica.com/images-medium-large-5/st-julia-of-carthage-julia-bridget-hayes.jpg
+      [Julia Hayes© (www.ikonographics.net)]
+    - http://s21.postimg.org/4r1idk6av/Agia_Ioulia06.jpg
    событие:
       год: 303-304
-      дата: 18.05
       описание: прств
-      место: Анкира
+      место: Анкира. Галатия
    помин:
-    - дата: 18.05
-      описание: само
-      служба: Богдан Анкирский/Мученикам Анкирским и Лампсакским служба
-    - дата: 06.11
+      дата: 06.11
       описание: само
