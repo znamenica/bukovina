@@ -6,23 +6,14 @@
    описание: протоиерей Одесский
    чин: прав
    собор: одес
-   вики: http://drevo-info.ru/articles/15723.html
-   образ:
-    - http://drevo-info.ru/images/002/003534.jpg
-    - http://www.pravoslavie.ru/sas/image/101179/117972.b.jpg?0.96436904720865
-   бытие: http://www.pravoslavie.ru/61866.html
-   служба:
+   вики: http://drevo-info.ru/articles/11662.html
+   образ: http://drevo-info.ru/images/002/003534.jpg
+   событие:
     - http://ustavschik.livejournal.com/181565.html
     - http://www.pravkniga.ru/bogoslyjebnie.html?id=15566
     - http://ustavschik.livejournal.com/81947.html
     - http://kazan.eparhia.ru/bogoslugenie/akafisti/pravednum/ioanodesiy/
    событие:
-    - год: 1855
-      описание: ржд
-    - год: 1884
-      описание: дияк
-    - год: 1886
-      описание: свящ
     - год: 1924
       дата: 04.04
       описание: прств
@@ -33,8 +24,10 @@
       дата: 18.06
       описание: обр
    помин:
-    - дата: 17.05
+    - дата: 04.05
       собор: одес
+      описание: прств
+    - дата: 17.05
       описание: само
     - дата: 18.06
       описание: обр
