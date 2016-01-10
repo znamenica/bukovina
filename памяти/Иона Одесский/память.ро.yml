@@ -1,5 +1,5 @@
 ---
-Иона Атаманский:
+Иона Одесский:
    имя: в крещении Иона
    отчество: Моисеевич
    фамилия: Атаманский
@@ -10,31 +10,48 @@
    образ:
     - http://drevo-info.ru/images/002/003534.jpg
     - http://www.pravoslavie.ru/sas/image/101179/117972.b.jpg?0.96436904720865
-   бытие: http://www.pravoslavie.ru/61866.html
+   бытие:
+    - http://www.pravoslavie.ru/61866.html
+    - http://days.pravoslavie.ru/Life/life6639.htm
    служба:
     - http://ustavschik.livejournal.com/181565.html
     - http://www.pravkniga.ru/bogoslyjebnie.html?id=15566
     - http://ustavschik.livejournal.com/81947.html
     - http://kazan.eparhia.ru/bogoslugenie/akafisti/pravednum/ioanodesiy/
+    - https://www.molitvoslov.com/content/akaf-iona-odes
    событие:
     - год: 1855
       описание: ржд
+      место: Романовка слободка. Одесса
+    - год: ок.1884
+      описание: брак
+      супруг: Анастасия
     - год: 1884
       описание: дияк
     - год: 1886
       описание: свящ
     - год: 1924
-      дата: 04.04
+      дата: 04.05
       описание: прств
     - год: 1995
       дата: 26.08
+      собор: укр
+      чин: одес
       описание: просл
     - год: 1997
       дата: 18.06
       описание: обр
+    - год: 1997
+      дата: вид.18.06
+      описание: прен
+      место: Успенский собор. Одесса
+    - год: 2015
+      дата: 14.10
+      собор: укр
+      описание: просл.1
    помин:
     - дата: 17.05
       собор: одес
-      описание: само
+      описание: прств
     - дата: 18.06
       описание: обр
