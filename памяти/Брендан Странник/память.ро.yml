@@ -5,13 +5,16 @@
    фамилия: Луахра
    описание: настоятель Клонфертский
    чин: прп
-   собор: ире
+   собор: ире?
    вики:
     - http://drevo-info.ru/articles/16113.html
     - https://ru.wikipedia.org/wiki/Святой_Брендан
    образ:
     - http://drevo-info.ru/images/002/003890.jpg
     - https://upload.wikimedia.org/wikipedia/ru/0/0a/Saint_Brandon.gif
+   служба:
+    - http://orthodoxengland.org.uk/pdf/servs/brendan.pdf
+    - http://orthodoxengland.org.uk/akafrbrendan.htm [составлен проф. Клавдием Лопезом]
    событие:
     - год: 484
       описание: ржд
