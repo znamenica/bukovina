@@ -1,14 +1,55 @@
 ---
 Варвар Мироточивый:
-   имя: Варвар
-   прозвище: Мироточивый
-   чин: прав
+   имя:
+      ру: Варвар
+      гр: Βάρβαρος
+   прозвище:
+      ру: Мироточивый (Мироточец), Пятиградец
+      гр: Μυροβλύτης, Πενταπολιτης
+   описание:
+      ру: бывший разбойник; мученик; убит охотниками; разбойник Луканский, подвижник
+         Епирский, Фессалийский
+   чин: прп
+   собор: афр?,корф?,фесл?,епир?
    вики: http://drevo-info.ru/articles/10642.html
-   образ: http://drevo-info.ru/images/001/001746.jpg
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/may06-varvar.html
+       - http://azbyka.ru/days/sv-varvar-lukanskij
+      гр:
+       - http://www.saint.gr/1594/saint.aspx
+       - http://www.synaxarion.gr/gr/sid/3177/sxsaintinfo.aspx
+   образ:
+    - http://drevo-info.ru/images/001/001746.jpg
+    - http://drevo-info.ru/images/003/012307.jpg
+    - http://drevo-info.ru/images/003/012308.jpg [Фреска 1662 года в афонском монастыре
+      Хиландар]
+    - 3.bp.blogspot.com/-o-Zqou8zwFQ/VJMfer103hI/AAAAAAAAWRI/nmqfNmCFcD4/s1600/23.%2BΒΑΡΒΑΡΟΣ%2BΜΥΡΟΒΛΥΤΗΣ%2B(2).jpg
+    - 4.bp.blogspot.com/-0VeLDiq9Fug/VJMfgMmin7I/AAAAAAAAWRQ/BAyAj3o98wE/s1600/23.%2BΒΑΡΒΑΡΟΣ%2BΜΥΡΟΒΛΥΤΗΣ%2B(3).jpg
+    - 2.bp.blogspot.com/-Tp5VveRETvU/VJMfsRVk6QI/AAAAAAAAWRY/CY4fuyL3Tlo/s1600/23.%2BΒΑΡΒΑΡΟΣ%2BΜΥΡΟΒΛΥΤΗΣ%2B(4).JPG
+    - 1.bp.blogspot.com/-hnLK9I6XkGQ/UiMht3vPOHI/AAAAAAAAON0/eUg5tw8fxyk/s1600/23.+ΒΑΡΒΑΡΟΣ+ΜΥΡΟΒΛΥΤΗΣ+(1).JPG
+   служба:
+    - Варвару Мироточивому служба
+    - http://voutsinasilias.blogspot.com/2009/05/15_12.html
    событие:
-      год: IX
+    - год: VIII-IX
+      описание: ржд
+      место: Африка
+    - год: IX
+      дата: 23.06
       описание: прств
+    - год: по IX
+      описание: чудо
+      место: Потамос деревня. Керкира остров/Фессалия/Епир
+    - год: до 1572
+      описание: почит
+    - год: по XVI
+      описание: прен
+      место: Лаврентиевская церковь. Венеция
    помин:
-      дата: 15.05
-      собор: греч
+    - дата: 06.05
+      календарь: рпц,ит,вчм
       описание: само
+    - дата: 15.05
+      календарь: греч,сксд,спр
+      описание: чудо

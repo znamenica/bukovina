@@ -1,12 +1,34 @@
 ---
 Димфна Геельская:
-   имя: Димфна
-   прозвище: Геельская
+   имя:
+      ру: Димфна/Дымпна/Димпна
+      гр: Ντύμφα//
+      ан: Dymphna/Dympna/Dimpna
+   описание: дева Ирландская; мученица Геельская; умучена язычниками
    чин: мц
+   собор: дгг,ире?,бльг?
+   бытие:
+      гр:
+       - http://oodegr.co/oode/istoria/bretania/agioi_bretanias.htm
+       - http://miteriko.blogspot.gr/2012/05/blog-post_15.html
+   вики:
+      ан: http://orthodoxwiki.org/Dymphna
+   образ:
+    - http://www.omhksea.org/wp-content/uploads/2011/05/Dymphna_4x6.jpg
+    - http://www.saint.gr/photos/standard/0515/AgiaDymphna02.jpg
+    - http://www.saint.gr/photos/standard/0515/AgiaDymphna03.jpg
+    - http://www.omhksea.org/wp-content/uploads/2011/05/kbdymx.jpg
    событие:
-      год: VII
+    - год: 605-625
+      описание: ржд
+      место: Ирландия
+    - год: 605-625
+      описание: крещ
+      место: Ирландия
+    - год: 620-640
+      дата: 15.05
       описание: прств
+      место: Геель. Антверпенье. Голландия
    помин:
       дата: 15.05
-      собор: келт,ндрл
-      описание: само
+      описание: прств
