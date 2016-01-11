@@ -1,16 +1,23 @@
 ---
 7-й Вселенский Собор:
-   описание: собор отцев 7-го Вселенского Собора
+   описание:
+      ру: собор отцев 7-го Вселенского Собора
+      гр: Μνήμη της Ζ' Οικουμενικής Συνόδου
    чин: сбр
    вики: http://drevo-info.ru/articles/4158.html
+   бытие:
+      гр: http://www.saint.gr/2089/saint.aspx
+   служба: 7-му Вселенскому Собору служба
+   образ:
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Κατά%20ημερομηνία%20%28Γαλακτίων%292/10%20Οκτώβριος/11-17.jpg
+    - http://www.saint.gr/photos/Special/7thEcumenicalCouncil02.jpg
+    - http://drevo-info.ru/images/002/007096.jpg
+    - https://scontent-a-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10711049_782638268446446_8537982480838529515_n.jpg?oh=c60011e276ce9eb9fe8714f9bfa65211&oe=54F30BE4
    событие:
       год: 787
       описание: само
       место: Никея. Вифиния (ныне Изник. Турция)
-      образ:
-       - http://drevo-info.ru/images/002/007096.jpg
-       - https://scontent-a-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10711049_782638268446446_8537982480838529515_n.jpg?oh=c60011e276ce9eb9fe8714f9bfa65211&oe=54F30BE4
    помин:
-      дата: близ 11.10
+      дата: вс.близ 14.10
       описание: само
       служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_11.pdf

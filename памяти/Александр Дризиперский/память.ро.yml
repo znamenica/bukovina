@@ -1,22 +1,37 @@
 ---
 Александр Дризиперский:
-   имя: Александр
-   описание: воин Римский; мученик Дризиперский; обезглавлен язычниками
+   имя:
+      ру: Александр
+      гр: Αλέξανδρος
+   описание:
+      ру: воин Римский; мученик Дризиперский; обезглавлен язычниками
+      гр: μάρτυρας Τιβεριανών
    чин: мч
-   собор: вои,рим,фрак
+   собор: вои?,рим?,фрак?
    вики: http://drevo-info.ru/articles/5791.html
-   бытие: http://azbyka.ru/days/sv-aleksandr-rimskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-aleksandr-rimskij
+       - http://calendar.rop.ru/svyat1/may13-alexandr.html
+      гр: http://www.saint.gr/1577/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/567/p18mb17uotl5o8mn1r0l160bciv3.jpg
     - http://azbyka.ru/days/assets/img/saints/567/p18mb17uou1urf106s7bnjo5n0s6.jpg
-   служба: http://azbyka.ru/days/worship/638
+   служба:
+    - http://azbyka.ru/days/worship/638
+    - http://ustavschik.livejournal.com/180181.html [творение митрополита Харьковского Никодима]
+    - http://file.qip.ru/office/_3dWtYcO/Ancient_service_to_the_Holy_Martyr_Alexander_of_Rome.html
+      [«Путятина» Минея (РНБ, Соф. 202, лл. 56об. – 61)]
+    - Crypt. Δ.α. IX (AHG 9, 15)
+    - Crypt. Δ.α. XXIX (AHG 9, 16, возможно, творение св. Иосифа Песнописца)
    событие:
-    - год: 284-305
+    - год: ок.300
       описание: прств
       место: Дризипер. вид.Фракия
-    - год: 284-305
+    - год: ок.300
       описание: пгрб
       место: Еригона река. вид.Фракия
    помин:
       дата: 13.05
+      календарь: рпц,лавр,греч,путя
       описание: само

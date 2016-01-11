@@ -1,18 +1,48 @@
 ---
 Епифаний Кипрский:
    имя: Епифаний
-   описание: святитель Константский, Саламинский, Кипрский
+   описание: пустынник Палестинский; святитель Саламинский (Константский); первосвятитель
+      Кипрский
    чин: свт
+   собор: екгк,плст?,кипр?,2вс,виз?
    вики: http://drevo-info.ru/articles/10573.html
-   бытие: http://azbyka.ru/days/sv-epifanij-kiprskij
-   образ: http://drevo-info.ru/images/002/006718.jpg
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/may12-epifanij.html
+       - http://azbyka.ru/days/sv-epifanij-kiprskij
+      гр: http://www.saint.gr/1552/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/002/006718.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/2/2c/Epiphanius-Kosovo.jpg
+    - http://www.saint.gr/photos/standard/0512/AgiosEpiphanios02.jpg
+    - http://www.saint.gr/photos/standard/0512/AgiosEpiphanios03.jpg
+    - http://4.bp.blogspot.com/-9zpw-cvUi_I/T7E22EnzefI/AAAAAAAAHsc/mTI32RfsU7U/s1600/12.+%25CE%2595%25CE%25A0%25CE%2599%25CE%25A6%25CE%2591%25CE%259D%25CE%2599%25CE%259F%25CE%25A3+%25CE%259A%25CE%25A5%25CE%25A0%25CE%25A1%25CE%259F%25CE%25A5+%25282%2529.jpg
+    - http://2.bp.blogspot.com/-B7tFMivdwSI/T7E2xZ-egKI/AAAAAAAAHsU/p7wj1yYRsWs/s1600/12.+%25CE%2595%25CE%25A0%25CE%2599%25CE%25A6%25CE%2591%25CE%259D%25CE%2599%25CE%259F%25CE%25A3+%25CE%259A%25CE%25A5%25CE%25A0%25CE%25A1%25CE%259F%25CE%25A5+%25281%2529.jpg
+   служба: Епифанию Кипрскому служба
    событие:
+    - год: 310
+      описание: ржд
+      место: Висандуки село. Елефтерополь. Палестина
+    - год: ок.320
+      описание: крещ
+    - год: 367
+      описание: свят
     - год: 403
       описание: прств
     - год: 403
       дата: 12.05
-      описание: погр
+      описание: пгрб
+      место: Саламин (Констанц). Кипр
+    - год: 866-912
+      описание: прен
+      место: Константинополь. Византия
+    - год: по 912
+      описание: прен.1
+      место: Киккская обитель. Кипр
+    - год: по 912
+      описание: прен.2
+      место: Иверская обитель. Афон
    помин:
       дата: 12.05
-      описание: погр
-      служба: Епифанию Кипрскому и Герману Константинопольскому служба
+      календарь: рпц,греч
+      описание: пгрб

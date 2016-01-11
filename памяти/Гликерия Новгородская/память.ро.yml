@@ -1,20 +1,40 @@
 ---
 Гликерия Новгородская:
-   имя: Гликерия
+   имя:
+      ру: в крещении Гликерия
+      гр: Γλυκερία
    отчество: Пантелеймоновна
-   описание: дева Новгородская
+   описание:
+      ру: дева Новгородская
+      гр: του Νόβγκοροντ
    чин: прав
-   собор: слав,рус
+   собор: нов?
    вики: http://drevo-info.ru/articles/5795.html
-   бытие: http://azbyka.ru/days/sv-glikerija-novgorodskaja
-   образ: http://azbyka.ru/days/assets/img/saints/6382/p18mb1qskvod41ogi2bc1h7k15jl5.jpg
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/may13-glikeriya-novgorodskaya.html
+       - http://azbyka.ru/days/sv-glikerija-novgorodskaja
+      гр:
+       - http://www.synaxarion.gr/gr/sid/3156/sxsaintinfo.aspx
+       - http://churchsynaxarion.blogspot.gr/2011/02/1522.html
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/6382/p18mb1qskvod41ogi2bc1h7k15jl5.jpg
+    - http://drevo-info.ru/images/003/010737.jpg
+   служба: Гликерии Новгородской служба
    событие:
-    - год: 1522
+    - год: ок.1522
       описание: прств
+      место: Новгород
     - год: 1572
       дата: 14.07
       описание: обр
+      бытие: http://www.saint.gr/4270/saint.aspx
+    - год: 1917
+      описание: утр
    помин:
-      дата: 13.05
+    - дата: 13.05
+      календарь: рпц,змин,греч
       описание: само
-      служба: Гликерии Новгородской служба
+    - дата: 14.07
+      календарь: греч
+      описание: обр

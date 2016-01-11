@@ -1,15 +1,33 @@
 ---
 Иоанн Серрский:
-   имя: Иоанн
-   прозвище: Серрский
+   имя:
+      ру: Иоанн
+      гр: Ιωάννης
+   описание:
+      ру: уроженец и мученик Серрский; убит исламистами
+      гр: Νεομάρτυρας εκ Σερρών
    чин: мч
-   собор: куп
+   собор: куп?,греч?
    вики: http://drevo-info.ru/articles/20909.html
-   образ: http://drevo-info.ru/images/002/006719.jpg
+   бытие:
+      гр:
+       - http://www.saint.gr/1571/saint.aspx
+       - http://www.imsn.gr/index.php?view=article&id=252
+   образ:
+    - http://drevo-info.ru/images/002/006719.jpg
+    - http://www.saint.gr/photos/standard/0512/AgiosIoannisSerres01.jpg
+    - http://1.bp.blogspot.com/_cKRraUf_YGQ/TLCiypJy-wI/AAAAAAAAAEE/aSsxWfetp3g/s1600/P7060002.JPG
+   служба: http://www.imsn.gr/pdf/akolouthia_ag_ioanni.pdf [творение митрополита Эдесского Иоиля]
    событие:
-      год: XV-XVI
+    - год: вид.сер.XV
+      описание: ржд
+      место: Серры. Северная Греция
+    - год: вид.1480
       описание: прств
+      место: Серры. Северная Греция
+    - год: 1491-1497
+      описание: почит
    помин:
       дата: 12.05
-      собор: греч
+      календарь: греч
       описание: само
