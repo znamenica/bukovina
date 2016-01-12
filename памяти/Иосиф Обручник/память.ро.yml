@@ -5,7 +5,7 @@
    прозвище: Обручник
    описание: плотник; отец Симона Ревнителя
    чин: прав
-   собор: пра,сбдц,ндрх
+   собор: пра?,сбдц,ндрх
    вики: http://drevo-info.ru/articles/14386.html
    образ:
     - http://drevo-info.ru/images/002/004021.jpg
@@ -17,6 +17,15 @@
     - http://azbyka.ru/days/assets/img/saints/6396/p18vtn1uc41roa1cvcajjb5u1cek5.jpg
     - http://azbyka.ru/days/assets/img/saints/6396/p18vtn1uc4eed1sq112gucki1jek6.jpg
     - http://azbyka.ru/days/assets/img/saints/6396/p18vtn1uc11575up211m7p5st6g3.jpg
+    - http://icone-shalom.com/064_Joseph-1.jpg
+   служба:
+    - http://azbyka.ru/days/caa/471
+    - http://kyrios.org.ua/spirituality/akafisti/1424-akafist-do-svjatogo-josifa-obruchnika.html
+    - http://akafistnik.ru/akafisty-svyatym/akafist-svyatomu-i-pravednomu-iosifu-obruchniku-presvyatoj-devy-marii/
+      [составлен профессором Московской духовной академии П. С. Казанским]
+    - http://ustavschik.livejournal.com/145634.html [написанный преподобным Иосифом Песнописцем]
+    - http://azbyka.ru/bogosluzhenie/mineia/nprh02.shtml [написанный преподобным Иосифом
+      Песнописцем, перевод на церковнославянский и русский языки иеромонаха Амвросия (Тимрота)]
    событие:
     - год: II до нэ-I до нэ
       описание: ржд
@@ -24,6 +33,3 @@
     - год: по 12
       описание: прств
       место: Иерусалим
-   помин:
-      описание: само
-      служба: http://azbyka.ru/days/caa/471
