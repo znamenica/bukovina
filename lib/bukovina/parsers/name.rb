@@ -27,16 +27,35 @@ class Bukovina::Parsers::Name
    RUSSIAN_STROKE = 'а-яё'
    SERBIAN_CAPITAL = 'ЂЈ-ЋЏА-ИК-Ш'
    SERBIAN_STROKE = 'ђј-ћа-ик-ш'
-   GREEK_CAPITAL = 'ͶͲΑ-ΫϏϒϓϔϘϚϜϠϞϴϷϹϺϾϿἈ-ἏἘ-ἝἨ-ἯἸ-ἿὈ-ὍὙ-ὟὨ-Ὧᾈ-ᾏᾘ-ᾟᾨ-ᾯᾸ-ᾼῈ-ῌῘ-ΊῨ-ῬῸ-ῼΩ'
-   GREEK_STROKE = 'ά-ώϐϑϕ-ϗϙϛϝ-ϟϡ-ϳϵ-϶ϸϻϼᴦ-ᴪἀ-ἇἐ-ἕἠ-ἧἰ-ἷὀ-ὅὐ-ὗὠ-ὧὰ-ᾇᾐ-ᾗᾠ-ᾧᾰ-ᾷῂ-ῇῐ-ῗῠ-ῧῲ-ῷͻ-ͽͷ'
+   GREEK_CAPITAL = 'ͶͲΑ-ΫϏϒϓϔϘϚϜϠϞϴϷϹϺϾϿἈ-ἏἘ-ἝἨ-ἯἸ-ἿὈ-ὍὙ-ὟὨ-Ὧᾈ-ᾏᾘ-ᾟᾨ-ᾯᾸ-ᾼῈ-ῌῘ-ΊῨ-ῬῸ-ῼΩΆ-Ώ'
+   GREEK_STROKE = 'ά-ώϐϑϕ-ϗϙϛϝ-ϟϡ-ϳϵ-϶ϸϻϼᴦ-ᴪἀ-ἇἐ-ἕἠ-ἧἰ-ἷὀ-ὅὐ-ὗὠ-ὧὰ-ᾇᾐ-ᾗᾠ-ᾧᾰ-ᾷῂ-ῇῐ-ῗῠ-ῧῲ-ῷͻ-ͽͷΐά-ΰ'
    GREEK_ACCENT = 'ͺ͵΄᾽ι᾿῀῁῍῎῏῝῞῟῭΅`´῾'
+   BULGARIAN_CAPITAL = 'А-ЪЬЮЯ'
+   BULGARIAN_STROKE = 'а-ъьюя'
+   LATIN_CAPITAL = 'A-IK-TVX-ZÆ'
+   LATIN_STROKE = 'a-ik-tvx-zæ'
+   IRISH_CAPITAL = 'A-IL-PR-U'
+   IRISH_STROKE = 'a-il-pr-u'
+   CZECH_CAPITAL = 'A-PR-VX-ZÁÉĚÍÓÚŮÝČĎŇŘŠŤŽ'
+   CZECH_STROKE = 'a-pr-vx-záéěíóúůýčďňřšťž'
+   CZECH_ACCENT = '́̌̊'
    ENGLISH_CAPITAL = 'A-Z'
    ENGLISH_STROKE = 'a-z'
+   ITALIAN_CAPITAL = 'A-IL-VZ'
+   ITALIAN_STROKE = 'a-il-vz'
+   ARMENIAN_CAPITAL = 'Ա-Ֆ'
+   ARMENIAN_STROKE = 'ա-և'
+   IVERIAN_CAPITAL = 'Ⴀ-Ⴭ'
+   IVERIAN_STROKE = 'ა-ჺჽ'
+   ROMANIAN_CAPITAL = 'A-ZĂÂÎȘȚ'
+   ROMANIAN_STROKE = 'a-zăâîșț'
 
    UPCHAR = RUSSIAN_CAPITAL + SERBIAN_CAPITAL + GREEK_CAPITAL + GREEK_ACCENT +
-      ENGLISH_CAPITAL
+      ENGLISH_CAPITAL + LATIN_CAPITAL + CZECH_CAPITAL + ARMENIAN_CAPITAL +
+      IVERIAN_CAPITAL + ROMANIAN_CAPITAL
    DOWNCHAR = RUSSIAN_STROKE + SERBIAN_STROKE + GREEK_STROKE + GREEK_ACCENT +
-      ENGLISH_STROKE
+      ENGLISH_STROKE + LATIN_STROKE + CZECH_STROKE + ARMENIAN_STROKE +
+      IVERIAN_STROKE + ROMANIAN_STROKE
    CHAR = DOWNCHAR + UPCHAR
 
    MATCH_TABLE = {
@@ -44,6 +63,15 @@ class Bukovina::Parsers::Name
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}][#{SERBIAN_STROKE}]*$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}][#{GREEK_STROKE}#{GREEK_ACCENT}]*$/,
       :ан => /^[#{ENGLISH_CAPITAL}#{ENGLISH_STROKE}][#{ENGLISH_STROKE}]*$/,
+      :чх => /^[#{CZECH_CAPITAL}#{CZECH_STROKE}#{CZECH_ACCENT}][#{CZECH_STROKE}#{CZECH_ACCENT}]*$/,
+      :ир => /^[#{IRISH_CAPITAL}#{IRISH_STROKE}][#{IRISH_STROKE}]*$/,
+      :си => /^[#{IRISH_CAPITAL}#{IRISH_STROKE}][#{IRISH_STROKE}]*$/,
+      :ла => /^[#{LATIN_CAPITAL}#{LATIN_STROKE}][#{LATIN_STROKE}]*$/,
+      :бг => /^[#{BULGARIAN_CAPITAL}#{BULGARIAN_STROKE}][#{BULGARIAN_STROKE}]*$/,
+      :ит => /^[#{ITALIAN_CAPITAL}#{ITALIAN_STROKE}][#{ITALIAN_STROKE}]*$/,
+      :ар => /^[#{ARMENIAN_CAPITAL}#{ARMENIAN_STROKE}][#{ARMENIAN_STROKE}]*$/,
+      :ив => /^[#{IVERIAN_CAPITAL}#{IVERIAN_STROKE}][#{IVERIAN_STROKE}]*$/,
+      :рм => /^[#{ROMANIAN_CAPITAL}#{ROMANIAN_STROKE}][#{ROMANIAN_STROKE}]*$/,
    }
 
    RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)?(?:\s*([,()\/\-])\s*)?/
@@ -67,12 +95,18 @@ class Bukovina::Parsers::Name
                raise BukovinaNullNameLine, "Null name line #{name.inspect}"
                      " for the language #{language_code}" ; end ; end
 
-         invalid_index = names[1..-1].any? do |ns|
-            ns[ :memory_name ].size != names[ 0 ][ :memory_name ].size ; end
-
          # remove enumerator error
          @errors.select! { |x| !x.is_a?( BukovinaInvalidEnumeratorError ) }
 
+         mn = names[0][ :memory_name ].select do |x|
+            !x[:name].has_key?(:similar_to) ; end
+
+         invalid_index = names[1..-1].any? do |ns|
+            size = ns[ :memory_name ].reduce(0) do |s, x|
+               x[:name].has_key?(:similar_to) && s || s + 1 ; end
+            size != mn.size ; end
+
+#         binding.pry
          if invalid_index
             raise BukovinaIndexError, "#{$!}: for name #{name}" ; end
 
@@ -89,7 +123,7 @@ class Bukovina::Parsers::Name
 
             ns[ :memory_name ].each.with_index do |mn, i|
                if mn[ :name ].has_key?( :text ) &&
-                  ! names[ 0 ][ :memory_name ][ i ][ :name ].has_key?( :text )
+                  ! names[ 0 ][ :memory_name ][ i ]&.[]( :name )&.has_key?( :text )
                   names[ 0 ][ :memory_name ][ i ][ :name ] = mn[ :name ]
                   end ; end ; end
 #         rescue TypeError
@@ -108,15 +142,18 @@ class Bukovina::Parsers::Name
                   "hash: #{name.inspect}" ; end
 =end
          names[ 0 ][ :name ].delete_if { |n| !n[ :text ] }
+         names[ 0 ][ :memory_name ].delete_if { |n| n[ :name ].has_key?( :similar_to ) }
 #         binding.pry
          names[ 0 ]
       when String
          names = parse_line( name )
          names[ :name ]&.delete_if { |n| !n[ :text ] }
+         names[ :memory_name ].delete_if { |n| n[ :name ].has_key?( :similar_to ) }
+#         binding.pry
          names
       when NilClass
       else
-         raise BukovinaInvalidClass, "Invalid class #{name.class} "
+         raise BukovinaInvalidClass, "Invalid class #{name.class} " +
                "for Name line '#{name}'" ; end
 
       @errors.empty? && res || nil
@@ -137,6 +174,7 @@ private
          models: { name: [ name ], memory_name: [ { name: name } ] } }
 
       nameline.scan( RE ) do |(pref, state, token, sepa)|
+#         binding.pry
          apply_pref( pref, context )
          apply_state( state, context )
          apply_token( validate_token( token, context ), context )
@@ -190,20 +228,20 @@ private
    def apply_separator token, sepa, context
       case sepa
       when ','
-         if !token
+         if !token && context[ :mode ] != :stop_alias
             @errors << BukovinaInvalidEnumeratorError.new(
                "Invalid enumerator ',' token" ) ; end
-         context[ :mode ] ||= :next
+         if context[ :mode ] == :alias
+            context[ :mode ] ||= :next
+         else
+            context[ :mode ] = :next ; end
          new_record( context )
       when '('
          context[ :mode ] = :alias
          new_record( context )
       when ')'
-         context.delete( :mode )
+         context[ :mode ] = :stop_alias
       when '/'
-         if !token
-            @errors << BukovinaInvalidVariatorError.new(
-               "Invalid variator '/' token" ) ; end
          context[ :mode ] = :ored
          new_record( context )
       when '-'
