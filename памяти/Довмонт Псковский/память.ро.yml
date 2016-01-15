@@ -1,14 +1,17 @@
 ---
 Довмонт Псковский:
    имя: в наречении Довмонт (Домант), в крещении Тимофей
-   описание: князь Псковский, муж Марфы Псковской
+   описание: князь Псковский; муж Марфы Псковской
    чин: блгв
-   собор: пск
+   собор: пск?
    вики: http://drevo-info.ru/articles/10659.html
-   бытие: http://azbyka.ru/days/sv-dovmont-v-kreshchenii-timofej-pskovskij
+   бытие:
+    - http://azbyka.ru/days/sv-dovmont-v-kreshchenii-timofej-pskovskij
+    - http://calendar.rop.ru/svyat1/may20-dovmont.html
    образ:
     - http://drevo-info.ru/images/001/001748.jpg
     - http://pravicon.com/icon-1650
+   служба: Довмонту Псковскому служба
    событие:
     - год: до 1265
       описание: брак
@@ -29,5 +32,5 @@
       место: Албазин
    помин:
       дата: 20.05
+      календарь: рпц
       описание: само
-      служба: Довмонту Псковскому служба

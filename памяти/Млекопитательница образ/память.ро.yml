@@ -1,17 +1,28 @@
 ---
 Млекопитательница образ:
-   имя: Млекопитательница (Галактотрофуса), Типикарница
-   описание: образ Богородицы
+   имя:
+      ру: Млекопитательница (Галактотрофуса), Типикарница
+      гр: Γαλακτοτροφούσης,
+   описание:
+      ру: образ Богородицы
+      гр: Σύναξη της Υπεραγίας Θεοτόκου
    чин: обр
-   собор: хлдр
+   собор: хлдр?,савл?
    вики: http://drevo-info.ru/articles/8447.html
-   бытие: http://azbyka.ru/days/ikona-mlekopitatelnica
+   бытие:
+      ру: http://azbyka.ru/days/ikona-mlekopitatelnica
+      гр:
+       - http://www.saint.gr/1398/saint.aspx
+       - http://www.saint.gr/665/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/icons/290/d870fd011ef09be87e763f424e27ef83.jpg
     - http://drevo-info.ru/images/002/007091.jpg
     - http://azbyka.ru/days/assets/img/icons/290/ef14b2a0f3a6be63df57fe9ee02b2a41.jpg
     - http://azbyka.ru/days/assets/img/icons/290/6ab4c7fbc86a0fd90eaeb7466483ae34.jpg
     - http://azbyka.ru/days/assets/img/icons/290/83f310eb28a29884f2d5857607bcce0e.jpg
+    - http://www.saint.gr/photos/standard/0112/PanagiaGalaktotrofosis01.jpg
+    - http://1.bp.blogspot.com/-vg8-SEYHZSc/TutYSnmssYI/AAAAAAAACVE/ATceuiq-RA0/s1600/2.jpg
+    - http://static.pblogs.gr/f/406999-02.jpg
    служба:
     - Млекопитательнице образу служба
     - http://azbyka.ru/days/caa/567
@@ -24,6 +35,9 @@
       описание: прен
       место: Карейская келья. Хиландарская обитель. Афон
    помин:
-      дата: 12.01
-      описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/01/minea_01_12.pdf
+    - дата: 10.01
+      каледарь: греч
+      описание: само
+    - дата: 03.07
+      каледарь: греч
+      описание: само
