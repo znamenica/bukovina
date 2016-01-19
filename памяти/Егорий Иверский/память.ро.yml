@@ -1,12 +1,18 @@
 ---
 Егорий Иверский:
-   имя: Георгий
+   имя:
+      ру: Георгий
+      гр: Γεώργιος
    отчество: Яковлевич
-   описание: Иверский, Святогорец
+   описание:
+      ру: подвижник Иверский; Святогорец
+      гр: Ίβηρας
    чин: прп
-   собор: груз,пев
+   собор: югрз?,груз?,пев?,аф?
    вики: http://drevo-info.ru/articles/13301.html
-   бытие: http://azbyka.ru/days/sv-georgij-svjatogorec
+   бытие:
+      ру: http://azbyka.ru/days/sv-georgij-svjatogorec
+      гр: http://www.saint.gr/1582/saint.aspx
    образ:
     - http://pravicon.com/icon-1516
     - http://azbyka.ru/days/assets/img/saints/5318/p18qdvp6e81dg11ed61n05f09uu23.jpg
@@ -33,6 +39,7 @@
       описание: обр
    помин:
     - дата: 13.05
+      календарь: греч
       описание: само
     - дата: 27.06
       собор: груз
