@@ -1,17 +1,50 @@
 ---
 Пахомий Великий:
-   имя: Пахомий
-   прозвище: Великий
+   имя:
+      ру: Пахомий
+      гр: Παχώμιος
+      ив: პახუმი
+   прозвище:
+      ру: Великий
+      гр: Μέγας
+      ив: დიდი
+   описание: ученик Паламона Фиваидского; пустынник Хеновоскионский (Верхняя Фиваида),
+      Фиваидский
    чин: прп
+   собор: фива?,вфив?
    вики: http://drevo-info.ru/articles/3395.html
-   бытие: http://azbyka.ru/days/sv-pahomij-velikij
+   бытие:
+      ру: http://azbyka.ru/days/sv-pahomij-velikij
+      гр: http://www.saint.gr/1592/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/5522/p17v9g1in66g11icqes4jpn1fkr3.jpg
     - http://pravicon.com/icon-2682
+    - http://drevo-info.ru/images/003/012517.jpg [Ангел Господень заповедует прп. Пахомию
+      монашеский устав]
+    - http://drevo-info.ru/images/002/005262.jpg [Миниатюра. Афон. Конец XV в.]
+    - http://www.apostoliki-diakonia.gr/gr_main/eortologio/Agion_pics/May_6.jpg
+    - http://www.saint.gr/filesnew/04/1592/photos/OsiosPachomios02.jpg
+    - http://www.saint.gr/filesnew/04/1592/photos/OsiosPachomios01.jpg
+    - http://3.bp.blogspot.com/_FPORzalrh8o/S-2FH23YXFI/AAAAAAAABDQ/N-adSmMro1w/s1600/21.jpg
+    - http://www.saint.gr/filesnew/06/2867/photos/AgioiDavidPachomios01.jpg [16ος - 17ος
+      αι μ.Χ. - Mονή Διονυσίου, Άγιον Όρος]
+   служба: Пахомию Великому служба
    событие:
-      год: 348
+    - год: ок.292
+      описание: ржд
+      место: Латополье (ныне Исна). Фиваида (Верхний Египет)
+    - год: 346/348
       описание: прств
+    - год: по V
+      описание: прен
+      место: Великая лавра. Афон
+    - год: по V
+      описание: прен.1
+      место: Свято-Троицкая обитель. Экзамиле. Коринф
+    - год: вид.XX
+      описание: прен.2
+      место: Ксение-Петербургская часовня. Мандра. Аттика
    помин:
       дата: 15.05
+      календарь: груз,греч
       описание: само
-      служба: Пахомию Великому служба
