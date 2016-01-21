@@ -1,23 +1,43 @@
 ---
 Нина Грузинская:
-   имя: Нина
+   имя:
+      ру: Нина
+      гр: Νίνα (Νίνω)
+      ив: 'ნინმ (ნინო)'
    отчество: Завулоновна
-   описание: дияконисса Святогробская; просветительница Грузинская (Иверская)
+   описание:
+      ру: дияконисса Святогробская; просветительница Грузинская (Иверская)
+      гр: Ισαπόστολος στην Γεωργία
+      ив: მოციქულთა სწორი
    чин: рап
    собор: груз?,ивер?,капд?
    вики: http://drevo-info.ru/articles/8643.html
-   бытие: http://azbyka.ru/days/sv-nina
+   бытие:
+      ру: http://azbyka.ru/days/sv-nina
+      гр: http://www.saint.gr/225/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/001489.jpg
     - http://drevo-info.ru/images/001/002539.jpg [Грузинская икона кон. XX-нач. XXI вв.]
+    - http://vatopaidi.files.wordpress.com/2010/01/st-nina.jpg
+    - http://vatopaidi.files.wordpress.com/2010/01/st-nino.jpg
+    - http://vatopaidi.files.wordpress.com/2010/01/st-nina-enamel-icon31.jpg
+    - http://vatopaidi.files.wordpress.com/2010/01/st-nina-with-scenes-from-her-life.jpg
+    - http://vatopaidi.files.wordpress.com/2010/01/d181d0b2-d180d0b0d0b2d0bdd0bed0b0d0bf-d0bdd0b8d0bdd0b0-d0b8d0bad0bed0bdd0b0-xvii-d0b21.jpg
+    - http://www.saint.gr/photos/standard/0114/AgiaNina01.jpg
+    - http://2.bp.blogspot.com/_XQqgvQ4ZKB4/TTsXtNAgwbI/AAAAAAAADqM/CYnUU03xs18/s1600/14.%2B%25CE%259D%25CE%2599%25CE%259D%25CE%2591%2B%25CE%2593%25CE%2595%25CE%25A9%25CE%25A1%25CE%2593%25CE%2599%25CE%2591%25CE%25A3.%2B%25CE%2596%25CE%2591%25CE%2592%25CE%259F%25CE%25A5%25CE%259B%25CE%25A9%25CE%259D%2B%2526%2B%25CE%25A3%25CE%25A9%25CE%25A3%25CE%25A3%25CE%2591%25CE%259D%25CE%2591%2B%25CE%2593%25CE%259F%25CE%259D%25CE%2595%25CE%2599%25CE%25A3%2B%25CE%25A4%25CE%2597%25CE%25A3.JPG
+    - http://www.saint.gr/photos/standard/0520/AgioiZavoylonSosani01.jpg
    служба: Нине Грузинской служба
    событие:
-    - год: ок.280
+    - год: ок.280/296
       описание: ржд
       место: Коластра. Каппадокия
     - год: 323
       дата: 19.05
       описание: вступ
+      бытие:
+         гр: http://www.saint.gr/1642/saint.aspx
+      описание_:
+         гр: Μνήμη Εισόδου της Αγίας Νίνας της Ισαποστόλου στην Γεωργία
     - год: 335/347
       дата: 14.01
       описание: прств
@@ -26,9 +46,17 @@
       дата: по 14.01
       описание: пгрб
       место: Мцхетская церковь. Бодбе. Грузия
+    - год: по X
+      описание: прен
+      место: Марининская церковь. Салоники
+    - год: по X
+      описание: прен.1
+      место: Киккская обитель. Кипр
    помин:
     - дата: 19.05
+      календарь: груз,греч
       описание: вступ
     - дата: 14.01
       собор: груз
+      календарь: греч
       описание: прств
