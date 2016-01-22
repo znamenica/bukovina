@@ -1,16 +1,50 @@
 ---
 Михаил Синадский:
-   имя: Михаил
-   описание: святитель Синадский
+   имя:
+      ру: Михаил
+      гр: Μιχαήλ
+      ив: მიქაელ
+   описание:
+      ру: исповедник и святитель Синадский (Фригия)
+      гр: επίσκοπος Συνάδων ο Ομολογητής
+      ив: აღმსარებელი და სინაიდელი ეპისკოპოსი
    чин: исвт
-   собор: 7вс
+   собор: 7вс,фриг?,лика?
    вики: http://drevo-info.ru/articles/5882.html
-   бытие: http://pravicon.com/info-2969
-   образ: http://pravicon.com/icon-2468
+   бытие:
+      ру: http://pravicon.com/info-2969
+      гр:
+       - http://www.saint.gr/4049/saint.aspx
+       - http://www.ecclesia.gr/greek/synaxaire/synaxari.asp?minas=5&id=264
+       - http://www.pigizois.net/sinaxaristis/05/23_05.htm
+       - http://www.ec-patr.org/gr/saints/m05-23.htm
+       - http://glt.xyz/texts/May/23.uni.htm
+       - http://www.synaxarion.gr/gr/sid/3337/sxsaintinfo.aspx
+   образ:
+    - http://pravicon.com/icon-2468
+    - http://www.saint.gr/filesnew/09/4049/photos/OsiosMichail01.jpg
+    - http://4.bp.blogspot.com/-MCK5CAcY8Bg/VWAn085LnLI/AAAAAAAAIYo/bZMnZRvVqsI/s1600/Saint%2BMichael.JPG
+      [Μιχαήλ Χατζημιχαήλ© www.michaelhadjimichael.com]
+   служба: Михаилу Синадскому служба
    событие:
-      год: 821-826
+    - год: вид.ок.787
+      описание: иноч
+      место: Черноморская обитель
+    - год: вид.кон.VIII
+      описание: свят
+      место: вид.Константинополь. Византия
+    - год: 821-826
       описание: прств
+      место: Евдокиада (ныне Чешмелисебиль). Ликаония
+    - год: по X
+      описание: прен
+      предмет: глава
+      место: Великая лавра. Афон
+    - год: по X
+      описание: прен.1
+      предмет: часть
+      место: Иваерская обитель. Афон
    помин:
       дата: 23.05
+      календарь: рпц,греч,груз
       описание: само
-      служба: Михаилу Синадскому служба

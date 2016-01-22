@@ -1,27 +1,20 @@
 ---
 Клеоник Амасийский:
-   имя: Клеоник
-   описание: мученик Амасийский; брат Евтропия Амасийского; распят
+   имя:
+      ру: Клеоник
+      гр: Κλεόνικος
+   описание: мученик Амасийский; брат Евтропия Амасийского; распят язычниками
    чин: мч
-   собор: понт
+   собор: понт?,екв
    вики: http://drevo-info.ru/articles/9465.html
    бытие: http://azbyka.ru/days/sv-kleonik-amasijskij
    образ:
     - http://pravicon.com/icon-2179
     - http://drevo-info.ru/images/001/001571.jpg
     - http://azbyka.ru/days/assets/img/saints/2765/ac73d7cd5b4e68a561ac4b1b57a03ff7.jpg
+    - http://www.saint.gr/photos/standard/0303/AgiosKleonikos01.jpg
+    - http://www.saint.gr/photos/standard/0303/AgiosKleonikos02.jpg
    событие:
       год: 308
       описание: прств
       место: Амасия. Понт (ныне Амасья. Турция)
-      образ:
-       - http://azbyka.ru/days/assets/img/saints/432/e2159807acd04d669acf2f67f6a5d9ab.jpg
-       - http://azbyka.ru/days/assets/img/saints/432/3b427fa5d356bdd9043a9f2d22ebdd7e.jpg
-   помин:
-      дата: 03.03
-      календарь: рпц
-      описание: само
-      бытие: http://calendar.rop.ru/svyat1/mar03-evtropij-kleonik.html
-      служба:
-       - Евтропий Амасийский/Евтропию и Клеонику Амасийским и Василиску Команскому служба
-       - http://azbyka.ru/days/assets/upload/services/minea_03_03.pdf

@@ -1,17 +1,26 @@
 ---
 Василиск Команский:
-   имя: Василиск
+   имя:
+      ру: Василиск
+      гр: Βασιλίσκος
+      ив: ვასილისკო
    описание: уроженец и мученик Команский; племянник Феодора Тирона; обезглавлен
+      язычниками
    чин: мч
-   собор: понт,абх
+   собор: понт?,абх?,екв
    вики: http://drevo-info.ru/articles/9463.html
-   бытие: http://azbyka.ru/days/sv-vasilisk-komanskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-vasilisk-komanskij
+       - http://calendar.rop.ru/svyat1/may22-vasilisk.html
+      гр: http://www.saint.gr/1736/saint.aspx
    образ:
     - http://pravicon.com/icon-1408
     - http://drevo-info.ru/images/002/007493.jpg
     - http://drevo-info.ru/images/002/008597.jpg
     - http://azbyka.ru/days/assets/img/saints/2278/p18gefhkagp2gfdm1tvelht1m7k3.jpg
     - http://azbyka.ru/days/assets/img/saints/2278/p1907k9ucallpqqu1m6b1lpq9md3.jpg
+    - http://www.saint.gr/photos/standard/0522/AgiosBasiliskos01.jpg
    служба: Василиску Команскому служба
    событие:
     - год: вт.пол.III
@@ -22,12 +31,6 @@
       место: Команы. Понт/Команы. Абхазия
       образ: http://azbyka.ru/days/assets/img/saints/432/3b427fa5d356bdd9043a9f2d22ebdd7e.jpg
    помин:
-    - дата: 03.03
-      календарь: рпц
-      описание: само
-      бытие: http://calendar.rop.ru/svyat1/mar03-evtropij-kleonik.html
-      служба:
-       - Евтропий Амасийский/Евтропию и Клеонику Амасийским и Василиску Команскому служба
-       - http://azbyka.ru/days/assets/upload/services/minea_03_03.pdf
-    - дата: 22.05
+      дата: 22.05
+      календарь: рпц,греч,груз
       описание: само
