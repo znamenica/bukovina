@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in bukovina.gemspec
 gemspec
 
-gem 'rdoba', :git => 'https://github.com/3aHyga/rdoba.git'
-#gem 'rdoba', :path => '/usr/local/home/majioa/git/rdoba'
+#gem 'rdoba', :git => 'https://github.com/3aHyga/rdoba.git'
+gem 'rdoba', :path => '/usr/local/home/majioa/git/rdoba'
 #gem 'petrovich', :path => '/usr/local/home/majioa/git/petrovich-ruby/'
 
 group :development do
@@ -16,7 +16,8 @@ group :development do
    gem 'activerecord', '~> 4.2.5'
    gem 'database_cleaner'
    gem 'sqlite3'
-end
+   # To fix CVE-2015-7499 - HEAP-BASED BUFFER OVERFLOW VULNERABILITY IN LIBXML2 and others in LIBXML2
+   gem 'nokogiri', '~> 1.6.7.2' ; end
 
 require 'rubygems/package'
 
@@ -39,6 +40,4 @@ class Gem::Package::TarWriter
          name = newname
       end
 
-      return name, prefix
-   end
-end
+      return name, prefix ; end ; end
