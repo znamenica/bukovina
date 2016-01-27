@@ -1,13 +1,40 @@
 ---
-Алфей Семидесятник:
-   имя: Алфей
-   описание: Капернаумский
-   чин: ап70
+Алфей Капернаумец:
+   имя:
+      ру: Алфей
+      гр: Αλφαίος
+      ив: ალფესი
+   описание:
+      ру: капернаумец; уроженец Капернаумский; отец Иакова Алфеева; возм. тот же что Клеопа
+      гр: απόστολος
+      ив: სამოცდაათთაგანნი
+   чин: ап
+   собор: ап70,гали?
    вики: http://drevo-info.ru/articles/10692.html
-   бытие: http://azbyka.ru/days/sv-alfej-kapernaumskij
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/may26-ap-alfej.html
+       - http://azbyka.ru/days/sv-alfej-kapernaumskij
+      гр:
+       - http://www.saint.gr/3937/saint.aspx
+       - http://www.synaxarion.gr/gr/sid/3389/sxsaintinfo.aspx
+       - http://www.snhell.gr/references/synaxaristis/search.asp?id=846&search=3
+       - http://churchsynaxarion.blogspot.gr/2009/05/3-1-2.html
+   образ:
+    - http://www.saint.gr/photos/standard/0526/AgiosAlfaios01.jpg
    событие:
-      год: I
+    - год: вт.пол.I но нэ
+      описание: ржд
+      место: Капернаум. Галилея
+    - год: I
       описание: прств
+      образ:
+         http://drevo-info.ru/images/003/010801.jpg [Мучение ап. Алфея. Тзортзи (Зорзис) Фука. Фреска, Афон (Дионисиат), 1547 г.]
+    - год: вид.по X
+      предмет: часть
+      описание: прен
+      место: Эсфигменская обитель. Афон
    помин:
       дата: 26.05
+      календарь: рпц,греч,груз
       описание: само

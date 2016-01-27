@@ -1,18 +1,37 @@
 ---
 Никита Халкидонский:
-   имя: Никита
-   описание: Исповедник
-   описание: святитель Халкидонский
+   имя:
+      ру: Никита
+      гр: Νικήτας
+      ив: ნიკიტა
+   описание:
+      ру: нищелюбец милосердный; исповедник и святитель Халкидонский (Византия)
+      гр: αρχιεπίσκοπος Χαλκηδόνας
+      ив: ქალკედონის ეპისკოპოსი
    чин: исвт
+   собор: лефк,виз?
    вики: http://drevo-info.ru/articles/5911.html
-   бытие: http://azbyka.ru/days/sv-nikita-halkidonskij
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/may28-nikita-halkidonskij.html
+       - http://azbyka.ru/days/sv-nikita-halkidonskij
+      гр:
+       - http://www.saint.gr/1764/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/05/28_05.htm
+       - http://www.agiooros.net/old/modules.php?name=GCalendar&file=viewday&y=2011&m=5&d=28&e=27
+       - http://www.imli.gr/metropolis/hagiology/saint_nikitas/
    образ:
     - http://azbyka.ru/days/assets/img/saints/568/p18nav28hb1q18nn11ois1alhpe4.jpg
     - http://azbyka.ru/days/assets/img/saints/568/p18nav28har4m7fhjcn15nh7fj3.jpg
+    - http://www.imli.gr/images/fotos/agiologio/nikitas1_max.jpg
+    - http://www.saint.gr/photos/standard/0528/AgiosNikitas01.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/8/89/Nicetas_of_Chalcedon.jpg
+   служба: Никите Халкидонскому служба
    событие:
-      год: нач. IX
+    - год: вид.сер.VIII
+      описание: ржд
+    - год: по 813
       описание: прств
    помин:
       дата: 28.05
       описание: само
-      служба: Никите Халкидонскому служба

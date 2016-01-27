@@ -11,12 +11,26 @@
    чин: ап
    собор: ап70,фрак?
    вики: http://drevo-info.ru/articles/10691.html
-   бытие: http://azbyka.ru/days/sv-karp
-   служба: Карпу Бериефракийскому служба
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-karp
+       - http://calendar.rop.ru/svyat1/may26-ap-karp.html
+      гр:
+       - http://www.saint.gr/3936/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/05/26_05.htm
+       - http://www.ec-patr.org/gr/saints/m05-26.htm
+       - http://www.synaxarion.gr/synaxarion/gr/sid/3389/sxsaintinfo.aspx
+   образ:
+    - http://www.saint.gr/photos/standard/0526/AgiosKarpos01.jpg
+    - http://www.saint.gr/photos/standard/0526/AgiosKarpos02.jpg
+   служба:
+    - Карпу Бериефракийскому служба
+    - http://glt.xyz/texts/May/26.uni.htm
    событие:
-      год: I
+      год: вт.пол.I
       описание: прств
       место: вид.Берия. Фракия
    помин:
       дата: 26.05
+      календарь: рпц,греч,груз
       описание: само

@@ -1,25 +1,36 @@
 ---
 Исаакий Далматский:
-   имя: Исаакий
-   описание: пустынник; исповедник; настоятель Далматский
+   имя:
+      ру: Исаакий
+      гр: Ισαάκιος
+      ив: ისააკ
+   описание:
+      ру: пустынник; исповедник; настоятель Далматский
+      гр: ομολογητής ηγούμενος Μονής Δαλμάτων
+      ив: დალმატის მონასტრის იღუმენი
    чин: присп
-   собор: виз
+   собор: виз?,идфд
    вики: http://drevo-info.ru/articles/3627.html
    бытие:
-      - http://azbyka.ru/days/sv-isaakij-dalmatskij
-      - http://calendar.rop.ru/svyat1/mar22-isaakij-dalmatskij.html
+      ру:
+       - http://calendar.rop.ru/svyat1/mar22-isaakij-dalmatskij.html
+       - http://azbyka.ru/days/sv-isaakij-dalmatskij
+      гр: http://www.saint.gr/431/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/000524.jpg
     - http://pravicon.com/icon-2064
     - http://azbyka.ru/days/assets/img/saints/2650/0424d13e84d8b15e81d29ad88d0bfdb0.jpg
     - http://azbyka.ru/days/assets/img/saints/2650/75088434d076abeebbe3de28e3b817b6.jpg
+    - http://www.saint.gr/photos/standard/0530/OsiosIsaakios01.jpg
+    - http://www.saint.gr/photos/standard/0530/OsiosIsaakios02.jpg
+    - http://www.saint.gr/photos/standard/0530/OsiosIsaakios03.jpg
    служба: Исаакию Далматскому служба
    событие:
-    - год: III-IV
+    - год: вид.кон.III-нач.IV
       описание: ржд
     - год: до 364
       описание: иноч
-    - год: 383
+    - год: 383/396
       описание: прств
       место: Далматова обитель. Константинополье. Византия
    помин:
@@ -27,9 +38,5 @@
       календарь: рпц
       описание: само
     - дата: 30.05
+      календарь: рпц,греч,груз
       описание: само
-    - дата: 03.08
-      описание: само
-      служба:
-       - Исаакию, Далмату и Фавсту Далматским служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_03.pdf
