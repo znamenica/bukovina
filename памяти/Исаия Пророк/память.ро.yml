@@ -2,19 +2,35 @@
 Исаия Пророк:
    имя:
       ру: Исаия
+      гр: Ησαΐας
       ив: ესაია
    описание:
       ру: пророк
+      гр: προφήτης
       ив: წინასწარმეტყველი
    чин: прор
    собор: плст?,ипхл
    вики: http://drevo-info.ru/articles/10548.html
-   бытие: http://azbyka.ru/days/sv-isaija
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/may09-isaiya.html
+       - http://azbyka.ru/days/sv-isaija
+      гр: http://www.saint.gr/1495/saint.aspx
+   образ:
+    - http://www.saint.gr/photos/standard/0509/Isaiah02.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/4/4c/Isaiah.jpg
+    - http://www.saint.gr/photos/standard/0509/Isaiah03.jpg
+    - http://www.imga.gr/images/pitsidia_naos_ag_koudouma%20%2850%29.JPG [Ι. Ν. Οσίων
+      Παρθενίου και Ευμενίου των εν Κουδουμά, δια χειρός Παναγιώτη Μόσχου (2006 μ.Χ.)]
    служба: Исаии Пророку служба
    событие:
-      год: VIII до нэ
+    - год: VIII до нэ
       описание: прств
+    - год: по X
+      предмет: глава.часть
+      описание: прен
+      место: Хиландарская обитель. Афон
    помин:
       дата: 09.05
-      календарь: груз
+      календарь: рпц,груз,греч
       описание: само

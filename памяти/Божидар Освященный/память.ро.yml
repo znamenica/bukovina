@@ -13,7 +13,9 @@
    собор: копт?,фива?
    вики: http://drevo-info.ru/articles/5813.html
    бытие:
-      ру: http://azbyka.ru/days/sv-feodor-osvjashchennyj
+      ру:
+       - http://calendar.rop.ru/svyat1/may16-feodor.html
+       - http://azbyka.ru/days/sv-feodor-osvjashchennyj
       гр: http://www.saint.gr/419/saint.aspx
    образ: http://drevo-info.ru/images/003/010742.jpg [Минея - Май (фрагмент). Русь, начало
       XVII в. Церковно-археологический кабинет Московской духовной академии]
@@ -33,5 +35,5 @@
       место: вид.обитель. Фиваида
    помин:
       дата: 16.05
-      календарь: греч,груз
+      календарь: рпц,греч,груз
       описание: само

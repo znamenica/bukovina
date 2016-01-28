@@ -2,22 +2,34 @@
 Тамара Грузинская:
    имя:
       ру: Тамара
+      гр: Ταμάρα
       ив: თამარი
    отчество: Георгиевна
    описание:
       ру: царица Грузинская
-      гр: კეთილმსახური მეფე
+      гр: βασίλισσα
+      ив: კეთილმსახური მეფე
    чин: блгв
-   бытие: http://azbyka.ru/days/sv-tamara-gruzinskaja
-   образ: http://pravicon.com/icon-2975
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/may01-tamara-velikaya.html
+       - http://azbyka.ru/days/sv-tamara-gruzinskaja
+      гр: http://www.saint.gr/1443/saint.aspx
+   образ:
+    - http://pravicon.com/icon-2975
+    - http://www.saint.gr/photos/standard/0501/AgiaTamara01.jpg
+    - http://www.apostoliki-diakonia.gr/gr_main/eortologio/img/may/may21.jpg
    служба: Тамаре Грузинской служба
    событие:
-      год: 1213
+    - год: 1165
+      описание: ржд
+    - год: 1213
       дата: 01.05
       описание: прств
    помин:
     - дата: нд.мрнс
+      календарь: греч
       описание: само
     - дата: 01.05
-      календарь: груз
+      календарь: рпц,груз,греч
       описание: прств

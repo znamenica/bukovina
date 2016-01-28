@@ -1,21 +1,75 @@
 ---
 Мира Македонская:
    имя:
-      ру: Ирина
+      ру: в крещении Ирина, в наречении Пенелопа
+      гр: Ειρήνη
       ив: ირინე
    отчество: Ликиниевна
    описание:
-      ру: мученица Македонская
+      ру: великомученица Македонская; мучена язычниками
+      гр: Μεγαλομάρτυς
       ив: დიდმოწამე
-   чин: мц
-   вики: http://drevo-info.ru/articles/10512.html
-   бытие: http://azbyka.ru/days/sv-irina-makedonskaja
-   образ: http://drevo-info.ru/images/001/001719.jpg
-   служба: Мире Македонской служба
+   чин: вмц
+   собор: фрак?,мак?,лид?
+   вики:
+      ру: http://drevo-info.ru/articles/10512.html
+      гр: https://el.wikipedia.org/wiki/Αγία_Ειρήνη_(μεγαλομάρτυς)
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/may05-irina.html
+       - http://azbyka.ru/days/sv-irina-makedonskaja
+      гр:
+       - http://www.saint.gr/393/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/05/05_05.htm
+       - http://www.snhell.gr/references/synaxaristis/search.asp?id=735&search=3
+       - http://www.ec-patr.org/gr/saints/m05-05.htm
+       - http://www.ecclesia.gr/greek/synaxaire/synaxari.asp?minas=5&id=246
+       - http://www.synaxarion.gr/gr/sid/3002/sxsaintinfo.aspx
+   образ:
+    - http://drevo-info.ru/images/001/001719.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini02.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini01.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini03.jpg [Λυδία Γουριώτη©
+      (lydiagourioti-iconography.blogspot.com)]
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini04.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini07.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini08.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini09.jpg [Ρωσική κεντημένη εικόνα,
+      1598 - 1604 μ.Χ.]
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini10.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini11.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini12.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini13.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini14.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini15.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini16.jpg
+    - http://www.saint.gr/photos/standard/0505/AgiaEirini17.jpg
+    - http://3.bp.blogspot.com/-yryVo8u4Za4/Tc2I3Icx7sI/AAAAAAAAAGE/CyzYGqUfoCw/s1600/P5030038.JPG
+      [Αγγελική Τσέλιου© (diaxeirosaggelikistseliou. blogspot.com)]
+    - http://1.bp.blogspot.com/-NECLIoAuTiY/Ta2Fm5PDL3I/AAAAAAAAACE/q2QYQezjyU4/s1600/agia+eirhnh+2.jpg
+      [Καζακίδου Μαρία© (byzantineartkazakidou. blogspot.com)]
+    - http://1.bp.blogspot.com/_cKRraUf_YGQ/TMBW0BKLZCI/AAAAAAAAAEY/maaAiFydM2g/s1600/AgiaEirini2009.JPG
+      [Χρωστήρας© (xrostiras.blogspot.com)]
+   служба:
+    - Мире Македонской служба
+    - http://glt.xyz/texts/May/05.uni.htm
+    - http://glt.xyz/texts/Synek/Megalynaria.uni.htm
    событие:
-      год: I-II
+    - год: I до нэ-I
+      описание: ржд
+      место: Мигдония (Македония/Фракия)
+    - год: I
       описание: прств
+      место: пещера. близ.Ефес. Лидия
+    - год: по X
+      предмет: часть
+      описание: прен
+      место: Киккская обитель. Кипр
+    - год: по X
+      предмет: часть.1
+      описание: прен.1
+      место: Свято-Георгиевская обитель. Венеция
    помин:
       дата: 05.05
-      календарь: груз
+      календарь: рпц,груз,греч
       описание: само

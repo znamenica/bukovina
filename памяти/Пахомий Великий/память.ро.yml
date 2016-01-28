@@ -14,7 +14,9 @@
    собор: фива?,вфив?
    вики: http://drevo-info.ru/articles/3395.html
    бытие:
-      ру: http://azbyka.ru/days/sv-pahomij-velikij
+      ру:
+       - http://calendar.rop.ru/svyat1/may15-pahomij-velikij.html
+       - http://azbyka.ru/days/sv-pahomij-velikij
       гр: http://www.saint.gr/1592/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/5522/p17v9g1in66g11icqes4jpn1fkr3.jpg
@@ -46,5 +48,5 @@
       место: Ксение-Петербургская часовня. Мандра. Аттика
    помин:
       дата: 15.05
-      календарь: груз,греч
+      календарь: рпц,груз,греч
       описание: само

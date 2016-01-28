@@ -2,21 +2,38 @@
 Иов Многострадальный:
    имя:
       ру: Иов
+      гр: Ιώβ
       ив: იობ
    прозвище:
       ру: Многострадальный
       гр: მრავალვნებული
+   отчество:
+      ру: Зарефович
+   описание:
+      ру: праведный; пророк; уроженец Авситидский
+      гр: δίκαιος; προφήτης
    чин: прав
    вики: http://drevo-info.ru/articles/6369.html
-   бытие: http://azbyka.ru/days/sv-iov-mnogostradalnyj
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/may06-iov.html
+       - http://azbyka.ru/days/sv-iov-mnogostradalnyj
+      гр: http://www.saint.gr/1515/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/001136.jpg
     - http://pravicon.com/icon-2004
+    - http://www.saint.gr/photos/standard/0506/DikaiosJob02.jpg
+    - http://www.saint.gr/photos/standard/0506/DikaiosJob01.jpg
+    - http://www.saint.gr/photos/standard/0506/DikaiosJob03.jpg [Eρμηνεία Oλυμπιοδώρου στο
+      βιβλίο του Iώβ - 12ος - 13ος αι. μ.Χ. - Mονή Bατοπαιδίου, Άγιον Όρος]
    служба: Иову Многострадальному служба
    событие:
-      год: ок. 2000-1500 до РХ
+    - год: ок. 2000 до нэ-1500 до нэ/1900 до нэ-1400 до нэ/ок.1890 до нэ
+      описание: ржд
+      место: Авситида
+    - год: ок. 2000 до нэ-1500 до нэ/1900 до нэ-1400 до нэ/ок.1650 до нэ
       описание: прств
    помин:
       дата: 06.05
-      календарь: груз
+      календарь: рпц,греч,груз
       описание: само

@@ -10,7 +10,10 @@
    чин: прп
    собор: 13ос,шмгв?,мцхт?,сир?
    вики: http://drevo-info.ru/articles/10552.html
-   бытие: http://azbyka.ru/days/sv-shio-simeon-mgvimskij
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/may09-shio-mgvimskij.html
+       - http://azbyka.ru/days/sv-shio-simeon-mgvimskij
    образ:
     - http://drevo-info.ru/images/002/008199.jpg
     - http://pravicon.com/icon-3202
@@ -31,5 +34,5 @@
       собор: груз
       описание: само
     - дата: 09.05
-      календарь: груз
+      календарь: рпц,груз
       описание: прств

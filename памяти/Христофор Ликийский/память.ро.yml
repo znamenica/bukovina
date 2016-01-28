@@ -2,22 +2,72 @@
 Христофор Ликийский:
    имя:
       ру: в крещении Христофор, в наречении Негода (Репрев)
-      ив: ქრისტეფორე
+      гр: Χριστόφορος,
+      ив: ქრისტეფორე,
    описание:
-      ру: мученик Ликийский
+      ру: мученик Ликийский; обезглавлен язычниками
+      гр: μεγαλομάρτυρας
       ив: მოწამე
    чин: мч
    собор: лики?,ипхл
    вики: http://drevo-info.ru/articles/1718.html
-   бытие: http://azbyka.ru/days/sv-hristofor-likijskij
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/may09-hristofor.html
+       - http://azbyka.ru/days/sv-hristofor-likijskij
+      гр:
+       - http://www.saint.gr/1496/saint.aspx
+       - http://www.ec-patr.org/gr/saints/m05-09.htm
+       - http://www.pigizois.net/sinaxaristis/05/09_05.htm
+       - http://www.synaxarion.gr/gr/sid/3077/sxsaintinfo.aspx
+       - http://churchsynaxarion.blogspot.gr/2009/05/4-1.html
+   покровительство: Агриния, Пикермы
    образ:
     - http://drevo-info.ru/images/001/000166.jpg
     - http://pravicon.com/icon-3198
-   служба: Христофору Ликийскому служба
+    - http://www.saint.gr/photos/standard/0509/AgiosXristoforos03.jpg
+    - http://farm9.staticflickr.com/8140/8713589846_15fdb9cabf_o.jpg [Μιχαήλ Χατζημιχαήλ©
+      www.michaelhadjimichael.com]
+    - http://www.pigizois.net/sinaxaristis/05/09_xristoforos.jpg
+    - http://www.saint.gr/photos/standard/0509/AgiosXristoforos02.jpg
+    - http://diakonima.wpengine.netdna-cdn.com/wp-content/uploads/2009/09/moni-agiou-nikolanou-anapafsa-meteora_06-resized.jpg
+    - http://www.saint.gr/photos/standard/0509/AgiosXristoforos04.jpg
+    - http://www.saint.gr/photos/standard/0509/AgiosXristoforos05.jpg
+   служба:
+    - Христофору Ликийскому служба
+    - http://glt.xyz/texts/May/09.uni.htm
+    - http://glt.xyz/texts/Synek/Megalynaria.uni.htm
    событие:
-      год: ок. 250
+    - год: ок. 250/251
       описание: прств
+      место: Ликия
+    - год: вид.до X
+      описание: прен
+      место: Толедо
+    - год: вид.до X
+      описание: прен.1
+      место: Сен-Дени аббатство. Франция
+    - год: вид.по X
+      предмет: глава
+      описание: прен.2
+      место: Каракальская обитель. Афон
+    - год: вид.по X
+      предмет: часть.1
+      описание: прен.3
+      место: Прусохарьянская обитель
+    - год: вид.по X
+      предмет: часть.2
+      описание: прен.4
+      место: Богородицкая обитель в Фисташках
+    - год: вид.по X
+      предмет: часть.3
+      описание: прен.5
+      место: Анаргирская обитель в Касторьи
+    - год: вид.по X
+      предмет: часть.4
+      описание: прен.6
+      место: Киккская обитель. Кипр
    помин:
       дата: 09.05
-      календарь: груз
+      календарь: рпц,груз,греч
       описание: само

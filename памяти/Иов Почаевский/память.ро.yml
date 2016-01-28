@@ -1,22 +1,29 @@
 ---
 Иов Почаевский:
-   имя: в схиме Иоанн, в иночестве Иов, в крещении Иоанн
+   имя:
+      ру: в схиме Иоанн, в иночестве Иов, в крещении Иоанн
+      гр: ', Ιώβ,'
    фамилия: Железо
-   описание: настоятель Почаевский
+   описание:
+      ру: чудотворец и настоятель Почаевский
+      гр: θαυματουργός
    чин: прп
    собор: гал
    вики:
     - http://drevo-info.ru/articles/7706.html
     - https://ru.wikipedia.org/Иов_Почаевский
    бытие:
-    - http://azbyka.ru/days/sv-iov-pochaevskij
-    - http://www.pochaev.org.ua/?pid=1379
-    - http://www.saints.ru/i/10-prp.Iov-Pochaevskii-
+      ру:
+       - http://azbyka.ru/days/sv-iov-pochaevskij
+       - http://www.pochaev.org.ua/?pid=1379
+       - http://www.saints.ru/i/10-prp.Iov-Pochaevskii-
+      гр: http://www.saint.gr/1523/saint.aspx
    образ:
     - http://pravicon.com/icon-2006
     - http://azbyka.ru/days/assets/img/saints/3934/322fb851a1d54406e46654d40205d22b.jpg
     - http://azbyka.ru/days/assets/img/saints/3934/c3df083dd1b86a3d15eb9f24b9a81b42.jpg
     - http://azbyka.ru/days/assets/img/saints/3934/p190oliqld7h415r61c0cuh2bap3.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/8/8d/Jov.jpg
    служба:
     - Иову Почаевскому служба
     - http://azbyka.ru/days/caa/15
@@ -53,6 +60,7 @@
       место: Успенская обитель. Почаев
    помин:
     - дата: 06.05
+      календарь: рпц,греч
       описание: иноч
     - дата: 28.08
       описание: обр.1

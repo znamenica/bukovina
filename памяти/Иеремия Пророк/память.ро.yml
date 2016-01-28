@@ -2,19 +2,36 @@
 Иеремия Пророк:
    имя:
       ру: Иеремия
+      гр: Ιερεμίας
       ив: იერემია
+   отчество: Хелкиевич
    описание:
-      ру: пророк великий
+      ру: пророк великий; побит камнями вид.иудеями
+      гр: προφήτης
       ив: წინასწარმეტყველი
    чин: прор
+   собор: плст?,влпр?,копт?
    вики: http://drevo-info.ru/articles/5704.html
-   бытие: http://azbyka.ru/days/sv-ieremija
-   образ: http://drevo-info.ru/images/002/007376.jpg
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/may01-ieremijya.html
+       - http://azbyka.ru/days/sv-ieremija
+      гр: 
+   образ:
+    - http://drevo-info.ru/images/002/007376.jpg
+    - http://www.saint.gr/photos/standard/0501/ProfitisIeremias03.jpg
+    - http://www.saint.gr/photos/standard/0501/ProfitisIeremias01.jpg
+    - http://www.saint.gr/photos/standard/0501/ProfitisIeremias02.jpg
+    - http://www.apostoliki-diakonia.gr/gr_main/eortologio/img/may/may10.jpg
    служба: Иеремии Пророку служба
    событие:
-      год: VI до нэ
+    - год: вид.650 до нэ
+      описание: ржд
+      место: Анафоф. Иерусалимье. Палестина
+    - год: VI до нэ
       описание: прств
+      место: вид.Тафна. Египет
    помин:
       дата: 01.05
-      календарь: груз
+      календарь: рпц,груз,греч
       описание: само
