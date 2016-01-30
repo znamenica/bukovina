@@ -8,17 +8,21 @@
       ру: пустынник Сорский
       гр: του Σόρκιυ εκ Ρωσίας
    чин: прп
-   собор: аф,блзр
+   собор: аф,блзр?
    вики: http://drevo-info.ru/articles/1789.html
    бытие:
-      ру: http://azbyka.ru/days/sv-nil-sorskij
+      ру:
+       - http://calendar.rop.ru/svyat1/may07-nil-sorskij.html
+       - http://azbyka.ru/days/sv-nil-sorskij
       гр: http://www.saint.gr/4013/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/000485.jpg
     - http://pravicon.com/icon-2581
     - http://www.saint.gr/photos/standard/0507/OsiosNeilosSora01.jpg
     - http://upload.wikimedia.org/wikipedia/commons/7/7d/Sv_nil_sorski.jpg
-   служба: Нилу Сорскому служба
+   служба:
+    - Нилу Сорскому служба
+    - http://www.drevnyaya.ru/vyp/stat/s1_15_13.pdf
    отечник: http://stnil.narod.ru/
    событие:
     - год: 1433
@@ -32,5 +36,5 @@
       место: Сретенский скит. Сора река. Белозерье
    помин:
       дата: 07.05
-      календарь: греч
+      календарь: рпц,греч
       описание: прств
