@@ -1,14 +1,21 @@
 ---
 Мученики Батакские:
-   описание: мученики Батакские
+   описание: мученики Батакские; убиены исламистами
+   количество: ок.3000
    чин: мчч
-   собор: слав
+   крат: мбтк
+   собор: болг?
    вики: http://drevo-info.ru/articles/17331.html
+   служба:
+    - http://ustavschik.livejournal.com/77758.html
+    - http://www.bulgarian-orthodox-church.org/liturg/Sluzhba.Akathist_sv.muc.Batak.pdf
+    - http://www.bulgarian-orthodox-church.org/liturg/bataknm-sluzhba.pdf
    событие:
       год: 1876
-      дата: апрель
+      дата: апр
       описание: прств
+      место: Батак деревня. Болгария
    помин:
-      дата: 17.05
+      дата: 04.05
       собор: болг
       описание: прств
