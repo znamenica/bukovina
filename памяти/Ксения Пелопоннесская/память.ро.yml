@@ -1,12 +1,40 @@
 ---
 Ксения Пелопоннесская:
-   имя: Ксения
-   описание: чудотворица Пелопоннесская
+   имя:
+      ру: Ксения
+      гр: Ξενία
+   отчество: Николаевна
+   описание:
+      ру: великомученица и чудотворица Каламатская (Пелопоннесская)
+      гр: Μεγαλομάρτυρας και θαυματουργή
    чин: вмц
+   собор: плпн?
+   бытие:
+      гр:
+       - http://www.saint.gr/874/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/05/03_05.htm
+       - http://syllektiko-sentouki.blogspot.gr/2014/05/12.html
+       - http://www.byzmusic.gr/maiou/03-maiou-2/
+   образ:
+    - http://www.naosanalipseos-kal.gr/Kyria/TopikoAgiologio/AgXenia.jpg
+    - http://www.saint.gr/filesnew/02/0874/photos/AgiaXenia03.jpg
+    - http://www.saint.gr/filesnew/02/0874/photos/AgiaXenia02.jpg
+    - http://www.saint.gr/filesnew/02/0874/photos/AgiaXenia04.jpg
+    - http://www.saint.gr/filesnew/02/0874/photos/AgiaXenia05.jpg
+    - http://www.naosanalipseos-kal.gr/agiaxenia.jpg
+    - http://s24.postimg.org/k6d7xfjw5/Agia_Xenia07.png
+   служба:
+    - Ксении Пелопоннесской служба
+    - http://www.agiooros.net/forum/viewtopic.php?p=114980
    событие:
-      год: 318
+    - год: 291
+      описание: ржд
+      место: Пелопоннес
+    - год: 318
+      дата: 03.05
       описание: прств
+      место: Каламата. вид.Пелопоннес
    помин:
       дата: 03.05
-      собор: греч
+      календарь: греч
       описание: само

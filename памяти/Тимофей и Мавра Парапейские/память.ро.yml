@@ -1,7 +1,7 @@
 ---
 Тимофей и Мавра Парапейские:
    описание:
-      ру: Тимофей и Мавра Парапейские (Фиваидские)
+      ру: Тимофей и Мавра Парапейские (Фиваидские), Антинойские
       гр: Τιμόθεος και Μαύρα
       ив: მოწამენი ტიმოთე და მავრა
    количество: 2
@@ -12,7 +12,12 @@
       ру: http://calendar.rop.ru/svyat1/may03-timofej-marfa.html
       гр: http://www.saint.gr/880/saint.aspx
    образ: http://news247.gr/eidiseis/koinonia/article3283464.ece/BINARY/w660/maura.jpg
-   служба: Тимофею и Мавре Парапейским служба
+   служба:
+    - Тимофею и Мавре Парапейским служба
+    - http://voutsinasilias.blogspot.com/2009/05/3.html
+    - http://voutsinasilias.blogspot.com/2010/04/3.html [творение архимандрита Иоанникия
+      (Конидариса)]
+    - http://voutsinasilias.blogspot.com/2009/05/3_02.html
    событие:
     - год: вид.сер.III
       описание: ржд
