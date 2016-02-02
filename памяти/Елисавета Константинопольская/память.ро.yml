@@ -1,13 +1,60 @@
 ---
 Елисавета Константинопольская:
-   имя: Елисавета
-   прозвище: настоятельница Константинопольская, чудотворица
+   имя:
+      ру: Елисавета
+      гр: Ελισάβετ
+   отчество: Евномиановна
+   описание:
+      ру: настоятельница и чудотворица Константинопольская
+      гр: Θαυματουργή
    чин: прп
+   собор: виз?,фрак?
    вики: http://drevo-info.ru/articles/10374.html
-   бытие: http://azbyka.ru/days/sv-elisaveta-konstantinopolskaja
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/apr24-elizaveta.html
+       - http://azbyka.ru/days/sv-elisaveta-konstantinopolskaja
+      гр:
+       - http://www.saint.gr/1456/saint.aspx
+       - http://www.ec-patr.org/gr/saints/m04-24.htm
+       - http://www.synaxarion.gr/gr/sid/2753/sxsaintinfo.aspx
+       - http://churchsynaxarion.blogspot.gr/2009/05/3-1-2.html
+   образ:
+    - http://drevo-info.ru/images/003/012251.jpg
+    - http://www.saint.gr/photos/standard/0424/OsiaElizabeth03.jpg
+    - http://www.saint.gr/photos/standard/0424/OsiaElizabeth01.jpg
+    - http://www.saint.gr/photos/standard/0424/OsiaElizabeth02.jpg
+    - http://www.saint.gr/photos/standard/0424/OsiaElizabeth04.jpg
+    - http://www.saint.gr/photos/standard/0424/OsiaElizabeth05.jpg
+   служба:
+    - Елисавете Константинопольской служба
+    - http://glt.xyz/texts/Apr/24.uni.htm
+    - http://www.analogion.net/glt/texts/Apr/24.uni.htm [творение преподобного
+      Иосифа Песнописца]
+    - http://ustavschik.livejournal.com/175153.html [перевод, с иным тропарем,
+      по рукописи ГИМ Увар. 682, в «Уставных заметках»]
+    - http://akafist.narod.ru/E/Elisaveta_Konstantinopl.htm [составлен Евгением
+      Храповицким]
+    - http://www.impantokratoros.gr/Osia-Elisabet.el.aspx
    событие:
-      год: 540
+    - год: V
+      описание: ржд
+      место: Ираклея. Фракия
+    - год: вид.вт.пол.V
+      описание: брак
+    - год: 458-471
+      описание: иноч
+      место: Константинополь. Византия
+    - год: 540
       описание: прств
+      место: Константинополь. Византия
+    - год: по X
+      описание: прен
+      место: Анно-Лигаридская обитель. Ламия
+    - год: по X
+      описание: прен.1
+      место: Даупентельская обитель
    помин:
       дата: 24.04
+      календарь: рпц,греч
       описание: само
