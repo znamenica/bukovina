@@ -1,16 +1,26 @@
 ---
 Виктор Глазовский:
-   имя: в иночестве Виктор, в крещении Константин
-   отчество: Александрович
-   фамилия: Островидов
-   описание: священноинок Хвалынский, Иерусалимский; первоинок Зеленецкий (Ладога);
-      святитель Уржумский, Слободский, Глазовский, Вятский
+   имя:
+      ру: в иночестве Виктор, в крещении Константин
+      гр: Βίκτωρ, Κωνσταντίνος
+   отчество:
+      ру: Александрович
+      гр: Αλεξάνδροβιτς
+   фамилия:
+      ру: Островидов
+      гр: Οστροβίντωφ
+   описание:
+      ру: священноинок Хвалынский, Иерусалимский; первоинок Зеленецкий (Ладога);
+         святитель Уржумский, Слободский, Глазовский, Вятский
+      гр: Ιερομάρτυρας Επίσκοπος Γκλαζώφ
    чин: исвт
    собор: нмр,вят,мск,спб,сол,кмшн?,хвлн?,плст?,лдг?,урж?,слбд?,глаз?
    вики: http://drevo-info.ru/articles/14825.html
    бытие:
-    - http://azbyka.ru/days/sv-viktor-ostrovidov
-    - http://kuz1.pstbi.ccas.ru/bin/db.exe/no_dbpath/docum/ans/ans/newmr/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu0e8fWfi*U86vVsi0iceWYfe6UWeuhsS8UfS8cfG0*euKesO0hdC0iceXb8E*
+      ру:
+       - http://azbyka.ru/days/sv-viktor-ostrovidov
+       - http://kuz1.pstbi.ccas.ru/bin/db.exe/no_dbpath/docum/ans/ans/newmr/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu0e8fWfi*U86vVsi0iceWYfe6UWeuhsS8UfS8cfG0*euKesO0hdC0iceXb8E*
+      гр: http://www.saint.gr/1967/saint.aspx
    образ:
     - http://drevo-info.ru/images/002/008163.jpg
     - http://azbyka.ru/days/assets/img/saints/343/p18lg27hm1iclqgk1kgno5ai2v5.jpg
@@ -19,12 +29,13 @@
     - http://pravicon.com/icon-1431
    служба:
     - Виктору Глазовскому служба
-    - http://ustavschik.livejournal.com/97973.html
+    - http://ustavschik.livejournal.com/97973.html [составлена игуменом Феофаном (Арескиным)
+      юрисдикции РПАЦ («суздальский» раскол)]
     - http://ustavschik.livejournal.com/98291.html
    событие:
-    - год: 1875
+    - год: 1878
       дата: 21.05
-      описание: обр
+      описание: ржд
       место: Золотое село. Камышинский уезд. Саратовская губернии
     - год: 1903
       дата: 28.06

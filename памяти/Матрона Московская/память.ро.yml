@@ -1,17 +1,25 @@
 ---
 Матрона Московская:
-   имя: Матрона
+   имя:
+      ру: в крещении Матрона
+      гр: Ματρώνα
    отчество: Дмитриевна
    фамилия: Никонова 
    описание: блаженная; старица Московская
    чин: прав
-   собор: мск,тул,епиф
+   собор: мск,тул?,епиф?
    вики: http://drevo-info.ru/articles/12359.html
-   бытие: http://azbyka.ru/days/sv-matrona-moskovskaja
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/apr19-matrona.html
+       - http://azbyka.ru/days/sv-matrona-moskovskaja
+      гр: http://www.saint.gr/1482/saint.aspx
    образ:
     - http://pravicon.com/icon-2415
     - http://azbyka.ru/days/assets/img/saints/5659/p18i50l4rp1o3514u69kn1aba1qac4.jpg
     - http://azbyka.ru/days/assets/img/saints/5659/p18i50lvgo1ko81b2c1no31j4d8fs9.jpg
+    - http://www.saint.gr/photos/standard/0502/OsiaMatronaRosias02.jpg
+    - http://1.bp.blogspot.com/_UOJjUH2o_wM/S9320U0ksdI/AAAAAAAADok/sYnQob1-PTI/s1600/St.+Matrona+of+Moscow.JPG
    cлужба:
     - Матроне Московской служба
     - http://nbt.rop.ru/?q=texts/akafist/184 [Текст утвержден Священным Синодом Русской
@@ -68,4 +76,7 @@
       описание: обр
     - дата: 19.04
       календарь: рпц
+      описание: прств
+    - дата: 02.05
+      календарь: греч
       описание: прств

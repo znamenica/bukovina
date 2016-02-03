@@ -1,18 +1,38 @@
 ---
 Платон Банялучский:
-   имя: в иночестве Платон, в крещении Миливой
+   имя:
+      ру: в иночестве Платон, в крещении Миливой
+      гр: Πλάτων, Μιλιβόγιε
+      ср: Платон,
    отчество: Ильич
-   фамилия: Йованович
-   описание: первоинок Карловецкий; святитель Охридско-Битольский, Банялукский (Банялучский)
+   фамилия:
+      ру: Йованович
+      ср: Јовановић
+   описание:
+      ру: первоинок Раковицкий, Карловецкий; святитель Охридско-Битольский, Банялукский
+         (Банялучский)
+      гр: Ιερομάρτυρας επίσκοπος Μπάνια Λούκα
+      ср: свештеномученик Бањалучки
    чин: мсвт
-   собор: нмсб,блгр?,срем?,охр?,блук?
+   собор: нмсб,рквц?,блгр?,срем?,охр?,блук?
    вики: http://drevo-info.ru/articles/7132.html
    бытие:
       ру: http://azbyka.ru/days/sv-platon-banjalukskij
-      ан: http://www.westsrbdio.org/holy_serbian/platon_e.html
+      гр:
+       - http://www.saint.gr/1353/saint.aspx
+       - http://www.synaxarion.gr/gr/sid/2742/sxsaintinfo.aspx
+       - http://www.synaxarion.gr/gr/sid/3014/sxsaintinfo.aspx
+      ан:
+       - http://www.westsrbdio.org/holy_serbian/platon_e.html
+       - http://oca.org/saints/lives/2015/04/22/108075-hieromartyr-platon-the-newmartyr-of-banjaluka
    образ:
     - http://drevo-info.ru/images/001/002235.jpg
     - http://pravicon.com/icon-2729
+    - http://www.pravoslavnikalendar.iz.rs/load/img/praznik2/126.jpg
+    - http://www.spc.rs/files/galerije/11/08/sv_platon_banjalucki_ikona.jpg
+    - http://images.oca.org/icons/lg/April/0422PlatonJovanovic-BishopBanjaluka.jpg
+    - http://www.blminter.net/spcbl/cutenews//data/upimages/sv_platon_banjalucki.gif
+    - http://www.saint.gr/filesnew/03/1353/photos/AgiosPlatonBanjaLuka04.jpg
    служба:
     - Платону Банялучскому служба
     - http://ustavschik.livejournal.com/73652.html
@@ -25,6 +45,12 @@
       место: Белград
     - год: 1892-1896
       описание: иноч
+      место: семинария. Белград
+    - год: 1892-1896
+      описание: дияк
+      место: семинария. Белград
+    - год: 1892-1896
+      описание: свящ
       место: семинария. Белград
     - год: 1934
       описание: свят
@@ -44,5 +70,5 @@
       описание: просл
    помин:
       дата: 22.04
-      собор: серб
+      календарь: рпц,греч,серб
       описание: прств

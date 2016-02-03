@@ -1,15 +1,19 @@
 ---
 Бранко Бортсурманский:
    имя: Алексий
-   описание: священник, Бортсурманский
    фамилия: Гнеушев
+   описание: священник Бортсурманский
    чин: сщпрв
-   собор: ниж
+   собор: ниж,крмш?
    вики: http://drevo-info.ru/articles/12828.html
-   бытие: http://azbyka.ru/days/sv-aleksij-bortsurmanskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-aleksij-bortsurmanskij
    образ:
     - http://azbyka.ru/days/assets/img/saints/1009/p190gu8s9s1k6dh4c1q41bv03a75.jpg
     - http://azbyka.ru/days/assets/img/saints/1009/p18sss8kju12ej523q6g1cum1olg3.jpg
+   служба:
+    - http://ustavschik.livejournal.com/173457.html
+    - http://akafist.narod.ru/A/Alexy_Bortsurmansky.htm
    событие:
     - год: 1762
       дата: 13.05
@@ -42,6 +46,7 @@
       описание: обр
    помин:
     - дата: 21.04
+      календарь: рпц,греч
       описание: прств
     - дата: 04.08
       описание: обр

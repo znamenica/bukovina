@@ -1,20 +1,75 @@
 ---
 Макарий Коринфский:
-   имя: Макарий
-   прозвище: святитель Коринфский
+   имя:
+      ру: Макарий
+      гр: Μακάριος
+   отчество: Георгиевич/Георгантьевич
    фамилия: Нотара
+   описание:
+      ру: святитель Коринфский; схинок Хиосский
+      гр: Αρχιεπίσκοπος Κορίνθου
    чин: прсвт
+   собор: крнф?,хиос?
    вики: http://drevo-info.ru/articles/8765.html
-   бытие: http://pravicon.com/info-2829
+   бытие:
+      ру: http://pravicon.com/info-2829
+      гр:
+       - http://www.saint.gr/295/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/04/17_04.htm
+       - http://www.agiooros.net/old/modules.php?name=GCalendar&file=viewday&y=2009&m=4&d=17
+       - http://www.agiooros.net/old/modules.php?name=GCalendar&file=viewday&y=2010&m=5&d=16
+       - http://churchsynaxarion.blogspot.gr/2009/05/4-1.html
+       - http://analogion.net/music/Akolou0iaiAgiwn/0417_BiosAgiouMakariouKorin0ou.pdf
+       - http://analogion.net/music/Akolou0iaiAgiwn/0417_Akolou0iaAgiouMakariouKorin0ou.pdf
    образ:
     - http://drevo-info.ru/images/002/007072.jpg
     - http://pravicon.com/icon-2322
-   помин:
+    - http://www.saint.gr/photos/standard/0417/AgiosMakarios01.jpg
+    - http://www.saint.gr/photos/standard/0417/AgiosMakarios02.jpg
+    - http://www.saint.gr/photos/standard/0417/AgiosMakarios04.jpg
+    - http://vatopaidi.files.wordpress.com/2009/04/agios-makarios.jpg
+   служба:
+    - Макарию Коринфскому служба
+    - http://byzantine-music.gr/Akolou0iaiAgiwn/0417_Akolou0iaAgiouMakariouKorin0ou.pdf [творение
+      преподобного Никифора Хиосского]
+   событие:
+    - год: 1731
+      описание: ржд
+      место: Трикала. Коринф
+    - год: 1764
+      описание: иноч
+    - год: 1765
+      дата: янв
+      описание: свят
+    - год: 1777
+      описание: схим
     - год: 1805
       дата: 17.04
-      собор: греч
       описание: прств
+      место: Петропавловская часовня. Вронтада. Хиос
     - год: 1805
-      дата: 19.01
-      собор: греч
+      дата: по 17.04
+      описание: пгрб
+      место: Петропавловское кладбище. Вронтада. Хиос
+    - год: 1808
+      дата: 17.04
+      описание: прен
+      место: скит. близ.Идра. Хиос
+    - год: по 1808
+      описание: прен.1
+      место: Благовещенская обитель. Икария
+    - год: по 1808
+      описание: прен.1
+      место: Трикалы. Коринф
+    - год: по 1808
+      описание: прен.1
+      место: Коринф
+    - год: ок.1863
+      описание: почит
+   помин:
+    - дата: 17.04
+      календарь: греч
       описание: прств
+    - дата: 16.05
+      собор: самс
+      описание: само
