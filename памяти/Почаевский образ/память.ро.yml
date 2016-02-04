@@ -3,6 +3,7 @@
    имя: Почаевский
    описание: образ Богородицы
    чин: обр
+   собор: гал?
    вики: http://drevo-info.ru/articles/11396.html
    бытие:
     - http://azbyka.ru/days/ikona-pochaevskaja
@@ -17,8 +18,9 @@
     - Почаевскому образу служба
     - http://azbyka.ru/days/caa/576
     - http://azbyka.ru/days/caa/577
+    - http://www.pochaev.org.ua/?p=akafist/2
    событие:
-    - год: 1240
+    - год: 1240/1241
       описание: виден
       образ: http://azbyka.ru/days/assets/img/icons/66/p18iofjs0irirr7u1n831cc51ar53.jpg
     - год: до 1559
@@ -40,6 +42,8 @@
       описание: обр
       место: Почаевская обитель. Волынь
    помин:
+    - дата: 11.04
+      описание: виден
     - дата: пт.свет
       описание: само
     - дата: 23.07
