@@ -8,11 +8,15 @@
    вики:
     - http://drevo-info.ru/articles/8137.html
     - https://ru.wikipedia.org/wiki/Геннадий_(архиепископ_Новгородский)
-   бытие: http://azbyka.ru/days/sv-gennadij-novgorodskij
+   бытие:
+    - http://calendar.rop.ru/svyat1/dec04-gennadi.html
+    - http://azbyka.ru/days/sv-gennadij-novgorodskij
    образ:
     - http://azbyka.ru/days/assets/img/saints/2621/p193vfbqd318ib1dab1atb1aqmf6k3.jpg
     - http://azbyka.ru/days/assets/img/saints/2621/d63cfee928d062ccb4511664d772c7f9.jpg
     - http://azbyka.ru/days/assets/img/saints/2621/a853cce2ccd44c31695b4c6dc12a9559.jpg
+    - http://drevo-info.ru/images/001/001396.jpg [икона XX века, Москва]
+   служба: Геннадию Новгородскому служба
    отечник: http://azbyka.ru/otechnik/Gennadij_Novgorodskij/
    событие:
     - год: ок.1410
@@ -31,9 +35,15 @@
       дата: по 04.12
       описание: пгрб
       место: Чудов храм. Чудов монастырь. Кремль. Москва
+    - год: 2016
+      дата: 21.01
+      собор: рус
+      чин: свт
+      описание: просл
+      о: 04.12
+      ссылка: http://www.patriarchia.ru/db/text/4367765.html
    помин:
-    - дата: 04.12
+      дата: 04.12
+      календарь: рпц
       описание: прств
       служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_04.pdf
-    - описание: само
-      служба: Геннадию Новгородскому служба

@@ -1,11 +1,13 @@
 ---
 Мина Полоцкий:
-   имя: Мина
+   имя: вид.в иночестве Мина
    описание: святитель Полоцкий
    чин: свт
-   собор: слав,рус,блр,киев
+   собор: блр,киев,зрнц,печ?
    вики: http://drevo-info.ru/articles/6253.html
-   бытие: http://azbyka.ru/days/sv-mina-polockij
+   бытие:
+    - http://azbyka.ru/days/sv-mina-polockij
+    - http://zvcaves.kiev.ua/content/view/24/56/
    образ:
     - http://azbyka.ru/days/assets/img/saints/1099/p18q8mttji1ls81n5416cs1v8115km3.jpg
     - http://pravicon.com/icon-2449
@@ -13,8 +15,17 @@
     - год: 1105
       дата: 13.12
       описание: свят
+      место: вид.Киев
     - год: 1116
       описание: прств
+    - год: 2016
+      дата: 21.01
+      собор: рус
+      чин: свт
+      описание: просл
+      о: 20.06
+      ссылка: http://www.patriarchia.ru/db/text/4367765.html
    помин:
       дата: 20.06
+      календарь: рпц
       описание: само

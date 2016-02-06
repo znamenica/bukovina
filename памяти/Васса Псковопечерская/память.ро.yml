@@ -1,13 +1,15 @@
 ---
 Васса Псковопечерская:
-   имя: в иночестве Васса, в крещении Мария
-   описания : инокиня Псковопечерская
-   чин: прп
-   собор: пск,ппеч,клв,брак
+   имя:
+      ру: в иночестве Васса, в крещении Мария
+      гр: Βάσσα,
+   описания: инокиня Псковопечерская
+   чин: прпж
+   собор: пск,ппеч,клвн,брак?,мив
    вики: http://drevo-info.ru/articles/9681.html
    бытие:
-    - http://azbyka.ru/days/sv-vassa-pskovo-pecherskaja
     - http://calendar.rop.ru/svyat1/mar19-vassa.html
+    - http://azbyka.ru/days/sv-vassa-pskovo-pecherskaja
    образ:
     - http://pravicon.com/icon-1412
     - http://azbyka.ru/days/assets/img/saints/6350/p18hbgfd3b105t1e08nid146t14394.jpg
@@ -27,6 +29,13 @@
     - год: ок. 1473
       описание: прств
       место: пещеры. Псковщина
+    - год: 2016
+      дата: 21.01
+      собор: рус
+      чин: прпж
+      описание: просл
+      о: 19.03
+      ссылка: http://www.patriarchia.ru/db/text/4367765.html
    помин:
       дата: 19.03
       календарь: рпц

@@ -1,15 +1,21 @@
 ---
 Ростислав Киевский:
-   имя: в наречении Ростислав, в крещении Михаил
+   имя:
+      ру: в наречении Ростислав, в крещении Михаил
+      гр: Ροστισλάβος,
    отчество: Мстиславович
-   описание: князь Смоленский, Новгородский; великий князь Киевский; сын Мстислава Великого
+   описание:
+      ру: князь Смоленский, Новгородский; великий князь Киевский; сын Мстислава Великого
+      гр: Πρίγκιπας Κιέβου και Σμολένσκ
    чин: блгв
    собор: блр,киев,смо,нов?
    вики: http://drevo-info.ru/articles/6143.html
    бытие:
-    - http://azbyka.ru/days/sv-rostislav-v-kreshchenii-mihail-mstislavich-kievskij
-    - http://calendar.rop.ru/svyat1/mar14-rostislav.html
-    - http://www.saint.gr/1386/saint.aspx
+      ру:
+       - http://azbyka.ru/days/sv-rostislav-v-kreshchenii-mihail-mstislavich-kievskij
+       - http://calendar.rop.ru/svyat1/mar14-rostislav.html
+       - http://www.saint.gr/1386/saint.aspx
+      гр: http://www.saint.gr/1386/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/001087.jpg
     - http://pravicon.com/icon-2798
@@ -28,6 +34,13 @@
       дата: вид.по 14.03
       описание: пгрб
       место: Фёдровская обитель. Киев
+    - год: 2016
+      дата: 21.01
+      собор: рус
+      чин: блгв
+      описание: просл
+      о: 14.03
+      ссылка: http://www.patriarchia.ru/db/text/4367765.html
    помин:
       дата: 14.03
       календарь: рпц,греч
