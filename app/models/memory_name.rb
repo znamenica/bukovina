@@ -2,8 +2,9 @@ class MemoryName < ActiveRecord::Base
    belongs_to :memory
    belongs_to :name
 
-   enum state: [ :наречёное, :крещенское, :иноческое, :схимное ]
-   enum feasibly: [ :false, :true ]
+   enum state: [ :наречёное, :крещенское, :чернецкое, :иноческое, :схимное ]
+   enum feasibly: [ :non_feasible, :feasible ]
+   enum mode: [ :ored, :prefix ]
 
    validates_presence_of :memory_id, :name_id
 

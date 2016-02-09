@@ -77,33 +77,25 @@ module Rails
 
                data = m[ short_name ]
 
-#               if short_name == 'Теребенский образ'
-#                  pass = false ; end
-#               next if pass
-
                attr_lists = namer.parse( data[ 'имя' ] )
-               if namer.errors.size == 0 && attr_lists
+
+               if attr_lists
+                  attr_lists[ :name ].each do |attrs|
+                     Bukovina::Importers::Name.new(attrs).import
+                  end
+
+                  o_attrs = { memory: memory }
                   attr_lists[ :memory_name ].each do |attrs|
-                     name_attrs = attrs.delete( :name )
-#                     binding.pry
-                     if name_attrs.include?( :aliases )
-                        # TODO add aliases
-                        puts "Свойство подобия " \
-                           "(#{name_attrs[ :aliases ].join(',')}) имени "  \
-                           "#{name_attrs[ :text ]} не используется " \
-                           "и будет опущено"
-                        name_attrs.delete( :aliases ) ; end
-                     name_attrs[ :language_code ] =
-                     Name.language_codes[ name_attrs[ :language_code ] ]
-                     name = Name.where( name_attrs ).first_or_create
-                     MemoryName.where( name: name,
-                        memory: memory ).first_or_create; end ; end
+                     Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
+                  end ; end
+
+
                namer.errors.each { |e| errors[ f ] = e }.clear
                end ; end
    
          if ! errors.keys.empty?
             errors.each do |n,e|
-               puts "#{n}: #{e.class}:#{e}: #{e.backtrace.join("\n")}" ; end
+               puts "#{n}: #{e.class}:#{e}: #{e.backtrace&.join("\n")}" ; end
             raise "Simple load errors found " +
                "with count of #{errors.keys.size}" ; end ; end ; end
 

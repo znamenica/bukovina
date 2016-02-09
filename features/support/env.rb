@@ -7,6 +7,8 @@ Spork.prefork do
    require 'database_cleaner'
    require 'rspec/expectations'
    require 'shoulda-matchers'
+   require 'factory_girl'
+   require 'ffaker'
 
    ENV[ 'RAILS_ENV' ] ||= 'cucumber'
    DatabaseCleaner.strategy = :truncation
@@ -20,6 +22,10 @@ Spork.prefork do
          with.library :active_record
       end
    end
+
+   FactoryGirl.definition_file_paths = %w(features/factories)
+   FactoryGirl.lint
+   World(FactoryGirl::Syntax::Methods)
 
    at_exit { DatabaseCleaner.clean }
 end

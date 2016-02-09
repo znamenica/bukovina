@@ -7,13 +7,16 @@ gemspec
 gem 'rdoba', :path => '/usr/local/home/majioa/git/rdoba'
 #gem 'petrovich', :path => '/usr/local/home/majioa/git/petrovich-ruby/'
 
+gem 'flag_shih_tzu'
+
 group :development do
    gem 'cucumber'
    gem 'spork'
    gem 'shoulda-matchers', github: 'majioa/shoulda-matchers'
-   gem 'flag_shih_tzu'
    gem 'rspec-expectations'
    gem 'activerecord', '~> 4.2.5'
+   gem 'factory_girl'
+   gem 'ffaker'
    gem 'database_cleaner'
    gem 'sqlite3'
    # To fix CVE-2015-7499 - HEAP-BASED BUFFER OVERFLOW VULNERABILITY IN LIBXML2 and others in LIBXML2

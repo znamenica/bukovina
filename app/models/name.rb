@@ -3,7 +3,8 @@ class Name < ActiveRecord::Base
    has_many :memory_names
    belongs_to :similar_to, class_name: :Name
 
-   enum language_code: [ :цс, :ру, :ср, :гр, :ан, :лт ]
+   enum language_code: [ :цс, :ру, :ср, :гр, :ан, :ла, :чх, :ир, :си, :бг,
+      :ит, :ар, :ив, :рм ]
 
    validates :text, format: { with: /[^\s]/ }
    validates :language_code, inclusion: { in: self.language_codes }
