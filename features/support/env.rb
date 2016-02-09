@@ -5,6 +5,7 @@ Spork.prefork do
 
    require 'pry'
    require 'database_cleaner'
+   require 'database_cleaner/cucumber'
    require 'rspec/expectations'
    require 'shoulda-matchers'
    require 'factory_girl'
@@ -19,14 +20,13 @@ Spork.prefork do
       config.integrate do |with|
          with.test_framework :rspec_exp
          with.library :active_model
-         with.library :active_record
-      end
-   end
+         with.library :active_record ; end ; end
 
    FactoryGirl.definition_file_paths = %w(features/factories)
    FactoryGirl.lint
    World(FactoryGirl::Syntax::Methods)
 
-   at_exit { DatabaseCleaner.clean }
-end
+   Around do |scenario, block|
+      DatabaseCleaner.cleaning( &block ) ; end
 
+   at_exit { DatabaseCleaner.clean } ; end

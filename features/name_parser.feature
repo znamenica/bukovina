@@ -59,7 +59,7 @@
          - :name:
              :language_code: :ру
              :text: Алексей
-           :feasibly: true
+           :feasibly: :feasible
          """
 
    Сценарий: Альтернативные имена
@@ -96,6 +96,7 @@
          - :name:
              :language_code: :ру
              :text: Алексий
+           :state: :иноческое
         - :name:
              :language_code: :ру
              :text: Феофан
@@ -148,7 +149,7 @@
          - :name:
              :language_code: :ру
              :text: Алексей
-           :feasibly: true
+           :feasibly: :feasible
            :state: :наречёное
          """
 
@@ -238,7 +239,7 @@
          - :name:
              :language_code: :ру
              :text: Алексей
-           :feasibly: true
+           :feasibly: :feasible
            :state: :наречёное
          - :name:
              :language_code: :ру
@@ -277,7 +278,7 @@
          - :name:
              :language_code: :ру
              :text: Алексей
-           :feasibly: true
+           :feasibly: :feasible
            :state: :наречёное
          """
 
@@ -319,18 +320,20 @@
          - :name:
              :language_code: :ру
              :text: Сергей
-           :feasibly: true
+           :feasibly: :feasible
            :state: :наречёное
            :mode: :ored
          - :name:
              :language_code: :ру
              :text: Алексей
+           :feasibly: :feasible
+           :state: :наречёное
          """
 
    Сценарий: Набор разноязычных имён
       Допустим есть строки имени:
          """
-         ру: в крещении Валентин, Алексей, , в наречении Валерий (Валера, Валерик), Зема
+         ру: в крещении Валентин, Алексей, , в наречении Валерий (Валерик, Валера), Зема
          гр: ', Αλέξιος,,,'
          ср: ',,Сергије,,'
          ан: 'Valentin, , Sergius, Valery(Valerick),'
@@ -348,31 +351,33 @@
          - &1
            :language_code: :ру
            :text: Валерий
-         - &4
+         - &5
            :language_code: :ру
-           :text: Валера
+           :text: Валерик
            :similar_to: *1
          - :language_code: :ру
-           :text: Валерик
+           :text: Валера
            :similar_to: *1
          - :language_code: :ру
            :text: Зема
          - :language_code: :гр
            :text: Αλέξιος
            :similar_to: *2
-         - :language_code: :ср
+         - &4
+           :language_code: :ср
            :text: Сергије
          - :language_code: :ан
            :text: Valentin
            :similar_to: *3
          - :language_code: :ан
            :text: Sergius
+           :similar_to: *4
          - :language_code: :ан
            :text: Valery
            :similar_to: *1
          - :language_code: :ан
            :text: Valerick
-           :similar_to: *4
+           :similar_to: *5
          """
 
       А обработанные данные памятного имени будут выглядеть как:
