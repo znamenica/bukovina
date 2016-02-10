@@ -1,8 +1,4 @@
-Допустим(/^есть строка имени:$/) do |string|
-   @namer = Bukovina::Parsers::Name.new
-   @res = @namer.parse( string.strip ) ; end
-
-Допустим(/^есть строки имени:$/) do |string|
+Допустим(/^есть строк[иа] имени:$/) do |string|
    @namer = Bukovina::Parsers::Name.new
    @res = @namer.parse( YAML.load( string ) ) ; end
 

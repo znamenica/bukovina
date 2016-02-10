@@ -25,6 +25,10 @@ class Bukovina::Parsers::Name
    # TODO добавить проверку регвыра в проверяльщик модели
    RUSSIAN_CAPITAL = 'А-ЯЁ'
    RUSSIAN_STROKE = 'а-яё'
+   RUSSIAN_ACCENT = '́'
+   CSLAV_CAPITAL = 'А-ЬЮЅІѠѢѦѮѰѲѴѶѸѺѼѾꙖꙊ'
+   CSLAV_STROKE = 'а-ьюєѕіѡѣѧѯѱѳѵѷѹѻѽѿꙗꙋ'
+   CSLAV_ACCENT = '̀́̓̔҃҇҈҉꙽'
    SERBIAN_CAPITAL = 'ЂЈ-ЋЏА-ИК-Ш'
    SERBIAN_STROKE = 'ђј-ћа-ик-ш'
    GREEK_CAPITAL = 'ͶͲΑ-ΫϏϒϓϔϘϚϜϠϞϴϷϹϺϾϿἈ-ἏἘ-ἝἨ-ἯἸ-ἿὈ-ὍὙ-ὟὨ-Ὧᾈ-ᾏᾘ-ᾟᾨ-ᾯᾸ-ᾼῈ-ῌῘ-ΊῨ-ῬῸ-ῼΩΆ-Ώ'
@@ -45,21 +49,24 @@ class Bukovina::Parsers::Name
    ITALIAN_STROKE = 'a-il-vz'
    ARMENIAN_CAPITAL = 'Ա-Ֆ'
    ARMENIAN_STROKE = 'ա-և'
-   IVERIAN_CAPITAL = 'Ⴀ-Ⴭ'
    IVERIAN_STROKE = 'ა-ჺჽ'
    ROMANIAN_CAPITAL = 'A-ZĂÂÎȘȚ'
    ROMANIAN_STROKE = 'a-zăâîșț'
+   OLD_ENGLISH_CAPITAL = 'A-IL-PR-UW-YÆÐꝽÞǷĊĠĀĒĪŌŪ'
+   OLD_ENGLISH_STROKE = 'a-il-pr-uw-yæðᵹſþƿċġāēīūō'
 
-   UPCHAR = RUSSIAN_CAPITAL + SERBIAN_CAPITAL + GREEK_CAPITAL + GREEK_ACCENT +
+   UPCHAR = RUSSIAN_CAPITAL + CSLAV_CAPITAL + SERBIAN_CAPITAL + GREEK_CAPITAL +
       ENGLISH_CAPITAL + LATIN_CAPITAL + CZECH_CAPITAL + ARMENIAN_CAPITAL +
-      IVERIAN_CAPITAL + ROMANIAN_CAPITAL
-   DOWNCHAR = RUSSIAN_STROKE + SERBIAN_STROKE + GREEK_STROKE + GREEK_ACCENT +
+      ROMANIAN_CAPITAL + OLD_ENGLISH_CAPITAL
+   DOWNCHAR = RUSSIAN_STROKE + CSLAV_STROKE + SERBIAN_STROKE + GREEK_STROKE +
       ENGLISH_STROKE + LATIN_STROKE + CZECH_STROKE + ARMENIAN_STROKE +
-      IVERIAN_STROKE + ROMANIAN_STROKE
+      IVERIAN_STROKE + ROMANIAN_STROKE + OLD_ENGLISH_STROKE
+   ACCENT = GREEK_ACCENT + RUSSIAN_ACCENT + CSLAV_ACCENT
    CHAR = DOWNCHAR + UPCHAR
 
    MATCH_TABLE = {
-      :ру => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}][#{RUSSIAN_STROKE}]*$/,
+      :ру => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}][#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}]*$/,
+      :цс => /^[#{CSLAV_CAPITAL}#{CSLAV_STROKE}#{CSLAV_ACCENT}][#{CSLAV_STROKE}#{CSLAV_ACCENT}]*$/,
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}][#{SERBIAN_STROKE}]*$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}][#{GREEK_STROKE}#{GREEK_ACCENT}]*$/,
       :ан => /^[#{ENGLISH_CAPITAL}#{ENGLISH_STROKE}][#{ENGLISH_STROKE}]*$/,
@@ -70,11 +77,13 @@ class Bukovina::Parsers::Name
       :бг => /^[#{BULGARIAN_CAPITAL}#{BULGARIAN_STROKE}][#{BULGARIAN_STROKE}]*$/,
       :ит => /^[#{ITALIAN_CAPITAL}#{ITALIAN_STROKE}][#{ITALIAN_STROKE}]*$/,
       :ар => /^[#{ARMENIAN_CAPITAL}#{ARMENIAN_STROKE}][#{ARMENIAN_STROKE}]*$/,
-      :ив => /^[#{IVERIAN_CAPITAL}#{IVERIAN_STROKE}][#{IVERIAN_STROKE}]*$/,
+      :ив => /^[#{IVERIAN_STROKE}]+$/,
       :рм => /^[#{ROMANIAN_CAPITAL}#{ROMANIAN_STROKE}][#{ROMANIAN_STROKE}]*$/,
+      :са => /^[#{OLD_ENGLISH_CAPITAL}#{OLD_ENGLISH_STROKE}][#{OLD_ENGLISH_STROKE}]*$/
    }
 
-   RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)?(?:\s*([,()\/\-])\s*)?/
+#   RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)?(?:\s*([,()\/\-])\s*)?/
+   RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{CHAR}][#{DOWNCHAR}#{ACCENT}]*)?(?:\s*([,()\/\-])\s*)?/
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
@@ -182,11 +191,11 @@ private
          models: { name: [ name ], memory_name: [ { name: name } ] } }
 
       nameline.scan( RE ) do |(pref, state, token, sepa)|
-#         binding.pry
          apply_pref( pref, context )
          apply_state( state, context )
          apply_token( validate_token( token, context ), context )
          apply_separator( token, sepa&.strip, context ) ; end
+#      binding.pry
 
       context[ :models ]
 

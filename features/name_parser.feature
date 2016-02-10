@@ -434,3 +434,88 @@
          """
       То обработанных данных имени не будет
       И в списке ошибок будет "ошибка неверного перечислителя"
+
+   Сценарий: Имя на разных возможных языках
+      Допустим есть строка имени:
+         """
+         ру: Нина
+         цс: Нина
+         гр: Νίνα (Νίνω)
+         ив: 'ნინმ (ნინო)'
+         ср: Нина
+         ан: Nina
+         ла: Nina
+         чх: Nina
+         ир: Nina
+         си: Nina
+         бг: Нина
+         ит: Nina
+         ар: Նունէ
+         рм: Nina
+         са: Nina
+         """
+      То обработанные данные имени будут выглядеть как:
+         """
+         ---
+         - &1
+           :language_code: :ру
+           :text: Нина
+         - :language_code: :цс
+           :text: Нина
+           :similar_to: *1
+         - &2
+           :language_code: :гр
+           :text: Νίνα
+           :similar_to: *1
+         - :language_code: :гр
+           :text: Νίνω
+           :similar_to: *2
+         - &3
+           :language_code: :ив
+           :text: ნინმ
+           :similar_to: *1
+         - :language_code: :ив
+           :text: ნინო
+           :similar_to: *3
+         - :language_code: :ср
+           :text: Нина
+           :similar_to: *1
+         - :language_code: :ан
+           :text: Nina
+           :similar_to: *1
+         - :language_code: :ла
+           :text: Nina
+           :similar_to: *1
+         - :language_code: :чх
+           :text: Nina
+           :similar_to: *1
+         - :language_code: :ир
+           :text: Nina
+           :similar_to: *1
+         - :language_code: :си
+           :text: Nina
+           :similar_to: *1
+         - :language_code: :бг
+           :text: Нина
+           :similar_to: *1
+         - :language_code: :ит
+           :text: Nina
+           :similar_to: *1
+         - :language_code: :ар
+           :text: Նունէ
+           :similar_to: *1
+         - :language_code: :рм
+           :text: Nina
+           :similar_to: *1
+         - :language_code: :са
+           :text: Nina
+           :similar_to: *1
+         """
+
+      А обработанные данные памятного имени будут выглядеть как:
+         """
+         ---
+         - :name:
+             :language_code: :ру
+             :text: Нина
+         """

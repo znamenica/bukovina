@@ -4,7 +4,7 @@ class Name < ActiveRecord::Base
    belongs_to :similar_to, class_name: :Name
 
    enum language_code: [ :цс, :ру, :ср, :гр, :ан, :ла, :чх, :ир, :си, :бг,
-      :ит, :ар, :ив, :рм ]
+      :ит, :ар, :ив, :рм, :са ]
 
    validates :text, format: { with: /[^\s]/ }
    validates :language_code, inclusion: { in: self.language_codes }
