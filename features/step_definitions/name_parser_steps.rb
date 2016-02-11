@@ -12,7 +12,7 @@
    expect( @res ).to be_nil ; end
 
 То(/^в списке ошибок будет "([^"]*)"$/) do |text|
-   name = Bukovina::Parsers::Name
+   name = Bukovina::Parsers
    types = {
       'ошибка индекса' => name::BukovinaIndexError,
       'ошибка неверного языка' => name::BukovinaInvalidLanguageError,
