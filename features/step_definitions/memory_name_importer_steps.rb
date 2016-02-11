@@ -15,10 +15,4 @@
 
    hashes.each do |h|
       h[ 'name' ] = Name.where( text: h.delete( 'name' ) ).first
-      if h[ 'state' ]
-         h[ 'state' ] = MemoryName.states[ h[ 'state' ] ] ; end
-      if h[ 'mode' ]
-         h[ 'mode' ] = MemoryName.modes[ h[ 'mode' ] ] ; end
-      if h[ 'feasibly' ]
-         h[ 'feasibly' ] = MemoryName.feasiblies[ h[ 'feasibly' ] ] ; end
       expect( MemoryName.where( h ).count ).to be_eql( 1 ) ; end ; end

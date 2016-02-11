@@ -14,7 +14,7 @@ group :development do
    gem 'spork'
    gem 'shoulda-matchers', github: 'majioa/shoulda-matchers'
    gem 'rspec-expectations'
-   gem 'activerecord', '~> 4.2.5'
+   gem 'activerecord', github: 'rails/rails', branch: 'v5.0.0.beta2'
    gem 'factory_girl'
    gem 'ffaker'
    gem 'database_cleaner'

@@ -2,3 +2,6 @@
 cucumber:
    adapter: sqlite3
    database: db/cucumber.sqlite3
+development:
+   adapter: sqlite3
+   database: db/development.sqlite3

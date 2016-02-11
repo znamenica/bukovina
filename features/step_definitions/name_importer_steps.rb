@@ -21,11 +21,6 @@
          value && value.to_a[ 0 ] || nil ; end.compact.to_h ; end
 
    attrs_list.each do |attrs|
-      if attrs.has_key?( :language_code )
-         value = /^:(.*)/ =~ attrs[ :language_code ] && $1.to_sym ||
-            attrs[ :language_code ]
-         attrs[ :language_code ] = Name.language_codes[ value ] ; end
-
       similar_to = attrs.delete( :similar_to )
       expect( Name.where( attrs ).count ).to be_eql( 1 )
       if similar_to

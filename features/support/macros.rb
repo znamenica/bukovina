@@ -18,10 +18,7 @@ module MacrosSupport
    def extract_key_to r, key
       similar_to = r.delete( key )
       if similar_to
-         s = similar_to.deep_dup
-         s[ :language_code ] =
-         Name.language_codes[ similar_to[ :language_code ] ]
-         r[ key ] = Name.where( s ).first ; end ; end
+         r[ key ] = Name.where( similar_to.deep_dup ).first ; end ; end
 
    def merge_array table, options = {}
       table.map do |e|
