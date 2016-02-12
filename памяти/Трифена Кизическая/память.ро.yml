@@ -1,12 +1,20 @@
 ---
 Трифена Кизическая:
-   имя: Трифена
+   имя:
+      ру: Трифена
+      гр: Τρυφαίνη
    отчество: Анастасьевна
-   описание: жительница Кизическая; растерзана быком
+   описание:
+      ру: жительница Кизическая; растерзана быком от язычников
+      гр: την Κύζικο
    чин: мц
-   собор: миз
+   собор: миз?
    вики: http://drevo-info.ru/articles/3341.html
-   бытие: http://azbyka.ru/days/sv-trifena-kizicheskaja
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/jan31-trifena.html
+       - http://azbyka.ru/days/sv-trifena-kizicheskaja
+      гр: http://www.saint.gr/3574/saint.aspx
    образ:
     - http://pravicon.com/icon-3010
     - http://azbyka.ru/days/assets/img/saints/6341/p18er09auf1scm1efg18squ8avkf4.jpg
@@ -17,4 +25,5 @@
       образ: http://azbyka.ru/days/assets/img/saints/6341/p18er09auel9u1n1nbae8fr7lb3.jpg
    помин:
       дата: 31.01
+      календарь: рпц,греч
       описание: прств
