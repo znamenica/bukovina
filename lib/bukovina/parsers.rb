@@ -9,6 +9,7 @@ module Bukovina::Parsers
    class BukovinaInvalidTokenError < BukovinaError; end
    class BukovinaInvalidEnumeratorError < BukovinaError; end
    class BukovinaInvalidVariatorError < BukovinaError; end
+   class BukovinaFalseSyntaxError < BukovinaError; end
    class BukovinaEmptyRecord < BukovinaError; end
    class BukovinaNullNameLine < BukovinaError; end
 
@@ -39,6 +40,7 @@ module Bukovina::Parsers
    ITALIAN_STROKE = 'a-il-vz'
    ARMENIAN_CAPITAL = 'Ա-Ֆ'
    ARMENIAN_STROKE = 'ա-և'
+   IVERIAN_CAPITAL = 'ა-ჺჽ'
    IVERIAN_STROKE = 'ა-ჺჽ'
    ROMANIAN_CAPITAL = 'A-ZĂÂÎȘȚ'
    ROMANIAN_STROKE = 'a-zăâîșț'
@@ -47,7 +49,7 @@ module Bukovina::Parsers
 
    UPCHAR = RUSSIAN_CAPITAL + CSLAV_CAPITAL + SERBIAN_CAPITAL + GREEK_CAPITAL +
       ENGLISH_CAPITAL + LATIN_CAPITAL + CZECH_CAPITAL + ARMENIAN_CAPITAL +
-      ROMANIAN_CAPITAL + OLD_ENGLISH_CAPITAL
+      ROMANIAN_CAPITAL + OLD_ENGLISH_CAPITAL + IVERIAN_CAPITAL
    DOWNCHAR = RUSSIAN_STROKE + CSLAV_STROKE + SERBIAN_STROKE + GREEK_STROKE +
       ENGLISH_STROKE + LATIN_STROKE + CZECH_STROKE + ARMENIAN_STROKE +
       IVERIAN_STROKE + ROMANIAN_STROKE + OLD_ENGLISH_STROKE
@@ -55,11 +57,11 @@ module Bukovina::Parsers
    CHAR = DOWNCHAR + UPCHAR
 
    MATCH_TABLE = {
-      :ру => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}][#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}]*$/,
+      :ру => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}]+$/,
       :цс => /^[#{CSLAV_CAPITAL}#{CSLAV_STROKE}#{CSLAV_ACCENT}][#{CSLAV_STROKE}#{CSLAV_ACCENT}]*$/,
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}][#{SERBIAN_STROKE}]*$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}][#{GREEK_STROKE}#{GREEK_ACCENT}]*$/,
-      :ан => /^[#{ENGLISH_CAPITAL}#{ENGLISH_STROKE}][#{ENGLISH_STROKE}]*$/,
+      :ан => /^[#{ENGLISH_CAPITAL}#{ENGLISH_STROKE}]+$/,
       :чх => /^[#{CZECH_CAPITAL}#{CZECH_STROKE}#{CZECH_ACCENT}][#{CZECH_STROKE}#{CZECH_ACCENT}]*$/,
       :ир => /^[#{IRISH_CAPITAL}#{IRISH_STROKE}][#{IRISH_STROKE}]*$/,
       :си => /^[#{IRISH_CAPITAL}#{IRISH_STROKE}][#{IRISH_STROKE}]*$/,

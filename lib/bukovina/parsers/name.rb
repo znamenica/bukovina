@@ -14,9 +14,9 @@ class Bukovina::Parsers::Name
 #   RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)?(?:\s*([,()\/\-])\s*)?/
    RE = /(вид\.)?
          (#{STATES.keys.join('|').gsub(/\s+/,'\s')})?
-         (?:\s*)
-         ([#{Parsers::CHAR}][#{Parsers::DOWNCHAR}#{Parsers::ACCENT}]*)?
-         (?:\s*([,()\/\-])\s*)?/x
+         \s*
+         ([#{Parsers::UPCHAR}][#{Parsers::CHAR}#{Parsers::ACCENT}\s]*)?
+         (?:\s*([,()\/\-])\s*|\z)/x
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
@@ -117,17 +117,34 @@ private
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
 
-   def parse_line nameline, language_code = 'ру'
+   def parse_error line
+      error =
+      if line !~ /\A\s*,\s*$\z/
+         Parsers::BukovinaFalseSyntaxError.new( line ) ; end
+      @errors << error ; end
+
+   def parse_line line, language_code = 'ру'
       name = { language_code: language_code.to_sym }
       context = {
          language_code: language_code.to_sym,
          models: { name: [ name ], memory_name: [ { name: name } ] } }
 
-      nameline.scan( RE ) do |(pref, state, token, sepa)|
-         apply_pref( pref, context )
-         apply_state( state, context )
-         apply_token( validate_token( token, context ), context )
-         apply_separator( token, sepa&.strip, context ) ; end
+      while ! line.empty? do
+         match = RE.match( line )
+
+#         binding.pry
+         if ! match
+            parse_error( line )
+            match = [ nil, nil, nil, nil, line ] ; end
+         if match.is_a?( MatchData ) && match.begin( 0 ) > 0
+            parse_error( line[ 0...match.begin( 0 ) ] ) ; end
+
+         apply_pref( match[ 1 ], context )
+         apply_state( match[ 2 ], context )
+         apply_token( validate_token( match[ 3 ]&.strip, context ), context )
+         apply_separator( match[ 3 ], match[ 4 ]&.strip, context )
+         line = line[ match.end( 0 )..-1 ] ; end
+#      binding.pry
 
       context[ :models ]
 
@@ -221,7 +238,7 @@ private
          if s
             next s; end
 
-         if re =~ token
+         if re =~ token&.gsub( /\s+/,'' )
 #            binding.pry
             if context[ :models ][ :name ].last[ :language_code ] == code.to_sym
                token
@@ -231,8 +248,8 @@ private
 #                  "for the #token '#{token}'" ;
                end ; end ; end
 
-#      binding.pry
       if token && ! matched
+#         binding.pry
          raise Parsers::BukovinaInvalidCharError, "Invalid char(s) for language '"
             "#{context[ :attr ].last[ :language_code ]}' specified" ; end
             

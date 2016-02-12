@@ -3,9 +3,16 @@ class Bukovina::Parsers::Patronymic
 
    Parsers = Bukovina::Parsers
 
-   RE = /(вид\.)?(?:\s*)
-         ([#{Parsers::CHAR}][#{Parsers::DOWNCHAR}#{Parsers::ACCENT}]*)?
-         (?:\s*([,()\/\-])\s*)?/x
+   STATES = {
+      'по отцу' => :отчество,
+      'по куму' => :кумство,
+   }
+
+   RE = /(вид\.)?
+         (#{STATES.keys.join('|').gsub(/\s+/,'\s')})?
+         \s*
+         ([#{Parsers::UPCHAR}][#{Parsers::CHAR}#{Parsers::ACCENT}]*)?
+         (?:\s*([,()\/\-])\s*|\z)/x
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
@@ -92,17 +99,34 @@ class Bukovina::Parsers::Patronymic
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
 
-   def parse_line nameline, language_code = 'ру'
+   def parse_error line
+      error =
+      if line !~ /\A\s*,\s*$\z/
+         Parsers::BukovinaFalseSyntaxError.new( line ) ; end
+      @errors << error ; end
+
+   def parse_line line, language_code = 'ру'
       name = { language_code: language_code.to_sym }
       context = {
          language_code: language_code.to_sym,
          models: { name: [ name ], memory_name: [ { name: name } ] } }
 
-      nameline.scan( RE ) do |(pref, token, sepa)|
-         apply_pref( pref, context )
-         apply_state( nil, context )
-         apply_token( validate_token( token, context ), context )
-         apply_separator( token, sepa&.strip, context ) ; end
+      while ! line.empty? do
+         match = RE.match( line )
+
+#        binding.pry
+         if ! match
+            parse_error( line )
+            match = [ nil, nil, nil, nil, line ] ; end
+         if match.is_a?( MatchData ) && match.begin( 0 ) > 0
+            parse_error( line[ 0...match.begin( 0 ) ] ) ; end
+
+         apply_pref( match[ 1 ], context )
+         apply_state( match[ 2 ], context )
+         apply_token( validate_token( match[ 3 ]&.strip, context ), context )
+         apply_separator( match[ 3 ], match[ 4 ]&.strip, context )
+         line = line[ match.end( 0 )..-1 ] ; end
+#     binding.pry
 
       context[ :models ]
 
@@ -169,7 +193,8 @@ class Bukovina::Parsers::Patronymic
          end ; end
 
    def apply_state state, context
-      context[ :models ][ :memory_name ].last[ :state ] = :отчество ; end
+      context[ :models ][ :memory_name ].last[ :state ] =
+      STATES[ state ] || :отчество ; end
 
    def validate_token token, context
       matched =

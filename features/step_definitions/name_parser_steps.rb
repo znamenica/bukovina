@@ -11,13 +11,15 @@
 То(/^обработанных данных имени не будет$/) do
    expect( @res ).to be_nil ; end
 
-То(/^в списке ошибок будет "([^"]*)"$/) do |text|
+То(/^в списке ошибок будет (?:(\d+) )?ошибк[аи] "([^"]*)"$/) do |count, text|
    name = Bukovina::Parsers
    types = {
-      'ошибка индекса' => name::BukovinaIndexError,
-      'ошибка неверного языка' => name::BukovinaInvalidLanguageError,
-      'ошибка неверной буквы языка' => name::BukovinaInvalidCharError,
-      'ошибка неверного признака' => name::BukovinaInvalidTokenError,
-      'ошибка неверного перечислителя' => name::BukovinaInvalidEnumeratorError,
+      'индекса' => name::BukovinaIndexError,
+      'неверного языка' => name::BukovinaInvalidLanguageError,
+      'неверной буквы языка' => name::BukovinaInvalidCharError,
+      'неверного признака' => name::BukovinaInvalidTokenError,
+      'неверного перечислителя' => name::BukovinaInvalidEnumeratorError,
+      'ложного правописания' => name::BukovinaFalseSyntaxError,
    }
-   expect( @namer.errors ).to match_array( [ types[ text ] ] ) ; end
+   value = Array.new( ( count || 1 ).to_i ) { types[ text ] }
+   expect( @namer.errors ).to match_array( value ) ; end

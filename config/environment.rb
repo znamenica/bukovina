@@ -62,6 +62,7 @@ module Rails
          errors = {}
          pass = true
          patron = Bukovina::Parsers::Patronymic.new
+         namer = Bukovina::Parsers::Name.new
          Dir.glob( 'памяти/**/память.*.yml' ).each do |f|
             puts "Память: #{f}"
             m = begin
@@ -76,8 +77,6 @@ module Rails
                   memory.short_name = short_name ; end
 
                data = m[ short_name ]
-=begin
-               namer = Bukovina::Parsers::Name.new
                attr_lists = namer.parse( data[ 'имя' ] )
 
                if attr_lists
@@ -88,7 +87,8 @@ module Rails
                   attr_lists[ :memory_name ].each do |attrs|
                      Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
                      end ; end
-=end
+               namer.errors.each { |e| errors[ f ] = e }.clear
+
                attr_lists = patron.parse( data[ 'отчество' ] )
 
                if attr_lists
@@ -100,8 +100,6 @@ module Rails
                      Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
                      end ; end
 
-
-#               namer.errors.each { |e| errors[ f ] = e }.clear
                patron.errors.each { |e| errors[ f ] = e }.clear
                end ; end
    

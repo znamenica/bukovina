@@ -3,7 +3,7 @@ class MemoryName < ActiveRecord::Base
    belongs_to :name
 
    enum state: [ :наречёное, :крещенское, :чернецкое, :иноческое, :схимное,
-      :отчество ]
+      :отчество, :кумство ]
    enum feasibly: [ :non_feasible, :feasible ]
    enum mode: [ :ored, :prefix ]
 
