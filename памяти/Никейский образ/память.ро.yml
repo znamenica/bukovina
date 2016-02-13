@@ -1,17 +1,21 @@
 ---
 Никейский образ:
-   имя: Никейской, Бысть чрево Твое святая трапеза
+   имя: Никейский, Бысть Чрево Твое Святая Трапеза
    описание: образ Богородицы
    чин: обр
-   собор: 1вс
+   собор: 1вс?
    вики: http://drevo-info.ru/articles/5923.html
-   бытие: http://azbyka.ru/days/ikona-nikejskaja-byst-chrevo-tvoe-svjataja-trapeza
+   бытие:
+    - http://calendar.rop.ru/icons1/may28-ikona-nikejskaya.html
+    - http://azbyka.ru/days/ikona-nikejskaja-byst-chrevo-tvoe-svjataja-trapeza
+   служба:
+    - Никейскому образу служба
+    - http://azbyka.ru/days/assets/upload/minei/05/minea_05_28.pdf
    событие:
       год: 304
       описание: явл
+      место: Никея. Вифиния (ныне Изник. Турция)
    помин:
       дата: 28.05
+      календарь: рпц
       описание: само
-      служба:
-       - Никейскию образу служба
-       - http://azbyka.ru/days/assets/upload/minei/05/minea_05_28.pdf

@@ -1,21 +1,35 @@
 ---
 Аввакум Иисусов:
-   имя: Аввакум (Объемля?)
+   имя:
+      ру: Аввакум
+      гр: Αββακούμ
    отчество: Иисусович
-   описание: имя от глагола "обнимать", или от аккадского садового растения, пророк из
-      колена Симеонова
+   описание: 'имя от глагола "обнимать", или от аккадского садового растения, пророк из
+      колена Симеонова, т.е. имя Аввакум вид.Объемля'
    чин: прор
    собор: 12мп
    вики: http://drevo-info.ru/articles/4088.html
-   бытие: http://azbyka.ru/days/sv-avvakum
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/dec02-avvakum.html
+       - http://azbyka.ru/days/sv-avvakum
+      гр: http://www.saint.gr/3123/saint.aspx
    образ:
     - http://drevo-info.ru/images/002/007181.jpg
     - http://azbyka.ru/days/assets/img/saints/5108/baf4e884fb90214f69586de5b1a1ab5d.jpg
     - http://azbyka.ru/days/assets/img/saints/5108/8b879b03f61b4a89e87d552d741577d6.jpg
     - http://azbyka.ru/days/assets/img/saints/5108/b7eb9e88eff1207948fe233c34a8ec34.jpg
     - http://azbyka.ru/days/assets/img/saints/5108/fb8f760c943635a30dcdf096afde65eb.jpg
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Άγιον%20Όρος/Καρυές/Παχωμαίοι/Τοιχογραφίες/Προφήτες/Προφήτης%20Αββακούμ%201.jpg
+    - http://www.saint.gr/photos/standard/1202/ProbitisAbbakoum02.jpg
+    - http://www.saint.gr/photos/standard/1202/ProbitisAbbakoum01.jpg
+    - http://icones.gr/wp-content/uploads/2014/11/Profitis-Avakoum.jpg [(Ι. Ν. Αγ. Σπυρίδωνα Νεοχωρόπουλο Ιωαννίνων .) - Π. Κούβαρη και Ι. Χ. Θωμάς© (icones.gr)]
+    - https://drevo-info.ru/images/002/007181.jpg [Мастерская Дионисия. Икона. Русь. 1502 г. Из Рождественского собора Ферапонтова монастыря. Кирилло - Белозерский музей]
+   служба:
+    - Аввакуму Иисусову служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_02.pdf
    событие:
-    - год: до 640 до нэ
+    - год: 560 до нэ-640 до нэ
       описание: ржд
       место: Иудея
     - год: 609-598 до нэ
@@ -24,7 +38,5 @@
       описание: обр
    помин:
       дата: 02.12
+      календарь: рпц,греч
       описание: само
-      служба:
-       - Аввакуму Иисусову служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_02.pdf

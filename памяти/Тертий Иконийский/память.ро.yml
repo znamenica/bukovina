@@ -1,15 +1,22 @@
 ---
 Тертий Иконийский:
-   имя: Тертий, или Терентий
-   описание: апостол от 70-ти; святитель Иконийский
+   имя:
+      ру: Терентий/Тертий
+      гр: Τερέντιος/
+   описание:
+      ру: апостол от 70-ти; святитель Иконийский
+      гр: επίσκοπος Ικονίου
    чин: ап
-   собор: ап70,мсвтт,лика
+   собор: ап70,мсвтт?,лика?,еп5а,тмиа
    вики:
     - http://drevo-info.ru/articles/1541.html
     - http://ru.wikipedia.org/wiki/Тертий
    бытие:
-    - http://azbyka.ru/days/sv-tertij-terentij
-    - http://azbyka.ru/days/sv-terentij-1
+      ру:
+       - http://calendar.rop.ru/svyat1/jun21-terentij.html
+       - http://azbyka.ru/days/sv-tertij-terentij
+       - http://azbyka.ru/days/sv-terentij-1
+      гр: http://www.saint.gr/606/saint.aspx
    образ:
     - http://pravicon.com/icon-2988
     - http://azbyka.ru/days/assets/img/saints/3369/p18a0r0j3a1f6c1t9e78j8jv7dh3.jpg
@@ -19,12 +26,6 @@
       место: Икония. Ликаония (ныне Конья. Турция)
       образ: http://azbyka.ru/days/assets/img/saints/3369/p18a0r0j3ask81c281pie1qt51dkp4.jpg
    помин:
-    - дата: 21.06
+      дата: 21.06
+      календарь: рпц,греч
       описание: само
-    - дата: 30.10
-      описание: само
-    - дата: 10.11
-      описание: само
-      служба:
-       - Ераст Панеадский/Ерасту Панеадскому, Олимпу Римскому, Иродиону Патарскому, Сосипатру Керкирскому, Кварту Виритскому и Тертию Иконийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_10.pdf

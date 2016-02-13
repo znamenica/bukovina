@@ -3,12 +3,18 @@
    имя: В Скорбех и Печалех Утешение
    описание: образ Богородицы
    чин: обр
+   собор: аф?,втпд?,слбд?,спб?
    вики: http://drevo-info.ru/articles/8082.html
-   бытие: http://azbyka.ru/days/ikona-v-skorbeh-i-pechaleh-uteshenie
+   бытие:
+    - http://calendar.rop.ru/icons1/nov19-ikona-uteshenie.html
+    - http://azbyka.ru/days/ikona-v-skorbeh-i-pechaleh-uteshenie
    образ:
     - http://azbyka.ru/days/assets/img/icons/274/p188an4aka1voq1p4b1b6esubg6b5.jpg
     - http://azbyka.ru/days/assets/img/icons/274/p188an4akbs4fiiq6c411csddg7.jpg
     - http://azbyka.ru/days/assets/img/icons/274/p188an4akb5rb1cs8cpm10dftie8.jpg
+   служба:
+    - В Скорбех и Печалех Утешению образу служба
+    - http://azbyka.ru/days/caa/320
    событие:
     - год: 1654
       описание: прен
@@ -29,7 +35,5 @@
       описание: утр
    помин:
       дата: 19.11
+      календарь: рпц
       описание: чудо
-      служба:
-       - В Скорбех и Печалех Утешению образу служба
-       - http://azbyka.ru/days/caa/320

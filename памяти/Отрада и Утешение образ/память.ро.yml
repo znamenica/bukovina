@@ -1,12 +1,30 @@
 ---
-Отрада и Утешение образ:
-   имя: Отрада и Утешение
-   опсиание: образ Богородицы
+Отрада образ:
+   имя:
+      ру: Отрада/Утешение
+      гр: Παραμυθία/
+   опсиание:
+      ру: образ Богородицы
+      гр: Σύναξη της Υπεραγίας Θεοτόκου
    чин: обр
    вики: http://drevo-info.ru/articles/4976.html
-   бытие: http://azbyka.ru/days/ikona-otrada-uteshenie-vatopedskaja
-   помин:
+   бытие:
+      ру:
+       - http://calendar.rop.ru/icons1/jan21-ikona-vatopedskaya.html
+       - http://azbyka.ru/days/ikona-otrada-uteshenie-vatopedskaja
+      гр: http://www.saint.gr/1297/saint.aspx
+   образ:
+    - http://www.saint.gr/photos/standard/0121/PanagiaParamythia02.jpg [Λυδία Γουριώτη© (lydiagourioti-iconography.blogspot.com)]
+    - http://www.saint.gr/photos/standard/0121/PanagiaParamythia01.jpg
+    - http://www.zografiki.com/components/com_virtuemart/shop_image/product/_________________4a5355a85caab.jpg [www.zografiki.com©]
+    - http://vatopaidi.files.wordpress.com/2010/05/panagia-paramythia-monis-kykkou2.jpg [Ι. Μ. Κύκκου]
+    - https://drevo-info.ru/images/001/001758.jpg
+   служба: Отраде образу служба
+   событие:
       год: 807
+      описание: чудо
+      место: Афон
+   помин:
       дата: 21.01
-      описание: явл
-      служба: Отраде и Утешению образу служба
+      календарь: рпц,греч
+      описание: чудо

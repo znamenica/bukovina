@@ -1,16 +1,23 @@
 ---
 Зачатие Богородицы:
-   имя: Зачатие Богородицы
+   описание:
+      ру: Зачатие Богородицы Анною Праведною
+      гр: Σύλληψη της Αγίας Άννης
    чин: сбт
-   собор: 12пр,брак,бдц,чдрд
+   собор: 12пр?,брак?,бдц?,чдрд?
    вики:
     - http://drevo-info.ru/articles/632.html
     - https://ru.wikipedia.org/wiki/Зачатие_Богородицы
-   бытие: http://days.pravoslavie.ru/Life/life3089.htm
+   бытие:
+      ру: http://days.pravoslavie.ru/Life/life3089.htm
+      гр: http://www.saint.gr/3213/saint.aspx
    образ:
     - http://drevo-info.ru/images/002/007284.jpg
     - https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Icon_saint_anna.jpg/407px-Icon_saint_anna.jpg
     - http://days.pravoslavie.ru/jpg/ib107.jpg
+   служба:
+    - Зачатию Богородицы служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_09.pdf
    событие:
     - год: 16 до нэ
       описание: само
@@ -18,7 +25,5 @@
       описание: просл
    помин:
       дата: 09.12
+      календарь: рпц,греч
       описание: само
-      служба:
-       - Зачатию Богородицы служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_09.pdf

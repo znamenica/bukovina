@@ -1,11 +1,13 @@
 ---
 Семистрельная образ:
-   имя: Семистрельная, Умягчение Злых Сердец, Симеоново проречение
+   имя: Семистрельная, Умягчение Злых Сердец, Симеоново Проречение
    описание: образ Богородицы
    чин: обр
-   собор: влгд,нвлк
+   собор: влгд?,нвлк?
    вики: http://drevo-info.ru/articles/8280.html
-   бытие: http://azbyka.ru/days/ikona-umjagchenie-zlyh-serdec-semistrelnaja
+   бытие:
+    - http://calendar.rop.ru/icons1/aug13-ikona-semistrelnaya.html
+    - http://azbyka.ru/days/ikona-umjagchenie-zlyh-serdec-semistrelnaja
    образ:
     - http://azbyka.ru/days/assets/img/icons/7/p188ntdn5p1fr21hkkgk8h2c18ta3.jpg
     - http://drevo-info.ru/images/001/001403.jpg
@@ -25,6 +27,7 @@
       описание: утр
    помин:
     - дата: 13.08
+      календарь: рпц
       описание: само
     - дата: всех
       описание: само

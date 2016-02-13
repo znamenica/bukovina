@@ -3,12 +3,18 @@
    имя: Леньковский, Спасительница Утопающих, Новгород-Северский
    описание: образ Богородицы
    чин: обр
+   собор: нсев?,рднж?
    вики: http://drevo-info.ru/articles/8356.html
-   бытие: http://azbyka.ru/days/ikona-spasitelnica-utopajushchih-lenkovskaja-novgorod-severskaja
+   бытие:
+    - http://calendar.rop.ru/icons1/dec20-ikona-lenkovskaya.html
+    - http://azbyka.ru/days/ikona-spasitelnica-utopajushchih-lenkovskaja-novgorod-severskaja
    образ:
     - http://azbyka.ru/days/assets/img/icons/191/p188nlm2sc1kk01q7qkp1o0m2d5.jpg
     - http://azbyka.ru/days/assets/img/icons/191/p188nlm2sb1qkh1t7q1ttfqdjrs44.jpg
     - http://drevo-info.ru/images/001/001448.jpg
+   служба:
+    - Леньковскому образу служба
+    - http://azbyka.ru/days/caa/363
    событие:
     - год: 1751
       описание: явл
@@ -18,7 +24,5 @@
       место: Свято-Троицкая Сергиева лавра. Сергиев Посад
    помин:
       дата: 20.12
+      календарь: рпц
       описание: само
-      служба:
-       - Леньковскому образу служба
-       - http://azbyka.ru/days/caa/363

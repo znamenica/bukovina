@@ -3,8 +3,10 @@
    имя: Спорительница Хлебов
    описание: образ Богородицы
    чин: обр
+   собор: шмрд?,опт?
    вики: http://drevo-info.ru/articles/11542.html
    бытие:
+    - http://calendar.rop.ru/icons1/oct15-ikona.html
     - http://azbyka.ru/days/ikona-sporitelnica-hlebov
     - http://www.optina.ru/pub/p16/    
    образ: http://azbyka.ru/days/assets/img/icons/264/p193bap9qc1pabet8sknn6pv9c3.jpg
@@ -13,8 +15,12 @@
     - http://azbyka.ru/days/caa/580
     - http://www.optina.ru/sluzhba_sporit/
    событие:
-      год: 1842-1891
+    - год: 1842-1891
       описание: напис
+    - год: 1842-1891
+      описание: прен
+      место: Казанская обитель. Шамордино
    помин:
       дата: 15.10
+      календарь: рпц
       описание: само
