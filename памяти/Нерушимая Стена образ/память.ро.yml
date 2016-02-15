@@ -4,14 +4,18 @@
    описание: образ Богородицы
    чин: обр
    вики: http://drevo-info.ru/articles/10807.html
-   бытие: http://azbyka.ru/days/ikona-nerushimaja-stena
-   образ: http://drevo-info.ru/images/002/005252.jpg
+   бытие:
+    - http://calendar.rop.ru/icons1/ikona-stena.html
+    - http://azbyka.ru/days/ikona-nerushimaja-stena
+   образ: http://drevo-info.ru/images/002/005252.jpg [Софийский собор, XII век]
+   служба: http://azbyka.ru/days/caa/628
    событие:
       год: XI
       описание: напис
+      место: Софийский собор. Киев
    помин:
     - дата: 31.05
       описание: само
-      служба: http://azbyka.ru/days/caa/628
     - дата: всех
+      календарь: рпц
       описание: само

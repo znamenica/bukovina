@@ -1,17 +1,38 @@
 ---
 Голиндуха Персидская:
-   имя: в наречении Голиндуха, в крещении Мария
-   описание: Персидская
+   имя:
+      ру: в наречении Голиндуха, в крещении Мария
+      гр: Γολινδούχ, Μαρία
+   прозвище:
+      ру: Персиянка
+      гр: Περσίδα
+   описание:
+      ру: исповедница Персидская
+      гр: Περσίδα
    чин: исп
-   собор: перс
+   собор: перс?,низи?
    вики: http://drevo-info.ru/articles/13385.html
-   бытие: http://azbyka.ru/days/sv-golinduha-v-kreshchenii-marija-persidskaja
+   бытие:
+      ру: 
+       - http://calendar.rop.ru/svyat1/jul12-golinduha.html
+       - http://azbyka.ru/days/sv-golinduha-v-kreshchenii-marija-persidskaja
+      гр: http://www.saint.gr/2094/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/5769/p18ra62beav2bst016d9e261pqt3.jpg
     - http://azbyka.ru/days/assets/img/saints/5769/p18ra62beb1j2ej0guo618urf594.jpg
+    - http://3.bp.blogspot.com/-nyFvhCXlN3s/ULy2MUTJhiI/AAAAAAAAT0E/hvAhVzrFFog/s1600/Αγία+Γολινδούχ-3+%28453x640%29.jpg
+    - http://1.bp.blogspot.com/-M6-D1LbC1Os/ULy2X51GxzI/AAAAAAAAT0U/lisbpZCHEJg/s1600/%25CE%2591%25CE%25B3%25CE%25AF%25CE%25B1+%25CE%2593%25CE%25BF%25CE%25BB%25CE%25B9%25CE%25BD%25CE%25B4%25CE%25BF%25CF%258D%25CF%2587-2+%2528423x640%2529.jpg
    событие:
-      год: 591
+    - год: вид.VI
+      описание: ржд
+      место: Персия
+    - год: 591
       описание: прств
+      место: Низибия
    помин:
-      дата: 12.07
+    - дата: 12.07
+      календарь: рпц
+      описание: само
+    - дата: 13.07
+      календарь: греч
       описание: само

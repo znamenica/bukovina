@@ -2,7 +2,7 @@
 Жировицкий образ:
    имя:
       ру: Жировицкий
-      гр: εν Ζίροβιτς
+      гр: Ζίροβιτς
    описание:
       ру: образ Богородицы
       гр: Σύναξη της Υπεραγίας Θεοτόκου
@@ -10,6 +10,7 @@
    вики: http://drevo-info.ru/articles/10585.html
    бытие:
       ру:
+       - http://calendar.rop.ru/icons1/may07-ikona-zirovickaya.html
        - http://azbyka.ru/days/ikona-zhirovickaja
        - http://hram-vlad-butovo.ru/kalendar/bmater/05/05.20_1.html
       гр:
@@ -34,5 +35,5 @@
       место: Жировицкая обитель. Гродненщина
    помин:
       дата: 07.05
-      календарь: греч
+      календарь: рпц,греч
       описание: само

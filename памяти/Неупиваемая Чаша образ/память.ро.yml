@@ -1,14 +1,26 @@
 ---
 Неупиваемая Чаша образ:
-   имя: Неупиваемая Чаша
-   описание: образ Богородицы
+   имя:
+      ру: Неупиваемая Чаша, Серпуховский
+      гр: Σιέρπουχωφ
+   описание:
+      ру: образ Богородицы
+      гр: Σύναξη της Υπεραγίας Θεοτόκου
    чин: обр
    вики: http://drevo-info.ru/articles/4229.html
-   бытие: http://azbyka.ru/days/ikona-neupivaemaja-chasha
+   бытие:
+      ру:
+       - http://calendar.rop.ru/icons1/may05-ikona-chasha.html
+       - http://azbyka.ru/days/ikona-neupivaemaja-chasha
+      гр: http://www.saint.gr/2137/saint.aspx
+   образ:
+    - http://www.saint.gr/photos/standard/0505/Theotokos01.jpg
+    - https://drevo-info.ru/images/001/000681.jpg
+   служба: Неупиваемой Чаше образу служба
    событие:
       год: 1878
       описание: обр
    помин:
       дата: 05.05
+      календарь: рпц,греч
       описание: само
-      служба: Неупиваемой Чаше образу служба

@@ -2,15 +2,17 @@
 Любечский образ:
    имя:
       ру: Любечский
-      гр: εν Λιούμπεχ
+      гр: Λιούμπεχ
    описание:
       ру: образ Богородицы
       гр: Σύναξη της Υπεραγίας Θεοτόκου
    чин: обр
-   собор: любе
+   собор: любе?
    вики: http://drevo-info.ru/articles/10539.html
    бытие:
-      ру: http://azbyka.ru/days/ikona-ljubechskaja
+      ру:
+       - http://calendar.rop.ru/icons1/may07-ikona-lubechskaya.html
+       - http://azbyka.ru/days/ikona-ljubechskaja
       гр:
        - http://www.saint.gr/4015/saint.aspx
        - http://www.synaxarion.gr/gr/sid/3062/sxsaintinfo.aspx
@@ -28,5 +30,5 @@
       место: Воскресенская церковь. Любеч. вид.Черниговская губерния
    помин:
       дата: 07.05
-      календарь: греч
+      календарь: рпц,греч
       описание: само

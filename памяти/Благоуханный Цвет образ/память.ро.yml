@@ -3,17 +3,19 @@
    имя: Благоуханный Цвет
    описание: образ Богородицы
    чин: обр
+   собор: врнж?
    бытие: http://azbyka.ru/days/ikona-blagouhannyj-cvet
    образ:
     - http://azbyka.ru/days/assets/img/icons/232/p1888c2r061cfo140obje18a0u0a3.jpg
     - http://azbyka.ru/days/assets/img/icons/232/de038f42a9b96b75de090960e8aa722f.jpg
     - http://azbyka.ru/days/assets/img/icons/232/p1888c2r071u9o1vjo1ahl40d1etg4.jpg
+   служба:
+    - Благоуханному Цвету образу служба
+    - http://azbyka.ru/days/caa/603
    событие:
       год: X-XIX
       описание: явл
+      место: вид.Воронеж
    помин:
       дата: 15.11
       описание: само
-      служба:
-       - Благоуханному Цвету образу служба
-       - http://azbyka.ru/days/caa/603
