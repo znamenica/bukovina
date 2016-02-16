@@ -1,11 +1,29 @@
 ---
 Григорий Чудотворец:
-   имя: в крещении Григорий (Бодрствующий,Трезвящийся,Пробудившийся,Буцко?), в наречении Феодор
+   имя:
+      ру: в крещении Григорий, в наречении Феодор
+      гр: Γρηγόριος, Θεόδωρος
    прозвище: Великий, Знаменитый, Выдающийся
-   описание: святитель и чудотворец Неокесарийский
+   описание: святитель и чудотворец Неокесарийский; имя значит Бодрствующий, Трезвящийся,
+      Пробудившийся, Буцко?, Будко, Бутко
    чин: свт
-   вики: http://drevo-info.ru/articles/4385.html
-   бытие: http://azbyka.ru/days/sv-grigorij-chudotvorec
+   собор: понт?
+   вики:
+      ру: http://drevo-info.ru/articles/4385.html
+      гр: https://el.wikipedia.org/wiki/Γρηγόριος_Νεοκαισαρείας
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/nov17-grigori.html
+       - http://azbyka.ru/days/sv-grigorij-chudotvorec
+      гр:
+       - http://www.saint.gr/3024/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/11/17_11.htm
+       - http://www.ec-patr.org/gr/saints/m11-17.htm
+       - http://www.synaxarion.gr/gr/sid/1188/sxsaintinfo.aspx
+       - http://www.synaxarion.gr/gr/sid/1188/sxsaintinfo.aspx
+       - http://www.apostoliki-diakonia.gr/byzantine_music/ymnografoi/ymnografoi.asp?main=melodoi_sort.asp&page=101
+       - http://www.gonia.gr/gonia.php?article=1576
+       - http://churchsynaxarion.blogspot.gr/2009/05/3-1-2.html
    образ:
     - http://pravicon.com/icon-1580
     - http://drevo-info.ru/images/001/000718.jpg
@@ -15,29 +33,48 @@
     - http://azbyka.ru/days/assets/img/saints/3769/p18f4kidic12b3154qt901kallll3.jpg
     - http://azbyka.ru/days/assets/img/saints/3769/p18aiatusnvuuku31001eodvg63.jpg
     - http://azbyka.ru/days/assets/img/saints/3769/p18aiatusntjjb6e12l41s08e3o4.jpg
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Συλλογή%20με%20κατάταξη/Άγιοι/Γρηγόριος%20Νεοκαισαρείας%201.jpg
+    - http://www.saint.gr/photos/standard/1117/AgiosGrigoriosNeokesarias01.jpg
+    - http://www.eikonografos.com/album/albums/uploads/ierarxes/normal_grigorios_neokaisareias.jpg
+    - http://www.eikonografos.com/album/albums/uploads/ierarxes/grigorios_neokaisareias1.jpg
+    - http://www.eikonografos.com/album/albums/uploads/ierarxes/grigorios_neokaisareias2.jpg
+    - http://www.eikonografos.com/album/albums/uploads/ierarxes/grigorios_neokaisareias3.jpg
+    - http://www.eikonografos.com/album/albums/uploads/ierarxes/grigorios_neokaisareias4.jpg
+    - http://vatopaidi.files.wordpress.com/2009/11/st-gregory-of-neocaesarea.jpg [Μικρογραφία από το Μηνολόγιο του αυτοκράτορα Βασιλείου του Β΄]
+    - https://drevo-info.ru/images/001/000718.jpg [Икона XIV в.]
    отечник: http://azbyka.ru/otechnik/Grigorij_Chudotvorets/
+   служба:
+    - Григорию Чудотворцу служба
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_17.pdf
+    - http://azbyka.ru/days/caa/317
+    - http://glt.xyz/texts/Nov/17.uni.htm
    событие:
+    - год: ок.213
+      описание: ржд
+    - год: 245
+      описание: свят
+      место: вид.Антиохия
     - год: 270-275
       описание: прств
     - год: 270-275
       описание: пгрб
-      место: Неокесария
+      место: Неокесария (ныне. Никсар). Понт
     - год: по III
       описание: прен
-      место: храм. Неокесария
+      место: храм. Неокесария (ныне. Никсар). Понт
     - год: по III
-      описание: прен.рукап
+      предмет: десница
+      описание: прен
       место: Свято-Гробская церковь. Иерусалим
     - год: по III
-      описание: прен.рукал
-      место: Большрй Метеорский монастырь
+      предмет: шуйца
+      описание: прен.1
+      место: Большая Метеорская обитель
     - год: 1587
-      описание: прен.глав
+      предмет: глава
+      описание: прен.2
       место: Сан-Року церква. Лиссабон. Португалия
    помин:
       дата: 17.11
+      календарь: рпц,греч
       описание: само
-      служба:
-       - Григорию Чудотворцу служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_17.pdf
-       - http://azbyka.ru/days/caa/317

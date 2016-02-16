@@ -1,17 +1,28 @@
 ---
 Моисей Боговидец:
-   имя: Моисей (Отвод?)
-   прозвище: Боговидец
+   имя:
+      ру: Моисей
+      гр: Μωυσής
+   прозвище:
+      ру: Боговидец
+      гр: Θεόπτης
    фамилия: Левиин
-   описание: пророк Израильский
+   описание:
+      ру: пророк Израильский; имя значит от воды взятый (Отвод?)
+      гр: Προφήτης
    чин: прор
-   собор: копт,плст
+   собор: копт?,плст?,вамб
    вики: http://drevo-info.ru/articles/2979.html
    бытие:
       ру:
        - http://azbyka.ru/days/sv-moisej-bogovidec
        - http://calendar.rop.ru/svyat1/sep04-moisej.html
-      гр: http://www.saint.gr/2341/saint.aspx
+      гр:
+       - http://www.saint.gr/2341/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/09/04_09.htm
+       - http://www.snhell.gr/references/synaxaristis/search.asp?id=1434&search=3
+       - http://www.ec-patr.org/gr/saints/m09-04.htm
+       - http://www.diakonima.gr/2010/09/04/τη-αυτή-ήμερα-μνήμη-του-αγίου-προφήτου/
    образ:
     - http://pravicon.com/icon-2477
     - http://www.saint.gr/filesnew/05/2341/photos/ProfitisMoisis03.jpg
@@ -22,7 +33,9 @@
     - http://www.saint.gr/filesnew/05/2341/photos/ProfitisMoisis08.jpg
     - http://drevo-info.ru/images/001/000321.jpg [Икона. Каргополь, 1590-е гг.]
     - http://www.saint.gr/filesnew/05/2341/photos/ProfitisMoisis09.jpg
-   служба: Моисею Боговидцу служба
+   служба:
+    - Моисею Боговидцу служба
+    - http://glt.xyz/texts/Sep/04.uni.htm
    событие:
     - год: 1569 до нэ
       описание: ржд
@@ -31,10 +44,3 @@
     - год: 1449 до нэ
       описание: прств
       место: Моавитская страна
-   помин:
-      дата: 04.09
-      календарь: рпц,греч
-      описание: само
-      служба:
-       - Вавиле Антиохийскому и Моисею Боговидцу служба
-       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_04.pdf

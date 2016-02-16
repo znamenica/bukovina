@@ -8,12 +8,16 @@
     - http://ru.wikipedia.org/wiki/Всех_Скорбящих_Радость
    бытие:
     - http://azbyka.ru/days/ikona-vseh-skorbjashchih-radost
+    - http://calendar.rop.ru/icons1/oct24-ikona.html
     - http://www.pravmir.ru/ikona-bogorodicy-vsex-skorbyashhix-radost-ikonografiya-ikony/
    образ:
     - http://drevo-info.ru/images/001/002587.jpg
     - http://azbyka.ru/days/assets/img/icons/126/273472c53a5f04112517089e0bac6f9b.jpg
     - http://www.pravmir.ru/wp-content/uploads/2012/11/071.jpg
     - http://www.pravmir.ru/wp-content/uploads/2012/11/091.jpg
+   служба:
+    - Всех Скорбящих Радости образу служба
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_24.pdf
    событие:
     - год: 1683-1685
       описание: напис
@@ -23,7 +27,5 @@
       описание: просл
    помин:
       дата: 24.10
+      календарь: рпц
       описание: чудо
-      служба:
-       - Всех Скорбящих Радости образу служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_24.pdf
