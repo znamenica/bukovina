@@ -1,24 +1,29 @@
 ---
 Афанасий Константинопольский:
-   имя: в иночестве Афанасий, в рясофорстве Акакий, в крещении Алексий
+   имя: в иночестве Афанасий, в чернестве Акакий, в крещении Алексий
    отчество: Георгиевич
-   описание: первосвятитель Константинопольский, I
+   описание: первосвятитель Константинопольский
    чин: свт
-   собор: виз,аф
+   собор: фрак?,фесс?,виз?,аф
    вики:
-    -  http://pravicon.com/icon-1294
     - http://drevo-info.ru/articles/7681.html
     - http://ru.wikipedia.org/wiki/Афанасий_I_(Патриарх_Константинопольский)
-   бытие: http://azbyka.ru/days/sv-afanasij-i-konstantinopolskij
+   бытие:
+    - http://calendar.rop.ru/svyat1/oct24-afanasi.html
+    - http://azbyka.ru/days/sv-afanasij-i-konstantinopolskij
    образ:
     - http://pravicon.com/icon-1294
     - http://azbyka.ru/days/assets/img/saints/5163/p188lrcc1ice41o2j11us1ote4424.jpg
+   служба:
+    - Афанасию Константинопольскому служба
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_24.pdf
+    - http://azbyka.ru/days/caa/673
    событие:
     - год: ок.1235 
       описание: ржд
-      место: Адрианополь
+      место: Адрианополь. вид.Фракия
     - год: сер.XIII
-      описание: рясф
+      описание: черн
       место: Фессалоники. Греция
     - год: вт.пол.XIII
       описание: иноч
@@ -34,8 +39,5 @@
       место: Ксиролофский монастырь. Константинополь
    помин:
       дата: 24.10
+      календарь: рпц
       описание: само
-      служба:
-       - Афанасию Константинопольскому служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_24.pdf
-       - http://azbyka.ru/days/caa/673

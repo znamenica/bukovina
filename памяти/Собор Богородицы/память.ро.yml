@@ -1,17 +1,26 @@
 ---
 Собор Богородицы:
-   имя: Собор Пресвятой Богородицы
-   чин: сбр
+   описание:
+      ру: Собор Пресвятой Богородицы
+      гр: Σύναξη της Υπεραγίας Θεοτόκου
+   чин: сбт
    крат: сбдц
    вики: http://drevo-info.ru/articles/640.html
-   бытие: http://azbyka.ru/days/sv-sobor-presvjatoj-bogorodicy
-   образ: http://drevo-info.ru/images/001/001461.jpg
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/dec26-sobor.html
+       - http://azbyka.ru/days/sv-sobor-presvjatoj-bogorodicy
+      гр: http://www.saint.gr/2793/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/001/001461.jpg
+    - http://www.saint.gr/photos/standard/1226/SinaxisYperagiasTheotokou01.jpg
+   служба:
+    - Собору Богородицы служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_26.pdf
    событие:
-      год: ок. 280
-      описание: само
+      год: по IV
+      описание: просл
    помин:
       дата: 26.12
+      календарь: рпц,греч
       описание: само
-      служба:
-       - Собору Богородицы служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_26.pdf

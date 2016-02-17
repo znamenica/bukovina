@@ -4,12 +4,15 @@
    отчество: Аранович
    описание: племянник Авраама Праведного
    чин: прав
+   собор: плст?,алп
    вики: http://drevo-info.ru/articles/22252.html
-   бытие: http://azbyka.ru/days/sv-lot
-   образ: http://azbyka.ru/days/assets/img/saints/5275/p18746i3l4g8luqq15om7re1b6k3.jpg
+   бытие:
+      ру: http://azbyka.ru/days/sv-lot
+      гр: http://users.sch.gr/aiasgr/Agiologia/Palaia_Diathikh/Dikaioi/Dikaios_Lwt.htm
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/5275/p18746i3l4g8luqq15om7re1b6k3.jpg
+    - http://users.sch.gr/aiasgr/Image/Palaia_Diathikh/Lwt/Lwt_01.jpg
    событие:
       год: ок. 2000 до нэ
       описание: прств
-   помин:
-      дата: 09.10
-      описание: само
+      место: вид.Палестина

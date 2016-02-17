@@ -1,17 +1,28 @@
 ---
 Авраам Праведник:
-   имя: в благословении Авраам (Множоц), в наречении Аврам (Велёц)
+   имя:
+      ру: в благословении Авраам (Множёц), в наречении Аврам (Велёц)
+      гр: Αβραάμ, Άβραμ
    отчество: Фаррович
-   описание: праотец, праведник
+   описание: праотец; праведник
    чин: прав
+   собор: плст?,алп
    вики: http://drevo-info.ru/articles/13826.html
-   бытие: http://azbyka.ru/days/sv-avraam
+   бытие:
+      ру: http://azbyka.ru/days/sv-avraam
+      гр: http://users.sch.gr/aiasgr/Agiologia/Palaia_Diathikh/Patriarxes/Patriarxhs_Abraam.htm
    образ:
     - http://drevo-info.ru/images/001/002763.jpg
     - http://azbyka.ru/days/assets/img/saints/5373/f83b0756b3fc781c79b36f7da524c31b.jpg
+    - http://www.saint.gr/filesnew/03/1028/photos/DikaiosAbraam02.jpg
+    - http://www.saint.gr/filesnew/03/1028/photos/DikaiosAbraam01.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/a/aa/John_in_Korovniki_church_-_patriarch_09_Abraham_%28c._1654%2C_Yaroslavl%29.jpg
+    - http://users.sch.gr/aiasgr/Image/Palaia_Diathikh/Abraam/H_upodoxh_tou_Abraam_02.jpg
+    - http://users.sch.gr/aiasgr/Image/Palaia_Diathikh/Abraam/H_upodoxh_tou_Abraam_01.jpg
+    - http://users.sch.gr/aiasgr/Image/Palaia_Diathikh/Abraam/H_thusia_tou_Abraam_01.jpg
+    - http://users.sch.gr/aiasgr/Image/Palaia_Diathikh/Abraam/H_thusia_tou_Abraam_04.jpg
+    - http://users.sch.gr/aiasgr/Image/Palaia_Diathikh/Abraam/H_thusia_tou_Abraam_03.jpg
    событие:
       год: ок. 2000 до нэ
       описание: прств
-   помин:
-      дата: 09.10
-      описание: само
+      место: Палестина

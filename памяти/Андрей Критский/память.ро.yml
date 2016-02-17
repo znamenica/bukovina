@@ -1,18 +1,42 @@
 ---
 Андрей Критский:
-   имя: Андрей
+   имя:
+      ру: в иночестве Андрей
+      гр: Ανδρέας
    отчество: Георгиевич
-   описание: святитель Критский; автор Великого канона
+   описание:
+      ру: святитель Критский; автор Великого канона
+      гр: Ιεροσολυμίτης Αρχιεπίσκοπος Κρήτης
    чин: свт
-   собор: крит,ксвт,сир,лесб,псн,стих
+   собор: крит?,ксвт?,сир?,лесв?,псн?,стих?,акма
    вики: http://drevo-info.ru/articles/5158.html
-   бытие: http://azbyka.ru/days/sv-andrej-kritskij
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/jul04-andrei-kritskij.html
+       - http://azbyka.ru/days/sv-andrej-kritskij-svjatitel
+      гр:
+       - http://www.saint.gr/1988/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/07/04_07.htm
+       - http://www.ec-patr.org/gr/saints/m07-04.htm
+       - http://www.synaxarion.gr/gr/sid/29/sxsaintinfo.aspx
+       - http://www.immyt.net/saints/saints4.htm
+       - http://www.immyt.net/saints/megas_katon.htm
+       - http://www.byzmusic.gr/iouliou/04_iouliou_1/
+       - http://www.byzmusic.gr/iouliou/04_iouliou/
    образ:
     - http://drevo-info.ru/images/001/000902.jpg
     - http://pravicon.com/icon-1183
     - http://azbyka.ru/days/assets/img/saints/2538/p1885erptjfjs18fi1lkn1m8i1rpi3.jpg
+    - http://www.pigizois.net/sinaxaristis/07/04.jpg
+    - http://www.imga.gr/images/pitsidia_naos_ag_koudouma%20%2819%29.JPG [Ι. Ν. Οσίων Παρθενίου και Ευμενίου των εν Κουδουμά, δια χειρός Παναγιώτη Μόσχου (2006 μ.Χ.)]
+    - http://www.saint.gr/photos/standard/0704/AgiosAndreas03.jpg
+    - http://www.saint.gr/photos/standard/0704/AgiosAndreas02.jpg
    отечник: http://azbyka.ru/otechnik/Andrej_Kritskij/
-   служба: Андрею Критскому служба
+   служба:
+    - Андрею Критскому служба
+    - http://glt.xyz/texts/Jul/04.uni.htm
+    - http://www.saint.gr/10/texts.aspx
+    - http://www.saint.gr/1387/texts.aspx
    событие:
     - год: ок.660
       описание: ржд
@@ -32,9 +56,35 @@
       место: Анастасиинская церковь (ныне Андрее-Критская церковь). Лесбос остров
     - год: до 843
       описание: почит
+    - год: по IX
+      предмет: глава
+      описание: прен
+      место: Ватопедская обитель. Афон
+    - год: по IX
+      предмет: частица
+      описание: прен.1
+      место: Ксиропотамская обитель. Афон
+    - год: по IX
+      предмет: частица.1
+      описание: прен.2
+      место: Высокая обитель. Лесбос
+    - год: по IX
+      предмет: частица.2
+      описание: прен.3
+      место: Лимонская обитель. Лесбос
+    - год: по IX
+      предмет: частица.3
+      описание: прен.4
+      место: Ксениевская обитель
+    - год: по IX
+      предмет: частица.4
+      описание: прен.5
+      место: Алмирская обитель. Магнезия
+    - год: по IX
+      предмет: частица.5
+      описание: прен.6
+      место: Андрее-Критская церковь. Лесбос
    помин:
       дата: 04.07
+      календарь: рпц,греч
       описание: само
-      служба:
-       - Андрею Критскому и Марфе Антиохийской служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_04.pdf

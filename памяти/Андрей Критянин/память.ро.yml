@@ -1,15 +1,25 @@
 ---
 Андрей Критянин:
-   имя: Андрей (ошиб. Андроник)
-   прозвище: Критский, Критянин
+   имя:
+      ру: в иночестве Андрей
+      гр: Ανδρέας
+   описание:
+      ру: критянин; подвижник Критский; ошибочное имя Андроник
+      гр: Οσιομάρτυρας «Ὁ ἐν τὴ Κρίσει»
    чин: прмч
+   собор: крит?,виз?,оиак
    вики: http://drevo-info.ru/articles/26068.html
    бытие:
-    - http://azbyka.ru/days/sv-andrej-kritskij-1
-    - http://www.idrp.ru/zhitiya-svyatih-lib1264
+      ру:
+       - http://calendar.rop.ru/svyat1/oct17-andrei.html
+       - http://azbyka.ru/days/sv-andrej-kritskij
+       - http://www.idrp.ru/zhitiya-svyatih-lib1264
+      гр: http://www.saint.gr/2537/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/3584/p1885g12ml15qod7bkj76v0ifh3.jpg
     - http://azbyka.ru/days/assets/img/saints/3584/p1885g15gjbjm2gc13n7o0steq5.jpg
+    - http://xristianos.gr/forum/eikones/agioi_tis_orthodoksias/agios_adreas_osiomartus_en_ti_krisi_953.jpg
+   служба: Андрею Критянину служба
    событие:
     - год: перв.пол.VIII
       описание: ржд
@@ -17,17 +27,14 @@
     - год: VIII
       описание: иноч
       место: Крит
-    - год: 766/767
+    - год: 766/767/741
       описание: прств
-      место: Константинополь
+      место: Константинополь. Византия
       образ: http://drevo-info.ru/images/003/010034.jpg
-    - год: 766-768
+    - год: 766-768/741
       описание: пгрб
       место: Андрее-Первозванский монастырь. Криси
    помин:
       дата: 17.10
+      календарь: рпц,греч
       описание: само
-      служба:
-       - Андрею Критянину служба
-       - Осия Израильский/Осии Израильскому и Андрею Критянину служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_17.pdf

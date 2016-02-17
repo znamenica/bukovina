@@ -1,12 +1,51 @@
 ---
 Афанасий Метеорский:
-   имя: Афанасий, в миру Андроник
-   прозвище: настоятель Метеорский
+   имя:
+      ру: в иночестве Афанасий, в иночестве Антоний, в крещении Андроник
+      гр: Αθανάσιος,, Ανδρόνικος
+   описание:
+      ру: инок Афонский; настоятель Метеорский (Парящевский. Фессалия)
+      гр: κτήτωρ Μονής Μετεώρου
    чин: прп
+   собор: фтио?,аф?,фесс?
    вики: http://drevo-info.ru/articles/14856.html
-   бытие: http://pravicon.com/info-1847
-   образ: http://pravicon.com/icon-1295
+   бытие:
+      ру: http://pravicon.com/info-1847
+      гр:
+       - http://www.saint.gr/310/saint.aspx
+       - http://www.imverias.gr/dev/index.php?option=com_content&view=article&id=28:c-h-&catid=14:-c&Itemid=30
+       - http://www.pigizois.net/sinaxaristis/04/20_04.htm
+       - http://www.snhell.gr/references/synaxaristis/search.asp?id=658&search=3
+       - http://www.ecclesia.gr/greek/synaxaire/synaxari.asp?minas=4&id=231
+       - http://vatopaidi.wordpress.com/2009/09/04/iera-monh-megalou-meteorou/
+       - http://churchsynaxarion.blogspot.gr/2009/05/3-1-2.html
+   образ:
+    - http://pravicon.com/icon-1295
+    - http://www.imverias.gr/images/stories/ag_athanasios_meteoron.jpg
+    - http://www.saint.gr/photos/standard/0420/OsiosAthanasios01.jpg
+    - http://www.saint.gr/photos/standard/0420/OsiosAthanasios02.jpg
+    - http://www.ypati.gr/~ypatigr/media/images/Agios_Athanasios.jpg
+    - http://vatopaidi.files.wordpress.com/2009/09/moni-megalou-meteorou-meteora_06.jpg [Τοιχογραφία στο νάρθηκα του καθολικού.]
+    - http://vatopaidi.files.wordpress.com/2010/03/agioi-athnasios-kai-ioasaf-oi-meteoritai-11.jpg
+    - http://vatopaidi.files.wordpress.com/2010/03/agioi-athnasios-kai-ioasaf-oi-meteoritai-23.jpg
+   событие:
+    - год: 1305/1303
+      описание: ржд
+      место: Новые Патры (ныне Ипати). Фтиотида
+    - год: вид.ок.1335
+      описание: иноч
+      место: Милея скит. Афон
+    - год: 1910
+      описание: дияк
+    - год: 1913
+      описание: свящ
+    - год: 1380
+      описание: прств
+    - год: по 1380
+      предмет: глава
+      описание: прен
+      место: Спасо-Преображенская обитель. Великие Метеоры. Фессалия
    помин:
-      год: 1380
       дата: 20.04
+      календарь: греч
       описание: само

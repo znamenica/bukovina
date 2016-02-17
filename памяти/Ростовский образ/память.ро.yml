@@ -1,10 +1,14 @@
 ---
-Флорищевский образ:
-   имя: Владимирский Ростовский
+Ростовский образ:
+   имя: Владимирско-Ростовский, Ростовский
    описание: образ Богородицы
    чин: обр
+   собор: рост?
    вид: Владимирский образ
-   бытие: http://azbyka.ru/days/ikona-vladimirskaja-rostovskaja
+   бытие:
+      ру:
+       - http://calendar.rop.ru/icons1/aug15-ikona-vladim-rostovskaya.html
+       - http://azbyka.ru/days/ikona-vladimirskaja-rostovskaja
    образ: http://azbyka.ru/days/assets/img/icons/101/p188b6inuihkp1vhpti916l31nnt3.jpg
    событие:
     - год: XII
@@ -14,4 +18,5 @@
       место: Ростов
    помин:
       дата: 15.08
+      календарь: рпц
       описание: само

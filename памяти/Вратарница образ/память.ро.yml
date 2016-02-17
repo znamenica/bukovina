@@ -3,7 +3,11 @@
    имя: Вратарница, Неугасимая Свеча
    описание: образ Богородицы
    чин: обр
-   бытие: http://azbyka.ru/days/ikona-vratarnica-uglichskaja-neugasimaja-svecha
+   собор: углч?
+   бытие:
+      ру:
+       - http://calendar.rop.ru/icons1/jun23-ikona-vratarnitsa.html
+       - http://azbyka.ru/days/ikona-vratarnica-uglichskaja-neugasimaja-svecha
    образ:
     - http://azbyka.ru/days/assets/img/icons/83/p188d2iun81k8a1mf38ft1itkp5g3.jpg
     - http://azbyka.ru/days/assets/img/icons/83/p188d2j47f8j01q9l1cn4i431qj15.jpg
@@ -13,4 +17,5 @@
       место: Успенская церква. Алексеевская обитель. Углич
    помин:
       дата: 23.06
+      календарь: рпц
       описание: прств

@@ -1,20 +1,51 @@
 ---
 Кирилл Белозерский:
-   имя: Кирилл, в миру Косма
-   описание: настоятель Белоезерский, Белозерский
+   имя:
+      ру: в иночестве Кирилл, в крещении Косма
+      гр: Κύριλλος, Κοσμάς
+   описание:
+      ру: настоятель и чудтворец Симоновский, Белоезерский (Белозерский)
+      гр: Θαυματουργός ο εν τη Λευκή λίμνη
    чин: прп
-   собор: слав,рус,мск,рднж
+   собор: мск,рднж,блзр?
    вики: http://drevo-info.ru/articles/10837.html
-   бытие: http://azbyka.ru/days/sv-kirill-belozerskij
-   образ: http://drevo-info.ru/images/001/001769.jpg
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/jun09-kirill-beloezerskij.html
+       - http://azbyka.ru/days/sv-kirill-belozerskij
+      гр:
+       - http://www.saint.gr/1841/saint.aspx
+       - http://www.diakonima.gr/2011/06/09/όσιος-κύριλλος-της-λευκής-λίμνης-μπιέ/
+   образ:
+    - http://drevo-info.ru/images/001/001769.jpg
+    - http://oca.org/cdn/images/icons/lg/June/0609cyril-whitelake09.jpg
+    - http://vatopaidi.files.wordpress.com/2011/06/cyril.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/6/6f/Kirill_Belozerskiy_icon_Dionisiy_Glushitskiy.jpg
+    - http://calendar.rop.ru/svyat1/photos/KirillBeloezerskiy.jpg
+   служба:
+    - Кириллу Белозерскому служба
+    - http://azbyka.ru/days/caa/194
    событие:
-      год: 1427
+    - год: 1427
+      дата: 09.06
+      описание: ржд
+      место: Москва
+    - год: вид.сер.VX
+      описание: иноч
+      место: Симонова обитель. Москва
+    - год: до 1490
+      описание: дияк
+      место: Симонова обитель. Москва
+    - год: до 1490
+      описание: свящ
+      место: Симонова обитель. Москва
+    - год: 1427
       дата: 09.06
       описание: прств
+    - год: до 1448
+      описание: почит
    помин:
       дата: 09.06
+      календарь: рпц,греч,змин
       описание: прств
-      служба:
-       - Кириллу Белозерскому служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_09.pdf
-       - http://azbyka.ru/days/caa/194
+      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_09.pdf

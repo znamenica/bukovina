@@ -10,6 +10,11 @@
     - http://azbyka.ru/days/assets/img/icons/270/ba0cdbdda1aeab6aa56b69e6c99ec9f4.jpg
     - http://azbyka.ru/days/assets/img/icons/270/6efb7a0e7eb7e91fc7b96c81e24fa5e6.jpg
     - http://azbyka.ru/days/assets/img/icons/270/460e38d7c814ff8cdb6d5b771ab1e6f5.jpg
+   служба:
+    - Всех Радостей Радосте образу служба
+    - http://azbyka.ru/days/caa/735
+    - http://azbyka.ru/days/caa/587
+    - http://azbyka.ru/days/caa/588
    событие:
       год: 1885
       дата: 19.07
@@ -17,11 +22,5 @@
    помин:
     - дата: 19.07
       описание: явл
-      служба:
-       - Всех Радостей Радосте образу служба
-       - http://azbyka.ru/days/caa/735
-       - http://azbyka.ru/days/caa/587
-       - http://azbyka.ru/days/caa/588
     - дата: 28.07
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_28.pdf

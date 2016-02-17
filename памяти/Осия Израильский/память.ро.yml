@@ -1,16 +1,29 @@
 ---
 Осия Израильский:
-   имя: Осия
+   имя:
+      ру: Осия
+      гр: Ωσηέ
    отчество: Беериич
+   описание:
+      ру: пророк
+      гр: Προφήτης
    чин: прор
+   собор: плст?,оиак
    вики:
     - http://drevo-info.ru/articles/7605.html
     - http://ru.wikipedia.org/wiki/Осия_(пророк)
-   бытие: http://azbyka.ru/days/sv-osija
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/oct17-osiya.html
+       - http://azbyka.ru/days/sv-osija
+      гр: http://www.saint.gr/2536/saint.aspx
    образ:
     - http://drevo-info.ru/images/002/007095.jpg
     - http://azbyka.ru/days/assets/img/saints/5547/p185nosgcff551q2l195r253jrq5.jpg
     - http://pravicon.com/info-3109
+    - http://upload.wikimedia.org/wikipedia/commons/6/61/Hosea.jpg
+    - http://www.saint.gr/photos/standard/1017/ProfitisOsie01.jpg
+   служба: Осии Израильскому служба
    событие:
     - год: вид.X до нэ
       описание: ржд
@@ -19,8 +32,5 @@
       место: вид.Израиль. Палестина
    помин:
       дата: 17.10
+      календарь: рпц,греч
       описание: само
-      служба:
-       - Осии Израильскому служба
-       - Осии Израильскому и Андрею Критянину служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_17.pdf
