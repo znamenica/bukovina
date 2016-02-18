@@ -1,24 +1,29 @@
 ---
 Домостроииельница образ:
-   имя: Домостроительница, Экономисса, Игумения годы Афонской
+   имя: Домостроительница, Экономисса, Игумения Горы Афонской
    описание: образ Богородицы
    чин: обр
+   собор: аф?
    вики: http://drevo-info.ru/articles/9166.html
-   бытие: http://azbyka.ru/days/ikona-ekonomissa-domostroitelnica
+   бытие:
+      ру:
+       - http://calendar.rop.ru/icons1/jul05-ikona-ekonomissa.html
+       - http://azbyka.ru/days/ikona-ekonomissa-domostroitelnica
    образ:
     - http://azbyka.ru/days/assets/img/icons/42/p188o0ncuc6kgrvsuac8919r4.jpg
     - http://azbyka.ru/days/assets/img/icons/42/p188o0ncuafd41ou11n7fvohebk3.jpg
     - http://azbyka.ru/days/assets/img/icons/42/p188o0ncud8p097b1dne61g1q755.jpg
     - http://azbyka.ru/days/assets/img/icons/42/p188o0ncudfgc1fi26fv18vqhit6.jpg
     - http://drevo-info.ru/images/001/001536.jpg
+   служба:
+    - Домостроительнице образу служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_05.pdf
+    - http://azbyka.ru/days/caa/590
    событие:
       год: X
       описание: напис
       место: Афанасиевская лавра. Афон
    помин:
       дата: 05.07
+      календарь: рпц
       описание: само
-      служба:
-       - Домостроительнице образу служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_05.pdf
-       - http://azbyka.ru/days/caa/590

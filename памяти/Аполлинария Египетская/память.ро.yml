@@ -1,12 +1,15 @@
 ---
 Аполлинария Египетская:
-   имя: в наречении Аполлинария, в самопрозвании Дорофей
+   имя: в наречении Аполлинария, в самонаречении Дорофей
    отчество: Анфимьевна
    описание: девица Египетская
    чин: прп
-   собор: копт,виз
+   собор: копт?,виз?
    вики: http://drevo-info.ru/articles/4829.html
-   бытие: http://azbyka.ru/days/sv-apollinarija
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/jan05-apollinaria.html
+       - http://azbyka.ru/days/sv-apollinarija
    образ:
     - http://drevo-info.ru/images/001/000845.jpg
     - http://azbyka.ru/days/assets/img/saints/5610/p18vvj9s0q2g41u361cmg1vbi7re3.jpg
@@ -23,6 +26,6 @@
       описание: пгрб
       место: церковь. Макарьева обитель. Египет
    помин:
-      год: ок. 470
       дата: 05.01
+      календарь: рпц
       описание: прств
