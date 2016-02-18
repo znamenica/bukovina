@@ -58,20 +58,20 @@ module Bukovina::Parsers
 
    MATCH_TABLE = {
       :ру => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}]+$/,
-      :цс => /^[#{CSLAV_CAPITAL}#{CSLAV_STROKE}#{CSLAV_ACCENT}][#{CSLAV_STROKE}#{CSLAV_ACCENT}]*$/,
-      :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}][#{SERBIAN_STROKE}]*$/,
-      :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}][#{GREEK_STROKE}#{GREEK_ACCENT}]*$/,
+      :цс => /^[#{CSLAV_CAPITAL}#{CSLAV_STROKE}#{CSLAV_ACCENT}]+$/,
+      :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}]+$/,
+      :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}]+$/,
       :ан => /^[#{ENGLISH_CAPITAL}#{ENGLISH_STROKE}]+$/,
-      :чх => /^[#{CZECH_CAPITAL}#{CZECH_STROKE}#{CZECH_ACCENT}][#{CZECH_STROKE}#{CZECH_ACCENT}]*$/,
-      :ир => /^[#{IRISH_CAPITAL}#{IRISH_STROKE}][#{IRISH_STROKE}]*$/,
-      :си => /^[#{IRISH_CAPITAL}#{IRISH_STROKE}][#{IRISH_STROKE}]*$/,
-      :ла => /^[#{LATIN_CAPITAL}#{LATIN_STROKE}][#{LATIN_STROKE}]*$/,
-      :бг => /^[#{BULGARIAN_CAPITAL}#{BULGARIAN_STROKE}][#{BULGARIAN_STROKE}]*$/,
-      :ит => /^[#{ITALIAN_CAPITAL}#{ITALIAN_STROKE}][#{ITALIAN_STROKE}]*$/,
-      :ар => /^[#{ARMENIAN_CAPITAL}#{ARMENIAN_STROKE}][#{ARMENIAN_STROKE}]*$/,
+      :чх => /^[#{CZECH_CAPITAL}#{CZECH_STROKE}#{CZECH_ACCENT}]+$/,
+      :ир => /^[#{IRISH_CAPITAL}#{IRISH_STROKE}]+$/,
+      :си => /^[#{IRISH_CAPITAL}#{IRISH_STROKE}]+$/,
+      :ла => /^[#{LATIN_CAPITAL}#{LATIN_STROKE}]+$/,
+      :бг => /^[#{BULGARIAN_CAPITAL}#{BULGARIAN_STROKE}]+$/,
+      :ит => /^[#{ITALIAN_CAPITAL}#{ITALIAN_STROKE}]+$/,
+      :ар => /^[#{ARMENIAN_CAPITAL}#{ARMENIAN_STROKE}]+$/,
       :ив => /^[#{IVERIAN_STROKE}]+$/,
-      :рм => /^[#{ROMANIAN_CAPITAL}#{ROMANIAN_STROKE}][#{ROMANIAN_STROKE}]*$/,
-      :са => /^[#{OLD_ENGLISH_CAPITAL}#{OLD_ENGLISH_STROKE}][#{OLD_ENGLISH_STROKE}]*$/
+      :рм => /^[#{ROMANIAN_CAPITAL}#{ROMANIAN_STROKE}]+$/,
+      :са => /^[#{OLD_ENGLISH_CAPITAL}#{OLD_ENGLISH_STROKE}]+$/
    }
 end
 

@@ -17,9 +17,8 @@ ActiveRecord::Schema.define(version: 20160209213700) do
     t.string   "short_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["short_name"], name: "index_memories_on_short_name", unique: true
   end
-
-  add_index "memories", ["short_name"], name: "index_memories_on_short_name", unique: true
 
   create_table "memory_names", force: :cascade do |t|
     t.integer  "memory_id",              null: false
@@ -29,9 +28,8 @@ ActiveRecord::Schema.define(version: 20160209213700) do
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
     t.integer  "mode"
+    t.index ["memory_id", "name_id", "state"], name: "index_memory_names_on_memory_id_and_name_id_and_state", unique: true
   end
-
-  add_index "memory_names", ["memory_id", "name_id", "state"], name: "index_memory_names_on_memory_id_and_name_id_and_state", unique: true
 
   create_table "names", force: :cascade do |t|
     t.string   "text",                       null: false
@@ -40,8 +38,7 @@ ActiveRecord::Schema.define(version: 20160209213700) do
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
     t.integer  "similar_to_id"
+    t.index ["text", "type", "language_code"], name: "index_names_on_text_and_type_and_language_code", unique: true
   end
-
-  add_index "names", ["text", "type", "language_code"], name: "index_names_on_text_and_type_and_language_code", unique: true
 
 end

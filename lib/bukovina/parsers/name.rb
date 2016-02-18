@@ -5,10 +5,13 @@ class Bukovina::Parsers::Name
 
    STATES = {
       'в наречении' => :наречёное,
+      'в самонаречении' => :самоданное,
       'в крещении' => :крещенское,
       'в чернестве' => :чернецкое,
       'в иночестве' => :иноческое,
       'в схиме' => :схимное,
+      'в благословении' => :благословенное,
+      'в покаянии' => :покаянное,
    }
 
 #   RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)?(?:\s*([,()\/\-])\s*)?/
@@ -28,13 +31,13 @@ class Bukovina::Parsers::Name
       when Hash
          names = name.to_a.map do |(language_code, nameline)|
             if ! Parsers::MATCH_TABLE.has_key?( language_code.to_sym )
-               raise Parsers::BukovinaInvalidLanguageError, "Invalid language '"
+               raise Parsers::BukovinaInvalidLanguageError, "Invalid language '" +
                   "#{language_code}' specified" ; end
 
             if nameline
                parse_line nameline, language_code
             else
-               raise Parsers::BukovinaNullNameLine, "Null name line #{name.inspect}"
+               raise Parsers::BukovinaNullNameLine, "Null name line #{name.inspect}" +
                      " for the language #{language_code}" ; end ; end
 
          # remove enumerator error
@@ -250,8 +253,8 @@ private
 
       if token && ! matched
 #         binding.pry
-         raise Parsers::BukovinaInvalidCharError, "Invalid char(s) for language '"
-            "#{context[ :attr ].last[ :language_code ]}' specified" ; end
+         raise Parsers::BukovinaInvalidCharError, "Invalid char(s) for language '" +
+            "#{context[ :models ][ :name ].last[ :language_code ]}' specified" ; end
             
       matched
 
