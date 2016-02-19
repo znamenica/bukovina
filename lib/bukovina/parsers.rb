@@ -77,3 +77,4 @@ end
 
 require 'bukovina/parsers/name'
 require 'bukovina/parsers/patronymic'
+require 'bukovina/parsers/lastname'

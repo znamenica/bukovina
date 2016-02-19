@@ -63,6 +63,7 @@ module Rails
          pass = true
          patron = Bukovina::Parsers::Patronymic.new
          namer = Bukovina::Parsers::Name.new
+         lnamer = Bukovina::Parsers::LastName.new
          Dir.glob( 'памяти/**/память.*.yml' ).each do |f|
             puts "Память: #{f}"
             m = begin
@@ -77,7 +78,32 @@ module Rails
                   memory.short_name = short_name ; end
 
                data = m[ short_name ]
-               attr_lists = namer.parse( data[ 'имя' ] )
+#               attr_lists = namer.parse( data[ 'имя' ] )
+#
+#               if attr_lists
+#                  attr_lists[ :name ].each do |attrs|
+#                     Bukovina::Importers::Name.new(attrs).import ; end
+#
+#                  o_attrs = { memory: memory }
+#                  attr_lists[ :memory_name ].each do |attrs|
+#                     Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
+#                     end ; end
+#               namer.errors.each { |e| errors[ f ] = e }.clear
+#
+#               attr_lists = patron.parse( data[ 'отчество' ] )
+#
+#               if attr_lists
+#                  attr_lists[ :name ].each do |attrs|
+#                     Bukovina::Importers::Name.new(attrs).import ; end
+#
+#                  o_attrs = { memory: memory }
+#                  attr_lists[ :memory_name ].each do |attrs|
+#                     Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
+#                     end ; end
+#
+#               patron.errors.each { |e| errors[ f ] = e }.clear
+#
+               attr_lists = lnamer.parse( data[ 'фамилия' ] )
 
                if attr_lists
                   attr_lists[ :name ].each do |attrs|
@@ -85,22 +111,15 @@ module Rails
 
                   o_attrs = { memory: memory }
                   attr_lists[ :memory_name ].each do |attrs|
+                     begin
                      Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
-                     end ; end
-               namer.errors.each { |e| errors[ f ] = e }.clear
-
-               attr_lists = patron.parse( data[ 'отчество' ] )
-
-               if attr_lists
-                  attr_lists[ :name ].each do |attrs|
-                     Bukovina::Importers::Name.new(attrs).import ; end
-
-                  o_attrs = { memory: memory }
-                  attr_lists[ :memory_name ].each do |attrs|
-                     Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
+                     rescue ActiveRecord::RecordNotUnique
+                        binding.pry
+                     end
                      end ; end
 
-               patron.errors.each { |e| errors[ f ] = e }.clear
+               lnamer.errors.each { |e| errors[ f ] = e }.clear
+
                end ; end
    
          if ! errors.keys.empty?
