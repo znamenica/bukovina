@@ -1,12 +1,15 @@
 ---
-Татияна Егорова:
+Татияна Бельковская:
    имя: Татияна
    отчество: Прокопьевна
-   фамилия: по мужу Егорова
+   фамилия: в замужестве Егорова
+   описание: исповедница Бельковская; мученица Рязанская; расстреляна безбожниками
    чин: мц
-   собор: нмр,ряз,бель
+   собор: нмр,ряз,бель,каси?
    вики: http://drevo-info.ru/articles/19295.html
-   бытие: http://azbyka.ru/days/sv-tatiana-egorova
+   бытие:
+    - http://azbyka.ru/days/sv-tatiana-egorova
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slAbu2fOVyAXByYOycsOueZ6WC**
    событие:
     - год: 1879
       дата: 15.01

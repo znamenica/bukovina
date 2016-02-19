@@ -1,17 +1,29 @@
 ---
 Иулиания Лазаревская:
-   имя: в крещении Иулиания
+   имя:
+      ру: в крещении Иулиания
+      гр: Ιουλιανή
    отчество: Иустиновна
-   фамилия: в девичестве Недюрева, по мужу Осорьина
-   описание: праведница Муромская, Лазаревская
+   фамилия: в девичестве Недюрева, в замужестве Осорьина
+   описание:
+      ру: праведница Лазаревская (Муромская)
+      гр: Δικαια
    чин: прав
-   собор: влад,ряз,прпп
+   собор: влад,ряз,прпп,плос?,мрм?
    вики: http://drevo-info.ru/articles/8518.html
-   бытие: http://azbyka.ru/days/sv-iulianija-lazarevskaja
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-iulianija-lazarevskaja
+       - http://calendar.rop.ru/svyat1/jan02-iuliania.html
+      гр: http://www.saint.gr/1273/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/5952/p18vtnqkpt1nh412u11e8h1vb74013.jpg
     - http://drevo-info.ru/images/002/008147.jpg
     - http://pravicon.com/icon-2092
+   служба:
+    - Иулиании Лазаревской служба
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_02.pdf
+    - http://azbyka.ru/days/caa/377
    событие:
     - год: 1530-е
       описание: ржд
@@ -36,8 +48,5 @@
       место: Благовещенская церковь. Муром. Владимирщина
    помин:
       дата: 02.01
+      календарь: рпц,греч
       описание: прств
-      служба:
-       - Иулиании Лазаревской служба
-       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_02.pdf
-       - http://azbyka.ru/days/caa/377
