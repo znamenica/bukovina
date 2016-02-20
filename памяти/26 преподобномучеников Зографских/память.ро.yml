@@ -5,7 +5,7 @@
       гр: Είκοσι Έξι Οσιομάρτυρες Ζωγραφίτες
    чин: прмчч
    крат: 26пз
-   собор: аф,болг,зогр
+   собор: зогр?,аф,болг
    вики: http://drevo-info.ru/articles/13840.html
    бытие:
       гр: http://www.saint.gr/2486/saint.aspx
@@ -13,6 +13,7 @@
    образ:
     - http://drevo-info.ru/images/002/004561.jpg
     - http://www.saint.gr/photos/standard/0922/AgioiEikosieksi01.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_10.pdf
    событие:
       год: 1274-1284
       дата: 10.10
@@ -23,6 +24,9 @@
       календарь: греч
       описание: само
     - дата: 10.10
-      календарь: змин,г7д9,охр
+      календарь: змин,охр
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_10.pdf
+    - дата: 10.10
+      год: 2009
+      календарь: герм
+      описание: прств

@@ -6,7 +6,7 @@
    отчество: Славиборовна
    описание: княгиня Чешская; мученица Течинская; убита язычниками
    чин: мц
-   собор: чех,блгвв
+   собор: чех?,блгвв
    вики:
     - http://drevo-info.ru/articles/7118.html
     - https://ru.wikipedia.org/wiki/Людмила_Чешская
@@ -14,6 +14,7 @@
       ру:
        - http://azbyka.ru/days/sv-ljudmila-cheshskaja
        - http://calendar.rop.ru/svyat1/sep16-ljudmila.html
+       - http://www.radio.cz/ru/rubrika/progulki/svyatye-pokroviteli-zemli-cheshskoj
       гр: http://www.saint.gr/2447/saint.aspx
    образ:
     - http://calendar.rop.ru/svyat1/photos/Lyudmila.jpg
@@ -51,6 +52,9 @@
       место: Георгиевская церковь. Прага. Чехия
     - год: 925
       описание: почит
+    - год: XIV
+      описание: прен.1
+      место: Людмилинская часовня. Георгиевская обитель. Прага. Чехия
    помин:
       дата: 16.09
       календарь: рпц,греч
