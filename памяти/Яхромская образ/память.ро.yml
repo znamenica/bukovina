@@ -1,0 +1,33 @@
+---
+Яхромская образ:
+   имя:
+      ру: Яхромская
+      гр: Γιαχρόμ
+   описание:
+      ру: образ Богородицы
+      гр: Σύναξη της Υπεραγίας Θεοτόκου
+   чин: обр
+   вид: Взыграние образ
+   вики: http://drevo-info.ru/articles/2455.html
+   бытие:
+      ру:
+       - http://calendar.rop.ru/icons1/oct14-ikona.html
+       - http://azbyka.ru/days/ikona-jahromskaja
+      гр: http://www.saint.gr/3740/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/001/000240.jpg
+    - http://azbyka.ru/days/assets/img/icons/303/df5609bf30239c160f54f5023ddb0a83.jpg
+    - http://calendar.rop.ru/icons1/photos/Yahromskaya.jpg
+    - http://www.saint.gr/photos/standard/1014/PanagiaYahrom01.jpg
+   событие:
+    - год: 1482
+      дата: 14.10
+      описание: явл
+      место: Яхромье. Владимирщина
+    - год: по 1482
+      описание: прем
+      место: Успенская церковь (ныне Яхромская Успенская Космина обитель). Яхромье. Владимирщина
+   помин:
+      дата: 14.10
+      календарь: рпц,греч
+      описание: явл

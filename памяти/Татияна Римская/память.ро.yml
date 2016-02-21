@@ -1,11 +1,15 @@
 ---
 Татияна Римская:
-   имя: Татияна
-   прозвище: дияконисса Римская
+   имя:  
+      ру: Татияна
+      гр: Τατιανή
+   описание: дочь Консула Римского; дияконисса и мученица Римская; усечена мечём язычниками
    чин: мц
-   собор: рим
+   собор: рим?,т9мр
    вики: http://drevo-info.ru/articles/2178.html
-   бытие: http://azbyka.ru/days/sv-tatiana-rimskaja
+   бытие:
+      ру: http://azbyka.ru/days/sv-tatiana-rimskaja
+      гр: http://www.saint.gr/1391/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/6145/31d3ba1fd4d147625620a78fc138d2a5.jpg
     - http://azbyka.ru/days/assets/img/saints/6145/p19009j9q116gb1fb83ls1rgb12l63.jpg
@@ -15,15 +19,24 @@
     - http://azbyka.ru/days/assets/img/saints/6145/p19009j9q36vd15otl66cp814ea8.jpg
     - http://azbyka.ru/days/assets/img/saints/6145/p19009j9q3169d1t8j14q9kft1b2f9.jpg
     - http://azbyka.ru/days/assets/img/saints/6145/0b7d3a56580ad3f7ebd806da2b205658.jpg
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Συλλογή%20με%20κατάταξη/Αγίες/Τατιανή%20Μάρτυς.jpg
+    - http://www.saint.gr/photos/standard/0112/AgiaTatiani01.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/1/11/Tatiana.jpg
+    - http://www.saint.gr/photos/standard/0112/AgiaTatiani02.jpg
    служба:
     - Татияне Римской служба
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_12.pdf
     - http://azbyka.ru/days/caa/385
     - http://azbyka.ru/days/caa/386
    событие:
-      год: ок.225
+    - год: ок.225
       описание: прств
       место: Рим
+    - год: по X
+      предмет: глава
+      описание: прен
+      место: Курт-Арджеская обитель. Румыния
    помин:
       дата: 12.01
+      календарь: греч,змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/01/minea_01_12.pdf

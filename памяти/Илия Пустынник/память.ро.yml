@@ -1,19 +1,36 @@
 ---
 Илия Пустынник:
-   имя: Илия
-   прозвище: пустынник Египетский
+   имя:
+      ру: вид.в иночестве Илия
+      гр: Ηλίας
+   описание: пустынник Антинойский (Фиваида), чудотворец Райский (Египетский)
    чин: прп
-   собор: нитр
+   собор: фива?
    вики: http://drevo-info.ru/articles/8336.html
-   бытие: http://azbyka.ru/days/sv-ilija-egipetskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-ilija-egipetskij
+       - http://calendar.rop.ru/svyat1/jan08-ilia.html
+      гр:
+       - http://www.saint.gr/1396/saint.aspx
+       - http://www.saint.gr/2875/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/11/03_11.htm
+   образ:
+    - http://www.apostoliki-diakonia.gr/gr_main/eortologio/Agion_pics/Jan_16.jpg
+    - https://drevo-info.ru/images/003/012888.jpg
+   служба: http://glt.xyz/texts/Nov/03.uni.htm
    событие:
-    - год: II-III
+    - год: до 261/II-III
       описание: ржд
-    - год: III
-      описание: иноч
-    - год: IV
+    - год: 371/226-235
       описание: прств
-      место: гора пустынная. вид.Нитрийская. Египет
+      место: вид.Рай село. Антинойская пустыня. Фиваида
    помин:
-      дата: 08.01
+    - дата: 08.01
+      описание: само
+    - дата: 12.01
+      собор: лавс,греч
+      описание: прств
+    - дата: 03.11
+      собор: греч
       описание: само

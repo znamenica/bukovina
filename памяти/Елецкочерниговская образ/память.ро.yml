@@ -1,0 +1,30 @@
+---
+Елецкочерниговская образ:
+   имя:
+      ру: Елецкочерниговский, Елецкий-Черниговский
+      гр: ',Ελεούσης Εν Τσέρνιγκωφ'
+   описание: образ Богородицы
+   чин: обр
+   бытие:
+      ру:
+       - http://calendar.rop.ru/icons1/feb05-ikona-eleckaya.html
+       - http://azbyka.ru/days/ikona-eleckaja-chernigovskaja
+      гр: http://www.saint.gr/3588/saint.aspx
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/31/p1aa6d9srh13hedordlo1oho1mca4.png
+    - http://azbyka.ru/days/assets/img/icons/31/p1aa6fd5fkvhqbfi35mhmo112e3.jpg
+    - http://azbyka.ru/days/assets/img/icons/31/p188g3l3kv1cr5j6sk8o15na1sl73.jpg
+   служба: Елецкочерниговской образу служба
+   событие:
+    - год: 1060
+      описание: обр
+      место: Чернигов
+    - год: по 1060
+      описание: прен
+      место: Успенская церковь. Елецкая обитель. Чернигов
+    - год: нач.XVII
+      описание: утр
+   помин:
+      дата: 05.02
+      календарь: рпц,греч
+      описание: само
