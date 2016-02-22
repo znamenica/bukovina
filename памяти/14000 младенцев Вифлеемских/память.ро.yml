@@ -1,19 +1,50 @@
 ---
 14000 младенцев Вифлеемских:
-   прозвище: 14000 Вифлеемских младенцев, от Ирода избиенных
+   описание:
+      ру: 14000 Вифлеемских младенцев от Ирода избиенных
+      гр: Νήπια (περίπου 14.000) που εσφάγισαν με διαταγή του Ηρώδη
+   количество: 14000
    чин: мчч
+   собор: плст?
    вики: http://drevo-info.ru/articles/8458.html
-   бытие: http://azbyka.ru/days/sv-mucheniki-14-000-mladencev-ot-iroda-v-vifleeme-izbiennye
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/dec29-140000.html
+       - http://azbyka.ru/days/sv-mucheniki-14-000-mladencev-ot-iroda-v-vifleeme-izbiennye
+      гр: http://www.saint.gr/1068/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/6395/p185pb4u461309crpkg1i5pf693.jpg
     - http://azbyka.ru/days/assets/img/saints/6395/p185pb565u1f6t5m24rbn3j1vsa9.jpg
+    - http://41.media.tumblr.com/tumblr_lwxe0gUR8W1qmvtcro1_500.jpg
+    - http://s21.postimg.org/yl0hsnabb/Vrefoktonia08.jpg
+    - http://1.bp.blogspot.com/-zZFYY8BEB6Y/UsBDppnTUlI/AAAAAAAAAQ8/iP8brnw2BD0/s1600/rachel_weeping.jpg
+   служба:
+    - 14000-м младенцам Вифлеемским служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_29.pdf
    событие:
-      год: ок.1
+    - год: 2 до нэ-2
+      описание: ржд
+      место: Палестина
+    - год: 1-2
       описание: прств
-      образ: http://azbyka.ru/days/assets/img/saints/6395/p185pb4u4615n614oq1d7g1medcs75.jpg
+      место: Палестина
+      образ:
+       - http://azbyka.ru/days/assets/img/saints/6395/p185pb4u4615n614oq1d7g1medcs75.jpg
+       - http://www.pigizois.net/sinaxaristis/12/29.jpg
+       - http://3.bp.blogspot.com/-um8fmhYzFDw/TvxS24s9LNI/AAAAAAAAFeQ/X79xT-EKZLQ/s1600/01.JPG
+       - http://1.bp.blogspot.com/-RZd_R9ih7pM/TvxS8-5v7fI/AAAAAAAAFec/Q46wH4WbJRw/s1600/02.JPG
+       - http://2.bp.blogspot.com/-nfV7B7OYPsI/TvxTCwKcwXI/AAAAAAAAFeo/fqraWqNz6no/s1600/PC179690.JPG
+       - http://www.porphyrios.gr/files/jpg/Εικόνες/Συλλογή%20με%20κατάταξη/Άγιοι/Άγια%20Νήπια%20και%20Βρεφοκτονία%20εις%20Βηθλεέμ.jpg
+    - год: по IV
+      описание: прен
+      место: Иерусалимская патриархия. Иерусалим
+    - год: по X
+      описание: прен.1
+      место: Вседержительская обитель. Афон
+    - год: по XVII
+      описание: прен.2
+      место: Серапионова палата. Свято-Троицкая Сергиева обитель. Радонежье
    помин:
       дата: 29.12
+      календарь: рпц,змин,греч
       описание: само
-      служба:
-       - 14000-м младенцам Вифлеемским служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_29.pdf

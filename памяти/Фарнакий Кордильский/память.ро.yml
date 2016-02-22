@@ -1,14 +1,15 @@
 ---
 Фарнакий Кордильский:
    имя: Фарнакий
-   описание: Кордильский, воин Римский
+   описание: воин Римский; брат иных 6 мучеников Римских; мученик Кордильский
    чин: мч
-   собор: итал,вои
+   собор: рим?,вои?,7бмр,понт?
    вики: http://drevo-info.ru/articles/6290.html
-   бытие: http://azbyka.ru/days/sv-farnakij-kordilskij
+   бытие:
+    - http://azbyka.ru/days/sv-farnakij-kordilskij
+    - http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0064:entry=cordyle-geo&highlight=cordile
    событие:
-      год: 284-305
+      год: 301-305
+      дата: 03.07
       описание: прств
-   помин:
-      дата: 24.06
-      описание: само
+      место: Кордиль. Понт

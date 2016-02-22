@@ -1,14 +1,34 @@
 ---
 Виталий Александрийский:
-   имя: Виталий
-   прозвище: инок Александрийский
+   имя:
+      ру: Виталий
+      гр: Βιτάλιος
+   описание: инок Газский (Палестинский), Александрийский
    чин: прп
+   собор: плст?,копт?
    вики: http://drevo-info.ru/articles/10336.html
-   бытие: http://azbyka.ru/days/sv-vitalij-aleksandrijskij
-   образ: http://pravicon.com/icon-1442
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/apr22-vitalij.html
+       - http://azbyka.ru/days/sv-vitalij-aleksandrijskij
+      гр:
+       - http://www.saint.gr/1086/saint.aspx
+       - http://www.synaxarion.gr/gr/sid/1698/sxsaintinfo.aspx
+   образ:
+    - https://drevo-info.ru/images/003/013007.jpg
+    - http://pravicon.com/icon-1442
    событие:
-      год: 609-620
+    - год: вид.перв.пол.VI
+      описание: ржд
+    - год: вид.вт.пол.VI
+      описание: иноч
+      место: Серидова обитель. близ.Газа. Палестина
+    - год: 609-620
       описание: прств
    помин:
-      дата: 22.04
+    - дата: 11.01
+      календарь: греч,гбмч
+      описание: само
+    - дата: 22.04
+      календарь: рпц
       описание: само
