@@ -1,18 +1,30 @@
 ---
 Александра Римская:
-   имя: Александра
-   прозвище: царица Римская
+   имя:
+      ру: Александра
+      гр: Αλεξάνδρα
+   описание:
+      ру: царица Римская; мученица Никомидийская; обезглавлена язычниками
+      гр: βασίλισσα
    чин: мц
+   собор: виф?,рим?,ааик
    вики: http://drevo-info.ru/articles/5636.html
-   бытие: http://azbyka.ru/days/sv-aleksandra-rimskaja
+   бытие:
+    - http://azbyka.ru/days/sv-aleksandra-rimskaja
+    - http://calendar.rop.ru/svyat1/apr23-anatolij-protoleon-alexandra.html
    образ:
     - http://pravicon.com/icon-1117
     - http://drevo-info.ru/images/001/000963.jpg
+    - http://www.apostoliki-diakonia.gr/gr_main/eortologio/Agion_pics/Apr_8.jpg
+    - http://www.saint.gr/photos/standard/0421/AgiaAlexandra01.jpg
+    - http://www.saint.gr/photos/standard/0421/AgiaAlexandra03.jpg
+   служба: Александре Римской служба
    событие:
-      год: 303/304/314
+      год: 303/314
+      дата: 21.04
       описание: прств
-      место: вид.Римье
+      место: Никомидия. Вифиния
    помин:
       дата: 23.04
+      календарь: рпц
       описание: само
-      служба: Александре Римской служба

@@ -1,16 +1,25 @@
 ---
 Анатолий Никомидийский:
-   имя: Анатолий
-   прозвище: сановник Никомидийский
+   имя:
+      ру: Анатолий
+      гр: Ανατόλιος
+   описание:
+      ру: воевода и сановник Никомидийский
+      гр: στρατηλάτης
    чин: мч
-   собор: влмж
+   собор: влмж?,воев?,виф?,апнк
    вики: http://drevo-info.ru/articles/10346.html
-   бытие: http://azbyka.ru/days/sv-anatolij-nikomidijskij
-   образ: http://pravicon.com/icon-1167
+   бытие:
+      ру: http://azbyka.ru/days/sv-anatolij-nikomidijskij
+      гр: http://www.saint.gr/1364/saint.aspx
+   образ:
+    - http://pravicon.com/icon-1167
+    - http://www.saint.gr/photos/standard/0423/AgiosAnatolios01.jpg
    событие:
       год: 303/304
       описание: прств
-      место: Никомидия
+      место: Никомидия. Вифиния
    помин:
       дата: 23.04
+      календарь: греч
       описание: само
