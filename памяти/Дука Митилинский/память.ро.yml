@@ -1,12 +1,30 @@
 ---
 Дука Митилинский:
-   имя: Дука
-   прозвище: щвец Митилинский
+   имя:
+      ру: Дука
+      гр: Δούκας
+   описание:
+      ру: швец Митилинский; мученик Константинопольский;
+      гр: ράπτης από τη Μυτιλήνη
    чин: мч
+   собор: лесб?,виз?
    вики: http://drevo-info.ru/articles/12157.html
+   бытие:
+      гр:
+       - http://www.saint.gr/1461/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/04/24_04.htm
+       - http://www.synaxarion.gr/gr/sid/2766/sxsaintinfo.aspx
+       - http://www.snhell.gr/references/synaxaristis/search.asp?id=681&search=3
+   образ: http://www.saint.gr/photos/standard/0424/AgiosDoykasNeomartiras01.jpg
    событие:
-      год: 1564
+    - год: перв.пол.XVI
+      описание: ржд
+      место: вид.Милитин. Лесбос остров
+    - год: 1564
+      дата: 24.04
       описание: прств
+      место: Константинополь. Византия
    помин:
       дата: 24.04
+      календарь: греч,гбмч
       описание: само
