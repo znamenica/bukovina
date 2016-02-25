@@ -1,20 +1,27 @@
 ---
 Милостивая образ:
    имя: Милостивая, Киккиотиса
-   прозвище: образ Богородицы
+   описание: образ Богородицы
    чин: обр
    вид: Путеводительница образ
-   собор: копт,виз,кипр
+   собор: плст?,копт?,виз?,кипр?
    вики: http://drevo-info.ru/articles/7912.html
-   бытие: http://azbyka.ru/days/ikona-milostivaja
+   бытие:
+    - http://calendar.rop.ru/icons1/nov12-ikona.html
+    - http://azbyka.ru/days/ikona-milostivaja
    образ:
-    - http://drevo-info.ru/images/002/008408.jpg
-    - http://drevo-info.ru/images/002/008406.jpg
+    - http://drevo-info.ru/images/002/008408.jpg [Кипрский извод]
+    - http://drevo-info.ru/images/002/008406.jpg [Закрытая пеленой икона Богородицы Киккиотиссы в Киккском монастыре (Кипр)]
     - http://azbyka.ru/days/assets/img/icons/212/ac870a3a954a6f7b71028341239d0466.jpg
     - http://azbyka.ru/days/assets/img/icons/212/a7749ea2ad11ba0a8afb2190fd3d0c44.jpg
     - http://azbyka.ru/days/assets/img/icons/212/faaa1ccc65065e2dca3af75d2afb01ef.jpg
     - http://azbyka.ru/days/assets/img/icons/212/f8aa6cfc0302c5aa6843b9ce712b7528.jpg
     - http://azbyka.ru/days/assets/img/icons/212/e74b8c38bc01886a75b5d5b2acaea02d.jpg
+    - https://drevo-info.ru/images/002/008409.jpg [XI-XII в., Монастырь Св. Елены на Синае, Египет]
+    - https://drevo-info.ru/images/003/011300.jpg [Фессалоникийский список Киккской иконы Божией Матери]
+   служба:
+    - Милостивой образу служба
+    - http://azbyka.ru/days/caa/313
    событие:
     - год: I
       описание: напис
@@ -30,9 +37,8 @@
       место: Киккос. Кипр
    помин:
     - дата: 12.11
+      календарь: рпц
       описание: само
-      служба:
-       - Милостивой образу служба
-       - http://azbyka.ru/days/caa/313
     - дата: 26.12
+      календарь: рпц
       описание: само

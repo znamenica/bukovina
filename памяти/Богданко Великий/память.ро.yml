@@ -1,13 +1,21 @@
 ---
 Богданко Великий:
-   имя: Феодосий
-   отчество: Проересий
-   прозвище: великий, общежительник
-   описание: общих житий начальник
+   имя: вид. в иночестве Феодосий (Богданко)
+   отчество: Проересьевич
+   прозвище: Великий
+   описание: певец команской церкви; общих житий начальник (киновиарх) Палестинский
    чин: прп
-   собор: капд,плст
+   собор: капд?,пев?,плст?
    вики: http://drevo-info.ru/articles/4873.html
-   бытие: http://azbyka.ru/days/sv-feodosij-velikij-1
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/jan11-feodosi-velikij.html
+       - http://azbyka.ru/days/sv-feodosij-velikij-1
+      гр:
+       - http://www.saint.gr/1091/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/01/11_01.htm
+       - http://www.ec-patr.org/gr/saints/m01-11.htm
+       - http://www.synaxarion.gr/gr/sid/1695/sxsaintinfo.aspx
    образ:
     - http://drevo-info.ru/images/003/010259.jpg
     - http://pravicon.com/icon-3085
@@ -15,15 +23,28 @@
     - http://azbyka.ru/days/assets/img/saints/4177/8e1443849ae198a6d6a392cb05c784a4.jpg
     - http://azbyka.ru/days/assets/img/saints/4177/fc2729791156dd0149852bcc39c56584.jpg
     - http://azbyka.ru/days/assets/img/saints/4177/p190096kkq1squ18hj9cf4b91gi24.jpg
-   служба: Богданку Великому служба
+    - http://www.pigizois.net/sinaxaristis/01/11.jpg
+    - http://www.pigizois.net/sinaxaristis/01/11_theodos_kinoviarxis.jpg
+    - http://www.saint.gr/photos/standard/0111/OsiosTheodosiosCenobiarch03.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/9/95/Theodosius_the_Cenobiarch.jpg
+    - http://www.saint.gr/photos/standard/0111/OsiosTheodosiosCenobiarch05.jpg
+    - http://www.saint.gr/photos/standard/0111/OsiosTheodosiosCenobiarch05.jpg
+    - http://www.saint.gr/photos/standard/0111/OsiosTheodosiosCenobiarch06.jpg
+    - http://www.saint.gr/photos/standard/0111/OsiosTheodosiosCenobiarch07.jpg [17ος αι. μ.Χ. - Mονή Διονυσίου, Άγιον Όρος]
+    - https://drevo-info.ru/images/003/012803.jpg [Мозаика из монастыря Неа Мони, Греция (ок.1050 г.)]
+   служба:
+    - Богданку Великому служба
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_11.pdf
+    - http://glt.xyz/texts/Jan/11.uni.htm
    событие:
-    - год: ок.424
+    - год: ок.424/423
       описание: ржд
-      место: Могариасс село. Команы. Каппадокия
+      место: Могариасс село. близ.Команы. Каппадокия
     - год: 529
+      дата: 11.01
       описание: прств
       место: Феодосиева обитель. Вифлеемье. Палестина
    помин:
       дата: 11.01
-      описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/01/minea_01_11.pdf
+      календарь: рпц,греч
+      описание: прств
