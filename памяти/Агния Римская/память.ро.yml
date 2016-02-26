@@ -1,15 +1,35 @@
 ---
 Агния Римская:
-   имя: Агния, Анна, Агнесса, Инесса
-   прозвище: дева Римская
+   имя:
+      ру: Агния, Анна, Агнесса, Инесса
+      гр: Αγνή,,,
+   описание: дева Римская
    чин: мц
+   собор: рим?
    вики:
     - http://drevo-info.ru/articles/4856.html
     - https://ru.wikipedia.org/wiki/Агнесса_Римская
-   бытие: http://azbyka.ru/days/sv-agnija-anna-rimskaja
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/jan21-agniya.html
+       - http://azbyka.ru/days/sv-agnija-anna-rimskaja
+      гр:
+       - http://www.saint.gr/962/saint.aspx
+       - http://www.synaxarion.gr/gr/sid/1830/sxsaintinfo.aspx
+       - http://www.ecclesia.gr/greek/synaxaire/synaxari.asp?minas=1&id=141
+       - http://churchsynaxarion.blogspot.gr/2009/05/3-1-2.html
    образ:
     - http://drevo-info.ru/images/001/000870.jpg
     - http://pravicon.com/icon-1057
+    - http://www.saint.gr/photos/standard/0121/AgiaAgni05.jpg
+    - http://www.saint.gr/photos/standard/0121/AgiaAgni01.jpg
+    - http://apostoliki-diakonia.gr/gr_main/eortologio/img/jan/jan256.jpg
+    - http://xristianos.gr/forum/eikones/agioi_tis_orthodoksias/agia_agni_martus_529.jpg
+    - http://1.bp.blogspot.com/-hgrVkUrk8Bs/UuEyjg734JI/AAAAAAAAQbM/LF2gthmh6a0/s1600/21.+ΑΓΝΗ+ΜΑΡΤΥΣ+%281%29.jpg
+   служба:
+    - Агнии Римской служба
+    - http://glt.xyz/texts/Jan/21.uni.htm
+    - http://voutsinasilias.blogspot.gr/2014/01/21.html
    событие:
     - год: ок. 291
       описание: ржд
@@ -19,12 +39,16 @@
       описание: прств
     - год: 304
       описание: пгрб
-      место: Римье
-    - год: IV-X
+      место: Номентанская дорога. близ.Рим
+    - год: вид.IV
       описание: прен
-      место: загородный храм. Номентатская дорога. Рим
+      место: Агниевская церковь. близ.Рим
+    - год: по IV
+      описание: обстр
+      место: Агниевская обитель (ныне Сант-Аньезе-фуори-ле-мура). близ.Рим
    помин:
     - дата: 21.01
+      календарь: рпц
       описание: прств
     - дата: 05.07
       описание: само

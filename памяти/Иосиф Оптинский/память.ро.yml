@@ -1,20 +1,34 @@
 ---
 Иосиф Оптинский:
-   имя: в иночестве Иосиф, в крещении Иван
-   отчество: Ефимович
-   фамилия: Литовкин
-   прозвище: священносхимник и старец Оптинский
+   имя:
+      ру: вид.в схиме Иосиф, в иночестве Иосиф, в крещении Иоанн, в наречении Иван
+      гр: ', Ιωσήφ,, Ιβάν'
+   отчество:
+      ру: Ефимович
+      гр: Ευθύμοβιτς
+   фамилия:
+      ру: Литовкин
+      гр: Λιτόφκιν
+   описание: священносхимник и старец Оптинский
    чин: прп
-   собор: опт,мск
+   собор: опт,мск,стбл,тгрг?
    вики: http://drevo-info.ru/articles/6359.html
    бытие:
-    - http://azbyka.ru/days/sv-iosif-optinskij
-    - http://azbyka.ru/tserkov/svyatye/svyatye_i_podvizhniki_2/optinskiy_paterik_024-all.shtml
-   образ: http://pravicon.com/icon-2026
+      ру:
+       - http://calendar.rop.ru/svyat1/may09-iosif-optin.html
+       - http://azbyka.ru/days/sv-iosif-optinskij
+       - http://azbyka.ru/tserkov/svyatye/svyatye_i_podvizhniki_2/optinskiy_paterik_024-all.shtml
+      гр: http://www.saint.gr/1503/saint.aspx
+   образ:
+    - http://pravicon.com/icon-2026
+    - http://www.torirem.lg.ua/wp-content/uploads/2010/10/IosifOptinskiy-370x498.jpg
+    - http://www.optina.ru/photos/kanoniz/31.jpg
+   служба: Иосифу Оптинскому служба
    событие:
     - год: 1837
       дата: 02.11
       описание: ржд
+      место: вид.Таганрог
     - год: 1837
       дата: по 02.11
       описание: крещ
@@ -48,5 +62,5 @@
       описание: обр
    помин:
       дата: 09.05
+      календарь: рпц,греч
       описание: прств
-      служба: Иосифу Оптинскому служба

@@ -1,20 +1,45 @@
 ---
 Антоний Великий:
-   имя: Антоний
-   прозвище: Великий, отшельник Египетской пустыни
+   имя:
+      ру: Антоний
+      гр: Αντώνιος
+   прозвище:
+      ру: Великий
+      гр: Μέγας
+   описание: отшельник Египетской пустыни
+   покровитель: Аттика
    чин: прп
-   собор: копт
+   собор: копт?,внпу?
    вики: http://drevo-info.ru/articles/2827.html
-   бытие: http://pravicon.com/info-1784
+   бытие:
+      ру:
+       - http://calendar.rop.ru/svyat1/jan17-antoni-veliki.html
+       - http://pravicon.com/info-1784
+      гр: http://www.saint.gr/1120/saint.aspx
    образ:
-    - http://drevo-info.ru/images/001/000281.jpg
+    - http://drevo-info.ru/images/001/000281.jpg [икона 2-й половины XVI века]
     - http://pravicon.com/icon-1215
+    - http://calendar.rop.ru/svyat1/photos/AntoniyVelikiy.jpg
+    - http://www.pigizois.net/sinaxaristis/01/17.jpg
+    - http://www.porphyrios.gr/files/jpg/%CE%95%CE%B9%CE%BA%CF%8C%CE%BD%CE%B5%CF%82/%CE%86%CE%B3%CE%B9%CE%BF%CE%BD%20%CE%8C%CF%81%CE%BF%CF%82/%CE%9A%CE%B1%CF%81%CF%85%CE%AD%CF%82/%CE%A0%CE%B1%CF%87%CF%89%CE%BC%CE%B1%CE%AF%CE%BF%CE%B9/%CE%A6%CE%BF%CF%81%CE%B7%CF%84%CE%AD%CF%82/%CE%86%CE%B3%CE%B9%CE%BF%CE%B9/%CE%91%CE%BD%CF%84%CF%8E%CE%BD%CE%B9%CE%BF%CF%82%20%CE%9C%CE%AD%CE%B3%CE%B1%CF%82%20%CE%8C%CF%83%CE%B9%CE%BF%CF%82.jpg
+    - http://www.saint.gr/filesnew/03/1120/photos/AgiosAntonios01.jpg
+    - http://www.saint.gr/filesnew/03/1120/photos/AgiosAntonios03.jpg
+    - http://3.bp.blogspot.com/-_eNCXYT56Ns/Ta18B38gvbI/AAAAAAAAABY/cRa2oeG3V30/s1600/agios+antonios+2.jpg [Καζακίδου Μαρία© (byzantineartkazakidou. blogspot.com)]
+    - http://194.177.217.107/scanned/icons/35_8bit_PE-IC20-DS2-Q3.jpg [άγνωστος ζωγράφος κρητικού εργαστηρίου, τέλη 16ου - αρχές 17ου αιώνα μ.Χ.]
+    - http://www.saint.gr/filesnew/03/1120/photos/AgiosAntonios04.jpg
+    - http://3.bp.blogspot.com/-TPUd16xkqvY/UD2DOgD9BnI/AAAAAAAAAiM/pj4Vrb7kz9k/s1600/St+Anthony.jpg [Λυδία Γουριώτη© (lydiagourioti-iconography.blogspot.gr)]
+    - http://www.saint.gr/filesnew/03/1120/photos/AgiosAntonios08.jpg [17ος αι. μ.Χ. - Mονή Διονυσίου, Άγιον Όρος]
+    - http://upload.wikimedia.org/wikipedia/commons/e/e1/Istanbul_-_Chiesa_Pammacaristos_%28Fetiye_camii%29_-_S._Antonio_-_Foto_G._Dall%27Orto_26-5-2006.jpg [Μονή Παμμακάριστου]
+    - http://www.saint.gr/filesnew/03/1120/photos/AgiosAntoniosAgiosPaulosThivaios01.jpg [Άγιος Aντώνιος και Άγιος Παύλος ο Θηβαίος - β'μισό του 17ου αι. μ.Χ. - Mονή Ξηροποτάμου, Άγιον Όρος]
+    - http://www.saint.gr/photos/standard/0117/AgioiAntoniosEuthimiosSavvasIgiasmenos01.jpg [Άγιοι Aντώνιος, Eυθύμιος και Σάββας ο Ηγιασμένος - 1766 μ.Χ. - Nέα Σκήτη, Άγιον Όρος]
+   служба: Антонию Великому служба
    событие:
     - год: ок. 250
       описание: ржд
-      место: Египет
+      место: Кома (ныне Куманс). Египет
     - год: 356
       описание: прств
+      место: Внутреняя пустыня. Египет
     - год: 561
       описание: обр
     - год: 561
@@ -28,5 +53,5 @@
       место: Иулиановская церква. Арль. Галлия (Франция)
    помин:
       дата: 17.01
+      календарь: рпц,греч
       описание: само
-      служба: Антонию Великому служба
