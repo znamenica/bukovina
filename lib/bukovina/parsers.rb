@@ -46,6 +46,10 @@ module Bukovina::Parsers
    ROMANIAN_STROKE = 'a-zăâîșț'
    OLD_ENGLISH_CAPITAL = 'A-IL-PR-UW-YÆÐꝽÞǷĊĠĀĒĪŌŪ'
    OLD_ENGLISH_STROKE = 'a-il-pr-uw-yæðᵹſþƿċġāēīūō'
+   FRENCH_CAPITAL = 'A-Z' #TODO
+   FRENCH_STROKE = 'a-z' #TODO
+   SPANISH_CAPITAL = 'A-Z' #TODO
+   SPANISH_STROKE = 'a-z' #TODO
 
    UPCHAR = RUSSIAN_CAPITAL + CSLAV_CAPITAL + SERBIAN_CAPITAL + GREEK_CAPITAL +
       ENGLISH_CAPITAL + LATIN_CAPITAL + CZECH_CAPITAL + ARMENIAN_CAPITAL +
@@ -71,10 +75,13 @@ module Bukovina::Parsers
       :ар => /^[#{ARMENIAN_CAPITAL}#{ARMENIAN_STROKE}]+$/,
       :ив => /^[#{IVERIAN_STROKE}]+$/,
       :рм => /^[#{ROMANIAN_CAPITAL}#{ROMANIAN_STROKE}]+$/,
-      :са => /^[#{OLD_ENGLISH_CAPITAL}#{OLD_ENGLISH_STROKE}]+$/
+      :са => /^[#{OLD_ENGLISH_CAPITAL}#{OLD_ENGLISH_STROKE}]+$/,
+      :фр => /^[#{FRENCH_CAPITAL}#{FRENCH_STROKE}]+$/,
+      :ис => /^[#{SPANISH_CAPITAL}#{SPANISH_STROKE}]+$/,
    }
 end
 
 require 'bukovina/parsers/name'
 require 'bukovina/parsers/patronymic'
 require 'bukovina/parsers/lastname'
+require 'bukovina/parsers/nickname'

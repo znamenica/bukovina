@@ -1,18 +1,13 @@
-class Bukovina::Parsers::Patronymic
+class Bukovina::Parsers::NickName
    attr_reader :errors
 
    Parsers = Bukovina::Parsers
 
-   STATES = {
-      'по отцу' => :отчество,
-      'по куму' => :кумство,
-      'в принятии' => :отчество_принятое,
-   }
-
-   RE = /(вид\.)?
-         (#{STATES.keys.join('|').gsub(/\s+/,'\s')})?
+#   RE = /(вид\.)?(#{STATES.keys.join('|')})?(?:\s*)([#{UPCHAR}][#{CHAR}\s][#{DOWNCHAR}]+)?(?:\s*([,()\/\-])\s*)?/
+   RE = /()?
+         ()?
          \s*
-         ([#{Parsers::UPCHAR}][#{Parsers::CHAR}#{Parsers::ACCENT}]*)?
+         ([#{Parsers::UPCHAR}][#{Parsers::CHAR}#{Parsers::ACCENT}\s‑]*)?
          (?:\s*([,()\/\-])\s*|\z)/x
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
@@ -25,18 +20,17 @@ class Bukovina::Parsers::Patronymic
       when Hash
          names = name.to_a.map do |(language_code, nameline)|
             if ! Parsers::MATCH_TABLE.has_key?( language_code.to_sym )
-               raise Parsers::BukovinaInvalidLanguageError,
-                  "Invalid language '#{language_code}' specified" ; end
+               raise Parsers::BukovinaInvalidLanguageError, "Invalid language '" +
+                  "#{language_code}' specified" ; end
 
             if nameline
                parse_line nameline, language_code
             else
-               raise Parsers::BukovinaNullNameLine, "Null name line " +
-                  "#{name.inspect} for the language #{language_code}" ; end; end
+               raise Parsers::BukovinaNullNameLine, "Null name line #{name.inspect}" +
+                     " for the language #{language_code}" ; end ; end
 
          # remove enumerator error
-         @errors.select! do |x|
-            !x.is_a?( Parsers::BukovinaInvalidEnumeratorError ) ; end
+         @errors.select! { |x| !x.is_a?( Parsers::BukovinaInvalidEnumeratorError ) }
 
          mn = names[0][ :memory_name ].select do |x|
             !x[ :name ].has_key?( :similar_to )
@@ -61,6 +55,7 @@ class Bukovina::Parsers::Patronymic
                   j % names[ 0 ][ :memory_name ].size == i &&
                      x.has_key?( :text ) ; end
 
+#               binding.pry
                if ! has_name.empty?
                   n[ :similar_to ] = has_name.first
                elsif mn[ i ] && mn[ i ][ :name ] != n
@@ -72,18 +67,32 @@ class Bukovina::Parsers::Patronymic
                   ! names[ 0 ][ :memory_name ][ i ]&.[]( :name )&.has_key?( :text )
                   names[ 0 ][ :memory_name ][ i ][ :name ] = mn[ :name ]
                   end ; end ; end
+#         binding.pry
+#         rescue TypeError
+#            raise BukovinaTypeError, "#{$!}: for name #{name}"
+=begin
 
+         names.each do |name_dup|
+            dupes = name_dup.map { |n| n[ :text ] }.compact
+            name_dup.each do |name|
+               name[ :dupes ] = dupes - [ name[ :text] ] ; end ; end
+
+         # detect empty text names
+         empty = names.any? { |name_dup| name_dup.all? { |n| n[ :text ] } }
+         if empty
+            raise BukovinaEmptyRecord, "Empty record found for the names "
+                  "hash: #{name.inspect}" ; end
+=end
          names[ 0 ][ :name ].delete_if { |n| !n[ :text ] }
-         names[ 0 ][ :memory_name ].delete_if do |n|
-            n[ :name ].has_key?( :similar_to ) ; end
+         names[ 0 ][ :memory_name ].delete_if { |n| n[ :name ].has_key?( :similar_to ) }
+#         binding.pry
          names[ 0 ]
-
       when String
          names = parse_line( name )
          names[ :name ]&.delete_if { |n| !n[ :text ] }
          names[ :memory_name ].delete_if { |n| n[ :name ].has_key?( :similar_to ) }
+#         binding.pry
          names
-
       when NilClass
       else
          raise Parsers::BukovinaInvalidClass, "Invalid class #{name.class} " +
@@ -95,7 +104,7 @@ class Bukovina::Parsers::Patronymic
       @errors << e
       nil ; end
 
-   private
+private
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
@@ -115,7 +124,7 @@ class Bukovina::Parsers::Patronymic
       while ! line.empty? do
          match = RE.match( line )
 
-#        binding.pry
+#         binding.pry
          if ! match
             parse_error( line )
             match = [ nil, nil, nil, nil, line ] ; end
@@ -127,7 +136,7 @@ class Bukovina::Parsers::Patronymic
          apply_token( validate_token( match[ 3 ]&.strip, context ), context )
          apply_separator( match[ 3 ], match[ 4 ]&.strip, context )
          line = line[ match.end( 0 )..-1 ] ; end
-#     binding.pry
+#      binding.pry
 
       context[ :models ]
 
@@ -146,7 +155,25 @@ class Bukovina::Parsers::Patronymic
          when :alias
             prev = context[ :models ][ :name ][ 0..-2 ].select do |n|
                ! n.has_key?( :similar_to ) ; end.last
+#            binding.pry
             context[ :models ][ :name ].last[ :similar_to ] = prev ; end ; end
+#      else
+#         aliases = context.delete( :aliases )
+#         dup = aliases.dup
+#         i = -1
+#         dup.each do |name|
+#            context[ :attrs ][ i ][ :aliases ] = aliases - [ name ]
+#            dup.delete( name )
+#            i -= -1 ; end
+
+#            if aliases.nil?
+#               raise BukovinaInvalidContext, "Invalid context "
+#                     "'#{context[ :mode ]}' for token #{token}"
+#               end ; end
+
+#         if token[ 0 ].capitalize != token[ 0 ]
+#            @errors << "Invalid token '#{token}' for language "
+#                       "'#{context[ :attrs].last[ :language_code]}'" ; end
 
    rescue Parsers::BukovinaError => e
       @errors << e ; end
@@ -181,21 +208,20 @@ class Bukovina::Parsers::Patronymic
       when ')'
          context[ :mode ] = :stop_alias
       when '/'
-         context[ :mode ] = :ored
-         new_record( context )
+         @errors << Parsers::BukovinaInvalidEnumeratorError.new(
+            "Invalid enumerator ',' token" )
+         nil
       when '-'
          context[ :mode ] = :prefix
          new_record( context )
       when nil ; end ; end
 
-   def apply_pref pref, context
-      if pref
-         context[ :models ][ :memory_name ].last[ :feasibly ] = :feasible
-         end ; end
+   def apply_pref pref, context ; end
 
    def apply_state state, context
-      context[ :models ][ :memory_name ].last[ :state ] =
-      STATES[ state ] || :отчество ; end
+      if state
+         context[ :models ][ :memory_name ].last[ :state ] = :прозвание
+         end ; end
 
    def validate_token token, context
       matched =
@@ -203,15 +229,20 @@ class Bukovina::Parsers::Patronymic
          if s
             next s; end
 
-         if re =~ token
+         if re =~ token&.gsub( /[\s‑]+/,'' )
+#            binding.pry
             if context[ :models ][ :name ].last[ :language_code ] == code.to_sym
                token
+#            else
+#               raise BukovinaInvalidLanguage, "Invalid language '"            \
+#                  "#{context[ :models ][ :name ].last[ :language_code ]}' "   \
+#                  "for the #token '#{token}'" ;
                end ; end ; end
 
       if token && ! matched
-         raise Parsers::BukovinaInvalidCharError, "Invalid char(s) for " +
-            "language '#{ context[ :models ][ :name ].last[ :language_code ]}' " +
-            "specified" ; end
+#         binding.pry
+         raise Parsers::BukovinaInvalidCharError, "Invalid char(s) for language '" +
+            "#{context[ :models ][ :name ].last[ :language_code ]}' specified" ; end
             
       matched
 

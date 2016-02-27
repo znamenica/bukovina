@@ -18,7 +18,7 @@ class Bukovina::Parsers::Name
    RE = /(вид\.)?
          (#{STATES.keys.join('|').gsub(/\s+/,'\s')})?
          \s*
-         ([#{Parsers::UPCHAR}][#{Parsers::CHAR}#{Parsers::ACCENT}\s]*)?
+         ([#{Parsers::UPCHAR}][#{Parsers::CHAR}#{Parsers::ACCENT}\s‑]*)?
          (?:\s*([,()\/\-])\s*|\z)/x
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
@@ -241,7 +241,7 @@ private
          if s
             next s; end
 
-         if re =~ token&.gsub( /\s+/,'' )
+         if re =~ token&.gsub( /[\s‑]+/,'' )
 #            binding.pry
             if context[ :models ][ :name ].last[ :language_code ] == code.to_sym
                token
