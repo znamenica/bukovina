@@ -6,11 +6,12 @@
    количество: 2
    чин: мчч
    крат: екр
-   собор: рим
-   событие:
-      год: IV
-      описание: прств
-      место: Рим
+   бытие:
+      гр:
+       - http://www.saint.gr/2469/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/09/28_09.htm
+       - http://www.snhell.gr/references/synaxaristis/search.asp?id=1595
+   служба: http://glt.xyz/texts/Sep/28.uni.htm
    помин:
       дата: 28.09
       календарь: греч

@@ -1,15 +1,36 @@
 ---
 Сильвестр Римский:
-   имя: Сильвестр
+   имя:
+      ру: Сильвестр
+      ан: Silvester
+      ит: Silvestro
+      гр: Σίλβεστρος
    отчество: Руфинович
-   описание: римлянин; святитель и папа Римский, I
+   описание:
+      ру: римлянин; святитель и папа Римский
+      гр: Πάπας Ρώμης
    чин: свт
-   собор: рим
+   собор: рим?,пбср
    вики: http://drevo-info.ru/articles/8516.html
-   бытие: http://azbyka.ru/days/sv-silvestr-i-rimskij
+   бытие:
+      ру:
+       - 
+       - http://azbyka.ru/days/sv-silvestr-i-rimskij
+      гр:
+       - http://www.saint.gr/20/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/01/02_01.htm
+       - http://www.ec-patr.org/gr/saints/m01-02.htm
+       - http://www.snhell.gr/references/synaxaristis/search.asp?id=7&search=3
+       - http://www.synaxarion.gr/gr/sid/1590/sxsaintinfo.aspx
    образ:
     - http://drevo-info.ru/images/002/008148.jpg
     - http://pravicon.com/icon-2886
+    - http://lh5.ggpht.com/_gUfX60JmXAg/SntlJ9q6JwI/AAAAAAAAAok/e7h6EwNJxyM/ag.silbestros_romis.02-01.jpg [Βυζαντινό Εργαστήρι - Πάτρα (http://picasaweb.google.com/tbzergastiri3)]
+    - http://ocafs.oca.org/Icons/january/0102sylvester.jpg
+    - http://www.saint.gr/photos/standard/0102/AgiosSilvestros01.jpg
+   служба:
+    - Сильвестру Римскому служба
+    - http://glt.xyz/texts/Jan/02.uni.htm
    событие:
     - год: вт.пол.III
       описание: ржд
@@ -20,12 +41,26 @@
       описание: свящ
     - год: 313-314
       описание: свят
+      место: Рим
+    - год: 313-314
+      описание: прдст
+      место: Рим
     - год: 335
+      дата: 31.12
       описание: прств
       место: вид.Рим
+    - год: 335
+      дата: по 31.12
+      описание: пгрб
+      место: вид.Папская крипта. Каллиста кладбище. Аппиева дорога. близ.Рим
+    - год: по 500
+      описание: прен
+      место: Сильвестровская Нагорная церковь. Марсово поле. Рим
+      ссылка: http://www.st-martin.ru/hramy-martina/cerkov-svyatyh-silvestra-i-martina-rim/
    помин:
-      дата: 02.01
+    - дата: 31.12
+      календарь: сурж
       писание: само
-      служба:
-       - Богоявление/Предпразнеству Богоявления и Сильвестру Римскому служба
-       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_02.pdf
+    - дата: 02.01
+      календарь: рпц
+      писание: само

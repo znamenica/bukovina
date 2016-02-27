@@ -1,14 +1,22 @@
 ---
 Полиен Римский:
-   имя: Полиен
+   имя:
+      ру: Полиен
+      ит: Pollione
    описание: Римский
    чин: мч
+   собор: рим?
    вики: http://drevo-info.ru/articles/6731.html
    бытие: http://azbyka.ru/days/sv-polien-rimskij
    событие:
-      год: II
+    - год: II
       описание: прств
       образ: http://pravicon.com/icon-1798
+      место: Рим
+    - год: по 500
+      описание: прен
+      место: Сильвестровская Нагорная церковь. Марсово поле. Рим
+      ссылка: http://www.st-martin.ru/hramy-martina/cerkov-svyatyh-silvestra-i-martina-rim/
    помин:
       дата: 18.08
       описание: само

@@ -7,14 +7,16 @@
    чин: сщмч
    собор: нмр,нмк,влад?,пвлд?,ишим?,лепс?
    вики: http://drevo-info.ru/articles/17473.html
-   бытие: http://azbyka.ru/days/sv-vissarion-selinin
+   бытие:
+    - http://azbyka.ru/days/sv-vissarion-selinin
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5spTcGhe5slTd4jeC4iedG6XbuFdOicfOWh668csS4Us8WifG0AcC8WdOKWeCRyQaJaTcGZeu**
    образ: http://drevo-info.ru/images/002/008129.jpg
    событие:
     - год: 1976
       дата: 22.11
       описание: ржд
       место: Иудино село. Владимирская губерния
-    - год: до 1903
+    - год: вид.до 1902
       описание: брак
     - год: 1902
       дата: 10.02

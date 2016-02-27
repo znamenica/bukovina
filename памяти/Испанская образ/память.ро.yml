@@ -1,0 +1,18 @@
+---
+Испанская образ:
+   имя: Испанский
+   описание: образ Богородицы
+   чин: обр
+   собор: ибер?
+   бытие: http://azbyka.ru/days/ikona-ispanskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/279/p188ijbm9kj8p2m1gnkcvussu3.jpg
+    - http://azbyka.ru/days/assets/img/icons/279/p188ijbqe31fk118951orke93186t5.jpg
+    - http://azbyka.ru/days/assets/img/icons/279/p188ijbqe42j111dhc0tmbdreg6.jpg
+   событие:
+      год: 718
+      описание: явл
+      место: вид.Испания
+   помин:
+      дата: 08.04
+      описание: явл

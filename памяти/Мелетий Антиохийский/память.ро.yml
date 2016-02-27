@@ -1,9 +1,9 @@
 ---
 Мелетий Антиохийский:
    имя: Мелетий
-   прозвище: святитель Севастийский, Верийский, Антиохийский
+   описание: святитель Севастийский, Верийский, Антиохийский
    чин: свт
-   собор: арм,сир,2вс,капд
+   собор: арм?,сир?,2вс,капд?,виз?
    вики: http://drevo-info.ru/articles/4350.html
    бытие: http://pravicon.com/info-2926
    образ:
@@ -11,7 +11,9 @@
     - http://drevo-info.ru/images/001/000706.jpg
     - http://azbyka.ru/days/assets/img/saints/1726/p18enpd46esfl1gg58nu1enq1n1a3.jpg
     - http://azbyka.ru/days/assets/img/saints/1726/p18enpd46f1advcd2ts7p91u8b4.jpg
-   служба: Мелетию Антиохийскому служба
+   служба:
+    - Мелетию Антиохийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/02/minea_02_12.pdf
    событие:
     - год: 381
       описание: ржд
@@ -29,4 +31,3 @@
    помин:
       дата: 12.02
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_12.pdf

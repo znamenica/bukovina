@@ -1,8 +1,9 @@
 ---
 Избавительница образ:
    имя: Избавительница
-   прозвище: образ Богородица
+   описание: образ Богородица
    чин: обр
+   собор: аф?,абх?
    вики: http://drevo-info.ru/articles/4186.html
    бытие: http://azbyka.ru/days/ikona-izbavitelnica
    образ:
@@ -17,6 +18,10 @@
     - http://ustavschik.livejournal.com/37533.html
     - http://kazan.eparhia.ru/bogoslugenie/akafisti/bogieymateri/ikonibogieymateri/izbavcaikna/
     - http://korolev.msk.ru/minea/apr1/apr181.html
+   служба:
+    - http://azbyka.ru/days/caa/217
+    - http://korolev.msk.ru/minea/apr1/apr192.html
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_17.pdf
    событие:
     - год: XVII
       описание: явл
@@ -33,10 +38,6 @@
    помин:
     - дата: ср.2.по пасхе
       описание: само
-      служба:
-       - http://azbyka.ru/days/caa/217
-       - http://korolev.msk.ru/minea/apr1/apr192.html
     - дата: 17.10
       календарь: змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_17.pdf
