@@ -1,11 +1,13 @@
 ---
-Козельщанский образ:
-   имя: Козельщанский
+Козельщанская образ:
+   имя: Козельщанская
    описание: образ Богородицы
    чин: обр
-   собор: полт,крсг
+   собор: кзщн?,крсг?
    вики: http://drevo-info.ru/articles/6063.html
-   бытие: http://azbyka.ru/days/ikona-kozelshchanskaja-1881
+   бытие:
+    - http://calendar.rop.ru/icons1/feb21-ikona-kozelshanskaya.html
+    - http://azbyka.ru/days/ikona-kozelshchanskaja-1881
    образ:
     - http://drevo-info.ru/images/001/001057.jpg
     - http://azbyka.ru/days/assets/img/icons/37/b4289c60c599b7e1fae5b98c1cbc90e6.jpg
@@ -13,8 +15,10 @@
     - http://azbyka.ru/days/assets/img/icons/37/p18iod279u1kentng8mj1m0s1tth3.jpg
    служба:
     - Козельщанскому образу служба
+    - http://azbyka.ru/days/ikon/37
     - http://azbyka.ru/days/caa/563
     - http://azbyka.ru/days/caa/419
+    - http://azbyka.ru/days/assets/upload/minei/02/minea_02_21.pdf
    событие:
     - год: XV
       описание: напис
@@ -40,5 +44,5 @@
       место: Покровская обитель. Красногорск. Киевщина
    помин:
       дата: 21.02
+      календарь: рпц,змин
       описание: чудо
-      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_21.pdf
