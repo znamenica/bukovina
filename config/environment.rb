@@ -30,6 +30,7 @@ module Rails
          ActiveRecord::Base.establish_connection(
             @config.database_configuration[Rails.env])
 
+         I18n.load_path.concat( Dir.glob( Rails.root + "/config/locales/**/*.yml" ) )
          # custom
          @errors = [] ; end
 

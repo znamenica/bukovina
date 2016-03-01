@@ -1,4 +1,7 @@
 class Name < ActiveRecord::Base
+   self.abstract_class = true
+   self.table_name = 'names'
+
    has_many :memories, through: :memory_names
    has_many :memory_names
    belongs_to :similar_to, class_name: :Name

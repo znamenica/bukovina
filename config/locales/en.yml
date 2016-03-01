@@ -1,0 +1,5 @@
+---
+en:
+   activerecord:
+      errors:
+         invalid_text: Invalid text format detected

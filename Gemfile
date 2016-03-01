@@ -8,6 +8,7 @@ gem 'rdoba', :path => '/usr/local/home/majioa/git/rdoba'
 #gem 'petrovich', :path => '/usr/local/home/majioa/git/petrovich-ruby/'
 
 gem 'flag_shih_tzu'
+gem 'i18n'
 
 group :development do
    gem 'cucumber'
