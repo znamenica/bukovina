@@ -1,18 +1,4 @@
-module Bukovina::Parsers
-   class BukovinaError < StandardError; end
-   class BukovinaTypeError < BukovinaError; end
-   class BukovinaIndexError < BukovinaError; end
-   class BukovinaInvalidClass < BukovinaError; end
-   class BukovinaInvalidLanguageError < BukovinaError; end
-   class BukovinaInvalidContext < BukovinaError; end
-   class BukovinaInvalidCharError < BukovinaError; end
-   class BukovinaInvalidTokenError < BukovinaError; end
-   class BukovinaInvalidEnumeratorError < BukovinaError; end
-   class BukovinaInvalidVariatorError < BukovinaError; end
-   class BukovinaFalseSyntaxError < BukovinaError; end
-   class BukovinaEmptyRecord < BukovinaError; end
-   class BukovinaNullNameLine < BukovinaError; end
-
+class TextValidator < ActiveModel::EachValidator
    RUSSIAN_CAPITAL = 'А-ЯЁ'
    RUSSIAN_STROKE = 'а-яё'
    RUSSIAN_ACCENT = '́'
@@ -78,9 +64,9 @@ module Bukovina::Parsers
       :фр => /^[#{FRENCH_CAPITAL}#{FRENCH_STROKE}]+$/,
       :ис => /^[#{SPANISH_CAPITAL}#{SPANISH_STROKE}]+$/,
    }
-end
 
-require 'bukovina/parsers/name'
-require 'bukovina/parsers/patronymic'
-require 'bukovina/parsers/lastname'
-require 'bukovina/parsers/nickname'
+   def validate_each(record, attribute, value)
+      re = MATCH_TABLE[ record.language_code.to_s.to_sym ]
+      if re && value !~ re
+         record.errors[ attribute ] <<
+         I18n.t( 'activerecord.errors.invalid_language_char' ) ; end ; end ; end

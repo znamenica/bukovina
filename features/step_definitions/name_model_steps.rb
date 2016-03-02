@@ -106,3 +106,6 @@
       expect( @record.errors.messages.values.join ).to include( 'Invalid text format detected' )
       expect( @record ).to_not be_persisted ; end
    expect( LastName.where(text: fam) ).to match_array( [] ) ; end
+
+То(/^(?:греческого|русского) личного имени ([^"]*) не будет$/) do |name|
+   expect( Name.where(text: name) ).to match_array( [] ) ; end
