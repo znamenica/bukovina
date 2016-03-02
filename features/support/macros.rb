@@ -4,7 +4,10 @@ module MacrosSupport
    def find_or_create model, search_attrs, attrs = {}
       search_attrs = search_attrs.to_a.map do |(attr, value)|
          if value =~ /^\*(.*)/
-            submodel = eval( attr.camelize )
+            # w/a
+            subattr = attr == 'name' && 'first_name' || attr
+
+            submodel = eval( subattr.camelize )
             subattr = SUBATTRS.select { |a| submodel.new.respond_to?( a ) }.first
             [ :"#{attr}_id", submodel.where( subattr => $1 ).first.id ]
          else
