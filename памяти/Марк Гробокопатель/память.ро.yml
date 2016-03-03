@@ -4,10 +4,11 @@
    прозвище: Гробокопатель
    описание: инок Печерский, в Ближних Пещерах
    чин: прп
-   собор: бпеч
+   собор: бпеч,печ,мгбп
    вики: http://drevo-info.ru/articles/4924.html
    бытие: http://azbyka.ru/days/sv-mark-pecherskij
    образ: http://azbyka.ru/days/assets/img/saints/4873/p18vtegj5t1j0kjb21e881c7s9oi3.jpg
+   служба: Марку Гробокопателю служба
    событие:
     - год: XI-XII
       описание: прств
@@ -18,6 +19,3 @@
    помин:
       дата: 29.12
       описание: само
-      служба:
-       - Марку Гробокопателю служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_29.pdf

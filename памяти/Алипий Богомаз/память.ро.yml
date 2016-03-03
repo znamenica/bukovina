@@ -1,9 +1,9 @@
 ---
 Алипий Богомаз:
    имя: Алипий
-   описание: богомаз, Печерский, в Ближних Печерах
+   описание: иконописец; инок Печерский; в Ближних Печерах
    чин: прп
-   собор: бпеч
+   собор: печ,бпеч,бмз?
    вики: http://drevo-info.ru/articles/11232.html
    образ:
     - http://azbyka.ru/days/assets/img/saints/3366/p1920bkqgcpmpcdd1qhp1ouj6a03.jpg
@@ -11,13 +11,19 @@
     - http://azbyka.ru/days/assets/img/saints/3366/p1920bkqge1ngb10jl7pub6u16mj5.jpg
     - http://azbyka.ru/days/assets/img/saints/3366/584decf88df1dcbe9d5a64fe298c5e09.jpg
    бытие: http://azbyka.ru/days/sv-alipij-pecherskij
+   служба:
+    - Алипию Богомазу служба
+    - http://azbyka.ru/days/assets/upload/minei/08/minea_08_17.pdf
    событие:
-      год: ок. 1114
+    - год: ок. 1114
       дата: 17.08
       описание: прств
+      место: Печерская обитель. Киев
+    - год: ок. 1114
+      дата: по 17.08
+      описание: пгрб
+      место: Антониевы пещеры. Киев
    помин:
       дата: 17.08
+      календарь: змин
       описание: прств
-      служба:
-       - Алипию Богомазу служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_17.pdf
