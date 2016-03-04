@@ -126,11 +126,7 @@ module Rails
 
                   o_attrs = { memory: memory }
                   attr_lists[ :memory_name ].each do |attrs|
-                     begin
                      Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
-                     rescue ActiveRecord::RecordNotUnique
-                        binding.pry
-                     end
                      end ; end
 
                nnamer.errors.each { |e| errors[ f ] = e }.clear

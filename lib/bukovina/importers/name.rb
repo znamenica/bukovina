@@ -1,17 +1,16 @@
 class Bukovina::Importers::Name
 
-   def initialize attrs
-      @attrs = [ attrs.deep_dup ].flatten ; end
+   def find_or_init attrs
+      Name.where( attrs ).first || init( attrs ) ; end
 
-   def create attrs
-      r = Name.where( attrs ).first
-      if ! r
-         [ LastName, Patronymic, FirstName ].reduce( nil ) do |res, model|
-            if ! res
-               r = model.create( attrs )
-               r.valid? && r || nil
-            else
-               res ; end ; end ; end ; end
+   def init attrs
+      r = [ LastName, Patronymic ].reduce( nil ) do |res, model|
+         if ! res
+            r = model.new( attrs )
+            r.valid? && r || nil
+         else
+            res ; end ; end
+      r || FirstName.new( attrs ) ; end
 
    def import
       @attrs.each do |attrs|
@@ -22,7 +21,12 @@ class Bukovina::Importers::Name
             s.delete( :similar_to )
             similar_to = Name.where( s ).first ; end
 
-         r = create( attrs )
+         r = find_or_init( attrs )
          if similar_to
             r.similar_to = similar_to ; end
-         r.save! ; end ; end ; end
+         r.save! ; end ; end
+
+   private
+
+   def initialize attrs
+      @attrs = [ attrs.deep_dup ].flatten ; end ; end
