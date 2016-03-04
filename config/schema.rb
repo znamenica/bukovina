@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160209213700) do
+ActiveRecord::Schema.define(version: 20160304162200) do
+
+  create_table "descriptions", force: :cascade do |t|
+    t.string   "text",          null: false
+    t.integer  "language_code", null: false
+    t.integer  "memory_id",     null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["memory_id", "language_code"], name: "index_descriptions_on_memory_id_and_language_code", unique: true
+    t.index ["text", "language_code"], name: "index_descriptions_on_text_and_language_code", unique: true
+  end
 
   create_table "memories", force: :cascade do |t|
     t.string   "short_name"

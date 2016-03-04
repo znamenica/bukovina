@@ -1,6 +1,6 @@
 Допустим(/^есть строк[иа] имени:$/) do |string|
-   @namer = Bukovina::Parsers::Name.new
-   @res = @namer.parse( YAML.load( string ) ) ; end
+   @parser = Bukovina::Parsers::Name.new
+   @res = @parser.parse( YAML.load( string ) ) ; end
 
 То(/^обработанные данные имени будут выглядеть как:$/) do |string|
    expect( @res[ :name ].to_yaml.strip ).to be_eql( string.to_s ) ; end
@@ -8,7 +8,7 @@
 То(/^обработанные данные памятного имени будут выглядеть как:$/) do |string|
    expect( @res[ :memory_name ].to_yaml.strip ).to be_eql( string.to_s ) ; end
 
-То(/^обработанных данных имени не будет$/) do
+То(/^обработанных данных не будет$/) do
    expect( @res ).to be_nil ; end
 
 То(/^в списке ошибок будет (?:(\d+) )?ошибк[аи] "([^"]*)"$/) do |count, text|
@@ -22,4 +22,4 @@
       'ложного правописания' => name::BukovinaFalseSyntaxError,
    }
    value = Array.new( ( count || 1 ).to_i ) { types[ text ] }
-   expect( @namer.errors ).to match_array( value ) ; end
+   expect( @parser.errors ).to match_array( value ) ; end

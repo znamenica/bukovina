@@ -66,6 +66,7 @@ module Rails
          namer = Bukovina::Parsers::Name.new
          lnamer = Bukovina::Parsers::LastName.new
          nnamer = Bukovina::Parsers::NickName.new
+         desc = Bukovina::Parsers::Description.new
          Dir.glob( 'памяти/**/память.*.yml' ).each do |f|
             puts "Память: #{f}"
             m = begin
@@ -130,6 +131,15 @@ module Rails
                      end ; end
 
                nnamer.errors.each { |e| errors[ f ] = e }.clear
+
+               attr_lists = desc.parse( data[ 'описание' ] )
+
+               if attr_lists
+                  attr_lists[ :description ].each do |attrs|
+                     Bukovina::Importers::Description.new(attrs).import ; end
+                     end
+
+               desc.errors.each { |e| errors[ f ] = e }.clear
 
                end ; end
    

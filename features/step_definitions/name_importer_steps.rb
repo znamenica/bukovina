@@ -7,10 +7,6 @@
 
 То(/^будет создана модель имени с аттрибутами:$/) do |table|
    attrs = table.rows_hash
-   if attrs.has_key?( 'language_code' )
-      value = /^:(.*)/ =~ attrs[ 'language_code' ] && $1.to_sym ||
-         attrs[ 'language_code' ]
-      attrs[ 'language_code' ] = Name.language_codes[ value ] ; end
    expect( Name.where( attrs ).count ).to be_eql( 1 ) ; end
 
 То(/^будут созданы модели имени с аттрибутами:$/) do |table|
