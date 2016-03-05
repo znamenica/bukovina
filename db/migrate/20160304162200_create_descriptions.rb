@@ -8,7 +8,6 @@ class CreateDescriptions < ActiveRecord::Migration
          t.timestamps null: false
       end
 
-      add_index :descriptions, [ :text, :language_code ], unique: true
       add_index :descriptions, [ :memory_id, :language_code ], unique: true
    end
 end

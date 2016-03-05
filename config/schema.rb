@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20160304162200) do
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.index ["memory_id", "language_code"], name: "index_descriptions_on_memory_id_and_language_code", unique: true
-    t.index ["text", "language_code"], name: "index_descriptions_on_text_and_language_code", unique: true
   end
 
   create_table "memories", force: :cascade do |t|
