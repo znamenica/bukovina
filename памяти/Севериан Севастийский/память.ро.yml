@@ -1,23 +1,22 @@
 ---
 Севериан Севастийский:
-   имя: Севериан (Севириан)
-   описание: мученик Севастийский
-   чин: вмч
-   собор: арм
+   имя: Севериан
+   описание: воин и мученик Севастийский; 
+   чин: мч
+   собор: 40с,вои?,арм?,виз?
    вики: http://drevo-info.ru/articles/3039.html
-   бытие:
-      ру:
-       - http://azbyka.ru/days/sv-severian-sevastijskij-1
-       - http://calendar.rop.ru/svyat1/sep09-severian.html
-      гр: http://www.saint.gr/993/saint.aspx
-   образ: http://www.saint.gr/photos/standard/0909/AgiosSevirianos01.jpg
-   служба: Севериану Севастийскому служба
+   бытие: http://azbyka.ru/days/sv-severian-sevastijskij
+   образ:
+    - http://drevo-info.ru/images/002/008745.jpg
+    - http://drevo-info.ru/images/001/000337.jpg
+    - http://pravicon.com/icon-2845
    событие:
-      год: ок. 320
+    - год: ок. 320
       описание: прств
       место: Севастия. Армения
-   помин:
-      дата: 09.09
-      календарь: рпц,греч
-      описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_09.pdf
+    - год: 438
+      описание: обр
+      место: Севастия. Армения
+    - год: 438
+      описание: прен
+      место: Фирский храм. Константинополь. Византия

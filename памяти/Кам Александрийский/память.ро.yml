@@ -1,31 +1,69 @@
 ---
 Кам Александрийский:
-   имя: Пётр
-   описание: святитель Александрийский, I
-   чин: стсвт
-   собор: копт
+   имя:
+      ру: Пётр
+      гр: Πέτρος
+   описание:
+      ру: уроженец, святитель и мученик Александрийский; обезглавлен язычниками
+      гр: Ιερομάρτυρας Αρχιεπίσκοπος Αλεξανδρείας
+   чин: мсвт
+   собор: копт?
    вики:
     - http://drevo-info.ru/articles/14117.html
     - http://ru.wikipedia.org/wiki/Петр_Александрийский
-   бытие: http://azbyka.ru/days/sv-petr-i-aleksandrijskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-petr-i-aleksandrijskij
+      гр: http://www.saint.gr/2999/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/001970.jpg
     - http://azbyka.ru/days/assets/img/saints/524/5c7bdffa3f40e51b1427ddd8ed654285.jpg
     - http://azbyka.ru/days/assets/img/saints/524/fd194fcb285c69525199737948cfb509.jpg
     - http://azbyka.ru/days/assets/img/saints/524/p18f86bpvp3djstkfb1qcd1njc3.jpg
+    - http://www.saint.gr/photos/standard/1124/AgiosPetros01.jpg
+    - http://3.bp.blogspot.com/_qpE5hNwi618/SwxD7Lm0ZII/AAAAAAAAC6M/bVXQzd_76hU/s1600/peter.jpg [Ι.Μ. Διονυσίου, Άγιον Όρος]
+    - http://2.bp.blogspot.com/_qpE5hNwi618/SwxEWkQBsHI/AAAAAAAAC7M/Et_6R9wMD_g/s1600/peter1.jpg
+    - http://4.bp.blogspot.com/_qpE5hNwi618/Swy8j6eaOFI/AAAAAAAAC8M/81gB_HWIEdE/s1600/peter10.jpg
+    - http://2.bp.blogspot.com/_qpE5hNwi618/SwxENuhFqnI/AAAAAAAAC60/3m5-f0UK2AQ/s1600/peter4.jpg
+    - http://3.bp.blogspot.com/_qpE5hNwi618/SwxEHecjAmI/AAAAAAAAC6k/kUgqJkwya5Q/s1600/peter6.jpg
+    - http://3.bp.blogspot.com/_qpE5hNwi618/Swy8gQp3WAI/AAAAAAAAC8E/X3J1Ev2Rul4/s1600/peter11.jpg
+    - http://1.bp.blogspot.com/_qpE5hNwi618/SwxEKkk84CI/AAAAAAAAC6s/toEWhyKKdAM/s1600/peter5.jpg
+   служба: Каму Александрийскому служба
    событие:
     - год: сер.III
       описание: ржд
-      место: Александрия
+      место: Александрия. Египет
     - год: вид.300
       описание: свят
+      место: Александрия. Египет
+    - год: вид.300
+      описание: прдст
+      место: Александрия. Египет
     - год: 311
       описание: прств
-      место: Александрия
+      место: Александрия. Египет
+    - год: по X
+      предмет: часть главы
+      описание: прен
+      место: Дионисиева обитель. Афон
+    - год: по X
+      предмет: часть главы
+      описание: прен.1
+      место: Клестийская обитель. Аттика
+    - год: по X
+      предмет: частица
+      описание: прен.2
+      место: Свято-Троицая Александро-Невская лавра. Санкт-Петербург
    помин:
-      дата: 25.11
+    - дата: 25.11
+      год: 2009
+      календарь: герм
+      описание: само
+    - дата: 24.11
+      календарь: греч
+      описание: само
+    - дата: 25.11
+      календарь: змин
       описание: само
       служба:
-       - Каму Александрийскому служба
        - Введение Богородицы/Введения Богородицы отданию, Клименту Римскому и Каму Александрийскому служба
        - http://azbyka.ru/days/assets/upload/minei/11/minea_11_25.pdf

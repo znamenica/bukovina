@@ -1,16 +1,18 @@
 ---
 Архипп Колосский:
    имя: Архипп
-   описание: апостол от 70-ти, святитель Колосский
+   описание: апостол от 70-ти; святитель Колосский
    чир: ап
-   собор: фриг,стсвтт
+   собор: ап70,фриг?,мсвтт
    вики: http://drevo-info.ru/articles/4418.html
    бытие: http://azbyka.ru/days/sv-arhipp
    образ:
     - http://pravicon.com/icon-1281
     - http://azbyka.ru/days/assets/img/saints/2465/p1907ctgnl313152t1cvostiod3.jpg
     - http://azbyka.ru/days/assets/img/saints/2465/p1907ctgnmrgjlk11b4i1ubf1gsc4.jpg
-   служба: Архиппу Колосскому служба
+   служба:
+    - Архиппу Колосскому служба
+    - http://azbyka.ru/days/assets/upload/minei/02/minea_02_19.pdf
    событие:
     - год: I до нэ-I
       описание: ржд
@@ -21,9 +23,10 @@
       образ: http://azbyka.ru/days/assets/img/saints/2465/p18at1qk8gat91pnlcpv1n741ork3.jpg
    помин:
     - дата: 19.02
+      календарь: змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_19.pdf
     - дата: 22.11
+      календарь: змин
       описание: само
       служба:
        - Филимон Газский/Филимону Газскому, Архиппу Колосскому, Онисиму Путеольскому, Марку Благовествнику, Аполлосу Александриянину и Апфии Колосской служба
