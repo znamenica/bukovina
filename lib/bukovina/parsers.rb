@@ -9,6 +9,7 @@ module Bukovina::Parsers
    class BukovinaInvalidTokenError < BukovinaError; end
    class BukovinaInvalidEnumeratorError < BukovinaError; end
    class BukovinaInvalidVariatorError < BukovinaError; end
+   class BukovinaInvalidUrlFormatError < BukovinaError; end
    class BukovinaFalseSyntaxError < BukovinaError; end
    class BukovinaEmptyRecord < BukovinaError; end
    class BukovinaNullNameLine < BukovinaError; end
@@ -85,3 +86,4 @@ require 'bukovina/parsers/patronymic'
 require 'bukovina/parsers/lastname'
 require 'bukovina/parsers/nickname'
 require 'bukovina/parsers/description'
+require 'bukovina/parsers/link'

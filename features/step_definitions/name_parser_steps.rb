@@ -20,6 +20,7 @@
       'неверного признака' => name::BukovinaInvalidTokenError,
       'неверного перечислителя' => name::BukovinaInvalidEnumeratorError,
       'ложного правописания' => name::BukovinaFalseSyntaxError,
+      'неверного формата ссылки' => name::BukovinaInvalidUrlFormatError,
    }
    value = Array.new( ( count || 1 ).to_i ) { types[ text ] }
    expect( @parser.errors ).to match_array( value ) ; end

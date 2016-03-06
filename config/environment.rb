@@ -1,11 +1,9 @@
 require 'bukovina'
-require 'active_record'
-require 'active_support'
 require 'yaml'
-require 'pry'
-require 'rdoba'
+Bundler.require(:default)
 require 'rdoba/merge'
 
+# w/a
 class Hash
    include Rdoba::Merge ; end
 

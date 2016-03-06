@@ -9,6 +9,7 @@ gem 'rdoba', :path => '/usr/local/home/majioa/git/rdoba'
 
 gem 'flag_shih_tzu'
 gem 'i18n'
+gem 'validate_url'
 
 group :development do
    gem 'cucumber'
