@@ -5,4 +5,5 @@ class CreateLinks < ActiveRecord::Migration
          t.integer :language_code, null: false
          t.belongs_to :memory, null: false
 
+         t.string :type, null: false
          t.timestamps null: false ; end ; end ; end

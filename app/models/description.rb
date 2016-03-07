@@ -1,5 +1,5 @@
 class Description < ActiveRecord::Base
-   belongs_to :memory
+   belongs_to :describable, polymorphic: true
 
    enum language_code: [ :цс, :ру, :ср, :гр, :ан, :ла, :чх, :ир, :си, :бг,
       :ит, :ар, :ив, :рм, :са, :ис, :фр ]

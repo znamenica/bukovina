@@ -4,3 +4,4 @@ en:
       errors:
          invalid_text: Invalid text format detected
          invalid_language_char: Invalid char for the specified language provided
+         languages_arent_same: The languages of ifself, and descendant aren't the same

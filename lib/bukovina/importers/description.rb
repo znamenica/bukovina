@@ -5,15 +5,7 @@ class Bukovina::Importers::Description
          memory_attrs = attrs.delete( :memory )
          attrs[ :memory ] = Memory.where( memory_attrs ).first
 
-         begin
-         Description.where( attrs ).first_or_create 
-         rescue ActiveRecord::RecordNotUnique
-            p 1111111
-            Kernel.puts attrs.inspect
-         end
-         
-         
-         ; end ; end
+         Description.where( attrs ).first_or_create ; end ; end
 
    private
 
