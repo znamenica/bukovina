@@ -21,7 +21,6 @@ ActiveRecord::Schema.define(version: 20160307164700) do
     t.datetime "updated_at",       null: false
     t.string   "describable_type", null: false
     t.index ["describable_id", "describable_type", "language_code"], name: "index_descriptions_on_describable_and_language_code", unique: true
-    t.index ["text", "language_code"], name: "index_descriptions_on_text_and_language_code", unique: true
   end
 
   create_table "links", force: :cascade do |t|
