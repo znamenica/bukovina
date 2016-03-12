@@ -3,10 +3,10 @@
    имя: вид.в крещении Мария
    описание: уроженка и жительница Египетская; пустынница Иорданская
    чин: прп
-   собор: копт,плст
+   собор: копт?,плст?
    вики: http://drevo-info.ru/articles/9937.html
    бытие:
-      рус:
+      ру:
        - http://azbyka.ru/days/sv-marija-egipetskaja
        - http://azbyka.ru/otechnik/?Sofronij_Ierusalimskij/zhitie-prepodobnoj-materi-nashej-marii-egipetskoj
    образ:

@@ -1,11 +1,21 @@
 ---
 Антоний Месхи:
-   имя: Антоний
-   прозвище: Месхи
+   имя:
+      ру: Антоний
+      гр: Αντώνιος
+   фамилия:
+      ру: Месхи
+      гр: Μέσχι
+   описание:
+      ру: Грузинский
+      гр: εκ Γεωργίας
    чин: прп
    собор: груз
    бытие:
-      грч: http://www.saint.gr/3904/saint.aspx
+      гр:
+       - http://www.saint.gr/3904/saint.aspx
+       - http://www.synaxarion.gr/gr/sid/2954/sxsaintinfo.aspx
+   образ: http://oca.org/cdn/images/icons/lg/March/0316Pimen-Salosi.jpg
    событие:
       год: XIII
       описание: прств

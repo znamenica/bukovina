@@ -1,15 +1,15 @@
 ---
-Казанский образ:
-   имя: Казанский
+Казанская образ:
+   имя: Казанская
    описание: образ Богородицы
    чин: обр
-   вид: Смоленский образ
+   вид: Смоленская образ
    вики:
     - http://drevo-info.ru/articles/7646.html
     - http://ru.wikipedia.org/wiki/Казанская_икона_Божией_Матери
    бытие: http://azbyka.ru/days/ikona-kazanskaja
    служба:
-    - Казанскому образу служба
+    - Казанской образу служба
     - http://azbyka.ru/days/ikona-kazanskaja
    образ:
     - http://azbyka.ru/days/assets/img/icons/20/ff619117df270a18adf410d4f44bf465.jpg
@@ -19,9 +19,9 @@
     - https://upload.wikimedia.org/wikipedia/commons/0/04/Kazan_moscow.jpg [Московский список
       из Елоховского собора]
     - https://upload.wikimedia.org/wikipedia/commons/3/31/Kazanskaya_%2816-17th_c.%2C_riza_-_1881%2C_Yaroslavl_museum%29_01_by_shakko.jpg
-      [романово-ярославский список в ризе 1881 года.]
+      [Романово-Ярославский список в ризе 1881 года.]
     - https://upload.wikimedia.org/wikipedia/commons/8/8d/Kazanskaya_%28Galich%2C_18_c.%29_by_shakko.jpg
-      [Простонародный извод Казанской (Галич, начало XVIII века)]
+      [Простонародный извод Казанской (Галич, начало 18-го века)]
    событие:
     - год: 1579
       описание: явл
@@ -37,4 +37,4 @@
       описание: избав
       служба:
        - http://azbyka.ru/days/assets/upload/minei/10/minea_10_22.pdf
-       - Казанскому образу на избавление служба
+       - Казанской образу на избавление служба

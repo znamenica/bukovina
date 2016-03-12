@@ -1,11 +1,17 @@
 ---
 Пимен Юродивый:
-   имя: Пимен
-   описание: юродивый Христа ради; Пимен - пастух
+   имя:
+      ру: Пимен
+      гр: Ποιμήν
+   описание:
+      ру: Христа ради юродивый Грузинский; Пимен - пастух
+      гр: διά Χριστόν Σαλός εκ Γεωργίας
    чин: блпр
    собор: груз
    бытие:
-      грч: http://www.saint.gr/3905/saint.aspx
+      гр:
+       - http://www.saint.gr/3905/saint.aspx
+       - http://www.synaxarion.gr/gr/sid/2955/sxsaintinfo.aspx
    образ: http://oca.org/cdn/images/icons/lg/March/0316Pimen-Salosi.jpg
    событие:
       год: XIII

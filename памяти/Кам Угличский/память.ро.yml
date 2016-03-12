@@ -5,12 +5,12 @@
       гр: Πέτρος
    фамилия: Томаницкий
    описание:
-      ру: священник; Христа ради юродивый Угличский
+      ру: священник и Христа ради юродивый Угличский
       гр: ιερέας και δια Χριστόν σαλός του Ούγγλις
    чин: блж
-   собор: углч
+   собор: углч?
    бытие:
-      ру: http://tvereparhia.ru/publikaczii/voprosy-k-pravoslavnym/7864-evgenij-poselyanin-russkie-podvizhniki-19-veka#СВЯЩЕННИК ПЕТР (ГОРОДА УГЛИЧА)
+      ру: 'http://tvereparhia.ru/publikaczii/voprosy-k-pravoslavnym/7864-evgenij-poselyanin-russkie-podvizhniki-19-veka#СВЯЩЕННИК ПЕТР (ГОРОДА УГЛИЧА)'
       гр: http://www.saint.gr/928/saint.aspx
    событие:
     - год: 1782
