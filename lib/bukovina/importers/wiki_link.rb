@@ -1,2 +1,4 @@
-class Bukovina::Importers::WikiLink < Bukovina::Importers::Link
+require_relative 'language_link'
+
+class Bukovina::Importers::WikiLink < Bukovina::Importers::LanguageLink
    TYPE = :WikiLink ; end

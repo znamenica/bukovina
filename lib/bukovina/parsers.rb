@@ -50,13 +50,19 @@ module Bukovina::Parsers
    FRENCH_STROKE = 'a-zœæçàâîïûùüéèêëôÿñ'
    SPANISH_CAPITAL = 'A-ZÑÁÉÍÓÚÜÏ'
    SPANISH_STROKE = 'a-zñáéíóúüï'
+   GERMAN_CAPITAL = 'A-ZÄÖÜẞ'
+   GERMAN_STROKE = 'a-zäöüßſ'
+   UKRAINIAN_CAPITAL = 'А-ЩЬЮЯЄІЇҐ'
+   UKRAINIAN_STROKE = 'а-щьюяєіїґ'
 
    UPCHAR = RUSSIAN_CAPITAL + CSLAV_CAPITAL + SERBIAN_CAPITAL + GREEK_CAPITAL +
       ENGLISH_CAPITAL + LATIN_CAPITAL + CZECH_CAPITAL + ARMENIAN_CAPITAL +
-      ROMANIAN_CAPITAL + OLD_ENGLISH_CAPITAL + IVERIAN_CAPITAL
+      ROMANIAN_CAPITAL + OLD_ENGLISH_CAPITAL + IVERIAN_CAPITAL +
+      FRENCH_CAPITAL + SPANISH_CAPITAL + GERMAN_CAPITAL + UKRAINIAN_CAPITAL
    DOWNCHAR = RUSSIAN_STROKE + CSLAV_STROKE + SERBIAN_STROKE + GREEK_STROKE +
       ENGLISH_STROKE + LATIN_STROKE + CZECH_STROKE + ARMENIAN_STROKE +
-      IVERIAN_STROKE + ROMANIAN_STROKE + OLD_ENGLISH_STROKE
+      IVERIAN_STROKE + ROMANIAN_STROKE + OLD_ENGLISH_STROKE + FRENCH_STROKE +
+      SPANISH_STROKE + GERMAN_STROKE + UKRAINIAN_STROKE
    ACCENT = GREEK_ACCENT + RUSSIAN_ACCENT + CSLAV_ACCENT
    CHAR = DOWNCHAR + UPCHAR
 
@@ -78,8 +84,9 @@ module Bukovina::Parsers
       :са => /^[#{OLD_ENGLISH_CAPITAL}#{OLD_ENGLISH_STROKE}]+$/,
       :фр => /^[#{FRENCH_CAPITAL}#{FRENCH_STROKE}]+$/,
       :ис => /^[#{SPANISH_CAPITAL}#{SPANISH_STROKE}]+$/,
-   }
-end
+      :не => /^[#{GERMAN_CAPITAL}#{GERMAN_STROKE}]+$/,
+      :ук => /^[#{UKRAINIAN_CAPITAL}#{UKRAINIAN_STROKE}]+$/,
+   } ; end
 
 require 'bukovina/parsers/name'
 require 'bukovina/parsers/patronymic'
@@ -87,3 +94,4 @@ require 'bukovina/parsers/lastname'
 require 'bukovina/parsers/nickname'
 require 'bukovina/parsers/description'
 require 'bukovina/parsers/link'
+require 'bukovina/parsers/icon_link'

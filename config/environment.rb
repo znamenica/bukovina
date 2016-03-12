@@ -1,6 +1,7 @@
 require 'bukovina'
 require 'yaml'
 Bundler.require(:default)
+Bundler.require(:development)
 require 'rdoba/merge'
 
 # w/a
@@ -65,6 +66,8 @@ module Rails
          lnamer = Bukovina::Parsers::LastName.new
          nnamer = Bukovina::Parsers::NickName.new
          desc = Bukovina::Parsers::Description.new
+         ilink = Bukovina::Parsers::IconLink.new
+         link = Bukovina::Parsers::Link.new
          Dir.glob( 'памяти/**/память.*.yml' ).each do |f|
             puts "Память: #{f}"
             m = begin
@@ -130,16 +133,66 @@ module Rails
 #
 #               nnamer.errors.each { |e| errors[ f ] = e }.clear
 #
-               attr_lists = desc.parse( data[ 'описание' ] )
+#               attr_lists = desc.parse( data[ 'описание' ] )
+#
+#               if attr_lists
+#                  attr_lists[ :description ].each do |attrs|
+#                     attrs.merge!( memory: { short_name: short_name} )
+#                     Bukovina::Importers::Description.new( attrs ).import ; end
+#                     end
+#
+#               desc.errors.each { |e| errors[ f ] = e }.clear
+#
+               attr_lists = link.parse( data[ 'вики' ] )
 
                if attr_lists
-                  attr_lists[ :description ].each do |attrs|
+                  attr_lists[ :link ].each do |attrs|
                      attrs.merge!( memory: { short_name: short_name} )
-                     Bukovina::Importers::Description.new( attrs ).import ; end
+                     Bukovina::Importers::WikiLink.new( attrs ).import ; end
                      end
 
-               desc.errors.each { |e| errors[ f ] = e }.clear
+               link.errors.each { |e| errors[ f ] = e }.clear
 
+               attr_lists = link.parse( data[ 'бытие' ] )
+
+               if attr_lists
+                  attr_lists[ :link ].each do |attrs|
+                     attrs.merge!( memory: { short_name: short_name} )
+                     Bukovina::Importers::BeingLink.new( attrs ).import ; end
+                     end
+
+               link.errors.each { |e| errors[ f ] = e }.clear
+
+               attr_lists = link.parse( data[ 'отечник' ] )
+
+               if attr_lists
+                  attr_lists[ :link ].each do |attrs|
+                     attrs.merge!( memory: { short_name: short_name} )
+                     Bukovina::Importers::PatericLink.new( attrs ).import ; end
+                     end
+
+               link.errors.each { |e| errors[ f ] = e }.clear
+
+               attr_lists = ilink.parse( data[ 'образ' ] )
+
+               if attr_lists
+                  attr_lists[ :icon_link ].each do |attrs|
+                     attrs.merge!( memory: { short_name: short_name} )
+                     Bukovina::Importers::IconLink.new( attrs ).import ; end
+                     end
+
+               ilink.errors.each { |e| errors[ f ] = e }.clear
+
+#               attr_lists = link.parse( data[ 'служба' ] )
+#
+#               if attr_lists
+#                  attr_lists[ :link ].each do |attrs|
+#                     attrs.merge!( memory: { short_name: short_name} )
+#                     Bukovina::Importers::ServiceLink.new( attrs ).import ; end
+#                     end
+#
+#               link.errors.each { |e| errors[ f ] = e }.clear
+#
                end ; end
    
          if ! errors.keys.empty?

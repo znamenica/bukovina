@@ -13,19 +13,30 @@
          """
 
 
-   Сценарий: Ссылка с описанием
+   Сценарий: Иноязычная ссылка
       Допустим есть строка ссылки:
          """
-         http://recource.ru [Описание]
+         https://ru.wikipedia.org/wiki/София_Слуцкая
          """
       То обработанные данные ссылки будут выглядеть как:
          """
          ---
          - :language_code: :ру
-           :url: http://recource.ru
-           :description:
-             :language_code: :ру
-             :text: Описание
+           :url: https://ru.wikipedia.org/wiki/София_Слуцкая
+         """
+
+
+   Сценарий: Сложная ссылка
+      Допустим есть строка ссылки:
+         """
+         http://tvereparhia.ru/publikaczii/voprosy-k-pravoslavnym/7864-evgenij-poselyanin-russkie-podvizhniki-19-veka#СВЯЩЕННИК ПЕТР (ГОРОДА УГЛИЧА)
+         """
+      То обработанные данные ссылки будут выглядеть как:
+         """
+         ---
+         - :language_code: :ру
+           :url: http://tvereparhia.ru/publikaczii/voprosy-k-pravoslavnym/7864-evgenij-poselyanin-russkie-podvizhniki-19-veka#СВЯЩЕННИК
+             ПЕТР (ГОРОДА УГЛИЧА)
          """
 
 
@@ -47,6 +58,8 @@
          ар: http://recource.ar
          рм: http://recource.ro
          са: http://recource.uk
+         не: http://recource.de
+         ук: http://recource.ua
          """
       То обработанные данные ссылки будут выглядеть как:
          """
@@ -81,6 +94,10 @@
            :url: http://recource.ro
          - :language_code: :са
            :url: http://recource.uk
+         - :language_code: :не
+           :url: http://recource.de
+         - :language_code: :ук
+           :url: http://recource.ua
          """
 
    Сценарий: Неверный язык указан
@@ -91,14 +108,6 @@
       То обработанных данных не будет
       И в списке ошибок будет ошибка "неверного языка"
 
-
-   Сценарий: Указаны неверные символы в языке
-      Допустим есть строки ссылки:
-         """
-         ру: http://recource.ru [то у Валентина, Сергија]
-         """
-      То обработанных данных не будет
-      И в списке ошибок будет ошибка "неверной буквы языка"
 
    Сценарий: Неверный формат ссылки указан
       Допустим есть строки ссылки:

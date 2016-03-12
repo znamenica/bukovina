@@ -5,7 +5,7 @@ class Bukovina::Parsers::Link
 
    Parsers = Bukovina::Parsers
 
-   RE = /\A([#{Parsers::UPCHAR}#{Parsers::CHAR}#{Parsers::ACCENT}0-9\s‑;:'"\,()\.\-\?\/]+)\z/
+   RE = /\A([#{Parsers::UPCHAR}#{Parsers::CHAR}#{Parsers::ACCENT}0-9\s‑;:'"«»\,()\.\-\?\/]+)\z/
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
@@ -15,24 +15,44 @@ class Bukovina::Parsers::Link
       res =
       case line
       when Hash
-         links = line.map { |(lang, url)| parse_line( url, lang ) }.compact
+         links = line.map do |(lang, url)|
+            if url.is_a?( Array )
+               url.map do |u|
+                  parse_line( u, lang ) ; end.compact
+            else
+               parse_line( url, lang ) ; end ; end
+         .compact.flatten
+         { link: links }
+      when Array
+         links = line.map do |url|
+            if url.is_a?( Array )
+               url.map do |u|
+                  parse_line( u ) ; end.compact
+            else
+               parse_line( url ) ; end ; end
+         .compact.flatten
          { link: links }
       when String
          { link: [ parse_line( line ) ] }
       when NilClass
       else
-         raise Parsers::BukovinaInvalidClass, "Invalid class #{name.class} " +
-            "for Name line '#{name}'" ; end
+         @errors << Parsers::BukovinaInvalidClass.new( "Invalid class " +
+            "#{line.class} for Name line '#{line}'" ) ; end
 
       @errors.empty? && res || nil ; end
 
    private
 
-   def valid? url
+   def valid? url, language_code
       uri = URI.parse( url )
       uri.kind_of?( URI::HTTP )
-   rescue URI::InvalidURIError
-      false ; end
+   rescue URI::InvalidURIError => e
+      # URI::InvalidURIError: URI must be ascii only
+      line = e.to_s.split('\u{').map do |tok|
+         /^(?<num>[a-f0-9]+)/ =~ tok; num&.hex ; end
+      .compact.pack("U*")
+
+      line.size > 0 && ! Parsers::MATCH_TABLE[ language_code ] !~ line ; end
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
@@ -43,28 +63,15 @@ class Bukovina::Parsers::Link
       if ! Parsers::MATCH_TABLE[ language_code ]
          @errors << Parsers::BukovinaInvalidLanguageError.new( "Invalid " +
             "language '#{language_code}' specified" )
-         return nil ; end
+         return nil
 
-      match = /^(?<url>http[^\s]+)(?:\s*\[(?<desc>[^\]]+)\])?$/ =~ line
-      if ! match
-         @errors << Parsers::BukovinaInvalidUrlFormatError.new( "Invalid url" +
-            " line for #{line}" )
-         nil
-      elsif desc && Parsers::MATCH_TABLE[ language_code ] !~
-            desc.gsub(/[0-9\s‑';:",()\.\-\?\/]/,'')
-         @errors << Parsers::BukovinaInvalidCharError.new( "Invalid " +
-            "char(s) for language '#{language_code}' specified" )
-         nil
-      elsif ! valid?( url )
+      elsif ! valid?( line, language_code )
          @errors << Parsers::BukovinaInvalidUrlFormatError.new( "Invalid url" +
             " format for #{line}" )
          nil
+
       else
-         res = { language_code: language_code, url: url }
-         if desc
-            res[ :description ] = { language_code: language_code, text: desc }
-            end
-         res ; end ; end
+         { language_code: language_code, url: line } ; end ; end
 
    def initialize
       @errors = [] ; end ; end
