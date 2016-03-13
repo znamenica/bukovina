@@ -19,9 +19,6 @@
 Допустим(/^есть модель личного имени$/) do
    @model = FirstName.new ; end
 
-Допустим(/^попробуем создать имя с полями:$/) do |table|
-   expect{ Name.create( table.rows_hash ) }.to raise_error( NotImplementedError ) ; end
-
 Допустим(/^создадим новое отчество с полями:$/) do |table|
    find_or_create( Patronymic, table.rows_hash ) ; end
 

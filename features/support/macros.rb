@@ -4,7 +4,7 @@ module MacrosSupport
    def find_or_create model, search_attrs, attrs = {}
       new_attrs = {}
       search_attrs.to_a.each do |(attr, value)|
-         if /^\*(?<match_value>.*)/ =~ value
+         if value.is_a?( String ) && /^\*(?<match_value>.*)/ =~ value
             /(?<attr>[^:]*)(?::(?<modelname>.*))?/ =~ attr
             submodel = ( modelname || attr ).camelize.constantize
             subattr = SUBATTRS.select { |a| submodel.new.respond_to?( a ) }.first

@@ -19,11 +19,11 @@
          | names           |
          | memory_names    |
          | descriptions    |
-         | service_links   |
          | wikies          |
          | beings          |
-         | icons           |
          | paterics        |
+         | icon_links      |
+         | service_links   |
 
 
    Сценарий: Действительная запись

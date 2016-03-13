@@ -18,6 +18,9 @@
 То(/^свойство "([^"]*)" модели есть отношение к памяти$/) do |prop|
    expect( @model ).to belong_to( prop ).class_name( :Memory ) ; end
 
+То(/^свойство "([^"]*)" модели есть отношение к описываемому$/) do |prop|
+   expect( @model ).to belong_to( prop ) ; end
+
 То(/^таблица модели имеет столб(?:ец|цы) "([^"]*)" рода "(целый|строка)"$/) do |names, type_name|
    type = get_type( type_name )
    names.split( /,\s+/ ).each do |name|
