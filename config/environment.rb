@@ -202,8 +202,12 @@ module Rails
                "with count of #{errors.keys.size}" ; end ; end ; end
 
    def self.application
+      Kernel.puts "Access to app..."
       if !@app
-         Dir.glob( Rails.root + '/app/**/*.rb' ).each { |r| require( r ) }
+         Kernel.puts "Loading app..."
+         Kernel.puts( Dir.glob( Rails.root + '/app/validators/**/*.rb' ).each { |r| require( r ) }.inspect )
+         Kernel.puts( Dir.glob( Rails.root + '/app/**/*.rb' ).each { |r| require( r ) }.inspect )
+         Kernel.puts "..."
          @app = App.new ; end
       @app ; end
 
