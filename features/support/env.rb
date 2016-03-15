@@ -12,9 +12,9 @@ Spork.prefork do
    require 'ffaker'
 
    ENV[ 'RAILS_ENV' ] ||= 'cucumber'
-   DatabaseCleaner.strategy = :truncation
-
    Rails.application
+
+   DatabaseCleaner.strategy = :truncation
 
    Shoulda::Matchers.configure do |config|
       config.integrate do |with|

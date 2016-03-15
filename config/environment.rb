@@ -21,7 +21,8 @@ module Rails
 
          def database_configuration
             @dbconfig ||= YAML.load( File.open(
-               File.join( Rails.root, 'config/database.yml' ) ) ) ; end ; end
+               File.join( Rails.root, 'config/database.yml' ) ) )
+            ActiveRecord::Base.configurations = @dbconfig ; end ; end
 
       def initialize
          @config = Config.new
@@ -82,67 +83,67 @@ module Rails
                   memory.short_name = short_name ; end
 
                data = m[ short_name ]
-#               attr_lists = namer.parse( data[ 'имя' ] )
-#
-#               if attr_lists
-#                  attr_lists[ :name ].each do |attrs|
-#                     Bukovina::Importers::Name.new(attrs).import ; end
-#
-#                  o_attrs = { memory: memory }
-#                  attr_lists[ :memory_name ].each do |attrs|
-#                     Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
-#                     end ; end
-#               namer.errors.each { |e| errors[ f ] = e }.clear
-#
-#               attr_lists = patron.parse( data[ 'отчество' ] )
-#
-#               if attr_lists
-#                  attr_lists[ :name ].each do |attrs|
-#                     Bukovina::Importers::Name.new(attrs).import ; end
-#
-#                  o_attrs = { memory: memory }
-#                  attr_lists[ :memory_name ].each do |attrs|
-#                     Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
-#                     end ; end
-#
-#               patron.errors.each { |e| errors[ f ] = e }.clear
-#
-#               attr_lists = lnamer.parse( data[ 'фамилия' ] )
-#
-#               if attr_lists
-#                  attr_lists[ :name ].each do |attrs|
-#                     Bukovina::Importers::Name.new(attrs).import ; end
-#
-#                  o_attrs = { memory: memory }
-#                  attr_lists[ :memory_name ].each do |attrs|
-#                     Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
-#                     end ; end
-#
-#               lnamer.errors.each { |e| errors[ f ] = e }.clear
-#
-#               attr_lists = nnamer.parse( data[ 'прозвище' ] )
-#
-#               if attr_lists
-#                  attr_lists[ :name ].each do |attrs|
-#                     Bukovina::Importers::Name.new(attrs).import ; end
-#
-#                  o_attrs = { memory: memory }
-#                  attr_lists[ :memory_name ].each do |attrs|
-#                     Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
-#                     end ; end
-#
-#               nnamer.errors.each { |e| errors[ f ] = e }.clear
-#
-#               attr_lists = desc.parse( data[ 'описание' ] )
-#
-#               if attr_lists
-#                  attr_lists[ :description ].each do |attrs|
-#                     attrs.merge!( memory: { short_name: short_name} )
-#                     Bukovina::Importers::Description.new( attrs ).import ; end
-#                     end
-#
-#               desc.errors.each { |e| errors[ f ] = e }.clear
-#
+               attr_lists = namer.parse( data[ 'имя' ] )
+
+               if attr_lists
+                  attr_lists[ :name ].each do |attrs|
+                     Bukovina::Importers::Name.new(attrs).import ; end
+
+                  o_attrs = { memory: memory }
+                  attr_lists[ :memory_name ].each do |attrs|
+                     Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
+                     end ; end
+               namer.errors.each { |e| errors[ f ] = e }.clear
+
+               attr_lists = patron.parse( data[ 'отчество' ] )
+
+               if attr_lists
+                  attr_lists[ :name ].each do |attrs|
+                     Bukovina::Importers::Name.new(attrs).import ; end
+
+                  o_attrs = { memory: memory }
+                  attr_lists[ :memory_name ].each do |attrs|
+                     Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
+                     end ; end
+
+               patron.errors.each { |e| errors[ f ] = e }.clear
+
+               attr_lists = lnamer.parse( data[ 'фамилия' ] )
+
+               if attr_lists
+                  attr_lists[ :name ].each do |attrs|
+                     Bukovina::Importers::Name.new(attrs).import ; end
+
+                  o_attrs = { memory: memory }
+                  attr_lists[ :memory_name ].each do |attrs|
+                     Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
+                     end ; end
+
+               lnamer.errors.each { |e| errors[ f ] = e }.clear
+
+               attr_lists = nnamer.parse( data[ 'прозвище' ] )
+
+               if attr_lists
+                  attr_lists[ :name ].each do |attrs|
+                     Bukovina::Importers::Name.new(attrs).import ; end
+
+                  o_attrs = { memory: memory }
+                  attr_lists[ :memory_name ].each do |attrs|
+                     Bukovina::Importers::MemoryName.new(attrs, o_attrs).import
+                     end ; end
+
+               nnamer.errors.each { |e| errors[ f ] = e }.clear
+
+               attr_lists = desc.parse( data[ 'описание' ] )
+
+               if attr_lists
+                  attr_lists[ :description ].each do |attrs|
+                     attrs.merge!( memory: { short_name: short_name} )
+                     Bukovina::Importers::Description.new( attrs ).import ; end
+                     end
+
+               desc.errors.each { |e| errors[ f ] = e }.clear
+
                attr_lists = link.parse( data[ 'вики' ] )
 
                if attr_lists
