@@ -27,4 +27,14 @@
       expect( @model ).to have_db_column( name ).of_type( type ) ; end ; end
 
 То(/^получим ошибку удвоения попытавшись создать новое описание с полями:$/) do |table|
+   t = table.rows_hash.deep_dup
+   t.delete("describable:memory")
+   Kernel.puts Description.all.inspect
+   Kernel.puts Description.where( t ).inspect
+   ll = begin
+      find_or_create( Description, table.rows_hash )
+   rescue ActiveRecord::RecordNotUnique
+   end
+   Kernel.puts ll.inspect
+   Kernel.puts Description.where( t ).inspect
    expect{ find_or_create( Description, table.rows_hash ) }.to raise_error( ActiveRecord::RecordNotUnique ) ; end

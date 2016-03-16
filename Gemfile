@@ -7,20 +7,20 @@ gem 'rdoba', :git => 'https://github.com/3aHyga/rdoba.git'
 #gem 'rdoba', :path => '/usr/local/home/majioa/git/rdoba'
 #gem 'petrovich', :path => '/usr/local/home/majioa/git/petrovich-ruby/'
 
-gem 'flag_shih_tzu'
+#gem 'flag_shih_tzu'
 gem 'i18n'
 gem 'validate_url'
+gem 'activerecord', github: 'rails/rails', branch: 'v5.0.0.beta2', ref: '75710a8'
 
 group :development do
    gem 'cucumber'
    gem 'spork'
    gem 'shoulda-matchers', github: 'majioa/shoulda-matchers', branch: 'allow_to_use_the_matchers_with_just_rspec_expectations_gem'
    gem 'rspec-expectations'
-   gem 'activerecord', github: 'rails/rails', branch: 'v5.0.0.beta2'
    gem 'factory_girl'
    gem 'ffaker'
    gem 'database_cleaner'
-   gem 'sqlite3'
+   gem 'sqlite3', '~> 1.3.11'
    # To fix CVE-2015-7499 - HEAP-BASED BUFFER OVERFLOW VULNERABILITY IN LIBXML2 and others in LIBXML2
    gem 'nokogiri', '~> 1.6.7.2' ; end
 

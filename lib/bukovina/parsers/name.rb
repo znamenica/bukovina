@@ -76,6 +76,12 @@ class Bukovina::Parsers::Name
             ns[ :memory_name ].each.with_index do |mn, i|
                if mn[ :name ].has_key?( :text ) &&
                   ! names[ 0 ][ :memory_name ][ i ]&.[]( :name )&.has_key?( :text )
+                  Kernel.puts "*"*80
+                  Kernel.puts names[ 0 ].inspect
+                  Kernel.puts names[ 0 ][ :memory_name ].inspect
+                  Kernel.puts names[ 0 ][ :memory_name ][ i ].inspect
+                  Kernel.puts names[ 0 ][ :memory_name ][ i ]&.[]( :name ).inspect
+                  Kernel.puts names[ 0 ][ :memory_name ][ i ]&.[]( :name )&.has_key?( :text ).inspect
                   names[ 0 ][ :memory_name ][ i ][ :name ] = mn[ :name ]
                   end ; end ; end
 #         binding.pry

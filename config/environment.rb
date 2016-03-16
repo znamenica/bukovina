@@ -26,7 +26,8 @@ module Rails
 
       def initialize
          @config = Config.new
-         ActiveRecord::Base.logger = Logger.new(STDERR)
+         #TODO replace with rdoba.log
+         ActiveRecord::Base.logger = Logger.new( File.open( '/dev/null', 'w' ) )
          ActiveRecord::Base.establish_connection(
             @config.database_configuration[Rails.env])
 
