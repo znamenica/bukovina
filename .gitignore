@@ -20,4 +20,5 @@ tmp
 *.log
 .ruby-version
 .ruby-gemset
+.rvmrc
 db/*.sqlite3*
