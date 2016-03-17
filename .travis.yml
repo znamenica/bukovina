@@ -1,8 +1,8 @@
 language: ruby
 rvm:
  - ruby-head
- - rbx-2.1.1
- - rbx-head
+ - rbx-2.11
+ - rbx-3.19
 branches:
    only: master
 notifications:
@@ -12,6 +12,7 @@ script: bundle exec rake cucumber
 matrix:
    allow_failures:
     - rvm: ruby-head
-    - rvm: rbx-head
+    - rvm: rbx-2.11
+    - rvm: rbx-3.19
 env:
  - RAILS_ENV=cucumber
