@@ -20,7 +20,7 @@
    find_or_create( WikiLink, table.rows_hash ) ; end
 
 Допустим(/^попробуем создать имя с полями:$/) do |table|
-   expect{ Name.create( table.rows_hash ) }.to raise_error( NotImplementedError ) ; end
+   expect{ Name.create!( table.rows_hash ) }.to raise_error( ActiveRecord::RecordInvalid ) ; end
 
 Допустим(/^есть иконная ссылка "([^"]*)" без описания$/) do |url|
    FactoryGirl.create( :icon_link, url: url, description: false ) ; end

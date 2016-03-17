@@ -3,7 +3,7 @@ class Bukovina::Parsers::Description
 
    Parsers = Bukovina::Parsers
 
-   RE = /\A([#{Parsers::UPCHAR}#{Parsers::CHAR}#{Parsers::ACCENT}0-9\s‑;:'"\,()\.\-\?\/]+)\z/
+   RE = /\A([#{Parsers::UPCHAR}#{Parsers::CHAR}#{Parsers::ACCENT}0-9\s‑;:'"«»\,()\.\-\?\/]+)\z/
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
@@ -45,7 +45,7 @@ class Bukovina::Parsers::Description
             "language '#{language_code}' specified" )
          nil
       else
-         if Parsers::MATCH_TABLE[ language_code ] =~ line.gsub(/[0-9\s‑';:",()\.\-\?\/]/,'')
+         if Parsers::MATCH_TABLE[ language_code ] =~ line.gsub(/[0-9\s‑';:"«»,()\.\-\?\/]/,'')
             line
          else
             @errors << Parsers::BukovinaInvalidCharError.new( "Invalid " +
