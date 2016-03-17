@@ -24,6 +24,11 @@ group :development do
    # To fix CVE-2015-7499 - HEAP-BASED BUFFER OVERFLOW VULNERABILITY IN LIBXML2 and others in LIBXML2
    gem 'nokogiri', '~> 1.6.7.2' ; end
 
+platforms :rbx do
+   gem 'psych' # YAML for rbx
+   gem 'rubysl', '~> 2.0' # stl for rbx
+end
+
 require 'rubygems/package'
 
 class Gem::Package::TarWriter
