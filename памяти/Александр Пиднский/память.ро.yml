@@ -1,21 +1,40 @@
 ---
 Александр Пиднский:
-   имя: Александр
-   описание: проповедник, священник и мученик Пиднский; обезглавлен
+   имя:
+      ру: Александр
+      гр: Αλέξανδρος
+   описание:
+      ру: проповедник, священник и мученик Пиднский; обезглавлен
+      гр: εν Πύδνη
    чин: сщмч
-   собор: греч,мак
+   собор: мак?
    вики: http://drevo-info.ru/articles/5410.html
    бытие:
-    - http://azbyka.ru/days/sv-aleksandr-pidnskij
-    - http://calendar.rop.ru/svyat1/mar13-alexandr.html
+      ру:
+       - http://azbyka.ru/days/sv-aleksandr-pidnskij
+       - http://calendar.rop.ru/svyat1/mar13-alexandr.html
+      гр:
+       - http://www.saint.gr/49/saint.aspx
+       - http://www.snhell.gr/references/synaxaristis/search.asp?id=460&search=3
+       - http://www.pigizois.net/sinaxaristis/03/14_03.htm
+       - http://churchsynaxarion.blogspot.gr/2009/05/3-1-2.html
    образ:
     - http://pravicon.com/icon-1101
     - http://azbyka.ru/days/assets/img/saints/241/p18h8a70tj1cqmu381dnobm8bq63.jpg
+    - http://www.saint.gr/photos/standard/0314/AgiosAleksandrosPidni01s.jpg
+   служба: http://glt.xyz/texts/Mar/14.uni.htm
    событие:
-      год: 305-311
+    - год: 305-311
       описание: прств
       место: Пидна. Солунье. Македония
+    - год: вид.по X
+      предмет: глава
+      описание: прен
+      место: Великая лавра. Афон
    помин:
-      дата: 13.03
+    - дата: 13.03
       календарь: рпц
+      описание: само
+    - дата: 14.03
+      календарь: греч
       описание: само

@@ -1,18 +1,19 @@
 ---
-Себежский образ:
-   имя: Себежский, Опочецкий
+Себежская образ:
+   имя: Себежская, Опочецкая
    описание: образ Богородицы
    чин: обр
    вид: Умиление образ
-   собор: пск
+   собор: сбж?,опчк?
    бытие: http://azbyka.ru/days/ikona-umilenie-sebezhskaja-opocheckaja
    образ:
     - http://azbyka.ru/days/assets/img/icons/220/p18ioe5tvh97h1o5j6k01i9641a3.jpg
     - http://azbyka.ru/days/assets/img/icons/220/p18ioe5tvi1vfvgk1g5jeqt18l84.jpg
     - http://azbyka.ru/days/assets/img/icons/220/p188npq0iua6ve0f1ft31tikp6g3.jpg
    служба:
-    - Себежскому образу служба
+    - Себежской образу служба
     - http://azbyka.ru/days/caa/579
+    - http://azbyka.ru/days/assets/upload/minei/03/minea_03_14.pdf
    событие:
     - год: до 1634
       описание: обр
@@ -27,4 +28,3 @@
    помин:
       дата: 14.03
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_14.pdf

@@ -1,9 +1,9 @@
 ---
-Феодоровский образ:
-   имя: Феодоровский, Костромской
+Феодоровская образ:
+   имя: Феодоровская, Костромская
    описание: образ Богородицы
    чин: обр
-   собор: грдц,плст,кстр
+   собор: грдц?,плст?,кстр?
    вики: http://drevo-info.ru/articles/9649.html
    бытие:
     - http://azbyka.ru/days/ikona-feodorovskaja
@@ -16,7 +16,7 @@
     - http://days.pravoslavie.ru/jpg/ib4576.jpg
     - http://azbyka.ru/days/assets/img/icons/8/cb49d7fc46050091c5afc2c41754b492.jpg
    служба:
-    - Феодоровскому образу служба
+    - Феодоровской образу служба
     - http://azbyka.ru/days/caa/433
     - http://azbyka.ru/days/caa/434
    событие:
@@ -40,6 +40,7 @@
       описание: чудо
    помин:
     - дата: 14.03
+      календарь: рпц
       описание: блслв.1
       служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_14.pdf
     - дата: 16.08
