@@ -13,6 +13,10 @@ module Bukovina::Parsers
    class BukovinaFalseSyntaxError < BukovinaError; end
    class BukovinaEmptyRecord < BukovinaError; end
    class BukovinaNullNameLine < BukovinaError; end
+   class BukovinaInvalidValue < BukovinaError; end
+   class BukovinaInvalidKeyName < BukovinaError; end
+   class BukovinaInvalidKeyFormat < BukovinaError; end
+   class BukovinaInvalidFileNameFormat < BukovinaError; end
 
    RUSSIAN_CAPITAL = 'А-ЯЁ'
    RUSSIAN_STROKE = 'а-яё'
@@ -95,3 +99,6 @@ require 'bukovina/parsers/nickname'
 require 'bukovina/parsers/description'
 require 'bukovina/parsers/link'
 require 'bukovina/parsers/icon_link'
+require 'bukovina/parsers/service_link'
+require 'bukovina/parsers/service'
+require 'bukovina/parsers/plain_service'

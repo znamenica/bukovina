@@ -10,6 +10,7 @@ Spork.prefork do
    require 'shoulda-matchers'
    require 'factory_girl'
    require 'ffaker'
+   require 'fileutils'
 
    ENV[ 'RAILS_ENV' ] ||= 'cucumber'
    Rails.application
@@ -24,9 +25,18 @@ Spork.prefork do
 
    FactoryGirl.definition_file_paths = %w(features/factories)
    FactoryGirl.lint
-   World(FactoryGirl::Syntax::Methods)
+   World( FactoryGirl::Syntax::Methods )
 
-   Around do |scenario, block|
+   Around do |_scenario, block|
       DatabaseCleaner.cleaning( &block ) ; end
 
-   at_exit { DatabaseCleaner.clean } ; end
+   Before do
+      @owd = Dir.pwd
+      @workdir = Dir.mktmpdir ; end
+
+   After do
+      Dir.chdir( @owd )
+      FileUtils.remove_entry_secure( @workdir ) ; end
+
+   at_exit do
+      DatabaseCleaner.clean ; end ; end
