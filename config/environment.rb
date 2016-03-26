@@ -79,12 +79,13 @@ module Rails
                errors[ f ] = e ; nil ; end
 
             if m
-#               short_name = m.keys.first
-#               memory =
-#               Memory.by_short_name( short_name ).first_or_create do |memory|
-#                  memory.short_name = short_name ; end
-#
-#               data = m[ short_name ]
+               short_name = m.keys.first
+               memory =
+               Memory.by_short_name( short_name ).first_or_create do |memory|
+                  memory.short_name = short_name ; end
+
+               data = m[ short_name ]
+               #####
 #               attr_lists = namer.parse( data[ 'имя' ] )
 #
 #               if attr_lists
@@ -188,21 +189,21 @@ module Rails
 #
                attr_lists = slink.parse( data[ 'служба' ] )
 
-               if attr_lists
-                  attr_lists[ :link ].each do |attrs|
-                     attrs.merge!( memory: { short_name: short_name} )
-                     Bukovina::Importers::Link.new( attrs ).import ; end
-
-                  attr_lists[ :service ].each do |attrs|
-                     attrs.merge!( memory: { short_name: short_name} )
-                     Bukovina::Importers::Service.new( attrs ).import ; end
-
-                  attr_lists[ :plain_service ].each do |attrs|
-                     attrs.merge!( memory: { short_name: short_name} )
-                     Bukovina::Importers::PlainService.new( attrs ).import ; end
-                     end
-
-               link.errors.each { |e| errors[ f ] = e }.clear
+#               if attr_lists
+#                  attr_lists[ :link ].each do |attrs|
+#                     attrs.merge!( memory: { short_name: short_name} )
+#                     Bukovina::Importers::Link.new( attrs ).import ; end
+#
+#                  attr_lists[ :service ].each do |attrs|
+#                     attrs.merge!( memory: { short_name: short_name} )
+#                     Bukovina::Importers::Service.new( attrs ).import ; end
+#
+#                  attr_lists[ :plain_service ].each do |attrs|
+#                     attrs.merge!( memory: { short_name: short_name} )
+#                     Bukovina::Importers::PlainService.new( attrs ).import ; end
+#                     end
+#
+               slink.errors.each { |e| errors[ f ] = e }.clear
 
                end ; end
 
