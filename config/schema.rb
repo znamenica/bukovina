@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160309122200) do
+ActiveRecord::Schema.define(version: 20160328101300) do
+
+  create_table "chants", force: :cascade do |t|
+    t.string   "text",             null: false
+    t.string   "prosomeion_title"
+    t.integer  "language_code",    null: false
+    t.integer  "tone"
+    t.string   "type"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.index ["text", "language_code"], name: "index_chants_on_text_and_language_code", unique: true
+  end
 
   create_table "descriptions", force: :cascade do |t|
     t.string   "text",             null: false
@@ -58,6 +69,22 @@ ActiveRecord::Schema.define(version: 20160309122200) do
     t.datetime "updated_at",                 null: false
     t.integer  "similar_to_id"
     t.index ["text", "type", "language_code"], name: "index_names_on_text_and_type_and_language_code", unique: true
+  end
+
+  create_table "service_chants", force: :cascade do |t|
+    t.integer "service_id", null: false
+    t.integer "chant_id",   null: false
+    t.index ["service_id", "chant_id"], name: "index_service_chants_on_service_id_and_chant_id", unique: true
+  end
+
+  create_table "services", force: :cascade do |t|
+    t.string   "name",          null: false
+    t.integer  "language_code", null: false
+    t.integer  "memory_id",     null: false
+    t.string   "type"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["name", "language_code"], name: "index_services_on_name_and_language_code", unique: true
   end
 
 end

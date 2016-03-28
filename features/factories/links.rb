@@ -2,13 +2,13 @@ FactoryGirl.define do
    factory :link do
       url { FFaker::Internet.http_url } ; end
 
-   factory :language_link do
+   factory :language_link, parent: :link, class: :LanguageLink do
       language_code :ру ; end
 
-   factory :wiki_link do
+   factory :wiki_link, parent: :language_link, class: :WikiLink do
       memory ; end
 
-   factory :icon_link do
+   factory :icon_link, parent: :link, class: :IconLink do
       memory
 
       after( :build ) do |link, e|

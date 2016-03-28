@@ -7,5 +7,4 @@ class IconLink < Link
 
    accepts_nested_attributes_for :description, reject_if: :all_blank
 
-   validates :language_code, inclusion: { in: [ nil ] }
    validates :description, associated: true ; end

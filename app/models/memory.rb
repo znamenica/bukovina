@@ -7,6 +7,7 @@ class Memory < ActiveRecord::Base
    has_many :paterics, class_name: :PatericLink
    has_many :icon_links # во icons
    has_many :service_links #ЧИНИ перевести в services
+   has_many :services
 
    validates_presence_of :short_name
 

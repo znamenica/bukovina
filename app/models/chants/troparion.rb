@@ -1,0 +1,1 @@
+class Troparion < Chant; end

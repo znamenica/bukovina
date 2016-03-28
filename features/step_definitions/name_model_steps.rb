@@ -17,7 +17,7 @@
       name = FirstName.create( r ) ; end ; end
 
 Допустим(/^есть модель личного имени$/) do
-   @model = FirstName.new ; end
+   subject { FirstName.new } ;end
 
 Допустим(/^создадим новое отчество с полями:$/) do |table|
    find_or_create( Patronymic, table.rows_hash ) ; end
@@ -50,36 +50,17 @@
    expect( name_r.send( prop ) ).to be_eql( Name.where( text: target_name ).first )
    end
 
-То(/^значение свойства "([^"]*)" личного имени строго попадает в размер перечислителя$/) do |prop|
-#   TODO error: ArgumentError: '["цс", 0]' is not a valid language_code
-#   binding.pry
-#   expect( FirstName.new ).to validate_inclusion_of( :language_code ).
-#      in_array( FirstName.language_codes.keys )
-   end
-
 То(/^значение свойства "([^"]*)" личного имени не может содержать пробела$/) do |prop|
-   expect( @model ).to allow_value( 'Василий' ).for( prop ) ; end
-
-То(/^свойства "([^"]*)" личного имени не могут быть пустыми$/) do |props|
-   props.split(/,\s+/).each do |prop|
-      expect( @model ).to validate_presence_of( prop ) ; end ; end
-
-То(/^свойство "([^"]*)" личного имени является перечислителем$/) do |prop|
-   expect( @model ).to define_enum_for( prop ) ; end
+   expect( subject ).to allow_value( 'Василий' ).for( prop ) ; end
 
 То(/^свойство "([^"]*)" личного имени есть отношение к имени" $/) do |prop|
-   expect( @model ).to belong_to( prop ).class_name( :Name ) ; end
+   expect( subject ).to belong_to( prop ).class_name( :Name ) ; end
 
 То(/^личное имя имеет много памятных имён$/) do
-   expect( @model ).to have_many( :memory_names ) ; end
+   expect( subject ).to have_many( :memory_names ) ; end
 
 То(/^личное имя имеет много памятей через памятные имена$/) do
-   expect( @model ).to have_many( :memories ).through( :memory_names ) ; end
-
-То(/^имя имеет столб(?:ец|цы) "([^"]*)" рода "(целый|строка)"$/) do |names, type_name|
-   type = get_type( type_name )
-   names.split( /,\s+/ ).each do |name|
-      expect( @model ).to have_db_column( name ).of_type( type ) ; end ; end
+   expect( subject ).to have_many( :memories ).through( :memory_names ) ; end
 
 То(/^русского имени ([^"]*) не будет$/) do |name|
    expect( Name.where(text: name) ).to match_array( [] ) ; end

@@ -67,6 +67,10 @@ class TextValidator < ActiveModel::EachValidator
 
    def validate_each(record, attribute, value)
       re = MATCH_TABLE[ record.language_code.to_s.to_sym ]
-      if re && value !~ re
+      if re && value.present? && value !~ re
+         chars = value.unpack( "U*" ).map do |c|
+            c.chr !~ re && c || nil end.compact.uniq.sort.pack( "U*" )
          record.errors[ attribute ] <<
-         I18n.t( 'activerecord.errors.invalid_language_char' ) ; end ; end ; end
+         I18n.t( 'activerecord.errors.invalid_language_char',
+            language: record.language_code,
+            chars: chars ) ; end ; end ; end

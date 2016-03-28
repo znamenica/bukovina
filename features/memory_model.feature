@@ -24,6 +24,7 @@
          | paterics        |
          | icon_links      |
          | service_links   |
+         | services        |
 
 
    Сценарий: Действительная запись

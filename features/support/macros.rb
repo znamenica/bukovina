@@ -1,7 +1,19 @@
 module MacrosSupport
    SUBATTRS = [ :short_name, :text, :url ]
 
-   def find_or_create model, search_attrs, attrs = {}
+   def sample &block
+      if block_given?
+         @sample_proc = block
+      elsif @sample_proc
+         @sample_proc.call ;end ;end
+
+   def subject &block
+      if block_given?
+         @subject_proc = block
+      else
+         @subject_result = @subject_proc.call ;end ;end
+
+   def expand_attributes model, search_attrs
       new_attrs = {}
       search_attrs.to_a.each do |(attr, value)|
          if value.is_a?( String ) && /^\*(?<match_value>.*)/ =~ value
@@ -16,7 +28,22 @@ module MacrosSupport
             value = value.is_a?( String ) && YAML.load( value ) || value
             new_attrs[ attr ] = value ; end ; end
 
-      model.where( new_attrs ).first_or_create!(
+      new_attrs ;end
+
+   def create model, search_attrs = {}, attrs = {}
+      if model.is_a?( Symbol )
+         object = FactoryGirl.build( model, search_attrs )
+         object.save
+         object
+      else
+         new_attrs = expand_attributes( model, search_attrs )
+
+         model.create( attrs.merge( new_attrs ) ) ;end ;end
+
+   def find_or_create model, search_attrs, attrs = {}
+      new_attrs = expand_attributes( model, search_attrs )
+
+      model.where( new_attrs ).first_or_create(
          attrs.merge( new_attrs ) ) ; end
 
    def get_type type_name
