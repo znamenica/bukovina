@@ -17,4 +17,4 @@
 То(/^модель тропаря с аттрибутами будет относиться к службе "([^"]*)":$/) do |name, table|
    attrs = table.rows_hash
    service = Service.find_by_name( name )
-   expect( Troparion.where( attrs ).service ).to be_eql( service ) ;end
+   expect( Troparion.where( attrs ).first.services ).to include( service ) ;end

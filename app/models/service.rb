@@ -10,4 +10,6 @@ class Service < ActiveRecord::Base
 
    has_language on: :name
 
+   accepts_nested_attributes_for :chants
+
    validates :name, :language_code, :memory_id, presence: true ;end

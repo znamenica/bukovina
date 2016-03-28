@@ -36,6 +36,8 @@ class TextValidator < ActiveModel::EachValidator
    SPANISH_CAPITAL = 'A-ZÑÁÉÍÓÚÜÏ'
    SPANISH_STROKE = 'a-zñáéíóúüï'
 
+   RUSSIAN_SYNTAX = ' .,:;!/-'
+
    UPCHAR = RUSSIAN_CAPITAL + CSLAV_CAPITAL + SERBIAN_CAPITAL + GREEK_CAPITAL +
       ENGLISH_CAPITAL + LATIN_CAPITAL + CZECH_CAPITAL + ARMENIAN_CAPITAL +
       ROMANIAN_CAPITAL + OLD_ENGLISH_CAPITAL + IVERIAN_CAPITAL
@@ -46,7 +48,7 @@ class TextValidator < ActiveModel::EachValidator
    CHAR = DOWNCHAR + UPCHAR
 
    MATCH_TABLE = {
-      :ру => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT} ‑]+$/,
+      :ру => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}#{RUSSIAN_SYNTAX}]+$/,
       :цс => /^[#{CSLAV_CAPITAL}#{CSLAV_STROKE}#{CSLAV_ACCENT} ‑]+$/,
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE} ‑]+$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT} ‑]+$/,
