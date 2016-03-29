@@ -1,9 +1,5 @@
-Допустим(/^создадим новую память с полями:$/) do |table|
-   find_or_create( Memory, table.rows_hash ) ; end
-
 Допустим(/^есть память "(.*)"$/) do |short_name|
    find_or_create( Memory, short_name: short_name ) ; end
-
 
 Допустим(/^суть памяти "([^"]*)"$/) do |names|
    names.split(/\s*,\s*/).each do |short_name|
@@ -22,7 +18,3 @@
    memory = Memory.where( short_name: short_name ).first
    table.rows.flatten.each do |attr|
       expect( memory ).to have_many( attr.to_sym ) ; end ; end
-
-То(/^память "([^"]*)" будет существовать$/) do |short_name|
-   it = Memory.where( short_name: short_name ).first
-   expect( it ).to be_persisted ; end

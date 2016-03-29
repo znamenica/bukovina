@@ -5,10 +5,6 @@
 Если(/^импортируем их$/) do
    @importer.import ; end
 
-То(/^будет создана модель имени с аттрибутами:$/) do |table|
-   attrs = table.rows_hash
-   expect( Name.where( attrs ).count ).to be_eql( 1 ) ; end
-
 То(/^будут созданы модели имени с аттрибутами:$/) do |table|
    attrs_list = []
    table.each_cells_row do |row|

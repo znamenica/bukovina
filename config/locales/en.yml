@@ -2,6 +2,7 @@
 en:
    activerecord:
       errors:
-         invalid_text: Invalid text format detected
+         invalid_patronymic: has invalid form for a patronymic
+         invalid_last_name: has invalid form for a last name
          invalid_language_char: contains invalid char(s) "%{chars}" for the specified language "%{language}"
          languages_arent_same: The languages of ifself, and descendant aren't the same

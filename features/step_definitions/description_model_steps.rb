@@ -1,18 +1,5 @@
-Допустим(/^есть модель описания$/) do
-   subject { Description.new } ;end
-
-Допустим(/^создадим новое описание с полями:$/) do |table|
-   find_or_create( Description, table.rows_hash ) ; end
-
-То(/^русское описание "([^"]*)" будет существовать$/) do |name|
-   it = Description.where( text: name ).first
-   expect( it ).to be_persisted ; end
-
 То(/^свойство "([^"]*)" модели есть отношение к памяти$/) do |prop|
    expect( subject ).to belong_to( prop ).class_name( :Memory ) ; end
-
-То(/^свойство "([^"]*)" модели есть отношение к описываемому$/) do |prop|
-   expect( subject ).to belong_to( prop ) ; end
 
 То(/^получим ошибку удвоения попытавшись создать новое описание с полями:$/) do |table|
    t = table.rows_hash.deep_dup

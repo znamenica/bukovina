@@ -32,14 +32,17 @@ class Bukovina::Parsers::ServiceLink
             "#{line.class} for Name line '#{line}'" )
          [] ; end
 
-      (links, aservices) = tres.split_by { |value| value.try( :has_key?, :url ) }
+      if @errors.any?
+         nil
+      else
+         (links, aservices) = tres.split_by do |value|
+            value.try( :has_key?, :url ) ;end
 
-      (plain_services, services) =
-      aservices.split_by { |value| value.is_a?( String ) }
+         (plain_services, services) =
+         aservices.split_by { |value| value.is_a?( String ) }
 
-      res = { link: links, service: services, plain_service: plain_services }
-
-      @errors.empty? && res || nil ; end
+         { link: links, service: services, plain_service: plain_services }
+         end ;end
 
    private
 
@@ -116,7 +119,7 @@ class Bukovina::Parsers::ServiceLink
             nil ; end
 
       else
-         { language_code: language_code, url: line } ; end ; end
+         [ { language_code: language_code, url: line } ] ;end ;end
 
    def initialize
       @errors = [] ; end ; end

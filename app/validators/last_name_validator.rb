@@ -10,4 +10,4 @@ class LastNameValidator < ActiveModel::EachValidator
       re = TABLE[ record.language_code.to_sym ]
       if re && value !~ re
          record.errors[ attribute ] <<
-         I18n.t( 'activerecord.errors.invalid_text' ) ; end ; end ; end
+         I18n.t( 'activerecord.errors.invalid_last_name' ) ; end ; end ; end

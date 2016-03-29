@@ -1,6 +1,28 @@
 module MacrosSupport
    SUBATTRS = [ :short_name, :text, :url ]
 
+   LANGUAGES = { /русск(?:ая|ой|ое|ий|ого|ие|их)/     => :ру,
+                 /греческ(?:ая|ой|ое|ий|ого|ие|их)/   => :гр }
+
+   MODELS =  { /тропар[ья]/                        => Troparion,
+               /величан(?:ий|ие|ия|ье)/            => Magnification,
+               /песнопен(?:ий|ие|ия|ье)/           => Chant,
+               /кондака?/                          => Kontakion,
+               /им(?:я|ени)/                       => Name,
+               /описан(?:ий|ие|ия|ье)/             => Description,
+               /ссылк[аиу]/                        => Link,
+               /вики ссылк[аиу]/                   => WikiLink,
+               /бытийн(?:ая|ой|ую) ссылк[аиу]/     => BeingLink,
+               /иконн(?:ая|ой|ую) ссылк[аиу]/      => IconLink,
+               /отечников(?:ая|ой|ую) ссылк[аиу]/  => PatericLink,
+               /служебн(?:ая|ой|ую) ссылк[аиу]/    => ServiceLink,
+               /памят[ьи]/                         => Memory,
+               /памятно(?:е|го) им(?:я|ени)/       => MemoryName,
+               /лично(?:е|го) им(?:я|ени)/         => FirstName,
+               /отчеств[оа]/                       => Patronymic,
+               /фамили[ияю]/                       => LastName,
+               /служб[аыу]?/                       => Service }
+
    def sample &block
       if block_given?
          @sample_proc = block
@@ -49,17 +71,22 @@ module MacrosSupport
    def get_type type_name
       { 'целый' => :integer, 'строка' => :string }[ type_name ] ; end
 
-   def base_field attr
-      {  memory: :short_name,
-         service: :name }[ attr.to_sym ] ;end
+   def base_field name
+      hash = { /memory|памят[ьи]/                     => :short_name,
+               /magnification|величан(ий|ие|ия|ье)/   => :text,
+               /service|служб[аыу]?/                  => :name,
+               /name|им(я|ени)/                       => :text,
+               /patronymic|отчеств[оа]/               => :text,
+               /last_name|фамили[июя]/                => :text,
+               /first_name|лично(е|го) им(я|ени)/     => :text,
+               /chant|песнопен(ий|ие|ия|ье)/          => :text,
+               /description|описан(ий|ие|ия|ье)/      => :text,
+               /link|ссылк[аиу]/                      => :url }
+
+      hash.reduce( nil ) { |s, (re, prop)| re =~ name && prop || s } ;end
 
    def model_of name
-      hash = { /тропар[ья]/   => Troparion,
-               /величани[ея]/ => Magnification,
-               /кондака?/     => Kontakion,
-               /служб[аыу]/   => Service }
-
-      hash.reduce( nil ) { |s, (re, model)| re =~ name && model || s }  ;end
+      MODELS.reduce( nil ) { |s, (re, model)| re =~ name && model || s } ;end
 
    def extract_key_to r, key
       similar_to = r.delete( key )
@@ -74,3 +101,9 @@ module MacrosSupport
          e.map { |k, v| [ k, v.to_s ] }.to_h ; end ; end ; end
 
 World(MacrosSupport)
+
+def langs_re
+   MacrosSupport::LANGUAGES.keys.join('|') ;end
+
+def kinds_re
+   MacrosSupport::MODELS.keys.join('|') ;end
