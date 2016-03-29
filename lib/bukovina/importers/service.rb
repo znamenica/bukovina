@@ -4,14 +4,20 @@ class Bukovina::Importers::Service
       @attrs.each do |attrs|
          memory_attrs = attrs.delete( :memory )
          attrs[ :memory ] = Memory.where( memory_attrs ).first
-         create_attrs_list = attrs.delete( :chants )
+         chants_attrs_list = attrs.delete( :chants )
+         magnifications_attrs_list = attrs.delete( :magnifications )
 
          begin
          service =
-         Service.where( attrs ).first_or_create( attrs.merge(chants_attributes: create_attrs_list))
+         Service.where( attrs ).first_or_create( attrs.merge(
+            chants_attributes: chants_attrs_list,
+            magnifications_attributes: magnifications_attrs_list ) )
 #         service = Service.where( attrs ).first_or_create
 #         service.chants.create( create_attrs_list )
          rescue ActiveRecord::RecordNotUnique
+            Kernel.puts attrs.inspect
+            binding.pry
+         rescue NoMethodError
             Kernel.puts attrs.inspect
             binding.pry
          end

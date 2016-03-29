@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160328101300) do
+ActiveRecord::Schema.define(version: 20160329103700) do
 
   create_table "chants", force: :cascade do |t|
     t.string   "text",             null: false
@@ -41,6 +41,14 @@ ActiveRecord::Schema.define(version: 20160328101300) do
     t.string   "type",          null: false
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+  end
+
+  create_table "magnifications", force: :cascade do |t|
+    t.string   "text",          null: false
+    t.integer  "language_code", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["text", "language_code"], name: "index_magnifications_on_text_and_language_code", unique: true
   end
 
   create_table "memories", force: :cascade do |t|
@@ -75,6 +83,12 @@ ActiveRecord::Schema.define(version: 20160328101300) do
     t.integer "service_id", null: false
     t.integer "chant_id",   null: false
     t.index ["service_id", "chant_id"], name: "index_service_chants_on_service_id_and_chant_id", unique: true
+  end
+
+  create_table "service_magnifications", force: :cascade do |t|
+    t.integer "service_id",       null: false
+    t.integer "magnification_id", null: false
+    t.index ["service_id", "magnification_id"], name: "service_magnifications_index", unique: true
   end
 
   create_table "services", force: :cascade do |t|

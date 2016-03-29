@@ -49,6 +49,18 @@ module MacrosSupport
    def get_type type_name
       { 'целый' => :integer, 'строка' => :string }[ type_name ] ; end
 
+   def base_field attr
+      {  memory: :short_name,
+         service: :name }[ attr.to_sym ] ;end
+
+   def model_of name
+      hash = { /тропар[ья]/   => Troparion,
+               /величани[ея]/ => Magnification,
+               /кондака?/     => Kontakion,
+               /служб[аыу]/   => Service }
+
+      hash.reduce( nil ) { |s, (re, model)| re =~ name && model || s }  ;end
+
    def extract_key_to r, key
       similar_to = r.delete( key )
       if similar_to

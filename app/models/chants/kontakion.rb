@@ -1,0 +1,1 @@
+class Kontakion < Chant; end

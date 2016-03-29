@@ -13,7 +13,7 @@ class Bukovina::Parsers::ServiceLink
    # выход: обработанный словарь данных
 
    def parse line
-      res =
+      tres =
       case line
       when Array
          (links, aservices) = line.map do |url|
@@ -22,32 +22,30 @@ class Bukovina::Parsers::ServiceLink
                   parse_line( u ) ; end.compact
             else
                parse_line( url ) ; end ; end
-         .compact.flatten.split_by { |value| value.try( :has_key?, :url ) }
-
-         (plain_services, services) =
-         aservices.split_by { |value| value.is_a?( String ) }
-
-         { link: links, service: services, plain_service: plain_services }
+         .compact.flatten
       when String
-         res = parse_line( line )
-         if res&.has_key?(:url)
-            { link: [ res ] }
-         elsif res.is_a?( String )
-            { plain_service: [ res ] }
-         else
-            { service: [ res ] } ; end
+         parse_line( line )
       when NilClass
+         []
       else
          @errors << Parsers::BukovinaInvalidClass.new( "Invalid class " +
-            "#{line.class} for Name line '#{line}'" ) ; end
+            "#{line.class} for Name line '#{line}'" )
+         [] ; end
+
+      (links, aservices) = tres.split_by { |value| value.try( :has_key?, :url ) }
+
+      (plain_services, services) =
+      aservices.split_by { |value| value.is_a?( String ) }
+
+      res = { link: links, service: services, plain_service: plain_services }
 
       @errors.empty? && res || nil ; end
 
    private
 
-   def collect_errors parser, line
+   def collect_errors parser, line, language_code
       parser.errors.each do |error|
-         error.message << " for service #{line.inspect}"
+         error.message << " for service #{line.inspect} with language #{language_code}"
          @errors << error ; end
       parser.errors.clear ; end
 
@@ -79,8 +77,15 @@ class Bukovina::Parsers::ServiceLink
       elsif ! valid?( line, language_code )
          if / служба$/ =~ line
             filemask = File.join( Dir.pwd, line )
+            files = Dir.glob( "#{filemask}*" )
+            if files.empty?
+               @errors << Parsers::BukovinaNoFilesMatched.new(
+                  "No files were matched for service #{line}" ) ;end
+
             parsed =
-            Dir.glob( "#{filemask}*" ).map do |file|
+            files.map do |file|
+               if /(~|swp)$/ =~ file
+                  next ;end
 
                /\.(?<lang>[^\.]+)\.(?<format>yml|hip)$/ =~ file
                if ! format || ! lang
@@ -90,17 +95,20 @@ class Bukovina::Parsers::ServiceLink
                   parser = Parsers::PlainService.new
                   parsed = parser.parse( IO.read( file ) )
                   if ! parsed
-                     collect_errors( parser, line ) ; end
+                     collect_errors( parser, line, language_code ) ; end
                   parsed
                else
                   parser = Parsers::Service.new
-                  service = YAML.load( IO.read( file ) )
-                  parsed = parser.parse( service )
-                  if ! parsed
-                     collect_errors( parser, line ) ; end
+                  begin
+                     service = YAML.load( IO.read( file ) )
+                     parsed = parser.parse( service )
+                     if ! parsed
+                        collect_errors( parser, line, language_code ) ; end
+                  rescue Psych::SyntaxError
+                     @errors << $!
+                  end
                   parsed ; end ; end.compact.flatten
 
-#            binding.pry
             parsed
          else
             @errors << Parsers::BukovinaInvalidUrlFormatError.new( "Invalid url" +

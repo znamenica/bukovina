@@ -17,6 +17,7 @@ module Bukovina::Parsers
    class BukovinaInvalidKeyName < BukovinaError; end
    class BukovinaInvalidKeyFormat < BukovinaError; end
    class BukovinaInvalidFileNameFormat < BukovinaError; end
+   class BukovinaNoFilesMatched < BukovinaError; end
 
    RUSSIAN_CAPITAL = 'А-ЯЁ'
    RUSSIAN_STROKE = 'а-яё'
