@@ -4,13 +4,15 @@
    отчество: Владимирович
    описание: князь Муромский
    чин: блгв
-   собор: влад,киев,ряз,смо,тул,мрм,бгв
+   собор: влад,киев,ряз?,смо?,тул?,мрм?,бгв?,вышг?
    вики: http://drevo-info.ru/articles/5722.html
    бытие: http://azbyka.ru/days/sv-gleb-v-kreshchenii-david
    образ:
     - http://drevo-info.ru/images/001/000978.jpg
     - http://drevo-info.ru/images/001/000979.jpg
-   служба: Глебу Владимиричу служба
+   служба:
+    - Глебу Муромскому служба
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_05.pdf
    событие:
     - год: по 990
       описание: ржд
@@ -36,4 +38,3 @@
       дата: 05.09
       календарь: рпц,змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_05.pdf
