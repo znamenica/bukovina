@@ -8,8 +8,9 @@
    бытие: http://azbyka.ru/days/sv-trifon-pechengskij
    образ: http://drevo-info.ru/images/001/000795.jpg
    служба:
-    - Трифону Печенгский служба
+    - Трифону Печенгскому служба
     - http://azbyka.ru/days/caa/356
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_15.pdf
    событие:
     - год: 1495
       описание: ржд
@@ -35,4 +36,3 @@
     - дата: 15.12
       календарь: змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_15.pdf

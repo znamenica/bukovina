@@ -9,7 +9,9 @@
    вики: http://drevo-info.ru/articles/6992.html
    бытие: http://azbyka.ru/days/sv-evdoksij-melitinskij
    образ: http://pravicon.com/icon-1688
-   служба: Евдоксию Мелитинскому служба
+   служба:
+    - Евдоксию Мелитинскому служба
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_06.pdf
    событие:
     - год: кон.III-нач.IV
       описание: брак
@@ -24,4 +26,3 @@
       дата: 06.09
       календарь: змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_06.pdf

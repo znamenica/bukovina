@@ -1,10 +1,10 @@
 ---
-Премудрости Божией Киевский образ:
-   имя: Киевский
+Премудрость Божия Киевская образ:
+   имя: Киевская
    описание: образ Премудрости Божией
    чин: прем
-   собор: киев
-   вид: Премудрости Божией образ
+   собор: киев?
+   вид: Премудрость Божия образ
    бытие:
     - http://azbyka.ru/days/ikona-sofija-premudrost-bozhija-kievskaja
     - http://calendar.rop.ru/icons1/sep08-ikona-sofii.html
@@ -12,7 +12,6 @@
     - http://calendar.rop.ru/icons1/photos/SofiyaKiev.jpg
     - http://azbyka.ru/days/assets/img/icons/245/p188nj5b06rpe134r1fob1fh55h43.jpg
     - http://azbyka.ru/days/assets/img/icons/245/p188nj5b09utp1g72dvslji1cf55.jpg
-   служба: Премудрости Божией Киевскому образу служба
    событие:
       год: X-XV
       описание: напис

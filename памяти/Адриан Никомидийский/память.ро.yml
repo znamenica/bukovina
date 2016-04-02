@@ -3,18 +3,13 @@
    имя: Адриан
    описание: мученик Никомидийский; царский чиновник
    чин: мч
-   собор: 35мн,двор,виф
+   собор: 35мн,двор?,виф?,анн
    вики: http://drevo-info.ru/articles/6842.html
    бытие: http://pravicon.com/info-1660
    образ:
     - http://pravicon.com/icon-1065
     - http://drevo-info.ru/images/001/001223.jpg
     - http://azbyka.ru/days/assets/img/saints/2112/433d52237aa2a3f292c5db0deb83f73c.jpg
-   служба:
-    - Адриану Никомидийскому служба
-    - Адриану и Наталии Никомидийским служба
-    - http://azbyka.ru/days/caa/8
-    - http://azbyka.ru/days/caa/9
    событие:
     - год: 304-310
       описание: брак
@@ -24,7 +19,3 @@
       описание: прств
       место: Никомидия. Вифиния
       образ: http://azbyka.ru/days/assets/img/saints/2112/ffbe6fc647e675b3c2b795e2dec874dc.jpg
-   помин:
-      дата: 26.08
-      описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_26.pdf

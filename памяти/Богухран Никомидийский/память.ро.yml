@@ -14,7 +14,9 @@
     - http://azbyka.ru/days/assets/img/saints/4032/p18fafo1ki1uml1ti21vq13e112d3.jpg
     - http://azbyka.ru/days/assets/img/saints/4032/106810f0005860557fc473ba47e4a85e.jpg
     - http://azbyka.ru/days/assets/img/saints/4032/33ae808e2c18ad230d5aa49386a97962.jpg
-   служба: Феофилакту Никомидийскому служба
+   служба:
+    - Богухрану Никомидийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/03/minea_03_08.pdf
    событие:
     - год: вид.сер.VIII
       описание: ржд
@@ -31,4 +33,3 @@
       дата: 08.03
       календарь: рпц
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_08.pdf

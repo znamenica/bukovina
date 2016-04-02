@@ -9,7 +9,9 @@
    бытие:
     - http://azbyka.ru/days/sv-ioasaf-spasokubenskij-v-miru-andrej-vologodskij
     - http://calendar.rop.ru/svyat1/sep10-ioasaf-kamenskij.html
-   служба: Андрею Каменскому служба
+   служба:
+    - Иоасафу Каменскому служба
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_10.pdf
    событие:
     - год: вид.1428
       описание: ржд
@@ -24,4 +26,3 @@
       дата: 10.09
       календарь: рпц
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_10.pdf
