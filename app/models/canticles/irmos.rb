@@ -1,0 +1,2 @@
+class Irmos < Canticle
+end

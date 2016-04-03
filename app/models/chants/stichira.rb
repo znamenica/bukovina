@@ -1,0 +1,2 @@
+class Stichira < Chant
+end

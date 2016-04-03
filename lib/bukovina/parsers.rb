@@ -18,10 +18,14 @@ module Bukovina::Parsers
    class BukovinaInvalidKeyFormat < BukovinaError; end
    class BukovinaInvalidFileNameFormat < BukovinaError; end
    class BukovinaNoFilesMatched < BukovinaError; end
+   class BukovinaInvalidPathError < BukovinaError; end
 
    RUSSIAN_CAPITAL = 'А-ЯЁ'
    RUSSIAN_STROKE = 'а-яё'
    RUSSIAN_ACCENT = '́'
+   RUS_CAPITAL = 'А-ЯЁІѢѲѴ'
+   RUS_STROKE = 'а-яёіѣѳѵ'
+   RUS_ACCENT = '́'
    CSLAV_CAPITAL = 'А-ЬЮЅІѠѢѦѮѰѲѴѶѸѺѼѾꙖꙊ'
    CSLAV_STROKE = 'а-ьюєѕіѡѣѧѯѱѳѵѷѹѻѽѿꙗꙋ'
    CSLAV_ACCENT = '̀́̓̔҃҇҈҉꙽'
@@ -72,7 +76,8 @@ module Bukovina::Parsers
    CHAR = DOWNCHAR + UPCHAR
 
    MATCH_TABLE = {
-      :ру => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}]+$/,
+      :ру => /^[#{RUS_CAPITAL}#{RUS_STROKE}#{RUS_ACCENT}]+$/,
+      :ро => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}]+$/,
       :цс => /^[#{CSLAV_CAPITAL}#{CSLAV_STROKE}#{CSLAV_ACCENT}]+$/,
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}]+$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}]+$/,

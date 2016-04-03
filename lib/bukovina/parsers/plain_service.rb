@@ -6,7 +6,7 @@ class Bukovina::Parsers::PlainService
    def parse line
       res =
       if line.is_a?( String )
-         line
+         { text: line }
       else
          @errors << Parsers::BukovinaInvalidClass.new( "Invalid class " +
             "#{line.class} for Name line '#{line}'" ) ; end

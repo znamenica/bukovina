@@ -1,0 +1,2 @@
+class Apostichus < Stichira
+end

@@ -1,0 +1,2 @@
+class Polileosion < SessionalHymn
+end

@@ -5,13 +5,13 @@
 Допустим(/^есть местный файл службы "([^"]*)" памяти "([^"]*)":$/) do |service_name, short_name, string|
    data = YAML.load( string )
    FileUtils.mkdir_p( File.join( @workdir, short_name ) )
-   file = File.join( @workdir, short_name, "#{service_name}.ро_ру.yml" )
+   file = File.join( @workdir, short_name, "#{service_name}.ру_ро.yml" )
    File.open( file, 'w' ) { |f| f.puts(data.to_yaml) } ; end
 
 Допустим(/^есть иной местный файл службы "([^"]*)" памяти "([^"]*)":$/) do |service_name, short_name, string|
    data = YAML.load( string )
    FileUtils.mkdir_p( File.join( @workdir, short_name ) )
-   file = File.join( @workdir, short_name, "#{service_name}(1).ро_ру.yml" )
+   file = File.join( @workdir, short_name, "#{service_name}(1).ру_ро.yml" )
    File.open( file, 'w' ) { |f| f.puts(data.to_yaml) } ; end
 
 Допустим(/^есть местный файл службы "([^"]*)" памяти "([^"]*)" на ином языке:$/) do |service_name, short_name, string|
@@ -38,4 +38,4 @@
    expect( @res[ :link ] ).to be_blank ; end
 
 То(/^обработанные данные ровнотекстовой службы будут выглядеть как:$/) do |string|
-   expect( @res[ :plain_service ].first.strip ).to be_eql( string.to_s ) ; end
+   expect( @res[ :plain_service ].to_yaml.strip ).to be_eql( string.to_s ) ; end

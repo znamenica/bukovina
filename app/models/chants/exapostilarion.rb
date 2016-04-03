@@ -1,0 +1,2 @@
+class Exapostilarion < Chant
+end

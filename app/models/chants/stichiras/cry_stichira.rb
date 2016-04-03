@@ -1,0 +1,2 @@
+class CryStichira < Stichira
+end

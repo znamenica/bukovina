@@ -1,0 +1,2 @@
+class Kanonion < SessionalHymn
+end

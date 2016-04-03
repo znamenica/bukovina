@@ -1,0 +1,2 @@
+class SessionalHymn < Chant
+end

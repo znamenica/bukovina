@@ -6,6 +6,21 @@ class Bukovina::Parsers::ServiceLink
 
    rdoba mixin: :split_by
 
+   ALPHABETHS = {
+      'hip' => :цр, #церковнославянская разметка hip
+      'ру' => :ру,
+      'ро' => :ро,
+      'ан' => :ан,
+      'en' => :ан,
+      'гр' => :гр,
+      'ив' => :ив,
+      'рм' => :рм,
+      'ук' => :ук,
+      'ср' => :ср,
+      'gr' => :гр,
+      'fr' => :фр,
+   }
+
    Parsers = Bukovina::Parsers
 
    RE = /\A([#{Parsers::UPCHAR}#{Parsers::CHAR}#{Parsers::ACCENT}0-9\s‑;:'"«»\,()\.\-\?\/]+)\z/
@@ -35,24 +50,21 @@ class Bukovina::Parsers::ServiceLink
       if @errors.any?
          nil
       else
-         (links, aservices) = tres.split_by do |value|
-            value.try( :has_key?, :url ) ;end
+         (links, services) = tres.split_by do |value|
+            value.has_key?( :url ) ;end
 
-         (plain_services, services) =
-         aservices.split_by { |value| value.is_a?( String ) }
-
-         { link: links, service: services, plain_service: plain_services }
+         { link: links, service: services }
          end ;end
 
    private
 
-   def collect_errors parser, line, language_code
+   def collect_errors parser, line, alphabeth_code
       parser.errors.each do |error|
-         error.message << " for service #{line.inspect} with language #{language_code}"
+         error.message << " for service #{line.inspect} with language #{alphabeth_code}"
          @errors << error ; end
       parser.errors.clear ; end
 
-   def valid? url, language_code
+   def valid? url, alphabeth_code
       uri = URI.parse( url )
       uri.kind_of?( URI::HTTP )
    rescue URI::InvalidURIError => e
@@ -64,20 +76,20 @@ class Bukovina::Parsers::ServiceLink
          /^(?<num>[a-f0-9]+)/ =~ tok; num&.hex ; end
       .compact.pack("U*")
 
-      line.size > 0 && ! Parsers::MATCH_TABLE[ language_code ] !~ line ; end
+      line.size > 0 && ! Parsers::MATCH_TABLE[ alphabeth_code ] !~ line ; end
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
 
-   def parse_line line, language_code = 'ру'
-      language_code = language_code.to_sym
+   def parse_line line, alphabeth_code = 'ро'
+      alphabeth_code = alphabeth_code.to_sym
 
-      if ! Parsers::MATCH_TABLE[ language_code ]
+      if ! Parsers::MATCH_TABLE[ alphabeth_code ]
          @errors << Parsers::BukovinaInvalidLanguageError.new( "Invalid " +
-            "language '#{language_code}' specified" )
+            "language '#{alphabeth_code}' specified" )
          return nil
 
-      elsif ! valid?( line, language_code )
+      elsif ! valid?( line, alphabeth_code )
          if / служба$/ =~ line
             filemask = File.join( Dir.pwd, line )
             files = Dir.glob( "#{filemask}*" )
@@ -98,19 +110,37 @@ class Bukovina::Parsers::ServiceLink
                   parser = Parsers::PlainService.new
                   parsed = parser.parse( IO.read( file ) )
                   if ! parsed
-                     collect_errors( parser, line, language_code ) ; end
-                  parsed
+                     collect_errors( parser, line, alphabeth_code )
+                     nil
+                  else
+                     { alphabeth_code: :цр, name: line, text_format: 'hip' }.
+                        merge( parsed ) ;end
+
                else
                   parser = Parsers::Service.new
                   begin
                      service = YAML.load( IO.read( file ) )
-                     parsed = parser.parse( service )
-                     if ! parsed
-                        collect_errors( parser, line, language_code ) ; end
                   rescue Psych::SyntaxError
-                     @errors << $!
+                     @errors << Parsers::BukovinaFalseSyntaxError.new("#{$!.message}: " +
+                        "wrong yaml syntax in file #{file}")
+                     next
                   end
-                  parsed ; end ; end.compact.flatten
+
+                  /(?:.*_)?(?<al>.*)/ =~ lang
+                  if ! ALPHABETHS[ al ]
+                     @errors << Parsers::BukovinaInvalidLanguageError.new(
+                        "Invalid alphabeth #{al} for #{file}" )
+                     next ;end
+
+                  parsed =
+                  parser.parse( service, alphabeth_code: ALPHABETHS[ al ] )
+                  if ! parsed
+                     collect_errors( parser, line, alphabeth_code )
+                     nil
+                  else
+                     { alphabeth_code: ALPHABETHS[ al ], name: line }.merge(
+                        parsed ) ;end ;end; end
+            .compact.flatten
 
             parsed
          else
@@ -119,7 +149,8 @@ class Bukovina::Parsers::ServiceLink
             nil ; end
 
       else
-         [ { language_code: language_code, url: line } ] ;end ;end
+         [ { alphabeth_code: ALPHABETHS[ alphabeth_code.to_s ], url: line } ]
+         end ;end
 
    def initialize
       @errors = [] ; end ; end

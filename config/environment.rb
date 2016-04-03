@@ -85,6 +85,14 @@ module Rails
                   memory.short_name = short_name ; end
 
                data = m[ short_name ]
+               wd = Dir.pwd
+               Dir.chdir( File.dirname( f ) )
+
+               folder = File.basename( File.dirname( f ) )
+               if folder != short_name
+                  @errors << Errno::ENOENT.new( "Folder #{short_name.inspect}" +
+                     " matches not for the memory #{short_name.inspect} itself" )
+               end
                #####
 #               attr_lists = namer.parse( data[ 'имя' ] )
 #
@@ -189,22 +197,21 @@ module Rails
 #
                attr_lists = slink.parse( data[ 'служба' ] )
 
-#               if attr_lists
-#                  attr_lists[ :link ].each do |attrs|
-#                     attrs.merge!( memory: { short_name: short_name} )
-#                     Bukovina::Importers::Link.new( attrs ).import ; end
-#
-#                  attr_lists[ :service ].each do |attrs|
-#                     attrs.merge!( memory: { short_name: short_name} )
-#                     Bukovina::Importers::Service.new( attrs ).import ; end
-#
-#                  attr_lists[ :plain_service ].each do |attrs|
-#                     attrs.merge!( memory: { short_name: short_name} )
-#                     Bukovina::Importers::PlainService.new( attrs ).import ; end
-#                     end
-#
+               if attr_lists
+                  attr_lists[ :link ]&.each do |attrs|
+                     attrs.merge!( memory: { short_name: short_name} )
+#                     Bukovina::Importers::ServiceLink.new( attrs ).import ;
+                     end
+
+                  attr_lists[ :service ]&.each do |attrs|
+                     attrs.merge!( memory: { short_name: short_name} )
+#                     Bukovina::Importers::Service.new( attrs ).import ;
+                     end
+                     end
+
                slink.errors.each { |e| errors[ f ] = e }.clear
 
+               Dir.chdir( wd )
                end ; end
 
          if ! errors.keys.empty?
