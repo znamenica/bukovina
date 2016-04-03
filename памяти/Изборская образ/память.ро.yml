@@ -1,12 +1,13 @@
 ---
-Изборский образ:
-   имя: Изборский, Пядничный
+Изборская образ:
+   имя: Изборская, Пядничная
    описание: образ Богородицы
    чин: обр
-   собор: избр
-   вид: Корсунский образ
+   собор: избр?
+   вид: Корсунская образ
    бытие: http://azbyka.ru/days/ikona-izborskaja
    образ: http://azbyka.ru/days/assets/img/icons/229/p188ij26tv3kd8kp1iltk5p1a0o3.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_22.pdf
    событие:
     - год: до XVII
       описание: напис
@@ -29,4 +30,3 @@
       дата: 22.03
       календарь: змин
       описание: знам
-      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_22.pdf
