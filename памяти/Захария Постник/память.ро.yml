@@ -11,6 +11,7 @@
       ру:
        - http://azbyka.ru/days/sv-zaharija-pecherskij
        - http://calendar.rop.ru/svyat1/mar24-zahariya-postnik.html
+       - http://www.lavra.ua/index.php?option=com_content&task=view&id=286
       гр: http://www.saint.gr/90/saint.aspx
    образ: http://pravicon.com/icon-1821
    служба: Захарии Постнику служба
@@ -26,7 +27,14 @@
       описание: пгрб
       место: Феодосиевы пещеры. Киев
    помин:
-      дата: 24.03
+    - дата: 24.03
       календарь: рпц,греч,змин
       описание: прств
       служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_24.pdf
+    - дата: 24.03
+      календарь: греч
+      описание: чудо
+      бытие:
+         гр: http://www.saint.gr/1629/saint.aspx
+      описание_:
+         гр: Ανάμνηση Θαύματος εν τη Λαύρα των Σπηλαίων του Κιέβου
