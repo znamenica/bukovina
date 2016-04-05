@@ -36,19 +36,18 @@ class Bukovina::Parsers::Service
       'величание' => 'Magnification', # и без гласа
       'молитва' => 'Prayer',
       'возвашна' => 'CryStichira',
-      'богородичен' => 'Chant',###???
+      'богородичен' => 'Troparion',
    }
 
-   EXCLUDE_KINDS = [ 'Magnification' ]
    EXTEND_KINDS = {
       'Stichira' => {
-         'стиховен' => 'Apostichus',
-         'лития' => 'Stichiron',
+         /стиховен/ => 'Apostichus',
+         /лития/ => 'Stichiron',
       },
       'SessionalHymn' => {
-         'кафисма' => 'Kathismion',
-         'канон' => 'Kanonion',
-         'полиелей' => 'Polileosion',
+         /кафисма/ => 'Kathismion',
+         /канон/ => 'Kanonion',
+         /полиелей/ => 'Polileosion',
       }
    }
 
@@ -62,6 +61,10 @@ class Bukovina::Parsers::Service
       'апостол' => :apostle,
       'евангелие' => :gospel,
       'описание' => :description,
+   }
+
+   TARGETS = {
+      /богородичен/ => ['*Мария Богородица']
    }
 
    MATCHERS = [
@@ -87,9 +90,16 @@ class Bukovina::Parsers::Service
 
    private
 
+   def select_targets path, base
+      TARGETS.reduce( base ) { |res, (t, r)| t =~ path && r || res } ;end
+
    def is_path_valid? path
       VALID_PATHS.any? do |vpath|
          /^#{vpath.gsub( /\./, '\.' ).gsub( /0/, '\d+' )}/ =~ path ;end ;end
+
+   def assign_index tree, base_path
+      states = tree.map { |t| t[ :base_path ] == base_path }
+      states.index(true) || states.size ;end
 
    def parse_parts path
       kind = index = property = nil
@@ -105,8 +115,15 @@ class Bukovina::Parsers::Service
 
       nil ;end
 
+   def fetch_base_path path
+      path.split('.').map do |x|
+         ! PROPERTIES.include?( x ) && x || nil ;end
+      .compact.join('.') ;end
+
    def parse_paths paths, options = {}
       alphabeth_code = options[ :alphabeth_code ]
+      language_code = options[ :language_code ]
+      target = options[ :target ]
 
       tree = {}
       paths.each do |path, value|
@@ -123,19 +140,32 @@ class Bukovina::Parsers::Service
             next ;end
 
          property ||= :text
-         index ||= 0
 
          if kind
             base = kind.constantize.base_class.to_s.tableize.pluralize.to_sym
             tree[ base ] ||= []
+
+            base_path = fetch_base_path( path )
+            index = assign_index( tree[ base ], base_path )
+
             tree[ base ][ index ] ||= {}
+            tree[ base ][ index ][ :base_path ] ||= base_path
             tree[ base ][ index ][ :alphabeth_code ] ||= alphabeth_code
-            if ! EXCLUDE_KINDS.include?( kind )
-               tree[ base ][ index ][ :type ] ||= kind ;end
+            tree[ base ][ index ][ :language_code ] ||= language_code
+            targets = select_targets( path, [ "*#{target}" ] )
+            tree[ base ][ index ][ :targets ] ||= targets
+            if !! kinds = EXTEND_KINDS[ kind ]
+               kind = kinds.reduce( kind ) do |r, (re, k)|
+                  re =~ path && k || r ;end ;end
+            tree[ base ][ index ][ :type ] ||= kind
             tree[ base ][ index ][ property ] ||= value
          else
             tree[ property ] = value ;end ;end
 
+      tree.each do |base, value|
+         if value.is_a?( Hash )
+            value.each do |c|
+               c.delete(:base_path) ;end ;end ;end
 
       tree ;end
 

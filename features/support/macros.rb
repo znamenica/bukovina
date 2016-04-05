@@ -1,4 +1,12 @@
 module MacrosSupport
+   LANGUAGE_MATHCES = {
+      /румынск/ => [:рм, :рм],
+      /украинск/ => [:ук, :ук],
+      /сербск/ => [:ср, :ср],
+      /иверск/ => [:ив, :ив],
+      /английск/ => [:re, :en]
+   }
+
    SUBATTRS = [ :short_name, :text, :url ]
 
    LANGUAGES = { /русск(?:ая|ой|ое|ий|ого|ие|их)/     => :ру,
@@ -22,6 +30,9 @@ module MacrosSupport
                /отчеств[оа]/                       => Patronymic,
                /фамили[ияю]/                       => LastName,
                /служб[аыу]?/                       => Service }
+
+   def language_code_for( language_text )
+      LANGUAGE_MATHCES.any? {|(l, code)| break code if l =~ language_text  } ;end
 
    def sample &block
       if block_given?

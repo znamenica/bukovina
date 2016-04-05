@@ -21,25 +21,39 @@ class Bukovina::Parsers::ServiceLink
       'fr' => :фр,
    }
 
+   LANGUAGES = {
+      'цс' => :цс,
+      'ру' => :ру,
+      'ан' => :ан,
+      're' => :ан,
+      'гр' => :гр,
+      'ив' => :ив,
+      'рм' => :рм,
+      'ук' => :ук,
+      'ср' => :ср,
+      'gr' => :гр,
+      'fr' => :фр,
+   }
+
    Parsers = Bukovina::Parsers
 
    RE = /\A([#{Parsers::UPCHAR}#{Parsers::CHAR}#{Parsers::ACCENT}0-9\s‑;:'"«»\,()\.\-\?\/]+)\z/
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
-   def parse line
+   def parse line, options = {}
       tres =
       case line
       when Array
          (links, aservices) = line.map do |url|
             if url.is_a?( Array )
                url.map do |u|
-                  parse_line( u ) ; end.compact
+                  parse_line( u, options ) ; end.compact
             else
-               parse_line( url ) ; end ; end
+               parse_line( url, options ) ; end ; end
          .compact.flatten
       when String
-         parse_line( line )
+         parse_line( line, options )
       when NilClass
          []
       else
@@ -53,8 +67,7 @@ class Bukovina::Parsers::ServiceLink
          (links, services) = tres.split_by do |value|
             value.has_key?( :url ) ;end
 
-         { link: links, service: services }
-         end ;end
+         { link: links, service: services } ;end ;end
 
    private
 
@@ -81,10 +94,18 @@ class Bukovina::Parsers::ServiceLink
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
 
-   def parse_line line, alphabeth_code = 'ро'
-      alphabeth_code = alphabeth_code.to_sym
+   def parse_line line, options = {}
+      alphabeth_code = ( options[ :alphabeth_code ] || 'ро' ).to_sym
+      language_code = ( options[ :language_code ] || 'цс' ).to_sym
+      target = options[ :target ]
 
       if ! Parsers::MATCH_TABLE[ alphabeth_code ]
+         @errors << Parsers::BukovinaInvalidLanguageError.new( "Invalid " +
+            "alphabeth '#{alphabeth_code}' specified" )
+         return nil ;end
+
+      if ! LANGUAGES.has_key?( language_code ) &&
+         ! LANGUAGES.values.include?( language_code )
          @errors << Parsers::BukovinaInvalidLanguageError.new( "Invalid " +
             "language '#{alphabeth_code}' specified" )
          return nil
@@ -102,8 +123,8 @@ class Bukovina::Parsers::ServiceLink
                if /(~|swp)$/ =~ file
                   next ;end
 
-               /\.(?<lang>[^\.]+)\.(?<format>yml|hip)$/ =~ file
-               if ! format || ! lang
+               /\.(?:(?<lang>[^\._]+)_)?(?<al>[^\.]+)\.(?<format>yml|hip)$/ =~ file
+               if ! format || ! al
                   @errors << Parsers::BukovinaInvalidFileNameFormat.new(
                      "Invalid file name format for #{file}" )
                elsif format == 'hip'
@@ -126,20 +147,22 @@ class Bukovina::Parsers::ServiceLink
                      next
                   end
 
-                  /(?:.*_)?(?<al>.*)/ =~ lang
                   if ! ALPHABETHS[ al ]
                      @errors << Parsers::BukovinaInvalidLanguageError.new(
                         "Invalid alphabeth #{al} for #{file}" )
                      next ;end
 
                   parsed =
-                  parser.parse( service, alphabeth_code: ALPHABETHS[ al ] )
+                  parser.parse( service, target: target,
+                     language_code: LANGUAGES[ lang ],
+                     alphabeth_code: ALPHABETHS[ al ] )
                   if ! parsed
                      collect_errors( parser, line, alphabeth_code )
                      nil
                   else
-                     { alphabeth_code: ALPHABETHS[ al ], name: line }.merge(
-                        parsed ) ;end ;end; end
+                     {  alphabeth_code: ALPHABETHS[ al ],
+                        language_code: LANGUAGES[ lang ],
+                        name: line }.merge( parsed ) ;end ;end; end
             .compact.flatten
 
             parsed
