@@ -1,8 +1,8 @@
 class Description < ActiveRecord::Base
-   extend LanguageCode
+   extend Language
 
    belongs_to :describable, polymorphic: true
 
-   has_language on: :text
+   has_alphabeth on: :text
 
    validates :text, :language_code, presence: true ; end

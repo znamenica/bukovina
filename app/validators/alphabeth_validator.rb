@@ -1,4 +1,4 @@
-class TextValidator < ActiveModel::EachValidator
+class AlphabethValidator < ActiveModel::EachValidator
    RUSSIAN_CAPITAL = 'А-ЯЁ'
    RUSSIAN_STROKE = 'а-яё'
    RUSSIAN_ACCENT = '́'

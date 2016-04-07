@@ -1,18 +1,19 @@
-require_relative 'concern/language'
-
 class Service < ActiveRecord::Base
-   extend LanguageCode
+   extend Language
 
    belongs_to :memory
 
    has_many :service_chants
    has_many :chants, through: :service_chants
-   has_many :service_magnifications
-   has_many :magnifications, through: :service_magnifications
+   has_many :service_orisons
+   has_many :orisons, through: :service_orisons
+   has_many :service_canticles
+   has_many :canticles, through: :service_canticles
 
-   has_language on: :name
+   has_alphabeth on: :name
 
    accepts_nested_attributes_for :chants
-   accepts_nested_attributes_for :magnifications
+   accepts_nested_attributes_for :orisons
+   accepts_nested_attributes_for :canticles
 
    validates :name, :language_code, :memory_id, presence: true ;end

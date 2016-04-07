@@ -1,14 +1,43 @@
-module LanguageCode
+module Language
    include ActiveSupport::Concern
+         
+   LANGUAGE_TREE = {
+      сс: :сс,
+      сц: :сц,
+      цс: [ :цс, :ро, :ру, :цр ],
+      ру: [ :ру, :ро ],
+      ук: :ук,
+      бл: :бл,
+      мк: :мк,
+      сх: :ср,
+      со: :со,
+      бг: :бг,
+      чх: :чх,
+      сл: :сл,
+      по: :по,
+      кш: :кш,
+      вл: :вл,
+      нл: :нл,
+      ар: :ар,
+      ив: :ив,
+      рм: [ :рм, :цу, :цр ],
+      гр: :гр,
+      ла: :ла,
+      ит: :ит,
+      фр: :фр,
+      ис: :ис,
+      не: :не,
+      ир: :ир,
+      си: :си,
+      ан: :ан,
+      са: :са,
+   }
+
+   ALPHABETH_LIST = LANGUAGE_TREE.values.flatten.uniq
 
    OPTIONS = [ :novalidate, :on ]
 
-   def has_language options = {}
-      self.class_eval <<-RUBY
-         enum language_code: [ :цс, :ру, :ср, :гр, :ан, :ла, :чх, :ир, :си,
-            :бг, :ит, :ар, :ив, :рм, :са, :ис, :фр, :не, :ук ]
-         RUBY
-
+   def has_alphabeth options = {}
       ( OPTIONS & options.keys ).each do |o|
          self.send( "setup_#{o}", options[ o ] ) ;end ;end
 
@@ -18,9 +47,9 @@ module LanguageCode
    #
    # Examples:
    #
-   #     has_language on: name: true
-   #     has_language on: { text: [:nosyntax, allow: " ‑" ] }
-   #     has_language on: [ :name, :text ]
+   #     has_alphabeth on: name: true
+   #     has_alphabeth on: { text: [:nosyntax, allow: " ‑" ] }
+   #     has_alphabeth on: [ :name, :text ]
    #
    def setup_on option_on
       on = [ option_on ].map do |o|
@@ -37,13 +66,16 @@ module LanguageCode
 
       on.each do |target, options|
          self.class_eval <<-RUBY
-            validates :#{target}, text: #{options.inspect}
+            validates :#{target}, alphabeth: #{options.inspect}
          RUBY
          end ;end
 
    def setup_novalidate novalidate
       if ! novalidate
          self.class_eval <<-RUBY
-            validates :language_code, inclusion: { in: self.language_codes }
+            validates :language_code, inclusion:
+               { in: Language::LANGUAGE_TREE.keys }
+            validates :alphaneth_code, inclusion:
+               { in: Language::ALPHABETH_LIST }
             RUBY
             end ;end ;end

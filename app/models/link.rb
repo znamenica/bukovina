@@ -1,7 +1,7 @@
 class Link < ActiveRecord::Base
-   extend LanguageCode
+   extend Language
 
-   has_language novalidate: true
+   has_alphabeth novalidate: true
 
    validates :url, url: { no_local: true }
    validates :memory_id, :type, presence: true ; end
