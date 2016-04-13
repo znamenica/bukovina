@@ -220,12 +220,18 @@ module Rails
             raise "Simple load errors found " +
                "with count of #{errors.keys.size}" ; end ; end ; end
 
+   def self.load_folders *folders
+      files = folders.flatten.map do |folder|
+         path = Rails.root.join( "#{folder}/**/*.rb" )
+         Dir.glob( path ).sort.each { |r| require( r ) } ;end
+      Kernel.puts( files.join("\n") ) ;end
+
    def self.application
       Kernel.puts "Access to app..."
       if !@app
          Kernel.puts "Loading app..."
-         Kernel.puts( Dir.glob( Rails.root.join( 'app/validators/**/*.rb' ) ).each { |r| require( r ) }.inspect )
-         Kernel.puts( Dir.glob( Rails.root.join( 'app/**/*.rb' ) ).each { |r| require( r ) }.inspect )
+         load_folders( 'config/initializers', 'app/validators',
+            'app/models/concern', 'app' )
          Kernel.puts "..."
          @app = App.new ; end
       @app ; end

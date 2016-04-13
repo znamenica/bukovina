@@ -3,15 +3,15 @@ class Service < ActiveRecord::Base
 
    belongs_to :memory
 
-   has_many :service_chants
-   has_many :chants, through: :service_chants
-   has_many :service_orisons
-   has_many :orisons, through: :service_orisons
-   has_many :service_canticles
-   has_many :canticles, through: :service_canticles
+   has_many :service_cantoes
+   has_many :cantoes, through: :service_cantoes
+   has_many :chants, through: :service_cantoes, foreign_key: :canto_id, source: :canto
+   has_many :orisons, through: :service_cantoes, foreign_key: :canto_id, source: :canto
+   has_many :canticles, through: :service_cantoes, foreign_key: :canto_id, source: :canto
 
    has_alphabeth on: :name
 
+   accepts_nested_attributes_for :cantoes
    accepts_nested_attributes_for :chants
    accepts_nested_attributes_for :orisons
    accepts_nested_attributes_for :canticles
