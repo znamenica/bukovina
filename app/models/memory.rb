@@ -1,7 +1,7 @@
 class Memory < ActiveRecord::Base
-   extend PrimaryKeyAdvanced
+   extend DefaultKey
 
-   has_primary_key :short_name
+   has_default_key :short_name
 
    has_many :names, through: :memory_names
    has_many :memory_names

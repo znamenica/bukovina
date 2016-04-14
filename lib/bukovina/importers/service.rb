@@ -58,7 +58,6 @@ class Bukovina::Importers::Service
          memory_attrs = attrs.delete( :memory )
          attrs[ :memory ] = Memory.where( memory_attrs ).first
          (search_attrs, attrs) = separate_hash( parse_hash( Service, attrs ) )
-#         binding.pry
 
          begin
          service = Service.where( search_attrs ).first_or_create( attrs )
