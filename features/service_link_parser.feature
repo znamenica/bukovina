@@ -54,7 +54,7 @@
          - :alphabeth_code: :ро
            :language_code: :ру
            :name: Василию Васильскому служба
-           :chants:
+           :cantoes:
            - :alphabeth_code: :ро
              :language_code: :ру
              :targets:
@@ -94,7 +94,7 @@
          - :alphabeth_code: :ук
            :language_code: :ук
            :name: Василию Васильскому служба
-           :chants:
+           :cantoes:
            - :alphabeth_code: :ук
              :language_code: :ук
              :targets:
@@ -102,14 +102,6 @@
              :type: CryStichira
              :tone: 4
              :text: Кондака текст
-           - :alphabeth_code: :ук
-             :language_code: :ук
-             :targets:
-             - "*Мария Богородица"
-             :type: Troparion
-             :tone: 1
-             :text: Богородична текст
-           :orisons:
            - :alphabeth_code: :ук
              :language_code: :ук
              :targets:
@@ -122,6 +114,13 @@
              - "*Василий Васильский"
              :type: Prayer
              :text: Молитва друга
+           - :alphabeth_code: :ук
+             :language_code: :ук
+             :targets:
+             - "*Мария Богородица"
+             :type: Troparion
+             :tone: 1
+             :text: Богородична текст
          """
 
 
@@ -155,7 +154,7 @@
          - :alphabeth_code: :рм
            :language_code: :рм
            :name: Василию Васильскому служба
-           :chants:
+           :cantoes:
            - :alphabeth_code: :рм
              :language_code: :рм
              :targets:
@@ -179,7 +178,6 @@
              :type: Kontakion
              :tone: 4
              :text: Condacul textului
-           :canticles:
            - :alphabeth_code: :рм
              :language_code: :рм
              :targets:
@@ -218,7 +216,7 @@
          - :alphabeth_code: :ср
            :language_code: :ср
            :name: Василию Васильскому служба
-           :chants:
+           :cantoes:
            - :alphabeth_code: :ср
              :language_code: :ср
              :targets:
@@ -272,14 +270,13 @@
          - :alphabeth_code: :ив
            :language_code: :ив
            :name: Василию Васильскому служба
-           :orisons:
+           :cantoes:
            - :alphabeth_code: :ив
              :language_code: :ив
              :targets:
              - "*Василий Васильский"
              :type: Magnification
              :text: ზეობა
-           :chants:
            - :alphabeth_code: :ив
              :language_code: :ив
              :targets:
@@ -341,7 +338,7 @@
          - :alphabeth_code: :ан
            :language_code: :ан
            :name: Василию Васильскому служба
-           :chants:
+           :cantoes:
            - :alphabeth_code: :ан
              :language_code: :ан
              :targets:
@@ -353,14 +350,13 @@
          - :alphabeth_code: :ро
            :language_code: :ру
            :name: Василию Васильскому служба
-           :orisons:
+           :cantoes:
            - :alphabeth_code: :ро
              :language_code: :ру
              :targets:
              - "*Василий Васильский"
              :type: Magnification
              :text: Величание
-           :chants:
            - :alphabeth_code: :ро
              :language_code: :ру
              :targets:
@@ -378,7 +374,7 @@
          - :alphabeth_code: :ро
            :language_code: :ру
            :name: Василию Васильскому служба
-           :chants:
+           :cantoes:
            - :alphabeth_code: :ро
              :language_code: :ру
              :targets:

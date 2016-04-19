@@ -163,9 +163,10 @@ class Bukovina::Parsers::Service
             tree[ property ] = value ;end ;end
 
       tree.each do |base, value|
-         if value.is_a?( Hash )
-            value.each do |c|
-               c.delete(:base_path) ;end ;end ;end
+         if value.is_a?( Array )
+            value.each do |sub|
+               if sub.is_a?( Hash )
+                  sub.delete(:base_path) ;end ;end ;end ;end
 
       tree ;end
 

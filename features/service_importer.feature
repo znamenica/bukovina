@@ -10,7 +10,7 @@
          - :alphabeth_code: :ро
            :language_code: :ру
            :name: Василию Васильскому служба
-           :chants:
+           :cantoes:
            - :alphabeth_code: :ро
              :language_code: :ру
              :targets:
@@ -64,14 +64,12 @@
              :type: Troparion
              :tone: 1
              :text: Богородична текст
-           :canticles:
            - :alphabeth_code: :ро
              :language_code: :ру
              :targets:
              - "*Василий Васильский"
              :type: Ikos
              :text: Икоса текст
-           :orisons:
            - :alphabeth_code: :ро
              :language_code: :ру
              :targets:
