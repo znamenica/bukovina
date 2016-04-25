@@ -15,6 +15,9 @@ module MacrosSupport
    MODELS =  { /тропар[ья]/                        => Troparion,
                /величан(?:ий|ие|ия|ье)/            => Magnification,
                /песнопен(?:ий|ие|ия|ье)/           => Chant,
+               /песм[уаы]?/                        => Canto,
+               /спевн[уаы]?/                       => Canticle,
+               /молени[йея]/                       => Orison,
                /кондака?/                          => Kontakion,
                /седал(?:ен|ьна) канона/            => Kanonion,
                /седал(?:ен|ьна) кафисмы/           => Kathismion,
@@ -36,6 +39,7 @@ module MacrosSupport
                /лично(?:е|го) им(?:я|ени)/         => FirstName,
                /отчеств[оа]/                       => Patronymic,
                /фамили[ияю]/                       => LastName,
+               /служебн(?:ые|ых) песм(?:ена)?/     => ServiceCanto,
                /служб[аыу]?/                       => Service }
 
    def language_code_for( language_text )
@@ -44,8 +48,10 @@ module MacrosSupport
    def sample &block
       if block_given?
          @sample_proc = block
+      elsif @sample_result
+         @sample_result
       elsif @sample_proc
-         @sample_proc.call ;end ;end
+         @sample_result = @sample_proc.call ;end ;end
 
    def subject &block
       if block_given?
@@ -83,7 +89,7 @@ module MacrosSupport
    def find_or_create model, search_attrs, attrs = {}
       new_attrs = expand_attributes( model, search_attrs )
 
-      model.where( new_attrs ).first_or_create(
+      model.where( new_attrs ).first_or_create!(
          attrs.merge( new_attrs ) ) ; end
 
    def get_type type_name
@@ -99,12 +105,16 @@ module MacrosSupport
                /first_name|лично(е|го) им(я|ени)/     => :text,
                /chant|песнопен(ий|ие|ия|ье)/          => :text,
                /description|описан(ий|ие|ия|ье)/      => :text,
+               /orison|молени[йея]/                   => :text,
                /link|ссылк[аиу]/                      => :url }
 
       hash.reduce( nil ) { |s, (re, prop)| re =~ name && prop || s } ;end
 
    def model_of name
       MODELS.reduce( nil ) { |s, (re, model)| re =~ name && model || s } ;end
+
+   def relation_of name
+      model_of( name ).to_s.tableize ;end
 
    def extract_key_to r, key
       similar_to = r.delete( key )

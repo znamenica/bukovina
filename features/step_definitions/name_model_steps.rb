@@ -1,5 +1,6 @@
 Допустим(/^есть русское личное имя (.*)$/) do |name|
-   find_or_create( FirstName, { text: name }, language_code: :ру ) ; end
+   find_or_create( FirstName, { text: name }, language_code: :ру,
+      alphabeth_code: :ро ) ; end
 
 Допустим(/^имя (.*) относится к памяти "(.*)"$/) do |nametext, short_name|
    memory = Memory.where( short_name: short_name ).first
@@ -15,11 +16,11 @@
 
 То(/^будут существовать русские личные имена "([^"]*)"$/) do |names|
    names.split( /,\s+/ ).each do |name|
-      expect( FirstName.where( text: name, language_code: 1 ).first ).to_not be_nil
+      expect( FirstName.where( text: name, language_code: :ру ).first ).to_not be_nil
       end ; end
 
 То(/^будет существовать (сербское|греческое|английское) личное имя "([^"]*)"$/) do |lang, name|
-   lcode = { сербское: 2, греческое: 3, английское: 4 }[ lang.to_sym ]
+   lcode = { сербское: :сх, греческое: :гр, английское: :ан }[ lang.to_sym ]
    expect( FirstName.where( text: name, language_code: lcode ).first ).to_not be_nil
    end
 

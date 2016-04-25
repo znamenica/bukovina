@@ -36,9 +36,6 @@
 То(/^свойство "([^"]*)" модели есть отношение к описываемому$/) do |prop|
    expect( subject ).to belong_to( prop ) ; end
 
-То(/^.*? имеет много служебных песнопений$/) do
-   expect( subject ).to have_many( :service_chants ) ;end
-
 То(/^(?:(#{langs_re}) )?(#{kinds_re}) не будет$/) do |_, kind|
    expect( model_of( kind ).all ).to be_empty ;end
 
@@ -51,17 +48,44 @@
 Допустим(/^создадим нов(?:ое|ую) (#{kinds_re}) с полями:$/) do |kind, table|
    find_or_create( model_of( kind ), table.rows_hash ).save! ;end
 
-То(/^(?:(#{langs_re}) )?(#{kinds_re}) "([^"]*)" будет существовать$/) do |_, kind, prop|
+То(/^(?:(?:#{langs_re}) )?(#{kinds_re}) "([^"]*)" будет существовать$/) do |kind, prop|
    relation = model_of( kind ).where( base_field( kind ) => prop )
    expect( relation ).to_not be_empty  ;end
 
-То(/^(?:(#{langs_re}) )?(#{kinds_re}) "([^"]*)" не будет$/) do |_, kind, prop|
+То(/^(?:(?:#{langs_re}) )?(#{kinds_re}) "([^"]*)" не будет$/) do |kind, prop|
    expect( sample ).to_not be_persisted
    expect( model_of( kind ).where( base_field( kind ) => prop ) ).to be_empty ;end
 
-То(/^увидим сообщение ссылки об ошибке:$/) do |string|
+То(/^должны быть пустыми следующие свойства (#{kinds_re}):$/) do |kind, table|
+   expect( subject ).to be_a( model_of( kind ) )
+   table.hashes.map(&:values).flatten.each do |attr|
+      expect( subject ).to validate_absence_of( attr.to_sym ) ;end ;end
+
+То(/^не могут быть пустыми следующие свойства (#{kinds_re}):$/) do |kind, table|
+   expect( subject ).to be_a( model_of( kind ) )
+   table.hashes.map(&:values).flatten.each do |attr|
+      expect( subject ).to validate_presence_of( attr.to_sym ) ;end ;end
+
+То(/^(#{kinds_re}) имеет рода "([^"]*)" следущие столбцы:$/) do |kind, type_name, table|
+   type = get_type( type_name )
+   expect( subject ).to be_a( model_of( kind ) )
+   table.hashes.map( &:values ).flatten.each do |attr|
+      expect( subject ).to have_db_column( attr ).of_type( type ) ; end ; end
+
+То(/^(#{kinds_re}) имеет много (#{kinds_re})$/) do |kind, relation|
+   expect( subject ).to be_a( model_of( kind ) )
+   expect( subject ).to have_many( relation_of( relation ) ) ;end
+
+То(/^(#{kinds_re}) имеет много (#{kinds_re}) через (#{kinds_re})$/) do |kind, relation, through|
+   expect( subject ).to be_a( model_of( kind ) )
+   expect( subject ).to have_many( relation_of( relation ) )
+   .through( relation_of( through ) ) ;end
+
+То(/^увидим сообщение (#{kinds_re}) об ошибке:$/) do |kind, string|
+   expect( sample ).to be_a( model_of( kind ) )
    messages = sample.errors.messages.map do |(name, texts)|
       texts.map do |text|
-         "#{name.to_s.gsub(/\./,' ').capitalize} #{text}" ;end; end.flatten
+         "#{name.to_s.gsub(/\./,' ').capitalize} #{text}" ;end; end
+      .flatten
 
    expect( messages ).to match_array( string.strip.split("\n") ) ;end

@@ -7,6 +7,7 @@
          ---
          :url: http://wiki.ws/образ.jpg
          :description:
+            :alphabeth_code: :ро
             :language_code: :ру
             :text: описание вики
          :memory:
@@ -17,8 +18,9 @@
       То будет создана модель ссылки с аттрибутами:
          | url             | http://wiki.ws/образ.jpg |
       И будет создана модель описания с аттрибутами:
-         | text            | описание вики            |
-         | language_code   | ру                       |
+         | text            | описание вики   |
+         | alphabeth_code  | ро              |
+         | language_code   | ру              |
 
 
    Сценарий: Простая вики ссылка
@@ -26,6 +28,7 @@
       И есть обработанные данные вики ссылки:
          """
          ---
+         :alphabeth_code: :ро
          :language_code: :ру
          :url: http://wiki.ws/вики
          :memory:
@@ -35,4 +38,5 @@
       Если импортируем их
       То будет создана модель ссылки с аттрибутами:
          | url             | http://wiki.ws/вики   |
+         | alphabeth_code  | ро                    |
          | language_code   | ру                    |

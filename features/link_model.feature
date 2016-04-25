@@ -6,10 +6,14 @@
    Сценарий: Проверка полей модели ссылки
       Допустим есть модель ссылки
 
-      То свойство "language_code" модели является перечислителем
       И свойства "memory_id, type" модели не могут быть пустыми
-      И таблица модели имеет столбцы "memory_id, language_code" рода "целый"
-      И таблица модели имеет столбцы "url, type" рода "строка"
+      И таблица модели имеет столбцы "memory_id" рода "целый"
+      И ссылка имеет рода "строка" следущие столбцы:
+         | столбец            |
+         | url                |
+         | type               |
+         | language_code      |
+         | alphabeth_code     |
 
 
    Сценарий: Проверка многосвязности полей модели ссылки
@@ -32,9 +36,10 @@
       Допустим есть память "Василий Памятливый"
 
       Если создадим новую вики ссылку с полями:
-        | language_code  | ру                   |
-        | url            | http://www.wiki.ru   |
-        | memory         | *Василий Памятливый  |
+        | alphabeth_code   | ру                    |
+        | language_code    | ру                    |
+        | url              | http://www.wiki.ru    |
+        | memory           | *Василий Памятливый   |
       То русская вики ссылка "http://www.wiki.ru" будет существовать
 
 
@@ -42,9 +47,10 @@
       Допустим есть память "Василий Памятливый"
 
       Если попробуем создать новую вики ссылку с полями:
-        | language_code  | ру                   |
-        | url            | httr://recource.ru   |
-        | memory         | *Василий Памятливый  |
+        | alphabeth_code   | ру                    |
+        | language_code    | ру                    |
+        | url              | httr://recource.ru    |
+        | memory           | *Василий Памятливый   |
       То увидим сообщение ссылки об ошибке:
          """
          Url is not a valid URL
@@ -52,9 +58,10 @@
       И ссылки "httr://recource.ru" не будет
 
       Если попробуем создать новую вики ссылку с полями:
-        | language_code  | ру                   |
-        | url            | file:///recource.ru  |
-        | memory         | *Василий Памятливый  |
+        | language_code    | ру                    |
+        | alphabeth_code   | ру                    |
+        | url              | file:///recource.ru   |
+        | memory           | *Василий Памятливый   |
       То увидим сообщение ссылки об ошибке:
          """
          Url is not a valid URL
@@ -62,9 +69,10 @@
       И ссылки "httr://recource.ru" не будет
 
       Если попробуем создать новую вики ссылку с полями:
-        | language_code  | ру                   |
-        | url            | httpe/r/recource.ruw |
-        | memory         | *Василий Памятливый  |
+        | language_code    | ру                    |
+        | alphabeth_code   | ру                    |
+        | url              | httpe/r/recource.ruw  |
+        | memory           | *Василий Памятливый   |
       То увидим сообщение ссылки об ошибке:
          """
          Url is not a valid URL
@@ -78,6 +86,7 @@
 
       Если создадим новое описание с полями:
         | language_code    | ру                    |
+        | alphabeth_code   | ру                    |
         | text             | Мурмур                |
         | describable:link | *http://www.wiki.ru   |
       То русская иконная ссылка "http://www.wiki.ru" будет действительной
@@ -90,6 +99,7 @@
       Если попробуем создать новую иконную ссылку "http://www.wiki.ru" с неверным описанием
       То увидим сообщение ссылки об ошибке:
          """
+         Description alphabeth_code is not included in the list
          Description is invalid
          Description text contains invalid char(s) "Iadilnv" for the specified language "ру"
          """

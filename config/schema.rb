@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160406173700) do
+ActiveRecord::Schema.define(version: 20160425191200) do
 
   create_table "canto_memories", force: :cascade do |t|
     t.integer "canto_id",  null: false
@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 20160406173700) do
     t.string   "type",           null: false
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
-    t.string   "alphabeth_code", null: false
+    t.string   "alphabeth_code"
   end
 
   create_table "memories", force: :cascade do |t|

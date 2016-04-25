@@ -33,12 +33,19 @@ module Language
       са: :са,
    }
 
-   ALPHABETH_LIST = LANGUAGE_TREE.values.flatten.uniq
-
    OPTIONS = [ :novalidate, :on ]
 
+   def self.language_list
+      list = Language::LANGUAGE_TREE.keys
+      list.concat( list.map( &:to_s ) ) ;end
+
+   def self.alphabeth_list
+      list = Language::LANGUAGE_TREE.values.flatten.uniq
+
+      list.concat( list.map( &:to_s ) ) ;end
+
    def has_alphabeth options = {}
-      ( OPTIONS & options.keys ).each do |o|
+      OPTIONS.each do |o|
          self.send( "setup_#{o}", options[ o ] ) ;end ;end
 
    protected
@@ -60,6 +67,8 @@ module Language
             { o => true }
          when Array
             o.map { |x| { x => true } }
+         when NilClass
+            []
          else
             raise "Target of kind #{o.class} is unsupported" ;end ;end
          .flatten.map { |x| [ x.keys.first, x.values.first ] }.to_h
@@ -74,8 +83,8 @@ module Language
       if ! novalidate
          self.class_eval <<-RUBY
             validates :language_code, inclusion:
-               { in: Language::LANGUAGE_TREE.keys }
-            validates :alphaneth_code, inclusion:
-               { in: Language::ALPHABETH_LIST }
+               { in: Language.language_list }
+            validates :alphabeth_code, inclusion:
+               { in: Language.alphabeth_list }
             RUBY
             end ;end ;end
