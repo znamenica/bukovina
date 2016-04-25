@@ -39,10 +39,9 @@ module Language
       list = Language::LANGUAGE_TREE.keys
       list.concat( list.map( &:to_s ) ) ;end
 
-   def self.alphabeth_list
-      list = Language::LANGUAGE_TREE.values.flatten.uniq
-
-      list.concat( list.map( &:to_s ) ) ;end
+   def self.alphabeth_list_for language_code
+      [ Language::LANGUAGE_TREE[ language_code.to_s.to_sym ] ].flatten
+         .map( &:to_s ) ;end
 
    def has_alphabeth options = {}
       OPTIONS.each do |o|
@@ -85,6 +84,7 @@ module Language
             validates :language_code, inclusion:
                { in: Language.language_list }
             validates :alphabeth_code, inclusion:
-               { in: Language.alphabeth_list }
+               { in: proc { |l|
+                  Language.alphabeth_list_for( l.language_code ) } }
             RUBY
             end ;end ;end

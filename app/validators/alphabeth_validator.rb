@@ -62,6 +62,7 @@ class AlphabethValidator < ActiveModel::EachValidator
    ACCENT = GREEK_ACCENT + RUSSIAN_ACCENT + CSLAV_ACCENT
    CHAR = DOWNCHAR + UPCHAR
 
+   # TODO уравнять с LANGUAGE_TREE.alphabeths
    SYNTAX_TABLE = {
       :ру => RUSSIAN_SYNTAX,
       :цс => CSLAV_SYNTAX,
