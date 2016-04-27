@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160425191200) do
+ActiveRecord::Schema.define(version: 20160427161700) do
 
   create_table "canto_memories", force: :cascade do |t|
     t.integer "canto_id",  null: false
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20160425191200) do
   end
 
   create_table "cantoes", force: :cascade do |t|
-    t.string   "text",             null: false
+    t.text     "text",             null: false
     t.string   "prosomeion_title"
     t.string   "language_code",    null: false
     t.integer  "tone"
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 20160425191200) do
     t.datetime "updated_at",       null: false
     t.string   "title"
     t.string   "alphabeth_code",   null: false
+    t.string   "author"
+    t.string   "description"
     t.index ["text", "alphabeth_code"], name: "index_cantoes_on_text_and_alphabeth_code", unique: true
     t.index ["title", "alphabeth_code"], name: "index_cantoes_on_title_and_alphabeth_code", unique: true
   end
@@ -97,6 +99,13 @@ ActiveRecord::Schema.define(version: 20160425191200) do
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.string   "alphabeth_code", null: false
+    t.text     "text"
+    t.string   "text_format"
+    t.string   "gospel"
+    t.string   "apostle"
+    t.string   "author"
+    t.string   "source"
+    t.string   "description"
     t.index ["name", "alphabeth_code"], name: "index_services_on_name_and_alphabeth_code", unique: true
   end
 

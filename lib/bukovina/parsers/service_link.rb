@@ -134,8 +134,8 @@ class Bukovina::Parsers::ServiceLink
                      collect_errors( parser, line, alphabeth_code )
                      nil
                   else
-                     { alphabeth_code: :цр, name: line, text_format: 'hip' }.
-                        merge( parsed ) ;end
+                     { alphabeth_code: :цр, language_code: :цс, name: line,
+                        text_format: 'hip' }.merge( parsed ) ;end
 
                else
                   parser = Parsers::Service.new

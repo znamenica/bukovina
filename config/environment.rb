@@ -71,7 +71,12 @@ module Rails
          ilink = Bukovina::Parsers::IconLink.new
          link = Bukovina::Parsers::Link.new
          slink = Bukovina::Parsers::ServiceLink.new
-         Dir.glob( 'памяти/**/память.*.yml' ).each do |f|
+         up = [ /Мария Богородица/ ]
+         Dir.glob( 'памяти/**/память.*.yml' ).sort do |x,y|
+            eva = proc { |v| up.any? { |u| u =~ v } }
+            eva[x] && -1 || eva[y] && 1 || x <=> y ;end
+         .each do |f|
+#            binding.pry
             puts "Память: #{f}"
             m = begin
                YAML.load( File.open( f ) )
@@ -195,19 +200,24 @@ module Rails
 #
 #               ilink.errors.each { |e| errors[ f ] = e }.clear
 #
-               attr_lists = slink.parse( data[ 'служба' ] )
+#               if short_name == 'Исаия Пророк'
+
+               attr_lists = slink.parse( data[ 'служба' ], target: short_name )
 
                if attr_lists
+                  elist = (attr_lists.keys | [ :link, :service ]) - [:link, :service]
+                  if elist.any?
+                     errors << StandardError.new("Exceeded key list #{elist}") ;end
+
                   attr_lists[ :link ]&.each do |attrs|
                      attrs.merge!( memory: { short_name: short_name} )
-#                     Bukovina::Importers::ServiceLink.new( attrs ).import ;
+                     Bukovina::Importers::ServiceLink.new( attrs ).import ;
                      end
 
                   attr_lists[ :service ]&.each do |attrs|
                      attrs.merge!( memory: { short_name: short_name} )
-#                     Bukovina::Importers::Service.new( attrs ).import ;
-                     end
-                     end
+                     Bukovina::Importers::Service.new( attrs ).import ;
+                     end ;end
 
                slink.errors.each { |e| errors[ f ] = e }.clear
 

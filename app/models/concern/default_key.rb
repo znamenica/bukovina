@@ -12,10 +12,10 @@ module DefaultKey
 
    def find *args
       if self.respond_to?( :default_key )
-         new_args = args.flatten
+         new_args = args.flatten.reject { |a| a.blank? }
          rel = self.where(self.default_key => new_args)
          if rel.size < new_args.size
-            raise RecordNotFound
+            raise ::ActiveRecord::RecordNotFound
          else
             new_args.size > 1 && rel || rel.first ;end
       else

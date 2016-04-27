@@ -26,15 +26,13 @@ class Bukovina::Importers::Service
                [ :"#{attr}_attributes", new_array ]
             else
                [ attr, new_array ] ;end
-         when /^\*(?<newvalue>.*)/
+         when /\A\*(?<newvalue>.*)/
             newvalue = $1
-            raise "To be fixed #{attr} => #{value}"
-            [ attr, $1 ]
-         else
+            raise "To be fixed so: attr #{attr} => #{value}"
             [ attr, value ]
-         end
-      end.to_h
-   end
+         else
+            [ attr, value ] ;end ;end
+      .to_h ;end
 
    def separate_hash hash
       search_hash = hash.select { |(attr, _)| /_attributes\z/ !~ attr }.to_h
@@ -45,27 +43,36 @@ class Bukovina::Importers::Service
          case value
          when Hash
             parse_hash( base, value )
-         when /^\*(?<newvalue>.*)/
+         when /^\*(.*)/
             base.find($1)
          else
-            value
-         end
-      end
-   end
+            value ;end ;end ;end
 
    def import
       @attrs.each do |attrs|
          memory_attrs = attrs.delete( :memory )
-         attrs[ :memory ] = Memory.where( memory_attrs ).first
-         (search_attrs, attrs) = separate_hash( parse_hash( Service, attrs ) )
+         attrs[ :memory ] = memory_attrs.is_a?( Memory ) &&
+            memory_attrs || Memory.where( memory_attrs ).first
+         (search_attrs, new_attrs) = separate_hash( parse_hash( Service, attrs ) )
 
          begin
-         service = Service.where( search_attrs ).first_or_create( attrs )
+         service = Service.where( search_attrs ).first_or_create( new_attrs )
          rescue ActiveRecord::RecordNotUnique
-            Kernel.puts attrs.inspect
+            if /(?<base>.*) (?<number>\d+)\z/ =~ new_attrs[:name]
+               new_attrs[:name] = "#{base} #{number.to_i + 1}"
+            else
+               new_attrs[:name] += ' 1'
+            end
+
+            search_attrs[:name] = new_attrs[:name]
             binding.pry
-         rescue NoMethodError
-            Kernel.puts attrs.inspect
+
+            retry
+         rescue => e
+            Kernel.puts "ERR"
+            Kernel.puts e.inspect
+            Kernel.puts e.backtrace
+            Kernel.puts new_attrs.inspect
             binding.pry
          end
          service ;end ;end
