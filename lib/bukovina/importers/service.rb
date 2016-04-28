@@ -1,6 +1,8 @@
 class Bukovina::Importers::Service
 #   MODEL = 'Service'
 
+   attr_reader :errors
+
    def foreign_class base, attr
                #new_base = attr.to_s.singularize.camelize.constantize
       if base.reflections[attr.to_s].source_reflection
@@ -49,7 +51,7 @@ class Bukovina::Importers::Service
             value ;end ;end ;end
 
    def import
-      @attrs.each do |attrs|
+      @attrs.map do |attrs|
          memory_attrs = attrs.delete( :memory )
          attrs[ :memory ] = memory_attrs.is_a?( Memory ) &&
             memory_attrs || Memory.where( memory_attrs ).first
@@ -65,7 +67,6 @@ class Bukovina::Importers::Service
             end
 
             search_attrs[:name] = new_attrs[:name]
-            binding.pry
 
             retry
          rescue => e
@@ -73,11 +74,17 @@ class Bukovina::Importers::Service
             Kernel.puts e.inspect
             Kernel.puts e.backtrace
             Kernel.puts new_attrs.inspect
-            binding.pry
+            @errors << e
+#            binding.pry
          end
+
+         if service && service.errors.size > 0
+            @errors.concat( service.errors.full_messages ) ;end
+
          service ;end ;end
 
    private
 
    def initialize attrs
+      @errors = []
       @attrs = [ attrs.deep_dup ].flatten ;end ;end

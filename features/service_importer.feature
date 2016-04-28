@@ -82,6 +82,12 @@
              - "*Василий Васильский"
              :type: Magnification
              :text: Величание
+           - :alphabeth_code: :ро
+             :language_code: :ру
+             :targets:
+             - "*Василий Васильский"
+             :type: Troparion
+             :ref_title: Тропарёв текст
            :memory:
              :short_name: Василий Васильский
          """
@@ -96,6 +102,11 @@
          | tone                     | 4                           |
          | prosomeion_title         | Тропарёв текст              |
          | text                     | Тропарёв ин текст.          |
+         | language_code            | ру                          |
+         | alphabeth_code           | ро                          |
+         | service_cantoes.service  | *Василию Васильскому служба |
+      И будет создана модель тропаря с аттрибутами:
+         | ref_title                | Тропарёв текст              |
          | language_code            | ру                          |
          | alphabeth_code           | ро                          |
          | service_cantoes.service  | *Василию Васильскому служба |

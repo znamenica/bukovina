@@ -57,6 +57,7 @@ class Bukovina::Parsers::Service
       'подобен' => :prosomeion_title,
       'крат' => :title, #нужно для подобна (и ссылки)
       'источник' => :source,
+      'ссылка' => :ref_title,
       'автор' => :author,
       'апостол' => :apostle,
       'евангелие' => :gospel,

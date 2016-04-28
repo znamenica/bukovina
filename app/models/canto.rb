@@ -8,4 +8,4 @@ class Canto < ActiveRecord::Base
 
    has_alphabeth on: [ :text, :prosomeion_title, :title ]
 
-   validates :type, :text, presence: true ;end
+   validates :type, presence: true ;end

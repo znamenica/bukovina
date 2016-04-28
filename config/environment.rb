@@ -211,13 +211,14 @@ module Rails
 
                   attr_lists[ :link ]&.each do |attrs|
                      attrs.merge!( memory: { short_name: short_name} )
-                     Bukovina::Importers::ServiceLink.new( attrs ).import ;
-                     end
+                     i = Bukovina::Importers::ServiceLink.new( attrs )
+                     i.import ;end
 
                   attr_lists[ :service ]&.each do |attrs|
                      attrs.merge!( memory: { short_name: short_name} )
-                     Bukovina::Importers::Service.new( attrs ).import ;
-                     end ;end
+                     i = Bukovina::Importers::Service.new( attrs )
+                     i.import
+                     i.errors.each { |e| errors[ f ] = e } ;end ;end
 
                slink.errors.each { |e| errors[ f ] = e }.clear
 

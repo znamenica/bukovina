@@ -148,7 +148,6 @@ class AlphabethValidator < ActiveModel::EachValidator
          res += o[ :allow ] ;end
 
       if res && value.present? && value !~ ( re = /^[#{res}]+$/ )
-         p record
          invalid_is = []
          chars = value.unpack( "U*" ).map.with_index do |c, i|
             begin
@@ -169,10 +168,4 @@ class AlphabethValidator < ActiveModel::EachValidator
             record.errors[ attribute ] <<
             I18n.t( 'activerecord.errors.invalid_utf8_char',
                alphabeth: record.alphabeth_code,
-               parts: '"' + parts.join('", "') + '"' ) ;end ;end
-
-      if record.errors[ attribute ].size > 0
-         p "ERRRRR"
-         p record.errors[ attribute ]
-      end
-      ;end ;end
+               parts: '"' + parts.join('", "') + '"' ) ;end ;end ;end ;end
