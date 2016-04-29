@@ -79,7 +79,7 @@ class Bukovina::Importers::Service
          end
 
          if service && service.errors.size > 0
-            @errors.concat( service.errors.full_messages ) ;end
+            @errors << ActiveRecord::RecordInvalid.new(service) ;end
 
          service ;end ;end
 

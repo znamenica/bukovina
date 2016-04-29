@@ -32,10 +32,12 @@ class AlphabethValidator < ActiveModel::EachValidator
    ARMENIAN_STROKE = 'ա-և'
    IVERIAN_CAPITAL = 'ა-ჺჽ'
    IVERIAN_STROKE = 'ა-ჺჽ'
-   ROMANIAN_CAPITAL = 'A-ZĂÂÎȘȚ'
-   ROMANIAN_STROKE = 'a-zăâîșț'
+   ROMANIAN_CAPITAL = 'A-ZĂÂÎŞŢ'
+   ROMANIAN_STROKE = 'a-zăâîşţ'
    OLD_ENGLISH_CAPITAL = 'A-IL-PR-UW-YÆÐꝽÞǷĊĠĀĒĪŌŪ'
    OLD_ENGLISH_STROKE = 'a-il-pr-uw-yæðᵹſþƿċġāēīūō'
+   MIDDLE_ENGLISH_CAPITAL = 'A-IK-PR-ZÆ'
+   MIDDLE_ENGLISH_STROKE = 'a-ik-pr-zæ'
    FRENCH_CAPITAL = 'A-ZŒÆÇÀÂÎÏÛÙÜÉÈÊËÔŸÑ'
    FRENCH_STROKE = 'a-zœæçàâîïûùüéèêëôÿñ'
    SPANISH_CAPITAL = 'A-ZÑÁÉÍÓÚÜÏ'
@@ -45,33 +47,34 @@ class AlphabethValidator < ActiveModel::EachValidator
    UKRAINIAN_CAPITAL = 'А-ЩЬЮЯЄІЇҐ'
    UKRAINIAN_STROKE = 'а-щьюяєіїґ'
 
-   RUSSIAN_SYNTAX = ' \.,:;\!\/\-«»—\?0-9'
-   HIP_SYNTAX = ' 0-9\(\[\{\<\/\'\+\.\:\!"=~@#\$%\^&\*_\)\]\}\>\\\\`\-,;?\|'
-   MODIFIED_RUSSIAN_SYNTAX = ' \.,:;\!\/\-«»—\?0-9'
+   RUSSIAN_SYNTAX = ' \.,:;\!\/\-«»—\?0-9–'
+   HIP_SYNTAX = ' 0-9\(\[\{\/\'\+\.\:\!"=~@#\$%\^&\*_\)\]\}\\\\`\-,;?\|'
+   MODIFIED_RUSSIAN_SYNTAX = ' \.,:;\!\/\-«»—\?0-9–'
    CSLAV_SYNTAX = ' \.,:;'
-   SERBIAN_SYNTAX = ' \.,\/\-0-9'
-   GREEK_SYNTAX = ' \.,:;!\/\-0-9'
-   BULGARIAN_SYNTAX = ' \.,:;!\/\-0-9'
-   UKRAINIAN_SYNTAX = ' \.,:;!\/\-0-9'
-   LATIN_SYNTAX = ' \.,:;!\/\-0-9'
-   IRISH_SYNTAX = ' \.,:;!\/\-0-9'
-   CZECH_SYNTAX = ' \.,:;!\/\-0-9'
-   ENGLISH_SYNTAX = ' \.,:;!\/\-0-9'
-   ITALIAN_SYNTAX = ' \.,:;!\/\-0-9'
-   ARMENIAN_SYNTAX = ' \.,:;!\/\-0-9'
-   IVERIAN_SYNTAX = ' \.,:;!\/\-0-9'
-   ROMANIAN_SYNTAX = ' \.,:;!\/\-0-9'
-   OLD_ENGLISH_SYNTAX = ' \.,:;!\/\-0-9'
-   FRENCH_SYNTAX = ' \.,:;!/\-0-9'
-   SPANISH_SYNTAX = ' \.,:;!/\-0-9'
-   GERMAN_SYNTAX = ' \.,:;!/\-0-9'
+   SERBIAN_SYNTAX = ' \.,\!:;“”\/'
+   GREEK_SYNTAX = ' \.,·\'∙‧’":˙•\;\-`0-9\+();'
+   BULGARIAN_SYNTAX = ' \.,'
+   UKRAINIAN_SYNTAX = ' \.,—’'
+   LATIN_SYNTAX = ' \.,<\>'
+   IRISH_SYNTAX = ' \.,'
+   CZECH_SYNTAX = ' \.,'
+   ENGLISH_SYNTAX = ' \.,\''
+   ITALIAN_SYNTAX = ' \.,'
+   ARMENIAN_SYNTAX = ' \.,'
+   IVERIAN_SYNTAX = ' \.,'
+   ROMANIAN_SYNTAX = ' \.,'
+   OLD_ENGLISH_SYNTAX = ' \.,'
+   MIDDLE_ENGLISH_SYNTAX = ' \.,;'
+   FRENCH_SYNTAX = ' \.,’\/'
+   SPANISH_SYNTAX = ' \.,'
+   GERMAN_SYNTAX = ' \.,'
 
    UPCHAR = RUSSIAN_CAPITAL + MODIFIED_RUSSIAN_CAPITAL + CSLAV_CAPITAL + SERBIAN_CAPITAL + GREEK_CAPITAL +
       ENGLISH_CAPITAL + LATIN_CAPITAL + CZECH_CAPITAL + ARMENIAN_CAPITAL +
-      ROMANIAN_CAPITAL + OLD_ENGLISH_CAPITAL + IVERIAN_CAPITAL + GERMAN_CAPITAL + UKRAINIAN_CAPITAL
+      ROMANIAN_CAPITAL + OLD_ENGLISH_CAPITAL + IVERIAN_CAPITAL + GERMAN_CAPITAL + UKRAINIAN_CAPITAL + MIDDLE_ENGLISH_CAPITAL
    DOWNCHAR = RUSSIAN_STROKE + MODIFIED_RUSSIAN_STROKE + CSLAV_STROKE + SERBIAN_STROKE + GREEK_STROKE +
       ENGLISH_STROKE + LATIN_STROKE + CZECH_STROKE + ARMENIAN_STROKE +
-      IVERIAN_STROKE + ROMANIAN_STROKE + OLD_ENGLISH_STROKE + GERMAN_STROKE + UKRAINIAN_STROKE
+      IVERIAN_STROKE + ROMANIAN_STROKE + OLD_ENGLISH_STROKE + GERMAN_STROKE + UKRAINIAN_STROKE + MIDDLE_ENGLISH_STROKE
    ACCENT = GREEK_ACCENT + RUSSIAN_ACCENT + CSLAV_ACCENT
    CHAR = DOWNCHAR + UPCHAR
 
@@ -95,10 +98,11 @@ class AlphabethValidator < ActiveModel::EachValidator
       :ив => IVERIAN_SYNTAX,
       :рм => ROMANIAN_SYNTAX,
       :са => OLD_ENGLISH_SYNTAX,
+      :ра => MIDDLE_ENGLISH_SYNTAX,
       :фр => FRENCH_SYNTAX,
       :ис => SPANISH_SYNTAX,
       :не => GERMAN_SYNTAX,
-      # ЧИНЬ: сс, сц, цр, мк, со, сл, по, кш, вл, нл, цу, са
+      # ЧИНЬ: сс, сц, цр, мк, со, сл, по, кш, вл, нл, цу
    }
 
    MATCH_TABLE = {
@@ -120,6 +124,7 @@ class AlphabethValidator < ActiveModel::EachValidator
       :ив => "#{IVERIAN_STROKE}",
       :рм => "#{ROMANIAN_CAPITAL}#{ROMANIAN_STROKE}",
       :са => "#{OLD_ENGLISH_CAPITAL}#{OLD_ENGLISH_STROKE}",
+      :ра => "#{MIDDLE_ENGLISH_CAPITAL}#{MIDDLE_ENGLISH_STROKE}",
       :фр => "#{FRENCH_CAPITAL}#{FRENCH_STROKE}",
       :ис => "#{SPANISH_CAPITAL}#{SPANISH_STROKE}",
       :не => "#{GERMAN_CAPITAL}#{GERMAN_STROKE}",
@@ -146,12 +151,13 @@ class AlphabethValidator < ActiveModel::EachValidator
          res += SYNTAX_TABLE[ code ] ;end
       if res && o.keys.include?( :allow )
          res += o[ :allow ] ;end
+      res += '\<\>'
 
       if res && value.present? && value !~ ( re = /^[#{res}]+$/ )
          invalid_is = []
          chars = value.unpack( "U*" ).map.with_index do |c, i|
             begin
-               re !~ c.chr && c || nil
+               re !~ [ c ].pack( "U" ) && c || nil
             rescue Encoding::CompatibilityError
                invalid_is << i
                nil ;end ;end

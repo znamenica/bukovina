@@ -56,6 +56,7 @@ class Bukovina::Parsers::Service
       'текст' => :text,
       'подобен' => :prosomeion_title,
       'крат' => :title, #нужно для подобна (и ссылки)
+      'кратко' => :title, #нужно для подобна (и ссылки)
       'источник' => :source,
       'ссылка' => :ref_title,
       'автор' => :author,
@@ -63,6 +64,8 @@ class Bukovina::Parsers::Service
       'евангелие' => :gospel,
       'описание' => :description,
    }
+
+   # TODO проверить всякие левые свойства и синтаксис, напр. сдела кратко ложным
 
    TARGETS = {
       /богородичен/ => ['*Мария Богородица']

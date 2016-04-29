@@ -29,8 +29,7 @@ module Language
       не: :не,
       ир: :ир,
       си: :си,
-      ан: :ан,
-      са: :са,
+      ан: [ :ан, :са, :ра ]
    }
 
    OPTIONS = [ :novalidate, :on ]

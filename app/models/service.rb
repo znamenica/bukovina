@@ -9,7 +9,7 @@ class Service < ActiveRecord::Base
    has_many :orisons, through: :service_cantoes, foreign_key: :canto_id, source: :canto
    has_many :canticles, through: :service_cantoes, foreign_key: :canto_id, source: :canto
 
-   has_alphabeth on: :name
+#   has_alphabeth on: :name # rollback
 
    accepts_nested_attributes_for :cantoes
    accepts_nested_attributes_for :chants

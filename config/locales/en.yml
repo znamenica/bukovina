@@ -5,5 +5,5 @@ en:
          invalid_patronymic: has invalid form for a patronymic
          invalid_last_name: has invalid form for a last name
          invalid_language_char: contains invalid char(s) "%{chars}" for the specified alphabeth "%{alphabeth}"
-         invalid_utf8_char: contains invalid char(s) %{parts} for the specified alphabeth "%{alphabeth}"
+         invalid_utf8_char: contains invalid utf-8 char(s) %{parts} for the specified alphabeth "%{alphabeth}"
          languages_arent_same: The languages of ifself, and descendant aren't the same
