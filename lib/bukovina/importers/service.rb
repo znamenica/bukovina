@@ -69,13 +69,6 @@ class Bukovina::Importers::Service
             search_attrs[:name] = new_attrs[:name]
 
             retry
-         rescue => e
-            Kernel.puts "ERR"
-            Kernel.puts e.inspect
-            Kernel.puts e.backtrace
-            Kernel.puts new_attrs.inspect
-            @errors << e
-#            binding.pry
          end
 
          if service && service.errors.size > 0
