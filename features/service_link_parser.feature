@@ -245,11 +245,11 @@
          """
          ---
          - :alphabeth_code: :ср
-           :language_code: :ср
+           :language_code: :сх
            :name: Василию Васильскому служба
            :cantoes:
            - :alphabeth_code: :ср
-             :language_code: :ср
+             :language_code: :сх
              :targets:
              - "*Василий Васильский"
              :type: Kathismion
@@ -257,7 +257,7 @@
              :title: прв седалан
              :text: текст прва седална
            - :alphabeth_code: :ср
-             :language_code: :ср
+             :language_code: :сх
              :targets:
              - "*Василий Васильский"
              :type: Kathismion
@@ -265,7 +265,7 @@
              :prosomeion_title: прв седалан
              :text: текст друга седална
            - :alphabeth_code: :ср
-             :language_code: :ср
+             :language_code: :сх
              :targets:
              - "*Василий Васильский"
              :type: Kathismion
@@ -366,11 +366,11 @@
       А обработанные данные службы будут выглядеть как:
          """
          ---
-         - :alphabeth_code: :ан
+         - :alphabeth_code: :ра
            :language_code: :ан
            :name: Василию Васильскому служба
            :cantoes:
-           - :alphabeth_code: :ан
+           - :alphabeth_code: :ра
              :language_code: :ан
              :targets:
              - "*Василий Васильский"
@@ -434,6 +434,7 @@
          """
          ---
          - :alphabeth_code: :цр
+           :language_code: :цс
            :name: Василию Васильскому служба
            :text_format: hip
            :text: |

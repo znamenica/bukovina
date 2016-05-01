@@ -101,6 +101,5 @@
          """
          Description alphabeth_code is not included in the list
          Description is invalid
-         Description text contains invalid char(s) "Iadilnv" for the specified language "ру"
          """
       И ссылки "http://www.wiki.ru" не будет

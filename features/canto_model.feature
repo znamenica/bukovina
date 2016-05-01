@@ -9,13 +9,12 @@
       То не могут быть пустыми следующие свойства песмы:
          | столбец            |
          | type               |
-         | text               |
       И песма имеет столбец "tone" рода "целый"
+      И песма имеет столбец "text" рода "текст"
       И песма имеет рода "строка" следущие столбцы:
          | столбец            |
          | title              |
          | type               |
-         | text               |
          | language_code      |
          | alphabeth_code     |
          | prosomeion_title   |
@@ -57,7 +56,7 @@
       То русских песм не будет
       И увидим сообщение песмы об ошибке:
          """
-         Text contains invalid char(s) "j" for the specified language "ру"
+         Text contains invalid char(s) "j" for the specified alphabeth "ру"
          Type can't be blank
          """
 
@@ -131,7 +130,7 @@
       То греческого песнопения "Василию песнопение" не будет
       И увидим сообщение песнопение об ошибке:
          """
-         Text contains invalid char(s) "Ваеилнопсю" for the specified language "гр"
+         Text contains invalid char(s) "Ваеилнопсю" for the specified alphabeth "гр"
          """
 
    @chant
@@ -167,5 +166,5 @@
       То греческого моления "Василию величание" не будет
       И увидим сообщение моление об ошибке:
          """
-         Text contains invalid char(s) "Вавеилнсчю" for the specified language "гр"
+         Text contains invalid char(s) "Вавеилнсчю" for the specified alphabeth "гр"
          """

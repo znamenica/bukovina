@@ -26,6 +26,7 @@
       И увидим сообщение описания об ошибке:
          """
          Alphabeth_code is not included in the list
+         Text contains invalid char(s) "Вася" for the specified alphabeth "гр"
          """
 
 
@@ -42,5 +43,4 @@
       И увидим сообщение описания об ошибке:
          """
          Alphabeth_code is not included in the list
-         Text contains invalid char(s) "Вася" for the specified language "гр"
          """

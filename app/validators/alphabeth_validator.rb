@@ -147,11 +147,12 @@ class AlphabethValidator < ActiveModel::EachValidator
       o = plain_options
       code = record.alphabeth_code.to_s.to_sym
       res = MATCH_TABLE[ code ]
-      if res && ! o.keys.include?( :nosyntax )
-         res += SYNTAX_TABLE[ code ] ;end
-      if res && o.keys.include?( :allow )
-         res += o[ :allow ] ;end
-      res += '\<\>'
+      if res
+         if ! o.keys.include?( :nosyntax )
+            res += SYNTAX_TABLE[ code ] ;end
+         if o.keys.include?( :allow )
+            res += o[ :allow ] ;end
+         res += '\<\>' ;end
 
       if res && value.present? && value !~ ( re = /^[#{res}]+$/ )
          invalid_is = []

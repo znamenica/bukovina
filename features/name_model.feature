@@ -127,7 +127,7 @@
       То греческого личного имени "Вася" не будет
       И увидим сообщение личного имени об ошибке:
          """
-         Text contains invalid char(s) "Вася" for the specified language "гр"
+         Text contains invalid char(s) "Вася" for the specified alphabeth "гр"
          """
 
 
@@ -140,5 +140,5 @@
       То русского личного имени "Вася.ййцйц" не будет
       И увидим сообщение личного имени об ошибке:
          """
-         Text contains invalid char(s) "." for the specified language "ру"
+         Text contains invalid char(s) "." for the specified alphabeth "ру"
          """

@@ -93,7 +93,8 @@ module MacrosSupport
          attrs.merge( new_attrs ) ) ; end
 
    def get_type type_name
-      { 'целый' => :integer, 'строка' => :string }[ type_name ] ; end
+      types = { 'целый' => :integer, 'строка' => :string, 'текст' => :text }
+      types[ type_name ] ; end
 
    def base_field name
       hash = { /memory|памят[ьи]/                     => :short_name,

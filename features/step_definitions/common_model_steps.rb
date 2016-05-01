@@ -22,7 +22,7 @@
    props.split(/,\s+/).each do |prop|
       expect( subject ).to validate_presence_of( prop ) ;end ;end
 
-То(/^.*? имеет столб(?:ец|цы) "([^"]*)" рода "(целый|строка)"$/) do |names, type_name|
+То(/^.*? имеет столб(?:ец|цы) "([^"]*)" рода "(целый|строка|текст)"$/) do |names, type_name|
    type = get_type( type_name )
    names.split( /,\s+/ ).each do |name|
       expect( subject ).to have_db_column( name ).of_type( type ) ; end ; end
