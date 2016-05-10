@@ -1,4 +1,2 @@
-require_relative '../link'
-
 class PatericLink < Link
-   belongs_to :memory, inverse_of: :pateric_links ; end
+   belongs_to :info, inverse_of: :pateric_links, class_name: :Memory ; end

@@ -1,7 +1,5 @@
-require_relative '../link'
-
 class IconLink < Link
-   belongs_to :memory, inverse_of: :icon_links
+   belongs_to :info, inverse_of: :icon_links, polymorphic: true
 
    has_one :description, as: :describable, dependent: :destroy
 

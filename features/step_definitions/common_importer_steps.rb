@@ -1,5 +1,6 @@
 То(/^будет создана модель (#{kinds_re}) с аттрибутами:$/) do |kind, table|
    joins = []
+   add_attrs = nil
    attrs = table.rows_hash.map do |(attr, value)|
       if /^\*(?<match_value>.*)$/ =~ value
          attrs = attr.split('.')
@@ -14,17 +15,22 @@
             end
          .to_h.values
 
+         (real_attr, target_model_name) = attrs.last.split(":")
+         target_model_name ||= real_attr
          new_attrs << ( model_name.constantize.try( :default_key ) ||
-            "#{attrs[ -1 ]}_id" )
+            "#{real_attr}_id" )
 
-         model = attrs.last.camelize.constantize
+         model = target_model_name.camelize.constantize
 
-         sample = model.where( base_field( attrs.last ) => match_value ).first
+         if real_attr != attrs.last
+            add_attrs = [ "#{real_attr}_type", model.to_s ] ;end
+
+         sample = model.where( base_field( target_model_name ) => match_value ).first
          new_value = /id$/ =~ new_attrs.last && sample.id ||
             sample.try( :default_key ) || sample
          [ new_attrs.join( '.' ), new_value ]
       else
-         [ attr, value ] ;end ;end.to_h
+         [ attr, value ] ;end ;end.concat( [ add_attrs ] ).compact.to_h
 
    relation = model_of( kind ).joins( joins ).where( attrs )
    expect( relation.size ).to be_eql( 1 ) ;end

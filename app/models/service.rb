@@ -1,7 +1,7 @@
 class Service < ActiveRecord::Base
    extend Language
 
-   belongs_to :memory
+   belongs_to :info, polymorphic: true
 
    has_many :service_cantoes
    has_many :cantoes, through: :service_cantoes
@@ -16,4 +16,4 @@ class Service < ActiveRecord::Base
    accepts_nested_attributes_for :orisons
    accepts_nested_attributes_for :canticles
 
-   validates :name, :language_code, :memory_id, presence: true ;end
+   validates :name, :language_code, :info_id, :info_type, presence: true ;end

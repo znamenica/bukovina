@@ -53,12 +53,12 @@ class Bukovina::Importers::Service
    def import
       @attrs.map do |attrs|
          memory_attrs = attrs.delete( :memory )
-         attrs[ :memory ] = memory_attrs.is_a?( Memory ) &&
+         attrs[ :info ] = memory_attrs.is_a?( Memory ) &&
             memory_attrs || Memory.where( memory_attrs ).first
          (search_attrs, new_attrs) = separate_hash( parse_hash( Service, attrs ) )
 
          begin
-         service = Service.where( search_attrs ).first_or_create( new_attrs )
+            service = Service.where( search_attrs ).first_or_create( new_attrs )
          rescue ActiveRecord::RecordNotUnique
             if /(?<base>.*) (?<number>\d+)\z/ =~ new_attrs[:name]
                new_attrs[:name] = "#{base} #{number.to_i + 1}"

@@ -1,4 +1,2 @@
-require_relative '../link'
-
 class BeingLink < Link
-   belongs_to :memory, inverse_of: :beings ; end
+   belongs_to :info, inverse_of: :beings, polymorphic: true ;end

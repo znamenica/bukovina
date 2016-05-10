@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160428161600) do
+ActiveRecord::Schema.define(version: 20160511011200) do
 
   create_table "canto_memories", force: :cascade do |t|
     t.integer "canto_id",  null: false
@@ -49,11 +49,12 @@ ActiveRecord::Schema.define(version: 20160428161600) do
   create_table "links", force: :cascade do |t|
     t.string   "url",            null: false
     t.string   "language_code"
-    t.integer  "memory_id",      null: false
+    t.integer  "info_id",        null: false
     t.string   "type",           null: false
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.string   "alphabeth_code"
+    t.string   "info_type"
   end
 
   create_table "memories", force: :cascade do |t|
@@ -94,7 +95,7 @@ ActiveRecord::Schema.define(version: 20160428161600) do
   create_table "services", force: :cascade do |t|
     t.string   "name",           null: false
     t.string   "language_code",  null: false
-    t.integer  "memory_id",      null: false
+    t.integer  "info_id",        null: false
     t.string   "type"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
@@ -106,6 +107,7 @@ ActiveRecord::Schema.define(version: 20160428161600) do
     t.string   "author"
     t.string   "source"
     t.string   "description"
+    t.string   "info_type"
     t.index ["name", "alphabeth_code"], name: "index_services_on_name_and_alphabeth_code", unique: true
   end
 

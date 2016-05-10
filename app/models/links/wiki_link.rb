@@ -1,4 +1,2 @@
-require_relative '../link'
-
 class WikiLink < Link
-   belongs_to :memory, inverse_of: :wikies ; end
+   belongs_to :info, inverse_of: :wikies, polymorphic: true ;end

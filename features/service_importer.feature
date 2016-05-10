@@ -97,7 +97,7 @@
          | language_code            | ру                          |
          | alphabeth_code           | ро                          |
          | name                     | Василию Васильскому служба  |
-         | memory                   | *Василий Васильский         |
+         | info:memory              | *Василий Васильский         |
       И будет создана модель тропаря с аттрибутами:
          | tone                     | 4                           |
          | prosomeion_title         | Тропарёв текст              |
@@ -196,7 +196,7 @@
          | alphabeth_code           | цр                          |
          | language_code            | цс                          |
          | name                     | Василию Васильскому служба  |
-         | memory                   | *Василий Васильский         |
+         | info:memory              | *Василий Васильский         |
          | description              | Описание                    |
          | text_format              | hip                         |
          | text                     | <::лат> OCR:<::слав>\n\n%\n%<Мjь'сяца тогw'же въ к~д-й де'нь.%> |
