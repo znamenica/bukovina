@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160511011200) do
+ActiveRecord::Schema.define(version: 20160511162000) do
 
   create_table "canto_memories", force: :cascade do |t|
     t.integer "canto_id",  null: false
@@ -44,6 +44,16 @@ ActiveRecord::Schema.define(version: 20160511011200) do
     t.string   "describable_type", null: false
     t.string   "alphabeth_code",   null: false
     t.index ["describable_id", "describable_type", "alphabeth_code"], name: "describable_alphabeth_index", unique: true
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string   "happened_at"
+    t.string   "subject"
+    t.integer  "memory_id",   null: false
+    t.string   "type",        null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["subject", "type", "memory_id"], name: "index_events_on_subject_and_type_and_memory_id"
   end
 
   create_table "links", force: :cascade do |t|

@@ -1,0 +1,1 @@
+class Thanksgiving < Event ;end

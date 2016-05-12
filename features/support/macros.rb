@@ -28,6 +28,7 @@ module MacrosSupport
                /богородич(?:ен|на)/                => Troparion,
                /им(?:я|ени)/                       => Name,
                /описан(?:ий|ие|ия|ье)/             => Description,
+               /событи[еяю]/                       => Event,
                /ссылк[аиу]/                        => Link,
                /вики ссылк[аиу]/                   => WikiLink,
                /бытийн(?:ая|ой|ую) ссылк[аиу]/     => BeingLink,
@@ -107,6 +108,7 @@ module MacrosSupport
                /chant|песнопен(ий|ие|ия|ье)/          => :text,
                /description|описан(ий|ие|ия|ье)/      => :text,
                /orison|молени[йея]/                   => :text,
+               /event|событи[йея]/                    => :happened_at,
                /link|ссылк[аиу]/                      => :url }
 
       hash.reduce( nil ) { |s, (re, prop)| re =~ name && prop || s } ;end

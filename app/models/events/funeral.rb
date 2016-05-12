@@ -1,0 +1,1 @@
+class Funeral < Event ;end
