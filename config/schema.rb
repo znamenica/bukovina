@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160511162000) do
+ActiveRecord::Schema.define(version: 20160516131700) do
+
+  create_table "calendaries", force: :cascade do |t|
+    t.string   "author"
+    t.string   "date"
+    t.string   "language_code"
+    t.string   "alphabeth_code"
+    t.string   "slug"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
   create_table "canto_memories", force: :cascade do |t|
     t.integer "canto_id",  null: false
@@ -94,6 +104,11 @@ ActiveRecord::Schema.define(version: 20160511162000) do
     t.integer  "similar_to_id"
     t.string   "alphabeth_code",              null: false
     t.index ["text", "type", "alphabeth_code"], name: "index_names_on_text_and_type_and_alphabeth_code", unique: true
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "service_cantoes", force: :cascade do |t|

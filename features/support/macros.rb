@@ -7,8 +7,6 @@ module MacrosSupport
       /английск/ => [:re, :en]
    }
 
-   SUBATTRS = [ :short_name, :text, :url ]
-
    LANGUAGES = { /русск(?:ая|ой|ое|ий|ого|ие|их)/     => :ру,
                  /греческ(?:ая|ой|ое|ий|ого|ие|их)/   => :гр }
 
@@ -29,6 +27,7 @@ module MacrosSupport
                /им(?:я|ени)/                       => Name,
                /описан(?:ий|ие|ия|ье)/             => Description,
                /событи[еяю]/                       => Event,
+               /календар[ьяюи]/                    => Calendary,
                /ссылк[аиу]/                        => Link,
                /вики ссылк[аиу]/                   => WikiLink,
                /бытийн(?:ая|ой|ую) ссылк[аиу]/     => BeingLink,
@@ -66,7 +65,8 @@ module MacrosSupport
          if value.is_a?( String ) && /^\*(?<match_value>.*)/ =~ value
             /(?<attr>[^:]*)(?::(?<modelname>.*))?/ =~ attr
             submodel = ( modelname || attr ).camelize.constantize
-            subattr = SUBATTRS.select { |a| submodel.new.respond_to?( a ) }.first
+            subattr = base_field( modelname )
+            binding.pry
             new_attrs[ :"#{attr}_id" ] =
             submodel.where( subattr => match_value ).first.id
             if model.new.respond_to?( "#{attr}_type" )
@@ -109,6 +109,7 @@ module MacrosSupport
                /description|описан(ий|ие|ия|ье)/      => :text,
                /orison|молени[йея]/                   => :text,
                /event|событи[йея]/                    => :happened_at,
+               /calendary|календар[ьяюи]/             => :slug,
                /link|ссылк[аиу]/                      => :url }
 
       hash.reduce( nil ) { |s, (re, prop)| re =~ name && prop || s } ;end

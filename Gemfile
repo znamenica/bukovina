@@ -18,6 +18,7 @@ group :development do
    gem 'shoulda-matchers', github: 'majioa/shoulda-matchers', branch: 'allow_to_use_the_matchers_with_just_rspec_expectations_gem'
    gem 'rspec-expectations'
    gem 'factory_girl'
+   gem 'faker'
    gem 'ffaker'
    gem 'database_cleaner'
    gem 'sqlite3', '~> 1.3.11'

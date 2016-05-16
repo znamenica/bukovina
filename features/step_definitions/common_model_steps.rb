@@ -1,7 +1,7 @@
 Допустим(/^есть модель (#{kinds_re})$/) do |kind|
    subject { model_of( kind ).new } ;end
 
-Допустим(/^попробуем создать (?:новую )?(#{kinds_re}) с полями:$/) do |kind, table|
+Допустим(/^попробуем создать (?:новую |новый )?(#{kinds_re}) с полями:$/) do |kind, table|
    sample { create( model_of( kind ), table.rows_hash ) } ; end
 
 То(/^значение свойства "([^"]*)" .*? строго попадает в размер перечислителя$/) do |prop|
@@ -42,10 +42,14 @@
 То(/^свойство "([^"]*)" модели есть включение описания с зависимостью удаления$/) do |prop|
    expect( subject ).to have_one( prop ).dependent( :destroy ) ; end
 
-То(/^(#{langs_re}) (#{kinds_re}) "([^"]*)" будет действительной$/) do |_, kind, prop|
-   expect( model_of( kind ).where( base_field( kind ) => prop ).first ).to be_valid ; end
+То(/^свойство "([^"]*)" модели есть включения описания с зависимостями удаления$/) do |prop|
+   expect( subject ).to have_many( prop ).dependent( :destroy ) ; end
 
-Допустим(/^создадим нов(?:ое|ую) (#{kinds_re}) с полями:$/) do |kind, table|
+То(/^(?:(?:#{langs_re}) )?(#{kinds_re}) "([^"]*)" будет действительн(?:ой|ым)$/) do |kind, prop|
+   expect( model_of( kind ).where( base_field( kind ) => prop ).first )
+      .to be_valid ; end
+
+Допустим(/^создадим нов(?:ое|ую|ый) (#{kinds_re}) с полями:$/) do |kind, table|
    find_or_create( model_of( kind ), table.rows_hash ).save! ;end
 
 То(/^(?:(?:#{langs_re}) )?(#{kinds_re}) "([^"]*)" будет существовать$/) do |kind, prop|

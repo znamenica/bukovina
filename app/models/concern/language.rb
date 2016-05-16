@@ -77,6 +77,13 @@ module Language
          RUBY
          end ;end
 
+   # +setup_novalidate+ accepts boolean option :novalidate to skip validation on
+   # +:language_code+, and +:alphabeth_code+ fields.
+   #
+   # Examples:
+   #
+   #     has_alphabeth novalidate: true
+   #
    def setup_novalidate novalidate
       if ! novalidate
          self.class_eval <<-RUBY
