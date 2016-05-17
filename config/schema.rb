@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160516131700) do
+ActiveRecord::Schema.define(version: 20160518000700) do
 
   create_table "calendaries", force: :cascade do |t|
     t.string   "author"
@@ -53,7 +53,8 @@ ActiveRecord::Schema.define(version: 20160516131700) do
     t.datetime "updated_at",       null: false
     t.string   "describable_type", null: false
     t.string   "alphabeth_code",   null: false
-    t.index ["describable_id", "describable_type", "alphabeth_code"], name: "describable_alphabeth_index", unique: true
+    t.string   "type"
+    t.index ["describable_id", "describable_type", "alphabeth_code", "text"], name: "describable_alphabeth_index", unique: true
   end
 
   create_table "events", force: :cascade do |t|

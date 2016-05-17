@@ -1,0 +1,1 @@
+class Appellation < Description ;end

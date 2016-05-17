@@ -26,6 +26,7 @@ module MacrosSupport
                /богородич(?:ен|на)/                => Troparion,
                /им(?:я|ени)/                       => Name,
                /описан(?:ий|ие|ия|ье)/             => Description,
+               /наименован(?:ий|ие|ия|ье)/         => Appellation,
                /событи[еяю]/                       => Event,
                /календар[ьяюи]/                    => Calendary,
                /ссылк[аиу]/                        => Link,
@@ -66,7 +67,6 @@ module MacrosSupport
             /(?<attr>[^:]*)(?::(?<modelname>.*))?/ =~ attr
             submodel = ( modelname || attr ).camelize.constantize
             subattr = base_field( modelname )
-            binding.pry
             new_attrs[ :"#{attr}_id" ] =
             submodel.where( subattr => match_value ).first.id
             if model.new.respond_to?( "#{attr}_type" )

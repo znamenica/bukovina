@@ -19,24 +19,13 @@
    Сценарий: Проверка многосвязности полей модели календаря
       Если есть модель календаря
       То у модели суть действенными многоимущие свойства:
-         | свойства        | как          | зависимость  | имя рода  |
-         | descriptions    | describable  | destroy      | описание  |
-         | names           | describable  | destroy      | описание  |
+         | свойства        | как          | зависимость  | имя рода     |
+         | descriptions    | describable  | destroy      | описание     |
+         | names           | describable  | destroy      | найменование |
       И свойство "descriptions" модели есть включения описания с зависимостями удаления
       И свойство "names" модели есть включения описания с зависимостями удаления
       И модель принимает вложенные настройки для свойства "descriptions"
       И модель принимает вложенные настройки для свойства "names"
-
-
-   @language
-   Сценарий: Действительная запись календаря
-      Допустим создадим новый календарь с полями:
-        | alphabeth_code   | ру        |
-        | language_code    | ру        |
-        | author           | Василий   |
-        | slug             | клнд      |
-        | date             | Година    |
-      То календарь "клнд" будет действительным
 
 
    @language
@@ -45,21 +34,18 @@
 
       То увидим сообщение календаря об ошибке:
          """
-         Alphabeth_code is not included in the list
+         Descriptions can't be blank
+         Names can't be blank
          """
       И календаря "клнд" не будет
 
 
-   @language
+   @description
    Сценарий: Действительная связь календаря и его описания
-      Допустим есть календарь "клнд"
-
-      Если создадим новое описание с полями:
-        | alphabeth_code         | ру     |
-        | language_code          | ру     |
-        | text                   | Мурмур |
-        | describable:calendary  | *клнд  |
-      То календарь "клнд" будет действительным
+      Если создадим календарь "клнд"
+      То календарь "клнд" будет существовать
+      И календарь "клнд" будет иметь "1" описание
+      И календарь "клнд" будет иметь "1" имя
 
 
    @language
@@ -73,6 +59,9 @@
       То увидим сообщение календаря об ошибке:
          """
          Language_code is not included in the list
+         Alphabeth_code is not included in the list
+         Descriptions can't be blank
+         Names can't be blank
          """
       И календаря "клнд" не будет
 
@@ -88,17 +77,18 @@
       То увидим сообщение календаря об ошибке:
          """
          Alphabeth_code is not included in the list
+         Descriptions can't be blank
+         Names can't be blank
          """
       И календаря "клнд" не будет
+
 
    @language
    Сценарий: Недействительное описание календаря
       Если попробуем создать новый календарь "клнд" с неверным описанием
       То увидим сообщение календаря об ошибке:
          """
-         Descriptions alphabeth_code is not included in the list
          Descriptions is invalid
-         Names alphabeth_code is not included in the list
-         Names is invalid
+         Descriptions text contains invalid char(s) "Iadilnv" for the specified alphabeth "ро"
          """
       И календаря "клнд" не будет

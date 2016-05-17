@@ -1,5 +1,8 @@
 Допустим(/^есть календарь "([^"]*)"$/) do |slug|
-   create( :calendary, slug: slug ) ; end
+   FactoryGirl.create( :calendary, slug: slug ) ;end
+
+Допустим(/^попробуем создать календарь "([^"]*)"$/) do |slug|
+   sample { create( :calendary, slug: slug ) } ; end
 
 Допустим(/^попробуем создать календарь "([^"]*)" без описания$/) do |slug|
    sample { create( :calendary, slug: slug, descriptions: false,
@@ -13,3 +16,14 @@
       expect( subject ).to have_many( hash[ "свойства" ] )
          .class_name( model_of( hash[ "имя рода" ] ) )
          .dependent( hash[ "зависимость" ] ) ;end;end
+
+Если(/^создадим календарь "([^"]*)"$/) do |slug|
+   FactoryGirl.create( :calendary, slug: slug ) ;end
+
+То(/^календарь "([^"]*)" будет иметь "([^"]*)" описание$/) do |slug, count|
+   exa = Calendary.where( slug: slug ).first
+   expect( exa.descriptions.count ).to be_eql( count.to_i ) ;end
+
+То(/^календарь "([^"]*)" будет иметь "([^"]*)" имя$/) do |slug, count|
+   exa = Calendary.where( slug: slug ).first
+   expect( exa.names.count ).to be_eql( count.to_i ) ;end

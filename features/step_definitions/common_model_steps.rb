@@ -53,8 +53,11 @@
    find_or_create( model_of( kind ), table.rows_hash ).save! ;end
 
 То(/^(?:(?:#{langs_re}) )?(#{kinds_re}) "([^"]*)" будет существовать$/) do |kind, prop|
-   relation = model_of( kind ).where( base_field( kind ) => prop )
-   expect( relation ).to_not be_empty  ;end
+   if sample
+      expect( sample ).to be_present
+   else
+      relation = model_of( kind ).where( base_field( kind ) => prop )
+      expect( relation ).to_not be_empty ;end ;end
 
 То(/^(?:(?:#{langs_re}) )?(#{kinds_re}) "([^"]*)" не будет$/) do |kind, prop|
    expect( sample ).to_not be_persisted
