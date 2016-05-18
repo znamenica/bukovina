@@ -28,6 +28,7 @@ module MacrosSupport
                /описан(?:ий|ие|ия|ье)/             => Description,
                /наименован(?:ий|ие|ия|ье)/         => Appellation,
                /событи[еяю]/                       => Event,
+               /помин[аы]?/                        => Mention,
                /календар[ьяюи]/                    => Calendary,
                /ссылк[аиу]/                        => Link,
                /вики ссылк[аиу]/                   => WikiLink,

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160518000700) do
+ActiveRecord::Schema.define(version: 20160518153700) do
 
   create_table "calendaries", force: :cascade do |t|
     t.string   "author"
@@ -94,6 +94,16 @@ ActiveRecord::Schema.define(version: 20160518000700) do
     t.datetime "updated_at",             null: false
     t.integer  "mode"
     t.index ["memory_id", "name_id", "state"], name: "index_memory_names_on_memory_id_and_name_id_and_state", unique: true
+  end
+
+  create_table "mentions", force: :cascade do |t|
+    t.integer  "calendary_id", null: false
+    t.integer  "event_id",     null: false
+    t.string   "year_date",    null: false
+    t.string   "add_date"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["calendary_id", "event_id", "year_date"], name: "dated_calendary_event_index", unique: true
   end
 
   create_table "names", force: :cascade do |t|
