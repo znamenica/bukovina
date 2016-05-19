@@ -28,6 +28,7 @@ module MacrosSupport
                /описан(?:ий|ие|ия|ье)/             => Description,
                /наименован(?:ий|ие|ия|ье)/         => Appellation,
                /событи[еяю]/                       => Event,
+               /мест[оа]/                          => Place,
                /помин[аы]?/                        => Mention,
                /календар[ьяюи]/                    => Calendary,
                /ссылк[аиу]/                        => Link,
@@ -65,13 +66,18 @@ module MacrosSupport
       new_attrs = {}
       search_attrs.to_a.each do |(attr, value)|
          if value.is_a?( String ) && /^\*(?<match_value>.*)/ =~ value
-            /(?<attr>[^:]*)(?::(?<modelname>.*))?/ =~ attr
-            submodel = ( modelname || attr ).camelize.constantize
-            subattr = base_field( modelname )
-            new_attrs[ :"#{attr}_id" ] =
-            submodel.where( subattr => match_value ).first.id
-            if model.new.respond_to?( "#{attr}_type" )
-               new_attrs[ :"#{attr}_type" ] = modelname.camelize ; end
+            /(?<base_attr>[^\.]+)(?:\.(?<relation>.*))?/ =~ attr
+            /(?<attr>[^:]*)(?::(?<modelname>.*))?/ =~ base_attr
+            submodel = ( modelname || base_attr.singularize ).camelize.constantize
+            new_attrs[ :"#{base_attr}_id" ] =
+            if relation
+               subattr = base_field( modelname || relation.singularize )
+               submodel.joins( relation.to_sym ).where( relation => { subattr => match_value }).first.id
+            else
+               subattr = base_field( modelname || base_attr.singularize )
+               submodel.where( subattr => match_value ).first.id ;end
+            if model.new.respond_to?( "#{base_attr}_type" )
+               new_attrs[ :"#{base_attr}_type" ] = modelname.camelize ; end
          else
             value = value.is_a?( String ) && YAML.load( value ) || value
             new_attrs[ attr ] = value ; end ; end
