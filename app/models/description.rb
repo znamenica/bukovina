@@ -5,4 +5,4 @@ class Description < ActiveRecord::Base
 
    has_alphabeth on: :text
 
-   validates :text, :language_code, presence: true ; end
+   validates :text, :language_code, :alphabeth_code, presence: true ; end

@@ -121,6 +121,11 @@ module MacrosSupport
 
       hash.reduce( nil ) { |s, (re, prop)| re =~ name && prop || s } ;end
 
+   def relation_field name
+      hash = { /description|описан(ий|ие|ия|ье)/      => 'describable' }
+
+      hash.reduce( nil ) { |s, (re, prop)| re =~ name && prop || s } ;end
+
    def model_of name
       MODELS.reduce( nil ) { |s, (re, model)| re =~ name && model || s } ;end
 

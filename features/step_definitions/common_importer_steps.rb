@@ -15,17 +15,24 @@
             end
          .to_h.values
 
-         (real_attr, target_model_name) = attrs.last.split(":")
-         target_model_name ||= real_attr
+         (attr1, target_model_name) = attrs.last.split(":")
+         /(?<real_attr>[^>]+)(?:>(?<relation>.*))?/ =~ attr1
          new_attrs << ( model_name.constantize.try( :default_key ) ||
             "#{real_attr}_id" )
 
+         target_model_name ||= real_attr.singularize
          model = target_model_name.camelize.constantize
 
-         if real_attr != attrs.last
+         if /:/ =~ attrs.last
             add_attrs = [ "#{real_attr}_type", model.to_s ] ;end
 
-         sample = model.where( base_field( target_model_name ) => match_value ).first
+         sample = 
+         if relation
+            subattr = base_field( relation.singularize )
+            model.joins( relation.to_sym ).where( relation => { subattr => match_value }).first
+         else
+            model.where( base_field( target_model_name ) => match_value ).first ;end
+
          new_value = /id$/ =~ new_attrs.last && sample.id ||
             sample.try( :default_key ) || sample
          [ new_attrs.join( '.' ), new_value ]
