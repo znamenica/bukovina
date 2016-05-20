@@ -1,7 +1,7 @@
 FactoryGirl.define do
    factory :place do
       transient do
-         ru_description false ;end
+         ru_description 'Текст' ;end
 
       before( :create ) do |place, e|
          if e.ru_description.present?
