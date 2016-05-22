@@ -5,7 +5,10 @@
    чин: свт
    собор: сиц
    вики: http://drevo-info.ru/articles/5273.html
-   бытие: http://azbyka.ru/days/sv-lev-katanskij
+   бытие:
+    - http://azbyka.ru/days/sv-lev-katanskij
+    - http://diak-kuraev.livejournal.com/1215775.html
+    - http://diak-kuraev.livejournal.com/1216045.html
    образ:
     - http://pravicon.com/icon-2258
     - http://drevo-info.ru/images/002/006199.jpg
