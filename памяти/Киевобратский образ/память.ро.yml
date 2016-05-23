@@ -1,11 +1,13 @@
 ---
-Киевобратский образ:
+Киевобратская образ:
    наименование:
-      ру: Киево-Братский
+      ру: Киево-Братская (Киевобратская)
       гр: των αδελφών του Κιέβου
+      ан: Kiev-Bratsk
    описание:
       ру: образ Богородицы
       гр: Υπεραγίας Θεοτόκου
+      ан: Icon of the Mother of God
    чин: обр
    собор: вышг,киев
    вики: http://drevo-info.ru/articles/5996.html
@@ -17,6 +19,7 @@
        - http://www.saint.gr/1550/saint.aspx
        - http://www.saint.gr/1548/saint.aspx
        - http://www.saint.gr/1549/saint.aspx
+      ан: http://www.holytrinityorthodox.com/calendar/los/May/10-08.htm
    образ:
     - http://pravicon.com/icon-158
     - http://calendar.rop.ru/icons1/photos/KievoBratskaya.jpg
@@ -24,7 +27,7 @@
     - http://azbyka.ru/days/assets/img/icons/155/p188km1f7m16o01kk01uq512rl1dpe5.jpg
     - http://azbyka.ru/days/assets/img/icons/155/p188km2bd51k9m1583124f1iap10rs6.jpg
     - http://www.saint.gr/photos/standard/0510/TheotokosAdelfonKiebou01.jpg
-   служба: Киевобратскому образу служба
+   служба: Киевобратской образу служба
    событие:
     - год: 1654
       описание: явл
@@ -36,7 +39,7 @@
       описание: утр
    помин:
     - дата: 10.05
-      календарь: греч
+      календарь: греч,рпца
       описание: явл
     - дата: 02.06
       календарь: рпц,греч

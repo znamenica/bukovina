@@ -1,14 +1,23 @@
 ---
 Таисия Египетская:
-   имя: Таисия
-   прозвище: Египетская
-   чин: блж
+   имя:
+      ру: Таисия
+      ан: Thais (Taisia)
+   описание:
+      ру: жительница Египетская; блаженная
+      ан: Blessed of Egypt
+   чин: прп
+   собор: копт?,скит?
    вики: http://drevo-info.ru/articles/10563.html
-   бытие: http://azbyka.ru/days/sv-taisija-egipetskaja-1
+   бытие:
+      ру: http://azbyka.ru/days/sv-taisija-egipetskaja-1
+      ан: http://www.holytrinityorthodox.com/calendar/los/May/10-06.htm
    образ: http://azbyka.ru/days/assets/img/saints/6308/p18ma6gl2jf5i1be1rgcviumdd3.jpg
    событие:
       год: V
       описание: прств
+      место: вид.Скитская пустыня. Египет
    помин:
       дата: 10.05
+      календарь: рпц,рпца
       описание: само

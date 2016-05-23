@@ -1,14 +1,23 @@
 ---
 Исихий Антиохийский:
-   имя: Исихий
-   описание: Антиохийский
+   имя:
+      ру: Исихий
+      ан: Hesychius
+   описание:
+      ру: житель, придворный и мученик Антиохийский; утоплен язычниками
+      ан: Martyr of Antioch
    чин: мч
+   собор: сир?,двор?
    вики: http://drevo-info.ru/articles/10562.html
-   бытие: http://azbyka.ru/days/sv-isihij-antiohijskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-isihij-antiohijskij
+      ан: http://www.holytrinityorthodox.com/calendar/los/May/10-04.htm
    образ: http://pravicon.com/icon-2078
    событие:
       год: 305-311
       описание: прств
+      место: Антиохия. Сирия
    помин:
       дата: 10.05
+      календарь: рпц,рпца
       описание: само

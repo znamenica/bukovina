@@ -3,10 +3,12 @@
    имя:
       ру: Василий
       гр: Βασίλειος
+      ан: Basil
    отчество: Феодорович
    описание:
       ру: страстотерпец и чудотворец Мангазейский
       гр: μάρτυρας και θαυματουργός Μανγκαζίας Σιβηρίας
+      ан: Martyr of Mangazea (Siberia)
    чин: стц
    собор: сиб,яро,турх
    вики: http://drevo-info.ru/articles/12556.html
@@ -15,6 +17,7 @@
        - http://azbyka.ru/days/sv-vasilij-mangazejskij
        - http://calendar.rop.ru/svyat1/mar23-vasilij-mangazeiskij.html
       гр: http://www.saint.gr/1260/saint.aspx
+      ан: http://www.holytrinityorthodox.com/calendar/los/May/10-07.htm
    образ:
     - http://pravicon.com/icon-1391
     - http://drevo-info.ru/images/003/010710.jpg
@@ -40,6 +43,8 @@
     - год: 1670
       описание: прен
       место: Свято-Троицкая обитель. Туруханск
+      описание_:
+         ан: Translation of relics of Martyr Basil of Mangazea (Siberia)
     - год: 1719
       дата: 10.05
       описание: прен.1
@@ -60,6 +65,7 @@
       календарь: рпц
       описание: прств
     - дата: 10.05
+      календарь: рпца
       описание: прен.1
       служба: Василию Мангазейскому на пренесение мощей служба
     - дата: 06.06

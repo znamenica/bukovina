@@ -1,14 +1,23 @@
 ---
-Исидора Египетская:
-   имя: Исидора
-   описание: юродивая Египетская, Тавенская
+Исидора Тавенская:
+   имя:
+      ру: Исидора
+      ан: Isidora
+   описание:
+      ру: инокиня и юродивая Христа ради Тавенская (Египетская)
+      ан: Venerable the Fool of Tabenna (Egypt)
    чин: прбл
+   собор: копт?
    вики: http://drevo-info.ru/articles/870.html
-   бытие: http://azbyka.ru/days/sv-isidora-tavenskaja
+   бытие:
+      ру: http://azbyka.ru/days/sv-isidora-tavenskaja
+      ан: http://www.holytrinityorthodox.com/calendar/los/May/10-05.htm
    образ: http://azbyka.ru/days/assets/img/saints/5641/p18ma5pt3310e413d1t9f15qb123n3.jpg
    событие:
-      год: до 366
+      год: вид.до 366
       описание: прств
+      место: вид.Египет
    помин:
       дата: 10.05
+      календарь: рпц,рпца
       описание: само
