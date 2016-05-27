@@ -1,6 +1,7 @@
 module Language
    include ActiveSupport::Concern
          
+   # :nodoc:
    LANGUAGE_TREE = {
       сс: :сс,
       сц: :сц,
@@ -32,16 +33,42 @@ module Language
       ан: [ :ан, :са, :ра ]
    }
 
+   # :nodoc:
    OPTIONS = [ :novalidate, :on ]
 
+   # +language_list+ returns list of available languages.
+   #
+   # Example:
+   #
+   #     validates :language_code, inclusion: { in: Language.language_list }
+   #
    def self.language_list
       list = Language::LANGUAGE_TREE.keys
       list.concat( list.map( &:to_s ) ) ;end
 
+   # +alphabeth_list_for+ returns list of available alphabeths for the specified
+   # language code.
+   #
+   # Example:
+   #
+   #     validates :alphabeth_code, inclusion: { in: proc { |l|
+   #        Language.alphabeth_list_for( l.language_code ) } } ; end
+   #
    def self.alphabeth_list_for language_code
       [ Language::LANGUAGE_TREE[ language_code.to_s.to_sym ] ].flatten
          .map( &:to_s ) ;end
 
+   # +has_alphabeth+ sets up alphabeth feature on a column or itself model,
+   # i.e. generally +alphabeth_code+, and +language_code+ fields to match text
+   # of the specified columns if any.
+   #
+   # Examples:
+   #
+   #     has_alphabeth on: name: true
+   #     has_alphabeth on: { text: [:nosyntax, allow: " ‑" ] }
+   #     has_alphabeth on: [ :name, :text ]
+   #     has_alphabeth novalidate: true
+   #
    def has_alphabeth options = {}
       OPTIONS.each do |o|
          self.send( "setup_#{o}", options[ o ] ) ;end ;end
