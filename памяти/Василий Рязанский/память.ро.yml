@@ -9,6 +9,10 @@
    образ: 
     - http://drevo-info.ru/images/002/005400.jpg
     - http://pravicon.com/icon-1401
+   служба:
+    - Василию Рязанскому служба
+    - http://azbyka.ru/days/caa/495
+    - http://azbyka.ru/days/caa/449
    событие:
     - год: 1295
       описание: прств
@@ -23,18 +27,15 @@
    помин:
     - дата: 12.04
       описание: само
-      служба:
-       - Василию Рязанскому служба
-       - http://azbyka.ru/days/caa/495
-       - http://azbyka.ru/days/caa/449
     - дата: 21.05
       описание: само
     - дата: 10.06
+      календарь: змин
       описание: обр,прен
       служба:
        - http://azbyka.ru/days/assets/upload/minei/06/minea_06_10.pdf
-       - http://azbyka.ru/days/caa/495
-       - http://azbyka.ru/days/caa/449
     - дата: 03.07
+      календарь: змин
       описание: само
+      служба:
        - http://azbyka.ru/days/assets/upload/minei/07/minea_07_03.pdf
