@@ -1,16 +1,23 @@
 ---
 Антоний Новгородский:
    имя: Антоний
-   прозвище: Новгородский чудотворец, Римлянин
+   прозвище: Римлянин
+   описание: чудотворец Новгородский
    чин: прп
-   собор: слав,рус
+   собор: слав?,рус?
    вики: http://drevo-info.ru/articles/3631.html
-   бытие: http://azbyka.ru/days/sv-antonij-rimljanin
+   бытие:
+    - http://azbyka.ru/days/sv-antonij-rimljanin
+    - http://calendar.rop.ru/svyat1/aug03-antonij.html
    образ:
     - http://drevo-info.ru/images/001/000525.jpg
     - http://azbyka.ru/days/assets/img/saints/3559/1c1c7b31c6c5be9ddb3ce67c4c384e82.jpg
     - http://azbyka.ru/days/assets/img/saints/3559/310cbb3d7559a022895619e4e7e9fe0c.jpg
     - http://pravicon.com/icon-1227
+   служба:
+    - Антонию Новгородскому служба
+    - http://azbyka.ru/days/assets/upload/minei/08/minea_08_03.pdf
+    - http://azbyka.ru/days/caa/639
    событие:
     - год: 1067
       описание: ржд
@@ -27,18 +34,15 @@
     - год: 1597
       описание: просл
     - год: вид.XVI-XVII
-      описание: прем
+      описание: прен
       место: вид. Антоние-Новгородский придел. Богородице-Рождественская церковь. Богородице-Рождестенский монастырь. Новгород
     - год: 1930-е
       описание: утр
    помин:
     - дата: 17.01
-      описание: тез
+      описание: иноч
     - дата: пт.по 29.06
       описание: обр
     - дата: 03.08
+      календарь: рпц
       описание: прств
-      служба:
-       - Антонию Новгородскому служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_03.pdf
-       - http://azbyka.ru/days/caa/639

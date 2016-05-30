@@ -1,14 +1,21 @@
 ---
 Вонифатий Тарсийский:
    имя: Вонифатий
-   описание: мученик Тарсийский; усечён мечём; раб Аглаиды Римской
+   описание: мученик Тарсийский; усечён мечём; раб (и муж?) Аглаиды Римской
    чин: мч
-   собор: килк,рим
+   собор: килк?,рим?
    вики: http://drevo-info.ru/articles/8333.html
-   бытие: http://azbyka.ru/days/sv-vonifatij-tarsijskij
+   бытие:
+    - http://azbyka.ru/days/sv-vonifatij-tarsijskij
+    - http://calendar.rop.ru/svyat1/dec19-vonifati.html
    образ:
     - http://drevo-info.ru/images/001/001444.jpg
     - http://pravicon.com/icon-1461
+   служба:
+    - Вонифатию Тарсийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_19.pdf
+    - http://azbyka.ru/days/caa/357
+    - http://azbyka.ru/days/caa/358
    событие:
     - год: 290
       описание: прств
@@ -17,13 +24,10 @@
       описание: прен
       место: Рим
     - год: по 290
-      описание: прем
+      описание: прен.1
       место: Вонифатьевская церковь. Рим
    помин:
       дата: 19.12
+      календарь: рпц
       описание: само
-      служба:
-       - Вонифатию Тарсийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_19.pdf
-       - http://azbyka.ru/days/caa/357
-       - http://azbyka.ru/days/caa/358
+

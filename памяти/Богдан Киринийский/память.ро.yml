@@ -1,15 +1,34 @@
 ---
 Богдан Киринийский:
-   имя: Феодот
-   описание: исповедник, святитель Киринейский (Киринийский. Кипр)
+   имя:
+      ру: Феодот
+      ср: Теодот
+      гр: Θεόδοτος
+   описание:
+      ру: исповедник, святитель Киринейский (Киринийский. Кипр)
+      ср: епископ Киринијски, на острву Кипру
+      гр: επίσκοπος Κυρήνειας Κύπρου Ομολογητής και Ιερομάρτυρας
    чин: исвт
-   собор: галт,кипр,сщмчч
+   собор: галт?,кипр?,сщмчч
    вики: http://drevo-info.ru/articles/10599.html
-   бытие: http://azbyka.ru/days/sv-feodot-kirinejskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-feodot-kirinejskij
+      гр:
+       - http://www.saint.gr/3881/saint.aspx
+       - http://www.synaxarion.gr/gr/sid/1806/sxsaintinfo.aspx
+       - http://www.pigizois.net/sinaxaristis/03/02_03.htm
+      ср: https://svetosavlje.org/dan-prologa/2-mart-po-julijanskom-kalendaru/
    образ:
     - http://azbyka.ru/days/assets/img/saints/1311/p18g981belht31lgeup5qm85s04.jpg
     - http://drevo-info.ru/images/003/011790.jpg
-   служба: Богдану Киринийскому служба
+    - http://www.pigizois.net/kiprioi_agioi/theodotos%20ieromartis.jpg
+    - http://www.saint.gr/photos/standard/0302/AgiosTheodotos02.jpg
+   служба:
+    - Богдану Киринийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/03/minea_03_02.pdf
+    - http://azbyka.ru/days/assets/upload/services/minea_03_02_1.pdf
+    - http://glt.xyz/texts/Mar/02.uni.htm
    событие:
     - год: вид.вт.пол.III
       описание: ржд
@@ -19,19 +38,16 @@
       место: вид.Кипр
     - год: 313
       дата: вид. 19.01
-      описание: осв
+      описание: освоб
     - год: 315/ок.326
       описание: прств
    помин:
     - дата: 17.01
-      собор: греч
-      описание: само
+      календарь: скср
+      описание: освоб
     - дата: 19.01
-      календарь: гбмч
-      описание: осв
+      календарь: гбмч,скср
+      описание: освоб
     - дата: 02.03
-      календарь: рпц,ждр
+      календарь: рпц,ждр,греч,киж,охр
       описание: само
-      служба:
-       - http://azbyka.ru/days/assets/upload/minei/03/minea_03_02.pdf
-       - http://azbyka.ru/days/assets/upload/services/minea_03_02_1.pdf

@@ -3,7 +3,7 @@
    имя: Неопалимая Купина
    описание: образ Богородицы
    чин: обр
-   собор: плст
+   собор: плст?
    вики: http://drevo-info.ru/articles/17614.html
    бытие:
     - http://azbyka.ru/days/ikona-neopalimaja-kupina
@@ -18,11 +18,16 @@
     - Неопалимой Купине образу служба
     - http://azbyka.ru/days/caa/569
     - http://azbyka.ru/days/caa/568
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_04.pdf
    событие:
-    - год: 1680 до нэ
-      описание: пробр
+    - год: 1390
+      описание: прен
+      место: Русь
+    - год: 1680
+      собор: рус
+      описание: просл
+      о: 04.09
    помин:
       дата: 04.09
       календарь: рпц
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_04.pdf

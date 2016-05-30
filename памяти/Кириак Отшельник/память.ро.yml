@@ -9,14 +9,13 @@
          и отшельник Натуфский, Рувский, Сусакимский (Палестинский)
       гр: Αναχωρητής
    чин: прп
-   собор: плст,корн,зиф,вайф,суки
+   собор: плст?,корн?,зиф?,вайф?,суки?,звер?
    вики: http://drevo-info.ru/articles/16153.html
    бытие:
       ру:
        - http://azbyka.ru/days/sv-kiriak-otshelnik-palestinskij
        - http://calendar.rop.ru/svyat1/sep29-kiriak.html
       гр: http://www.saint.gr/2398/saint.aspx
-   служба: Кириаку Отшельнику служба
    образ:
     - http://www.saint.gr/photos/standard/0929/OsiosKyriakos03.jpg [Λυδία Γουριώτη© (http://lydiagourioti-iconography.blogspot.com]
     - http://www.pigizois.net/sinaxaristis/09/29.jpg
@@ -27,6 +26,9 @@
     - http://azbyka.ru/days/assets/img/saints/3692/232f9820215a2eaae8d03ddf975abbe6.jpg
     - http://azbyka.ru/days/assets/img/saints/3692/p18fag9sgo103u1psh181713f81a83.jpg
     - http://azbyka.ru/days/assets/img/saints/3692/p18fag9sgp1s3s1lif152g7gg1qsi4.jpg
+   служба:
+    - Кириаку Отшельнику служба
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_29.pdf
    событие:
     - год: ок.447
       описание: ржд
@@ -40,17 +42,10 @@
     - год: ок.497
       описание: свящ
       место: Сукийская обитель. Палестина
-    - год: вид.ок.446
-      описание: появл
-      кто: Мария Богородица
-      место: Сукийская обитель. Палестина
     - год: 556
       описание: прств
       место: вид.пещера. Сукийская обитель. Палестина
    помин:
-    - дата: 08.06
-      описание: появл
-    - дата: 29.09
+      дата: 29.09
       календарь: рпц,змин,греч
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_29.pdf

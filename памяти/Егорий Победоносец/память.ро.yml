@@ -1,9 +1,9 @@
 ---
 Егорий Победоносец:
-   имя: Георгий
+   имя: Георгий (Егорий, Юрий)
    прозвище: Победоносец
    чин: вмч
-   собор: воев,капд,плст,лив
+   собор: воев?,капд?,плст?,лив?
    вики: http://drevo-info.ru/articles/10133.html
    образ:
     - http://drevo-info.ru/images/001/002391.jpg
@@ -21,17 +21,24 @@
     - http://azbyka.ru/days/assets/img/saints/2066/b4b9c59b5206dc12628382322585bf9f.jpg
     - http://azbyka.ru/days/assets/img/saints/2066/4de9d3b952c486bf8193375d73128e9c.jpg
     - http://azbyka.ru/days/assets/img/saints/2066/79ceb2280c09fb5cbace3a653c35b343.jpg
+   служба:
+    - Егорию Победоносцу служба
+    - http://azbyka.ru/days/caa/298
+    - http://azbyka.ru/days/caa/299
+    - http://azbyka.ru/days/caa/300
    событие:
     - год: 284
       описание: ржд
       место: Каппадокия/Белит (ныне Бейрут). Ливаногорье
     - год: 303/304
-      описание: муч
+      описание: стрст
       образ:
        - http://azbyka.ru/days/assets/img/saints/2066/df3ba718e6abd53b7e6b6f2ce4de71e3.jpg
        - http://azbyka.ru/days/assets/img/saints/2066/e6d61796c1366a7c7d951d6de4ccd724.jpg
        - http://azbyka.ru/days/assets/img/saints/2066/9aec6fe63497845635730371eb2c4342.jpg
        - http://azbyka.ru/days/assets/img/saints/2066/2a4969c6450b1c8bd9359a2a8e4fe0be.jpg
+      описание_:
+         ру: Страсти Егория
     - год: 303/304
       дата: 23.04
       описание: прств
@@ -44,16 +51,11 @@
       описание: прен
       место: Егорие-Победоносицкая церковь. Лидда. Палестина
     - год: по 304
-      описание: прен.глав
+      описание: прен.1
+      предмет: глава
       место: Егорие-Победоносицкая церковь. Рим
    помин:
     - дата: 23.04
       описание: прств
-    - описание: само
-      служба:
-       - Егорию Победоносцу служба
-       - http://azbyka.ru/days/caa/298
-       - http://azbyka.ru/days/caa/299
-       - http://azbyka.ru/days/caa/300
     - дата: 10.11
-      описание: муч
+      описание: стрст

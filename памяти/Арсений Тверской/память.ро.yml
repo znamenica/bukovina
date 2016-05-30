@@ -3,7 +3,7 @@
    имя: Арсений
    описание: инок Киево-Печерский; основатель и настоятель Жёлтиковский; святитель Тверской
    чин: свт
-   собор: киев,кпеч?,твер,жлтк?,друс
+   собор: киев,кпеч?,твер,жлтк?,друс?
    вики: http://drevo-info.ru/articles/12423.html
    бытие: http://azbyka.ru/days/sv-arsenij-tverskoj
    образ:
@@ -14,6 +14,8 @@
    служба:
     - Арсению Тверскому служба
     - http://azbyka.ru/days/caa/421
+    - http://azbyka.ru/days/assets/upload/minei/03/minea_03_02.pdf
+    - http://azbyka.ru/days/assets/upload/services/minea_03_02_1.pdf
    событие:
     - год: вид.перв.пол.XIV
       описание: ржд
@@ -50,12 +52,9 @@
     - дата: 02.03
       календарь: рпц,змин
       описание: прств
-      служба:
-       - http://azbyka.ru/days/assets/upload/minei/03/minea_03_02.pdf
-       - http://azbyka.ru/days/assets/upload/services/minea_03_02_1.pdf
     - дата: вс.по 29.06
       описание: само
     - дата: 02.07
       календарь: змин
-      описание: прем
+      описание: прен
       служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_02.pdf

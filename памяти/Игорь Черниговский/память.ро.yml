@@ -6,8 +6,10 @@
    описание: князь Черниговский; великий князь Киевский; страстотерпец Киевский; убиен
       боярами
    чин: блгв
-   собор: бря,киев,тул,стцц,чрнг
-   вики: http://drevo-info.ru/articles/11970.html
+   собор: бря,киев,тул,стцц?,чрнг?
+   вики:
+    - http://drevo-info.ru/articles/11970.html
+    - https://ru.wikipedia.org/wiki/Игорь_Ольгович
    бытие:
     - http://azbyka.ru/days/sv-igor-v-kreshchenii-georgij-chernigovskij-i-kievskij
     - http://calendar.rop.ru/svyat1/sep19-igor.html
@@ -37,10 +39,11 @@
     - год: 1150
       дата: 05.06
       описание: прен
-      место: Чернигов
+      место: Спасо-Преображенский собор. Чернигов
    помин:
     - дата: 05.06
-      описание: прен,змин
+      описание: прен
+      календарь: змин
       служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_05.pdf
     - дата: 19.09
       описание: прств
