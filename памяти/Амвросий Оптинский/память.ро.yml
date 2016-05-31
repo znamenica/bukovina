@@ -26,6 +26,7 @@
     - http://pravoslavnyi.narod.ru/Agios/Amvrosii_Optina/amvrosii_optina_2.htm
     - http://pravoslavnyi.narod.ru/Agios/Amvrosii_Optina/amvrosii_optina.rar
     - http://akafist.narod.ru/A/Amvrosiy_Opt.htm
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_10.pdf
    событие:
     - год: 1812
       дата: 23.11
@@ -36,7 +37,7 @@
       описание: крещ
       тез: Александр Невский, Александр Некоузский
     - год: 1841
-      описание: ряс
+      описание: рясф
     - год: 1842
       дата: 29.11
       описание: иноч
@@ -58,6 +59,10 @@
       дата: 27.06
       описание: обр
     - год: 1988
+      дата: вид.27.06
+      описание: прен
+      место: Введенский собор. Оптина Пустынь. Калужская область
+    - год: 1988
       описание: просл
    помин:
     - дата: 27.06
@@ -65,4 +70,3 @@
     - дата: 10.10
       календарь: змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_10.pdf

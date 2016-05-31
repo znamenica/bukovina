@@ -55,8 +55,6 @@
       образ:
        - http://azbyka.ru/days/assets/img/saints/6475/p190btj05jtth180912p8hh71kvk3.jpg
        - http://azbyka.ru/days/assets/img/saints/6475/p17ud0jm4o11801htg100ap3po2p4.jpg
-    - год: XVII
-      описание: освящ
    помин:
     - дата: 26.03
       календарь: рпц,греч
@@ -64,7 +62,7 @@
       служба: Гавриилу Крылатцу о благовещении служба
     - дата: 13.07
       календарь: змин,рпц,греч
-      описание: сбр
+      описание: само
       бытие:
          гр: http://www.saint.gr/2090/saint.aspx
       служба:

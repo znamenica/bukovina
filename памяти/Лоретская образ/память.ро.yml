@@ -1,0 +1,22 @@
+---
+Лоретская образ:
+   имя: Лоретская (Лорецкая)
+   описание: образ Богородицы
+   чин: обр
+   бытие: http://azbyka.ru/days/ikona-loretskaja-loreckaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/289/p188kuc73f15p3hf01ftotdrrih3.jpg
+    - http://azbyka.ru/days/assets/img/icons/289/p188kuc9tnoe31l26qai4k213g75.jpg
+    - http://azbyka.ru/days/assets/img/icons/289/p188kue982qa51lfdk861552hpo7.jpg
+   событие:
+    - год: 1291
+      дата: 10.05
+      описание: явл
+      место: Рауница. Далматия. Хорватия
+    - год: 1294
+      дата: 10.12
+      описание: явл
+      место: Лорето. Анкона. Италия
+   помин:
+      дата: 14.09
+      описание: само
