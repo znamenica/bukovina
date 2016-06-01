@@ -14,6 +14,7 @@
     - http://azbyka.ru/days/caa/646
     - http://www.blagoslovenie.su/jitie/dionisiy_svt_sluzhba.php
     - http://www.blagoslovenie.su/jitie/dionisiy_svt_akafist.php
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_26.pdf
    событие:
     - год: нач.XIV
       описание: прств
@@ -33,7 +34,6 @@
    помин:
     - дата: 26.06
       календарь: змин
-      описание: тез
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_26.pdf
+      описание: крещ
     - дата: 15.10
       описание: прств

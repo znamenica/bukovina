@@ -4,7 +4,7 @@
    отчество: вид.Алекеевич
    описание: инок и настоятель Болдинский; святитель Вологодский и Великопермский
    чин: свт
-   собор: влгд,смо,болд,дргб,впрм
+   собор: влгд?,смо?,болд?,дргб?,впрм?
    вики:
     - http://drevo-info.ru/articles/11572.html
     - https://ru.wikipedia.org/wiki/Антоний_(епископ_Вологодский)
@@ -22,7 +22,9 @@
     - http://www.heritage.perm.ru/img/persons/priests/antoniiv01.jpg
     - http://smolyane.narod.ru/saint/sviatitely/antiniy_vologod_boldin.jpg
     - http://www.sobor-cherepovets.narod.ru/Calendar/Calendar_pic/1.gif
-   служба: http://smolyane.narod.ru/saint/sviatitely/antoniy.htm
+   служба:
+    - http://smolyane.narod.ru/saint/sviatitely/antoniy.htm
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_26.pdf
    событие:
     - год: нач.1520-х
       описание: ржд
@@ -62,11 +64,10 @@
    помин:
     - дата: 17.01
       собор: влгд,смо,греч
-      описание: тез
+      описание: иноч
     - дата: 09.09
       собор: влгд
       описание: обр
     - дата: 26.10
       календарь: змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_26.pdf
