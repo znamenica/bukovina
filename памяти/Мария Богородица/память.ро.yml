@@ -5,9 +5,194 @@
    чин: бдц
    собор: сбдц
    вики: http://drevo-info.ru/articles/299.html
+   бытие: http://dearfriend.narod.ru/books/mariam/09.html
    служба:
     - Марии Богородице служба
     - http://azbyka.ru/days/caa/414
    событие:
-      год: 16 до нэ
+    - год: 16 до нэ
+      описание: зач
+      описание:
+         ру: Зачатие Богородицы Анною Праведною
+         гр: Σύλληψη της Αγίας Άννης
+      вики:
+       - http://drevo-info.ru/articles/632.html
+       - https://ru.wikipedia.org/wiki/Зачатие_Богородицы
+      бытие:
+         ру: http://days.pravoslavie.ru/Life/life3089.htm
+         гр: http://www.saint.gr/3213/saint.aspx
+      образ:
+       - http://drevo-info.ru/images/002/007284.jpg
+       - https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Icon_saint_anna.jpg/407px-Icon_saint_anna.jpg
+       - http://days.pravoslavie.ru/jpg/ib107.jpg
+      служба:
+       - Зачатию Богородицы служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_09.pdf
+    - год: ок.15 до нэ
       описание: ржд
+      место: Палестина
+      описание_:
+         ру: Рождество Богородицы
+         гр: Γέννησης της Δεσποίνης ημών Θεοτόκου και Αειπαρθένου Μαρίας
+      вики: http://drevo-info.ru/articles/1235.html
+      бытие:
+         ру: http://azbyka.ru/days/prazdnik-rozhdestvo-presvjatoj-vladychicy-nashej-bogorodicy-i-prisnodevy-marii
+         гр: http://www.saint.gr/955/saint.aspx
+      образ:
+       - http://www.saint.gr/filesnew/02/0955/photos/GennisiTheotokou01.jpg
+       - http://www.saint.gr/filesnew/02/0955/photos/GennisiTheotokou02.jpg
+       - http://www.saint.gr/filesnew/02/0955/photos/GennisiTheotokou03.jpg
+       - http://www.poppe.gr/sites/default/files/work_of_art/107/dsc00255.jpg [Πηνελόπη Σχιζοδήμου© (www.poppe.gr)]
+       - http://www.saint.gr/filesnew/02/0955/photos/GennisiTheotokou06.jpg [Φώτης Κόντογλου]
+       - http://azbyka.ru/days/assets/img/holidays/4/p17vjd3cdc143g1sibe9s12sv141m3.jpg
+       - http://azbyka.ru/days/assets/img/holidays/4/p1808rs6beilr16o418n146uadl3.jpg
+       - http://azbyka.ru/days/assets/img/holidays/4/p1808rs6bf1aava6u4ksr1otm4.jpg
+       - http://azbyka.ru/days/assets/img/holidays/4/p1808rs6bfdabftk1h6otj219md6.jpg
+       - http://azbyka.ru/days/assets/img/holidays/4/p1808rs6bg1v9s1t371rip1t0tqup7.jpg
+       - http://azbyka.ru/days/assets/img/holidays/4/p1885nce1v1tp1179e1nub1j12irn3.jpg
+      служба:
+       - Предпразднеству Рождества Богородицы служба
+       - Предпразднеству Рождества Богородицы и Созонту Помпеопольскому служба
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_07.pdf
+       - Рождеству Богородицы служба
+       - http://azbyka.ru/days/caa/241
+       - http://azbyka.ru/days/caa/242
+       - http://azbyka.ru/days/caa/243
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_08.pdf
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_12.pdf
+       - Отданию Рождества Богородицы служба
+    - год: ок.13 до нэ
+      описание: введ
+      описание_: Введение Богородицы
+      вики:
+       - http://drevo-info.ru/articles/797.html
+       - http://ru.wikipedia.org/wiki/Введение_во_храм_Пресвятой_Богородицы
+      бытие: http://azbyka.ru/days/prazdnik-vvedenie-vhod-vo-hram-presvjatoj-vladychicy-nashej-bogorodicy-i-prisnodevy-marii
+      образ:
+       - http://azbyka.ru/days/assets/img/holidays/6/p18f06nv9vp0f27h100mo4bg8m3.JPG
+       - http://azbyka.ru/days/assets/img/holidays/6/p17vjl2kjrugc68j1idog6a17503.jpg
+       - http://azbyka.ru/days/assets/img/holidays/6/p18aj6d13r14u317d79tq77u1qkf3.jpg
+       - http://azbyka.ru/days/assets/img/holidays/6/p18aj6d13r1kd01h771je1127n18oe6.jpg
+      служба:
+       - Введения Богородицы предпразднеству служба
+       - Введения Богородицы предпразднеству, Григорию Десятоградцу и Проклу Константинопольскому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_20.pdf
+       - Введению Богородицы служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_21.pdf
+       - http://azbyka.ru/days/caa/236
+       - http://azbyka.ru/days/caa/237
+       - http://azbyka.ru/days/caa/238
+       - Введения Богородицы отданию, Клименту Римскому и Каму Александрийскому служба
+       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_25.pdf
+    - год: 57
+      описание: прств
+      описание: Успение Богородицы
+      вики: http://drevo-info.ru/articles/1327.html
+      бытие: http://azbyka.ru/days/prazdnik-uspenie-presvjatoj-vladychicy-nashej-bogorodicy-i-prisnodevy-marii
+      служба:
+       - Предпразднеству Успения Богородицы и Михею Морасфитянину служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_14.pdf
+       - Успению Богородицы служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_15.pdf
+       - http://ustavschik.livejournal.com/229504.html
+       - http://azbyka.ru/days/caa/245
+       - http://azbyka.ru/days/caa/246
+       - http://azbyka.ru/days/caa/247
+       - http://akathistos.livejournal.com/48104.html
+       - Отданию Успения Богородицы служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_23.pdf
+    - год: 57
+      описание: пгрб
+      описание_: Погребение Богородицы
+      служба: Погребению Богородицы служба
+    - год: вид.691
+      описание: похв
+      о: 26.12
+      описание_:
+         ру: Собор Пресвятой Богородицы
+         гр: Σύναξη της Υπεραγίας Θεοτόκου
+      вики: http://drevo-info.ru/articles/640.html
+      бытие:
+         ру:
+          - http://calendar.rop.ru/svyat1/dec26-sobor.html
+          - http://azbyka.ru/days/sv-sobor-presvjatoj-bogorodicy
+         гр: http://www.saint.gr/2793/saint.aspx
+      образ:
+       - http://drevo-info.ru/images/001/001461.jpg
+       - http://www.saint.gr/photos/standard/1226/SinaxisYperagiasTheotokou01.jpg
+      служба:
+       - Собору Богородицы служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_26.pdf
+    - год: ок.V
+      описание: просл
+      о: 15.08
+    - год: вид.691
+      описание: просл.1
+      о: 26.12
+    - год: VI-VIII
+      описание: просл.2
+      о: 21.11
+    - год: VI-VIII
+      описание: просл.3
+      о: 09.12
+    - год: VI-VIII
+      описание: просл.4
+      о: 08.09
+    - год: IX
+      собор: виз
+      описание: застп
+      место: Константинополь. Византия
+      описание_: Похвала Богородица, за неоднократное заступничество Богоматери за
+         Константинополь
+      вики: http://drevo-info.ru/articles/25968.html
+      бытие:
+       - http://azbyka.ru/days/prazdnik-pohvala-presvjatoj-bogorodicy-subbota-akafista
+       - http://calendar.rop.ru/svyat1/pohvala.html
+      образ:
+       - http://days.pravoslavie.ru/jpg/ib1040.jpg
+       - http://days.pravoslavie.ru/jpg/ib1037.jpg
+       - http://days.pravoslavie.ru/jpg/ib2463.jpg
+       - http://days.pravoslavie.ru/jpg/ib2462.jpg
+       - http://days.pravoslavie.ru/jpg/ib3401.jpg
+       - http://azbyka.ru/days/assets/img/holidays/102/p18hctiscu15a2923v01jbtaff3.jpg
+      служба:
+       - Похвалы Богородицы служба
+       - http://azbyka.ru/days/worship/545
+       - http://azbyka.ru/days/worship/546
+       - http://azbyka.ru/days/caa/440
+       - http://azbyka.ru/days/caa/739
+    - год: IX
+      собор: виз
+      описание: просл.5
+      место: Константинополь. Византия
+      о: сб.5.поста
+    - год: XV
+      описание: просл.6
+      о: 17.08
+      бытие: http://days.pravoslavie.ru/rubrics/canon564.htm?id=564
+   помин:
+    - дата: сб.5.поста
+      каледарь: рпц
+      описание: застп
+    - дата: 15.08
+      календарь: рпц,змин
+      описание: прств
+      пред: 1
+      по: 8
+    - дата: 17.08
+      описание: пгрб
+    - дата: 08.09
+      календарь: рпц,змин,греч
+      описание: ржд
+      пред: 1
+      по: 4
+    - дата: 21.11
+      описание: введ
+      пред: 1
+      по: 4
+    - дата: 09.12
+      календарь: рпц,греч
+      описание: зач
+    - дата: 26.12
+      календарь: рпц,греч
+      описание: похв
