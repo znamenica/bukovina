@@ -8,10 +8,50 @@
    вики: http://drevo-info.ru/articles/28.html
    образ: http://drevo-info.ru/images/001/000003.jpg
    событие:
+    - год: 1 до нэ
+      описание: ржд
+      описание_: рождество Христово
+      вики: http://drevo-info.ru/articles/1236.html
+      бытие: http://azbyka.ru/days/prazdnik-rozhdestvo-gospoda-boga-i-spasa-nashego-iisusa-hrista
+      служба:
+       - Предпразнеству Рождества Христова и Игнатию Богоносцу служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_20.pdf
+       - Предпразнеству Рождества Христова и Иулиании Никомидийской служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_21.pdf
+       - Предпразнеству Рождества Христова и Евгении Римской служба
+       - Предпразнеству Рождества Христова(1)
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_24.pdf
+       - http://azbyka.ru/days/assets/upload/services/predprazdnstvo_rh.pdf
+       - Навечерию Рождества Христова служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_24.pdf
+       - http://azbyka.ru/days/assets/upload/services/predprazdnstvo_rh.pdf
+       - Рождеству Христову служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_25.pdf
+       - http://azbyka.ru/days/caa/228
+       - http://azbyka.ru/days/caa/229
+       - http://azbyka.ru/days/caa/227
+       - http://ustavschik.livejournal.com/244176.html
+       - Отданию Рождества Христова служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_31.pdf
+    - год: до 354
+      описание: просл
+      о: 25.12
+    - год: 1
+      описание: обрез
+      описание: Обрезание Христово
+      бытие: http://azbyka.ru/days/prazdnik-obrezanie-gospodne
+      вики: http://drevo-info.ru/articles/1097.html
+      образ: http://drevo-info.ru/images/001/002041.jpg
+      служба:
+       - Обрезанию Христову служба
+       - Обрезанию Христову и Василию Великому служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_01.pdf
+       - http://azbyka.ru/days/caa/376
+      место: Иерусалимский храм. Иерусалим. Палестина
     - год: 1
       описание: срет
       место: Иерусалимский храм. Иерусалим. Палестина
-      описание: Сретение Господа и Бога нашего Иисуса Христа
+      описание_: Сретение Господа и Бога нашего Иисуса Христа
       вики: http://drevo-info.ru/articles/1595.html
       бытие: http://azbyka.ru/days/prazdnik-sretenie-gospoda-boga-i-spasa-nashego-iisusa-hrista
       образ:
@@ -27,6 +67,19 @@
        - http://azbyka.ru/days/assets/upload/minei/02/minea_02_01.pdf
        - http://azbyka.ru/days/assets/upload/minei/02/minea_02_02.pdf
        - Сретения Христова отданию и Никифору Антиохийскому служба
+    - год: 30
+      описание: крещ
+      описание_: Крещение Иисуса Христа
+      вики: http://drevo-info.ru/articles/793.html
+      бытие: http://azbyka.ru/days/prazdnik-kreshchenie-gospoda-boga-i-spasa-nashego-iisusa-hrista
+      образ:
+       - http://azbyka.ru/days/assets/img/holidays/88/p18f06m6uc1prs1689jeb1ccp179p3.JPG
+       - http://azbyka.ru/days/assets/img/holidays/88/p184svi9psl61jsv1c6f1quc11rl3.jpg
+       - http://azbyka.ru/days/assets/img/holidays/88/p18f06m6udsk4rnjpo5iml1jc54.JPG
+       - http://drevo-info.ru/images/002/004434.jpg
+       - http://www.pravmir.ru/wp-content/uploads/2014/09/20874523-600x480.jpg
+       - http://www.pravmir.ru/wp-content/uploads/2014/01/23133-0-580x342.jpg
+      место: Иордан. Палестина
     - год: ок.32
       описание: преоб
       описание_: Преображение Господа и Бог Иисуса Христа
@@ -46,28 +99,150 @@
        - http://azbyka.ru/days/assets/upload/daily_menaion/12_August/aug06.pdf
        - http://azbyka.ru/days/caa/226
     - год: 33
-      описание: прств
+      описание: вскрш
+      место: Вифания. Палестина
+    - год: 33
+      описание: вход
+      место: Иерусалим. Палестина
+      описание_: Цветная неделя, Неделя Ваий, Вербное воскресенье, вход Господнь в Иерусалим
+      бытие:
+       - http://azbyka.ru/days/prazdnik-vhod-gospoden-v-ierusalim
+       - http://calendar.rop.ru/svyat1/verbnoe.html
+      образ:
+       - http://azbyka.ru/days/assets/img/holidays/12/p18is91jp21qlt1i2p8cd2aa5354.jpg
+       - http://azbyka.ru/days/assets/img/holidays/12/p181k4km2s1sjl1s0t16rhs82ea43.jpg
+       - http://azbyka.ru/days/assets/img/holidays/12/p18is91jp2143invf4hm1uplbk97.jpg
+       - http://azbyka.ru/days/assets/img/holidays/12/p18is91jp1i6215dfl4onqj10ja3.jpg
+      служба:
+       - Цветной недели служба
+       - http://azbyka.ru/days/caa/54
+       - http://azbyka.ru/days/caa/55
+    - год: 33
+      описание: прок
       место: Иерусалимье. Палестина
+      описание_: Страстной Понедельник, Проклятие смоковницы
+      бытие: http://azbyka.ru/days/prazdnik-velikij-ponedelnik
+      образ:
+       - http://azbyka.ru/days/assets/img/holidays/108/p18i2dmv6fcg1c3c55sc3d16gk3.jpg
+       - http://azbyka.ru/days/assets/upload/ib4475.jpg
+      служба:
+       - http://azbyka.ru/days/worship/583
+       - Понедельника Великого служба
+    - год: 33
+      описание: проп
+      место: Иерусалимье. Палестина
+      описание_: Страстной Вторник, Проповедь Спасителя
+      образ: http://azbyka.ru/days/assets/img/holidays/109/p18i47bu878dj1a9d1pei1i8t1hjh3.jpg
+      бытие: http://azbyka.ru/days/prazdnik-velikij-vtornik
+      служба:
+       - http://azbyka.ru/days/worship/585
+       - Вторника Великого служба
+      место: Иерусалим. Палестина
+    - год: 33
+      описание: изда
+      место: Иерусалимье. Палестина
+      описание_: Страстная Среда, Предательство Иудой Спасителя
+    - год: 33
+      описание: тайн
+      место: Иерусалимье. Палестина
+      описание_: Страстная Четверг; Тайная Вечеря
+      образ:
+       - http://azbyka.ru/days/assets/img/holidays/111/p1agurbdsep641ghf1hc51aikntd3.jpg
+       - http://azbyka.ru/days/assets/img/holidays/111/p1agur4fghmfuvvu17riigctcs3.jpg
+       - http://azbyka.ru/days/assets/img/holidays/111/p19ieu0u7u6a816n319jta60c2e3.jpg
+    - год: 33
+      описание: стрст
+      место: Лобное место. Иерусалимье. Палестина
+      описание_: Страстная Пятница; Страсти Христовы
+      служба: http://azbyka.ru/days/worship/544
+      образ:
+       - http://azbyka.ru/days/assets/img/holidays/98/p1ah8khp0ovc4lis5nic442hca.jpg
+       - http://azbyka.ru/days/assets/img/holidays/98/p1ah8khd5bfj819nhjkk1il512cp5.jpg
+       - http://azbyka.ru/days/assets/img/holidays/98/p1ah8khp0n1194jk917co1e9ef3o9.JPG
+    - год: 33
+      описание: прств
+      место: Лобное место. Иерусалимье. Палестина
+    - год: 33
+      описание: пгрб
+      место: Иерусалимье. Палестина
+      образ:
+       - http://azbyka.ru/days/assets/img/holidays/96/p1ah8l92eu1h841aguf5c1uu832a4.jpg
+       - http://azbyka.ru/days/assets/img/holidays/96/p1ah8l92ffcv11qs91io41ev0109l5.jpg
+    - год: 33
+      описание: покой
+      место: Иерусалимье. Палестина
+      описание_: Страстная Суббота
     - год: 33
       описание: вскрс
       место: Иерусалимье. Палестина
+      описание_: Воскресение Христово
+      образ: http://azbyka.ru/days/assets/img/holidays/96/p1ah8l92es1c13qgiankcs6rpv3.jpg
+    - год: 33
+      описание: науч
+      место: Иерусалим. Палестина
+      описание_: Научение Спасителем учеников по воскресении. Преполовение Пятидесятницы
+      служба: Преполовению Пятидесятницы служба
+      образ: https://upload.wikimedia.org/wikipedia/commons/e/ea/Twelve-year-old_Jesus_in_temple.jpg [Иисус, учащий во Иерусалимском Храме. Икона XV–XVI вв.]
     - год: 33
       описание: вознс
       место: Иерусалимье. Палестина
       вики: http://drevo-info.ru/articles/817.html
       бытие: http://azbyka.ru/days/prazdnik-voznesenie-gospodne
-      описание_: Вознесение Христово, Господне
-    - год: IV-V
+      описание_: Вознесение Христово
+    - год: IV
       описание: просл
+      о: 01.01
    помин:
+    - дата: 01.01
+      календарь: рпц
+      описание: обрез
+    - дата: 06.01
+      календарь: рпц
+      описание: крещ
+      пред: 4
+      по: 8
     - дата: 02.02
+      календарь: рпц
       описание: срет
       пред: 1
+      по: 9.02/вс.до поста
+    - дата: пн.до пасхи
+      календарь: рпц
+      описание: само
+    - дата: нд.6.поста
+      описание: вход
+    - дата: пн.до пасхи
+      календарь: рпц
+      описание: прок
+    - дата: вт.до пасхи
+      календарь: рпц
+      описание: проп
+    - дата: пасха
+      календарь: рпц
+      описание: вскрс
+      по: 38
+      преп: 24
+    - дата: дн.24.по пасхе
+      календарь: рпц
+      описание: науч
       по: 7
     - дата: дн.40.по пасхе
+      календарь: греч
       описание: вознс
       по: 8
+    - дата: дн.40.по пасхе
+      календарь: рпц
+      описание: вознс
+      пред: 1
+      по: 8
     - дата: 06.08
+      календарь: рпц
       описание: преоб
       пред: 1
       по: 7
+    - дата: 25.12
+      календарь: рпц
+      описание: ржд
+      пред: 5
+      навеч: 1
+      по: 6

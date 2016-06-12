@@ -11,8 +11,46 @@
     - http://stamatis-skliris.gr/wp-content/uploads/2012/06/filoksenia.jpg [π. Σταμάτης Σκλήρης© (stamatis-skliris.gr)]
     - http://www.saint.gr/filesnew/04/1833/photos/FilokseniaAbraam05.jpg [Φώτης Κόντογλου]
    событие:
-      дата: II-V
+    - дата: 30
+      описание: явл
+      описание_: Богоявление; Просвещение
+      служба: 
+       - Предпразнеству Богоявления и Сильвестру Римскому служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_02.pdf
+       - Предпразнеству Богоявления, Малахии Завулонову и Гордию Каппадокийскому служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_03.pdf
+       - Предпразнеству Богоявления, Семидесяти собору и Феоктисту Кукумскому служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_04.pdf
+       - Предпразнеству Богоявления, Феопемпту и Феоне Никомидийским и Синклитикии Александрийской
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_05.pdf
+       - Навечерию Богоявления служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_05.pdf
+       - Богоявлению служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_06.pdf
+       - http://azbyka.ru/days/caa/50
+       - http://azbyka.ru/days/caa/244
+       - http://azbyka.ru/days/caa/51
+      образ:
+       - http://azbyka.ru/days/assets/img/holidays/88/p18f06m6uc1prs1689jeb1ccp179p3.JPG
+       - http://azbyka.ru/days/assets/img/holidays/88/p184svi9psl61jsv1c6f1quc11rl3.jpg
+       - http://azbyka.ru/days/assets/img/holidays/88/p18f06m6udsk4rnjpo5iml1jc54.JPG
+       - http://drevo-info.ru/images/002/004434.jpg
+       - http://www.pravmir.ru/wp-content/uploads/2014/09/20874523-600x480.jpg
+       - http://www.pravmir.ru/wp-content/uploads/2014/01/23133-0-580x342.jpg
+      место: Иордан. Палестина
+    - дата: II-V
       описание: просл
+      о: 7.нд.по пасхе
+    - дата: II-V
+      описание: просл.1
+      о: 06.01
    помин:
-      дата: птдс
+    - дата: 06.01
+      календарь: змин,рпц
+      описание: явл
+      пред: 3
+      по: 8
+      навеч: 1
+    - дата: 7.нд.по пасхе
       описание: само
+      по: 6
