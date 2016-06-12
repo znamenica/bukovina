@@ -1,15 +1,15 @@
 ---
-Крещение Руси:
-   описание: Крещение Руси
-   чин: сбт
+Русь:
+   описание: Русь
+   чин: место
    собор: рус
-   крат: крус
-   служба:
-    - http://ustavschik.livejournal.com/229273.html
-    - http://ustavschik.livejournal.com/188527.html
    событие:
-      год: вид.XX
-      описание: просл
+      год: 988
+      описание: крещ
+      описание_: Крещение Руси
+      служба:
+       - http://ustavschik.livejournal.com/229273.html
+       - http://ustavschik.livejournal.com/188527.html
    помин:
       дата: 15.07
       календарь: рпц,укр
