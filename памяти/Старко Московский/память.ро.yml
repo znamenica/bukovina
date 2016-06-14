@@ -13,7 +13,9 @@
    бытие:
       ру: http://azbyka.ru/days/sv-gerontij
       гр: http://www.saint.gr/1768/saint.aspx
-   служба: Старку Московскому служба
+   служба:
+    - Старку Московскому служба
+    - http://azbyka.ru/days/assets/upload/minei/05/minea_05_28.pdf
    событие:
     - год: до 1447
       описание: иноч
@@ -41,8 +43,8 @@
       описание: просл
       о: 28.05
       ссылка: http://www.patriarchia.ru/db/text/4367765.html
+      место: Зал церковных соборов. Храм Христа Спасителя. Москва
    помин:
       дата: 28.05
       календарь: змин,рпц,греч
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/05/minea_05_28.pdf

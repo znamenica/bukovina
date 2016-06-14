@@ -16,7 +16,9 @@
     - http://azbyka.ru/days/assets/img/saints/2621/d63cfee928d062ccb4511664d772c7f9.jpg
     - http://azbyka.ru/days/assets/img/saints/2621/a853cce2ccd44c31695b4c6dc12a9559.jpg
     - http://drevo-info.ru/images/001/001396.jpg [икона 20-го века, Москва]
-   служба: Геннадию Новгородскому служба
+   служба:
+    - Геннадию Новгородскому служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_04.pdf
    отечник: http://azbyka.ru/otechnik/Gennadij_Novgorodskij/
    событие:
     - год: ок.1410
@@ -42,8 +44,8 @@
       описание: просл
       о: 04.12
       ссылка: http://www.patriarchia.ru/db/text/4367765.html
+      место: Зал церковных соборов. Храм Христа Спасителя. Москва
    помин:
       дата: 04.12
       календарь: рпц,змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_04.pdf

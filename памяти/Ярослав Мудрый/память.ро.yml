@@ -15,6 +15,7 @@
     - http://drevo-info.ru/images/003/009391.jpg
     - http://azbyka.ru/days/assets/img/saints/3070/p18fioped76c9cfqg9e1hbk1kho3.jpg
     - http://azbyka.ru/days/assets/img/saints/3070/p18fioped81sukb871va2vlp1e8u4.jpg
+    - https://drevo-info.ru/images/003/012419.jpg
    служба:
     - Ярославу Мудрому служба
     - http://azbyka.ru/days/caa/418
@@ -38,16 +39,19 @@
     - год: 2005
       дата: 25.11
       собор: рус
+      чин: блгв
       описание: просл.1
+      о: 20.02
       место: Москва
     - год: 2016
       дата: 21.01
       собор: рус
-      чин: прп
+      чин: блгв
       описание: просл.2
       о: 20.02
       ссылка: http://www.patriarchia.ru/db/text/4367765.html
+      место: Зал церковных соборов. Храм Христа Спасителя. Москва
    помин:
       дата: 20.02
-      календарь: рпц,укр
+      календарь: мск,рпц,укр
       описание: прств

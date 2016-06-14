@@ -3,23 +3,29 @@
    имя:
       ру: в иночестве Лука, в крещении Валентин
       гр: Λουκάς, Βαλεντίν
-   отчество: Феликсович
+      ан: Luke, Valentine
+   отчество:
+      ру: Феликсович
    фамилия:
       ру: Войно-Ясенецкий
       гр: Βόινο-Γιασενέτσκι
+      ан: Voino-Yassenetsky
    описание:
       ру: профессор, доктор медицины, врач Ардатовский, Фатежский, Переславзалесский,
          Красноярский; врач, протоиерей Ташкентский; святитель Симферопольский и Крымский,
          Тамбовкий и Мичуринский, Красноярский
       гр: Αρχιεπίσκοπος Συμφερουπόλεως και Κριμαίας
    чин: исвт
-   собор: нмр,врнж,тавр,кур,ряр,уч,керч,прзл,ардт,фатж,тшкт,тамб,мичу,кряр,симф
+   собор: нмр,врнж,тавр,кур,ряр,уч?,керч?,прзл?,ардт?,фатж?,тшкт?,тамб?,мичу?,кряр?,симф?
    вики: http://drevo-info.ru/articles/4137.html
    бытие:
       ру:
        - http://azbyka.ru/days/sv-luka-vojno-jaseneckij
        - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu9sueU60W0feahfWqTsOKhdSOee8YUUe0fdOrWe8oUZ8Kfe8fVfe8ctmY*
-      гр: http://www.saint.gr/1972/saint.aspx
+      гр:
+       - http://www.saint.gr/1972/saint.aspx
+       - http://mkka.blogspot.ru/2016/06/blog-post_12.html
+      ан: http://www.holytrinityorthodox.com/calendar/los/May/29-11.htm
    образ:
     - http://azbyka.ru/days/assets/img/saints/4100/c0e1fecb5c3d8f9831cee51d51ae478d.jpg
     - http://azbyka.ru/days/assets/img/saints/4100/0201db7c1885b3229dec81e934d53481.jpg
@@ -37,6 +43,7 @@
     - http://www.saint.gr/photos/standard/0611/AgiosLoukas02.jpg
     - http://www.imverias.gr/dev/media/16112008113-001.jpg
     - http://farm3.staticflickr.com/2886/8821794794_87e77d9593_o.jpg [Μιχαήλ Χατζημιχαήλ© www.michaelhadjimichael.com]
+    - https://3.bp.blogspot.com/-X17jKUZC5W8/U5ggP4QaIdI/AAAAAAAALOY/VH8IEjF07Pw/s400/img003.jpg
    служба:
     - Луке Войно-Ясенецкому служба
     - http://nbt.rop.ru/?q=texts/sluzhba/313 [Текст утвержден Священным Синодом Русской
@@ -120,8 +127,10 @@
       о: 05.03
    помин:
     - дата: 05.03
+      календарь: рпца
       описание: обр
     - дата: 29.05
+      календарь: рпца
       описание: прств
     - дата: 11.06
       календарь: греч
