@@ -1,1 +1,1 @@
-class Birth < Event ;end
+class Nativity < Event ;end
