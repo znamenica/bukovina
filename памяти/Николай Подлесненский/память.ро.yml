@@ -19,7 +19,9 @@
     - http://213.171.53.29/foto_1/obr-2g.jpg
     - http://213.171.53.29/foto_1/obr-2c.jpg
     - http://213.171.53.29/foto_1/obr-2d.jpg
-   служба: Николаю Подлесненскому служба
+   служба:
+    - Николаю Подлесненскому служба
+    - http://www.hram-goretovo.ru/index.php/biblioteka/sluzhby-novomuchenikam/174-sluzhba-svmch-nikolayu-kandaurovu
    событие:
     - год: 1880
       дата: 20.01

@@ -3,8 +3,11 @@
    описание: собор мучеников Бутовских, пострадавших в Бутове
    количество: много
    чин: мчч
+   крат: бут
    бытие: http://azbyka.ru/days/sv-sobor-novomuchenikov-v-butove-postradavshih
-   служба: Бутовскому собору служба
+   служба:
+    - Бутовскому собору служба
+    - http://www.hram-goretovo.ru/index.php/biblioteka/sluzhby-novomuchenikam/44-sluzhby-butovskim-novomuchenikam/171-sluzhba-soboru-butovskikh-muchenikov
    событие:
       год: XX
       собор: рус
