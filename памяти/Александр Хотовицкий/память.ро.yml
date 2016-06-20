@@ -5,13 +5,16 @@
    фамилия: Хотовицкий
    описание: священник
    чин: сщмч
-   собор: слав,нмр,мск,спб,гал
+   собор: слав?,нмр,мск,спб,гал?
    вики: http://drevo-info.ru/articles/14166.html
    бытие: http://azbyka.ru/days/sv-aleksandr-hotovickij
    образ:
     - http://drevo-info.ru/images/001/002894.jpg
     - http://azbyka.ru/days/assets/img/saints/1679/96113b01ee638e8f674c73b8c4d27321.jpg
     - http://pravicon.com/icon-1103
+   служба:
+    - Александру Хотовицкому служба
+    - http://ustavschik.livejournal.com/12517.html
    событие:
     - год: 1872
       дата: 11.02
@@ -32,4 +35,3 @@
    помин:
       дата: 07.08
       описание: прств
-      служба: Александру Хотовицкому служба
