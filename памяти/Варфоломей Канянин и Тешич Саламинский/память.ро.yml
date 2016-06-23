@@ -9,7 +9,9 @@
    собор: ап70
    бытие:
       гр: http://www.saint.gr/571/saint.aspx
-   служба: Варфоломею Канянину и Тешичу Саламинскому служба
+   служба:
+    - Варфоломею Канянину и Тешичу Саламинскому служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_11.pdf
    образ:
     - http://farm4.staticflickr.com/3694/9221984246_bb3796780f_o.jpg [Μιχαήλ Χατζημιχαήλ©
       www.michaelhadjimichael.com]
@@ -22,4 +24,3 @@
       дата: 11.06
       календарь: рпц,змин,греч
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_11.pdf

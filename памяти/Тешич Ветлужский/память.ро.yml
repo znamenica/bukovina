@@ -16,7 +16,9 @@
    образ:
     - http://azbyka.ru/days/assets/img/saints/350/p18jgu5m4713kd16n4ms4t1j139n3.jpg
     - http://azbyka.ru/days/assets/img/saints/350/p18jgu5m4710ck1bbc5be1k881eb25.jpg
-   служба: Тешичу Ветлужскому служба
+   служба:
+    - Тешичу Ветлужскому служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_11.pdf
    событие:
     - год: вид.вт.пол.XIV
       описание: ржд
@@ -34,4 +36,3 @@
       дата: 11.06
       календарь: рпц,змин,греч
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_11.pdf
