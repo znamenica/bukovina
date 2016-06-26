@@ -1,22 +1,26 @@
 ---
 Мстислав Храбрый:
-   имя: Мстислав, в крещении Георгий
-   отчество: Ростиславич
+   имя:
+      ру: в наречении Мстислав, в крещении Георгий
+      ан: Mstislav, George
+   отчество: Ростиславович
    прозвище: Храбрый
    фамилия: Рюрикович
    описание: князь Новгородский
    чин: блгв
    вики: http://ru.wikipedia.org/wiki/Мстислав_Ростиславич_Храбрый
    бытие:
-    - http://azbyka.ru/days/sv-mstislav-v-kreshchenii-georgij-hrabryj
-    - http://www.saints.ru/m/27_insvknMstislavNovgorodskii.html
+      ру:
+       - http://azbyka.ru/days/sv-mstislav-v-kreshchenii-georgij-hrabryj
+       - http://www.saints.ru/m/27_insvknMstislavNovgorodskii.html
    образ: http://azbyka.ru/days/assets/img/saints/4871/9db1880141188e71d9487ce0842fcdeb.jpg
+   служба:
+    - Мстиславу Храброму служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_14.pdf
    событие:
       год: 1180
       описание: прств
    помин:
       дата: 14.06
+      календарь: рпц,рпца
       описание: само
-      служба:
-       - Мстиславу Храброму служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_14.pdf

@@ -1,11 +1,17 @@
 ---
 Елисей Сумский:
    имя: Елисей
-   прозвище: Сумский, Соловецкий
+   описание:
+      ру: инок Сумский (Соловецкий)
+      ан: monk of Suma (Solovki)
    чин: прп
-   собор: слав,рус,сол,кар
+   собор: слав?,рус?,сол,кар
    вики: http://drevo-info.ru/articles/6149.html
-   бытие: http://azbyka.ru/days/sv-elisej-sumskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-elisej-sumskij
+       - http://calendar.rop.ru/svyat1/jun14-elisej-sumskij.html
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/14-04.htm
    образ: http://drevo-info.ru/images/001/003058.jpg
    событие:
     - год: XV-XVI
@@ -20,4 +26,5 @@
       место: Крестовоздвиженская церква. Петрозаводск
    помин:
       дата: 14.06
+      календарь: рпц,рпца
       описание: само

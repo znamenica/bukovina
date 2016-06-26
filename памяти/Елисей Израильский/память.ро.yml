@@ -1,11 +1,17 @@
 ---
 Елисей Израильский:
-   имя: Елисей
+   имя:
+      ру: Елисей
+      ан: Elisei (Elisha)
    описание: евр.Эли́ша - Бог помог или Бог спасет (Богспас, Спасебог)
    чин: прор
    собор: евр?
    вики: http://drevo-info.ru/articles/15334.html
-   бытие: http://azbyka.ru/days/sv-elisej
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-elisej
+       - http://calendar.rop.ru/svyat1/jun14-elisej.html
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/14-01.htm
    образ: http://drevo-info.ru/images/002/003369.jpg
    служба:
     - Елисею Израильскому служба
@@ -20,6 +26,7 @@
       описание: прств
    помин:
     - дата: 14.06
+      календарь: рпц
       описание: само
     - дата: 20.06
       описание: само
