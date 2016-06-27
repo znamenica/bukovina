@@ -1,10 +1,17 @@
 ---
 Амос Фекоин:
-   имя: Амос
+   имя:
+      ру: Амос
+      ан: Amos
    чин: прор
    вики: http://drevo-info.ru/articles/15335.html
-   бытие: http://azbyka.ru/days/sv-amos
+   бытие:
+      ру: http://azbyka.ru/days/sv-amos
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/15-01.htm
    образ: http://drevo-info.ru/images/002/007377.jpg
+   служба:
+    - Амосу Фекоину служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_15.pdf
    событие:
     - год: ок.830 до нэ
       описание: ржд
@@ -15,7 +22,5 @@
       описание: прств
    помин:
       дата: 15.06
+      календарь: рпц,рпца
       описание: само
-      служба:
-       - Амосу Фекоину служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_15.pdf

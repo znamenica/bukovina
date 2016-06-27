@@ -3,9 +3,11 @@
    имя:
       ру: вид.в иночестве Михаил
       гр: Μιχαήλ
+      ан: Michael
    описание:
       ру: серб, болгарин или сириец; святитель Киевский
       гр: πρώτος Μητροπολίτης Κιέβου και πάσης Ρωσίας ο θαυματουργός
+      ан: first metropolitan of Kiev
    чин: свт
    собор: болг?,серб?,киев
    вики: http://drevo-info.ru/articles/7376.html
@@ -14,6 +16,7 @@
        - http://calendar.rop.ru/svyat1/sep30-mihail.html
        - http://azbyka.ru/days/sv-mihail-kievskij-i-vseja-rusi
       гр: http://www.saint.gr/1015/saint.aspx
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/15-03.htm
    образ:
     - http://azbyka.ru/days/assets/img/saints/4466/af71a08520c42715fe4138d6fba884cf.jpg
     - http://azbyka.ru/days/assets/img/saints/4466/987d4063e03f09703494f3a0a10d5d36.jpg
@@ -22,6 +25,7 @@
    служба:
     - Михаилу Киевскому служба
     - http://azbyka.ru/days/caa/131
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_15.pdf
    событие:
     - год: 992
       дата: 15.06
@@ -43,9 +47,8 @@
       описание: утр
    помин:
     - дата: 15.06
-      календарь: змин
+      календарь: змин,рпц,рпца
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_15.pdf
     - дата: 30.09
       календарь: рпц,змин,ждр
       описание: прен.1
