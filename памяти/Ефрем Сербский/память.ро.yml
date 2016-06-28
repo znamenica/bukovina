@@ -9,7 +9,9 @@
    образ:
     - http://drevo-info.ru/images/002/004560.jpg
     - http://azbyka.ru/days/assets/img/saints/4779/p183mltb1n12umuo716am1p45oq3.jpg
-   служба: Ефрему Сербскому служба
+   служба:
+    - Ефрему Сербскому служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_15.pdf
    событие:
     - год: ок. 1312
       дата: 14/15.06
@@ -26,5 +28,5 @@
       место: Димитриевская церква. Петропавловская обитель. Печ. Косово
    помин:
       дата: 15.06
+      календарь: рпц,рпца
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_15.pdf
