@@ -1,16 +1,21 @@
 ---
 Ермоген Тобольский:
-   имя: в иночестве Ермоген, в крещении Георгий
+   имя:
+      ру: в иночестве Ермоген, в крещении Георгий
+      ан: Hermogenes (Germogen),
    отчество: Ефремович
    фамилия: Долганёв
-   описание: первоинок Тифлисский, Жировицкий, Угрешский; святитель Саратовский, Тобольский и
-      Сибирский; мученик Тобольский; утоплен безбожниками
+   описание:
+      ру: первоинок Тифлисский, Жировицкий, Угрешский; святитель Саратовский, Тобольский и
+         Сибирский; мученик Тобольский; утоплен безбожниками
+      ан: bishop of Tobolsk
    чин: мсвт
-   собор: нмр,нмср,мск,оде,сар,со,херс,тифл,жирв,угрш,тобл
+   собор: нмр,нмср,мск?,оде?,сар?,со?,херс?,тифл?,жирв?,угрш?,тобл?
    вики: http://drevo-info.ru/articles/15017.html
    бытие:
-    - http://azbyka.ru/days/sv-germogen-dolganev
-    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu1dS0gfeCZfG*cV8ufcu0hdO6d66CZfi0Xe8YUVSHUdOmiceXb8E*
+      ру:
+       - http://azbyka.ru/days/sv-germogen-dolganev
+       - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu1dS0gfeCZfG*cV8ufcu0hdO6d66CZfi0Xe8YUVSHUdOmiceXb8E*
    образ:
     - http://pravicon.com/icon-1538
     - http://drevo-info.ru/images/002/003251.jpg
@@ -67,6 +72,7 @@
       место: Покровский собор. Тобольск
    помин:
     - дата: 16.06
+      календарь: рпц,рпца
       описание: прств
     - дата: 20.08
       описание: обр

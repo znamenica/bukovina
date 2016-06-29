@@ -3,13 +3,17 @@
    имя:
       ру: в иночестве Тихон, в крещении Тимофей
       гр: Τύχων,
-   описание: чудотворец Костромской; подвижник Лухский (Луховский); основатель и настотель Лухско-Никольский (Копытовский)
+   описание:
+      ру: чудотворец Костромской; подвижник Лухский (Луховский); основатель и настотель Лухско-Никольский (Копытовский)
+      ан: of Lukhov
    чин: прп
    собор: кстр,ива,литв?,лух?
    вики: http://drevo-info.ru/articles/6180.html
    бытие:
-    - http://calendar.rop.ru/svyat1/jun16-tihon-luhovskij.html
-    - http://azbyka.ru/days/sv-tihon-luhovskoj
+      ру:
+       - http://calendar.rop.ru/svyat1/jun16-tihon-luhovskij.html
+       - http://azbyka.ru/days/sv-tihon-luhovskoj
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/16-02.htm
    образ:
     - http://pravicon.com/icon-3004
     - http://drevo-info.ru/images/001/001089.jpg
@@ -33,7 +37,7 @@
       описание: обр
    помин:
     - дата: 16.06
-      календарь: рпц,змин
+      календарь: рпц,рпца,змин
       описание: прств
     - дата: 26.06
       календарь: рпц,змин

@@ -1,17 +1,22 @@
 ---
 Моисей Оптинский:
-   имя: в иночестве Моисей, в крещении Тимофей
+   имя:
+      ру: в иночестве Моисей, в крещении Тимофей
+      ан: Moses
    отчество: Иванович
    фамилия: Путилов
-   описание: схиархимандрит и старец Оптинский
+   описание:
+      ру: схиархимандрит и старец Оптинский
+      ан: of Optina, founder of the Optina Skete
    чин: прп
-   собор: опт,бря
+   собор: опт,бря,тута?,росл?
    вики:
     - http://drevo-info.ru/articles/6182.html
     - http://ru.wikipedia.org/wiki/Моисей_Оптинский
    бытие:
-    - http://azbyka.ru/days/sv-moisej-optinskij
-    - http://www.optina.ru/starets/moisey_life_short/
+      ру:
+       - http://azbyka.ru/days/sv-moisej-optinskij
+       - http://www.optina.ru/starets/moisey_life_short/
    образ: http://pravicon.com/icon-2480
    событие:
     - год: 1782
@@ -49,4 +54,5 @@
       описание: просл
    помин:
       дата: 16.06
+      календарь: рпц,рпца
       описание: прств
