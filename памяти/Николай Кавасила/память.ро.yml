@@ -1,16 +1,21 @@
 ---
 Николай Кавасила:
-   имя: Николай
-   прозвище: Кавасила, Хамает
+   имя:
+      ру: Николай
+      ан: Nicholas
+   прозвище:
+      ру: Кавасила
+      ан: Cabasilas
    описание: богослов и литургист
    чин: прав
-   собор: греч
+   собор: сол?
    бытие: http://azbyka.ru/days/sv-nikolaj-kavasila
    образ:
     - http://azbyka.ru/days/assets/img/saints/6459/p17v9fi3t1ihr3jjd7pj51aqs3.jpg
     - http://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Kavasila.png/299px-Kavasila.png
+   отечник: http://azbyka.ru/otechnik/Nikolaj_Kavasila/
    событие:
-    - год: 1322
+    - год: 1322/1320
       описание: ржд
       место: Фессалоники. Греция
     - год: 1391-1398
@@ -21,5 +26,5 @@
       описание: просл
    помин:
       дата: 20.06
-      собор: греч
+      календарь: рпц,рпца
       описание: само
