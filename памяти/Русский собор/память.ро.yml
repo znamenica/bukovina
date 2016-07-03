@@ -1,9 +1,11 @@
 ---
 Русский собор:
-   описание: собор святых в земле Российской просиявших
+   описание:
+      ру: собор святых в земле Российской просиявших
+      ан: All Russian Saints
    чин: сбр
    крат: рус
-   собор: слав
+   собор: слав?
    бытие: http://azbyka.ru/days/sv-sobor-vseh-svjatyh-v-zemle-rossijskoj-prosijavshih
    образ:
     - http://azbyka.ru/days/assets/img/saints/6554/p18pk0eoap1nkb3acmup1vvd5694.jpg
@@ -21,4 +23,5 @@
       описание: просл
    помин:
       дата: нд.2.по птдс
+      календарь: рпц,рпца
       описание: само

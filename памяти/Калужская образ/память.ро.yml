@@ -1,13 +1,19 @@
 ---
-Калужский образ:
-   имя: Калужский
-   описание: образ Богородицы
+Калужская образ:
+   имя:
+      ру: Калужская
+      ан: Kaluga
+   описание:
+      ру: образ Богородицы
+      ан: Icon of the Most Holy Theotokos
    чин: обр
    собор: клг?,ефр?
    вики: http://drevo-info.ru/articles/3930.html
    бытие:
-    - http://azbyka.ru/days/ikona-kaluzhskaja
-    - http://calendar.rop.ru/icons1/sep02-ikona-yavlenie.html
+      ру:
+       - http://azbyka.ru/days/ikona-kaluzhskaja
+       - http://calendar.rop.ru/icons1/sep02-ikona-yavlenie.html
+      ан: http://www.holytrinityorthodox.com/calendar/los/Epiphany/p+63.htm
    образ:
     - http://drevo-info.ru/images/002/007155.jpg
     - http://drevo-info.ru/images/002/007143.jpg
@@ -16,12 +22,12 @@
     - http://azbyka.ru/days/assets/img/icons/100/p188klqibf1q4q4ah1rijssoh4p5.jpg
     - http://azbyka.ru/days/assets/img/icons/100/p188klrekf118gu01q6u8841ku69.jpg
    служба:
-    - Калужскому образу служба
+    - Калужской образу служба
     - http://azbyka.ru/days/caa/562
    событие:
     - год: 1748
       описание: явл
-      место: Тиньково село. Калужщина
+      место: Тиньково село. Калужская губерния
     - год: 1771
       описание: прен
       место: Калуга
@@ -30,10 +36,10 @@
       место: Калуга
     - год: 1812
       описание: прен.1
-      место: Ефремов. Тульщина
+      место: Ефремов. Тульская губерния
     - год: 1812
       описание: чудо.1
-      место: Ефремов. Тульщина
+      место: Ефремов. Тульская губерния
     - год: XVIII-XX
       описание: чудо.2
     - год: по 1945
@@ -41,13 +47,15 @@
       место: Георгиевский собор. Калуга
    помин:
     - дата: 18.07
+      календарь: змин
       описание: чудо.2
       служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_18.pdf
     - дата: 02.09
-      календарь: рпц
+      календарь: рпц,змин
       описание: чудо
       служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_02.pdf
     - дата: 12.10
       описание: чудо.1
-    - дата: вс.1.птрп
+    - дата: нд.1.поста.ап
+      календарь: рпца
       описание: само

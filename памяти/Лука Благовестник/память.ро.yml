@@ -1,9 +1,13 @@
 ---
 Лука Благовестник:
-   имя: Лука
-   описание: апостол от 70-ти, благовестник
+   имя:
+      ру: Лука
+      ан: Luke
+   описание:
+      ру: апостол от 70-ти, благовестник
+      ан: apostle
    чин: ап
-   собор: ап70,сир,копт,лек,бмз
+   собор: ап70,сир?,копт?,лек?,бмз?,бвест
    вики:
     - http://drevo-info.ru/articles/10326.html
     - http://ru.wikipedia.org/wiki/Лука_(евангелист)
@@ -24,6 +28,11 @@
     - http://azbyka.ru/days/assets/img/saints/1302/aa03543cfbc287d4f3d5f49aeca43bac.jpg
     - http://azbyka.ru/days/assets/img/saints/1302/69889e34cbe65c5553915d9c9a868ada.jpg
     - http://azbyka.ru/days/assets/img/saints/1302/859373bc4fbf054911b946cd80aba751.jpg
+   служба:
+    - Луке Благовестнику служба
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_18.pdf
+    - http://azbyka.ru/days/caa/270
+    - http://azbyka.ru/days/caa/177
    событие:
     - год: I до нэ-I
       описание: ржд
@@ -38,11 +47,7 @@
     - дата: 22.04
       описание: само
     - дата: 20.06
+      календарь: рпца
       описание: прен
     - дата: 18.10
       описание: само
-      служба:
-       - Луке Благовестнику служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_18.pdf
-       - http://azbyka.ru/days/caa/270
-       - http://azbyka.ru/days/caa/177
