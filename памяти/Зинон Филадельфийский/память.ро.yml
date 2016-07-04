@@ -1,14 +1,22 @@
 ---
 Зинон Филадельфийский:
-   имя: Зинон
-   прозвище: Филадельфийский
+   имя:
+      ру: Зинон
+      ан: Zeno
+   описание:
+      ру: мученик Филадельфийский; обезглавлен язычниками
+      ан: martyr of Philadelphia
    чин: мч
-   собор: лид
+   собор: арав?
    вики: http://drevo-info.ru/articles/6270.html
-   бытие: http://azbyka.ru/days/sv-zinon-filadelfijskij-aravijskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-zinon-filadelfijskij-aravijskij
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/22-02.htm
    событие:
       год: 304
       описание: прств
+      место: Филадельфия. Аравия
    помин:
       дата: 22.06
+      календарь: рпц,рпца
       описание: само

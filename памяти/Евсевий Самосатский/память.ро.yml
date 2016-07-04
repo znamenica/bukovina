@@ -1,10 +1,19 @@
 ---
 Евсевий Самосатский:
-   имя: Евсевий
-   описание: святитель Самосатский
-   чин: стсвт
+   имя:
+      ру: Евсевий
+      ан: Eusebius
+   описание:
+      ру: святитель Самосатский; мученик Долихинский
+      ан: bishop of Samosata
+   чин: мсвт
    вики: http://drevo-info.ru/articles/6272.html
-   бытие: http://azbyka.ru/days/sv-evsevij-samosatskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-evsevij-samosatskij
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/22-01.htm
+   служба:
+    - Евсевию Самосатскому служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_22.pdf
    образ:
     - http://pravicon.com/icon-1707
     - http://azbyka.ru/days/assets/img/saints/4487/p17uifk34011fj1udq4hr1i9k1o944.jpg
@@ -14,9 +23,14 @@
       описание: свят
     - год: 380
       описание: прств
+      место: Долихины
+    - год: вид.380
+      описание: прен
+      место: Самосаты
+    - год: вид.380
+      описание: пгрб
+      место: Самосаты
    помин:
       дата: 22.06
+      календарь: рпц,рпца
       описание: само
-      служба:
-       - Евсевию Самосатскому служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_22.pdf
