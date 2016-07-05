@@ -1,20 +1,23 @@
 ---
 Владимирский собор:
-   описание: собор святых Владимирских
+   описание:
+      ру: собор святых Владимирских
+      ан: Synaxis of All Saints of Vladimir
    чин: сбр
    крат: влад
-   собор: слав,рус
+   собор: слав?,рус?
    вики: http://drevo-info.ru/articles/17301.html
    бытие: http://azbyka.ru/days/sv-sobor-vladimirskih-svjatyh
    образ:
     - http://azbyka.ru/days/assets/img/saints/6460/p18qb5q0p914fm1aajlh55hr1oav5.jpg
     - http://drevo-info.ru/images/002/004651.jpg
+   служба:
+    - Владимирскому собору служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
    событие:
       год: 1982
       описание: просл
    помин:
       дата: 23.06
+      календарь: рпц,рпца
       описание: просл
-      служба:
-       - Владимирскому собору служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf

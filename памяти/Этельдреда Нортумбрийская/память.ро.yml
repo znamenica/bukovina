@@ -1,16 +1,16 @@
 ---
 Этельдреда Нортумбрийская:
    имя:
-      ан: Etheldreda, Audrey
       ру: Этельдреда, Одри
+      ан: Etheldreda (Etheldred), Audrey
    отчество: Аннична
    описание:
       ру: сестра Витбурги Холкемской, Сексбурги Элийской, Этельбурги Фаремутерской;
          королевна Саффолкская; королева Фенландская и Нортумбрийская; настоятельница
          Элийская
-      ан:  East Anglian princess, a Fenland and Northumbrian queen and Abbess of Ely
+      ан: East Anglian princess, a Fenland and Northumbrian queen and Abbess of Ely
    чин: прп
-   собор: норт,ванг
+   собор: норт?,ванг?
    вики:
       ру: http://drevo-info.ru/articles/6284.html
       ан: https://en.wikipedia.org/wiki/Etheldreda
@@ -41,6 +41,5 @@
       место: Элийская обитель. Эли. Кембриджшир. Восточная Англия
    помин:
       дата: 23.06
-      собор: сурж
-      календарь: греч
+      календарь: греч,рпца,сурж
       описание: прств

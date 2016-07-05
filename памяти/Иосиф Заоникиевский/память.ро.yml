@@ -1,17 +1,24 @@
 ---
 Иосиф Заоникиевский:
-   имя: в иночестве Иосиф, в крещении Иларион
+   имя:
+      ру: в иночестве Иосиф, в крещении Иларион
+      ан: Joseph, Ilarion
    описание: крестьянин; настоятель Заоникиевский (Вологодский); юродивый Христа ради
    чин: прп
-   собор: влгд,кубн,блжж
+   собор: влгд?,кубн?,блжж
    вики: http://drevo-info.ru/articles/3967.html
    бытие:
-    - http://azbyka.ru/days/sv-iosif-zaonikievskij-vologodskij
-    - http://calendar.rop.ru/svyat1/sep21-iosif.html
+      ру:
+       - http://azbyka.ru/days/sv-iosif-zaonikievskij-vologodskij
+       - http://calendar.rop.ru/svyat1/sep21-iosif.html
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/23-06.htm
    образ:
     - http://pravicon.com/icon-2024
     - http://azbyka.ru/days/assets/img/saints/421/p183qlgq0i1hi85uf1jskbq211v83.jpg
-   служба: Иосифу Заоникиевскому служба
+   служба:
+    - Иосифу Заоникиевскому служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_21.pdf
    событие:
     - год: ок.1529
       описание: ржд
@@ -25,10 +32,8 @@
       место: Заоникиевская обитель. Вологодщина
    помин:
     - дата: 23.06
-      календарь: змин
+      календарь: змин,рпца
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
     - дата: 21.09
       календарь: рпц,змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_21.pdf

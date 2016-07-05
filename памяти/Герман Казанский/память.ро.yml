@@ -1,17 +1,23 @@
 ---
 Герман Казанский:
-   имя: в иночестве Герман, в крещении Григорий
-   описание: бояринич; инок Волоколамский; превоинок Старицкий; святитель Казанский и
-      Свияжский; страстотерпец Московский; убит властью
+   имя:
+      ру: в иночестве Герман, в крещении Григорий
+      ан: Herman,
+   описание:
+      ру: бояринич; инок Волоколамский; превоинок Старицкий; святитель Казанский и
+         Свияжский; страстотерпец Московский; убит властью
+      ан: archbishop of Kazan
    фамилия: Садырев-Полевой (Садырев-Полев)
    чин: свт
-   собор: каз,твер,мск?,стрц,влкл,свия
+   собор: каз,твер,мск?,стрц?,влкл?,свия?
    вики:
     - http://drevo-info.ru/articles/4311.html
     - http://ru.wikipedia.org/wiki/Герман_(Садырев-Полев)
    бытие:
-    - http://azbyka.ru/days/sv-german-kazanskij-i-svijazhskij
-    - http://calendar.rop.ru/svyat1/sep25-moshi.html
+      ру:
+       - http://azbyka.ru/days/sv-german-kazanskij-i-svijazhskij
+       - http://calendar.rop.ru/svyat1/sep25-moshi.html
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/23-04.htm
    образ:
     - http://drevo-info.ru/images/001/000698.jpg
     - http://azbyka.ru/days/assets/img/saints/2495/p1918fqjp71ijvt7i19h8be216hm3.jpg
@@ -49,7 +55,7 @@
       описание: прен.1
    помин:
     - дата: 23.06
-      календарь: змин
+      календарь: рпц,рпца,змин
       описание: прен.1
       служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
     - дата: 25.09

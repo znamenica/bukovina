@@ -1,13 +1,19 @@
 ---
 Владимирская образ:
-   имя: Владимирская
-   описание: образ Богородицы
-   чин: обр,влад
-   собор: мск
+   имя:
+      ру: Владимирская
+      ан: Vladimir
+   описание:
+      ру: образ Богородицы
+      ан: Icon of the Most Holy Theotokos
+   чин: обр
+   собор: мск?,влад?,вышг?
    вики:
     - http://drevo-info.ru/articles/3589.html
     - http://ru.wikipedia.org/wiki/Владимирская_икона_Божией_Матери
-   бытие: http://azbyka.ru/days/ikona-vladimirskaja
+   бытие:
+      ру: http://azbyka.ru/days/ikona-vladimirskaja
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/23-01.htm
    образ:
     - http://azbyka.ru/days/assets/img/icons/55/c5458773774d074ccd2eda4d8f9970f9.jpg
     - http://azbyka.ru/days/assets/img/icons/55/4cda9e16ef36833e154fba8fb6496581.jpg
@@ -59,6 +65,7 @@
     - дата: 21.05
       описание: застп.1
     - дата: 23.06
+      календарь: рпц,рпца
       описание: застп
       служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
     - дата: 26.08

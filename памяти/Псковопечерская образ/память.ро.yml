@@ -1,11 +1,18 @@
 ---
 Псковопечерская образ:
-   имя: Псковопечерская, Псково-Печерская
-   описание: образ Богородицы
+   имя:
+      ру: Псковопечерская, Псково-Печерская, Псковская
+      ан: ,,Pskov
+   описание:
+      ру: образ Богородицы
+      ан: Icon of the Most Holy Theotokos
    вид: Умиление образ
    чин: обр
+   собор: ппеч?,пск?
    вики: http://drevo-info.ru/articles/5859.html
-   бытие: http://azbyka.ru/days/ikona-umilenie-pskovo-pecherskaja
+   бытие:
+      ру: http://azbyka.ru/days/ikona-umilenie-pskovo-pecherskaja
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/23-09.htm
    образ: http://azbyka.ru/days/assets/img/icons/302/p188npl2o31u9h1t8p1ciq1oqv1f1g4.jpg
    служба:
     - Псково-Печерскому образу служба
@@ -34,6 +41,7 @@
     - дата: 21.05
       описание: само
     - дата: 23.06
+      календарь: рпц,рпца
       описание: само
     - дата: 26.08
       описание: само

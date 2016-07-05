@@ -1,9 +1,13 @@
 ---
 Артемий Веркольский:
-   имя: Артемий
-   описание: отрок Веркольский
+   имя:
+      ру: Артемий
+      ан: Artemius
+   описание:
+      ру: отрок Веркольский
+      ан: of Verkola
    чин: прав
-   собор: слав,рус
+   собор: слав?,рус?
    вики:
     - http://drevo-info.ru/articles/10919.html
     - http://ru.wikipedia.org/wiki/Артемий_Веркольский
@@ -17,6 +21,10 @@
     - http://pravicon.com/icon-1278
     - http://drevo-info.ru/images/002/004028.jpg
     - http://www.ikona-kiot.ru/wp-content/uploads/artemiy-verkolskiy-1.jpg
+   служба:
+    - Артемию Веркольскому служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
+    - http://azbyka.ru/days/caa/640
    событие:
     - год: 1532
       описание: ржд
@@ -29,11 +37,9 @@
       описание: прен
    помин:
     - дата: 23.06
+      календарь: рпц,рпца,змин
       описание: само
-      служба:
-       - Артемию Веркольскому служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
-       - http://azbyka.ru/days/caa/640
     - дата: 20.10
+      календарь: змин
       описание: само
       служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_20.pdf
