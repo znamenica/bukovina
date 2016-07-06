@@ -1,14 +1,18 @@
 ---
 7 братьев Римских:
-   описание: 7 братьев и воинов Римских; мученики
+   описание:
+      ру: 7 братьев и воинов Римских; мученики
+      ан: Orentius, Pharnacius, Eros, Firmus, Firminus, Cyriacus, and Longinus
    количество: 7
    чин: мчч
    крат: 7бмр
-   бытие: http://calendar.rop.ru/svyat1/jun24-orentij-farnakij-eros.html
+   бытие:
+      ру: http://calendar.rop.ru/svyat1/jun24-orentij-farnakij-eros.html
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/24-02.htm
    событие:
       год: 301-305
       описание: прств
    помин:
       дата: 24.06
-      календарь: рпц
+      календарь: рпц,рпца
       описание: само

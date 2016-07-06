@@ -1,8 +1,12 @@
 ---
 Михаил Тверской:
-   имя: в крещении Михаил
-   отчество: Ярославич
-   описание: великий князь Тверской
+   имя:
+      ру: в крещении Михаил
+      ан: Michael
+   отчество: Ярославович
+   описание:
+      ру: великий князь Тверской
+      ан: great prince of Tver
    чин: блгв
    собор: твер?,друс
    вики: http://drevo-info.ru/articles/11678.html
@@ -14,6 +18,8 @@
    служба:
     - Михаилу Тверскому служба
     - http://azbyka.ru/days/caa/321
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_22.pdf
+    - http://azbyka.ru/days/assets/upload/daily_menaion/03_November/nov22.pdf
    событие:
     - год: 1272
       описание: ржд
@@ -39,6 +45,7 @@
       описание: обр
    помин:
     - дата: 24.06
+      календарь: рпца
       описание: прен
     - дата: нд.по 02.10
       собор: твер
@@ -46,6 +53,3 @@
     - дата: 22.11
       календарь: змин
       описание: само
-      служба:
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_22.pdf
-       - http://azbyka.ru/days/assets/upload/daily_menaion/03_November/nov22.pdf

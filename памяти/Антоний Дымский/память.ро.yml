@@ -1,15 +1,24 @@
 ---
 Антоний Дымский:
-   имя: Антоний
-   прозвище: Дымский
+   имя:
+      ру: Антоний
+      ан: Anthony
+   описание:
+      ру: настоятель Дымский (Новгородский)
+      ан: abbot of Dymsk (Novgorod)
    чин: прп
-   собор: слав,рус,спб
+   собор: слав?,рус,спб,хуты?,тихв?
    вики: http://drevo-info.ru/articles/4920.html
-   бытие: http://azbyka.ru/days/sv-antonij-dymskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-antonij-dymskij
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/24-05.htm
    образ:
     - http://pravicon.com/icon-1218
     - http://drevo-info.ru/images/003/010284.jpg
-   помин:
+   служба:
+    - Антонию Дымскому служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_24.pdf
+    - http://azbyka.ru/days/caa/638
    событие:
     - год: ок. 1157 
       описание: ржд
@@ -30,8 +39,5 @@
     - дата: 17.01
       описание: само
     - дата: 24.06
+      календарь: рпц,рпца
       описание: прств
-      служба:
-       - Антонию Дымскому служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_24.pdf
-       - http://azbyka.ru/days/caa/638

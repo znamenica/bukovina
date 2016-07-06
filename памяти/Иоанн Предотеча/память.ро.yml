@@ -4,15 +4,19 @@
       ру: Иоанн
       гр: Ιωάννης
       ив: იოანესი
+      ан: John
    отчество: Захарьевич
-   прозвище: Пророк, Предотеча (Предтеча)
+   прозвище:
+      ру: Пророк, Предотеча (Предтеча), Креститель
+      ан: ,,Baptist
    описание: креститель Господнь
    чин: прор
    собор: плст
    вики:
     - http://drevo-info.ru/articles/3825.html
     - https://ru.wikipedia.org/wiki/Иоанн_Креститель
-   бытие: http://azbyka.ru/days/sv-prorok-i-krestitel-ioann-predtecha
+   бытие:
+      ру: http://azbyka.ru/days/sv-prorok-i-krestitel-ioann-predtecha
    образ:
     - http://azbyka.ru/days/assets/img/saints/3544/p18fa1cofidsib2j1f201h2e1hco7.JPG
     - http://azbyka.ru/days/assets/img/saints/3544/0cea59cd6552193bf2bd78e7ba8de857.jpg
@@ -107,8 +111,10 @@
        - http://azbyka.ru/days/assets/img/saints/3544/d5d8e8fdc42d0e95fead981b867c869a.jpg
       бытие:
          гр: http://www.saint.gr/622/saint.aspx
+         ан: http://www.holytrinityorthodox.com/calendar/los/June/24-01.htm
       описание_:
          гр: Το Γενέθλιο του Αγίου Ιωάννη Προδρόμου και Βαπτιστού
+         ан: Nativity of St. John the Baptist
     - год: ок. 32
       описание: прств
       место: Иерусалим. Палестина
@@ -214,7 +220,7 @@
       описание: обр.2
       служба: Иоанну Предотече на обретение главы третее служба
     - дата: 24.06
-      календарь: змин
+      календарь: змин,рпц,рпца
       описание: ржд
       служба:
        - Иоанну Предотече на рождество служба

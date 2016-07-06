@@ -1,15 +1,24 @@
 ---
 Иаков Менюжский:
-   имя: Иаков
+   имя:
+      ру: Иаков
+      ан: James
    отчество: Исидорович
-   описание: отрок Менюжский, брат Иоанна Менюжского
+   описание:
+      ру: отрок Менюжский, брат Иоанна Менюжского
+      ан: youth of Meniugi (Novgorod)
    чин: прав
-   собор: слав,рус
+   собор: слав?,рус?,нов?
    вики: http://drevo-info.ru/articles/10922.html
-   бытие: http://azbyka.ru/days/sv-iakov-menjuzhskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-iakov-menjuzhskij
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/24-06.htm
    образ:
     - https://mospat.ru/calendar/icons-MDA/%7BEESM5I1-3D4BVFSPR1NV6-PB91GM0%7D/Header.jpg
     - http://azbyka.ru/days/assets/img/saints/4076/p18qbjonbsgr41iirgt51p2hkvd4.jpg
+   служба:
+    - Иакову и Иоанну Менюжским служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_24.pdf
    событие:
     - год: 1566-1569
       описание: прств
@@ -20,7 +29,5 @@
       место: Свято-Троицкая церква. село Менюж (на реке Менюге). Новгородщина
    помин:
       дата: 24.06
+      календарь: рпц,рпца
       описание: само
-      служба:
-       - Иакову и Иоанну Менюжским служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_24.pdf
