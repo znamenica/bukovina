@@ -1,15 +1,19 @@
 ---
 Кам и Феврония Муромские:
-   описание: семья Кама и Февроньи Муромских, князей Муромских
+   описание: семья Петра и Февроньи Муромских, князей Муромских
    чин: брак
    крат: кфм
    собор: мрм?
    вики: http://ru.wikipedia.org/wiki/Пётр_и_Феврония
    образ: http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Petr_of_Murom.jpg/405px-Petr_of_Murom.jpg
+   бытие:
+      ру: http://calendar.rop.ru/svyat1/jun25-petr-fevroniya.html
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/25-02.htm
    служба:
     - Каму и Февронии Муромским служба
     - http://azbyka.ru/days/caa/731
     - http://azbyka.ru/days/caa/475
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_25.pdf
    событие:
     - год: ок. 1200-1203
       описание: брак
@@ -33,11 +37,10 @@
       дата: 13.01
       собор: рус
       описание: просл.1
-      о: прен
+      о: нд.до 06.09
    помин:
     - дата: нд.до 06.09
       описание: прен
     - дата: 25.06
-      календарь: змин
+      календарь: змин,рпц,рпца
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_25.pdf
