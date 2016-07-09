@@ -1,11 +1,16 @@
 ---
 Новгородский собор:
-   описание: собор святых Новгородских
+   описание:
+      ру: собор святых Новгородских
+      ан: Synaxis of Saints of Novgorod
    вики: http://drevo-info.ru/articles/11311.html
-   бытие: http://azbyka.ru/days/sv-sobor-novgorodskih-svjatyh
+   бытие:
+      ру: http://azbyka.ru/days/sv-sobor-novgorodskih-svjatyh
+      ан: http://www.holytrinityorthodox.com/calendar/los/February/10-06.htm
    образ:
     - http://azbyka.ru/days/assets/img/saints/6464/p18q3qvb4a1m6b1okp1jmcbjp1av24.jpeg
     - http://azbyka.ru/days/assets/img/saints/6464/p18q3qvb48o0el07aeg17pt15163.jpg
+   служба: Новгородскому собору служба
    событие:
     - год: 1831
       описание: просл
@@ -14,5 +19,5 @@
       описание: просл.2
    помин:
       дата: нд.3.по птдс
+      календарь: рпц,рпца
       описание: само
-      служба: Новгородскому собору служба

@@ -1,13 +1,19 @@
 ---
 Дионисий Суздальский:
-   имя: в иночестве Дионисий, в крещении Давид
-   описание: святитель Суздальский, Киевский и всея Руси
+   имя:
+      ру: в иночестве Дионисий, в крещении Давид
+      ан: Dionysius,
+   описание:
+      ру: святитель Суздальский, Киевский и всея Руси
+      ан: archbishop of Suzdal
    чин: свт
-   собор: киев,влад,кстр,ниж,рднж
+   собор: киев?,влад?,кстр?,ниж?,рднж?
    вики: http://drevo-info.ru/articles/6299.html
    бытие:
-    - http://azbyka.ru/days/sv-dionisij-suzdalskij
-    - http://www.blagoslovenie.su/jitie/dionisiy_svt_jitie.php
+      ру:
+       - http://azbyka.ru/days/sv-dionisij-suzdalskij
+       - http://www.blagoslovenie.su/jitie/dionisiy_svt_jitie.php
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/26-03.htm
    образ: http://drevo-info.ru/images/002/007311.jpg
    служба:
     - Дионисию Суздальскому служба

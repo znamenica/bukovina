@@ -1,13 +1,19 @@
 ---
-Тихвинский образ:
-   имя: Тихвинский
-   описание: образ Богородицы
+Тихвинская образ:
+   имя:
+      ру: Тихвинская
+      ан: Tikhvin
+   описание:
+      ру: образ Богородицы
+      ан: Icon of the Most Holy Theotokos
    чин: обр
-   собор: плст,сир,виз,тихв
+   собор: плст?,сир?,виз?,тихв?
    вид: Влахернский образ
    вики:
     - http://drevo-info.ru/articles/3742.html
     - https://ru.wikipedia.org/wiki/Тихвинская_икона_Божией_Матери
+   бытие:
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/26-01.htm
    образ:
     - http://drevo-info.ru/images/001/000551.jpg
     - http://drevo-info.ru/images/001/000550.jpg
@@ -18,6 +24,7 @@
     - http://azbyka.ru/days/caa/583
     - http://azbyka.ru/days/caa/582
     - http://azbyka.ru/days/caa/581
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_26.pdf
    событие:
     - год: вид.по V
       описание: напис
@@ -44,6 +51,5 @@
       место: Тихвинский Успенский монастырь. Тихвин
    помин:
       дата: 26.06
-      календарь: змин
+      календарь: змин,рпц,рпца
       описание: прен.2
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_26.pdf

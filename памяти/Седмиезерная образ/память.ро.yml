@@ -1,11 +1,18 @@
 ---
-Седмиезерный образ:
-   имя: Седмиезерный
-   описание: образ Богородицы
+Седмиезерная образ:
+   имя:
+      ру: Седмиезерная
+      ан: Of the Seven Lakes
+   описание:
+      ру: образ Богородицы
+      ан: Icon of the Most Holy Theotokos
    чин: обр
-   вид: Смоленский образ
+   вид: Смоленская образ
+   собор: смо?
    вики: http://drevo-info.ru/articles/11528.html
-   бытие: http://azbyka.ru/days/ikona-odigitrija-sedmiezernaja
+   бытие:
+      ру: http://azbyka.ru/days/ikona-odigitrija-sedmiezernaja
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/26-08.htm
    образ:
     - http://azbyka.ru/days/assets/img/icons/51/p188lg2sqv2vabd1msh4v41ab25.jpg
     - http://azbyka.ru/days/assets/img/icons/51/p188lg2r0fsec143r1dob1r611tkc3.jpg
@@ -21,6 +28,7 @@
       описание: чудо.1
    помин:
     - дата: 26.06
+      календарь: рпц,рпца
       описание: чудо
     - дата: 28.07
       описание: чудо.1

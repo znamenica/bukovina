@@ -1,14 +1,22 @@
 ---
 Севир Валерийский:
-   имя: Севир
-   описание: священник Валерийский, Италийский
+   имя:
+      ру: Севир
+      ан: Severus
+   описание:
+      ру: священник Валерийский, Италийский
+      ан: presbyter of Interocrea in Italy
    чин: прп
-   собор: итал
+   собор: вале?
    вики: http://drevo-info.ru/articles/6311.html
-   бытие: http://azbyka.ru/days/sv-sevir-valerijskij-italijskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-sevir-valerijskij-italijskij
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/27-06.htm
    событие:
       год: VI
       описание: прств
+      место: Интероклея село. Валерия. Италия
    помин:
       дата: 27.06
+      календарь: рпц,рпца
       описание: само

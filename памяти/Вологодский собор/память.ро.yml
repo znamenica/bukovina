@@ -1,20 +1,22 @@
 ---
 Вологодский собор:
-   описание: собор святых Вологодских
+   описание:
+      ру: собор святых Вологодских
+      ан: Celebration in Vologda to the venerable fathers of Vologda
    чин: сбр
    крат: влгд
    собор: рус
    вики:
     - http://drevo-info.ru/articles/11741.html
     - https://ru.wikipedia.org/wiki/Собор_Вологодских_святых
-   бытие: http://azbyka.ru/days/sv-sobor-prepodobnyh-otcov-vologodskih
    образ:
     - http://drevo-info.ru/images/002/005285.jpg
     - https://upload.wikimedia.org/wikipedia/ru/7/71/Господь_Вседержитель_с_предстоящими_вологодскими_святыми.jpg
+   служба: Вологодскому собору служба
    событие:
       год: XIX
       описание: просл
    помин:
       дата: нд.3.по птдс
+      календарь: рпц,рпца
       описание: само
-      служба: Вологодскому собору служба

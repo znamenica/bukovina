@@ -1,15 +1,23 @@
 ---
 Иоанна Мироносица:
-   имя: Иоанна
-   описание: мироносица, супруга Хузы
+   имя:
+      ру: Иоанна
+      ан: Joanna
+   фамилия: Хузаня
+   описание:
+      ру: мироносица; супруга Хузы
+      ан: Myrrh-bearer
    чин: прав
-   собор: плст,мрнс
+   собор: плст?,мрнс
    вики: http://drevo-info.ru/articles/6309.html
-   бытие: http://azbyka.ru/days/sv-ioanna-mironosica
+   бытие:
+      ру: http://azbyka.ru/days/sv-ioanna-mironosica
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/27-04.htm
    образ: http://drevo-info.ru/images/003/010941.jpg
    событие:
       год: I
       описание: прств
    помин:
       дата: 27.06
+      календарь: рпц,рпца
       описание: само

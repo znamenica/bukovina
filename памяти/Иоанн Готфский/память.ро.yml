@@ -1,11 +1,17 @@
 ---
 Иоанн Готфский:
-   имя: Иоанн
-   описание: святитель Готский (Готфский)
+   имя:
+      ру: Иоанн
+      ан: John
+   описание:
+      ру: святитель Готский (Готфский)
+      ан: bishop of the Goths in Crimea
    чин: свт
-   собор: тавр
+   собор: тавр?
    вики: http://drevo-info.ru/articles/5837.html
-   бытие: http://azbyka.ru/days/sv-ioann-gotfskij
+   бытие:
+      ру: http://azbyka.ru/days/sv-ioann-gotfskij
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/26-05.htm
    образ: http://drevo-info.ru/images/003/010764.jpg
    служба: http://ustavschik.livejournal.com/240683.html
    событие:
@@ -21,5 +27,6 @@
     - дата: 19.05
       описание: само
     - дата: 26.06
+      календарь: рпц,рпца
       описание: само
 

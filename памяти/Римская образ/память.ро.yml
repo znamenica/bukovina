@@ -1,14 +1,20 @@
 ---
 Римская образ:
-   имя: Римская
-   описание: образ Богородицы
+   имя:
+      ру: Римская
+      ан: Roman
+   описание:
+      ру: образ Богородицы
+      ан: Icon of the Most Holy Theotokos
    тез: Лиддская образ
    чин: обр
    собор: рим?
    вики: http://drevo-info.ru/articles/8113.html
    бытие:
-    - http://azbyka.ru/days/ikona-liddskaja-rimskaja
-    - http://calendar.rop.ru/icons1/jun26-ikona-liddskaya-rimskaya.html
+      ру:
+       - http://azbyka.ru/days/ikona-liddskaja-rimskaja
+       - http://calendar.rop.ru/icons1/jun26-ikona-liddskaya-rimskaya.html
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/26-09.htm
    образ: http://drevo-info.ru/images/001/001387.jpg
    событие:
     - год: 715-730
@@ -19,5 +25,5 @@
       место: Рим. Италия
    помин:
       дата: 26.06
-      календарь: рпц
+      календарь: рпц,рпца
       описание: само
