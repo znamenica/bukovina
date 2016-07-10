@@ -1,13 +1,48 @@
 ---
 Парфений Лампсакийский:
-   имя: Парфений
-   прозвище: Лука Лампсакийский святитель
-   чин: прсвт
+   имя: вид.в крещении Парфений
+   отчество: Христофорович
+   описание: священник и врач Мелитопольский; святитель Лампсакийский
+   чин: свт
+   собор: лек?,
    вики: http://drevo-info.ru/articles/8987.html
-   бытие: http://azbyka.ru/days/sv-parfenij-lampsakijskij
-   образ: http://pravicon.com/icon-2672
-   помин:
-      год: IV
-      дата: 07.02
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-parfenij-lampsakijskij
+       - http://calendar.rop.ru/svyat1/feb07-parfenij.html
+      гр: http://www.saint.gr/3625/saint.aspx
+   образ:
+    - http://pravicon.com/icon-2672
+    - https://drevo-info.ru/images/003/013643.jpg [фреска]
+    - https://drevo-info.ru/images/003/013644.jpg [Икона]
+    - http://s9.postimg.org/70rxdmf3z/Osios_Parthenios03.jpg
+    - http://diakonima.wpengine.netdna-cdn.com/wp-content/uploads/2014/02/OsiosParthenios02.jpg
+    - http://www.saint.gr/filesnew/08/3625/photos/OsiosParthenios01.jpg
+    - http://diakonima.wpengine.netdna-cdn.com/wp-content/uploads/2014/02/ag-parthenios.jpg
+    - http://diakonima.wpengine.netdna-cdn.com/wp-content/uploads/2014/02/agios2bparthenios.jpg
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Συλλογή με κατάταξη/Άγιοι/Παρθένιος Λαμψάκου 02.jpg
+   служба: Парфению Лампсакийскому служба
+   событие:
+    - год: вт.пол.III
+      описание: ржд
+      место: Мелитополь
+    - год: вид.нач.IV
+      описание: свящ
+      место: Мелитополь
+    - год: по 325
+      описание: свят
+      место: Лампсак
+    - год: вид.сер.IV
       описание: прств
-      служба: Парфению Лампсакийскому служба
+      место: Лампсак
+    - год: вид.сер.IV
+      описание: пгрб
+      место: часовня. Лампсак
+    - год: вид.сер.IV
+      предмет: частица
+      описание: прен
+      место: 
+   помин:
+      дата: 07.02
+      календарь: рпц,греч
+      описание: само
