@@ -3,12 +3,14 @@
    описание:
       ру: апостолы первоверховные Кам и Мал
       гр: Πέτρος και Παύλος Πρωτοκορυφαίοι Απόστολοι
+      ан: Holy, Glorious and All-praised Leaders of the Apostles, Peter and Paul
    количество: 2
    чин: апп
    крат: кмп
    бытие:
       ру: http://calendar.rop.ru/svyat1/jun29-petr-pavel.html
       гр: http://www.saint.gr/642/saint.aspx
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/29-01.htm
    образ:
     - http://www.saint.gr/photos/standard/0629/AgioiPetrosPaulos01.jpg
     - http://www.saint.gr/photos/standard/0629/AgioiPetrosPaulos02.jpg
@@ -27,5 +29,5 @@
       описание: просл
    помин:
       дата: 29.06
-      календарь: рпц,греч
+      календарь: рпц,рпца,греч
       описание: само
