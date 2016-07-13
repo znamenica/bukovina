@@ -1,11 +1,17 @@
 ---
 Бранко Дроздов:
-   имя: Алексий
+   имя:
+      ру: Алексий
+      ан: Alexis
    фамилия: Дроздов
-   описание: протодиякон
-   чин: сщмч
-   собор: слав,нмр
-   бытие: http://azbyka.ru/days/sv-aleksij-drozdov
+   описание:
+      ру: протодиякон
+      ан: protodeacon
+   чин: сщмр
+   собор: слав?,нмр?
+   бытие:
+    - http://azbyka.ru/days/sv-aleksij-drozdov
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5srTcGhe5slB5uFfuXVfeeIW6tyVC0iduGicW0*euKesOWdTb7ZNbu2dOiU**
    событие:
     - год: 1883
       описание: ржд
@@ -14,7 +20,10 @@
       описание: прств
     - год: 2006
       дата: 28.03
+      собор: рус
+      чин: сщмч,нмр
       описание: просл
    помин:
       дата: 01.07
+      календарь: рпц,рпца,пстгу
       описание: прств

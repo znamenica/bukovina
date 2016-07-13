@@ -1,15 +1,21 @@
 ---
 Ангелина Сербская:
-   имя: Ангелина
-   отчество: Андреевна/Геориевна
+   имя:
+      ру: Ангелина
+      ан: Angelina
+   отчество: Андреевна/Георгиевна
    фамилия: в замужестве Бранкович, в девичестве Арианитова
-   описание: деспотисса (правительница) Сербская
+   описание:
+      ру: деспотисса (правительница) Сербская
+      ан: despotina of Serbia
    чин: прп
    собор: серб?,блгвв?,срем?,кршд?
    вики:
     - http://drevo-info.ru/articles/11473.html
     - https://ru.wikipedia.org/wiki/Ангелина_Сербская
-   бытие: http://azbyka.ru/days/sv-angelina-serbskaja-brankovich
+   бытие:
+      ру: http://azbyka.ru/days/sv-angelina-serbskaja-brankovich
+      ан: http://www.holytrinityorthodox.com/calendar/los/July/01-05.htm
    образ:
     - http://iconexpo.ru/pics/1_614.jpg
     - http://ikona-na-zakaz.ru/images/icon155.jpg
@@ -52,6 +58,7 @@
       место: Франция
    помин:
     - дата: 01.07
+      календарь: рпц,рпца
       описание: само
     - дата: 30.07
       собор: серб
