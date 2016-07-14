@@ -1,17 +1,27 @@
 ---
 Иувеналий Иерусалимский:
-   имя: Иувеналий
-   описание: первосвятитель Иерусалимский
+   имя:
+      ру: Иувеналий, Иувенал
+      ан: ,Juvenal
+   описание:
+      ру: первосвятитель Иерусалимский
+      ан: patriarch of Jerusalem
    чин: свт
-   собор: плст,3вс
+   собор: плст?,3вс
    вики: http://drevo-info.ru/articles/15505.html
-   бытие: http://azbyka.ru/days/sv-iuvenalij-juvenalij-ierusalimskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-iuvenalij-juvenalij-ierusalimskij
+       - http://calendar.rop.ru/svyat1/jul02-iuvenalij.html
+      ан: http://www.holytrinityorthodox.com/calendar/los/July/02-03.htm
+   служба:
+    - Иувеналию Иерусалимскому служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_02.pdf
    событие:
       год: 458
       описание: прств
+      место: Иерусалим
    помин:
       дата: 02.07
+      календарь: рпц,рпца,змин
       описание: само
-      служба:
-       - Иувеналию Иерусалимскому служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_02.pdf

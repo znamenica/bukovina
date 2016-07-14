@@ -1,9 +1,15 @@
 ---
 Риза Богородицы:
-   описание: риза Богородицы
+   описание:
+      ру: риза Богородицы
+      ан: Honorable Robe of the Most Holy Theotokos
    чин: прдм
    вики: http://drevo-info.ru/articles/13321.html
-   бытие: http://azbyka.ru/days/prazdnik-polozhenie-chestnoj-rizy-presvjatoj-bogorodicy-vo-vlaherne
+   бытие:
+      ру:
+       - http://azbyka.ru/days/prazdnik-polozhenie-chestnoj-rizy-presvjatoj-bogorodicy-vo-vlaherne
+       - http://calendar.rop.ru/svyat1/jul02-riza.html
+      ан: http://www.holytrinityorthodox.com/calendar/los/July/02-01.htm
    событие:
     - год: 471
       описание: обр
@@ -29,6 +35,7 @@
       описание: чудо
    помин:
       дата: 02.07
+      календарь: рпц,рпца
       описание: прен
       служба:
        - Богородице о положении ризы служба

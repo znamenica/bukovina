@@ -3,9 +3,11 @@
    имя:
       ру: в иночестве Фотий
       гр: Φώτιος
+      ан: Photius
    описание:
       ру: грек; святитель Киевский; первосвятитель Московский и всея Руси
       гр: Μητροπολίτης Κιέβου και Μόσχας
+      ан: metropolitan of Kiev
    чин: свт
    собор: гал,киев,мск,лако?,виз?,3мст
    вики: http://drevo-info.ru/articles/13127.html
@@ -14,6 +16,7 @@
        - http://calendar.rop.ru/svyat1/jul02-fotij.html
        - http://azbyka.ru/days/sv-fotij
       гр: http://www.saint.gr/1782/saint.aspx
+      ан: http://www.holytrinityorthodox.com/calendar/los/July/02-02.htm
    образ:
     - http://azbyka.ru/days/assets/img/saints/1202/78592cab58a78d9a6210a2ab425e9205.jpg
     - http://www.saint.gr/photos/standard/0702/AgiosPhotios01.jpg
@@ -50,5 +53,5 @@
       описание_:
          гр: Ανακομιδή ιερών λειψάνων του Αγίου Φωτίου Μητροπολίτη Μόσχας
     - дата: 02.07
-      календарь: рпц,греч,змин
+      календарь: рпц,греч,змин,рпца
       описание: прств

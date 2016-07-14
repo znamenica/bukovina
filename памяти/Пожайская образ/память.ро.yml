@@ -1,8 +1,13 @@
 ---
 Пожайская образ:
-   имя: Пожайская
-   описание: образ Богородицы
+   имя:
+      ру: Пожайская
+      ан: Pozai
+   описание:
+      ру: образ Богородицы
+      ан: Icon of the Most Holy Theotokos
    чин: обр
+   собор: пожа?
    образ:
     - http://azbyka.ru/days/assets/img/icons/33/p188lhriml1rmf1np41guq129o1ke45.jpg
     - http://azbyka.ru/days/assets/img/icons/33/p188lhrgr8jba1sg9gkv15ji18o33.jpg
@@ -23,4 +28,5 @@
       место: Пожайский Успенский монастырь. Литва
    помин:
       дата: 02.07
+      календарь: рпц,рпца
       описание: само
