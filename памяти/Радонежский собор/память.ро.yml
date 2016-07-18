@@ -1,10 +1,15 @@
 ---
 Радонежский собор:
-   описание: собор святых Радонежских
+   описание:
+      ру: собор святых Радонежских
+      ан: Synaxis of All Saints of Radonezh
    чин: сбр
    вики: http://drevo-info.ru/articles/15517.html
    бытие: http://azbyka.ru/days/sv-sobor-radonezhskih-svjatyh
    образ: http://drevo-info.ru/images/002/009229.jpg
+   служба:
+    - Радонежскому собору служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_06.pdf
    событие:
     - год: сер.XVII
       описание: почит
@@ -14,7 +19,5 @@
       описание: просл
    помин:
       дата: 06.07
-      описание: почит
-      служба:
-       - Радонежскому собору служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_06.pdf
+      календарь: рпц,рпца
+      описание: само
