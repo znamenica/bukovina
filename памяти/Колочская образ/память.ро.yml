@@ -1,12 +1,18 @@
 ---
 Колочская образ:
-   имя: Колочская
-   описание: образ Богородицы
+   имя:
+      ру: Колочская
+      ан: Koloch
+   описание:
+      ру: образ Богородицы
+      ан: Icon of the Mother of God
    чин: обр
    вики: http://drevo-info.ru/articles/6392.html
    бытие:
-    - http://azbyka.ru/days/ikona-kolochskaja
-    - http://calendar.rop.ru/icons1/jul09-ikona-kolochskaya.html
+      ру:
+       - http://azbyka.ru/days/ikona-kolochskaja
+       - http://calendar.rop.ru/icons1/jul09-ikona-kolochskaya.html
+      ан: http://www.holytrinityorthodox.com/calendar/los/July/09-07.htm
    образ:
     - http://azbyka.ru/days/assets/img/icons/286/780622a88ab6981803a10c65417e0332.jpg
     - http://azbyka.ru/days/assets/img/icons/286/c7a01ff8d9292651db378f8d2f71db03.jpg
@@ -34,5 +40,5 @@
       описание: утр
    помин:
       дата: 09.07
-      календарь: рпц
+      календарь: рпц,рпца
       описание: само
