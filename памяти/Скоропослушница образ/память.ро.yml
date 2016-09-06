@@ -1,11 +1,13 @@
 ---
 Скоропослушница образ:
-   имя: Икона
+   имя: Скоропослушница
    описание: образ Богородицы
    чин: обр
-   собор: аф
+   собор: аф?
    вики: http://drevo-info.ru/articles/13403.html
-   бытие: http://azbyka.ru/days/ikona-skoroposlushnica
+   бытие:
+    - http://azbyka.ru/days/ikona-skoroposlushnica
+    - http://www.pravmir.ru/liki-bogoroditsyi/
    образ:
     - http://azbyka.ru/days/assets/img/icons/92/p189qqe2pi1l9s18c118js1hdmgk53.JPG
     - http://azbyka.ru/days/assets/img/icons/92/808bed047a9699ab3deea99bb3bb1083.jpg

@@ -1,13 +1,16 @@
 ---
-Светописанный образ:
-   имя: Светописанный
+Светописанная образ:
+   имя: Светописанная
    описание: образ Богородицы
    чин: обр
    вики: http://drevo-info.ru/articles/25061.html
-   бытие: http://azbyka.ru/days/ikona-svetopisannaja-svetopisannyj-obraz
-   образ: http://drevo-info.ru/images/003/011179.jpg
+   бытие:
+    - http://azbyka.ru/days/ikona-svetopisannaja-svetopisannyj-obraz
+   образ:
+    - http://drevo-info.ru/images/003/011179.jpg
+    - http://www.pravoslavie.ru/sas/image/102460/246013.b.jpg
    служба:
-    - Светописанному образу служба
+    - Светописанной образу служба
     - 'http://nbt.rop.ru/?q=texts/sluzhba/279 [ссылка: Текст утвержден Священным Синодом 
       Русской Православной Церкви 27 июля 2013 года (журнал № 97)]'
    событие:
@@ -22,6 +25,8 @@
       дата: 14.07
       собор: рус
       описание: просл.1
+      описание_:
+       - http://www.pravoslavie.ru/96714.html
    помин:
       дата: 21.08
-      описание: прств
+      описание: явл

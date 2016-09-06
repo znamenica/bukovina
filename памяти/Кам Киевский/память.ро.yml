@@ -7,7 +7,9 @@
    чин: свт
    собор: вол,гал,киев,молд,уни
    вики: http://drevo-info.ru/articles/20675.html
-   бытие: http://azbyka.ru/days/sv-petr-mogila
+   бытие:
+    - http://azbyka.ru/days/sv-petr-mogila
+    - http://diak-kuraev.livejournal.com/771776.html#comments
    образ:
     - http://azbyka.ru/days/assets/img/saints/4787/p17v9g756913fbth41ma11ben1jp03.jpg
     - http://pravicon.com/icon-2703

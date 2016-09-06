@@ -22,7 +22,9 @@
     - http://azbyka.ru/otechnik/Paisij_Svjatogorets/
     - http://predanie.ru/paisiy-svyatogorec-prepodobnyy/
     - http://www.truechristianity.info/paisiy/
-   служба: Паисию Святогорцу служба
+   служба:
+    - Паисию Святогорцу служба
+    - http://www.pravoslavie.ru/89632.html
    событие:
     - год: 1924
       дата: 12.07

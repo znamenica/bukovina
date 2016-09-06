@@ -5,7 +5,10 @@
    чин: обр
    собор: тута?
    вики: http://drevo-info.ru/articles/9544.html
-   образ: http://drevo-info.ru/images/001/001588.jpg
+   бытие: http://www.pravmir.ru/liki-bogoroditsyi/
+   образ:
+    - http://drevo-info.ru/images/001/001588.jpg
+    - http://www.pravmir.ru/wp-content/uploads/2016/04/pribavlenie_uma_bogoroditsa-497x600.jpg
    событие:
     - год: XVII
       описание: напис

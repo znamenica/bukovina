@@ -4,7 +4,9 @@
    описание: образ Богородицы
    чин: обр
    вики: http://drevo-info.ru/articles/10959.html
-   бытие: http://azbyka.ru/days/ikona-troeruchica
+   бытие:
+    - http://azbyka.ru/days/ikona-troeruchica
+    - http://www.pravmir.ru/liki-bogoroditsyi/
    образ:
     - http://azbyka.ru/days/assets/img/icons/120/964ac7eb7be9ac3ccdf079b5ed84fd13.jpg
     - http://azbyka.ru/days/assets/img/icons/120/93d72262835f30fd6c39b193301c49d5.jpg
