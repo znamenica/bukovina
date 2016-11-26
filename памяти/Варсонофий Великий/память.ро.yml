@@ -1,12 +1,62 @@
 ---
 Варсонофий Великий:
-   имя: Варсонофий
+   имя:
+      ру: Варсонофий
+      ан: Barsanuphius
+      ит: Barsonofio (Barsanofrio, Barsanorio)
+      гр: Βαρσανούφιος
+      ср: Варсонуфије
    прозвище: Великий
+   описание:
+      ру: отшельник и подвижник Палестинский, Газский
+      ан: of Palestine, of Gaza
    чин: прп
-   бытие: http://azbyka.ru/days/sv-varsonofij-velikij
-   образ: http://pravicon.com/icon-1370
-   помин:
-      год: ок. 543/563/до 600
-      дата: 06.02
+   вики:
+      ру: https://ru.wikipedia.org/wiki/Варсонофий_Великий
+      ан: https://en.wikipedia.org/wiki/Barsanuphius_of_Palestine
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-varsonofij-velikij
+       - http://diak-kuraev.livejournal.com/1354055.html
+       - http://calendar.rop.ru/svyat1/feb06-varsonofij-ioann.html
+      гр: http://www.saint.gr/3607/saint.aspx
+      ан: http://www.holytrinityorthodox.com/calendar/los/February/06-02.htm
+   образ:
+    - http://pravicon.com/icon-1370
+    - http://azbyka.ru/days/assets/img/saints/1958/p19052492algp1theq6f1arjg1d3.jpg
+    - http://azbyka.ru/days/assets/img/saints/1958/p19052492b1uuqf6vbtobdht2u4.jpg
+    - http://www.saint.gr/photos/standard/0206/AgiosVarsanoufios01.jpg
+    - http://www.saint.gr/photos/standard/0206/AgioiVarsanoufiosIoannis01.jpg
+   отечник: http://azbyka.ru/otechnik/Varsonofij_Ioann/
+   служба: Варсонофию Великому и Иоанну Пророку служба
+   покров: Ория. Калабрия
+   событие:
+    - год: ок. 543/ок.563
       описание: прств
-      служба: Варсонофию Великому и Иоанну Пророку служба
+    - год: 850
+      описание: прен
+      место: Ория. Калабрия
+    - год: XI-XIII
+      описание: прен.1
+      место: Францискская церква. Ория. Калабрия
+    - год: до 1224
+      описание: утр
+    - год: вид.по XII
+      описание: обр
+      место: Ория. Калабрия
+    - год: вид.по XII
+      описание: прен.2
+      место: вид.Францискская церква. Ория. Калабрия
+   помин:
+    - дата: 06.02
+      календарь: рпц,греч,серб,охр,рпцз
+      описание: само
+    - дата: 20.02
+      собор: ория
+      описание: само
+    - дата: 29.08
+      собор: зап
+      описание: само
+    - дата: 30.08
+      собор: зап
+      описание: само
