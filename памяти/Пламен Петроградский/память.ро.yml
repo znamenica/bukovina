@@ -6,10 +6,12 @@
    описание: священник Кремлёвский; первоинок Суздальский; святитель Сухумский, Орловский
       и Севский, Кишенёвский, Тверской и Кашинкий, Петроградский и Гдовский; мученик
       Бутовский; расстрелян безбожниками
-   чин: мсвт
-   собор: нмр,бут,бря,спб,молд,одес,мск,лек?,
+   чин: мсвтр
+   собор: нмр,бут,бря?,спб?,молд?,одес?,мск?,лек?
    вики: http://drevo-info.ru/articles/2920.html
-   бытие: http://azbyka.ru/days/sv-serafim-chichagov
+   бытие:
+    - http://azbyka.ru/days/sv-serafim-chichagov
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slAbu2fOVyAH3yYOycsOueZ6WCTd4Zs81Ye8kU87Sctu0Xfe6UWuKifOWY66mctO0deuuWeCQdTb7ZNbu2dOiU**
    образ:
     - http://drevo-info.ru/images/001/000305.jpg
     - http://drevo-info.ru/images/001/000303.jpg
@@ -78,4 +80,5 @@
       описание: чинпр
    помин:
       дата: 28.11
+      калегдарь: рпц,нмр
       описание: прств

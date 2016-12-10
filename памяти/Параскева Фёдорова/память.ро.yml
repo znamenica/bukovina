@@ -2,21 +2,24 @@
 Параскева Фёдорова:
    имя: Параскева
    фамилия: Федорова
-   чин: мц
+   чин: мцр
    собор: нмр
    вики: http://drevo-info.ru/articles/26096.html
-   бытие: http://azbyka.ru/days/sv-paraskeva-fedorova
+   бытие:
+    - http://azbyka.ru/days/sv-paraskeva-fedorova
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slAbu2fOVyAH3yYOycsOueZ6WCTdGZd8vUfe8U66yUs81VeeKWc5tmNKNyV8Kfc**
    событие:
     - год: 1882
       описание: ржд
-    - год: 1937
+    - год: 1938
       дата: 28.11
       описание: прств
     - год: 2006
       дата: 13.12
       собор: рус
-      чин: нмр
+      чин: мц,нмр
       описание: просл
    помин:
       дата: 28.11
+      календарь: рпц,нмр
       описание: прств

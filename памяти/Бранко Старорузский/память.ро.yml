@@ -4,12 +4,13 @@
    отчество: Александрович
    фамилия: Веселовский
    описание: священник Клементьевский (Руза), Старорузский (Руза)
-   чин: сщмч
+   чин: смчр
    собор: нмр,бут,можа?,руза?
    вики: http://drevo-info.ru/articles/3441.html
    бытие:
     - http://azbyka.ru/days/sv-aleksij-veselovskij
     - http://kuz1.pstbi.ccas.ru/bin/db.exe/no_dbpath/docum/ans/ans/newmr/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu0dS4ZeuuWsOeceG0*euKesOKd660fdOfVc8qYs8uWeCQ*
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slAbu2fOVyAH3yYOycsOueZ6WCTc8ZsOKffe9VeeWd660fdOfVdOYUU8iZei4UfOHUfe8ctrtmNKNyV8Kfc**
    образ:
     - http://azbyka.ru/days/assets/img/saints/4941/p18b4tphtjpkq1ko1ciskqk1ujd3.jpg
     - http://drevo-info.ru/images/001/000460.jpg
@@ -35,13 +36,13 @@
     - год: 2000
       дата: 31.07-03.08
       собор: рус
-      чин: сщмч
+      чин: сщмч,нмр
       описание: просл
-      о: нмр
     - год: 2000
       дата: 07.08
       чин: нмр
       описание: чинпр
    помин:
       дата: 28.11
+      календарь: рпц,нмр
       описание: прств
