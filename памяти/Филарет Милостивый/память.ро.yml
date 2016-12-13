@@ -4,9 +4,11 @@
    отчество: Георгиевич
    прозвище: Милостивый
    чин: прав
-   собор: влмж,виз,пафл
+   собор: влмж?,виз?,пафл?
    вики: http://drevo-info.ru/articles/4491.html
-   бытие: http://azbyka.ru/days/sv-filaret-milostivyj
+   бытие:
+    - http://azbyka.ru/days/sv-filaret-milostivyj
+    - http://calendar.rop.ru/svyat1/dec01-filaret.html
    образ:
     - http://pravicon.com/icon-3143
     - http://drevo-info.ru/images/001/000751.jpg
@@ -23,6 +25,7 @@
       место: Судская обитель. Константинополь
    помин:
       дата: 01.12
+      календарь: рпц,змин
       описание: само
       служба:
        - Филарету Милостивому служба
