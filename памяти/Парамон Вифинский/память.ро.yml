@@ -1,11 +1,13 @@
 ---
 Парамон Вифинский:
    имя: Парамон
-   описание: мученик Вифинский
+   описание: мученик Вифинский; обезглавлен язычниками
    чин: мч
-   собор: виф
+   собор: виф?
    вики: http://drevo-info.ru/articles/2686.html
-   бытие: http://azbyka.ru/days/sv-paramon-vifinskij
+   бытие:
+    - http://azbyka.ru/days/sv-paramon-vifinskij
+    - http://calendar.rop.ru/svyat1/nov29-paramon.html
    образ:
     - http://azbyka.ru/days/assets/img/saints/3121/p198v5tuk03mh1m41s35ok8k4f3.jpg
     - http://azbyka.ru/days/assets/img/saints/3121/p198v63hqfa6i1ec510961t4013v33.jpg
@@ -16,6 +18,7 @@
       место: Вифиния
    помин:
       дата: 29.11
+      календарь: рпц,змин
       описание: само
       служба:
        - Парамону Вифинскому, Филумену Анкирскому и Акакию Синайскому служба

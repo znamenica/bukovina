@@ -11,7 +11,9 @@
    чин: ап
    собор: ап12,слав?,рус?,кар?,киев?,тавр?,греч?,плст?,виз?,итал?,рим?,крус
    вики: http://drevo-info.ru/articles/4481.html
-   бытие: http://azbyka.ru/days/sv-andrej-pervozvannyj
+   бытие:
+    - http://azbyka.ru/days/sv-andrej-pervozvannyj
+    - http://calendar.rop.ru/svyat1/nov30-andrei.html
    образ:
     - http://drevo-info.ru/images/003/009528.jpg
     - http://drevo-info.ru/images/001/000745.jpg
@@ -64,5 +66,5 @@
       календарь: греч
       описание: прен.4
     - дата: 30.11
-      календарь: змин
+      календарь: рпц,змин
       описание: само
