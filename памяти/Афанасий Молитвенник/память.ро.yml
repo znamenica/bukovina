@@ -4,16 +4,21 @@
    прозвище: Младший
    описание: молитвенник и затворник Печерский, в Дальних Пещерах
    чин: прп
-   собор: дпеч
+   собор: дпеч,печ
    вики: http://drevo-info.ru/articles/8129.html
    бытие: http://azbyka.ru/days/sv-afanasij-pecherskij-1
    образ: http://azbyka.ru/days/assets/img/saints/6581/p198stpsu61meh11951slvnuus1e3.jpg
+   служба:
+    - Афанасию Молитвеннику служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_02.pdf
    событие:
       год: 1264
       описание: прств
+      место: Печерская обитель. Киев
+    - год: 1264
+      описание: пгрб
+      место: Феодосиевы пещеры. Киев
    помин:
       дата: 02.12
+      календарь: рпц,змин
       описание: само
-      служба:
-       - Афанасию Молитвеннику служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_02.pdf

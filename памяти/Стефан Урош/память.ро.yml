@@ -3,19 +3,25 @@
    имя: Стефан
    отчество: Душанович
    фамилия: Неманя, Урош
-   описание: царь Сербский, 5-й, сын Душана
+   описание: царь Сербский, 5-й; сын Душана; убит завистниками
    чин: прав
+   собор: блгвв?
    вики: http://drevo-info.ru/articles/4494.html
-   бытие: http://azbyka.ru/days/sv-stefan-urosh-v
+   бытие:
+    - http://azbyka.ru/days/sv-stefan-urosh-v
+    - http://calendar.rop.ru/svyat1/dec02-stefan.html
    образ: http://azbyka.ru/days/assets/img/saints/4042/p18b7amhup1em61g2p1jq5109e1eu83.jpg
+   служба:
+    - Стефану Урошу служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_02.pdf
    событие:
     - год: 1337
       описание: ржд
+      место: Сербия
     - год: 1371/1367
       описание: прств
+      место: близ.Скопле
    помин:
       дата: 02.12
+      календарь: рпц
       описание: само
-      служба:
-       - Стефану Урошу служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_02.pdf

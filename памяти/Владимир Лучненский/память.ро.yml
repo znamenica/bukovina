@@ -4,13 +4,14 @@
    отчество: Александрович
    фамилия: Проферансов
    описание: староста, псаломщик, диякон Лубянский (Московский); протоиерей митрофорный
-      Лучненский (Лубянский, Московский), Можайский; мученик Бутовский; расстрелян безбожниками
-   чин: сщмч
-   собор: нмр,бут,лучн?,можа?
+      Лучненский (Лубянский, Московский), Можайский; страстотерпец Семипалатинский; мученик Бутовский; расстрелян безбожниками
+   чин: смчр
+   собор: нмр,бут,лучн?,можа?,пев?,смпл?
    вики: http://drevo-info.ru/articles/3596.html
    бытие:
     - http://azbyka.ru/days/sv-vladimir-proferansov
     - http://kuz1.pstbi.ccas.ru/bin/db.exe/no_dbpath/docum/ans/ans/newmr/?HYZ9EJxGHoxITYZCF2JMTdG6XbuDs8vYdS0UfS4icW00eu0Ye8mcs00*euKesO0hdC0iceXb**
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slAbu2fOVyAHJyYOycsOueZ6WCTczUfiGZs80hsOuW668fc8Gcf8XU660fdOfVc8qYs8uWeCRyQaJaTcGZeu**
    образ: http://drevo-info.ru/images/001/000559.jpg
    служба: http://ustavschik.livejournal.com/50084.html
    событие:
@@ -45,4 +46,5 @@
       описание: чинпр
    помин:
       дата: 02.12
+      календарь: рпц,нмр
       описание: прств

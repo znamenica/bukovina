@@ -3,12 +3,13 @@
    имя: в крещении Мария
    отчество: Васильевна
    фамилия: Цейтлин
-   описание: инокиня Хамовническая, Московская
-   чин: прмц
-   собор: нмр,мск?,нмнд,хмвн
+   описание: послушница Хамовническая (Московская); мученица Сибирская; уморена безбожниками
+   чин: пмцр
+   собор: нмр,мск?,яро?,нмнд?,хмвн?
    бытие:
     - http://azbyka.ru/days/sv-marija-cejtlin
     - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuKdObWeuWh66mUs8Xj668UsOWfv8KWfO**
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slAbu2fOVyAHJyYOycsOueZ6WCTdOZeS8fe8oUX81UeCwUUe1Ve8jgdO8hc5tmNKNyV8Kfc**
    событие:
     - год: 1869
       описание: ржд
@@ -23,8 +24,9 @@
     - год: 2004
       дата: 18.09
       собор: рус
-      чин: нмр
+      чин: прмц,нмр
       описание: просл
    помин:
       дата: 02.12
+      календарь: рпц,нмр
       описание: прств
