@@ -4,13 +4,17 @@
    отчество: Хусиевич
    фамилия: Езекиев (Симеонов)
    чин: прор
-   собор: 12мп
+   собор: 12мп,иуд?
    вики: http://drevo-info.ru/articles/4496.html
    бытие: http://azbyka.ru/days/sv-sofonija
    образ:
     - http://drevo-info.ru/images/001/000753.jpg
     - http://azbyka.ru/days/assets/img/saints/4596/545b2b3ebea0f53bb12d73e34b5e9f68.jpg
     - http://azbyka.ru/days/assets/img/saints/4596/3c1294eb11200d11a0cf2ee0847ce14c.jpg
+   служба:
+    - Софонии Хусиеву служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_03.pdf
+    - http://azbyka.ru/days/assets/upload/services/dec03-141dab.pdf
    событие:
     - год: кон.VIII до нэ-нач.VII до нэ
       описание: ржд
@@ -19,8 +23,5 @@
       описание: прств
    помин:
       дата: 03.12
+      календарь: рпц
       описание: само
-      служба:
-       - Софонии Хусиеву служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_03.pdf
-       - http://azbyka.ru/days/assets/upload/services/dec03-141dab.pdf
