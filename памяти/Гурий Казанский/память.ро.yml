@@ -11,7 +11,9 @@
    чин: свт
    собор: каз,твер,рднж?,влцк?
    вики: http://drevo-info.ru/articles/8163.html
-   бытие: http://azbyka.ru/days/sv-gurij-kazanskij
+   бытие:
+    - http://azbyka.ru/days/sv-gurij-kazanskij
+    - http://calendar.rop.ru/svyat1/dec05-guri.html
    образ: http://pravicon.com/icon-1582
    служба:
     - Гурию Казанскому служба
@@ -62,6 +64,7 @@
        - Гурию и Варсонофию Казанским на обретение мощей служба
        - http://azbyka.ru/days/assets/upload/minei/10/minea_10_04.pdf
     - дата: 05.12
+      календарь: рпц,змин
       описание: прств
       служба:
        - Гурию Казанскому на преставление служба

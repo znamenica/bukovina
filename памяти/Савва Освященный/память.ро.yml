@@ -2,18 +2,23 @@
 Савва Освященный:
    имя: Савва
    отчество: Иоаннович
-   прозвище: Освященной
-   описание: священноинок
+   прозвище: Освященный
+   описание: священноинок и чудотворец Флавианский, Пассарионский (Палестина); инок и затворник Муккелицкий; пустынник Рувский; пещерник Иорданский; настоятель Великолаврский
    чин: прп
-   собор: капд,лек?,сав
+   собор: капд?,лек?,саво?,плст?
    вики: http://drevo-info.ru/articles/4507.html
-   бытие: http://azbyka.ru/days/sv-savva-osvjashchennyj
+   бытие:
+    - http://azbyka.ru/days/sv-savva-osvjashchennyj
+    - http://calendar.rop.ru/svyat1/dec05-savva.html
    образ:
     - http://drevo-info.ru/images/001/001801.jpg
     - http://azbyka.ru/days/assets/img/saints/500/p18umnpl1q1u8b1ofh1e601hov11l33.jpg
     - http://azbyka.ru/days/assets/img/saints/500/c94eaf32a412b36d50463df4d40d1873.jpg
     - http://azbyka.ru/days/assets/img/saints/500/a8e8bcd15d8a87dd437678beec954bc5.jpg
     - http://pravicon.com/icon-2812
+   служба:
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_05.pdf
+    - Савве Освященному служба
    событие:
     - год: 439
       описание: ржд
@@ -32,8 +37,6 @@
       описание: прен.1
       место: Савво-Освященская лавра. Иудейская пустыня
    помин:
-    - дата: 05.12
+      дата: 05.12
+      календарь: рпц
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_05.pdf
-    - описание: само
-      служба: Савве Освященному служба
