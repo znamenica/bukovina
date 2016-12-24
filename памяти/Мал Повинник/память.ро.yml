@@ -1,17 +1,25 @@
 ---
-Мал Послушливый:
-   имя: Павел
-   прозвище: Повиннок, Послушливый
+Мал Повинник:
+   имя:
+      ру: Павел
+      гр: Παύλος
+   прозвище:
+      ру: Повинник (Послушливый)
+      гр: Υποτακτικός
    описание: инок Паригорийский
    чин: прп
+   собор: пргр?,аф?
    вики: http://drevo-info.ru/articles/8181.html
    бытие:
-    - http://azbyka.ru/days/sv-pavel-poslushlivyj-povinnik
-    - http://www.saint.gr/3195/saint.aspx
+      ру:
+       - http://azbyka.ru/days/sv-pavel-poslushlivyj-povinnik
+       - http://calendar.rop.ru/svyat1/dec07-pavel.html
+      гр: http://www.saint.gr/3195/saint.aspx
    событие:
       год: III-XIX
       описание: прств
       место: гора Паригори (вид.гора Утешения. Афон)
    помин:
       дата: 07.12
+      календарь: рпц,греч
       описание: само

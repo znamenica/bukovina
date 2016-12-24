@@ -1,12 +1,14 @@
 ---
-Селигерский образ:
-   имя: Селигерский, Келейный
+Селигерская образ:
+   имя: Селигерская, Келейная
    описание: образ Богородицы
-   вид: Владимирский образ
+   вид: Владимирская образ
    чин: обр
-   собор: твер?,нов?
+   собор: слгр?
    вики: http://drevo-info.ru/articles/8191.html
-   бытие: http://azbyka.ru/days/ikona-vladimirskaja-seligerskaja
+   бытие:
+    - http://azbyka.ru/days/ikona-vladimirskaja-seligerskaja
+    - http://calendar.rop.ru/icons1/dec07-ikona-seligerskaya.html
    образ: http://azbyka.ru/days/assets/img/icons/140/p188b6m1tg1jnmd4jmt9105n1hld5.jpg
    событие:
       год: XVI
@@ -15,4 +17,5 @@
     - дата: 26.05
       описание: само
     - дата: 07.12
+      календарь: рпц
       описание: само

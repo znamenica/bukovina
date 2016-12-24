@@ -1,17 +1,23 @@
 ---
 Антоний Сийский:
    имя: в иночестве Антоний, в крещении Андрей
-   описание: священноинок и настоятель Сийский
+   описание: иконописец; священноинок и настоятель Сийский
    чин: прп
-   собор: хлмг
+   собор: хлмг?,друс?,бмз?
    вики:
     - http://drevo-info.ru/articles/8182.html
     - https://ru.wikipedia.org/wiki/Антоний_Сийский
-   бытие: http://azbyka.ru/days/sv-antonij-sijskij
+   бытие:
+    - http://azbyka.ru/days/sv-antonij-sijskij
+    - http://calendar.rop.ru/svyat1/dec07-antoni.html
    образ:
     - http://azbyka.ru/days/assets/img/saints/1292/ccf4833e2f538f05a879f7cd0060ced9.jpg
     - https://upload.wikimedia.org/wikipedia/commons/7/7f/Siyskie_svyatsy_02.jpg
     - http://azbyka.ru/days/assets/img/saints/1292/6939fd383b971257d40f1cc5139cdf6d.jpg
+   служба:
+    - Антонию Сийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_07.pdf
+    - http://azbyka.ru/days/caa/346
    событие:
     - год: ок.1477
       описание: ржд
@@ -30,8 +36,5 @@
       описание: просл
    помин:
       дата: 07.12
+      календарь: рпц,змин
       описание: само
-      служба:
-       - Антонию Сийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_07.pdf
-       - http://azbyka.ru/days/caa/346

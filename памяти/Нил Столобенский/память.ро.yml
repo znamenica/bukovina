@@ -1,13 +1,17 @@
 ---
 Нил Столобенский:
    имя: вид.в иночестве Нил
-   описание: пустынник Столобенский, Селигерский
+   описание: пустынник Серемельский (Осташков), Столобенский (Селигерский)
    чин: прп
-   собор: нов?,твер,крып?,слгр?
+   собор: нов?,твер,крып?,остш?,слгр?
    вики:
     - http://drevo-info.ru/articles/8185.html
     - https://ru.wikipedia.org/wiki/Нил_Столобенский
-   бытие: http://azbyka.ru/days/sv-nil-stolobenskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-nil-stolobenskij
+       - http://calendar.rop.ru/svyat1/dec07-nil.html
+      гр: http://www.synaxarion.gr/gr/sid/1375/sxsaintinfo.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/131/4b5d5de7f417f686a03232dff7fd92f5.jpg
     - http://azbyka.ru/days/assets/img/saints/131/p190pg638n1sbocjnorapkt121l9.jpg
@@ -19,6 +23,7 @@
     - http://azbyka.ru/days/caa/347
     - http://azbyka.ru/days/caa/203
     - http://www.spas.tvcom.ru/slujba.html
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_07.pdf
    событие:
     - год: вт.пол.XV
       описание: ржд
@@ -54,7 +59,9 @@
       служба: Нилу Столобенскому на обретение мощей служба
     - дата: 26.06
       описание: прен
-    - дата: 07.12
-      календарь: змин
+    - дата: 06.12
+      календарь: гбмч
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_07.pdf
+    - дата: 07.12
+      календарь: рпц,змин
+      описание: прств
