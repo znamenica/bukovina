@@ -1,11 +1,13 @@
 ---
 Анна Пророчица:
-   имя: Анна
+   имя: в наречении Анна
    описание: мать пророка Самуила Израильского
    чин: прор
-   собор: плст,чдрд
+   собор: плст?,чдрд?
    вики: http://drevo-info.ru/articles/633.html
-   бытие: http://azbyka.ru/days/sv-anna-prorochica-1
+   бытие:
+    - http://azbyka.ru/days/sv-anna-prorochica-1
+    - http://calendar.rop.ru/svyat1/dec09-anna.html
    образ:
     - http://azbyka.ru/days/assets/img/saints/5948/p18bkdf9mn10c3km612k715om1h33.jpg
     - http://azbyka.ru/days/assets/img/saints/5948/p18bkdf9mn1qo41duas9v146k1aqe4.jpg
@@ -16,4 +18,5 @@
       место: Израиль. Палестина
    помин:
       дата: 09.12
+      календарь: рпц
       описание: само

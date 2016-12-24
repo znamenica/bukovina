@@ -19,7 +19,9 @@
        - http://drevo-info.ru/articles/632.html
        - https://ru.wikipedia.org/wiki/Зачатие_Богородицы
       бытие:
-         ру: http://days.pravoslavie.ru/Life/life3089.htm
+         ру:
+          - http://days.pravoslavie.ru/Life/life3089.htm
+          - http://calendar.rop.ru/svyat1/dec09-zachatie.html
          гр: http://www.saint.gr/3213/saint.aspx
       образ:
        - http://drevo-info.ru/images/002/007284.jpg
@@ -230,8 +232,8 @@
       пред: 1
       по: 4
     - дата: 09.12
-      календарь: рпц,греч
+      календарь: рпц,греч,змин
       описание: зач
     - дата: 26.12
-      календарь: рпц,греч
+      календарь: рпц,греч,змин
       описание: похв
