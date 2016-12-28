@@ -1,0 +1,27 @@
+---
+Александр Пермьский:
+   имя: в крещении Александр
+   фамилия: Шкляев
+   описание: протоиерей Соликамский; мученик Пермьский; расстрелян безбожниками
+   чин: сщмч
+   собор: нмр,слкм?,перм?
+   бытие:
+    - http://azbyka.ru/days/sv-aleksandr-shkljaev
+    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuMeejjdO6UU8iZei4UfOHU**
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slAbu2fOVyAXByYOycsOueZ6WCTdWeeyyZcW0*euKesO0hdC-yQaJaTcGZeu**
+   событие:
+    - год: вид.1909
+      описание: брак
+    - год: вид.1909
+      описание: дияк
+    - год: вид.1909
+      описание: свящ
+    - год: 1918
+      дата: 10.12/28.08
+      время: ночь
+      описание: прств
+      место: близ. Пермь
+   помин:
+      дата: 10.12
+      календарь: рпц,нмр
+      описание: прств

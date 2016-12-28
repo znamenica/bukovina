@@ -3,13 +3,14 @@
    имя: в крещении Евгений
    отчество: Яковлевич
    фамилия: Харьков
-   описание: протоиерей Бетинский (Касимов)
-   чин: сщмч
-   собор: нмр,ряз,бель,ксмв?
+   описание: воин - штабс-капитан; псаломщик, протоиерей Бетинский (Касимов); мученик Рязаньский; расстрелян безбожниками
+   чин: смчр
+   собор: нмр,ряз,бель?,ксмв?
    вики: http://drevo-info.ru/articles/18956.html
    бытие:
     - http://azbyka.ru/days/sv-evgenij-harkov
     - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuJcC1geeuW66KWcuKhe8YUbueiceiZceXb**
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slAbu2fOVyAXByYOycsOueZ6WCTdKUsCmefe6UVO8XdOqceG0TeeuWeuKWeCRyQaJaTcGZeu**
    событие:
     - год: 1891
       дата: 01.12
@@ -29,10 +30,14 @@
     - год: 2000
       дата: 31.07-03.08
       собор: рус
-      чин: нмр
+      чин: сщмч,нмр
       описание: просл
     - год: 2000
       дата: 07.08
       собор: рус
       чин: нмр
       описание: чинпр
+   помин:
+      дата: 10.12
+      календарь: рпц,нмр
+      описание: прств

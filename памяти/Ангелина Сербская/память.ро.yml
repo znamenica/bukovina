@@ -27,6 +27,7 @@
    служба:
     - Ангелине Сербской служба
     - http://azbyka.ru/days/assets/upload/minei/07/minea_07_30.pdf
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_10.pdf
    событие:
     - год: сер.XV
       описание: ржд
@@ -64,5 +65,5 @@
       собор: серб
       описание: прств
     - дата: 10.12
+      календарь: рпц
       описание: брак
-      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_10.pdf

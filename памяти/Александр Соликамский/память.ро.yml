@@ -1,20 +1,41 @@
 ---
 Александр Соликамский:
    имя: Александр
-   фамилия: Шкляев
-   описание: протоиерей Соликамский
+   отчество: Ефимович
+   фамилия: Ипатов
+   описание: псаломщик и диякон Соликамский; мученик вид.Соликамский;
+      расстрелян безбожниками
    чин: сщмч
-   собор: нмр,перм?
+   собор: нмр,слкм?,перм?,крыл?
+   вики: http://drevo-info.ru/articles/18462.html
    бытие:
-    - http://azbyka.ru/days/sv-aleksandr-shkljaev
-    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuMeejjdO6UU8iZei4UfOHU**
+    - http://azbyka.ru/days/sv-aleksandr-ipatov
+    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu6fu1Wfe6UU8iZei4UfOHU**
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5stTcGhe5smALuFfuXVfeeIW6tyW8yUseuW660fdOfVc8qYs5tmNKNyV8Kfc**
    событие:
-    - год: вид.1909
+    - год: ок.1874
+      описание: ржд
+    - год: вид.ок. 1896
+      описание: брак
+    - год: вид.ок. 1896
+      описание: дияк
+    - год: вид.ок. 1896
       описание: свящ
     - год: 1918
-      дата: 10.12/28.08
+      дата: 08.09
       описание: прств
-      место: близ. Пермь
+      место: вид.Соликамск. Пермская губерния
+    - год: 2000
+      дата: 31.07-03.08
+      собор: рус
+      чин: сщмч,нмр
+      описание: просл
+    - год: 2000
+      дата: 07.08
+      собор: рус
+      чин: нмр
+      описание: чинпр
    помин:
-      дата: 10.12
+      дата: 09.09
+      календарь: рпц,нмр
       описание: прств
