@@ -1,11 +1,16 @@
 ---
 Мардарий Затворник:
    имя: Мардарий
-   описание: нестяжатель, бескеленик, затворник Печерский, в Дальних Пещерах
+   описание: нестяжатель, бескелейник, затворник Печерский; в Дальних Пещерах
    чин: прп
-   собор: дпеч
+   собор: дпеч,печ
    вики: http://drevo-info.ru/articles/4568.html
-   бытие: http://azbyka.ru/days/sv-mardarij-pecherskij
+   бытие:
+    - http://azbyka.ru/days/sv-mardarij-pecherskij
+    - http://calendar.rop.ru/svyat1/dec13-mardari.html
+   служба:
+    - Мардарию Затворнику служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_13.pdf
    событие:
     - год: XII-XIII
       описание: иноч
@@ -19,7 +24,6 @@
    помин:
     - дата: нд.2.поста
       описание: само
-      служба: Мардарию Затворнику служба
     - дата: 13.12
+      календарь: рпц,змин
       описание: иноч
-      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_13.pdf

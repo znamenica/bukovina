@@ -3,11 +3,15 @@
    имя: Арсений
    описание: патриций; воевода; инок и настоятель Латрский (Латрийский)
    чин: прп
-   собор: двор,воев,виз,кар
+   собор: виз?,двор?,воев?,кар?
    вики: http://drevo-info.ru/articles/4565.html
-   бытие: http://azbyka.ru/days/sv-arsenij-latrijskij
+   бытие:
+    - http://azbyka.ru/days/sv-arsenij-latrijskij
+    - http://calendar.rop.ru/svyat1/dec13-arseni.html
    образ: http://azbyka.ru/days/assets/img/saints/4402/p18cm4ubqt123p12o9trirm2nk3.jpg
-   служба: Арсению Латрийскому служба
+   служба:
+    - Арсению Латрийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_13.pdf
    событие:
     - год: VII-XI
       описание: ржд
@@ -17,7 +21,10 @@
       место: вид.Келливарская Богородицкая обитель. Латр гора. Милетье. Кария (ныне
          Йедилер Манастыры. Турция)
    помин:
-      дата: 13.12
-      календарь: г7д9
+    - дата: 13.12
+      календарь: рпц,змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_13.pdf
+    - дата: 13.12
+      год: 2009
+      календарь: герм
+      описание: само

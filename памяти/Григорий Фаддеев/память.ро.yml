@@ -1,22 +1,27 @@
 ---
 Григорий Фаддеев:
-   имя: Григорий
+   имя: в крещении Григорий
    фамилия: Фаддеев
-   описание: священник
-   чин: сщмч
+   описание: священник; мученик; расстрелян безбожниками
+   чин: смчр
    собор: нмр,бря?
    бытие:
     - http://azbyka.ru/days/sv-grigorij-faddeev
     - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuIc8GYdOKW66DUe8Cis8Wd**
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slAbu2fOVyAXNyYOycsOueZ6WCTdGUd8GZdO6UUy0ccuvUe8ZyQaJaTcGZeu**
    событие:
+    - год: 1895
+      описание: ржд
+      место: вид.Брянская губерния
     - год: 1937
       дата: 13.12
       описание: прств
     - год: 2007
       дата: 29.09
       собор: рус
-      чин: нмр
+      чин: сщмч,нмр
       описание: просл
    помин:
       дата: 13.12
+      календарь: рпц,нмр
       описание: прств

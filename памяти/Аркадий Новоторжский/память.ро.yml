@@ -4,15 +4,18 @@
    описание: инок Вяземский и Новоторжский; юродивый Христа ради; ученик преподобного
       Ефрема Новоторжского
    чин: блпр
-   собор: смо,твер,вязь,торж
+   собор: смо?,твер?,вязь?,торж?
    вики: http://drevo-info.ru/articles/4566.html
-   бытие: http://azbyka.ru/days/sv-arkadij-vjazemskij-i-novotorzhskij
+   бытие:
+    - http://azbyka.ru/days/sv-arkadij-vjazemskij-i-novotorzhskij
+    - http://calendar.rop.ru/svyat1/dec13-arkadi.htmlhttp://calendar.rop.ru/svyat1/dec13-arkadi.html
    образ:
     - http://drevo-info.ru/images/002/006999.jpg
     - http://pravicon.com/icon-1259
    служба: 
     - Аркадию Новоторжскому служба
     - http://azbyka.ru/days/caa/354
+    - http://azbyka.ru/days/assets/upload/minei/08/minea_08_14.pdf
    событие:
     - год: вид.нач.XI
       описание: ржд
@@ -52,8 +55,7 @@
     - дата: 14.08
       календарь: змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_14.pdf
     - дата: 13.12
-      календарь: змин
+      календарь: рпц,змин
       описание: прств
       служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_13.pdf
