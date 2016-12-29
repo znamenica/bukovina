@@ -4,9 +4,11 @@
    прозвище: Сухой
    описание: инок Печерский, в Ближних Пещерах
    чин: прп
-   собор: бпеч,печ
+   собор: бпеч,печ,киев?
    вики: http://drevo-info.ru/articles/4549.html
-   бытие: http://azbyka.ru/days/sv-nikon-suhoj
+   бытие:
+    - http://azbyka.ru/days/sv-nikon-suhoj
+    - http://calendar.rop.ru/svyat1/dec11-nikon.html
    образ: http://pravicon.com/icon-2577
    служба:
     - Никону Сухому служба
@@ -23,5 +25,5 @@
       место: Антониевы Пещеры. Киев
    помин:
       дата: 11.12
-      календарь: змин
+      календарь: рпц,змин
       описание: само

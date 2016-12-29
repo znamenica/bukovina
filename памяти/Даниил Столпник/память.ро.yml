@@ -1,29 +1,46 @@
 ---
 Даниил Столпник:
-   имя: Даниил
-   описание: столпник
-   чин: прп
-   собор: 4вс,мспт
+   имя:
+      ру: Даниил
+      гр: Δανιήλ
+   прозвище:
+      ру: Столпник
+      гр: Στυλίτης
+   описание:
+      ру: затворник; столпник Анаплусский (Константинопольский)
+      гр: στυλίτης
+   чин: прпс
+   собор: 4вс,мспт?
    вики: http://drevo-info.ru/articles/4545.html
-   бытие: http://azbyka.ru/days/sv-daniil-stolpnik
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-daniil-stolpnik
+       - http://calendar.rop.ru/svyat1/dec11-daniil.html
+      гр: http://www.saint.gr/3164/saint.aspx
    образ:
     - http://pravicon.com/icon-1609
     - http://drevo-info.ru/images/001/000779.jpg
     - http://azbyka.ru/days/assets/img/saints/4791/90da031097f9b94f51b6339f52bc8bd7.jpg
     - http://azbyka.ru/days/assets/img/saints/4791/669455f3f3814dddf70c2db38bf8958e.jpg
     - http://azbyka.ru/days/assets/img/saints/4791/4bc99ac4bf125322ae70f5138a814f70.jpg
+    - http://vatopaidi.files.wordpress.com/2009/12/st-daniel-the-stylite.jpg
+    - http://www.saint.gr/photos/standard/1211/OsiosDaniilStylitis03s.jpg
+    - http://www.pigizois.net/sinaxaristis/12/11b.jpg
+    - http://www.saint.gr/photos/standard/1211/OsiosDaniilStylitis05s.jpg
+   служба:
+    - Даниилу Столпнику служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_11.pdf
+    - http://azbyka.ru/days/caa/185
    событие:
     - год: ок.410
       описание: ржд
       место: Вифара село. Самосатье. Месопотамия
     - год: ок.422
       описание: иноч
-    - год: 489-490
+    - год: 489-493
       описание: прств
+      место: Анаплус. близ.Константинополь. Византия
    помин:
       дата: 11.12
+      календарь: рпц,змин,греч
       описание: само
-      служба:
-       - Даниилу Столпнику служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_11.pdf
-       - http://azbyka.ru/days/caa/185
