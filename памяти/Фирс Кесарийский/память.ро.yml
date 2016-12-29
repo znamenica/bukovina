@@ -1,14 +1,20 @@
 ---
 Фирс Кесарийский:
    имя: Фирс
-   описание: мученик Кесарийский, мирно скончался
-   чин: мч
-   собор: виф
+   описание: страстотерпец Кесарийский; мирно скончался
+   чин: стц
+   собор: виф?
    вики: http://drevo-info.ru/articles/3735.html
-   бытие: http://azbyka.ru/days/sv-firs-kesarijskij-vifinskij
+   бытие:
+    - http://azbyka.ru/days/sv-firs-kesarijskij-vifinskij
+    - http://calendar.rop.ru/svyat1/dec14-pirs.html
    образ:
     - http://pravicon.com/icon-3163
     - http://azbyka.ru/days/assets/img/saints/2142/p17vjlp1d3u79ql912h8e64g413.jpg
+   служба:
+    - Фирсу, Левкию, Каллинику Кесарийским и Филимону, Аполлонию и Ариану Антинойским служба
+    - Фирсу и Левкию Кесарийским служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_14.pdf
    событие:
       год: 249-251
       описание: прств
@@ -17,8 +23,5 @@
     - дата: 17.08
       описание: само
     - дата: 14.12
+      календарь: рпц
       описание: само
-      служба:
-       - Фирсу, Левкию, Каллинику Кесарийским и Филимону, Аполлонию и Ариану Антинойским служба
-       - Фирсу и Левкию Кесарийским служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_14.pdf

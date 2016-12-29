@@ -1,11 +1,14 @@
 ---
 Филимон Антинойский:
    имя: Филимон
-   описание: музыкант Антинойский
+   описание: музыкант (гудец) и мученик Антинойский; убит язычниками
    чин: мч
-   собор: копт,гуд
+   собор: копт?,гуд?
    вики: http://drevo-info.ru/articles/4578.html
-   бытие: http://azbyka.ru/days/sv-filimon-antinojskij
+   бытие:
+    - http://azbyka.ru/days/sv-filimon-antinojskij
+    - http://calendar.rop.ru/svyat1/dec14-filimon.html
+   служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_14.pdf
    событие:
       год: 286
       дата: 16.03
@@ -13,7 +16,5 @@
       место: Антиной. Египет
    помин:
       дата: 14.12
+      календарь: рпц
       описание: само
-      служба:
-       - Фирс Кесарийский/Фирсу, Левкию, Каллинику Кесарийским и Филимону, Аполлонию и Ариану Антинойским служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_14.pdf

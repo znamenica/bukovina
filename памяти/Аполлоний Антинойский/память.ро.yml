@@ -1,14 +1,15 @@
 ---
 Аполлоний Антинойский:
    имя: Аполлоний
-   описание: Антинойский
+   описание: мученик Антинойский
    чин: мч
-   собор: копт
+   собор: копт?
    вики: http://drevo-info.ru/articles/4579.html
    бытие: http://azbyka.ru/days/sv-apollonij-antinojskij
    образ:
     - http://pravicon.com/icon-1241
     - http://azbyka.ru/days/assets/img/saints/1547/3bc260d015a930487f7cd41f25518644.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_14.pdf
    событие:
       год: 286
       дата: 16.03
@@ -16,7 +17,5 @@
       место: Антиной. Египет
    помин:
       дата: 14.12
+      календарь: рпц
       описание: само
-      служба:
-       - Фирс Кесарийский/Фирсу, Левкию, Каллинику Кесарийским и Филимону, Аполлонию и Ариану Антинойским служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_14.pdf
