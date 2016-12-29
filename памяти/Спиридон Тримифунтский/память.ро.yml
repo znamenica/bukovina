@@ -1,11 +1,15 @@
 ---
 Спиридон Тримифунтский:
-   имя: Спиридон
+   имя: вид.в крещении Спиридон
    описание: чудотворец и святитель Тримифунтский
    чин: свт
-   собор: 1вс,кипр,крк,рус
+   собор: 1вс,кипр?,крк?,рус?,серб?
    вики: http://drevo-info.ru/articles/4563.html
-   бытие: http://azbyka.ru/days/sv-spiridon-trimifuntskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-spiridon-trimifuntskij
+       - http://calendar.rop.ru/svyat1/dec12-spiridon.html
+      гр: http://www.synaxarion.gr/gr/sid/1430/sxsaintinfo.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/4234/01f46c20ef56c42f45cba241eb38abf9.jpg
     - http://azbyka.ru/days/assets/img/saints/4234/p19a09je6ku8612sep4c4vl17mt3.jpg
@@ -24,6 +28,7 @@
     - Спиридону Тримифунтскому служба
     - http://azbyka.ru/days/caa/351
     - http://azbyka.ru/days/caa/352
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_12.pdf
    событие:
     - год: кон.III
       описание: ржд
@@ -48,10 +53,12 @@
     - год: 1816
       дата: 11.08
       описание: чудо
+      бытие:
+         гр: http://www.synaxarion.gr/gr/sid/352/sxsaintinfo.aspx
    помин:
     - дата: 11.08
-      собор: греч
+      календарь: гбмц
       описание: чудо
     - дата: 12.12
+      календарь: рпц,гбмц
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_12.pdf
