@@ -1,11 +1,23 @@
 ---
 Анфия Римская:
-   имя: Анфия
-   описание: римлянка, страстотерпица Римская, мать Елевферия Иллирийского
+   имя:
+      ру: в наречении Анфия
+      гр: Ανθία
+   описание: римлянка; мать Елевферия Иллирийского; страстотерпица и мученица Римская; обезглавлена язычниками
    чин: мц
-   собор: рим
+   собор: рим?
    вики: http://drevo-info.ru/articles/4596.html
-   бытие: http://azbyka.ru/days/sv-anfija-rimskaja
+   бытие:
+      ру: http://azbyka.ru/days/sv-anfija-rimskaja
+      гр:
+       - http://www.saint.gr/3271/saint.aspx
+       - http://www.pigizois.net/sinaxaristis/12/15_12.htm
+   образ:
+    - http://www.saint.gr/photos/standard/1215/AgiaAnthia03.jpg [Λυδία Γουριώτη© (http://lydiagourioti-iconography.blogspot.com)]
+    - http://www.pigizois.net/sinaxaristis/12/15_anthia.jpg
+    - http://www.saint.gr/photos/standard/1215/AgiaAnthia02.jpg
+    - http://2.bp.blogspot.com/-39S6eXheBZc/Ta1y6yPBMSI/AAAAAAAAAA4/FQTzktWbYE8/s1600/agia+anthia+copy.jpg [Καζακίδου Μαρία© (byzantineartkazakidou. blogspot.com)]
+   служба: http://glt.xyz/texts/Dec/15.uni.htm
    событие:
     - год: вид.сер.I
       описание: ржд
@@ -14,5 +26,10 @@
       описание: прств
       место: Рим
    помин:
-      дата: 15.12
+    - дата: 15.12
+      год: 2009
+      календарь: герм
+      описание: само
+    - дата: 15.12
+      календарь: рпц,греч,киж
       описание: само

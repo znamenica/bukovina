@@ -1,25 +1,67 @@
 ---
 Елевферий Иллирийский:
-   имя: Елевферий
-   описание: римлянин, святитель Иллирийский, страстотерпец Римский, сын Анфии Римской
-   чин: стсвт
-   собор: рим,илли
+   имя:
+      ру: в наречении Елевферий
+      гр: Ελευθέριος
+   описание:
+      ру: римлянин; сын Анфии Римской; святитель Иллирийский; страстотерпец и мученик Римский; обезглавлен язычниками
+      гр: Ιερομάρτυρας
+   чин: мсвт
+   собор: рим?,илл?
    вики: http://drevo-info.ru/articles/4594.html
-   бытие: http://azbyka.ru/days/sv-elevferij-illirijskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-elevferij-illirijskij
+       - http://calendar.rop.ru/svyat1/dec15-elevferi.html
+      гр:
+       - http://www.saint.gr/3272/saint.aspx
+       - http://www.synaxarion.gr/gr/sid/1450/sxsaintinfo.aspx
+       - http://www.ec-patr.org/gr/saints/m12-15.htm
+       - http://www.pigizois.net/sinaxaristis/12/15_12.htm
+       - http://www.snhell.gr/references/synaxaristis/search.asp?id=2101&search=3
+       - http://www.diakonima.gr/2008/12/15/ο-άγιος-ιερομάρτυρας-ελευθέριος/
    образ:
     - http://drevo-info.ru/images/001/000796.jpg
     - http://azbyka.ru/days/assets/img/saints/5114/p18f4ucou79cd1fjd1mne1ilf1hle3.jpg
     - http://azbyka.ru/days/assets/img/saints/5114/48c5c0293890f5c3dbe7e2b7c78cbd10.jpg
+    - http://www.saint.gr/photos/standard/1215/AgiosElefterios03.jpg
+    - http://www.pigizois.net/sinaxaristis/12/15_elefterios.jpg
+    - http://vatopaidi.files.wordpress.com/2008/12/st-eleftherios.jpg
+    - http://1.bp.blogspot.com/-ombXtTrSTBc/TugULxFGe9I/AAAAAAAAEj8/syDr_WZIS6I/s1600/s0763001.jpg
+    - http://www.saint.gr/photos/standard/1215/AgiosElefterios11s.jpg
+    - http://www.saint.gr/photos/standard/1215/AgiosElefterios12.jpg
+    - http://www.saintbarbara.org/images/about/icons/St_Elepherios_large.jpg
+    - http://4.bp.blogspot.com/_Ir0BxevvGe4/TRpMLBzDZ6I/AAAAAAAABBY/7M_0gzsexVI/s1600/ag-Eleyferios-CMYK-nef.png
+    - http://www.saint.gr/photos/standard/1215/AgiosElefterios14.jpg [Βρίσκεται στο Ίδρυμα του Ευαγγελιστού Μάρκου στην Θέρμη Θεσσαλονίκης - Γιώργος Χατζής© (hatzis-art.blogspot.com)]
+    - http://www.saint.gr/photos/standard/1215/AgiosElefterios13.jpg
+    - http://www.saint.gr/photos/standard/1215/AgiosElefterios20.jpg
+    - http://sirimis.gr/gallery/thumbnails/eleytherios-web_450x0.jpg [Βασίλειος & Περικλής Συρίμης© (sirimis.gr)]
+    - http://4.bp.blogspot.com/_tfJrM1twnf0/S-1_ldnDQfI/AAAAAAAAAFs/EM8Z-VOAp9k/s1600/St+Eleftherios.jpg [Julia Hayes© (www.ikonographics.net)]
+    - http://www.saint.gr/photos/standard/1215/AgiosElefterios15.jpg
+    - http://2.bp.blogspot.com/-kKQ5NX5NcoY/Ta1y4PPQOVI/AAAAAAAAAA0/pRE3bRUHSoA/s1600/agios+eleutherios+2.jpg [Καζακίδου Μαρία© (byzantineartkazakidou. blogspot.com)]
+    - http://www.saint.gr/photos/standard/1215/AgiosElefterios21.jpg [Δημήτριος Βάσσος© (dimitriosvassos. blogspot.com)]
+    - http://www.saint.gr/photos/standard/1215/AgiosElefterios02.jpg
+    - http://www.saint.gr/photos/standard/1215/AgiosElefterios19.jpg
+    - http://4.bp.blogspot.com/-q1EAAo5ZZU4/TugUJh1rTyI/AAAAAAAAEj0/C9yF5v2KsEw/s1600/s0763004.jpg
+    - http://www.saint.gr/photos/standard/1215/AgiosElefterios18.jpg
+    - http://www.imga.gr/images/pitsidia_naos_ag_koudouma%20%2842%29.JPG [Ι. Ν. Οσίων Παρθενίου και Ευμενίου των εν Κουδουμά, δια χειρός Παναγιώτη Μόσχου (2006 μ.Χ.)]
+   служба:
+    - Елевферию Иллирийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_15.pdf
+    - http://glt.xyz/texts/Dec/15.uni.htm
+    - http://glt.xyz/texts/Synek/Megalynaria.uni.htm
    событие:
-    - год: кон.I-нач.II
+    - год: вид.кон.I
       описание: ржд
       место: Рим
     - год: 126
       описание: прств
       место: Рим
    помин:
-      дата: 15.12
+    - дата: 15.12
+      год: 2009
+      календарь: герм
       описание: само
-      служба:
-       - Елевферию Иллирийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_15.pdf
+    - дата: 15.12
+      календарь: рпц,греч,гбмч,кпк,киж
+      описание: само
