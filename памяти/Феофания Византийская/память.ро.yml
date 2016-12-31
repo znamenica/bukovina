@@ -8,7 +8,9 @@
    вики:
     - http://drevo-info.ru/articles/4597.html
     - https://ru.wikipedia.org/wiki/Феофано_(супруга_Льва_VI_Мудрого)
-   бытие: http://azbyka.ru/days/sv-feofanija-vizantijskaja
+   бытие:
+    - http://azbyka.ru/days/sv-feofanija-vizantijskaja
+    - http://calendar.rop.ru/svyat1/dec16-feofaniya.html
    образ:
     - http://azbyka.ru/days/assets/img/saints/5771/6718afead16b4facb1a1813246e56733.jpg
     - http://azbyka.ru/days/assets/img/saints/5771/3b5bf491b19b0184ba772af67b69455c.jpg
@@ -31,4 +33,5 @@
       место: Георгиевская церковь. Фанар. Константинополь
    помин:
       дата: 16.12
+      календарь: рпц
       описание: само

@@ -5,13 +5,16 @@
    фамилия: Сверчкова-Сабурова
    описание: княгиня великая Суздальская; супруга князя Василия 3-го
    чин: прп
-   собор: влад
+   собор: влад,сузд?
    вики: http://drevo-info.ru/articles/4598.html
    бытие: http://azbyka.ru/days/sv-sofija-suzdalskaja
    образ:
     - http://drevo-info.ru/images/001/001438.jpg
     - http://azbyka.ru/days/assets/img/saints/6002/p18ctma41l14qvp0o1ncnrmn193b5.jpg
     - http://pravicon.com/icon-2936
+   служба:
+    - Софии Суздальской служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_16.pdf
    событие:
     - год: ок. 1490
       описание: ржд
@@ -48,7 +51,5 @@
     - дата: 01.08
       описание: обр
     - дата: 16.12
+      календарь: рпц,змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_16.pdf
-    - описание: само
-      служба: Софии Суздальской служба
