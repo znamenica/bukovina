@@ -1,11 +1,19 @@
 ---
 Модест Иерусалимский:
-   имя: Модест
-   описание: святитель Иерусалимский, настоятель Вифлеемо-Печерский
+   имя:
+      ру: Модест
+      гр: Μόδεστος
+   описание:
+      ру: настоятель Вифлеемо-Печерский; святитель Иерусалимский
+      гр: αρχιεπίσκοπος Ιεροσολύμων
    чин: свт
-   собор: капд,плст
+   собор: плст?
    вики: http://drevo-info.ru/articles/4489.html
-   бытие: http://azbyka.ru/days/sv-modest-ierusalimskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-modest-ierusalimskij
+       - http://calendar.rop.ru/svyat1/dec18-sevastian-sohotski.html
+      гр: http://www.saint.gr/3277/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/3311/14b1a05ff35c0306cb06c88041fd1d7c.jpg
     - http://azbyka.ru/days/assets/img/saints/3311/bb42f915daeea18a404759b6877a6c07.jpg
@@ -13,18 +21,31 @@
     - http://pravicon.com/icon-2476
     - http://drevo-info.ru/images/001/000750.jpg
     - http://azbyka.ru/days/assets/img/saints/3311/47c8b274184c7d9a5723c6e366b56359.jpg
+    - http://www.saint.gr/photos/standard/1216/AgiosModestos06s.jpg
+    - http://www.saint.gr/photos/standard/1216/AgiosModestos02.jpg [1751 μ.Χ. - Mονή Kουτλουμουσίου, Άγιον Όρος]
+    - http://www.saint.gr/photos/standard/1216/AgiosModestos03.jpg
+    - http://www.pigizois.net/sinaxaristis/12/18_modestos.jpg
+   служба:
+    - Модесту Иерусалимскому служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_18.pdf
    событие:
     - год: ок.537
       описание: ржд
-      место: Севастия. Каппадокия
+      место: Севастия. Каппадокия/Палестина
     - год: сер.VI
       описание: иноч
     - год: вид.614
       описание: свят
+    - год: 632
+      описание: прдст
     - год: 634
       дата: 18.12
       описание: прств
       место: Иерусалим. Палестина
+    - год: 634
+      дата: по 18.12
+      описание: пгбр
+      место: Елеонская гора. Иерусалим. Палестина
    помин:
     - дата: 17.05
       собор: греч
@@ -33,14 +54,11 @@
       собор: греч
       описание: само
     - дата: 16.12
-      собор: греч
+      календарь: греч
       описание: само
     - дата: 17.12
       собор: греч
       описание: само
     - дата: 18.12
-      собор: рус,груз,плст
+      календарь: рус,змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_18.pdf
-    - описание: само
-      служба: Модесту Иерусалимскому служба

@@ -1,6 +1,6 @@
 ---
 Фаддей Тверской:
-   имя: в иночестве Фаддей, в крещении Иоанн
+   имя: в иночестве Фаддей, в крещении Иоанн, в наречении Иван
    отчество: Васильевич
    фамилия: Успенский
    описание: священноинок Смоленский, Минский, Уфимский, Петрозаводский, святитель
@@ -11,6 +11,7 @@
    бытие:
     - http://azbyka.ru/days/sv-faddej-uspenskij
     - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuIc8GYdOYU87DVfuKhsOeceG06ce0h668UsOWfv8KWeCQd**
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slAbu2fOVyAn3yYOycsOueZ6WCTdGUd8GZeG*cYy4jdOrVeeWd66WWc8oUUe1Ve8jgdO8ctmZyQaJaTcGZeu**
    образ:
     - http://213.171.53.29/foto_1/oep-45a.jpg
     - http://213.171.53.29/foto_1/oep-45k.jpg
@@ -69,4 +70,5 @@
     - дата: 13.10
       описание: обр
     - дата: 18.12
+      календарь: рпц,нмр
       описание: прств
