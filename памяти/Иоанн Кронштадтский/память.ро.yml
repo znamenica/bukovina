@@ -1,6 +1,6 @@
 ---
 Иоанн Кронштадтский:
-   имя: в крещении Иоанн
+   имя: в крещении Иоанн, в наречении Иван
    отчество: Ильич
    фамилия: Сергиев
    описание: протоиерей Кронштадтский
@@ -9,7 +9,9 @@
    вики:
     - http://drevo-info.ru/articles/4711.html
     - https://ru.wikipedia.org/wiki/Иоанн_Кронштадтский
-   бытие: http://azbyka.ru/days/sv-ioann-kronshtadtskij
+   бытие:
+    - http://azbyka.ru/days/sv-ioann-kronshtadtskij
+    - http://calendar.rop.ru/svyat1/dec20-kronshtadt.html
    образ:
     - http://pravicon.com/icon-1950
     - http://azbyka.ru/days/assets/img/saints/2343/3109b80be473cbf73cad9ef92477417d.jpg
@@ -75,4 +77,5 @@
       собор: клвн
       описание: само
     - дата: 20.12
+      календарь: рпц
       описание: прств

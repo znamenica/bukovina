@@ -1,11 +1,16 @@
 ---
 Игнатий Печерский:
-   имя: Игнатий
+   имя: вид.в иночестве Игнатий
    описание: архимандрит Печерский, в Дальних Пещерах
    чин: прп
-   собор: дпеч
+   собор: дпеч,печ
    вики: http://drevo-info.ru/articles/4696.html
-   бытие: http://azbyka.ru/days/sv-ignatij-pecherskij
+   бытие:
+    - http://azbyka.ru/days/sv-ignatij-pecherskij
+    - http://calendar.rop.ru/svyat1/dec20-ignati-kiev.html
+   служба:
+    - Игнатию Печерскому служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_20.pdf
    событие:
     - год: до 1435
       описание: иноч
@@ -17,9 +22,6 @@
       описание: пгрб
       место: Феодосиевы пещеры. Киев
    помин:
-    - дата: 20.12
+      дата: 20.12
+      календарь: рпц,змин
       описание: иноч
-    - описание: само
-      служба:
-       - Игнатию Печерскому служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_20.pdf

@@ -1,19 +1,21 @@
 ---
 Полиевкт Кесарийский:
-   имя: Полиевкт
-   описание: мученик Кесарийский, Каппадокийский; сожжён
+   имя: вид.в наречении Полиевкт
+   описание: мученик Кесарийский (Каппадокийский); сожжён язычниками
    чин: мч
-   собор: капд
+   собор: капд?
    вики: http://drevo-info.ru/articles/22845.html
    бытие: http://azbyka.ru/days/sv-polievkt-kesarijskij-kappadokijskij
    образ:
     - http://azbyka.ru/days/assets/img/saints/4123/p18d0cs40us9aek613iq1pta1hiq3.jpg
     - http://azbyka.ru/days/assets/img/saints/4123/p18vo8plrjafs1mfh1fj51ar913hv3.jpg
     - http://pravicon.com/icon-2732
+    - https://drevo-info.ru/images/003/011637.jpg [Миниатюра Минология Василия II. Константинополь, 985 г. Ватиканская библиотека, Рим]
    событие:
       год: 309
       описание: прств
       место: Кесария. Каппадокия
    помин:
       дата: 19.12
+      календарь: рпц
       описание: само
