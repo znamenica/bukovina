@@ -1,15 +1,16 @@
 ---
-Михаил Никитинский:
-   имя: Михаил
+Михаил Майкорский:
+   имя: в крещении Михаил
    отчество: Петрович
    фамилия: Киселёв
-   описание: священник Никитинский (Майкорский)
-   чин: сщмч
-   собор: нмр,перм?
+   описание: священник Никитинский (Майкорский. Юсьва); мученик; расстрелян безбожниками
+   чин: смчр
+   собор: нмр,юсь?
    вики: http://drevo-info.ru/articles/23037.html
    бытие:
     - http://azbyka.ru/days/sv-mihail-kiselev
     - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu8eC4ZeuKW66mctO0cem0DdS9Ufe8ctk*
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slTcGhe5snTd4jeC4iedG6Xbu8eC4ZeuKW66mctO0cem0DdS9Ufe8ctrtmNKNyV8Kfc**
    событие:
     - год: ок.1856
       описание: ржд
@@ -24,7 +25,7 @@
     - год: 2000
       дата: 31.07-03.08
       собор: рус
-      чин: нмр
+      чин: сщмч,нмр
       описание: просл
     - год: 2000
       дата: 07.08
@@ -33,4 +34,5 @@
       описание: чинпр
    помин:
       дата: 21.12
+      календарь: рпц,нмр
       описание: прств
