@@ -1,12 +1,14 @@
 ---
 Неделя Узорешительница:
-   имя: Анастасия
+   имя: Анастасия (Неделя)
    прозвище: Узорешительница (Фармаколитрия)
-   описание: римлянка; дева; ученица Златорода Римлянина; мученица Иллирийская
+   описание: римлянка; дева; ученица Златорода Римлянина; великомученица Иллирийская
    чин: вмц
-   собор: рим,лек,илл
+   собор: рим?,лек?,илл?
    вики: http://drevo-info.ru/articles/8368.html
-   бытие: http://azbyka.ru/days/sv-anastasija-uzoreshitelnica
+   бытие:
+    - http://azbyka.ru/days/sv-anastasija-uzoreshitelnica
+    - http://calendar.rop.ru/svyat1/dec22-anastasiya.html
    образ:
     - http://drevo-info.ru/images/001/001452.jpg
     - http://azbyka.ru/days/assets/img/saints/5872/817e25a0d7dd10ccb6a5a9642a533589.jpg
@@ -39,9 +41,5 @@
       место: Неделе-Узорешительницкая обитель. Афонье. Греция
    помин:
       дата: 22.12
+      календарь: рпц,змин
       описание: само
-      служба:
-       - Неделе Узорешительнице служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_22.pdf
-       - http://azbyka.ru/days/caa/366
-       - http://azbyka.ru/days/caa/367
