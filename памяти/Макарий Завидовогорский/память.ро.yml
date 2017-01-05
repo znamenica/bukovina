@@ -3,13 +3,14 @@
    имя: в иночестве Макарий
    отчество: Фёдорович
    фамилия: Миронов
-   описание: священноинок Завидовогорский
-   чин: прмч
-   собор: нмр,твер?,смо?
+   описание: священноинок Завидовогорский (Кесова Горка. Тверь); мученик; расстрелян безбожниками
+   чин: пмчр
+   собор: нмр,дргб?,твер?,ксвг?
    вики: http://drevo-info.ru/articles/23095.html
    бытие:
     - http://azbyka.ru/days/sv-makarij-mironov
     - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuAc8eUs8Wd60WAeC0ifOuW60wi9Wsj67GZd8vUfe8ctmY*
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slTcGhe5spTd4jeC4iedG6XbuAc8eUs8Wd60WAeC0ifOuW60wi9Wsj67GZd8vUfe8ctmZyQaJaTcGZeu**
    событие:
     - год: 1878
       описание: ржд
@@ -23,11 +24,11 @@
     - год: 1937
       дата: 23.12
       описание: прств
-      место: Тверьщина
+      место: Тверская область
     - год: 2000
       дата: 31.07-03.08
       собор: рус
-      чин: нмр
+      чин: прмч,нмр
       описание: просл
     - год: 2000
       дата: 07.08
@@ -36,4 +37,5 @@
       описание: чинпр
    помин:
       дата: 23.12
+      календарь: рпц,нмр
       описание: прств

@@ -1,27 +1,31 @@
 ---
 Нифонт Кипрский:
    имя: Нифонт
-   описание: преподобный, святитель Кипрский
+   описание: преподобный, святитель Константский (Кипрский)
    чин: свт
-   собор: пафл,кипр,прпп
+   собор: пафл?,кипр?,прпп
    вики: http://drevo-info.ru/articles/4720.html
-   бытие: http://azbyka.ru/days/sv-nifont-kiprskij
+   бытие:
+    - http://azbyka.ru/days/sv-nifont-kiprskij
+    - http://calendar.rop.ru/svyat1/dec23-nifont.html
    образ:
     - http://azbyka.ru/days/assets/img/saints/2647/p18vtc6b9ikhfl57upgn1a1ut33.jpg
     - http://azbyka.ru/days/assets/img/saints/2647/5301bf3cb5b88510606668e775c2bf3c.jpg
     - http://drevo-info.ru/images/001/000822.jpg
     - http://pravicon.com/icon-2587
    событие:
-    - год: III-IV
+    - год: вид.III
       описание: ржд
       место: Пафлагония
-    - год: III-IV
+    - год: вид.III
       описание: иноч
-    - год: вид.IV
+    - год: 325-373
       описание: свят
-    - год: IV
+      место: вид.Александрия. Египет
+    - год: 325-373
       описание: прств
       место: вид.Констанция. Кипр
    помин:
       дата: 23.12
+      календарь: рпц
       описание: само

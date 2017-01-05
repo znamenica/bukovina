@@ -1,20 +1,31 @@
 ---
 Мал Неокесарийский:
-   имя: Павел
-   описание: исповедник, преподобный, святитель Неокесарийский
+   имя:
+      ру: Павел
+      гр: Παύλος
+   описание:
+      ру: исповедник; преподобный; святитель Неокесарийский; страстотерпец; мучен язычниками
+      гр: αρχιεπίσκοπος Νεοκαισαρείας
    чин: исвт
-   собор: 1вс,прпп
+   собор: 1вс?,прпп,понт?
    вики: http://drevo-info.ru/articles/4721.html
-   бытие: http://azbyka.ru/days/sv-pavel-neokesarijskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-pavel-neokesarijskij
+       - http://calendar.rop.ru/svyat1/dec23-pavel.html
+      гр: http://www.saint.gr/3312/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/4204/p18vtcdblfqk8hqo13gbejfn0a4.jpg
     - http://azbyka.ru/days/assets/img/saints/4204/p18d8bnidbun1u9l10iqdsr3r23.jpg
     - http://azbyka.ru/days/assets/img/saints/4204/p18vtcdbldjmq1p5brp8tfa1cl83.jpg
     - http://pravicon.com/icon-2632
    событие:
-      год: IV
+    - год: вид.307-324
+      описание: свят
+    - год: вид.сер.IV
       описание: прств
-      место: вид.Неокесария
+      место: вид.Неокесария. Понт (ныне Никсар. Токат. Турция)
    помин:
       дата: 23.12
+      календарь: рпц,греч
       описание: само
