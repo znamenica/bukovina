@@ -2,12 +2,13 @@
 Евгения Римская:
    имя: в наречении Евгения, в иночестве Евгений
    отчество: Филипповна
-   описание: римлянка, инокиня Александрийская и Римская; дочь Филиппа Александрийского и
-      Клавдии Римской
+   описание: римлянка; дочь Филиппа Александрийского и Клавдии Римской; инокиня Александрийская и Римская; мученица Латийская; обезглавлена язычниками
    чин: прмц
-   собор: копт,рим
+   собор: копт?,рим?,лати?
    вики: http://drevo-info.ru/articles/8383.html
-   бытие: http://azbyka.ru/days/sv-evgenija-rimskaja
+   бытие:
+    - http://azbyka.ru/days/sv-evgenija-rimskaja
+    - http://calendar.rop.ru/svyat1/dec24-evgenia.html
    образ:
     - http://azbyka.ru/days/assets/img/saints/6221/f185dfae60c488344e0376e9468c4a22.jpg
     - http://azbyka.ru/days/assets/img/saints/6221/p18vtcle0dkri713l11cl23474.jpg
@@ -15,6 +16,11 @@
     - http://azbyka.ru/days/assets/img/saints/6221/27d571d08b386181d07c2ebb0d6a9031.jpg
     - http://azbyka.ru/days/assets/img/saints/6221/e28ebe87c2dcaa7a7dda3a6214156f60.jpg
     - http://pravicon.com/icon-1680
+   служба:
+    - Евгении Римской служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_24.pdf
+    - http://azbyka.ru/days/assets/upload/services/predprazdnstvo_rh.pdf
+    - http://azbyka.ru/days/caa/368
    событие:
     - год: перв.пол.III
       описание: ржд
@@ -24,13 +30,8 @@
       место: Александрия. Египет
     - год: 262
       описание: прств
-      место: Римье. Италия
+      место: Латия. Италия
    помин:
       дата: 24.12
+      календарь: рпц,змин
       описание: само
-      служба:
-       - Рождество Христово/Предпразнеству Рождества Христова и Евгении Римской служба
-       - Евгении Римской служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_24.pdf
-       - http://azbyka.ru/days/assets/upload/services/predprazdnstvo_rh.pdf
-       - http://azbyka.ru/days/caa/368
