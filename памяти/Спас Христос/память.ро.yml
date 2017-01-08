@@ -18,7 +18,9 @@
       описание: ржд
       описание_: рождество Христово
       вики: http://drevo-info.ru/articles/1236.html
-      бытие: http://azbyka.ru/days/prazdnik-rozhdestvo-gospoda-boga-i-spasa-nashego-iisusa-hrista
+      бытие:
+       - http://azbyka.ru/days/prazdnik-rozhdestvo-gospoda-boga-i-spasa-nashego-iisusa-hrista
+       - http://calendar.rop.ru/svyat1/dec25-rozhdestvo.html
       служба:
        - Предпразнеству Рождества Христова и Игнатию Богоносцу служба
        - http://azbyka.ru/days/assets/upload/minei/12/minea_12_20.pdf

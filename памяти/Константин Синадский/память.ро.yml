@@ -1,12 +1,24 @@
 ---
 Константин Синадский:
-   имя: в крещении Константин
-   описание: иудей; Синадский, Фригийский
+   имя:
+      ру: в крещении Константин
+      гр: Κωνσταντίνος
+   описание:
+      ру: иудей; уроженец Синадский (Фригийский); инок Фувутионский; миссионер
+      гр: ὁ ἐξ Ἰουδαίων
    чин: прп
-   собор: фриг
-   вики: http://drevo-info.ru/articles/4749.html
-   бытие: http://azbyka.ru/days/sv-konstantin-sinadskij-frigijskij
-   образ: http://drevo-info.ru/images/002/006313.jpg
+   собор: фриг?
+   вики:
+      ру: http://drevo-info.ru/articles/4749.html
+      ср: https://sr.wikipedia.org/wiki/Константин_Синадски
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-konstantin-sinadskij-frigijskij
+       - http://calendar.rop.ru/svyat1/dec26-konstantin.html
+      гр: http://www.saint.gr/2796/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/002/006313.jpg
+    - http://www.saint.gr/photos/standard/1226/OsiosConstantinos01s.jpg
    событие:
     - год: VII-IX
       описание: ржд
@@ -20,5 +32,10 @@
     - год: VIII-IX
       описание: прств
    помин:
-      дата: 26.12
+    - дата: 26.12
+      календарь: рпц,греч
+      описание: само
+    - дата: 26.12
+      год: 2009
+      календарь: герм
       описание: само
