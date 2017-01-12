@@ -1,16 +1,19 @@
 ---
-Божидар Начертанный:
-   имя: Феодор
+Божидар Писаный:
+   имя: вид.в иночестве Феодор
    прозвище: Писанный, Начертанный
    описание: брат Феофана Писанного
    чин: присп
-   собор: плст,виф,виз
+   собор: плст?,виф?,виз?
    вики: http://drevo-info.ru/articles/4758.html
-   бытие: http://azbyka.ru/days/sv-feodor-nachertannyj
+   бытие:
+    - http://azbyka.ru/days/sv-feodor-nachertannyj
+    - http://calendar.rop.ru/svyat1/dec27-feodor-isp.html
    образ:
     - http://pravicon.com/icon-3057
     - http://drevo-info.ru/images/002/006198.jpg
     - http://azbyka.ru/days/assets/img/saints/5592/p18vtd2mnnc3s1rekfhp1979b513.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_27.pdf
    событие:
     - год: до 779
       описание: ржд
@@ -26,7 +29,5 @@
       место: Халкидон. Византия
    помин:
       дата: 27.12
+      календарь: рпц,змин
       описание: прств
-      служба:
-       - Стефан Первомученик/Стефану Первомученику и Божидару Писанному служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_27.pdf

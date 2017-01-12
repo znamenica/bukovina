@@ -1,12 +1,14 @@
 ---
 Стефан Первомученик:
    имя: Стефан
-   описание: архидиякон, апостол от 70-ти; первомученик
-   чин: ап
-   собор: ап70,евр,плст
+   описание: еврей; архидиякон, апостол от 70-ти; первомученик
+   чин: мч
+   собор: ап70,евр?,плст?
    вики: http://drevo-info.ru/articles/2653.html
    бытие:
-      ру: http://azbyka.ru/days/sv-stefan
+      ру:
+       - http://azbyka.ru/days/sv-stefan
+       - http://calendar.rop.ru/svyat1/dec27-stefan.html
       гр: http://www.saint.gr/3153/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/221/p18facjf2h1l11i8e1pon1dil19ar7.jpg
@@ -30,6 +32,8 @@
    служба:
     - Стефану Первомученику служба
     - http://azbyka.ru/days/caa/83
+    - Стефану Первомученику и Божидару Писанному служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_27.pdf
    событие:
     - год: ок. 4
       описание: ржд
@@ -71,8 +75,5 @@
       календарь: рпц,греч
       описание: обр
     - дата: 27.12
-      календарь: греч
+      календарь: греч,рпц,змин
       описание: само
-      служба:
-       - Стефану Первомученику и Божидару Писанному служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_27.pdf

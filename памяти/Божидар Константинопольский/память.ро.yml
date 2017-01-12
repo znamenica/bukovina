@@ -1,11 +1,13 @@
 ---
 Божидар Константинопольский:
-   имя: Феодор
+   имя: вид.в иночестве Феодор
    описание: первосвятитель Константинопольский
    чин: свт
    собор: виз?
    вики: http://drevo-info.ru/articles/4756.html
-   бытие: http://azbyka.ru/days/sv-feodor-i-konstantinopolskij
+   бытие:
+    - http://azbyka.ru/days/sv-feodor-i-konstantinopolskij
+    - http://calendar.rop.ru/svyat1/dec27-feodor.html
    образ: http://azbyka.ru/days/assets/img/saints/3865/p18dabsl6717g2atb1rqf5t518g53.jpg
    служба: Божидару Константинопольскому служба
    событие:
@@ -20,4 +22,5 @@
       место: Константинополь. Византия
    помин:
       дата: 27.12
+      календарь: рпц
       описание: само
