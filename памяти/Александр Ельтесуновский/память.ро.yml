@@ -1,18 +1,20 @@
 ---
-Александр Стрелкский:
-   имя: Александр
+Александр Ельтесуновский:
+   имя: в крещении Александр
    отчество: Иванович
    фамилия: Крылов
-   описание: протоиерей Ельтесуновский, Стрелкский
-   чин: сщмч
-   собор: нмр,влад?,ива?,нмс
+   описание: протоиерей Ельтесуновский (Собинка), Языковский (Пильна), Ильинский (Вичуга), Стрелский (Родники. Иваново); страстотерпец Пинюжский (Подосиновец. Хлынов); мученик Ивановский, Соловецкий; расстрелян безбожниками
+   чин: смч
+   собор: нмр,нмс,кмшк?,соби?,пиль?,вичу?,родн?,подс?,ива?
    вики: http://drevo-info.ru/articles/16769.html
    бытие:
     - http://azbyka.ru/days/sv-aleksandr-krylov
     - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu8sCiffe6UU8iZei4UfOHU66WWc8qiceXb60Al**
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slTcGhe5ssTd4jeC4iedG6Xbu8sCiffe6UU8iZei4UfOHU66WWc8qiceXb60AlTb7ZNbu2dOiU**
    образ:
     - http://azbyka.ru/days/assets/img/saints/5524/p189p9bjc21q8bfc715oi25i1hv46.jpg
     - http://azbyka.ru/days/assets/img/saints/5524/p189p9bd4l6i01i0b1v6bqg0gik3.jpg
+    - https://drevo-info.ru/images/002/004273.jpg
    помин:
     - год: 1892
       дата: 14.08
@@ -35,8 +37,9 @@
     - год: 2002
       дата: 24.09
       собор: рус
-      чин: нмр
+      чин: сщмч,нмр
       описание: просл
    помин:
       дата: 26.12
+      календарь: рпц,нмр
       описание: прств
