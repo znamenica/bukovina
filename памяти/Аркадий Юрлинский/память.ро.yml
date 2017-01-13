@@ -1,13 +1,14 @@
 ---
-Аркадий Юрлский:
-   имя: Аркадий
+Аркадий Юрлинский:
+   имя: в крещении Аркадий
    фамилия: Решетников
-   описание: диякон Юрлский
-   чин: сщмч
-   собор: нмр,перм
+   описание: диякон Юрлинский (Пермь); мученик вид.Чердыньский; расстрелян безбожниками
+   чин: смчр
+   собор: нмр,юрл?,черд?
    бытие:
     - http://azbyka.ru/days/sv-arkadij-reshetnikov
     - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuEdSWZseqceeuW661Uee0Ye8Y*
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slTcGhe5slA5uFfuXVfeeIW6tyY8LcdS8he8eicW0*s8eUd8WdTb7ZNbu2dOiU**
    событие:
     - год: вт.пол.XIX
       описание: ржд
@@ -20,7 +21,7 @@
     - год: 2000
       дата: 31.07-03.08
       собор: рус
-      чин: нмр
+      чин: сщмч,нмр
       описание: просл
     - год: 2000
       дата: 07.08
@@ -29,4 +30,5 @@
       описание: чинпр
    помин:
       дата: 28.12
+      календарь: рпц,нмр
       описание: прств

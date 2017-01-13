@@ -2,14 +2,18 @@
 Никанор Диякон:
    имя: Никанор
    описание: диякон; апостол от 70-ти
-   чин: ап
-   собор: ап70,4да
+   чин: сщмч
+   собор: ап70,4да,плст?
    вики: http://drevo-info.ru/articles/6537.html
-   бытие: http://azbyka.ru/days/sv-nikanor
+   бытие:
+    - http://azbyka.ru/days/sv-nikanor
+    - http://calendar.rop.ru/svyat1/dec28-nikanor.html
    образ: http://drevo-info.ru/images/001/001182.jpg
    событие:
       год: ок.34
       описание: прств
+      место: Иерусалим
    помин:
       дата: 28.12
+      календарь: рпц,вчм
       описание: само
