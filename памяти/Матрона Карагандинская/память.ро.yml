@@ -1,14 +1,16 @@
 ---
-Матрона Наволокина:
-   имя: Матрона
+Матрона Карагандинская:
+   имя: в крещении Матрона
    отчество: Кузьминична
    фамилия: Наволокина
-   чин: мц
-   собор: нмр,нмк,ряз?,кар?
+   описание: козхозница Краснорожьская (Ряжск); странница; страстотерпица Ряжская; мученица Карагандинская; расстреляна безбожниками
+   чин: мцр
+   собор: нмр,нмк,ряж?,кргд?
    вики: http://drevo-info.ru/articles/13671596.html
    бытие:
     - http://azbyka.ru/days/sv-matrona-navolokina
     - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuBc88ieuuee8qU66mUsi0ZfO*UWiCbv8mcfOXbfO**
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slTcGhe5slALuFfuXVfeeIW6tyXO0WfeiieeWhc00AcC9UdOqU66fXdymge8qctuqUTb7ZNbu2dOiU**
    событие:
     - год: 1894
       описание: ржд
@@ -20,7 +22,7 @@
     - год: 2000
       дата: 31.07-03.08
       собор: рус
-      чин: нмр
+      чин: мц,нмр
       описание: просл
     - год: 2000
       дата: 07.08
@@ -29,4 +31,5 @@
       описание: чинпр
    помин:
       дата: 29.12
+      календарь: рпц,нмр
       описание: прств
