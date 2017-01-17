@@ -1,11 +1,13 @@
 ---
 Мелания Римляныня:
-   имя: Мелания (Маланка)
-   описание: римляныня; инокиня Вифлеемская, Палестинская
+   имя: в крещении Мелания (Маланка)
+   описание: римляныня; инокиня Вифлеемская (Палестинская)
    чин: прп
-   собор: рим,плст
+   собор: рим?,плст?
    вики: http://drevo-info.ru/articles/4792.html
-   бытие: http://azbyka.ru/days/sv-melanija-rimljanynja
+   бытие:
+    - http://azbyka.ru/days/sv-melanija-rimljanynja
+    - http://calendar.rop.ru/svyat1/dec31-melaniya.html
    образ:
     - http://azbyka.ru/days/assets/img/saints/6322/p18dd1mrj21vsc1oanqcvql11dfa5.jpg
     - http://azbyka.ru/days/assets/img/saints/6322/p18dd1mrj2158n1s6n1joufdda1t6.jpg
@@ -13,6 +15,10 @@
     - http://azbyka.ru/days/assets/img/saints/6322/p18dd1mrj2vn015bf182s9gi12uu3.jpg
     - http://azbyka.ru/days/assets/img/saints/6322/p18dd1mrj21gk21jo81qlq1lpve4.jpg
     - http://drevo-info.ru/images/001/001477.jpg
+   служба:
+    - Мелании Римляныне служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_30.pdf
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_31.pdf
    событие:
     - год: вид.вт.пол.IV
       описание: ржд
@@ -26,9 +32,5 @@
       место: монастырь. Иерусалим
    помин:
       дата: 31.12
+      календарь: рпц
       описание: само
-      служба:
-       - Мелании Римляныне служба
-       - Анисия Солунская/Анисии Солунской, Мелании Римляныне и Зотику Сиропитателю служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_30.pdf
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_31.pdf
