@@ -1,16 +1,19 @@
 ---
 Мария Гавриловъямская:
-   имя: Мария
+   имя: в крещении Мария
    отчество: Фёдоровна
    фамилия: Данилова
-   описание: староста Гавриловъямская
+   описание: мотальщица; ткачиха; староста Гавриловъямская; страстотерпица и мученица; уморена безбожниками
    чин: мц
-   собор: нмр,ряр?,смо?
+   собор: нмр,ряр,юхн?
    вики: http://drevo-info.ru/articles/11945.html
    бытие:
     - http://azbyka.ru/days/sv-marija-danilova
     - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu2c8qceuuWc00AcC0cvm0IdOGis8uWfO**
-   образ: http://azbyka.ru/days/assets/img/saints/6040/p18dcmmg2bh58uftr497e1vc83.jpg
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slTcGhe5slAbuFfuXVfeeIW6tyV80he8iice*UX81UeCwUZ8KYfi0iceqUTb7ZNbu2dOiU**
+   образ:
+    - http://azbyka.ru/days/assets/img/saints/6040/p18dcmmg2bh58uftr497e1vc83.jpg
+    - https://drevo-info.ru/images/003/013376.jpg
    событие:
     - год: 1884
       дата: 25.02
@@ -22,7 +25,7 @@
     - год: 2000
       дата: 31.07-03.08
       собор: рус
-      чин: нмр
+      чин: мц,нмр
       описание: просл
     - год: 2000
       дата: 07.08
@@ -30,6 +33,6 @@
       чин: нмр
       описание: чинпр
    помин:
-      год: 1946
       дата: 30.12
+      календарь: рпц,нмр
       описание: прств
