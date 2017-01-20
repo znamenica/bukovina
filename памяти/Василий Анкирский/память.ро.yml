@@ -1,11 +1,13 @@
 ---
 Василий Анкирский:
-   имя: Василий
+   имя:
+      ру: Василий
+      гр: Βασίλειος
    описание:
       ру: священник Анкирский; заколот суеверами
-      гр: Άγιος Βασίλειος Ιερομάρτυρας Πρεσβύτερος Άγκυρας
+      гр: Ιερομάρτυρας Πρεσβύτερος Άγκυρας
    чин: сщмч
-   собор: галт
+   собор: галт?
    вики: http://drevo-info.ru/articles/5444.html
    бытие:
       ру:
@@ -16,7 +18,9 @@
     - http://pravicon.com/icon-1382
     - http://www.saint.gr/photos/standard/0322/agiosvasilios01.jpg
     - http://azbyka.ru/days/assets/img/saints/2579/p18hbjlmtg1l64kln16ob1opq18ck4.jpg
-   служба: Василию Анкирскому служба
+   служба:
+    - Василию Анкирскому служба
+    - http://azbyka.ru/days/assets/upload/minei/03/minea_03_22.pdf
    событие:
       год: 362-363
       описание: прств
@@ -24,6 +28,5 @@
       образ: http://azbyka.ru/days/assets/img/saints/2579/p18hbjlmtf13c5sfad512s3f9v3.jpg
    помин:
       дата: 22.03
-      календарь: рпц,греч
+      календарь: рпц,греч,змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_22.pdf
