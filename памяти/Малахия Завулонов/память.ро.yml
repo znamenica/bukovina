@@ -1,24 +1,27 @@
 ---
 Малахия Завулонов:
-   имя: Малахия
+   имя: в наречении Малахия
+   фамилия: Завулонов
    описание: из колена Завулонова
    чин: прор
-   собор: мпр
+   собор: мпр,плст?
    вики: http://drevo-info.ru/articles/14428.html
-   бытие: http://azbyka.ru/days/sv-malahija
+   бытие:
+    - http://azbyka.ru/days/sv-malahija
+    - http://calendar.rop.ru/svyat1/jan03-malahia.html
    образ:
     - http://drevo-info.ru/images/002/008161.jpg
     - http://azbyka.ru/days/assets/img/saints/3200/d0bc206296cd902a84d4b2650809150b.jpg
     - http://azbyka.ru/days/assets/img/saints/3200/1f007e1f957f3d7ea57184cf79bae681.jpg
     - http://azbyka.ru/days/assets/img/saints/3200/p18vvil4mqsn31bojkssfd1pk64.jpg
     - http://azbyka.ru/days/assets/img/saints/3200/p18vvil4mp16eh11pfr5h1cp21csh3.jpg
+   служба:
+    - Малахии Завулонову служба
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_03.pdf
    событие:
       год: ок. 400 до нэ
       описание: прств
    помин:
       дата: 03.01
+      календарь: рпц,змин
       описание: само
-      служба:
-       - Малахии Завулонову служба
-       - Богоявление/Предпразнеству Богоявления, Малахии Завулонову и Гордию Каппадокийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_03.pdf
