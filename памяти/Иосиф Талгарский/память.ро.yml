@@ -1,15 +1,16 @@
 ---
 Иосиф Талгарский:
-   имя: Иосиф
+   имя: в крещении Иосиф, в наречении Осип
    отчество: Яковлевич
    фамилия: Беспалов
-   описание: староста церковный Талгарский
-   чин: мч
-   собор: нмр,нмк?,верн,38мт
+   описание: староста церковный и мученик Талгарский (Верный); растрелян безбожниками
+   чин: мчр
+   собор: нмр,нмк?,верн?,38мт
    вики: http://drevo-info.ru/articles/14430.html
    бытие:
     - http://azbyka.ru/days/sv-iosif-bespalov
     - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu-dS4jc8iicW06fi4ct00TeeuWeuKWeCQ*
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slTcGhe5slC5uFfuXVfeeIW6tyUOLVfu0ffe6UW8vVeCEUbueiceiZceXbTb7ZNbu2dOiU**
    событие:
     - год: 1921
       дата: 05.01
@@ -25,3 +26,7 @@
       собор: рус
       чин: нмр
       описание: чинпр
+   помин:
+      дата: 05.01
+      календарь: нмр
+      описание: прств

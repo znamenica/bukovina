@@ -1,14 +1,18 @@
 ---
 Феопемпт Никомидийский:
-   имя: Феопемпт
-   описание: святитель Никомидийский; обезглавлен
-   чин: стсвт
-   собор: виф
+   имя: вид.в иночестве Феопемпт
+   описание: святитель Никомидийский; обезглавлен язычниками
+   чин: мсвт
+   собор: виф?
    вики: http://drevo-info.ru/articles/8547.html
-   бытие: http://azbyka.ru/days/sv-feopempt-nikomidijskij
+   бытие:
+    - http://azbyka.ru/days/sv-feopempt-nikomidijskij
+    - http://calendar.rop.ru/svyat1/jan05-feopempt-feona.html
    образ:
     - http://pravicon.com/icon-3118
     - http://azbyka.ru/days/assets/img/saints/217/p18djnv3l31dr31glb1s3r8p267j3.jpg
+   служба:
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_05.pdf
    событие:
       год: 303
       описание: прств
@@ -16,7 +20,5 @@
       образ: http://azbyka.ru/days/assets/img/saints/217/p18djnv3l31kg23lfgq3e3ec34.jpg
    помин:
       дата: 05.01
+      календарь: рпц,змин
       описание: само
-      служба:
-       - Богоявление/Предпразнеству Богоявления, Феопемпту и Феоне Никомидийским и Синклитикии Александрийской служба
-       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_05.pdf

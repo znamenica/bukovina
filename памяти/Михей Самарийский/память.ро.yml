@@ -1,12 +1,14 @@
 ---
-Михей Иемвлаев:
-   имя: Михей
+Михей Самарийский:
+   имя: в наречении Михей
    отчество: Иемвлаевич
-   описание: сын Иемвлаев
+   описание: сын Иемвлаев; житель и страстотерпец Самарийский
    чин: прор
-   собор: плст
+   собор: сама?,плст?
    вики: http://drevo-info.ru/articles/13590.html
-   бытие: http://azbyka.ru/days/sv-mihej-1
+   бытие:
+    - http://azbyka.ru/days/sv-mihej-1
+    - http://calendar.rop.ru/svyat1/jan05-mihei.html
    образ:
     - http://azbyka.ru/days/assets/img/saints/5207/p18vvkgnvh1ts71199nve102f18de5.jpg
     - http://azbyka.ru/days/assets/img/saints/5207/p18vvkgnvp1gp8q2a11uk19u8u087.jpg
@@ -14,6 +16,9 @@
     - http://azbyka.ru/days/assets/img/saints/5207/p18vvkgnvgr5kdm917rn1gtt2bk4.jpg
     - http://azbyka.ru/days/assets/img/saints/5207/aed07db40a9644c59d34e0ee2201e52a.jpg
    событие:
+    - год: X до нэ-IX до нэ
+      описание: ржд
+      место: вид.Самария
     - год: IX до нэ
       описание: прств
       образ: http://azbyka.ru/days/assets/img/saints/5207/p18vvkgnvl1a5k1a89qi19cakd16.jpg
@@ -23,4 +28,5 @@
       место: вид.Палестина
    помин:
       дата: 05.01
+      календарь: рпц
       описание: само

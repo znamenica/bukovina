@@ -1,11 +1,17 @@
 ---
 Синклитикия Александрийская:
-   имя: Синклитикия
-   описание: Александрийская
+   имя:
+      ру: вид.в наречении Синклитика/Синклитикия
+      гр: Συγκλητική/
+   описание: отшельница Александрийская
    чин: прп
-   собор: мак,копт
+   собор: мак?,копт?
    вики: http://drevo-info.ru/articles/8550.html
-   бытие: http://azbyka.ru/days/sv-sinklitikija-aleksandrijskaja
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-sinklitikija-aleksandrijskaja
+       - http://calendar.rop.ru/svyat1/jan05-sinklkiktia.html
+      гр: http://www.saint.gr/480/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/5999/p18djnp2b8kmkn99ab8mo0m354.jpg
     - http://azbyka.ru/days/assets/img/saints/5999/p18vvj5f98s2lhh3psk19g31m843.jpg
@@ -13,6 +19,8 @@
     - http://drevo-info.ru/images/002/007776.jpg
     - http://azbyka.ru/days/assets/img/saints/217/p18djnv3l31dr31glb1s3r8p267j3.jpg
     - http://pravicon.com/icon-2912
+   служба:
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_05.pdf
    событие:
     - год: ок.267
       описание: ржд
@@ -24,8 +32,9 @@
       описание: прств
       место: Александрия. Египет
    помин:
-      дата: 05.01
+    - дата: 04.01
+      календарь: греч
       описание: само
-      служба:
-       - Богоявление/Предпразнеству Богоявления, Феопемпту и Феоне Никомидийским и Синклитикии Александрийской служба
-       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_05.pdf
+    - дата: 05.01
+      календарь: рпц,змин
+      описание: само

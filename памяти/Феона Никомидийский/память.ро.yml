@@ -1,14 +1,16 @@
 ---
 Феона Никомидийский:
    имя: в наречении Феона, в крещении Синесий
-   описание: волхв Никомидийский; закопан в ров
+   описание: волхв Никомидийский; закопан в ров язычниками
    чин: мч
-   собор: виф
+   собор: виф?
    вики: http://drevo-info.ru/articles/8546.html
    бытие: http://azbyka.ru/days/sv-feona-v-kreshchenii-sinesij-nikomidijskij
    образ:
     - http://pravicon.com/icon-3115
     - http://azbyka.ru/days/assets/img/saints/217/p18djnv3l31dr31glb1s3r8p267j3.jpg
+   служба:
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_05.pdf
    событие:
       год: 303
       описание: прств
@@ -16,7 +18,5 @@
       образ: http://azbyka.ru/days/assets/img/saints/217/p18djnv3l31kg23lfgq3e3ec34.jpg
    помин:
       дата: 05.01
+      календарь: рпц,змин
       описание: само
-      служба:
-       - Богоявление/Предпразнеству Богоявления, Феопемпту и Феоне Никомидийским и Синклитикии Александрийской служба
-       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_05.pdf

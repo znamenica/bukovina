@@ -1,16 +1,25 @@
 ---
 Григорий Акритский:
-   имя: Григорий
-   описание: Акритский
+   имя:
+      ру: вид.в иночестве Григорий
+      гр: Γρηγόριος
+   описание:
+      ру: праведник Селевкийский; страстотерпец Иерусалимский; инок Римский, Акритский (Пропонтида. Вифиния)
+      гр: εν Ακρίτα
    чин: прп
-   собор: Крит,виф
+   собор: крит?,слвк?,иуде?,рим?,виф?
    вики: http://drevo-info.ru/articles/4828.html
-   бытие: http://azbyka.ru/days/sv-grigorij-akritskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-grigorij-akritskij
+       - http://calendar.rop.ru/svyat1/jan05-grigori.html
+      гр: http://www.saint.gr/581/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/3498/p18vvjbro4vqh1pjlc1ldqm9j83.jpg
     - http://drevo-info.ru/images/002/008193.jpg
+    - http://www.apostoliki-diakonia.gr/gr_main/eortologio/Agion_pics/Jan_15.jpg
    событие:
-    - год: 760
+    - год: 755/760
       описание: ржд
       место: Крит
     - год: ок.792
@@ -21,4 +30,5 @@
       место: Акрит мыс. Вифиния (ныне Манастыр кёйю. Тузла (Постане) район. Турция)
    помин:
       дата: 05.01
+      календарь: рпц,греч
       описание: само
