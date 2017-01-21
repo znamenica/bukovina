@@ -9,13 +9,15 @@
     - http://drevo-info.ru/images/001/003026.jpg
     - http://azbyka.ru/days/assets/img/saints/6402/p18vviv9at1oia180g1748us9g7f3.jpg
     - http://azbyka.ru/days/assets/img/saints/6402/p18disd1n0rq71aev13h5166s1bo23.jpg
+   служба:
+    - Семидесяти собору служба
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_04.pdf
    событие:
-      год: II-IX
+    - год: I-II
+      описание: прств
+    - год: II-IX
       описание: просл
    помин:
       дата: 04.01
+      календарь: рпц
       описание: само
-      служба:
-       - Семидесяти собору служба
-       - Богоявление/Предпразнеству Богоявления, Семидесяти собору и Феоктисту Кукумскому служба
-       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_04.pdf
