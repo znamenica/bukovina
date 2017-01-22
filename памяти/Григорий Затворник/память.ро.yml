@@ -3,10 +3,14 @@
    имя: Григорий
    описание: затворник Печерский, в Дальних Пещерах; целебщик
    чин: прп
-   собор: дпеч,лек
+   собор: дпеч,печ,лек
    вики: http://drevo-info.ru/articles/6606.html
-   бытие: http://azbyka.ru/days/sv-grigorij-pecherskij
-   служба: Григорию Затворнику служба
+   бытие:
+    - http://azbyka.ru/days/sv-grigorij-pecherskij
+    - http://calendar.rop.ru/svyat1/jan08-grigori-zatvornik.html
+   служба:
+    - Григорию Затворнику служба
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_08.pdf
    событие:
     - год: XIII-XIV
       описание: прств
@@ -16,6 +20,5 @@
       место: Феодосиевы пещеры. Киев
    помин:
       дата: 08.01
-      месяцеслов: рус
+      календарь: рпц,змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/01/minea_01_08.pdf

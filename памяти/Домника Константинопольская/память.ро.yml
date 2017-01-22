@@ -1,29 +1,38 @@
 ---
 Домника Константинопольская:
-   имя: вид.в наречении Домника
-   описание: настоятельница Константинопольская
+   имя:
+      ру: в наречении Домника
+      ан: Domnica
+   описание: дева и настоятельница Константинопольская
    чин: прп
-   собор: виз,карф
+   собор: карф?,виз?
    вики: http://drevo-info.ru/articles/4835.html
-   бытие: http://azbyka.ru/days/sv-domnika-konstantinopolskaja
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-domnika-konstantinopolskaja
+       - http://calendar.rop.ru/svyat1/jan08-domnik.html
+      ан: http://www.serbianorthodoxchurch.net/cgi-bin/saints.cgi?view=305334862116
    образ:
     - http://azbyka.ru/days/assets/img/saints/5946/p18dju68cf1mt0gmr1dg01lhh83o4.jpg
     - http://azbyka.ru/days/assets/img/saints/5946/p18dju68cf1nf41n2v1i0r1emnajg3.jpg
     - http://pravicon.com/icon-1659
+    - https://drevo-info.ru/images/003/014909.jpg [Миниатюра Минология Василия II (Константинополь, 985 г.). Ватиканская библиотека, Рим]
+   служба:
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_08.pdf
    событие:
     - год: вид.сер.IV
       описание: ржд
       место: вид.Карфаген
     - год: 379-395
       описание: крещ
+      место: Константинополь. Византия
     - год: 379-395
       описание: иноч
+      место: Константинополь. Византия
     - год: ок. 474
       описание: прств
-      место: Константинополь
+      место: Константинополь. Византия
    помин:
       дата: 08.01
+      календарь: рпц,змин,охр
       описание: само
-      служба:
-       - Егорий Хозевит/Егорию Хозевиту, Емилиану Кизическому и Домнике Константинопольской служба
-       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_08.pdf

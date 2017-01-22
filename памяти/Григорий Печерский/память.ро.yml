@@ -1,11 +1,13 @@
 ---
 Григорий Печерский:
    имя: в иночестве Григорий
-   описание: инок и чудотворец Печерский, в Ближних Пещерах; чтец книг
+   описание: инок и чудотворец Печерский, в Ближних Пещерах; читатель книг
    чин: прп
    собор: бпеч,печ
    вики: http://drevo-info.ru/articles/6604.html
-   бытие: http://azbyka.ru/days/sv-grigorij-pecherskij
+   бытие:
+    - http://azbyka.ru/days/sv-grigorij-pecherskij
+    - http://calendar.rop.ru/svyat1/jan08-grigori-chudo.html
    служба:
     - Григорию Печерскому служба
     - http://azbyka.ru/days/assets/upload/minei/01/minea_01_08.pdf
