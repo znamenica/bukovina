@@ -1,12 +1,16 @@
 ---
 Дометиан Мелитинский:
-   имя: Дометиан
+   имя: вид.в иночестве Дометиан
    описание: святитель Мелитинский
    чин: прп
-   собор: арм
+   собор: арм?
    вики: http://drevo-info.ru/articles/4865.html
-   бытие: http://azbyka.ru/days/sv-dometian-melitinskij
+   бытие:
+    - http://azbyka.ru/days/sv-dometian-melitinskij
+    - http://calendar.rop.ru/svyat1/jan10-dometian.html
    образ: http://pravicon.com/icon-1652
+   служба:
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_10.pdf
    событие:
     - год: вид.перв.пол.VI
       описание: ржд
@@ -21,7 +25,5 @@
       место: вид.Мелитин. Армения
    помин:
       дата: 10.01
+      календарь: рпц,змин
       описание: прств
-      служба:
-       - Григорий Нисский/Григорию Нисскому, Дометиану Мелитинскому и Маркиану Константинопольскому служба
-       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_10.pdf
