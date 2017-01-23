@@ -1,17 +1,19 @@
 ---
 Филипп Московский:
    имя:
-      ру: в иночестве Филипп, в крещении Феодор
+      ру: в иночестве Филипп, в крещении Феодор, в наречении Федор
       ан: Philip
    отчество: Степанович
    фамилия: Колычев
    описание:
-      ру: святитель Московский и всея Руси
+      ру: святитель Московский и всея Руси; страстотерпец Московский; задушен разбойниками
       ан: metropolitan of Moscow
    чин: стсвт
    собор: мсвт,мск,твер,сол?
    вики: http://drevo-info.ru/articles/8605.html
-   бытие: http://azbyka.ru/days/sv-filipp-kolychev
+   бытие:
+    - http://azbyka.ru/days/sv-filipp-kolychev
+    - http://calendar.rop.ru/svyat1/jan09-filipp.html
    образ:
     - http://drevo-info.ru/images/001/001483.jpg
     - http://azbyka.ru/days/assets/img/saints/3819/b57a5a3dcc97fd337cc69f3701809b37.jpg
@@ -19,6 +21,7 @@
     - Филиппу Московскому служба
     - http://azbyka.ru/days/caa/150
     - http://azbyka.ru/days/caa/151
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_09.pdf
    событие:
     - год: 1507
       описание: ржд
@@ -49,8 +52,8 @@
       описание: просл
    помин:
     - дата: 09.01
+      календарь: рпц,змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/01/minea_01_09.pdf
     - дата: 31.05
       описание: прен
       служба: Филиппу Московскому на пренесение мощей служба

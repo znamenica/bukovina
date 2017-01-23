@@ -1,20 +1,23 @@
 ---
 Полиевкт Мелитенский:
-   имя: Полиевкт
+   имя: в наречении Полиевкт
    описание: воин, мученик Мелитенский, друг Неарха Мелитенского; обезглавлен, крещён в
       своей крови
    чин: мч
-   собор: арм,вои
+   собор: арм?,вои?
    вики: http://drevo-info.ru/articles/4848.html
-   бытие: http://azbyka.ru/days/sv-polievkt-melitinskij
+   бытие:
+    - http://azbyka.ru/days/sv-polievkt-melitinskij
+    - http://calendar.rop.ru/svyat1/jan09-polievkt.html
    образ: http://drevo-info.ru/images/001/000850.jpg
+   служба:
+    - Полиевкту Мелитенскому служба
+    - http://azbyka.ru/days/assets/upload/minei/01/minea_01_09.pdf
    событие:
       год: 259
       описание: прств
       место: Мелитин. Армения
    помин:
       дата: 09.01
+      календарь: рпц,змин
       описание: само
-      служба:
-       - Полиевкту Мелитенскому служба
-       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_09.pdf
