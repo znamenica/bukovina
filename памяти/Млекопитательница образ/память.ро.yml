@@ -10,7 +10,9 @@
    собор: хлдр?,савл?
    вики: http://drevo-info.ru/articles/8447.html
    бытие:
-      ру: http://azbyka.ru/days/ikona-mlekopitatelnica
+      ру:
+       - http://azbyka.ru/days/ikona-mlekopitatelnica
+       - http://calendar.rop.ru/icons1/jan12-ikona-mlekopitatelnica.html
       гр:
        - http://www.saint.gr/1398/saint.aspx
        - http://www.saint.gr/665/saint.aspx
@@ -37,6 +39,9 @@
    помин:
     - дата: 10.01
       каледарь: греч
+      описание: само
+    - дата: 12.01
+      каледарь: рпц
       описание: само
     - дата: 03.07
       каледарь: греч
