@@ -13,7 +13,9 @@
    собор: груз?,ивер?,капд?
    вики: http://drevo-info.ru/articles/8643.html
    бытие:
-      ру: http://azbyka.ru/days/sv-nina
+      ру:
+       - https://azbyka.ru/days/sv-nina-prosvetitelnica-gruzii
+       - http://calendar.rop.ru/svyat1/jan14-nina.html
       гр: http://www.saint.gr/225/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/001489.jpg
@@ -26,7 +28,11 @@
     - http://www.saint.gr/photos/standard/0114/AgiaNina01.jpg
     - http://2.bp.blogspot.com/_XQqgvQ4ZKB4/TTsXtNAgwbI/AAAAAAAADqM/CYnUU03xs18/s1600/14.%2B%25CE%259D%25CE%2599%25CE%259D%25CE%2591%2B%25CE%2593%25CE%2595%25CE%25A9%25CE%25A1%25CE%2593%25CE%2599%25CE%2591%25CE%25A3.%2B%25CE%2596%25CE%2591%25CE%2592%25CE%259F%25CE%25A5%25CE%259B%25CE%25A9%25CE%259D%2B%2526%2B%25CE%25A3%25CE%25A9%25CE%25A3%25CE%25A3%25CE%2591%25CE%259D%25CE%2591%2B%25CE%2593%25CE%259F%25CE%259D%25CE%2595%25CE%2599%25CE%25A3%2B%25CE%25A4%25CE%2597%25CE%25A3.JPG
     - http://www.saint.gr/photos/standard/0520/AgioiZavoylonSosani01.jpg
-   служба: Нине Грузинской служба
+   служба:
+    - Нине Грузинской служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_14.pdf
+    - https://azbyka.ru/days/caa/283
+    - https://azbyka.ru/days/caa/284
    событие:
     - год: ок.280/296
       описание: ржд
@@ -53,10 +59,9 @@
       описание: прен.1
       место: Киккская обитель. Кипр
    помин:
+    - дата: 14.01
+      календарь: рпц,греч
+      описание: прств
     - дата: 19.05
       календарь: груз,греч
       описание: приш
-    - дата: 14.01
-      собор: груз
-      календарь: греч
-      описание: прств
