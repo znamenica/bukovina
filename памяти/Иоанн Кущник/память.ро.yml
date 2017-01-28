@@ -2,14 +2,41 @@
 Иоанн Кущник:
    имя: Иоанн
    прозвище: Кущник
+   описание: инок Неусыпающский (Вифинский); кущник Константинопольский
    чин: прп
+   собор: виз?,виф?
    вики: http://drevo-info.ru/articles/8674.html
-   бытие: http://azbyka.ru/days/sv-ioann-kushchnik
-   образ: http://pravicon.com/icon-1952
-   помин:
-      год: ок. 450
-      дата: 15.01
+   бытие:
+    - http://azbyka.ru/days/sv-ioann-kushchnik
+    - http://calendar.rop.ru/svyat1/jan15-ioann.html
+    - https://azbyka.ru/otechnik/Dmitrij_Rostovskij/zhitija-svjatykh/56
+   образ:
+    - http://pravicon.com/icon-1952
+    - https://azbyka.ru/days/assets/img/saints/1783/p1b7d4chr6svdo7b2tsaeu8v53.jpg
+    - https://azbyka.ru/days/assets/img/saints/1783/p1b7d4chr61eja2nr1rr5v3va1o5.jpg
+    - https://azbyka.ru/days/assets/img/saints/1783/p1b7d4chr61cnpu811nlgsf51h8j6.jpg
+    - https://azbyka.ru/days/assets/img/saints/1783/p1b7d4chr6r8oehp1bnjh021l9r4.jpg
+   служба:
+    - Иоанну Кущнику служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_15.pdf
+   событие:
+    - год: ок.425
+      описание: ржд
+      место: Константинополь. Византия
+    - год: ок.441
+      описание: иноч
+      место: Неусыпающская обитель. Вифания
+    - год: ок.450
       описание: прств
-      служба:
-       - Иоанну Кущнику служба
-       - Павлу Фивейскому и Иоанну Кущнику служба
+      место: Константинополь. Византия
+    - год: вид.XII
+      описание: прен
+      место: Рим
+    - год: XII
+      предмет: глава
+      описание: прен.1
+      место: Безансон. Франция
+   помин:
+      дата: 15.01
+      календарь: рпц,змин,ждр
+      описание: прств
