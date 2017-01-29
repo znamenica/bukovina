@@ -6,18 +6,28 @@
    описание:
       ру: настоятель Дымский (Новгородский)
       ан: abbot of Dymsk (Novgorod)
+      гр: κτήτορας της Νόβγκοροντ
    чин: прп
    собор: слав?,рус,спб,хуты?,тихв?
    вики: http://drevo-info.ru/articles/4920.html
    бытие:
-      ру: http://azbyka.ru/days/sv-antonij-dymskij
+      ру:
+       - http://azbyka.ru/days/sv-antonij-dymskij
+       - http://calendar.rop.ru/svyat1/jan17-antoni-dymski.html
       ан: http://www.holytrinityorthodox.com/calendar/los/June/24-05.htm
+      гр: http://www.saint.gr/1289/saint.aspx
    образ:
     - http://pravicon.com/icon-1218
     - http://drevo-info.ru/images/003/010284.jpg
+    - http://www.saint.gr/photos/standard/0117/AgiosAnthonyDimsk01s.jpg
+    - https://azbyka.ru/days/assets/img/saints/2422/p1amvl35nh18bc10tt1t9p18dg84.png
+    - https://azbyka.ru/days/assets/img/saints/2422/p1amvl35ngu52jngoe128190q3.jpg
+    - https://azbyka.ru/days/assets/img/saints/2422/p1b7g9fjneuhm11na3k23igh6s3.jpg
+    - https://azbyka.ru/days/assets/img/saints/2422/p1b7g9gmpg1961sht1hsh1d5b11rv3.png
    служба:
     - Антонию Дымскому служба
     - http://azbyka.ru/days/assets/upload/minei/06/minea_06_24.pdf
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_17.pdf
     - http://azbyka.ru/days/caa/638
    событие:
     - год: ок. 1157 
@@ -25,6 +35,7 @@
     - год: до 1192
       описание: иноч
       место: Хутынский монастырь. Новгородщина
+      тез: Антоний Великий
     - год: ок. 1224
       дата: 24.06
       описание: прств
@@ -37,7 +48,8 @@
       описание: сокр
    помин:
     - дата: 17.01
-      описание: само
+      календарь: рпц,греч
+      описание: иноч
     - дата: 24.06
       календарь: рпц,рпца
       описание: прств
