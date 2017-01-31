@@ -1,17 +1,25 @@
 ---
 Маркиан Киррский:
-   имя: Маркиан
-   описание: затворник и пустынник Киррский, Киринейский
-   чин: прп
+   имя:
+      ру: Маркиан
+      гр: Μαρκιανός
+   описание: затворник и пустынник Киррский
+   чин: прпс
+   собор: сир?
    вики: http://drevo-info.ru/articles/4926.html
-   бытие: http://azbyka.ru/days/sv-markian-kirskij-kirinejskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-markian-kirskij-kirinejskij
+       - http://calendar.rop.ru/svyat1/jan18-markian.html
+      гр: http://www.saint.gr/1294/saint.aspx
    образ: http://azbyka.ru/days/assets/img/saints/1031/p189993qte1s9cr11te82mc11643.jpg
    событие:
       год: 388
       описание: прств
-      место: пустынь. Кирье
+      место: пустынь. Кирье. вид.Сирия
    помин:
     - дата: 18.01
+      календарь: рпц,греч
       описание: само
     - дата: 02.11
       описание: само

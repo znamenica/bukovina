@@ -1,11 +1,12 @@
 ---
 Кирилл и Мария Радонежские:
-   описание: родители Сергия Радонежского; иноки и чудотворцы Радоженжские и Хотьковские
+   описание: родители Сергия Радонежского; иноки и чудотворцы Радонежские и Хотьковские
    чин: брак
    крат: кмб
-   собор: рднж,брак,ряр,рост
+   собор: рднж?,брак?,ряр?,рост?
    вики: http://drevo-info.ru/articles/13880.html
-   бытие: http://azbyka.ru/days/sv-kirill-radonezhskij
+   бытие:
+    - https://azbyka.ru/days/saint/2923/5832/group
    образ:
     - http://azbyka.ru/days/assets/img/saints/2923/p1900e060476k1l1k1mtt1q6618da4.jpg
     - http://azbyka.ru/days/assets/img/saints/2923/p1900e06031g0c180p1jg417s8ovp3.jpg
@@ -18,6 +19,7 @@
     - http://hotkovo.net.ru/sergiy/prayers/servkm.zip
     - http://hotkovo.net.ru/sergiy/prayers/akakm.zip
     - http://ustavschik.livejournal.com/29884.html
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_28.pdf
    событие:
     - год: вид.вт.пол.XIII
       описание: само
@@ -36,10 +38,10 @@
       бытие: http://azbyka.ru/tserkov/svyatye/trubachev_kanonizatsiya_svyatyh_09-all.shtml
    помин:
     - дата: 18.01
+      календарь: рпц
       описание: само
     - дата: чт.по мытф
       описание: само
     - дата: 28.09
       календарь: рпц,змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_28.pdf
