@@ -1,12 +1,42 @@
 ---
 Макарий Александрийский:
-   имя: Макарий
-   прозвище: Александрийский священноинок
-   чин: прп
+   имя:
+      ру: в иночестве Макарий
+      гр: Μακάριος
+   прозвище: Градский
+   описание:
+      ру: купец; пустынник; настоятель Келлийский (Нитрийский); священноинок Келлийский, Александрийский
+      гр: Αλεξανδρεύς
+   чин: прпс
+   собор: копт?,нитр?
    вики: http://drevo-info.ru/articles/8701.html
-   бытие: http://pravicon.com/info-2820
-   образ: http://pravicon.com/icon-2313
+   бытие:
+      ру:
+       - http://pravicon.com/info-2820
+       - http://calendar.rop.ru/svyat1/jan19-makari-alexandrijskij.html
+       - https://azbyka.ru/days/sv-makarij-aleksandrijskij
+      гр: http://www.saint.gr/1141/saint.aspx
+   образ:
+    - http://pravicon.com/icon-2313
+    - https://azbyka.ru/days/assets/img/saints/3087/p1b7qaoec2ckhh79jr323eul05.jpg
+    - http://www.saint.gr/photos/standard/0119/OsiosMacariosAlexandria01.jpg
+   отченик: https://azbyka.ru/otechnik/Makarij_Aleksandrijskij/
+   событие:
+    - год: 295
+      описание: ржд
+      место: Александрия. Египет
+    - год: ок.335
+      описание: крещ
+    - год: ок.335
+      описание: иноч
+    - год: ок.316
+      описание: чтец
+    - год: 333-334
+      описание: свящ
+    - год: 394-395
+      описание: прств
+      место: вид.Скитская пустыня. Египет
    помин:
-      год: 394-395
       дата: 19.01
+      календарь: рпц,греч
       описание: прств

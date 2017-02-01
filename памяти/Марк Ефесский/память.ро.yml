@@ -1,13 +1,62 @@
 ---
 Марк Ефесский:
-   имя: Марк
-   прозвище: Евгеник, Эфесский, Ефесский святитель
+   имя:
+      ру: в иночестве Марк, в крещении Мануил
+      гр: Μάρκος,
+   фамилия:
+      ру: Евгеник
+      гр: Ευγενικός
+   описание: инок Антигонский, Манганский (Константинополь); святитель Эфесский (Ефесский); исповедник Флорентийский
    чин: исвт
+   собор: виз?,антг?,лид?,флор?
    вики: http://drevo-info.ru/articles/4934.html
-   бытие: http://pravicon.com/info-2880
-   образ: http://pravicon.com/icon-2377
-   помин:
-      год: 1457
-      дата: 19.01
+   бытие:
+      ру:
+       - http://pravicon.com/info-2880
+       - http://calendar.rop.ru/svyat1/jan19-mark.html
+       - https://azbyka.ru/days/sv-mark-evgenik
+      гр: http://www.saint.gr/1135/saint.aspx
+   образ:
+    - http://pravicon.com/icon-2377
+    - https://azbyka.ru/days/assets/img/saints/842/p1b7q4gp5d1p901a971ad61par1aj63.jpg
+    - https://azbyka.ru/days/assets/img/saints/842/p1b7q4e1k3df1k8opgh1iq3tm05.jpg
+    - https://azbyka.ru/days/assets/img/saints/842/p1b7q4duqr1m5ecp4jn711da3c3.jpg
+    - https://drevo-info.ru/images/003/011789.jpg
+    - https://drevo-info.ru/images/001/001424.jpg
+    - http://www.saint.gr/filesnew/03/1135/photos/AgiosMarkosEugenikos04.jpg
+    - http://www.saint.gr/filesnew/03/1135/photos/AgiosMarkosEugenikos01.jpg
+    - http://www.saint.gr/filesnew/03/1135/photos/AgiosMarkosEugenikos02.jpg
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Κατά ημερομηνία (Διάφοροι)/01 Ιανουάριος/19 Μάρκος Ευγενικός.jpg
+    - http://www.saint.gr/filesnew/03/1135/photos/AgiosMarkosEugenikos05.jpg
+    - http://www.saint.gr/filesnew/03/1135/photos/AgiosMarkosEugenikos06.jpg
+    - http://www.saint.gr/filesnew/03/1135/photos/AgiosMarkosEugenikos07.jpg [Φώτης Κόντογλου]
+   служба:
+    - Марку Ефесскому служба
+    - https://azbyka.ru/days/worship/652
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_19.pdf
+   отечник: https://azbyka.ru/otechnik/Mark_Efesskij/
+   событие:
+    - год: 1392
+      описание: ржд
+      место: Константинополь. Византия
+    - год: 1418
+      описание: иноч
+      место: обитель. Антигон остров
+    - год: 1437
+      описание: свят
+      место: вид.Константинополь. Византия
+    - год: 1457/1444
       описание: прств
-      служба: Марку Ефесскому служба
+      место: вид.Константинополь. Византия
+    - год: по 1457
+      описание: прен
+      место: вид.Ефес. Лидия
+    - год: 1734
+      описание: просл
+      собор: виз
+      чин: свт
+      место: вид.Константинополь. Византия
+   помин:
+      дата: 19.01
+      календарь: рпц,греч,змин
+      описание: прен

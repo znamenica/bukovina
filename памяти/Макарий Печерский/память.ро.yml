@@ -7,13 +7,16 @@
       ру: диякон; подвизался в Дальних Печерах
       гр: Διάκονος εκ Ρωσίας
    чин: прп
-   собор: дпеч,киев?
+   собор: дпеч,печ,киев?
    вики: http://drevo-info.ru/articles/4931.html
    бытие:
       ру:
        - http://www.saint.gr/1143/saint.aspx
        - http://azbyka.ru/days/sv-makarij-pecherskij-1
+       - http://calendar.rop.ru/svyat1/jan19-makari-2pecher.html
+      гр: http://www.saint.gr/1143/saint.aspx
    образ: http://azbyka.ru/days/assets/img/saints/4063/p18e57f8s01erb6gd1kf119e2lo64.jpg
+   служба: https://azbyka.ru/days/assets/upload/minei/01/minea_01_19.pdf
    событие:
     - год: вид.XIII
       описание: ржд
@@ -21,7 +24,7 @@
     - год: вид.XIII
       описание: иноч
       место: вид.Печерская обитель. Киев
-      тез: Макарий Египетский
+      тез: Макарий Великий,Макарий Александрийский
     - год: XIII-XIV
       описание: прств
       место: Печерская обитель. Киев

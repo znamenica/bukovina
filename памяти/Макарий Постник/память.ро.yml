@@ -7,14 +7,16 @@
       ру: постник; диякон; подвизался в Ближних Печерах
       гр: Νηστευτής εκ Ρωσίας
    чин: прп
-   собор: бпеч
+   собор: бпеч,печ,киев?
    вики: http://drevo-info.ru/articles/4932.html
    бытие:
       ру:
        - http://calendar.rop.ru/svyat1/jan19-makari-2pecher.html
        - http://azbyka.ru/days/sv-makarij-pecherskij
       гр: http://www.saint.gr/1133/saint.aspx
-   служба: Макарию Постнику служба
+   служба:
+    - Макарию Постнику служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_19.pdf
    событие:
     - год: вид.XII
       описание: иноч
