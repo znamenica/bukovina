@@ -9,7 +9,9 @@
    собор: серб?,ссвт?,самс,блгд?,срем?
    вики: http://drevo-info.ru/articles/8761.html
    образ: http://drevo-info.ru/images/003/011829.jpg
-   служба: Максиму Сербскому служба
+   служба:
+    - Максиму Сербскому служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_18.pdf
    событие:
     - год: вид.сер.XV
       описание: ржд

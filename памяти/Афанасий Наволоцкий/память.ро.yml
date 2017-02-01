@@ -12,7 +12,9 @@
        - http://azbyka.ru/days/sv-afanasij-navolockij
        - http://calendar.rop.ru/svyat1/jan18-afanasi-navolocki.html
       гр: http://www.saint.gr/1130/saint.aspx
-   служба: Афанасию Наволоцкому служба
+   служба:
+    - Афанасию Наволоцкому служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_18.pdf
    событие:
     - год: вид.XV-XVI
       описание: ржд
