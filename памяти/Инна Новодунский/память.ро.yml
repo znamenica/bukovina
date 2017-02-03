@@ -3,6 +3,7 @@
    имя:
       ру: Инна
       ан: Inna
+      гр: Ιννάς
    описание:
       ру: мученик Новодунский; первомученик славянский
       ан: disciple of Apostle Andrew in Scythia
@@ -10,8 +11,13 @@
    собор: слав?
    вики: http://drevo-info.ru/articles/6247.html
    бытие:
-      ру: http://azbyka.ru/days/sv-inna-novodunskij
-   образ: http://drevo-info.ru/images/001/001102.jpg
+      ру:
+       - http://azbyka.ru/days/sv-inna-novodunskij
+       - http://calendar.rop.ru/svyat1/jan20-inna-pinna.html
+      гр: http://www.saint.gr/3324/saint.aspx
+   образ:
+    - http://drevo-info.ru/images/001/001102.jpg
+    - http://www.saint.gr/photos/standard/0120/AgiosInnas01.jpg
    служба: Инне, Пинне, Римме Новодунским служба
    событие:
     - год: I-II
@@ -22,6 +28,7 @@
       образ: http://azbyka.ru/days/assets/img/saints/2381/c6bb0e32c6cd1a239a23013ac19b2240.jpg
    помин:
     - дата: 20.01
+      календарь: рпц,греч
       описание: само
     - дата: 20.06
       календарь: рпц,рпца

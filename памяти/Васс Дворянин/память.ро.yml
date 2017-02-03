@@ -1,14 +1,18 @@
 ---
-Евсевий Дворянин:
+Васс Дворянин:
    имя:
-      ру: Евсевий
-      гр: Ευσέβιος
+      ру: Васс
+      гр: Βάσσος
    прозвище: Дворянин
-   описание: придворный и мученик Никомидийский; рассечён язычниками
+   описание: придворный и мученик Никомидийский; изрублен язычниками
    чин: мч
    собор: виф?,двор?
-   вики: http://drevo-info.ru/articles/8706.html
-   бытие: http://azbyka.ru/days/sv-evsevij-nikomidijskij
+   вики: http://drevo-info.ru/articles/8705.html
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-vass-nikomidijskij
+       - http://calendar.rop.ru/svyat1/jan20-vass-evsevi.html
+      гр: http://www.saint.gr/3323/saint.aspx
    событие:
     - год: 303
       описание: крещ

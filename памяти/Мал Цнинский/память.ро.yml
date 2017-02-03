@@ -1,12 +1,12 @@
 ---
-Мал Агломазовский:
+Мал Цнинский:
    имя: в крещении Павел
    описание: крестьянин Агломазовский; мученик Агломазовский, Цнинский; расстрелян безбожниками
    чин: мчр
    собор: нмр,ряз,сасо?
    бытие:
-    - http://azbyka.ru/days/sv-pavel-aglomazovskij
-    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slALu2fOVyAH3yYOycsOueZ6WCTcyUceKfTb7ZNbu2dOiU**
+    - http://azbyka.ru/days/sv-pavel-aglomazovskij-1
+    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5slALu2fOVyAH3yYOycsOueZ6WCTcyUceKf60AlA5tmNKNyV8Kfc**
    событие:
     - год: 1918
       дата: 28.11/29.10
