@@ -5,6 +5,7 @@
    чин: прп
    бытие: http://pravicon.com/info-2261
    образ: http://pravicon.com/icon-1728
+   служба: https://azbyka.ru/days/assets/upload/minei/01/minea_01_20.pdf
    событие:
     - год: вид.вт.пол.XV
       описание: иноч
@@ -21,4 +22,5 @@
       описание: просл
    помин:
       дата: 20.01
+      календарь: змин
       описание: иноч

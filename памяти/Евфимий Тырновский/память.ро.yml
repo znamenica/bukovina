@@ -13,7 +13,9 @@
    образ:
     - http://pravicon.com/icon-1729
     - http://www.saint.gr/photos/standard/0120/AgiosEuthimiosTirnovo01.jpg
-   служба: Евфимию Тырновскому служба
+   служба:
+    - Евфимию Тырновскому служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_20.pdf
    событие:
     - год: 1325-1330
       описание: ржд
@@ -32,5 +34,5 @@
       место: Тырново
    помин:
       дата: 20.01
-      календарь: греч
+      календарь: греч,змин
       описание: иноч

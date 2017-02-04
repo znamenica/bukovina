@@ -30,7 +30,10 @@
     - http://www.saint.gr/photos/standard/0120/OsiosEuthimiosMegas05.jpg
     - http://www.saint.gr/photos/standard/0117/AgioiAntoniosEuthimiosSavvasIgiasmenos01.jpg
       [1766 μ.Χ. - Νέα Σκήτη, Άγιον Όρος]
-   служба: Евфимию Великому служба
+   служба:
+    - Евфимию Великому служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_20.pdf
+    - https://azbyka.ru/days/caa/392
    событие:
     - год: 377
       описание: ржд
@@ -68,7 +71,7 @@
       место: Свято-Троицкая Александро-Невская лавра. Санкт-Петербург
    помин:
     - дата: 20.01
-      календарь: рпц,греч
+      календарь: рпц,греч,змин
       описание: прств
     - дата: 07.05
       календарь: греч

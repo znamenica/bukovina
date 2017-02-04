@@ -12,7 +12,9 @@
    вики: http://drevo-info.ru/articles/8711.html
    бытие: http://azbyka.ru/days/sv-lavrentij-pecherskij
    образ: http://www.pigizois.net/laura_kievou/osios%20layrentios.jpg
-   служба: Лаврентию Затворнику служба
+   служба:
+    - Лаврентию Затворнику служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_20.pdf
    событие:
     - год: XIII-XIV
       описание: прств
@@ -22,5 +24,5 @@
       место: Феодосиевы пещеры. Киев
    помин:
       дата: 20.01
-      календарь: рпц
+      календарь: рпц,змин
       описание: само

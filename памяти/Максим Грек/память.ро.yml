@@ -1,22 +1,40 @@
 ---
 Максим Грек:
-   имя: Максим, в крещении Михаил
+   имя:
+      ру: в иночестве Максим, в крещении Михаил
+      гр: Μάξιμος
+   прозвище:
+      ру: Грек
+      гр: Γραικός
    фамилия: Триволис
-   прозвище: Грек
+   описание: инок Ватопедский, Радонежский; заточник и страстотерпец Московский; заточник Отрочьский (Тверской)
    чин: прп
-   собор: слав,рус,мск,твер,рднж,аф
+   собор: слав?,рус?,мск,твер,рднж,аф,втпд?
    вики:
     - http://drevo-info.ru/articles/12125.html
     - http://ru.wikipedia.org/Максим_Грек
-   бытие: http://azbyka.ru/days/sv-maksim-grek
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-maksim-grek
+       - http://calendar.rop.ru/svyat1/jan21-maxim-grek.html
+      гр: http://www.saint.gr/957/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/002100.jpg
     - http://pravicon.com/icon-2338
+    - http://www.saint.gr/photos/standard/0121/AgiosMaximosGreek03.jpg
+    - http://www.saint.gr/photos/standard/0121/AgiosMaximosGreek01.jpg
+    - http://www.saint.gr/photos/standard/0121/AgiosMaximosGreek02.jpg
+    - http://vatopaidi.files.wordpress.com/2010/03/agios-maximos-o-graikos-67.jpg
+    - http://vatopaidi.files.wordpress.com/2010/03/agios-maximos-vatopaidinos-o-graikos-01.jpg
+    - http://vatopaidi.files.wordpress.com/2011/01/agios-maximos-113.jpg
+   служба:
+    - Максиму Греку служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_21.pdf
    событие:
     - год: 1470
       дата: 21.01
       описание: ржд
-      место: Арта. Албания
+      место: Арта. (ныне Албания)
     - год: 1507
       дата: 21.01
       описание: иноч
@@ -35,9 +53,21 @@
     - год: 1996
       дата: 20.06
       описание: обр
+    - год: по 1996
+      предмет: часть
+      описание: прен
+      место: Арта
+    - год: по 1996
+      предмет: часть.1
+      описание: прен.1
+      место: Спарта
+    - год: по 1996
+      предмет: часть.2
+      описание: прен.2
+      место: Российская часовня. Аттика
    помин:
     - дата: 21.01
+      календарь: рпц,греч,змин
       описание: прств
-      служба: Максиму Греку служба
     - дата: 21.06
       описание: обр

@@ -1,11 +1,18 @@
 ---
 Закланная образ:
-   имя: Закланный
+   имя: Закланная (Эсфагмени)
    описание: образ Богородицы
    чин: обр
+   собор: втпд?
    вики: http://drevo-info.ru/articles/8791.html
-   бытие: http://azbyka.ru/days/ikona-zaklannaja
+   бытие:
+    - http://azbyka.ru/days/ikona-zaklannaja
+    - http://visitafon.ru/history/monastery/vatoped/
+   образ: https://drevo-info.ru/images/002/007092.jpg
+   событие:
+      год: вид.по 972
+      описание: прен
+      место: Димитрие-Солунский придел. Благовещенский собор. Ватопедская обитель. Афон
    помин:
-      год: III
       дата: 21.01
-      описание: явл
+      описание: само

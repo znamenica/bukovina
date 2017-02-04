@@ -20,11 +20,15 @@
     - http://www.zografiki.com/components/com_virtuemart/shop_image/product/_________________4a5355a85caab.jpg [www.zografiki.com©]
     - http://vatopaidi.files.wordpress.com/2010/05/panagia-paramythia-monis-kykkou2.jpg [Ι. Μ. Κύκκου]
     - https://drevo-info.ru/images/001/001758.jpg
-   служба: Отраде образу служба
+   служба:
+    - Отраде образу служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_21.pdf
+    - https://azbyka.ru/days/caa/573
+    - https://azbyka.ru/days/caa/393
    событие:
       год: 807
       описание: чудо
-      место: Афон
+      место: вид.Ватопедская обитель. Афон
    помин:
       дата: 21.01
       календарь: рпц,греч

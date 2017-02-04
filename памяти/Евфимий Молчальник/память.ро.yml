@@ -13,7 +13,9 @@
    бытие:
     - http://calendar.rop.ru/svyat1/jan20-evfimi-pecher.html
     - http://azbyka.ru/days/sv-evfimij-pecherskij
-   служба: Евфимию Молчальнику служба
+   служба:
+    - Евфимию Молчальнику служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_20.pdf
    событие:
     - год: XIV
       описание: прств
@@ -23,5 +25,5 @@
       место: Феодосиевы пещеры. Киев
    помин:
       дата: 20.01
-      календарь: рпц
+      календарь: рпц,змин
       описание: само

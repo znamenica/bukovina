@@ -11,9 +11,7 @@
    собор: виз?,босф?,колх?,карф?,крит?,копт?,асми
    вики: http://drevo-info.ru/articles/6646.html
    бытие:
-      ру:
-       - http://calendar.rop.ru/svyat1/jan21-maxim-grek.html
-       - http://azbyka.ru/days/sv-maksim-ispovednik
+      ру: http://azbyka.ru/days/sv-maksim-ispovednik
       гр: http://www.saint.gr/967/saint.aspx
    образ:
     - http://pravicon.com/icon-2340
@@ -30,6 +28,17 @@
     - http://azbyka.ru/days/assets/img/saints/4547/acba7d62b5a70a179e1f004dfb3f5317.jpg
     - http://azbyka.ru/days/assets/img/saints/4547/f7163cad075a774060b8094fab2ba02d.jpg
     - http://azbyka.ru/days/assets/img/saints/4547/4dbf701b6a1ab95c6e82af6285edbab9.jpg
+    - https://azbyka.ru/days/assets/img/saints/4547/p1aqgvu83a10um70b2kp1vkou5n7.jpg
+    - https://azbyka.ru/days/assets/img/saints/4547/p1aqgvu83a1r8g70acap13at1j7v8.png
+    - https://azbyka.ru/days/assets/img/saints/4547/p1904s81l71r5v6r4nn73ha7j06.jpg
+    - https://azbyka.ru/days/assets/img/saints/4547/p1aqgvu83b8tpku51s3oouvgbva.png
+    - https://azbyka.ru/days/assets/img/saints/4547/p1aqgvtupp6k2u2khp7vp0198v3.jpg
+    - https://azbyka.ru/days/assets/img/saints/4547/p1aqgvtupr8s31oau1kq816s274p4.jpg
+    - https://azbyka.ru/days/assets/img/saints/4547/p1904s81l79ij14na1olp19rg1g567.jpg
+    - https://azbyka.ru/days/assets/img/saints/4547/p1904s81l5d8acu61nhg1lfvkvj3.jpg
+    - https://azbyka.ru/days/assets/img/saints/4547/p1aqgvu83be6b1i4daeo12bg1p1t9.png
+    - https://azbyka.ru/days/assets/img/saints/4547/p1aqgvu83c1g5t1vh01fm91l8jt66b.png
+    - https://azbyka.ru/days/assets/img/saints/4547/p18f50os1r1m60t06148b4u4fbb3.jpg
     - http://www.saint.gr/photos/standard/0121/AgiosMaximosOmologitis06.jpg
     - http://www.saint.gr/photos/standard/0121/AgiosMaximosOmologitis01.jpg
     - http://www.saint.gr/photos/standard/0121/AgiosMaximosOmologitis02.jpg
@@ -37,7 +46,10 @@
     - http://www.saint.gr/photos/standard/0121/AgiosMaximosOmologitis04.jpg
     - http://www.saint.gr/photos/standard/0121/AgiosMaximosOmologitis05.jpg
    отечник: http://azbyka.ru/otechnik/Maksim_Ispovednik/
-   служба: Максиму Исповеднику служба
+   служба:
+    - Максиму Исповеднику служба
+    - Максиму Исповеднику и Неофиту Никейскому служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_21.pdf
    событие:
     - год: 582
       описание: ржд
@@ -60,9 +72,8 @@
       место: Павлова обитель. Афон
    помин:
     - дата: 21.01
-      календарь: рпц,греч
+      календарь: рпц,греч,змин
       описание: само
-      служба: Максиму Исповеднику и Неофиту Никейскому служба
     - дата: 13.08
       описание: прств,прен
       календарь: змин,греч,рпц
