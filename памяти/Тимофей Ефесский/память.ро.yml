@@ -1,11 +1,49 @@
 ---
 Тимофей Ефесский:
-   имя: Тимофей, Феотим
-   описание: придворный; праведник Ефесский
-   чин: прав
-   собор: двор,лид,2де
-   вики: http://drevo-info.ru/articles/25353.html
+   имя:
+      ру: Тимофей
+      гр: Τιμόθεος
+   описание:
+      ру: грек и еврей; апостол от 70-ти; святитель и мученик Ефесский; закаменован язычниками
+      гр: Απόστολος
+   чин: ап
+   собор: ап70,лика?,лид?,мчч?
+   вики: http://drevo-info.ru/articles/2010.html
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-timofej
+       - http://calendar.rop.ru/svyat1/jan22-timofei.html
+       - https://azbyka.ru/otechnik/Dmitrij_Rostovskij/zhitija-svjatykh/74
+      гр: http://www.saint.gr/1150/saint.aspx
+   образ:
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Κατά ημερομηνία (Διάφοροι)/01 Ιανουάριος/22 Τιμόθεος Απόστολος.jpg
+    - http://www.saint.gr/photos/standard/0122/AgiosTimotheos01.jpg
+    - http://www.saint.gr/photos/standard/0122/AgiosTimotheos03.jpg
+    - https://azbyka.ru/days/assets/img/saints/1705/p1b7uvk51u1hhttao1b071u87m6c5.png
+    - https://azbyka.ru/days/assets/img/saints/1705/p1b7uvk51u4rq1ubc1suf16mdfs44.jpg
+    - https://azbyka.ru/days/assets/img/saints/1705/p1adq6h4751ldiu9qc7drsp1ccs3.jpg
+    - https://azbyka.ru/days/assets/img/saints/1705/p1904sni9ho2j4ffbrb1aca1lv24.jpg
+    - https://azbyka.ru/days/assets/img/saints/1705/p1904sni9h1sa7183p180usbt1m015.jpg
+    - https://azbyka.ru/days/assets/img/saints/1705/p1b7uvk51t1o5ucvq1t2lkdq4r93.jpg
+    - https://drevo-info.ru/images/003/013979.jpg [Фреска (1546 г.). Храм свт. Николая, монастырь Ставроникита, Афон]
+   служба:
+    - Тимофею Семидесятнику служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_22.pdf
    событие:
-      год: ок. 117
+    - год: ок.16
+      описание: ржд
+      место: Листры. Ликаония
+    - год: 52
+      описание: крещ
+      место: Листры. Ликаония
+    - год: ок. 96
       описание: прств
       место: Ефес. Лидия
+      образ: https://drevo-info.ru/images/003/013978.jpg [Мученичество ап. Тимофея. Фреска (ок. 1350 г.). Храм Христа Пантократора, Дечаны, Косово, Сербия]
+    - год: 337-361
+      описание: прен
+      место: Константинополь. Византия
+   помин:
+      дата: 22.01
+      календарь: рпц,греч,ждр,змин
+      описание: само

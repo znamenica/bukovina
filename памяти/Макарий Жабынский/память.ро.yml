@@ -3,17 +3,25 @@
    имя: в схиме Макарий, в иночестве Онуфрий
    описание: настоятель Жабынский (Белевский)
    чин: прп
-   собор: жабы,белв
+   собор: жабы?,белв?,тул
    вики: http://drevo-info.ru/articles/3976.html
-   бытие: http://azbyka.ru/days/sv-makarij-zhabynskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-makarij-zhabynskij
+       - http://calendar.rop.ru/svyat1/jan22-makari-zabynski.html
+      гр: http://www.saint.gr/1151/saint.aspx
    образ: http://pravicon.com/icon-2317
    служба:
     - Макарию Жабынскому служба
     - http://azbyka.ru/days/caa/104
     - http://azbyka.ru/days/caa/105
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_22.pdf
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_22.pdf
    событие:
     - год: 1539
       описание: ржд
+    - год: 1539
+      описание: иноч
     - год: 1623
       дата: до 22.01
       время: ночь
@@ -34,9 +42,8 @@
       описание: обр.1
    помин:
     - дата: 22.01
-      календарь: ипдл
+      календарь: ипдл,рпц,змин
       описание: пгрб
     - дата: 22.09
       календарь: ипдл,рпц,змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_22.pdf
