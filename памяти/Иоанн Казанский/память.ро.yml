@@ -1,14 +1,27 @@
 ---
 Иоанн Казанский:
-   имя: Иоанн
-   описание: Казанский
+   имя:
+      ру: в крещении Иоанн
+      гр: Ιωάννης
+   описание:
+      ру: мученик Казанский
+      гр: Μάρτυρας εκ Καζάν
    чин: мч
-   собор: 14мк
+   собор: 14мк,ниж?,каз?
    вики: http://drevo-info.ru/articles/8753.html
-   бытие: http://azbyka.ru/days/sv-ioann-kazanskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-ioann-kazanskij
+       - http://calendar.rop.ru/svyat1/jan24-ioann.html
+      гр: http://www.saint.gr/3533/saint.aspx
    образ:
     - http://pravicon.com/icon-1944
     - http://drevo-info.ru/images/002/006887.jpg
+    - https://azbyka.ru/days/assets/img/saints/1046/p1b81gckkt1klr17qm1tid10ejpia3.jpg
+    - https://azbyka.ru/days/assets/img/saints/1046/p1b81gcmu81oki1fhu6pb11411j6g5.jpg
+   служба:
+    - Иоанну Казанскому служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_24.pdf
    событие:
     - год: XV-XVI
       описание: ржд
@@ -16,7 +29,8 @@
     - год: 1529
       дата: 24.01
       описание: прств
+      место: Казань
    помин:
       дата: 24.01
+      календарь: рпц,греч
       описание: прств
-      служба: Иоанну Казанскому служба

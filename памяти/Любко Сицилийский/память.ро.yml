@@ -1,25 +1,22 @@
 ---
-Вавила Сицилийский:
+Любко Сицилийский:
    имя:
-      ру: Вавила
-      гр: Βαβύλας
+      ру: Агапий (Любко)
+      гр: Αγάπιος
    описание:
       ру: отшельник; священник; мученик Сикелийский (Сицилийский); зарублен язычниками
       гр: εν Σικελία
    чин: прмч
-   собор: сир?,сиц?
-   вики: http://drevo-info.ru/articles/8755.html
+   собор: сиц?
+   вики: http://drevo-info.ru/articles/8756.html
    бытие:
       ру:
-       - http://azbyka.ru/days/sv-vavila-sicilijskij
+       - http://azbyka.ru/days/sv-agapij-sicilijskij
        - http://calendar.rop.ru/svyat1/jan24-vavila-2uch.html
       гр: http://www.saint.gr/3516/saint.aspx
    событие:
     - год: III
       описание: ржд
-      место: Антиохия. Сирия/Реупол
-    - год: III
-      описание: свящ
     - год: III
       описание: прств
       место: Сицилия
