@@ -1,13 +1,15 @@
 ---
 6-й Вселенский собор:
    имя: Трулльский
-   описание: собор отцоы 6-го Вселенского Собора
+   описание: собор отцов 6-го Вселенского Собора
    чин: сбр
    крат: 6вс
-   собор: виз
+   собор: виз?
    вики: http://drevo-info.ru/articles/26531.html
    бытие:
-      ру: http://azbyka.ru/days/sv-vi-vselenskij-sobor
+      ру:
+       - http://azbyka.ru/days/sv-vi-vselenskij-sobor
+       - http://calendar.rop.ru/svyat1/jan23-6-sobor.html
       гр: http://www.saint.gr/2393/saint.aspx
    образ:
     - http://www.saint.gr/photos/standard/0914/STOikoumenikiSinodos02.jpg [Άγιον Όρος, Μεγίστη Λαύρα]
@@ -18,6 +20,9 @@
       описание: само
       место: Константинополь. Византия
    помин:
-      дата: 14.09
+    - дата: 23.01
+      календарь: рпц
+      описание: само
+    - дата: 14.09
       календарь: греч
       описание: само

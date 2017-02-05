@@ -3,7 +3,7 @@
    описание: собор новомучеников и исповедников Русской Церкви
    чин: сбр
    крат: нмр
-   собор: рус
+   собор: рус?,слав?
    бытие: http://azbyka.ru/days/sv-sobor-novomuchenikov-i-ispovednikov-rossijskih
    бытие: http://drevo-info.ru/articles/2769.html
    образ:
@@ -21,6 +21,9 @@
     - http://nbt.rop.ru/?q=texts/akafist/227 [Текст утвержден Священным Синодом Русской
       Православной Церкви 10 октября 2009 года (журнал № 95)]
     - http://ustavschik.livejournal.com/65590.html
+    - https://azbyka.ru/days/worship/649
+    - https://azbyka.ru/days/caa/404
+    - https://azbyka.ru/days/caa/594
    событие:
     - год: 1917-1980
       описание: прств

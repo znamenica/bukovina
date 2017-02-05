@@ -10,7 +10,9 @@
        - http://azbyka.ru/days/sv-anastasij-pecherskij
        - http://calendar.rop.ru/svyat1/jan22-anastasi.html
       гр: http://www.saint.gr/1145/saint.aspx
-   служба: Анастасию Ближне-Печерскому служба
+   служба:
+    - Анастасию Ближне-Печерскому служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_22.pdf
    событие:
     - год: вид.перв.пол.XII
       описание: иноч
