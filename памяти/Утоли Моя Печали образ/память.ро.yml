@@ -17,7 +17,11 @@
    образ:
     - http://www.saint.gr/photos/standard/0125/PanagiaParamythia01.jpg
     - https://drevo-info.ru/images/001/000894.jpg
-   служба: Утоли Моя Печали образу служба
+   служба:
+    - Утоли Моя Печали образу служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_25.pdf
+    - https://azbyka.ru/days/caa/398
+    - https://azbyka.ru/days/caa/399
    событие:
     - год: 1640
       описание: прен
@@ -32,5 +36,5 @@
       место: Николо-Мирликийская церква. Кузнецы. Москва
    помин:
       дата: 25.01
-      календарь: рпц,греч
+      календарь: рпц,греч,змин
       описание: чудо
