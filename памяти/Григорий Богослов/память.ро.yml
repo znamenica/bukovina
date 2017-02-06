@@ -1,16 +1,37 @@
 ---
 Григорий Богослов:
-   имя: Григорий
-   прозвище: Богослов
-   описание: назианзин; сын Григория Назианзина и Нонны Назианзыни; святитель Константинопольский
+   имя:
+      ру: вид.в наречении Григорий
+      гр: Γρηγόριος
+   прозвище:
+      ру: Богослов, Назианзин
+      гр: Θεολόγος,
+   описание: сын Григория Назианзина и Нонны Назианзыни; святитель Назианзский, Селевкийский, Константинопольский; отшельник Арианзский
    чин: прсвт
-   собор: 3свт,2вс,капд,виз
+   собор: 3свт,2вс,капд?,виз?
    вики: http://drevo-info.ru/articles/321.html
-   бытие: http://pravicon.com/info-2101
+   бытие:
+      ру:
+       - http://pravicon.com/info-2101
+       - https://azbyka.ru/days/sv-grigorij-bogoslov
+      гр: http://www.saint.gr/1161/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/000056.jpg
     - http://pravicon.com/icon-1561
-   служба: Григорию Богослову служба
+    - https://azbyka.ru/days/assets/img/saints/2945/p1b81k7v2d19a7np1evm1pt0u5b8.jpg
+    - https://azbyka.ru/days/assets/img/saints/2945/p1b81k7v2b9uq14sahjc1hq61eit5.jpg
+    - https://azbyka.ru/days/assets/img/saints/2945/p1b81k7v2c10lf1edqj8v8cc1hju6.jpg
+    - https://azbyka.ru/days/assets/img/saints/2945/p1b81k7v2a10kurevmg8edr3qg3.jpg
+    - https://azbyka.ru/days/assets/img/saints/2945/p1904tqnou1dp6rlp1fcavc93137.jpg
+    - https://azbyka.ru/days/assets/img/saints/2945/p1904tqnot16mf179cd1ndd912fo5.jpg
+    - https://azbyka.ru/days/assets/img/saints/2945/p1904tqnoq1heb1ip7iae189ije33.jpg
+    - https://azbyka.ru/days/assets/img/saints/2945/3d5d777ec3097a9b8216b05a165a81d7.jpg
+    - https://azbyka.ru/days/assets/img/saints/2945/p18f4lbf11124114ceg5o13ijjnn3.jpg
+    - https://drevo-info.ru/images/001/000056.jpg
+   отечник: https://azbyka.ru/otechnik/Grigorij_Bogoslov/
+   служба:
+    - Григорию Богослову служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_25.pdf
    событие:
     - год: 329
       описание: ржд
@@ -41,4 +62,5 @@
     - дата: 19.01
       описание: само
     - дата: 25.01
+      календарь: рпц,греч,змин
       описание: прств

@@ -24,6 +24,7 @@
     - https://azbyka.ru/days/worship/649
     - https://azbyka.ru/days/caa/404
     - https://azbyka.ru/days/caa/594
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_25.pdf
    событие:
     - год: 1917-1980
       описание: прств
@@ -42,5 +43,5 @@
       описание: чинпр
    помин:
       дата: вс.близ 25.01
-      календарь: рпц
+      календарь: рпц,змин
       описание: само

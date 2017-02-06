@@ -3,6 +3,7 @@
    имя:
       ру: в иночестве Владимир, в крещении Василий
       ан: Vladimir,
+      гр: Βλαδίμηρος,
    отчество: Никифорович
    фамилия: Богоявленский
    описание:
@@ -10,12 +11,16 @@
          Карталинский и Кахетинский, Московский и Коломенский, Санкт-Петербургский, Киевский
          и Галицкий; доктор богословия; мученик Киевский; расстрелян безбожниками
       ан: New Hieromartyr Metropolitan of Kiev
-   чин: мстр
+      гр: Ιερομάρτυρας Μητροπολίτης Κιέβου
+   чин: мсвтр
    собор: нмр,мск,киев,спб,сам,морш?,козл?,тамб?,стрс?,кртл?,ках?,уч?
    вики: http://drevo-info.ru/articles/524.html
    бытие:
-    - http://azbyka.ru/days/sv-vladimir-bogojavlenskij
-    - http://kuz1.pstbi.ccas.ru/bin/db.exe/no_dbpath/docum/ans/ans/newmr/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu0eu0Ye8mcs0*cUOuXfiyWeuKhsOeceG00cC4ceuWd66qceeXYfi0iceXb8E*
+      ру:
+       - http://azbyka.ru/days/sv-vladimir-bogojavlenskij
+       - http://kuz1.pstbi.ccas.ru/bin/db.exe/no_dbpath/docum/ans/ans/newmr/?HYZ9EJxGHoxITYZCF2JMTdG6Xbu0eu0Ye8mcs0*cUOuXfiyWeuKhsOeceG00cC4ceuWd66qceeXYfi0iceXb8E*
+       - http://calendar.rop.ru/svyat1/jan25-vladimir-kiev.html
+      гр: http://www.saint.gr/1162/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/000091.jpg
     - http://pravicon.com/icon-1448
@@ -29,11 +34,14 @@
     - http://www.hram.info/index.php?pagename=tstvladimirservice
     - http://nazaret.kiev.ua/texts/priests/?id=1763
     - http://ustavschik.livejournal.com/65327.html
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_25.pdf
+    - https://azbyka.ru/days/worship/591
+    - https://azbyka.ru/days/caa/397
    событие:
     - год: 1848
       дата: 01.01
       описание: ржд
-      место: Малая Моршевка (Моршка). Моршанье. Тамбовщина
+      место: Малая Моршевка (Моршка). (ныне Маломоршевка. Моршанский район). Моршанский уезд. Тамбовская губерния
     - год: 1882
       дата: 13.01
       описание: свящ
@@ -79,6 +87,7 @@
       описание: чинпр
    помин:
     - дата: 25.01
+      календарь: рпц,греч
       описание: прств
     - дата: 14.06
       календарь: рпц,рпца

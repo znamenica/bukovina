@@ -1,16 +1,22 @@
 ---
 Анатолий Оптинский:
-   имя: в иночестве Анатолий, в крещении Алексей
+   имя:
+      ру: в иночестве Анатолий, в крещении Алексий, в наречении Алексей
+      гр: Ανατόλιος,,
    отчество: Моисеевич
    прозвище: Старший
-   описание: священносхимник и старец Оптинский
+   описание:
+      ру: священносхимник и старец Оптинский
+      гр: της Όπτινα
    фамилия: Зерцалов
    чин: прп
    собор: опт,клг?
    вики: http://drevo-info.ru/articles/6355.html
    бытие:
-    - http://azbyka.ru/days/sv-anatolij-optinskij-i-zercalov
-    - http://azbyka.ru/tserkov/svyatye/svyatye_i_podvizhniki_2/optinskiy_paterik_022-all.shtml
+      ру:
+       - http://azbyka.ru/days/sv-anatolij-optinskij-i-zercalov
+       - http://azbyka.ru/tserkov/svyatye/svyatye_i_podvizhniki_2/optinskiy_paterik_022-all.shtml
+      гр: http://www.saint.gr/1164/saint.aspx
    образ: http://pravicon.com/icon-1170
    служба: Анатолию Оптинскому служба
    событие:
@@ -48,4 +54,5 @@
       описание: обр
    помин:
       дата: 25.01
+      календарь: рпц,греч
       описание: прств
