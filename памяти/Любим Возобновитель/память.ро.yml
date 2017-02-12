@@ -1,14 +1,20 @@
 ---
 Любим Возобновитель:
-   имя: Давид (Любим)
+   имя:
+      ру: Давид (Любим)
+      гр: Δαυίδ
    прозвище: Возобновитель, Строитель
-   описание: царь Иверский и Абхазский
+   описание:
+      ру: царь Иверский и Абхазский
+      гр: βασιλεύς της Γεωργίας
    чин: блгв
    собор: ивер?,абх?
    вики: http://drevo-info.ru/articles/12168.html
    бытие:
-    - http://azbyka.ru/days/sv-david-iii-vozobnovitel
-    - http://calendar.rop.ru/svyat1/jan26-david.html
+      ру:
+       - http://azbyka.ru/days/sv-david-iii-vozobnovitel
+       - http://calendar.rop.ru/svyat1/jan26-david.html
+      гр: http://www.saint.gr/1176/saint.aspx
    образ:
     - http://drevo-info.ru/images/003/010344.jpg [Роспись собора Рождества Богородицы монастыря Гелати. 16-го в.]
     - http://pravicon.com/icon-1590
@@ -29,5 +35,5 @@
       описание: просл
    помин:
       дата: 26.01
-      календарь: рпц
+      календарь: рпц,греч
       описание: пгрб

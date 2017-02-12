@@ -1,10 +1,17 @@
 ---
-Божидар Студит:
-   имя: Феодор
+Божидар Студийский:
+   имя:
+      ру: вид.в иночестве Феодор
+      гр: Θεόδωρος
    отчество: Фотиевич
-   описание: Студит, настоятель Студийский
+   прозвище:
+      ру: Студит, Исповедник
+      гр: Στουδίτ, Ομολογητής
+   описание:
+      ру: инок Олимпийский; настоятель Студийский
+      гр: ηγούμενος Μονής Στουδίου
    чин: присп
-   собор: виз,виф
+   собор: виз?,виф?,студ?,прдм?
    вики:
     - http://drevo-info.ru/articles/12153.html
     - http://ru.wikipedia.org/wiki/Феодор_Студит
@@ -17,11 +24,19 @@
     - http://azbyka.ru/days/assets/img/saints/1351/fb2dee28571722eb8b0f428a82fd725d.jpg
     - http://azbyka.ru/days/assets/img/saints/1351/p18vtejrc8bm5pdl1icu16kp10kg5.jpg
     - http://azbyka.ru/days/assets/img/saints/1351/p18f0ik2q5n2hana1q9fq37ina3.jpg
+    - http://www.saint.gr/photos/standard/1111/OsiosTheodorosStuditis01.jpg
+    - http://www.saint.gr/photos/standard/1111/OsiosTheodorosStuditis02.jpg
+    - http://www.xristianos.net/wp-content/uploads/2010/11/Studite.jpg
+    - http://upload.wikimedia.org/wikipedia/commons/9/96/Studite.jpg
+    - http://www.saint.gr/photos/standard/0126/AgiosTheodoreStudion01.jpg
    отечник: http://azbyka.ru/otechnik/Feodor_Studit/
+   служба:
+    - Божидару Студиту служба
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_11.pdf
    событие:
-    - год: 758
+    - год: 758/759
       описание: ржд
-      место: Константинополь
+      место: Константинополь. Византия
     - год: вт.пол.VIII
       описание: иноч
       место: Сакудионская обитель. Олимп гора. Вифиния
@@ -31,13 +46,14 @@
       место: Принцевы острова. Предморье 
     - год: 845
       описание: прен
-      место: Иоанно-Предотеченский Студийский монастырь. Константинополь
+      место: Иоанно-Предотеченский Студийский монастырь. Константинополь. Византия
    помин:
     - дата: 26.01
+      календарь: рпц,греч
       описание: прен
+      бытие:
+         ру: http://calendar.rop.ru/svyat1/jan26-feodor.html
+         гр: http://www.saint.gr/1167/saint.aspx
     - дата: 11.11
+      календарь: змин
       описание: прств
-      служба:
-       - Божидару Студиту служба
-       - Мина Котуанский/Мине Котуанскому, Виктору и Стефаниде Дамасским, Викентию Августопольскому, и Божидару Студиту служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_11.pdf

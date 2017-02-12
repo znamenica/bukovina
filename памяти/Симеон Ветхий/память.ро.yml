@@ -10,7 +10,9 @@
    чин: прпс
    собор: сир?,син?
    вики: http://drevo-info.ru/articles/5047.html
-   бытие: http://azbyka.ru/days/sv-simeon-vethij
+   бытие:
+      ру: http://azbyka.ru/days/sv-simeon-vethij
+      гр: http://www.saint.gr/1173/saint.aspx
    событие:
     - год: вид.нач.IV
       описание: ржд
@@ -19,5 +21,5 @@
       место: вид.Аман
    помин:
       дата: 26.01
-      календарь: рпц
+      календарь: рпц,греч
       описание: само
