@@ -1,6 +1,8 @@
 ---
 Иоанн Златоуст:
-   имя: Иоанн
+   имя:
+      ру: Иоанн
+      гр: Ιωάννης
    отчество: Секундович
    прозвище: Златоуст (Златоустый)
    описание: святитель Константинопольский
@@ -27,6 +29,13 @@
     - http://azbyka.ru/days/assets/img/saints/3938/e09c26fd5935d815cbfa9c9d85b58c4c.jpg
     - http://azbyka.ru/days/assets/img/saints/3938/71a4419eb0cd7dc3a3257da7b96323d2.jpg
     - http://www.pigizois.net/sinaxaristis/01/27.jpg
+    - https://azbyka.ru/days/assets/img/saints/3938/p1at5u0m7u1fsd12qn8c91a49vhr3.png
+    - https://azbyka.ru/days/assets/img/saints/3938/p1at5u7b8g1ba651t1p681a851v9a3.png
+    - https://azbyka.ru/days/assets/img/saints/3938/p1at5v1i5v1a5414v31qvd1ih41equ3.png
+    - https://azbyka.ru/days/assets/img/saints/3938/p1at5u0m7vha81f0gb1u1q32q4m4.png
+    - https://azbyka.ru/days/assets/img/saints/3938/p1b89uedhk123r1j101fc5d6m107d3.jpg
+    - https://azbyka.ru/days/assets/img/saints/3938/p193vff80e16p31tcd160e2p61reb3.JPG
+    - https://azbyka.ru/days/assets/img/saints/3938/e09c26fd5935d815cbfa9c9d85b58c4c.jpg
    отечник: http://azbyka.ru/otechnik/Ioann_Zlatoust/
    служба:
     - Иоанну Златоусту служба
@@ -65,6 +74,11 @@
       описание: прен
       место: Константинополь. Византия
       образ: http://azbyka.ru/days/assets/img/saints/3938/eb0e41dd7256a92278857a75c9464d04.jpg
+      бытие:
+         ру: http://calendar.rop.ru/svyat1/jan27-ioann.html
+         гр: http://www.saint.gr/3342/saint.aspx
+      описание_:
+         гр: Ανακομιδή Ιερών Λειψάνων του Αγίου Ιωάννη Χρυσοστόμου Αρχιεπισκόπου Κωνσταντινουπόλεως
     - год: 1204
       описание: прен.1
       место: Рим. Италия
@@ -74,7 +88,7 @@
       место: Константинополь. Византия
    помин:
     - дата: 27.01
-      календарь: рпц
+      календарь: рпц,греч
       описание: прен
       служба: Иоанну Златоусту о перенесении мощей служба
     - дата: 14.09

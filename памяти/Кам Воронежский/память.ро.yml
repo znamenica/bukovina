@@ -1,19 +1,27 @@
 ---
 Кам Воронежский:
-   имя: в иночестве Пётр, в крещении Василий
+   имя:
+      ру: в иночестве Пётр, в крещении Василий
+      гр: Πέτρος
    отчество: Константинович
-   фамилия: Зверев
-   описание: кандидат богословия; священноинок Орловский, Каретнорядский (Москва), Новгородский, Юрьевский;
-      настоятель Белевский, Тверской, Жёлтиков; фронтовой проповедник; святитель Балахнинский,
-      Старицкий, Воронежский и Задонский; мученик Соловецкий, Анзерский; сгноблен безбожниками
-      в лагере
+   фамилия:
+      ру: Зверев
+      гр: Ζβέρεφ
+   описание:
+      ру: кандидат богословия; священноинок Орловский, Каретнорядский (Москва), Новгородский, Юрьевский;
+         настоятель Белевский, Тверской, Жёлтиков; фронтовой проповедник; святитель Балахнинский,
+         Старицкий, Воронежский и Задонский; мученик Соловецкий, Анзерский; сгноблен безбожниками
+         в лагере
+      гр: Ιερομάρτυρας
    чин: мсвтр
    собор: нмр,нмс,врнж,лип,мск,ниж,вешн?,орел?,кряд?,нов?,юрье?,белв?,твер?,желт?,блхн?,стрц?,зднс?
    вики: http://drevo-info.ru/articles/13175.html
    бытие:
-    - http://azbyka.ru/days/sv-petr-zverev
-    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuDdS9U60W5ceLUdO6UUe1Ve8iceG08ferVse0hseWhfe8ctmY*
-    - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5smTcGhe5srTd4jeC4iedG6XbuDdS9U60W5ceLUdO6UUe1Ve8iceG08ferVse0hseWhfe8ctmZyQaJaTcGZeu**
+      ру:
+       - http://azbyka.ru/days/sv-petr-zverev
+       - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuDdS9U60W5ceLUdO6UUe1Ve8iceG08ferVse0hseWhfe8ctmY*
+       - http://sr.isa.ru/~bin/nkws.exe/no_dbpath/ans/nmcalen/?HYZ9EJxGHoxITceUeuKhd81Uv5smTcGhe5srTd4jeC4iedG6XbuDdS9U60W5ceLUdO6UUe1Ve8iceG08ferVse0hseWhfe8ctmZyQaJaTcGZeu**
+      гр: http://www.saint.gr/3350/saint.aspx
    образ:
     - http://drevo-info.ru/images/002/008455.jpg
     - http://pravicon.com/icon-2697
@@ -75,6 +83,9 @@
    помин:
     - дата: 25.01
       календарь: рпц,нмр
+      описание: прств
+    - дата: 27.01
+      календарь: греч
       описание: прств
     - дата: 04.06
       календарь: рпц
