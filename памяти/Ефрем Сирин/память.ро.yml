@@ -1,14 +1,45 @@
 ---
 Ефрем Сирин:
-   имя: Ефрем
-   прозвище: Сирин
+   имя:
+      ру: вид.в иночестве Ефрем
+      гр: Εφραίμ
+   прозвище:
+      ру: Сирин
+      гр: Σύρος
+   описание: инодьякон Низибийский, Едесский
    чин: прп
-   собор: пис
+   собор: пис?,мигд?,1вс?,сир?
    вики: http://drevo-info.ru/articles/5061.html
-   бытие: http://pravicon.com/info-2346
-   образ: http://pravicon.com/icon-1815
-   помин:
-      год: 373-379
-      дата: 28.01
+   бытие:
+      ру:
+       - http://pravicon.com/info-2346
+       - https://azbyka.ru/days/sv-efrem-sirin
+      гр: http://www.saint.gr/3536/saint.aspx
+   образ:
+    - http://pravicon.com/icon-1815
+    - https://azbyka.ru/days/assets/img/saints/3799/p1b8bqn8cnno11gle1ibv1g9qoud6.png
+    - https://azbyka.ru/days/assets/img/saints/3799/p1b8bqn8cnno11gle1ibv1g9qoud6.png
+    - https://azbyka.ru/days/assets/img/saints/3799/p1b8bqn8c915ke14612jj2ld1n7o3.jpg
+    - https://azbyka.ru/days/assets/img/saints/3799/p1b8bqn8ca12u2ngitgd17a7jhj4.jpg
+   служба:
+    - Ефрему Сирину служба
+    - https://azbyka.ru/days/assets/upload/minei/01/minea_01_28.pdf
+    - https://azbyka.ru/days/caa/405
+   отечник: https://azbyka.ru/otechnik/Efrem_Sirin/
+   событие:
+    - год: нач.IV
+      описание: ржд
+      место: Низибия. Мигдония. Месопотамия
+    - год: вид.до.363
+      описание: иноч
+      место: Низибия. Мигдония. Месопотамия
+    - год: вид.до.363
+      описание: дияк
+      место: Низибия. Мигдония. Месопотамия
+    - год: 373-379
       описание: прств
-      служба: Ефрему Сирину служба
+      место: Едесса. Сирия
+   помин:
+      дата: 28.01
+      календарь: рпц,греч,змин
+      описание: само
