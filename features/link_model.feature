@@ -6,7 +6,7 @@
    Сценарий: Проверка полей модели ссылки
       Допустим есть модель ссылки
 
-      И свойства "info_id, info_type, type" модели не могут быть пустыми
+      И свойства "type" модели не могут быть пустыми
       И таблица модели имеет столбцы "info_id" рода "целый"
       И ссылка имеет рода "строка" следущие столбцы:
          | столбец            |
@@ -100,7 +100,7 @@
       Если попробуем создать новую иконную ссылку "http://www.wiki.ru" с неверным описанием
       То увидим сообщение ссылки об ошибке:
          """
-         Description alphabeth_code is not included in the list
+         Description text contains invalid char(s) "Iadilnv" for the specified alphabeth "ро"
          Description is invalid
          """
       И ссылки "http://www.wiki.ru" не будет

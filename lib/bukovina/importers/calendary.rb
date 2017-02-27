@@ -23,7 +23,7 @@ class Bukovina::Importers::Calendary
          case value
          when Array
             new_base = foreign_class( base, attr )
-            binding.pry
+#            binding.pry
             new_array = parse_array( new_base, value )
             if new_array.any? {|v| v.is_a?( Hash ) }
                [ :"#{attr}_attributes", new_array ]

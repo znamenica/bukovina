@@ -16,4 +16,4 @@ class Service < ActiveRecord::Base
    accepts_nested_attributes_for :orisons
    accepts_nested_attributes_for :canticles
 
-   validates :name, :language_code, presence: true ;end
+   validates :name, :language_code, :info, presence: true ;end

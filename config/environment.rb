@@ -71,6 +71,7 @@ module Rails
          ilink = Bukovina::Parsers::IconLink.new
          link = Bukovina::Parsers::Link.new
          slink = Bukovina::Parsers::ServiceLink.new
+         eventer = Bukovina::Parsers::Event.new
          up = [ /Мария Богородица/ ]
          Dir.glob( 'памяти/**/память.*.yml' ).sort do |x,y|
             eva = proc { |v| up.any? { |u| u =~ v } }

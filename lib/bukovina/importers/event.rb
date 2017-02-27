@@ -61,7 +61,7 @@ class Bukovina::Importers::Event
       @attrs.each do |attrs|
          (search_attrs, new_attrs) = separate_hash( parse_hash( Event, attrs ) )
 
-         binding.pry
+#         binding.pry
          Event.where( search_attrs ).first_or_create!( new_attrs ) ;end ;end
 
    def initialize attrs, o_attrs = {}

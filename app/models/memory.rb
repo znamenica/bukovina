@@ -1,11 +1,11 @@
 class Memory < ActiveRecord::Base
    extend DefaultKey
-   include Informatible
+   extend Informatible
 
    has_default_key :short_name
 
-   has_many :names, through: :memory_names
    has_many :memory_names
+   has_many :names, through: :memory_names
    has_many :paterics, class_name: :PatericLink, foreign_key: :info_id
 
    validates_presence_of :short_name

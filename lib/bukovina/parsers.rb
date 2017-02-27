@@ -11,13 +11,13 @@ module Bukovina::Parsers
    class BukovinaInvalidVariatorError < BukovinaError; end
    class BukovinaInvalidUrlFormatError < BukovinaError; end
    class BukovinaFalseSyntaxError < BukovinaError; end
-   class BukovinaEmptyRecord < BukovinaError; end
-   class BukovinaNullNameLine < BukovinaError; end
-   class BukovinaInvalidValue < BukovinaError; end
-   class BukovinaInvalidKeyName < BukovinaError; end
-   class BukovinaInvalidKeyFormat < BukovinaError; end
-   class BukovinaInvalidFileNameFormat < BukovinaError; end
-   class BukovinaNoFilesMatched < BukovinaError; end
+   class BukovinaEmptyRecordError < BukovinaError; end
+   class BukovinaNullNameLineError < BukovinaError; end
+   class BukovinaInvalidValueError < BukovinaError; end
+   class BukovinaInvalidKeyNameError < BukovinaError; end
+   class BukovinaInvalidKeyFormatError < BukovinaError; end
+   class BukovinaInvalidFileNameFormatError < BukovinaError; end
+   class BukovinaNoFilesMatchedError < BukovinaError; end
    class BukovinaInvalidPathError < BukovinaError; end
 
    RUSSIAN_CAPITAL = 'А-ЯЁ'

@@ -68,16 +68,17 @@ module MacrosSupport
          if value.is_a?( String ) && /^\*(?<match_value>.*)/ =~ value
             /(?<base_attr>[^\.]+)(?:\.(?<relation>.*))?/ =~ attr
             /(?<attr>[^:]*)(?::(?<modelname>.*))?/ =~ base_attr
+#            binding.pry
             submodel = ( modelname || base_attr.singularize ).camelize.constantize
-            new_attrs[ :"#{base_attr}_id" ] =
+            new_attrs[ "#{attr}_id" ] =
             if relation
                subattr = base_field( modelname || relation.singularize )
                submodel.joins( relation.to_sym ).where( relation => { subattr => match_value }).first.id
             else
                subattr = base_field( modelname || base_attr.singularize )
                submodel.where( subattr => match_value ).first.id ;end
-            if model.new.respond_to?( "#{base_attr}_type" )
-               new_attrs[ :"#{base_attr}_type" ] = modelname.camelize ; end
+            if model.new.respond_to?( "#{attr}_type" )
+               new_attrs[ "#{attr}_type" ] = modelname.camelize ; end
          else
             value = value.is_a?( String ) && YAML.load( value ) || value
             new_attrs[ attr ] = value ; end ; end
@@ -97,6 +98,7 @@ module MacrosSupport
    def find_or_create model, search_attrs, attrs = {}
       new_attrs = expand_attributes( model, search_attrs )
 
+#            binding.pry
       model.where( new_attrs ).first_or_create!(
          attrs.merge( new_attrs ) ) ; end
 
