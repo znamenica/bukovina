@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -11,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160519151700) do
+ActiveRecord::Schema.define(version: 20170227211200) do
 
   create_table "calendaries", force: :cascade do |t|
     t.string   "author"
@@ -65,7 +64,19 @@ ActiveRecord::Schema.define(version: 20160519151700) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "place_id"
+    t.integer  "object_id"
     t.index ["subject", "type", "memory_id"], name: "index_events_on_subject_and_type_and_memory_id"
+  end
+
+  create_table "item_types", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.integer  "item_type_id", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "links", force: :cascade do |t|

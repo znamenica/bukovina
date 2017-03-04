@@ -11,9 +11,12 @@
 Если(/^попробуем создать новый календарь "([^"]*)" с неверным описанием$/) do |arg1|
    sample { create :calendary, :with_invalid_description } ; end
 
+То(/^у модели есть действенным многоимущее свойство "([^"]*)"$/) do |prop|
+   expect( subject ).to have_many( prop ) ;end
+
 То(/^у модели суть действенными многоимущие свойства:$/) do |table|
    table.hashes.each do |hash|
-      expect( subject ).to have_many( hash[ "свойства" ] )
+      expect( subject ).to have_many( hash[ "свойства" ] || hash[ "свойство" ] )
          .class_name( model_of( hash[ "имя рода" ] ) )
          .dependent( hash[ "зависимость" ] ) ;end;end
 

@@ -42,6 +42,8 @@ module MacrosSupport
                /лично(?:е|го) им(?:я|ени)/         => FirstName,
                /отчеств[оа]/                       => Patronymic,
                /фамили[ияю]/                       => LastName,
+               /предмета?/                         => Item,
+               /тип[ау]? предмета/                 => ItemType,
                /служебн(?:ые|ых) песм(?:ена)?/     => ServiceCanto,
                /служб[аыу]?/                       => Service }
 

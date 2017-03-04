@@ -16,20 +16,23 @@
    вики: http://drevo-info.ru/articles/6623.html
    бытие:
       ру:
-       - http://azbyka.ru/days/sv-grigorij-v
+       - https://azbyka.ru/days/sv-grigorij-v-konstantinopolskij
        - http://www.bogoslov.ru/tso/text/343234/index.html
        - http://www.agiaellada.ru/kalendar/grigiriy-5-konstantinopolskiy.htm
       гр: http://www.saint.gr/1301/saint.aspx
       ан: http://home.iprimus.com.au/xenos/gregory5.html
    образ:
-    - http://pravicon.com/icon-1567
+    - https://azbyka.ru/days/assets/img/saints/1123/p1agn3o740u42a1gn1h63um65.jpg
+    - https://azbyka.ru/days/assets/img/saints/1123/p1agn3o7401o561aiv162gafn1cmv6.jpg
     - http://pics.livejournal.com/ustavschik/pic/0001gyq6
     - http://www.saint.gr/photos/standard/0410/AgiosGrigoriosE09.jpg
     - http://www.saint.gr/photos/standard/0410/AgiosGrigoriosE10.jpg [Τοιχογραφία Ι. Μ.
       Στροφάδων και Αγίου Διονυσίου Ζακύνθου. Έργο Ιωάννου Τσολάκου.]
     - http://www.saint.gr/photos/standard/0410/AgiosGrigoriosE15.jpg
     - http://4.bp.blogspot.com/-zjoBNWF2gIo/UITvFB6ofiI/AAAAAAAAAcs/WXvXby6Te9c/s1600/ΑΓΙΟΣ+ΓΡΗΓΟΡΙΟΣ+Ε΄ΠΑΤΡΙΑΡΧΗΣ.jpg
-   служба: Григорию Константинопольскому служба
+   служба:
+    - Григорию Константинопольскому служба
+    - http://www.agiaellada.ru/kalendar/grigiriy-5-konstantinopolskiy.htm
    событие:
     - год: 1745/1746
       описание: ржд
@@ -53,7 +56,7 @@
     - год: 1821
       дата: 17.06/19.06
       описание: пгрб
-      место: Свято-Троицкая церковь. Одесса
+      место: Свято-Троицкая церковь. Одесса. Россия
     - год: 1871
       дата: 25.04
       описание: прен
@@ -64,5 +67,5 @@
       описание: просл
    помин:
       дата: 10.04
-      собор: греч
+      календарь: рпц,греч
       описание: прств

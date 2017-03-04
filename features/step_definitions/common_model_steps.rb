@@ -33,6 +33,10 @@
 То(/^модель принимает вложенные настройки для свойства "([^"]*)"$/) do |prop|
    expect( subject ).to accept_nested_attributes_for( prop.to_sym ) ;end
 
+То(/^свойство "([^"]*)" модели есть отношение к (#{kinds_re})$/) do |prop, type|
+   expect( subject ).to belong_to( prop.gsub(/\s+/, '_') )
+      .class_name( model_of( type ) ); end
+
 То(/^свойство "([^"]*)" модели есть отношение к описываемому$/) do |prop|
    expect( subject ).to belong_to( prop ) ; end
 
