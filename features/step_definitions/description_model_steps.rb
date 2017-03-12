@@ -1,6 +1,3 @@
-То(/^свойство "([^"]*)" модели есть отношение к памяти$/) do |prop|
-   expect( subject ).to belong_to( prop ).class_name( :Memory ) ; end
-
 То(/^свойство "([^"]*)" модели есть отношение$/) do |prop|
    expect( subject ).to belong_to( prop ) ; end
 
