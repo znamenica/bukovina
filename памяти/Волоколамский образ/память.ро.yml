@@ -1,12 +1,14 @@
 ---
-Волоколамский образ:
-   имя: Волоколамский
+Волоколамская образ:
+   имя: Волоколамская
    описание: образ Богородицы
-   вид: Владимирский образ
+   вид: Владимирская образ
    чин: обр
-   собор: звнг,влкл
+   собор: звнг?,влкл?
    вики: http://drevo-info.ru/articles/9459.html
-   бытие: http://azbyka.ru/days/ikona-volokolamskaja
+   бытие:
+    - http://azbyka.ru/days/ikona-volokolamskaja
+    - http://www.pravmir.ru/tserkov-chtit-pamyat-volokolamskoy-ikonyi-bozhiey-materi/
    образ:
     - http://drevo-info.ru/images/001/001568.jpg
     - http://azbyka.ru/days/assets/img/icons/135/p188b7620591m1d6g11qv8721a663.jpg
