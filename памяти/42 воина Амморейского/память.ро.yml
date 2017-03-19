@@ -1,13 +1,16 @@
 ---
 42 воина Амморейского:
-   описание: 42 воина (мученика) Амморейского (Фригия), обезглавлены от исламистов
+   описание: 42 воина (мученика) Амморейского (Фригия); обезглавлены исламистами
    чин: мчч
    крат: 42ва
-   собор: отис,вои,сир,фриг
+   собор: вои?,сир?,фриг?
    вики: http://drevo-info.ru/articles/9564.html
+   бытие: http://www.pravmir.ru/tserkov-vspominaet-42-svyatyih-muchenikov-v-ammoree-2/
    образ:
     - http://drevo-info.ru/images/002/009089.jpg
     - http://azbyka.ru/days/assets/img/saints/2001/p18gh56aug10mrtongc41gbnquj3.jpg
+    - http://www.pravmir.ru/wp-content/uploads/2017/03/0-10-600x407.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_06.pdf
    событие:
       год: ок. 845
       описание: прств
@@ -15,5 +18,5 @@
       образ: http://azbyka.ru/days/assets/img/saints/2001/p18i7d55lb12og601ifl1ki2u5h3.jpg
    помин:
       дата: 06.03
+      календарь: рпц
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_06.pdf

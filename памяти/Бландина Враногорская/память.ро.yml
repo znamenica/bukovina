@@ -1,16 +1,33 @@
 ---
 Бландина Враногорская:
-   имя: Бландина
-   описание: мученица Враногорская (Лионская); умучена язычниками
+   имя:
+      ру: Бландина
+      фр: Blandine
+   описание: мученица Враногорская (Лионская); мучена и заколота язычниками; может имя - Ласка?
    чин: мц
    собор: мвра,бргд?
-   вики: http://drevo-info.ru/articles/5881.html
+   бытие: http://linguaeterna.com/vocabula/show.php?n=5826
+   вики:
+    - http://drevo-info.ru/articles/5881.html
+    - https://ru.wikipedia.org/wiki/Бландина_Лионская
    образ:
     - http://drevo-info.ru/images/001/001004.jpg
     - http://drevo-info.ru/images/001/001005.jpg
     - http://www.pravoslavie.ru/sas/image/100690/69087.p.jpg
-   служба: http://ustavschik.livejournal.com/233033.html [Борисом Ивановичем Сове]
+    - https://upload.wikimedia.org/wikipedia/commons/d/d1/Blandine.jpg
+   служба: http://ustavschik.livejournal.com/233033.html [автор Борис Иванович Сове]
    событие:
-      год: 177
+    - год: 177
       описание: прств
       место: Лугдун (Враногорск/ныне Лион. Франция). Бургундия
+    - год: 2017
+      дата: 24.02
+      описание: просл
+      собор: рус
+      чин: мц
+      место: Данилова обитель. Москва
+      ссылка: http://www.patriarchia.ru/db/print/4829826.html#14 [Заседание синода от 9 марта 2017. Журнал №14]
+   помин:
+      дата: 02.06
+      календарь: рпц
+      описание: само
