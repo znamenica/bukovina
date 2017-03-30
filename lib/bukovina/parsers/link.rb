@@ -18,18 +18,20 @@ class Bukovina::Parsers::Link
          links = line.map do |(lang, url)|
             if url.is_a?( Array )
                url.map do |u|
-                  parse_line( u, lang ) ; end.compact
+                  parse_line( u, lang ) ;end
+               .compact
             else
-               parse_line( url, lang ) ; end ; end
+               parse_line( url, lang ) ;end;end
          .compact.flatten
          { link: links }
       when Array
          links = line.map do |url|
             if url.is_a?( Array )
                url.map do |u|
-                  parse_line( u ) ; end.compact
+                  parse_line( u ) ;end
+               .compact
             else
-               parse_line( url ) ; end ; end
+               parse_line( url ) ;end;end
          .compact.flatten
          { link: links }
       when String
@@ -41,9 +43,9 @@ class Bukovina::Parsers::Link
 
       @errors.empty? && res || nil ; end
 
-   private
+   protected
 
-   def valid? url, language_code
+   def valid? url, alphabeth_code
       uri = URI.parse( url )
       uri.kind_of?( URI::HTTP )
    rescue URI::InvalidURIError => e
@@ -52,26 +54,34 @@ class Bukovina::Parsers::Link
          /^(?<num>[a-f0-9]+)/ =~ tok; num&.hex ; end
       .compact.pack("U*")
 
-      line.size > 0 && ! Parsers::MATCH_TABLE[ language_code ] !~ line ; end
+      line.size > 0 && ! Parsers::MATCH_TABLE[ alphabeth_code ] !~ line ; end
+
+   def match_alphabeth? alphabeth_code, line
+      filtered = line.gsub(/[0-9\s‑';:"«»,()\.\-\?\/]/,'')
+      Parsers::MATCH_TABLE[ alphabeth_code ] =~ filtered
+   end
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
 
-   def parse_line line, language_code = 'ру'
-      language_code = language_code.to_sym
+   def parse_line line, alphabeth_code = :ру
+      alphabeth_code = alphabeth_code.to_sym
 
-      if ! Parsers::MATCH_TABLE[ language_code ]
-         @errors << Parsers::BukovinaInvalidLanguageError.new( "Invalid " +
-            "language '#{language_code}' specified" )
-         return nil
-
-      elsif ! valid?( line, language_code )
-         @errors << Parsers::BukovinaInvalidUrlFormatError.new( "Invalid url" +
-            " format for #{line}" )
-         nil
-
+      language_codes = Language.language_list_for(alphabeth_code)
+      if language_codes.present?
+         if valid?( line, alphabeth_code )
+            {  alphabeth_code: alphabeth_code,
+               language_code: language_codes.first.to_sym,
+               url: line }
+         else
+            @errors << Parsers::BukovinaInvalidUrlFormatError.new( "Invalid url" +
+               " format for #{line}" )
+            nil ;end
       else
-         { language_code: language_code, url: line } ; end ; end
+         @errors << Parsers::BukovinaInvalidLanguageError.new( "Invalid " +
+            "alphabeth '#{alphabeth_code}' specified" )
+         nil ;end;end
+
 
    def initialize
       @errors = [] ; end ; end

@@ -33,7 +33,7 @@
       То увидим сообщение места об ошибке:
          """
          Descriptions is invalid
-         Descriptions text contains invalid char(s) "Iadilnv" for the specified alphabeth "ро"
+         Descriptions text contains invalid char(s) "Iadilnv" for the specified alphabeth "ру"
          """
       И места не будет
 

@@ -14,13 +14,13 @@ class Bukovina::Parsers::Description
       case name
       when Hash
          descriptions = name.map do |(lang, desc)|
-            text = parse_line( desc, lang )
-            text && { language_code: lang, text: text } || nil
+            res = parse_line( desc, lang )
+            res&.[](:text) && res || nil
          end.compact
 
          { description: descriptions }
       when String
-         { description: [ { language_code: :ру, text: parse_line( name ) } ] }
+         { description: [ parse_line( name, :ру ) ] }
       when NilClass
       else
          raise Parsers::BukovinaInvalidClass, "Invalid class #{name.class} " +
@@ -32,25 +32,53 @@ class Bukovina::Parsers::Description
       @errors << e
       nil ; end
 
-   private
+   protected
+
+   def detect_alphabeth text, language_code
+      language_code = language_code.to_sym
+
+      alphs = Language::LANGUAGE_TREE[language_code]
+      alph =
+      [ alphs ].flatten.reduce do |res, alph|
+         if Parsers::MATCH_TABLE[ language_code ] =~ line.gsub(/[0-9\s‑';:"«»,()\.\-\?\/]/,'')
+            alph
+         else
+            res
+         end
+      end
+   end
+
+   def match_alphabeth? alphabeth_code, line
+      filtered = line.gsub(/[0-9\s‑';:"«»,()\.\-\?\/]/,'')
+      Parsers::MATCH_TABLE[ alphabeth_code ] =~ filtered
+   end
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
 
-   def parse_line line, language_code = 'ру'
-      language_code = language_code.to_sym
+   def parse_line line, alphabeth_code = :ру
+      alphabeth_code = alphabeth_code.to_sym
 
-      if ! Parsers::MATCH_TABLE[ language_code ]
-         @errors << Parsers::BukovinaInvalidLanguageError.new( "Invalid " +
-            "language '#{language_code}' specified" )
-         nil
-      else
-         if Parsers::MATCH_TABLE[ language_code ] =~ line.gsub(/[0-9\s‑';:"«»,()\.\-\?\/]/,'')
-            line
+      language_codes = Language.language_list_for(alphabeth_code)
+      if language_codes.present?
+         if match_alphabeth?( alphabeth_code, line )
+            {  alphabeth_code: alphabeth_code,
+               language_code: language_codes.first.to_sym,
+               text: line }
          else
             @errors << Parsers::BukovinaInvalidCharError.new( "Invalid " +
-               "char(s) for language '#{language_code}' specified" )
-            nil ; end ; end ; end
+               "char(s) for language '#{alphabeth_code}' specified" )
+            nil ;end
+#         language_code =
+#         [ language_codes ].flatten.reduce(nil) do |res, language_code|
+#            if not res and match_alphabeth?( alphabeth_code, line )
+#               language_code.to_sym
+#            else
+#               res ;end;end
+      else
+         @errors << Parsers::BukovinaInvalidLanguageError.new( "Invalid " +
+            "alphabeth '#{alphabeth_code}' specified" )
+         nil ;end;end
 
    def initialize
       @errors = [] ; end ; end

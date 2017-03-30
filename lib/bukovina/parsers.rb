@@ -75,9 +75,10 @@ module Bukovina::Parsers
    ACCENT = GREEK_ACCENT + RUSSIAN_ACCENT + CSLAV_ACCENT
    CHAR = DOWNCHAR + UPCHAR
 
+   # алфавиты
    MATCH_TABLE = {
-      :ру => /^[#{RUS_CAPITAL}#{RUS_STROKE}#{RUS_ACCENT}]+$/,
-      :ро => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}]+$/,
+      :рп => /^[#{RUS_CAPITAL}#{RUS_STROKE}#{RUS_ACCENT}]+$/,
+      :ру => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}]+$/,
       :цс => /^[#{CSLAV_CAPITAL}#{CSLAV_STROKE}#{CSLAV_ACCENT}]+$/,
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}]+$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}]+$/,

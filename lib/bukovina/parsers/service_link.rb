@@ -8,8 +8,9 @@ class Bukovina::Parsers::ServiceLink
 
    ALPHABETHS = {
       'hip' => :цр, #церковнославянская разметка hip
+      'рп' => :рп,
+      'ро' => :ру,
       'ру' => :ру,
-      'ро' => :ро,
       'ан' => :ра,
       'en' => :ра,
       'гр' => :гр,
@@ -97,8 +98,8 @@ class Bukovina::Parsers::ServiceLink
    # выход: обработанный словарь данных
 
    def parse_line line, options = {}
-      alphabeth_code = ( options[ :alphabeth_code ] || 'ро' ).to_sym
-      language_code = ( options[ :language_code ] || 'цс' ).to_sym
+      alphabeth_code = ( options[ :alphabeth_code ] || :ру ).to_sym
+      language_code = ( options[ :language_code ] || :цс ).to_sym
       target = options[ :target ]
 
       if ! Parsers::MATCH_TABLE[ alphabeth_code ]
@@ -174,7 +175,9 @@ class Bukovina::Parsers::ServiceLink
             nil ; end
 
       else
-         [ { alphabeth_code: ALPHABETHS[ alphabeth_code.to_s ], url: line } ]
+         alph = ALPHABETHS[ alphabeth_code.to_s ]
+         lang = Language.language_list_for(alph).first.to_sym
+         [ { alphabeth_code: alph, language_code: lang, url: line } ]
          end ;end
 
    def initialize

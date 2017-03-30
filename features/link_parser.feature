@@ -8,7 +8,8 @@
       То обработанные данные ссылки будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :alphabeth_code: :ру
+           :language_code: :ру
            :url: http://recource.ru
          """
 
@@ -21,7 +22,8 @@
       То обработанные данные ссылки будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :alphabeth_code: :ру
+           :language_code: :ру
            :url: https://ru.wikipedia.org/wiki/София_Слуцкая
          """
 
@@ -34,7 +36,8 @@
       То обработанные данные ссылки будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :alphabeth_code: :ру
+           :language_code: :ру
            :url: http://tvereparhia.ru/publikaczii/voprosy-k-pravoslavnym/7864-evgenij-poselyanin-russkie-podvizhniki-19-veka#СВЯЩЕННИК
              ПЕТР (ГОРОДА УГЛИЧА)
          """
@@ -64,39 +67,56 @@
       То обработанные данные ссылки будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :alphabeth_code: :ру
+           :language_code: :ру
            :url: http://recource.ru
-         - :language_code: :цс
+         - :alphabeth_code: :цс
+           :language_code: :цс
            :url: http://recource.cs
-         - :language_code: :гр
+         - :alphabeth_code: :гр
+           :language_code: :гр
            :url: http://recource.gr
-         - :language_code: :ив
+         - :alphabeth_code: :ив
+           :language_code: :ив
            :url: http://recource.iv
-         - :language_code: :ср
+         - :alphabeth_code: :ср
+           :language_code: :сх
            :url: http://recource.sr
-         - :language_code: :ан
+         - :alphabeth_code: :ан
+           :language_code: :ан
            :url: http://recource.uk
-         - :language_code: :ла
+         - :alphabeth_code: :ла
+           :language_code: :ла
            :url: http://recource.com
-         - :language_code: :чх
+         - :alphabeth_code: :чх
+           :language_code: :чх
            :url: http://recource.cz
-         - :language_code: :ир
+         - :alphabeth_code: :ир
+           :language_code: :ир
            :url: http://recource.ir
-         - :language_code: :си
+         - :alphabeth_code: :си
+           :language_code: :си
            :url: http://recource.ir
-         - :language_code: :бг
+         - :alphabeth_code: :бг
+           :language_code: :бг
            :url: http://recource.bg
-         - :language_code: :ит
+         - :alphabeth_code: :ит
+           :language_code: :ит
            :url: http://recource.it
-         - :language_code: :ар
+         - :alphabeth_code: :ар
+           :language_code: :ар
            :url: http://recource.ar
-         - :language_code: :рм
+         - :alphabeth_code: :рм
+           :language_code: :рм
            :url: http://recource.ro
-         - :language_code: :са
+         - :alphabeth_code: :са
+           :language_code: :ан
            :url: http://recource.uk
-         - :language_code: :не
+         - :alphabeth_code: :не
+           :language_code: :не
            :url: http://recource.de
-         - :language_code: :ук
+         - :alphabeth_code: :ук
+           :language_code: :ук
            :url: http://recource.ua
          """
 

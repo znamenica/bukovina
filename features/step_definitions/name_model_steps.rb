@@ -1,6 +1,6 @@
 Допустим(/^есть русское личное имя (.*)$/) do |name|
    find_or_create( FirstName, { text: name }, language_code: :ру,
-      alphabeth_code: :ро ) ; end
+      alphabeth_code: :ру ) ; end
 
 Допустим(/^имя (.*) относится к памяти "(.*)"$/) do |nametext, short_name|
    memory = Memory.where( short_name: short_name ).first

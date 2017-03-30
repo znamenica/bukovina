@@ -14,8 +14,8 @@
              :short_name: "*Василий Васильский"
            :place:
              :descriptions:
-             - :alphabeth_code: ро
-               :language_code: ру
+             - :alphabeth_code: :ру
+               :language_code: :ру
                :text: Красная площадь
          """
 
@@ -29,7 +29,7 @@
       И будет создана модель описания с аттрибутами:
          | text               | Красная площадь       |
          | language_code      | ру                    |
-         | alphabeth_code     | ро                    |
+         | alphabeth_code     | ру                    |
          | describable_type   | Place                 |
 
 
@@ -44,8 +44,8 @@
              :short_name: "*Василий Васильский"
            :place:
              :descriptions:
-             - :alphabeth_code: ро
-               :language_code: ру
+             - :alphabeth_code: :ру
+               :language_code: :ру
                :text: Красная площадь
          - :happened_at: 1.1.1000
            :type: Benediction
@@ -64,7 +64,7 @@
       И будет создана модель описания с аттрибутами:
          | text               | Красная площадь       |
          | language_code      | ру                    |
-         | alphabeth_code     | ро                    |
+         | alphabeth_code     | ру                    |
          | describable_type   | Place                 |
       И будет создана модель события с аттрибутами:
          | happened_at        | 1.1.1000              |
@@ -82,15 +82,15 @@
              :short_name: "*Василий Васильский"
            :place:
              :descriptions:
-             - :alphabeth_code: ро
-               :language_code: ру
+             - :alphabeth_code: :ру
+               :language_code: :ру
                :text: Красная площадь
            :descriptions:
-           - :alphabeth_code: ро
-             :language_code: ру
+           - :alphabeth_code: :ру
+             :language_code: :ру
              :text: Рождество
            :wikies:
-           - :alphabeth_code: :ро
+           - :alphabeth_code: :ру
              :language_code: :ру
              :url: http://wiki.ws/вики
            :beings:
@@ -98,19 +98,19 @@
            :icon_links:
            - :url: http://wiki.ws/образ.jpg
              :description:
-               :alphabeth_code: :ро
+               :alphabeth_code: :ру
                :language_code: :ру
                :text: описание иконы
            :service_links:
            - :url: http://service.ws/
            :services:
-           - :alphabeth_code: :ро
+           - :alphabeth_code: :ру
              :language_code: :ру
              :name: Василию Васильскому служба
              :info>memory:
                :short_name: "*Василий Васильский"
              :cantoes:
-             - :alphabeth_code: :ро
+             - :alphabeth_code: :ру
                :language_code: :ру
                :targets:
                - "*Василий Васильский"
@@ -130,21 +130,21 @@
       И будет создана модель описания с аттрибутами:
          | text               | Красная площадь    |
          | language_code      | ру                 |
-         | alphabeth_code     | ро                 |
+         | alphabeth_code     | ру                 |
          | describable_type   | Place              |
       И будет создана модель описания с аттрибутами:
          | text            | Рождество       |
-         | alphabeth_code  | ро              |
+         | alphabeth_code  | ру              |
          | language_code   | ру              |
       То будет создана модель иконной ссылки с аттрибутами:
          | url             | http://wiki.ws/образ.jpg |
       И будет создана модель описания с аттрибутами:
          | text            | описание иконы  |
-         | alphabeth_code  | ро              |
+         | alphabeth_code  | ру              |
          | language_code   | ру              |
       И будет создана модель вики ссылки с аттрибутами:
          | url             | http://wiki.ws/вики   |
-         | alphabeth_code  | ро                    |
+         | alphabeth_code  | ру                    |
          | language_code   | ру                    |
       И будет создана модель бытийной ссылки с аттрибутами:
          | url             | http://being.ws/      |
@@ -152,7 +152,7 @@
          | url             | http://service.ws/    |
       И будет создана модель службы с аттрибутами:
          | language_code            | ру                          |
-         | alphabeth_code           | ро                          |
+         | alphabeth_code           | ру                          |
          | name                     | Василию Васильскому служба  |
          | info:memory              | *Василий Васильский         |
       И будет создана модель тропаря с аттрибутами:
@@ -160,5 +160,5 @@
          | prosomeion_title         | Тропарёв текст              |
          | text                     | Тропарёв ин текст.          |
          | language_code            | ру                          |
-         | alphabeth_code           | ро                          |
+         | alphabeth_code           | ру                          |
          | service_cantoes.service  | *Василию Васильскому служба |

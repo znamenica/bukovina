@@ -3,6 +3,7 @@ FactoryGirl.define do
       url { FFaker::Internet.http_url } ; end
 
    factory :language_link, parent: :link, class: :LanguageLink do
+      alphabeth_code :ру
       language_code :ру ; end
 
    factory :wiki_link, parent: :language_link, class: :WikiLink do

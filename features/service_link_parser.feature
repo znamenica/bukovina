@@ -9,7 +9,8 @@
       А обработанные данные ссылки будут выглядеть как:
          """
          ---
-         - :alphabeth_code: :ро
+         - :alphabeth_code: :ру
+           :language_code: :ру
            :url: http://recource.ru
          """
 
@@ -24,9 +25,11 @@
       А обработанные данные ссылки будут выглядеть как:
          """
          ---
-         - :alphabeth_code: :ро
+         - :alphabeth_code: :ру
+           :language_code: :ру
            :url: http://recource.gr
-         - :alphabeth_code: :ро
+         - :alphabeth_code: :ру
+           :language_code: :ру
            :url: http://www.porphyrios.gr/files/jpg/Εικόνες/Συλλογή με κατάταξη/Απόστολοι/Βαρθολομαίος
              Απόστολος 02.jpg
          """
@@ -51,11 +54,11 @@
       А обработанные данные службы будут выглядеть как:
          """
          ---
-         - :alphabeth_code: :ро
+         - :alphabeth_code: :ру
            :language_code: :ру
            :name: Василию Васильскому служба
            :cantoes:
-           - :alphabeth_code: :ро
+           - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
              - "*Василий Васильский"
@@ -83,11 +86,11 @@
       А обработанные данные службы будут выглядеть как:
          """
          ---
-         - :alphabeth_code: :ро
+         - :alphabeth_code: :ру
            :language_code: :ру
            :name: Василию Васильскому служба
            :cantoes:
-           - :alphabeth_code: :ро
+           - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
              - "*Василий Васильский"
@@ -378,35 +381,35 @@
              :tone: 3
              :prosomeion_title: Other
              :text: Another text
-         - :alphabeth_code: :ро
+         - :alphabeth_code: :ру
            :language_code: :ру
            :name: Василию Васильскому служба
            :cantoes:
-           - :alphabeth_code: :ро
+           - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
              - "*Василий Васильский"
              :type: Magnification
              :text: Величание
-           - :alphabeth_code: :ро
+           - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
              - "*Василий Васильский"
              :type: Kontakion
              :tone: 1
              :text: Кондаков иной текст
-           - :alphabeth_code: :ро
+           - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
              - "*Василий Васильский"
              :type: Kontakion
              :tone: 2
              :text: Кондаков ещё текст
-         - :alphabeth_code: :ро
+         - :alphabeth_code: :ру
            :language_code: :ру
            :name: Василию Васильскому служба
            :cantoes:
-           - :alphabeth_code: :ро
+           - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
              - "*Василий Васильский"

@@ -8,7 +8,8 @@
       То обработанные данные описания будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :alphabeth_code: :ру
+           :language_code: :ру
            :text: описание
          """
 
@@ -21,7 +22,8 @@
       То обработанные данные описания будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :alphabeth_code: :ру
+           :language_code: :ру
            :text: '"апостол" от 70-ти; описание на Сергий‑Вася, и ещё (Володю-Володимера):
              с сокр.Вову-''Сашу/Александра?'
          """
@@ -30,7 +32,8 @@
    Сценарий: Описание на разных возможных языках
       Допустим есть строки описания:
          """
-         ру: се Нина
+         рп: вотъ Нина
+         ру: вот Нина
          цс: се Нина
          гр: Νίνα
          ив: ნინმ
@@ -49,35 +52,53 @@
       То обработанные данные описания будут выглядеть как:
          """
          ---
-         - :language_code: ру
+         - :alphabeth_code: :рп
+           :language_code: :ру
+           :text: вотъ Нина
+         - :alphabeth_code: :ру
+           :language_code: :ру
+           :text: вот Нина
+         - :alphabeth_code: :цс
+           :language_code: :цс
            :text: се Нина
-         - :language_code: цс
-           :text: се Нина
-         - :language_code: гр
+         - :alphabeth_code: :гр
+           :language_code: :гр
            :text: Νίνα
-         - :language_code: ив
+         - :alphabeth_code: :ив
+           :language_code: :ив
            :text: ნინმ
-         - :language_code: ср
+         - :alphabeth_code: :ср
+           :language_code: :сх
            :text: се Нина
-         - :language_code: ан
+         - :alphabeth_code: :ан
+           :language_code: :ан
            :text: this Nina
-         - :language_code: ла
+         - :alphabeth_code: :ла
+           :language_code: :ла
            :text: this Nina
-         - :language_code: чх
+         - :alphabeth_code: :чх
+           :language_code: :чх
            :text: this Nina
-         - :language_code: ир
+         - :alphabeth_code: :ир
+           :language_code: :ир
            :text: this Nina
-         - :language_code: си
+         - :alphabeth_code: :си
+           :language_code: :си
            :text: this Nina
-         - :language_code: бг
+         - :alphabeth_code: :бг
+           :language_code: :бг
            :text: се Нина
-         - :language_code: ит
+         - :alphabeth_code: :ит
+           :language_code: :ит
            :text: this Nina
-         - :language_code: ар
+         - :alphabeth_code: :ар
+           :language_code: :ар
            :text: Նունէ
-         - :language_code: рм
+         - :alphabeth_code: :рм
+           :language_code: :рм
            :text: this Nina
-         - :language_code: са
+         - :alphabeth_code: :са
+           :language_code: :ан
            :text: this Nina
          """
 

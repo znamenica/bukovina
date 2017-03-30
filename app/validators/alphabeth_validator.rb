@@ -80,8 +80,8 @@ class AlphabethValidator < ActiveModel::EachValidator
 
    # TODO уравнять с LANGUAGE_TREE.alphabeths
    SYNTAX_TABLE = {
-      :ру => RUSSIAN_SYNTAX,
-      :ро => MODIFIED_RUSSIAN_SYNTAX,
+      :рп => RUSSIAN_SYNTAX,
+      :ру => MODIFIED_RUSSIAN_SYNTAX,
       :цр => HIP_SYNTAX,
       :цс => CSLAV_SYNTAX,
       :ср => SERBIAN_SYNTAX,
@@ -106,8 +106,8 @@ class AlphabethValidator < ActiveModel::EachValidator
    }
 
    MATCH_TABLE = {
-      :ру => "#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}",
-      :ро => "#{MODIFIED_RUSSIAN_CAPITAL}#{MODIFIED_RUSSIAN_STROKE}#{MODIFIED_RUSSIAN_ACCENT}",
+      :рп => "#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}",
+      :ру => "#{MODIFIED_RUSSIAN_CAPITAL}#{MODIFIED_RUSSIAN_STROKE}#{MODIFIED_RUSSIAN_ACCENT}",
       :цс => "#{CSLAV_CAPITAL}#{CSLAV_STROKE}#{CSLAV_ACCENT}",
       :цр => "#{HIP_CAPITAL}#{HIP_STROKE}",
       :ср => "#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}",

@@ -3,10 +3,10 @@ module Language
          
    # :nodoc:
    LANGUAGE_TREE = {
+      ру: %i(рп ру),
+      цс: %i(цс рп ру цр),
       сс: :сс,
       сц: :сц,
-      цс: [ :цс, :ро, :ру, :цр ],
-      ру: [ :ру, :ро ],
       ук: :ук,
       бл: :бл,
       мк: :мк,
@@ -21,7 +21,7 @@ module Language
       нл: :нл,
       ар: :ар,
       ив: :ив,
-      рм: [ :рм, :цу, :цр ],
+      рм: %i(рм цу цр),
       гр: :гр,
       ла: :ла,
       ит: :ит,
@@ -30,11 +30,11 @@ module Language
       не: :не,
       ир: :ир,
       си: :си,
-      ан: [ :ан, :са, :ра ]
+      ан: %i(ан са ра)
    }
 
    # :nodoc:
-   OPTIONS = [ :novalidate, :on ]
+   OPTIONS = %i(novalidate on)
 
    # +language_list+ returns list of available languages.
    #
@@ -57,6 +57,32 @@ module Language
    def self.alphabeth_list_for language_code
       [ Language::LANGUAGE_TREE[ language_code.to_s.to_sym ] ].flatten
          .map( &:to_s ) ;end
+
+   # +language_list_for+ returns the language list for the specified alphabeth
+   # code.
+   #
+   # Example:
+   #
+   #     validates :language_code, inclusion: { in: proc { |l|
+   #        Language.language_list_for( l.alphabeth_code ) } } ; end
+   #
+   def self.language_list_for alphabeth_code
+      language_codes =
+      Language::LANGUAGE_TREE.invert.map do |(alphs, lang)|
+         [ alphs ].flatten.map do |a|
+            [a, lang] ;end;end
+      .flatten(1).reduce({}) do |h, (alph, lang)|
+         case h[alph]
+         when NilClass
+            h[alph] = lang
+         when Array
+            h[alph] << lang
+         else
+            h[alph] = [ h[alph], lang ] ;end
+         h ;end
+      .[](alphabeth_code.to_sym)
+   
+      [ language_codes ].flatten.compact.map( &:to_s ) ;end
 
    # +has_alphabeth+ sets up alphabeth feature on a column or itself model,
    # i.e. generally +alphabeth_code+, and +language_code+ fields to match text

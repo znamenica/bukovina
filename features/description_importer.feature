@@ -5,7 +5,7 @@
       И есть обработанные данные описания:
          """
          ---
-         - :alphabeth_code: :ро
+         - :alphabeth_code: :ру
            :language_code: :ру
            :text: описание Анания
            :memory:
@@ -15,5 +15,5 @@
       Если импортируем их
       То будет создана модель описания с аттрибутами:
          | text            | описание Анания    |
-         | alphabeth_code  | ро                 |
+         | alphabeth_code  | ру                 |
          | language_code   | ру                 |

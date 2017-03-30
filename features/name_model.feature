@@ -48,11 +48,11 @@
          """
          ---
          - &2
-           :alphabeth_code: :ро
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Валентин
          - &1
-           :alphabeth_code: :ро
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Алексей
          - :alphabeth_code: :ср

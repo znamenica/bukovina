@@ -8,7 +8,7 @@
          """
          ---
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Анания
          """
@@ -24,15 +24,15 @@
          """
          ---
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Валентин
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Сергий
          """
@@ -50,7 +50,7 @@
          """
          ---
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :feasibly: :feasible
@@ -67,47 +67,47 @@
          """
          ---
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Петрович
            :state: :отчество
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Иванович
            :state: :кумство
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Олесь
            :state: :наречёное
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Гена
            :state: :самоданное
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Василий
            :state: :чернецкое
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Иувеналий
            :state: :иноческое
            :mode: :ored
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексий
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Феофан
            :state: :схимное
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Иван
            :state: :крещенское
@@ -132,12 +132,12 @@
          """
          ---
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :mode: :prefix
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Александр
          """
@@ -153,12 +153,12 @@
          """
          ---
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :state: :наречёное
          - :name:
-             :alphabeth_code: :ро
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :state: :крещенское

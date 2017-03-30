@@ -203,25 +203,35 @@ module Rails
 #
 #               if short_name == 'Исаия Пророк'
 
-               attr_lists = slink.parse( data[ 'служба' ], target: short_name )
+#               attr_lists = slink.parse( data[ 'служба' ], target: short_name )
+#
+#               if attr_lists
+#                  elist = (attr_lists.keys | [ :link, :service ]) - [:link, :service]
+#                  if elist.any?
+#                     errors << StandardError.new("Exceeded key list #{elist}") ;end
+#
+#                  attr_lists[ :link ]&.each do |attrs|
+#                     attrs.merge!( memory: { short_name: short_name} )
+#                     i = Bukovina::Importers::ServiceLink.new( attrs )
+#                     i.import ;end
+#
+#                  attr_lists[ :service ]&.each do |attrs|
+#                     attrs.merge!( memory: { short_name: short_name} )
+#                     i = Bukovina::Importers::Service.new( attrs )
+#                     i.import
+#                     i.errors.each { |e| errors[ f ] = e } ;end ;end
+#
+#               slink.errors.each { |e| errors[ f ] = e }.clear
+#
+               # ---
+               attr_lists = eventer.parse( data[ 'событие' ] )
 
                if attr_lists
-                  elist = (attr_lists.keys | [ :link, :service ]) - [:link, :service]
-                  if elist.any?
-                     errors << StandardError.new("Exceeded key list #{elist}") ;end
+                  attr_lists[ :event ].each do |attrs|
+                     attrs.merge!( memory: { short_name: short_name } )
+                     Bukovina::Importers::Event.new( attrs ).import ;end;end
 
-                  attr_lists[ :link ]&.each do |attrs|
-                     attrs.merge!( memory: { short_name: short_name} )
-                     i = Bukovina::Importers::ServiceLink.new( attrs )
-                     i.import ;end
-
-                  attr_lists[ :service ]&.each do |attrs|
-                     attrs.merge!( memory: { short_name: short_name} )
-                     i = Bukovina::Importers::Service.new( attrs )
-                     i.import
-                     i.errors.each { |e| errors[ f ] = e } ;end ;end
-
-               slink.errors.each { |e| errors[ f ] = e }.clear
+               eventer.errors.each { |e| errors[ f ] = e }.clear
 
                Dir.chdir( wd )
                end ; end

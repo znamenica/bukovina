@@ -100,7 +100,7 @@
       Если попробуем создать новую иконную ссылку "http://www.wiki.ru" с неверным описанием
       То увидим сообщение ссылки об ошибке:
          """
-         Description text contains invalid char(s) "Iadilnv" for the specified alphabeth "ро"
+         Description text contains invalid char(s) "Iadilnv" for the specified alphabeth "ру"
          Description is invalid
          """
       И ссылки "http://www.wiki.ru" не будет
