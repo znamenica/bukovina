@@ -10,7 +10,9 @@
       лт: Autissiodorensis
    чин: свт
    собор: нейс?
-   бытие: http://linguaeterna.com/vocabula/show.php?n=19659
+   бытие:
+    - http://linguaeterna.com/vocabula/show.php?n=19659
+    - http://www.pravmir.ru/14-evropeyskih-svyatyih-svyatitel-gonorat-prepodobnaya-zheneveva-i-drugie/
    вики:
     - http://drevo-info.ru/articles/1654.html
     - https://ru.wikipedia.org/wiki/Герман_Осерский

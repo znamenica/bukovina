@@ -17,7 +17,9 @@
        - https://ru.wikipedia.org/wiki/Женевьева_Парижская
       ан: https://en.wikipedia.org/wiki/Genevieve
    бытие:
-      ру: http://pravicon.com/info-2041
+      ру:
+       - http://pravicon.com/info-2041
+       - http://www.pravmir.ru/14-evropeyskih-svyatyih-svyatitel-gonorat-prepodobnaya-zheneveva-i-drugie/
       гр: http://www.synaxarion.gr/gr/sid/1612/sxsaintinfo.aspx
    образ:
     - http://pravicon.com/icon-1501

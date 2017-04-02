@@ -5,7 +5,9 @@
    чин: свт
    собор: мск,нов,рднж,нсвт
    вики: http://drevo-info.ru/articles/9667.html
-   бытие: http://azbyka.ru/days/sv-serapion-novgorodskij
+   бытие:
+    - http://azbyka.ru/days/sv-serapion-novgorodskij
+    - http://www.pravmir.ru/tserkov-prazdnuet-pamyat-svyatitelya-serapiona-arhiepiskopa-novgorodskogo-2/
    образ:
     - http://pravicon.com/icon-2848
     - http://azbyka.ru/days/assets/img/saints/5172/p18i7tb30j1p581c19nias974ji3.jpg

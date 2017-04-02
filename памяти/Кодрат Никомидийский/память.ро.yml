@@ -7,7 +7,9 @@
    чин: мч
    собор: виф?,ааик,двор?,аикн
    вики: http://drevo-info.ru/articles/3264.html
-   бытие: http://azbyka.ru/days/sv-kodrat-krotat-nikomidijskij
+   бытие:
+    - http://azbyka.ru/days/sv-kodrat-krotat-nikomidijskij
+    - http://www.pravmir.ru/tserkov-chtit-pamyat-svyatyih-muchenikov-kodrata-nikomidiyskogo-satorina-rufina-i-prochih-2/
    событие:
       год: 303
       дата: вид.21.04

@@ -3,12 +3,15 @@
    имя: Венедикт
    описание: настоятель Нурсийский
    чин: прп
-   собор: итал
+   собор: итал?
    вики: http://drevo-info.ru/articles/1766.html
    бытие:
-    - http://azbyka.ru/days/sv-venedikt-nursijskij
-    - http://calendar.rop.ru/svyat1/mar14-venedikt.html
-    - http://www.saint.gr/48/saint.aspx
+      ру:
+       - http://azbyka.ru/days/sv-venedikt-nursijskij
+       - http://calendar.rop.ru/svyat1/mar14-venedikt.html
+       - http://www.pravmir.ru/tserkov-vspominaet-prepodobnogo-venedikta-2/
+      гр:
+       - http://www.saint.gr/48/saint.aspx
    образ: 
     - http://drevo-info.ru/images/001/001369.jpg
     - http://pravicon.com/icon-1419
