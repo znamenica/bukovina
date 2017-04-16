@@ -9,6 +9,12 @@
    вики: http://drevo-info.ru/articles/8006.html
    бытие: http://azbyka.ru/days/sv-innokentij-kulchickij
    образ: http://pravicon.com/icon-1915
+   служба:
+    - Иннокентию Иркутскому служба
+    - Иннокентию Иркутскому акафист
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_26.pdf
+    - http://azbyka.ru/days/caa/502
+    - http://azbyka.ru/days/caa/324
    событие:
     - год: 1680
       описание: ржд
@@ -52,6 +58,11 @@
     - год: 1920
       дата: 29.12
       описание: утр
+    - год: 1977
+      собор: рус
+      чин: свт
+      описание: просл
+      ссылка: http://diak-kuraev.livejournal.com/1552214.html
     - год: 1990
       описание: обр.2
       место: подсобка. Николо-Надеинская церковь. Ярославль
@@ -66,10 +77,3 @@
       описание: прен.1
     - дата: 26.11
       описание: прств
-    - описание: само
-      служба:
-       - Иннокентию Иркутскому служба
-       - Иннокентию Иркутскому акафист
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_26.pdf
-       - http://azbyka.ru/days/caa/502
-       - http://azbyka.ru/days/caa/324

@@ -1,14 +1,29 @@
 ---
 Амфиан Патарский:
-   имя: Амфиан
-   прозвище: Патарский
+   имя:
+      ру: Амфиан/Аффиан
+      гр: Αμφιανός/
+   описание: брат Едесия Патарского; житель Патарский; мученик Кесарийский (Палестинский); утоплен язычниками
    чин: мч
+   собор: лик?,плст?
    вики: http://drevo-info.ru/articles/9948.html
-   бытие: http://azbyka.ru/days/sv-amfian-patarskij
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-amfian-patarskij
+       - http://www.pravmir.ru/tserkov-chtit-pamyat-svyatyih-muchenikov-amfiana-i-edesiya-2/
+      гр: http://www.saint.gr/3353/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/3845/p18hsu50uh1h4g1dfakepp7it433.jpg
     - http://pravicon.com/icon-1147
-   помин:
-      год: 306
-      дата: 02.04
+    - http://www.saint.gr/photos/standard/0402/AgiosAmfianos01.jpg
+   событие:
+    - год: вт.пол.III
+      описание: ржд
+      место: Патары. Ликия
+    - год: 306
       описание: прств
+      место: Кесария. Палестина
+   помин:
+      дата: 02.04
+      календарь: рпц,ждр
+      описание: само

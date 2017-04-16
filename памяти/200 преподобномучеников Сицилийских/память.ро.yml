@@ -8,15 +8,21 @@
    крат: пмс
    собор: сиц
    бытие:
-      ру: http://calendar.rop.ru/svyat1/mar23-nikon-199.html
+      ру:
+       - http://calendar.rop.ru/svyat1/mar23-nikon-199.html
+       - http://www.pravmir.ru/tserkov-chtit-pamyat-prmch-nikona-i-199-ego-uchenikov/
       гр: http://www.saint.gr/73/saint.aspx
-   служба: 200-м преподобномученикам Сицилийским служба
+   служба:
+    - 200-м преподобномученикам Сицилийским служба
+    - http://azbyka.ru/days/assets/upload/minei/03/minea_03_23.pdf
    событие:
-      год: 251
+    - год: 251
       описание: прств
-      место: вид.Гигия. Сицилия
+      место: вид.Гигия. Асинос река. Сицилия
+    - год: 251
+      описание: пгрб
+      место: вид.Мессина. Сицилия
    помин:
       дата: 23.03
       календарь: рпц,греч
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_23.pdf

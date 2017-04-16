@@ -7,7 +7,10 @@
    чин: исвт
    собор: нмр,врнж,ива,полт,кншм?
    вики: http://drevo-info.ru/articles/12050.html
-   бытие: http://pravicon.com/info-1935
+   бытие:
+    - http://pravicon.com/info-1935
+    - http://diak-kuraev.livejournal.com/1546049.html
+    - http://diak-kuraev.livejournal.com/404290.html
    образ:
     - http://drevo-info.ru/images/001/002074.jpg
     - http://pravicon.com/icon-1390

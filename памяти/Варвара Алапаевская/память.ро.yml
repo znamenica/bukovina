@@ -1,13 +1,15 @@
 ---
 Варвара Алапаевская:
-   имя: Варвара
+   имя: вид.в иночестве Варвара
    отчество: Алексеевна
    фамилия: Яковлева
-   описание: инокиня Алапаевская
+   описание: инокиня Марфо-Мариининская, Алапаевская
    чин: прмц
    собор: нмр,мск,ефва
    вики: http://drevo-info.ru/articles/24035.html
-   бытие: http://azbyka.ru/days/sv-varvara-alapaevskaja-jakovleva
+   бытие:
+    - http://azbyka.ru/days/sv-varvara-alapaevskaja-jakovleva
+    - http://diak-kuraev.livejournal.com/1554179.html
    служба: Варваре Алапаевской служба
    событие:
     - год: ок.1850

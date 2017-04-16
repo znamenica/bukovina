@@ -1,11 +1,26 @@
 ---
 Едесий Патарский:
-   имя: Едесий
-   прозвище: Патарский
+   имя:
+      ру: Едесий
+      гр: Αιδέσιος
+   описание: брат Амфиана Патарского; житель Патарский; мученик Кесарийский (Палестинский); утоплен язычниками
    чин: мч
+   собор: лик?,плст?
    вики: http://drevo-info.ru/articles/9949.html
-   бытие: http://azbyka.ru/days/sv-edesij-patarskij
-   помин:
-      год: 306
-      дата: 02.04
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-edesij-patarskij
+       - http://www.pravmir.ru/tserkov-chtit-pamyat-svyatyih-muchenikov-amfiana-i-edesiya-2/
+      гр: http://www.saint.gr/3353/saint.aspx
+   образ: http://www.saint.gr/photos/standard/0402/AgiosAidesios01.jpg
+   событие:
+    - год: вт.пол.III
+      описание: ржд
+      место: Патары. Ликия
+    - год: 306
       описание: прств
+      место: Кесария. Палестина
+   помин:
+      дата: 02.04
+      календарь: рпц,ждр
+      описание: само

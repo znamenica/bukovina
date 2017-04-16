@@ -3,17 +3,17 @@
    имя: Николай
    отчество: Александрович
    фамилия: Романов
-   описание: император, царь, супруг Александры Царицы
-   чин: мц
+   описание: император; царь; супруг Александры Царицы
+   чин: стц
    собор: цст,слав,нмр
    вики: http://drevo-info.ru/articles/10999.html
-   бытие: http://azbyka.ru/days/sv-nikolaj-ii-romanov
+   бытие:
+    - http://azbyka.ru/days/sv-nikolaj-ii-romanov
+    - http://diak-kuraev.livejournal.com/1538503.html
+   служба:
+    - http://azbyka.ru/days/caa/515
+    - http://azbyka.ru/days/caa/514
    событие:
       год: 1918
       дата: 04.07
       описание: прств
-   помин:
-      описание: само
-      служба:
-       - http://azbyka.ru/days/caa/515
-       - http://azbyka.ru/days/caa/514

@@ -1,16 +1,20 @@
 ---
 Иоанн Кладязьник:
-   имя: Иоанн
-   описание: кладязьник, столпник, пустынник Египетский
+   имя: в крещении Иоанн
+   описание: кладязьник, пустынник Египетский
    чин: прп
-   собор: копт,стлп
+   собор: копт?
    вики: http://drevo-info.ru/articles/5493.html
-   бытие: http://azbyka.ru/days/sv-ioann-egipetskij-pustynnik
+   бытие:
+    - http://azbyka.ru/days/sv-ioann-egipetskij-pustynnik
+    - http://calendar.rop.ru/?svt=mar29-ioann-iustynnik
+    - http://www.pravmir.ru/tserkov-chtit-pamyat-prepodobnogo-ioanna-pustyinnika/
    образ: http://pravicon.com/icon-1969
    событие:
       год: IV
       описание: прств
-      место: пустыня. Египет
+      место: Египетская пустыня. Египет
    помин:
       дата: 29.03
+      календарь: рпц
       описание: само

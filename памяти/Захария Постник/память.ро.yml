@@ -1,20 +1,25 @@
 ---
 Захария Постник:
-   имя: Захария
+   имя:
+      ру: вид.в иночестве Захария
+      гр: Ζαχαρίας
    описание:
       ру: инок и постник Печерский, в Дальних Печерах
-      гр: Όσιος Ζαχαρίας ο εν τη Λαύρα του Κιέβου ασκήσας
+      гр: εν τη Λαύρα του Κιέβου ασκήσας
    чин: прп
-   собор: дпеч
+   собор: дпеч,печ
    вики: http://drevo-info.ru/articles/5466.html
    бытие:
       ру:
        - http://azbyka.ru/days/sv-zaharija-pecherskij
        - http://calendar.rop.ru/svyat1/mar24-zahariya-postnik.html
        - http://www.lavra.ua/index.php?option=com_content&task=view&id=286
+       - http://www.pravmir.ru/tserkov-chtit-pamyat-prepodobnogo-zaharii-postnika-pecherskogo/
       гр: http://www.saint.gr/90/saint.aspx
    образ: http://pravicon.com/icon-1821
-   служба: Захарии Постнику служба
+   служба:
+    - Захарии Постнику служба
+    - http://azbyka.ru/days/assets/upload/minei/03/minea_03_24.pdf
    событие:
     - год: XII-XIV
       описание: иноч
@@ -30,7 +35,6 @@
     - дата: 24.03
       календарь: рпц,греч,змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_24.pdf
     - дата: 24.03
       календарь: греч
       описание: чудо
