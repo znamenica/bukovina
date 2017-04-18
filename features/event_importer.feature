@@ -87,11 +87,11 @@
       Допустим есть обработанные данные события:
          """
          ---
-         - :happened_at: 10.10.1010
+         - :memory:
+             :short_name: "*Василий Васильский"
+           :happened_at: 10.10.1010
            :type: Conceiving
            :person_name: Царько Вислонский
-           :memory:
-             :short_name: "*Василий Васильский"
            :place:
              :descriptions:
              - :alphabeth_code: :ру

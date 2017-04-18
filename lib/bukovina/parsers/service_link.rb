@@ -165,7 +165,8 @@ class Bukovina::Parsers::ServiceLink
                   else
                      {  alphabeth_code: ALPHABETHS[ al ],
                         language_code: LANGUAGES[ lang ],
-                        name: line }.merge( parsed ) ;end ;end; end
+                        name: line,
+                        'info>memory': { short_name: "*#{target}" } }.merge( parsed ) ;end;end;end
             .compact.flatten
 
             parsed

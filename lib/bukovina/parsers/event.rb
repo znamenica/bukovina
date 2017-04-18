@@ -1,5 +1,5 @@
 class Bukovina::Parsers::Event
-   attr_reader :errors
+   attr_reader :errors, :target
 
    Parsers = Bukovina::Parsers
 
@@ -14,7 +14,7 @@ class Bukovina::Parsers::Event
       'предмет' => :item,
       'место' => :place,
       'образ' => :icon,
-      'бытие' => :link,
+      'бытие' => :being,
       'ссылка' => :link,
       'описание_' => :desc,
       'вики' => :wiki,
@@ -134,9 +134,11 @@ class Bukovina::Parsers::Event
 # пред - Forefeast
 # само - feast
 
-   def parse events
+   def parse events, options = {}
       # TODO skip return if errors found
       #
+      @target = options[:target]
+
       res =
       case events
       when Hash
@@ -170,6 +172,9 @@ class Bukovina::Parsers::Event
 
    def parse_hash event
       result = {}
+
+      result[:memory] = { short_name: "*#{target}" } if target
+
       event.each do |key, value|
          case SUBPARSERS[ key ]
          when Symbol
@@ -343,16 +348,24 @@ class Bukovina::Parsers::Event
    def service value, result
       case value
       when String, Hash, Array
-         res = Bukovina::Parsers::ServiceLink.new.parse(value)
-         if res[ :service_links ].present?
-            result[ :service_links ] ||= []
-            result[ :service_links ].concat(res.delete(:link))
+         service_link = Bukovina::Parsers::ServiceLink.new
+         res = service_link.parse(value, target: target)
+
+         if service_link.errors.empty?
+            if res[ :link ].present?
+               result[ :service_links ] ||= []
+               result[ :service_links ].concat(res.delete(:link))
+            end
+
+            if res[ :service ].present?
+               result[ :services ] ||= []
+               result[ :services ].concat(res.delete(:service))
+            end
+         else
+            @errors.concat(service_link.errors)
+            binding.pry
          end
 
-         if res[ :service ].present?
-            result[ :services ] ||= []
-            result[ :services ].concat(res.delete(:service))
-         end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid service " +
             "'#{value}' detected" )
@@ -387,8 +400,8 @@ class Bukovina::Parsers::Event
       case value
       when String, Hash, Array
          res = Bukovina::Parsers::Link.new.parse(value)
-         result[ :links ] ||= []
-         result[ :links ].concat(res.delete(:link))
+         result[ :beings ] ||= []
+         result[ :beings ].concat(res.delete(:link))
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid links " +
             "'#{value}' detected" )

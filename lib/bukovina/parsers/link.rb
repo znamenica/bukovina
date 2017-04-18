@@ -58,8 +58,7 @@ class Bukovina::Parsers::Link
 
    def match_alphabeth? alphabeth_code, line
       filtered = line.gsub(/[0-9\s‑';:"«»,()\.\-\?\/]/,'')
-      Parsers::MATCH_TABLE[ alphabeth_code ] =~ filtered
-   end
+      Parsers::MATCH_TABLE[ alphabeth_code ] =~ filtered ;end
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных

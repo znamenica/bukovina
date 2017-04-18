@@ -342,7 +342,16 @@
 
 
    Сценарий: Событие зачатия
-      Допустим есть словцик события:
+      Допустим есть местный файл службы "Анне Праведной служба" памяти "Анна Праведная":
+         """
+         вечерня:
+            отпустительно:
+               тропарь:
+                  глас: 4
+                  текст: Тропарёв текст
+         """
+      И задействуем память "Анна Праведная"
+      И есть словцик события:
          """
           - год: ок.17 до нэ
             описание: зач
@@ -355,22 +364,18 @@
             образ: http://drevo-info.ru/images/002/007284.jpg [описание иконы]
             служба:
              - http://azbyka.ru/days/assets/upload/minei/12/minea_12_09.pdf
-             - Василию Васильскому служба
-            место: Красная площадь
+             - Анне Праведной служба
+            место: Иерусалим
          """
+
       То обработанные данные события будут выглядеть как:
          """
          ---
-         - :happened_at: ок.17 до нэ
+         - :memory:
+             :short_name: "*Анна Праведная"
+           :happened_at: ок.17 до нэ
            :type: Conceiving
            :person_name: Мария Богородица
-           :memory:
-             :short_name: "*Анна Праведная"
-           :place:
-             :descriptions:
-             - :alphabeth_code: :ру
-               :language_code: :ру
-               :text: Красная площадь
            :descriptions:
            - :alphabeth_code: :ру
              :language_code: :ру
@@ -396,18 +401,22 @@
            :services:
            - :alphabeth_code: :ру
              :language_code: :ру
-             :name: Василию Васильскому служба
+             :name: Анне Праведной служба
              :info>memory:
-               :short_name: "*Василий Васильский"
+               :short_name: "*Анна Праведная"
              :cantoes:
              - :alphabeth_code: :ру
                :language_code: :ру
                :targets:
-               - "*Василий Васильский"
+               - "*Анна Праведная"
                :type: Troparion
-               :prosomeion_title: Тропарёв текст
-               :text: Тропарёв ин текст.
                :tone: 4
+               :text: Тропарёв текст
+           :place:
+             :descriptions:
+             - :alphabeth_code: :ру
+               :language_code: :ру
+               :text: Иерусалим
          """
 
 

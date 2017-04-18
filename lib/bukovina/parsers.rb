@@ -77,8 +77,8 @@ module Bukovina::Parsers
 
    # алфавиты
    MATCH_TABLE = {
-      :рп => /^[#{RUS_CAPITAL}#{RUS_STROKE}#{RUS_ACCENT}]+$/,
       :ру => /^[#{RUSSIAN_CAPITAL}#{RUSSIAN_STROKE}#{RUSSIAN_ACCENT}]+$/,
+      :рп => /^[#{RUS_CAPITAL}#{RUS_STROKE}#{RUS_ACCENT}]+$/,
       :цс => /^[#{CSLAV_CAPITAL}#{CSLAV_STROKE}#{CSLAV_ACCENT}]+$/,
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}]+$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}]+$/,

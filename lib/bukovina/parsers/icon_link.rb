@@ -44,7 +44,7 @@ class Bukovina::Parsers::IconLink
       language_code = detect_language_code( line )
       language_code && ! Parsers::MATCH_TABLE[ language_code ] !~ line ; end
 
-   def detect_language_code desc
+   def detect_alphabeth_code desc
       if ! desc || desc.empty?
          return nil ; end
 
@@ -73,17 +73,18 @@ class Bukovina::Parsers::IconLink
             " format for #{line}" )
          nil
       else
-         language_code = detect_language_code( desc )
-         if language_code == false
+         alphabeth_code = detect_alphabeth_code( desc )
+         language_codes = Language.language_list_for(alphabeth_code)
+         if alphabeth_code == false
             @errors << Parsers::BukovinaInvalidCharError.new( "Invalid " +
                "char(s) for description '#{desc}' specified" )
             nil
          else
-            res = { url: url }
-            if language_code
-               res[ :description ] = { language_code: language_code, text: desc }
-               end
-            res ; end ; end ; end
+            { url: url,
+              description: { alphabeth_code: alphabeth_code,
+                             language_code: language_codes.first.to_sym,
+                             text: desc } } ;end;end;end
+
 
    def initialize
       @errors = [] ; end ; end

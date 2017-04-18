@@ -1,6 +1,6 @@
 Допустим(/^есть (?:словцик события|набор событий):$/) do |string|
    @parser = Bukovina::Parsers::Event.new
-   @res = @parser.parse( YAML.load( string ) )
+   @res = @parser.parse( YAML.load( string ), target: @short_name )
    if ! @res
       puts @parser.inspect ; end ; end
 
