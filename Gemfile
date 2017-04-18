@@ -10,8 +10,8 @@ gem 'rdoba', :git => 'https://github.com/3aHyga/rdoba.git'
 #gem 'flag_shih_tzu'
 gem 'i18n'
 gem 'validate_url'
-gem 'activerecord', '~> 5.0.1'
-#gem 'activerecord', github: 'rails/rails', branch: 'v5.0.2'
+#gem 'activerecord', '~> 5.1.0'
+gem 'activerecord', github: 'rails/rails', branch: 'v5.1.0.rc1'
 
 group :development do
    gem 'cucumber'

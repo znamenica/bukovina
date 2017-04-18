@@ -16,25 +16,33 @@
          .to_h.values
 
          (attr1, target_model_name) = attrs.last.split(":")
-         /(?<real_attr>[^>]+)(?:>(?<relation>.*))?/ =~ attr1
-         new_attrs << ( model_name.constantize.try( :default_key ) ||
-            "#{real_attr}_id" )
+         /(?<real_attr>[^>]*)(?:>(?<relation>.*))?/ =~ attr1
 
-         target_model_name ||= real_attr.singularize
-         model = target_model_name.camelize.constantize
+         if not real_attr.empty?
+            new_attrs << ( model_name.constantize.try( :default_key ) ||
+               "#{real_attr}_id" )
 
-         if /:/ =~ attrs.last
-            add_attrs = [ "#{real_attr}_type", model.to_s ] ;end
+            target_model_name ||= real_attr.singularize
+            model = target_model_name.camelize.constantize
+
+            if /:/ =~ attrs.last
+               add_attrs = [ "#{real_attr}_type", model.to_s ] ;end
+         else
+            foreign_key = model_of( kind ).reflections[ relation ].foreign_key
+            new_attrs = [ relation.tableize, foreign_key ]
+            joins << relation.to_sym
+            model = model_name.constantize ;end
 
          sample = 
          if relation
             subattr = base_field( relation.singularize )
-            model.joins( relation.to_sym ).where( relation => { subattr => match_value }).first
+            model.joins( relation.to_sym ).where( relation.tableize => { subattr => match_value }).first
          else
             model.where( base_field( target_model_name ) => match_value ).first ;end
 
          new_value = /id$/ =~ new_attrs.last && sample.id ||
             sample.try( :default_key ) || sample
+
          [ new_attrs.join( '.' ), new_value ]
       else
          [ attr, value ] ;end ;end.concat( [ add_attrs ] ).compact.to_h

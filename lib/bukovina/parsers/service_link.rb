@@ -118,7 +118,7 @@ class Bukovina::Parsers::ServiceLink
             filemask = File.join( Dir.pwd, line )
             files = Dir.glob( "#{filemask}*" )
             if files.empty?
-               @errors << Parsers::BukovinaNoFilesMatched.new(
+               @errors << Parsers::BukovinaNoFilesMatchedError.new(
                   "No files were matched for service #{line}" ) ;end
 
             parsed =
@@ -128,7 +128,7 @@ class Bukovina::Parsers::ServiceLink
 
                /\.(?:(?<lang>[^\._]+)_)?(?<al>[^\.]+)\.(?<format>yml|hip)$/ =~ file
                if ! format || ! al
-                  @errors << Parsers::BukovinaInvalidFileNameFormat.new(
+                  @errors << Parsers::BukovinaInvalidFileNameFormatError.new(
                      "Invalid file name format for #{file}" )
                elsif format == 'hip'
                   parser = Parsers::PlainService.new

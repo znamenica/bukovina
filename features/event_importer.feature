@@ -8,10 +8,15 @@
          """
          ---
          - :happened_at: "10.10.1010"
-           :subject: глава
            :type: Birth
            :memory:
              :short_name: "*Василий Васильский"
+           :item:
+             :item_type:
+               :descriptions:
+               - :alphabeth_code: :ру
+                 :language_code: :ру
+                 :text: глава
            :place:
              :descriptions:
              - :alphabeth_code: :ру
@@ -22,10 +27,11 @@
       Если импортируем их
       То будет создана модель события с аттрибутами:
          | happened_at        | 10.10.1010            |
-         | subject            | глава                 |
          | type               | Birth                 |
          | memory             | *Василий Васильский   |
          | place>descriptions | *Красная площадь      |
+      И будет создана модель предмета с аттрибутами:
+         | item_type>descriptions   | *глава       |
       И будет создана модель описания с аттрибутами:
          | text               | Красная площадь       |
          | language_code      | ру                    |
@@ -38,10 +44,15 @@
          """
          ---
          - :happened_at: "10.10.1010"
-           :subject: глава
            :type: Birth
            :memory:
              :short_name: "*Василий Васильский"
+           :item:
+             :item_type:
+               :descriptions:
+               - :alphabeth_code: :ру
+                 :language_code: :ру
+                 :text: глава
            :place:
              :descriptions:
              - :alphabeth_code: :ру
@@ -56,11 +67,12 @@
       Если импортируем их
       То будет создана модель события с аттрибутами:
          | happened_at        | 10.10.1010            |
-         | subject            | глава                 |
          | type               | Birth                 |
          | memory             | *Василий Васильский   |
          | place>descriptions | *Красная площадь      |
          | memory             | *Василий Васильский   |
+      И будет создана модель предмета с аттрибутами:
+         | item_type>descriptions   | *глава       |
       И будет создана модель описания с аттрибутами:
          | text               | Красная площадь       |
          | language_code      | ру                    |
@@ -76,8 +88,8 @@
          """
          ---
          - :happened_at: 10.10.1010
-           :subject: глава
-           :type: Birth
+           :type: Conceiving
+           :person_name: Царько Вислонский
            :memory:
              :short_name: "*Василий Васильский"
            :place:
@@ -94,15 +106,25 @@
              :language_code: :ру
              :url: http://wiki.ws/вики
            :beings:
-           - :url: http://being.ws/
+           - :alphabeth_code: :ру
+             :language_code: :ру
+             :url: http://being.ws/
            :icon_links:
            - :url: http://wiki.ws/образ.jpg
              :description:
                :alphabeth_code: :ру
                :language_code: :ру
                :text: описание иконы
+           :item:
+             :item_type:
+               :descriptions:
+               - :alphabeth_code: :ру
+                 :language_code: :ру
+                 :text: глава
            :service_links:
-           - :url: http://service.ws/
+           - :alphabeth_code: :ру
+             :language_code: :ру
+             :url: http://service.ws/
            :services:
            - :alphabeth_code: :ру
              :language_code: :ру
@@ -121,11 +143,13 @@
          """
 
       Если импортируем их
-      То будет создана модель события с аттрибутами:
+      То будет создана модель предмета с аттрибутами:
+         | item_type>descriptions   | *глава       |
+      И будет создана модель события с аттрибутами:
          | happened_at        | 10.10.1010            |
-         | subject            | глава                 |
-         | type               | Birth                 |
+         | type               | Conceiving            |
          | memory             | *Василий Васильский   |
+         | person_name        | Царько Вислонский     |
          | place>descriptions | *Красная площадь      |
       И будет создана модель описания с аттрибутами:
          | text               | Красная площадь    |
@@ -136,8 +160,9 @@
          | text            | Рождество       |
          | alphabeth_code  | ру              |
          | language_code   | ру              |
-      То будет создана модель иконной ссылки с аттрибутами:
-         | url             | http://wiki.ws/образ.jpg |
+      И будет создана модель иконной ссылки с аттрибутами:
+         | url                | http://wiki.ws/образ.jpg |
+         | >description       | *описание иконы          |
       И будет создана модель описания с аттрибутами:
          | text            | описание иконы  |
          | alphabeth_code  | ру              |

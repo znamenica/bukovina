@@ -344,8 +344,11 @@ class Bukovina::Parsers::Event
       case value
       when String, Hash, Array
          res = Bukovina::Parsers::ServiceLink.new.parse(value)
-         result[ :service_links ] ||= []
-         result[ :service_links ].concat(res.delete(:link))
+         if res[ :service_links ].present?
+            result[ :service_links ] ||= []
+            result[ :service_links ].concat(res.delete(:link))
+         end
+
          if res[ :service ].present?
             result[ :services ] ||= []
             result[ :services ].concat(res.delete(:service))

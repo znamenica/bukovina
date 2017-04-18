@@ -352,8 +352,11 @@
             вики: http://drevo-info.ru/articles/632.html
             ссылка:
                гр: http://www.saint.gr/3213/saint.aspx
-            образ: http://drevo-info.ru/images/002/007284.jpg
-            служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_09.pdf
+            образ: http://drevo-info.ru/images/002/007284.jpg [описание иконы]
+            служба:
+             - http://azbyka.ru/days/assets/upload/minei/12/minea_12_09.pdf
+             - Василию Васильскому служба
+            место: Красная площадь
          """
       То обработанные данные события будут выглядеть как:
          """
@@ -361,6 +364,13 @@
          - :happened_at: ок.17 до нэ
            :type: Conceiving
            :person_name: Мария Богородица
+           :memory:
+             :short_name: "*Анна Праведная"
+           :place:
+             :descriptions:
+             - :alphabeth_code: :ру
+               :language_code: :ру
+               :text: Красная площадь
            :descriptions:
            - :alphabeth_code: :ру
              :language_code: :ру
@@ -369,16 +379,35 @@
            - :alphabeth_code: :ру
              :language_code: :ру
              :url: http://drevo-info.ru/articles/632.html
-           :links:
+           :beings:
            - :alphabeth_code: :гр
              :language_code: :гр
              :url: http://www.saint.gr/3213/saint.aspx
            :icon_links:
            - :url: http://drevo-info.ru/images/002/007284.jpg
+             :description:
+               :alphabeth_code: :ру
+               :language_code: :ру
+               :text: описание иконы
            :service_links:
            - :alphabeth_code: :ру
              :language_code: :ру
              :url: http://azbyka.ru/days/assets/upload/minei/12/minea_12_09.pdf
+           :services:
+           - :alphabeth_code: :ру
+             :language_code: :ру
+             :name: Василию Васильскому служба
+             :info>memory:
+               :short_name: "*Василий Васильский"
+             :cantoes:
+             - :alphabeth_code: :ру
+               :language_code: :ру
+               :targets:
+               - "*Василий Васильский"
+               :type: Troparion
+               :prosomeion_title: Тропарёв текст
+               :text: Тропарёв ин текст.
+               :tone: 4
          """
 
 

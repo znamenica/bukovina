@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170227211200) do
+ActiveRecord::Schema.define(version: 20170417160000) do
 
   create_table "calendaries", force: :cascade do |t|
     t.string   "author"
@@ -58,14 +58,14 @@ ActiveRecord::Schema.define(version: 20170227211200) do
 
   create_table "events", force: :cascade do |t|
     t.string   "happened_at"
-    t.string   "subject"
     t.integer  "memory_id",   null: false
     t.string   "type",        null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "place_id"
-    t.integer  "object_id"
-    t.index ["subject", "type", "memory_id"], name: "index_events_on_subject_and_type_and_memory_id"
+    t.integer  "item_id"
+    t.string   "person_name"
+    t.index ["type", "memory_id", "item_id"], name: "index_events_on_item_id_and_type_and_memory_id"
   end
 
   create_table "item_types", force: :cascade do |t|
