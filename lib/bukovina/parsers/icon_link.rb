@@ -41,8 +41,8 @@ class Bukovina::Parsers::IconLink
       line = e.to_s.split('\u{').map do |tok|
          /^(?<num>[a-f0-9]+)/ =~ tok; num&.hex ; end
       .compact.pack("U*")
-      language_code = detect_language_code( line )
-      language_code && ! Parsers::MATCH_TABLE[ language_code ] !~ line ; end
+      alphabeth_code = detect_alphabeth_code( line )
+      alphabeth_code && ! Parsers::MATCH_TABLE[ alphabeth_code ] !~ line ; end
 
    def detect_alphabeth_code desc
       if ! desc || desc.empty?
@@ -74,16 +74,18 @@ class Bukovina::Parsers::IconLink
          nil
       else
          alphabeth_code = detect_alphabeth_code( desc )
-         language_codes = Language.language_list_for(alphabeth_code)
          if alphabeth_code == false
             @errors << Parsers::BukovinaInvalidCharError.new( "Invalid " +
                "char(s) for description '#{desc}' specified" )
             nil
          else
-            { url: url,
-              description: { alphabeth_code: alphabeth_code,
-                             language_code: language_codes.first.to_sym,
-                             text: desc } } ;end;end;end
+            res = { url: url }
+            if desc
+              language_codes = Language.language_list_for(alphabeth_code)
+              res[:description] = { alphabeth_code: alphabeth_code,
+                                    language_code: language_codes.first.to_sym,
+                                    text: desc } ;end
+            res ;end;end;end
 
 
    def initialize

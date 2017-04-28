@@ -24,10 +24,12 @@
          ---
          - :url: http://recource.ru
            :description:
+             :alphabeth_code: :гр
              :language_code: :гр
              :text: 16ος - 17ος αι μ.Χ. - Ησυχαστήριο «Παναγία των Βρυούλων» www.zografiki.com©
          - :url: http://recource.gr
            :description:
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: http://69.16.244.106/~diko/in+d&ex.php
          - :url: http://www.porphyrios.gr/files/jpg/Εικόνες/Συλλογή με κατάταξη/Απόστολοι/Βαρθολομαίος
