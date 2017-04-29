@@ -3,14 +3,17 @@
    имя: Филипп
    описание: святитель Тралл Лидийских, апостол от 70-ти
    чин: ап
-   собор: ап70
+   собор: ап70,свтт
    вики:
-      - https://ru.wikipedia.org/wiki/Филипп_(апостол_от_70)
-      - http://drevo-info.ru/articles/7523.html
+    - https://ru.wikipedia.org/wiki/Филипп_(апостол_от_70)
+    - http://drevo-info.ru/articles/7523.html
    бытие: http://azbyka.ru/days/sv-filipp-3
    образ:
-      - http://drevo-info.ru/images/002/008749.jpg
-      - https://upload.wikimedia.org/wikipedia/commons/8/81/Icon_of_St._Philip_the_Diacon_%2816th_c.%2C_Moscow%29.jpg
+    - http://drevo-info.ru/images/002/008749.jpg
+    - https://upload.wikimedia.org/wikipedia/commons/8/81/Icon_of_St._Philip_the_Diacon_%2816th_c.%2C_Moscow%29.jpg
+   служба:
+    - Филиппу Тралллидийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_11.pdf
    событие:
     - год: I
       описание: ржд
@@ -28,6 +31,3 @@
    помин:
       дата: 11.10
       описание: само
-      служба:
-       - Филиппу Тралллидийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_11.pdf
