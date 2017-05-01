@@ -32,6 +32,7 @@
    служба:
     - Нектарию Эгинскому служба
     - http://azbyka.ru/days/caa/306
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_09.pdf
    событие:
     - год: 1846
       дата: 01.10
@@ -93,4 +94,3 @@
       описание: прен
     - дата: 09.11
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_09.pdf
