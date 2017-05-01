@@ -3,6 +3,7 @@
    имя: в иночестве Рафаила, в крещении Раиса
    отчество: Васильевна
    фамилия: Тертацкая
+   собор: чгрн?,черк?
    описание: Чигиринская, настоятельница Чигиринского Свято-Троицкого монастыря
    бытие:
     - http://azbyka.ru/days/sv-rafaila-chigirinskaja-tartackaja
@@ -11,6 +12,10 @@
     - http://azbyka.ru/days/assets/img/saints/6569/p18k2rsde9rq01rk0h751o25c2q5.jpg
     - http://azbyka.ru/days/assets/img/saints/6569/p18k2rsde81j3kad4hf1r9b5lt3.jpg
     - http://azbyka.ru/days/assets/img/saints/6569/p18k2rsde9ilu2il14gc1bbc6g54.jpg
+   служба:
+    - Рафаиле Чигиринской служба
+    - http://azbyka.ru/days/sv-rafaila-chigirinskaja-tartackaja
+    - http://azbyka.ru/days/worship/595
    событие:
     - год: 1877
       описание: ржд
@@ -20,12 +25,9 @@
       место: вид.Чигирин
     - год: 2009
       дата: 27.06
-      собор: черк
+      собор: укр
+      чин: черк
       описание: просл
    помин:
       дата: 12.08
       описание: само
-      служба:
-       - Рафаиле Чигиринской служба
-       - http://azbyka.ru/days/sv-rafaila-chigirinskaja-tartackaja
-       - http://azbyka.ru/days/worship/595
