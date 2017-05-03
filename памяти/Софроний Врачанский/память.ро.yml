@@ -4,13 +4,15 @@
    фамилия: Владиславов
    описание: священник Котелский, Карнобатский; святитель Врачанский; писатель Бухарестский
    чин: свт
-   собор: болг,пис
+   собор: болг,пис?
    вики: http://drevo-info.ru/articles/9595.html
    бытие: http://azbyka.ru/days/sv-sofronij-vrachanskij
    образ:
     - http://azbyka.ru/days/assets/img/saints/1281/p18h8578bu1o0vun13631qbm6gc3.jpg
     - http://pravicon.com/icon-2939
-   служба: Софронию Врачанскому служба
+   служба:
+    - Софронию Врачанскому служба
+    - http://azbyka.ru/days/assets/upload/minei/03/minea_03_11.pdf
    событие:
     - год: 1739
       описание: ржд
@@ -38,4 +40,3 @@
       собор: болг
       календарь: рпц
       описание: иноч
-      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_11.pdf

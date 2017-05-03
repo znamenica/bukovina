@@ -19,7 +19,8 @@
     - год: 335
       дата: 14.09
       описание: вздв
-      образ: http://azbyka.ru/days/assets/img/saints/5883/d3378b2a37fcf5fd02e54d9e27ca90b6.jpg
+      образ:
+       - http://azbyka.ru/days/assets/img/saints/5883/d3378b2a37fcf5fd02e54d9e27ca90b6.jpg
        - http://azbyka.ru/days/assets/img/holidays/5/p1808qvpqhes2ecr18619s5aqp6.jpg
        - http://azbyka.ru/days/assets/img/holidays/5/p1808r00m21nqrsficq1k469eo7.png
        - http://azbyka.ru/days/assets/img/holidays/5/p1808r00m21qhp3lgb6qlfq28.jpg

@@ -4,10 +4,13 @@
    описание: образ Богородицы
    чин: обр
    вики: http://drevo-info.ru/articles/9097.html
-   бытие: http://azbyka.ru/days/ikona-ognevidnaja
+   бытие:
+      ру: http://azbyka.ru/days/ikona-ognevidnaja
+      гр: http://www.synaxarion.gr/gr/sid/2084/sxsaintinfo.aspx
    событие:
-      год: 202
-      описание: напис
+      год: 598
+      описание: явл
    помин:
       дата: 10.02
+      календарь: гбмч
       описание: само

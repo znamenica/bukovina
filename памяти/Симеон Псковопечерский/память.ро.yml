@@ -7,8 +7,8 @@
    чин: прп
    собор: пппр,нржв?,печо?
    бытие:
-    - http://azbyka.ru/days/sv-simeon-pskovo-pecherskij
     - http://days.pravoslavie.ru/name/14501.htm
+    - https://azbyka.ru/days/sv-simeon-zhelnin-pskovo-pecherskij
    образ:
     - http://azbyka.ru/days/assets/img/saints/6405/p18i9c7seh37p8jl117i1jld1dnv4.jpg
     - http://azbyka.ru/days/assets/img/saints/6405/p18i9c7sehhg14fk1l2ps8r14rg3.jpg
@@ -52,7 +52,7 @@
       место: пещеры. Псково-Печерская обитель. Печоры
     - год: 2003
       дата: 19.03
-      собор: ппеч
+      собор: рус
       чин: прп,пппр
       описание: просл
     - год: 2016
@@ -79,5 +79,4 @@
       календарь: рпц
       описание: просл
     - дата: 08.07
-      собор: ппеч
       описание: само

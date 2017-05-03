@@ -3,13 +3,15 @@
    имя: Леонтий
    фамилия: Стасевич
    чин: присп
-   собор: слав,нмр,мхп,ив
+   собор: слав?,нмр,мхп?,ив?
    вики: http://drevo-info.ru/articles/25137.html
    бытие: http://azbyka.ru/days/sv-leontij-stasevich
    образ:
     - http://drevo-info.ru/images/003/009443.jpg
     - http://pravicon.com/icon-2275
-   помин:
+   событие:
       год: 1972
+      описание: прств
+   помин:
       дата: 27.01
       описание: прств

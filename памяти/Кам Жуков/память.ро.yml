@@ -3,12 +3,14 @@
    имя: Пётр
    фамилия: Жуков
    описание: крестьянин
-   чин: мч
+   чин: мчр
    собор: слав,нмр
    бытие: http://azbyka.ru/days/sv-petr-zhukov
    вики: http://drevo-info.ru/articles/17426.html
    образ: http://azbyka.ru/days/assets/img/saints/3026/p18hv3tgf1b43sgi12kr1q79jaf3.JPG
-   помин:
+   событие:
       год: 1918
+      описание: прств
+   помин:
       дата: 11.04
       описание: прств
