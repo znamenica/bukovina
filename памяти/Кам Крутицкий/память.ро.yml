@@ -9,7 +9,7 @@
       ру: преподаватель Звенигородский, Жировицкий, Петроградский; святитель Подольский,
          Крутицкий; мученик Магнитогорский; расстрелян безбожниками
       гр: Πατριάρχης Μόσχας Ιερομάρτυρας
-   чин: мсвт
+   чин: мсвтр
    собор: нмр,кряк,звгр,жрвц,спб?,пдл,кртц,мсвт,мгтг,врнж
    вики: http://drevo-info.ru/articles/3885.html
    бытие: http://azbyka.ru/days/sv-petr-poljanskij
@@ -29,6 +29,7 @@
     - http://azbyka.ru/days/assets/upload/services/sluzhba_svt._petru_krutickomu.pdf
     - http://www.orthlib.ru/liturgica/divakov/005.html
     - http://ustavschik.livejournal.com/29369.html
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_27.pdf
    событие:
     - год: 1862
       дата: 28.06
@@ -71,15 +72,14 @@
     - год: 2000
       дата: 07.08
       собор: рус
-      чин: нмр
+      чин: нмр,сщмч
       описание: чинпр
     - год: 2005
       дата: 14.12
       собор: рус
-      чин: мсвт
+      чин: мсвт,сщмч
       описание: просл.3
    помин:
       дата: 27.09
       календарь: рпц,греч,змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_27.pdf

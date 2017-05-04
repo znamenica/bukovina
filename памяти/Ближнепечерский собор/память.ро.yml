@@ -9,6 +9,7 @@
    служба:
     - Ближнепечерскому собору служба
     - http://azbyka.ru/days/caa/127
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_28.pdf
    событие:
     - год: X-XX
       описание: пгрб
@@ -25,4 +26,3 @@
       дата: 28.09
       календарь: рпц,змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_28.pdf

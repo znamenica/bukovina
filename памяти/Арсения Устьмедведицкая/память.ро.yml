@@ -28,15 +28,15 @@
       место: Арсениевская церква. Усть-Медведицкая обитель. Донского войска область
     - год: 2016
       дата: до 31.10
-      собор: влгр
-      чин: прп
+      собор: рус
+      чин: прп,влгр
       описание: просл
     - год: 2016
       дата: 31.10
-      собор: влгр
-      чин: прп
+      собор: рус
+      чин: прп,влгр
       описание: чинпр
-      описание_: http://www.pravmir.ru/tyisyachi-veruyushhih-posetili-torzhestva-v-chest-proslavleniya-arsenii-sebryakovoy/
+      ссылка: http://www.pravmir.ru/tyisyachi-veruyushhih-posetili-torzhestva-v-chest-proslavleniya-arsenii-sebryakovoy/
    помин:
       дата: 10.01
       описание: прств

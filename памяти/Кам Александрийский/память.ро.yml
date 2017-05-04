@@ -27,7 +27,9 @@
     - http://3.bp.blogspot.com/_qpE5hNwi618/SwxEHecjAmI/AAAAAAAAC6k/kUgqJkwya5Q/s1600/peter6.jpg
     - http://3.bp.blogspot.com/_qpE5hNwi618/Swy8gQp3WAI/AAAAAAAAC8E/X3J1Ev2Rul4/s1600/peter11.jpg
     - http://1.bp.blogspot.com/_qpE5hNwi618/SwxEKkk84CI/AAAAAAAAC6s/toEWhyKKdAM/s1600/peter5.jpg
-   служба: Каму Александрийскому служба
+   служба:
+    - Каму Александрийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_25.pdf
    событие:
     - год: сер.III
       описание: ржд
@@ -42,11 +44,11 @@
       описание: прств
       место: Александрия. Египет
     - год: по X
-      предмет: часть главы
+      предмет: глава.часть
       описание: прен
       место: Дионисиева обитель. Афон
     - год: по X
-      предмет: часть главы
+      предмет: глава.часть
       описание: прен.1
       место: Клестийская обитель. Аттика
     - год: по X
@@ -64,6 +66,3 @@
     - дата: 25.11
       календарь: змин
       описание: само
-      служба:
-       - Введение Богородицы/Введения Богородицы отданию, Клименту Римскому и Каму Александрийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_25.pdf

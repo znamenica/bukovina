@@ -6,15 +6,16 @@
    крат: 17мг
    бытие: http://azbyka.ru/days/sv-svjatye-prepodobnomucheniki-mgarskie
    образ: http://azbyka.ru/days/assets/img/saints/6570/p18k2u0eutfci36h1oqr1bbdu0i3.jpg
+   служба: http://azbyka.ru/days/worship/597
    событие:
     - год: 1937
       дата: 24.07
       описание: прств
     - год: 2008
       дата: 25.04
-      собор: мгар
+      собор: рус
+      чин: прмчч
       описание: просл
    помин:
       дата: 24.07
       описание: прств
-      служба: http://azbyka.ru/days/worship/597

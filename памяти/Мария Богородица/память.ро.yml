@@ -89,7 +89,7 @@
        - http://azbyka.ru/days/assets/upload/minei/11/minea_11_25.pdf
     - год: 1 до нэ
       описание: зач
-      описание:
+      описание_:
          ру: Благовещение Богородицы
          гр: Ευαγγελισμός της Υπεραγίας Θεοτόκου
       вики: http://drevo-info.ru/articles/783.html
@@ -123,7 +123,7 @@
       чадо: Спас Христос
     - год: 57
       описание: прств
-      описание: Успение Богородицы
+      описание_: Успение Богородицы
       вики: http://drevo-info.ru/articles/1327.html
       бытие: http://azbyka.ru/days/prazdnik-uspenie-presvjatoj-vladychicy-nashej-bogorodicy-i-prisnodevy-marii
       служба:
