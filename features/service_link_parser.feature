@@ -91,6 +91,8 @@
          - :alphabeth_code: :ру
            :language_code: :ру
            :name: Василию Васильскому служба
+           :info>memory:
+             :short_name: "*Василий Васильский"
            :cantoes:
            - :alphabeth_code: :ру
              :language_code: :ру
@@ -130,6 +132,8 @@
          - :alphabeth_code: :ук
            :language_code: :ук
            :name: Василию Васильскому служба
+           :info>memory:
+             :short_name: "*Василий Васильский"
            :cantoes:
            - :alphabeth_code: :ук
              :language_code: :ук
@@ -190,6 +194,8 @@
          - :alphabeth_code: :рм
            :language_code: :рм
            :name: Василию Васильскому служба
+           :info>memory:
+             :short_name: "*Василий Васильский"
            :cantoes:
            - :alphabeth_code: :рм
              :language_code: :рм
@@ -252,6 +258,8 @@
          - :alphabeth_code: :ср
            :language_code: :сх
            :name: Василию Васильскому служба
+           :info>memory:
+             :short_name: "*Василий Васильский"
            :cantoes:
            - :alphabeth_code: :ср
              :language_code: :сх
@@ -306,6 +314,8 @@
          - :alphabeth_code: :ив
            :language_code: :ив
            :name: Василию Васильскому служба
+           :info>memory:
+             :short_name: "*Василий Васильский"
            :cantoes:
            - :alphabeth_code: :ив
              :language_code: :ив
@@ -374,6 +384,8 @@
          - :alphabeth_code: :ра
            :language_code: :ан
            :name: Василию Васильскому служба
+           :info>memory:
+             :short_name: "*Василий Васильский"
            :cantoes:
            - :alphabeth_code: :ра
              :language_code: :ан
@@ -386,6 +398,8 @@
          - :alphabeth_code: :ру
            :language_code: :ру
            :name: Василию Васильскому служба
+           :info>memory:
+             :short_name: "*Василий Васильский"
            :cantoes:
            - :alphabeth_code: :ру
              :language_code: :ру
@@ -410,6 +424,8 @@
          - :alphabeth_code: :ру
            :language_code: :ру
            :name: Василию Васильскому служба
+           :info>memory:
+             :short_name: "*Василий Васильский"
            :cantoes:
            - :alphabeth_code: :ру
              :language_code: :ру

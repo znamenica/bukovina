@@ -10,30 +10,41 @@ class Bukovina::Parsers::Event
    SUBPARSERS = {
       'год' => :year,
       'дата' => :date,
+      'время' => :time,
       'описание' => :type,
       'предмет' => :item,
       'место' => :place,
       'образ' => :icon,
-      'бытие' => :being,
+      'бытие' => :link,
       'ссылка' => :link,
       'описание_' => :desc,
       'вики' => :wiki,
       'супруг' => :person,
+      'муж' => :person,
+      'жена' => :person,
       'кем' => :person,
+      'кому' => :person,
       'чадо' => :person,
       'служба' => :service,
       'о' => :about,
+      'собор' => :counsil,
+      'чин' => :order,
+      'тез' => :tezo,
    }
 
    ITEMS = [
       'частица',
       'глава',
+      'глава.часть',
+      'челюсть',
       'десница',
+      'шуйца',
       'рука',
       'позвонок',
       'глезно',
       'длань',
       'длань шуя',
+      'длань.часть',
       'кожа',
       'плечо',
       'цепь',
@@ -43,22 +54,31 @@ class Bukovina::Parsers::Event
       'часть веляя',
       'посох',
       'покров',
-      'шуйца',
+      'деснога',
       'шуйнога',
+      'стопа',
       'тело',
       'зуб',
+      'предплечье',
       'список',
+      'оковы',
+      'цепь',
+      'решётка',
    ]
 
    EVENTS = {
+      'бесе' => 'Tale',              # от(чел)-ко(чел) # Беседа/Благовещение
+      'битва' => 'Battle',           # ч(место)
       'блгдр' => 'Thanksgiving',     # ко(лич) ЧИНИ какое событие, или просто добвить поле норов (характер) в помин, а событие поставить иное?
       'блслв' => 'Benediction',      # от(стын:self)-ко(чел:person)
       'брак' => 'Marriage',          # от(чел:self)-ко(чел:person)
       'вздв' => 'Exaltation',        # ч(стын:self),кем(чел:person)
       'вид' => 'Apparation',         # ч(стын:self)-ко(чел:person)
       'вознс' => 'Ascension',        # кого(чел:self)
+      'воин' => 'SoldierMemory',     # ч(поместо) память павших воинов
       'восст' => 'Restoration',      # к(чел:self)
       'вскрс' => 'Resurrection',     # к(чел:само)
+      'вход' => 'Entrance',          # от(чел)
       'дияк' => 'Deaconry',          # к(чел:само)-кем(чел:person)
       'ересь' => 'Enheresment',      # к(чел:само)
       'заржд' => 'Conception',       # кого(чел:само)
@@ -66,27 +86,39 @@ class Bukovina::Parsers::Event
       'зач' => 'Conceiving',         # кем(чел:само)-кого(чел:лично)
       'знам' => 'Portent',           # ч(стын) # ЧИНИ? может быть ттоже что и (по)явление?
       'избав' => 'Deliverance',      # ч(стын) # ЧИНИ? может быть победа над кем-то?
+      'изме' => 'Betraial',          # ко(чел)
+      'изнес' => 'Procession',       # ч(стын)-кем(чел:person)
       'иноч' => 'Monasticry',        # ко(чел)-кем(чел:person)
       'ипод' => 'Hypodeaconry',      # ко(чел)-кем(чел:person)
       'крещ' => 'Baptism',           # ко(чел)-кем(чел:person)
       'надст' => 'Superstructure',   # ч(стын)-кем(собор:person)
       'напис' => 'Writing',          # ч(обр)-кем(чел:person)
+      'науч' => 'Learning',          # от(чел)
       'нем' => 'Numbness',           # ко(чел) # ЧИНИ может чудо?
       'низл' => 'Deposition',        # ко(чел)-кем(собор:person)
       'обн' => 'Sanctification',     # ч(храм)-кем(собор:person)
       'обр' => 'Uncovering',         # ч(стын)-кем(чел:person)
+      'обрез' => 'Circumcision',     # ко(чел)
       'ожив' => 'Revival',           # от(чел)-ко(чел)
       'освоб' => 'Liberation',       # ко(чел)
       'отр' => 'Renunciation',       # от(чел)
+      'пад' => 'Fall',               # ч(место)
       'пгрб' => 'Burial',            # ко(чел)
+      'пожар' => 'GreatFire',        # ч(место)
       'покая' => 'Repentance',       # от(чел)-кто прнимал(чел:person)
+      'покой' => 'Rest',             # от(чел)-ко(собор:person)
       'полож' => 'Placing',          # ч(стын)
       'почит' => 'Veneration',       # ч(стын)
       'прдст' => 'Primacy',          # от(чел)
       'прел' => 'PuttingInAgain',    # ч(стын)
+      'прем' => 'Teleportation',     # ч(стын)
       'прен' => 'Translation',       # ч(стын)
       'призв' => 'Calling',          # ко(чел)
-      'вход' => 'Entrance',          # от(чел)
+      'плен' => 'Captivity',         # ч(предм)
+      'покл' => 'Adoration',         # ко(чел)-от(собор:person)       # приношение, поклонение (волхвов)
+      'преоб' => 'Transfiguration',  # ко(чел)
+      'прок' => 'Curse',             # от(чел)
+      'проп' => 'Preach',            # от(чел)
       'просл' => 'Canonization',     # от(чел)-кем(собор:person)
       'прств' => 'Repose',           # от(чел)
       'прстл' => 'Throne',           # ч(храм)
@@ -96,6 +128,7 @@ class Bukovina::Parsers::Event
       'рассл' => 'Decanonization',   # от(чел)
       'ржд' => 'Nativity',           # от(чел)
       'рясф' => 'Frockbearing',      # ко(чел)-кем(чел:person)
+      'сбр' => 'Council',            # ч(место)
       'свят' => 'Bishopry',          # ко(чел)-кем(собор:person)
       'свящ' => 'Priestship',        # ко(чел)-кем(чел:person)
       'созд' => 'Founding',          # ч(храм)
@@ -104,35 +137,42 @@ class Bukovina::Parsers::Event
       'срет' => 'Meeting',           # от(чел)-ко(чел)
       'стрст' => 'Passion',          # ко(чел)
       'схим' => 'Schima',            # ко(чел)
+      'тайн' => 'Supper',            # от(чел)-ко(собор:person)
+      'трез' => 'Sobriety',          # ч(поместо) память трезвения
       'труд' => 'Labor',             # от(чел) # ЧИНИ что это?
+      'тряс' => 'Earthquake',        # ч(место)
+      'увер' => 'Assurance',         # от(чел)-ко(чел)
       'утр' => 'Loss',               # ч(стын)
       'чинпр' => 'Glorification',    # ко(чел)-от(собор:person)
       'чтец' => 'Reader',            # ко(чел)-кем(чел:person)
       'чудо' => 'Miracle',           # ч(стын)
       'явл' => 'Appearance',         # ч(обр)
-      'пожар' => 'GreatFire',        # ч(место)
-      'тряс' => 'Earthquake',        # ч(место)
-      'преоб' => 'Transfiguration',  # ко(чел)
-      'изнес' => 'Procession',       # ч(стын)-кем(чел:person)
-      'плен' => 'Captivity',         # ч(предм)
-      'покл' => 'Adoration',         # ко(чел)-от(собор:person)       # приношение, поклонение (волхвов)
-      'обрез' => 'Circumcision',     # ко(чел)
-      'прок' => 'Curse',             # от(чел)
-      'бесе' => 'Tale',              # от(чел)-ко(чел) # Беседа/Благовещение
-      'изме' => 'Betraial',          # ко(чел)
-      'пад' => 'Fall',               # ч(место)
-      'науч' => 'Learning',          # от(чел)
-      'покой' => 'Rest',             # от(чел)-ко(собор:person)
-      'тайн' => 'Supper',            # от(чел)-ко(собор:person)
-      'увер' => 'Assurance',         # от(чел)-ко(чел)
-      'воин' => 'SoldierMemory',     # ч(поместо) память павших воинов
-      'трез' => 'Sobriety',          # ч(поместо) память трезвения
    }
 # навеч - eve
 # отд - Apodosis
 # попр - Afterfeast
 # пред - Forefeast
 # само - feast
+   #
+   COUNSILS = %w(рус греч иерс аме фин болг серб груз пол рум чсл виз алкс антх
+                 карф рим англ
+                 мск киев черн сузд верн нов нпск влдв
+                 молд кит укр клвн блр русз герм
+                 пнаф печ)
+   ORDERS = %w(нмр нмч нмк 17мг нмм нмс нмз
+               сщмч сщмчч вмц вмч мч мцц мчч прмч прмц мц прп прав свт прпж стцц стц блж сщисп присп присц исп исц блгв блгвв рап
+               сбр
+               кит
+               мск спб вят перм ниж сиб каз влад тавр уф тул ряр врнж сарн вуст кстр нов твер мурм клзн ека крсн кур влгд нсиб
+                   сам тамб кар ряз влгр рнд пск ива омск верн астр кург симб
+               опт пнаф пппр мсвт смнк бпеч рднж нмнд валм сол див
+               укр киев елсг неж жит вол карп гал вин черк одес херс полт крмч мрпл хуст черн кнтп
+               молд
+               блр нгрд
+               серб шбцв)
+   ABOUT_PRES = %w(нд.по нд.до сб.по сб.до)
+   ABOUTS = [ 'пт.вел', 'сб.по рх', 'нд.7.по пасхе', 'вс.8.по пасхе', 'ср.1.по пасхе', 'вт.1.по пасхе', 'сб.5.поста', 'сб.по отд.вздв',
+              'вт.1.по пасхе', 'чт.по всех' ]
 
    def parse events, options = {}
       # TODO skip return if errors found
@@ -160,7 +200,7 @@ class Bukovina::Parsers::Event
             "can't be blank" )
       else
          raise Parsers::BukovinaInvalidClass, "Invalid class #{name.class} " +
-               "for Name line '#{name}'" ; end
+            "for Name line '#{name}'" ; end
 
       @errors.empty? && res || nil
 
@@ -209,9 +249,8 @@ class Bukovina::Parsers::Event
       when NilClass
          ats
       when Array
-         if ats.size != result[ :happened_at ].size
-            @errors << Parsers::BukovinaInvalidValueError.new( "Array size for year value " +
-               "doesn't match to stored one" )
+         if not result[ :happened_at ]
+            @errors << Parsers::BukovinaInvalidValueError.new( "Data array is already defined as #{result[ :happened_at ]}")
             nil
          else
             [ result[ :happened_at ], ats ].transpose.map do |(date, year)|
@@ -246,10 +285,51 @@ class Bukovina::Parsers::Event
       new =
       case result[ :happened_at ]
       when NilClass
+         @errors << Parsers::BukovinaInvalidValueError.new( "Time " +
+            "can't be used without a previously defined date in #{value}" )
+      when Array
+         preres =
+         if ats.size == result[ :happened_at ].size
+            [ ats, result[ :happened_at ] ].transpose
+         else
+            ats.product(result[ :happened_at ])
+         end
+
+         preres.map do |(date, year)|
+            if date =~ /-/
+               if year =~ /-/
+                  [ date.split(/-/), year.split('-') ].transpose.map { |x| x.join('.') }.join('-')
+               else
+                  date.split(/-/).map { |d| [ d, year ].join('.') }.join('-')
+               end
+            else
+               if year =~ /-/
+                  year.split(/-/).map { |y| [ date, y ].join('.') }.join('-')
+               else
+                  [ date, year ].join('.')
+               end
+            end
+         end
+      else
+         ats.map { |x| "#{x}.#{result[ :happened_at ]}" }
+      end
+
+      result[ :happened_at ] = new.size == 1 && new.pop || new
+   end
+
+   def time value, result
+      ats = value.to_s.split('/').map { |x| x =~ /.1$/ && "#{x}0" || x }
+
+      return if ats.empty?
+
+      new =
+      case result[ :happened_at ]
+      when NilClass
          ats
       when Array
          if ats.size != result[ :happened_at ].size
             if ats.size > 1
+               binding.pry
                @errors << Parsers::BukovinaInvalidValueError.new( "Array " +
                   "size for date value doesn't match to stored one" )
                ''
@@ -281,6 +361,33 @@ class Bukovina::Parsers::Event
       result[ :happened_at ] = new.size == 1 && new.pop || new
    end
 
+   def counsil value, result
+      if /^(#{COUNSILS.join("|")})$/ =~ value
+         result[ :counsil ] = value
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "invalid item " +
+            "value '#{value}' detected for counsil field" )
+      end
+   end
+
+   def order value, result
+      match =
+      value.split(',').all? do |v|
+         /^(#{ORDERS.join("|")})/ =~ v
+      end
+
+      if match
+         result[ :order ] = value
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid item " +
+            "value '#{value}' detected for order field" )
+      end
+   end
+
+   def tezo value, result
+      result[ :tezo_string ] = value
+   end
+
    def item value, result
       /^(#{ITEMS.join("|")})(\.\d+)?$/ =~ value
       itemname = $1
@@ -295,29 +402,35 @@ class Bukovina::Parsers::Event
          result[ :item ] = item
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid item " +
-            "value '#{value}' detected" )
+            "value '#{value}' detected for item field" )
       end
    end
 
    def type value, result
-      /^(#{EVENTS.keys.join("|")})$/ =~ value
+      /^(#{EVENTS.keys.join("|")})(:?\.(\d+))??$/ =~ value
       event = $1
+      number= $2
 
       if EVENTS[ event ].present?
          result[ :type ] = EVENTS[ event ]
+         result[ :type_number ] = number if number
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid event " +
-            "'#{value}' detected" )
-      end
-   end
+            "'#{value}' detected" ) ;end
+   rescue TypeError => e
+      e.message << " for type value: #{value}, and result: #{result.inspect}"
+      @errors << e ;end
 
    def place value, result
       case value
       when String, Hash, Array
-         res = Bukovina::Parsers::Description.new.parse(value)
-         result[ :place ] ||= {}
-         result[ :place ][ :descriptions ] ||= []
-         result[ :place ][ :descriptions ].concat(res.delete(:description))
+         parser = Bukovina::Parsers::Description.new
+         if res = parser.parse(value)
+            result[ :place ] ||= {}
+            result[ :place ][ :descriptions ] ||= []
+            result[ :place ][ :descriptions ].concat(res.delete(:description))
+         else
+            @errors.concat(parser.errors) ;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid place " +
             "(value #{value}' detected" )
@@ -325,15 +438,27 @@ class Bukovina::Parsers::Event
    end
 
    def about value, result
-      /^(?<about>\d{2}\.\d{2})$/ =~ value
+      value = value.is_a?(Float) && sprintf("%.2f", value) || value
 
-      if about.present?
-         result[ :about_string ] = about
-      else
-         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid about " +
-            "value #{value}' detected" )
+      abouts =
+      value.split(',').map do |v|
+         case v.strip
+         when /^(#{ABOUT_PRES.join("|")})?\s*(\d{1,2}\.\d{2})$/
+            sprintf("%s %.2f", $1, $2)
+         when /^(?:#{ABOUTS.join("|")})$/
+            v
+         else
+            @errors << Parsers::BukovinaInvalidValueError.new( "Invalid about " +
+               "value #{value}' detected" ) ;end
       end
-   end
+
+      if abouts.all?
+         result[ :about_string ] = abouts.join(',') ;end
+   rescue ArgumentError => e
+      binding.pry
+   rescue TypeError => e
+      e.message << " for type value: #{value}, and result: #{result.inspect}"
+      @errors << e ;end
 
    def person value, result
       case value
@@ -363,7 +488,6 @@ class Bukovina::Parsers::Event
             end
          else
             @errors.concat(service_link.errors)
-            binding.pry
          end
 
       else
@@ -375,9 +499,12 @@ class Bukovina::Parsers::Event
    def wiki value, result
       case value
       when String, Hash, Array
-         res = Bukovina::Parsers::Link.new.parse(value)
-         result[ :wikies ] ||= []
-         result[ :wikies ].concat(res.delete(:link))
+         parser = Bukovina::Parsers::Link.new
+         if res = parser.parse(value)
+            result[ :wikies ] ||= []
+            result[ :wikies ].concat(res.delete(:link))
+         else
+            @errors.concat(parser.errors) ;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid wikies " +
             "'#{value}' detected" )
@@ -387,38 +514,41 @@ class Bukovina::Parsers::Event
    def icon value, result
       case value
       when String, Hash, Array
-         res = Bukovina::Parsers::IconLink.new.parse(value)
-         result[ :icon_links ] ||= []
-         result[ :icon_links ].concat(res.delete(:icon_link))
+         parser = Bukovina::Parsers::IconLink.new
+         if res = parser.parse(value)
+            result[ :icon_links ] ||= []
+            result[ :icon_links ].concat(res.delete(:icon_link))
+         else
+            @errors.concat(parser.errors) ;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid icon links " +
-            "'#{value}' detected" )
-      end
-   end
+            "'#{value}' detected" ) ;end;end
 
    def link value, result
       case value
       when String, Hash, Array
-         res = Bukovina::Parsers::Link.new.parse(value)
-         result[ :beings ] ||= []
-         result[ :beings ].concat(res.delete(:link))
+         parser = Bukovina::Parsers::Link.new
+         if res = parser.parse(value)
+            result[ :beings ] ||= []
+            result[ :beings ].concat(res.delete(:link))
+         else
+            @errors.concat(parser.errors) ;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid links " +
-            "'#{value}' detected" )
-      end
-   end
+            "'#{value}' detected" ) ;end;end
 
    def desc value, result
       case value
       when String, Hash, Array
-         res = Bukovina::Parsers::Description.new.parse(value)
-         result[ :descriptions ] ||= []
-         result[ :descriptions ].concat(res.delete(:description))
+         parser = Bukovina::Parsers::Description.new
+         if res = parser.parse(value)
+            result[ :descriptions ] ||= []
+            result[ :descriptions ].concat(res.delete(:description))
+         else
+            @errors.concat(parser.errors) ;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid description " +
-            "'#{value}' detected" )
-      end
-   end
+            "'#{value}' detected" ) ;end;end
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных

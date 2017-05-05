@@ -49,7 +49,7 @@ class Bukovina::Parsers::Description
    end
 
    def match_alphabeth? alphabeth_code, line
-      filtered = line.gsub(/[0-9\s‑';:"«»,()\.\-\?\/]/,'')
+      filtered = line.gsub(/[0-9\s‑';:"«»,()№\.\-\?\/]/,'')
       Parsers::MATCH_TABLE[ alphabeth_code ] =~ filtered
    end
 

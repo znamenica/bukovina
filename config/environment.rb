@@ -33,12 +33,13 @@ module Rails
 
          I18n.load_path.concat( Dir.glob( Rails.root.join( "config/locales/**/*.yml" ) ) )
          # custom
-         @errors = [] ; end
+         @errors = {} ; end
 
       def paths
          { 'db/migrate' => [ 'db/migrate' ] } ; end
 
-      def validate_record record
+      def validate_record f, record
+
          short_name = record.keys.first
          # TODO Validate memory, it will validate subfiieds itself
 
@@ -46,7 +47,13 @@ module Rails
 
          namer = Bukovina::Parsers::Name.new
          namer.parse data[ 'имя' ]
-         @errors.concat namer.errors ; end
+         if namer.errors.any?
+            @errors[f] = {name: namer.errors } ;end
+
+         eventer = Bukovina::Parsers::Event.new
+         eventer.parse( data[ 'событие' ] )
+         if eventer.errors.any?
+            @errors[f] = {event: eventer.errors } ;end;end
 
       def validate
          Dir.glob( 'памяти/**/память.*.yml' ).each do |f|
@@ -55,10 +62,25 @@ module Rails
             m = begin
                YAML.load( File.open( f ) )
             rescue Psych::SyntaxError => e
-               @errors << "#{e} for file #{f}" ; nil ; end
+               @errors[f] = {root: [StandardError.new("#{e} for file #{f}")]} ; nil ; end
 
             if m
-               validate_record m ; end ; end ; end
+               wd = Dir.pwd
+               Dir.chdir( File.dirname( f ) )
+               validate_record(f, m)
+               Dir.chdir( wd ) ;end;end
+
+         puts '-'*80
+         errors.keys.each do |f|
+            puts "'#{f}'" ;end
+         puts '='*80
+
+         errors.each do |f, ee|
+            ee.each do |kls, list|
+               list.each do |e|
+                  puts "@@@ #{f}:#{kls} -> #{e.class}:#{e.message}" ; end;end;end
+
+         true; end
 
       def load_seed
          errors = {}
@@ -224,14 +246,15 @@ module Rails
 #               slink.errors.each { |e| errors[ f ] = e }.clear
 #
                # ---
-               attr_lists = eventer.parse( data[ 'событие' ] )
-
-               if attr_lists
-                  attr_lists[ :event ].each do |attrs|
-                     attrs.merge!( memory: { short_name: short_name } )
-                     Bukovina::Importers::Event.new( attrs ).import ;end;end
-
-               eventer.errors.each { |e| errors[ f ] = e }.clear
+#               attr_lists = eventer.parse( data[ 'событие' ] )
+#
+#               if attr_lists
+#                  binding.pry
+#                  attr_lists[ :event ].each do |attrs|
+#                     attrs.merge!( memory: { short_name: short_name } )
+#                     Bukovina::Importers::Event.new( attrs ).import ;end;end
+#
+#               eventer.errors.each { |e| errors[ f ] = e }.clear
 
                Dir.chdir( wd )
                end ; end
