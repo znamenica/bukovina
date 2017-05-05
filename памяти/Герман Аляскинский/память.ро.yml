@@ -15,7 +15,9 @@
     - http://azbyka.ru/days/assets/img/saints/800/13ed1ac1f344c5bb90f439aca3f6de9e.jpg
     - http://azbyka.ru/days/assets/img/saints/800/7bd2126f3a40714eeefedfb1b4000772.jpg
     - http://pravicon.com/icon-1528
-   служба: Герману Аляскинскому служба
+   служба:
+    - Герману Аляскинскому служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_13.pdf
    событие:
     - год: 1757
       описание: ржд
@@ -50,4 +52,3 @@
     - дата: 13.12
       календарь: змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/12/minea_12_13.pdf

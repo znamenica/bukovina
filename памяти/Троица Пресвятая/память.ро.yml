@@ -11,7 +11,7 @@
     - http://stamatis-skliris.gr/wp-content/uploads/2012/06/filoksenia.jpg [π. Σταμάτης Σκλήρης© (stamatis-skliris.gr)]
     - http://www.saint.gr/filesnew/04/1833/photos/FilokseniaAbraam05.jpg [Φώτης Κόντογλου]
    событие:
-    - дата: 30
+    - год: 30
       описание: явл
       описание_: Богоявление; Просвещение
       служба: 
@@ -21,7 +21,7 @@
        - http://azbyka.ru/days/assets/upload/minei/01/minea_01_03.pdf
        - Предпразнеству Богоявления, Семидесяти собору и Феоктисту Кукумскому служба
        - http://azbyka.ru/days/assets/upload/minei/01/minea_01_04.pdf
-       - Предпразнеству Богоявления, Феопемпту и Феоне Никомидийским и Синклитикии Александрийской
+       - Предпразнеству Богоявления, Феопемпту и Феоне Никомидийским и Синклитикии Александрийской служба
        - http://azbyka.ru/days/assets/upload/minei/01/minea_01_05.pdf
        - Навечерию Богоявления служба
        - http://azbyka.ru/days/assets/upload/minei/01/minea_01_05.pdf
@@ -39,7 +39,7 @@
        - http://www.pravmir.ru/wp-content/uploads/2014/01/23133-0-580x342.jpg
       бытие: http://calendar.rop.ru/svyat1/jan06-kreshenie.html
       место: Иордан река. Палестина
-    - дата: II-V
+    - год: II-V
       описание: просл
       служба:
        - Пятидесятнице служба
@@ -48,7 +48,7 @@
       ссылка: http://azbyka.ru/days/prazdnik-den-svjatoj-troicy-pjatidesjatnica
       описание_: Пятидесятница
       о: нд.7.по пасхе
-    - дата: II-V
+    - год: II-V
       описание: просл.1
       о: 06.01
    помин:

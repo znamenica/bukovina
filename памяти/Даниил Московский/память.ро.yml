@@ -31,6 +31,7 @@
     - http://azbyka.ru/days/caa/24
     - http://azbyka.ru/days/caa/25
     - http://azbyka.ru/days/caa/26
+    - http://azbyka.ru/days/assets/upload/minei/03/minea_03_04.pdf
    событие:
     - год: 1261
       дата: ноя/дек
@@ -55,14 +56,10 @@
       дата: 30.08
       описание: прен
       место: Седьмисоборская церковь. Москва
-    - год: 1791
-      собор: мск
-      описание: просл
    помин:
     - дата: 04.03
       календарь: рпц,змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_04.pdf
     - дата: 30.08
       календарь: рпц,змин
       описание: обр
