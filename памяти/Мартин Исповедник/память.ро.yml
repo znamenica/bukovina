@@ -8,14 +8,17 @@
       гр: Ομολογιτής
    описание:
       ру: святитель и папа Римский
-      гр: πάπας Ρώμης και δύο Επισκόπων
+      гр: πάπας Ρώμης
    чин: исвт
-   собор: рим,тавр,пмфи,умбр
+   собор: рим,тавр?,пмфи?,умбр?
    вики:
     - http://drevo-info.ru/articles/10172.html
     - https://ru.wikipedia.org/wiki/Мартин_I_(папа_римский)
    бытие:
-      ру: http://azbyka.ru/days/sv-martin-i-rimskij
+      ру:
+       - http://azbyka.ru/days/sv-martin-i-rimskij
+       - http://calendar.rop.ru/?svt=apr14-martin-rimskij
+       - http://www.pravmir.ru/pravoslavnyiy-kalendar-27-aprelya/
       гр: http://www.saint.gr/261/saint.aspx
    образ:
     - http://pravicon.com/icon-2393
@@ -40,5 +43,9 @@
       календарь: греч
       описание: само
     - дата: 14.04
-      календарь: г7д8
+      календарь: рпц
+      описание: само
+    - дата: 14.04
+      календарь: герм
+      год: 2008
       описание: само

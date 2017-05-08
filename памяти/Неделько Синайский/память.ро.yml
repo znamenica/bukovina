@@ -6,15 +6,19 @@
    прозвище:
       ру: Синаит
       гр: Σιναΐτης
-   описание: инок и настоятель Синайский
+      ср: Синаит
+   описание:
+      ру: инок и настоятель Синайский
+      ср: монах и игуман Синајски
    чин: прп
    собор: кипр?,син?
    вики: http://drevo-info.ru/articles/10301.html
    бытие:
       ру:
-       - http://calendar.rop.ru/svyat1/apr20-anastasij-igumen.html
        - http://azbyka.ru/days/sv-anastasij-3
+       - http://calendar.rop.ru/?svt=apr20-anastasij-igumen
       гр: http://www.saint.gr/318/saint.aspx
+      ср: https://svetosavlje.org/dan-prologa/20-april-po-julijanskom-kalendaru/2017-05-03/
    образ: http://www.saint.gr/photos/standard/0420/AgiosAnastasios01.jpg
    событие:
     - год: ок.640/кон.VI
@@ -28,7 +32,7 @@
       место: Екатериниская обитель. Синай
    помин:
     - дата: 20.04
-      календарь: рпц
+      календарь: рпц,охр
       описание: само
     - дата: 21.04
       календарь: греч

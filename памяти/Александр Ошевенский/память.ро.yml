@@ -13,8 +13,9 @@
    вики: http://drevo-info.ru/articles/10289.html
    бытие:
       ру:
-       - http://calendar.rop.ru/svyat1/apr20-alexandr-oshevenskij.html
        - http://azbyka.ru/days/sv-aleksandr-oshevenskij
+       - http://calendar.rop.ru/?svt=apr20-alexandr-oshevenskij
+       - http://www.pravmir.ru/pravoslavnyiy-kalendar-3-maya/
       гр:
        - http://www.saint.gr/316/saint.aspx
        - http://www.synaxarion.gr/gr/sid/2728/sxsaintinfo.aspx
@@ -38,5 +39,5 @@
       описание: обр
    помин:
       дата: 20.04
-      календарь: рпц
+      календарь: рпц,греч,гбмч
       описание: само

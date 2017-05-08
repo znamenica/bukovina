@@ -1,7 +1,7 @@
 ---
 Серна Иоппийская:
    имя: Серна (Тавифа)
-   описание: Иоппийская
+   описание: жительница и подвижница Иоппийская
    чин: прав
    вики: http://drevo-info.ru/articles/2501.html
    бытие: http://azbyka.ru/days/sv-tavifa-ioppijskaja
@@ -10,6 +10,9 @@
     - http://drevo-info.ru/images/003/010476.jpg
     - http://azbyka.ru/days/assets/img/saints/6062/p188o5bt7o11d61tht1hq01igjnsp5.jpg
     - http://azbyka.ru/days/assets/img/saints/6062/p188o58ls41018hhkr472k216623.jpg
+   служба:
+    - Серне Иоппийской служба
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_25.pdf
    событие:
     - год: I
       описание: прств
@@ -18,14 +21,13 @@
       образ:
        - http://drevo-info.ru/images/003/010477.jpg
        - http://azbyka.ru/days/assets/img/saints/6062/p188o5bt7pm7h2u2119b1trbl646.jpg
+      ссылка: http://www.pravmir.ru/tserkov-chtit-pamyat-svyatoy-tavifyi/
     - год: I
       описание: прств.1
    помин:
-    - дата: нд.рсл
+    - дата: нд.3.по пасхе
+      календарь: рпц
       описание: ожив
       служба: Серне Иоппийской на оживление служба
     - дата: 25.10
       описание: само
-      служба:
-       - Серне Иоппийской служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_25.pdf

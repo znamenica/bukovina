@@ -5,7 +5,9 @@
    чин: рап
    собор: ап70,плст?,мрнс,плст?,лид?,виз?,рим?,ммфс
    вики: http://drevo-info.ru/articles/13273.html
-   бытие: http://azbyka.ru/days/sv-marija-magdalina
+   бытие:
+    - http://azbyka.ru/days/sv-marija-magdalina
+    - http://www.pravmir.ru/mariya-magdalina-ne-dumala-o-zhenskom-dne1/
    образ:
     - http://azbyka.ru/days/assets/img/saints/5855/7400a9de2ae6af4606ccbadd1ea9bdaf.jpg
     - http://azbyka.ru/days/assets/img/saints/5855/a76edfeb5b00746e8ba6be8fad8dc73b.jpg

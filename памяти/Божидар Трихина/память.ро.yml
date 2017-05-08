@@ -1,14 +1,30 @@
 ---
 Божидар Власяник:
-   имя: Божидар
-   прозвище: Власяник (Трихина)
+   имя:
+      ру: Божидар
+      ср: Теодор
+   прозвище:
+      ру: Власяник (Трихина)
+      ср: Трихина
+   описание: пустынник и постник Фракийский
    чин: прп
+   собор: виз?,фрак?
    вики: http://drevo-info.ru/articles/5619.html
-   бытие: http://azbyka.ru/days/sv-feodor-trihina
+   бытие:
+      ру:
+       - http://azbyka.ru/days/sv-feodor-trihina
+       - http://www.pravmir.ru/pravoslavnyiy-kalendar-3-maya/
+       - https://ru.wikisource.org/wiki/%D0%96%D0%B8%D1%82%D0%B8%D1%8F_%D1%81%D0%B2%D1%8F%D1%82%D1%8B%D1%85_(%D0%94%D0%B8%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9_%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9)/%D0%90%D0%BF%D1%80%D0%B5%D0%BB%D1%8C/20#cite_note-29
+       - http://calendar.rop.ru/?svt=apr20-feodor-trihina
+      ср: https://svetosavlje.org/dan-prologa/20-april-po-julijanskom-kalendaru/2017-05-03/
    служба: Божидару Власянику служба
    событие:
-      год: ок. 400
+    - год: до 330
+      описание: ржд
+      место: Константинополь. Византия
+    - год: ок. 400
       описание: прств
    помин:
       дата: 20.04
+      календарь: рпц,ждр,змин,охр
       описание: само

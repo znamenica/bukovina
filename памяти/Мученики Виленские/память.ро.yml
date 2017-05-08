@@ -6,7 +6,9 @@
    чин: мчч
    крат: мвл
    собор: виль?,двор?
-   бытие: http://www.orthodoxy.lt/eparhia/mucheniki/
+   бытие:
+    - http://www.orthodoxy.lt/eparhia/mucheniki/
+    - http://calendar.rop.ru/?svt=apr14-antonij-ioann
    образ: http://drevo-info.ru/images/001/000541.jpg
    служба:
     - Мученикам Виленским служба
@@ -63,6 +65,7 @@
       место: Свято-Духовский храм. Вильнюс. Литва
    помин:
     - дата: 14.04
+      календарь: рпц
       описание: прств
     - дата: 13.07
       описание: прен.3

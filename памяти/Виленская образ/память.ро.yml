@@ -1,14 +1,18 @@
 ---
-Виленский образ:
-   имя: Виленский
-   описание: образ Богородицы Путеводицы из Вильно; Лукинский образ
+Виленская образ:
+   имя: Виленская
+   описание: образ Богородицы Путеводицы из Вильно; образ Лукинский
    чин: обр
    вид: Путеводительница образ
    вики: http://drevo-info.ru/articles/5562.html
-   бытие: http://azbyka.ru/days/ikona-vilenskaja
+   бытие:
+    - http://azbyka.ru/days/ikona-vilenskaja
+    - http://calendar.rop.ru/?4ib=apr14-ikona-vilenskaya
+    - http://www.pravmir.ru/pravoslavnyiy-kalendar-27-aprelya/
    образ:
     - http://azbyka.ru/days/assets/img/icons/152/p18iog3l7q1lrj1ogs1t0e1odpoc63.jpg
     - http://drevo-info.ru/images/001/000952.jpg
+   служба: Виленской образу служба
    событие:
     - год: I
       описание: напис
@@ -28,5 +32,5 @@
     - дата: 15.02
       описание: прен.1
     - дата: 14.04
+      календарь: рпц
       описание: само
-      служба: Виленскому образу служба

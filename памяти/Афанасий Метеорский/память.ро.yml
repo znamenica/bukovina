@@ -3,9 +3,14 @@
    имя:
       ру: в иночестве Афанасий, в иночестве Антоний, в крещении Андроник
       гр: Αθανάσιος,, Ανδρόνικος
+      ср: Атанасије,,
+   пррзвище:
+      ру: Метеорит
+      ср: Метеорит
    описание:
       ру: инок Афонский; настоятель Метеорский (Парящевский. Фессалия)
       гр: κτήτωρ Μονής Μετεώρου
+      ср: игуман Метеорски
    чин: прп
    собор: фтио?,аф?,фесс?
    вики: http://drevo-info.ru/articles/14856.html
@@ -19,6 +24,7 @@
        - http://www.ecclesia.gr/greek/synaxaire/synaxari.asp?minas=4&id=231
        - http://vatopaidi.wordpress.com/2009/09/04/iera-monh-megalou-meteorou/
        - http://churchsynaxarion.blogspot.gr/2009/05/3-1-2.html
+      ср: https://svetosavlje.org/dan-prologa/20-april-po-julijanskom-kalendaru/2017-05-03/
    образ:
     - http://pravicon.com/icon-1295
     - http://www.imverias.gr/images/stories/ag_athanasios_meteoron.jpg
@@ -29,7 +35,7 @@
     - http://vatopaidi.files.wordpress.com/2010/03/agioi-athnasios-kai-ioasaf-oi-meteoritai-11.jpg
     - http://vatopaidi.files.wordpress.com/2010/03/agioi-athnasios-kai-ioasaf-oi-meteoritai-23.jpg
    событие:
-    - год: 1305/1303
+    - год: 1305/1303/1310
       описание: ржд
       место: Новые Патры (ныне Ипати). Фтиотида
     - год: вид.ок.1335
@@ -47,5 +53,5 @@
       место: Спасо-Преображенская обитель. Великие Метеоры. Фессалия
    помин:
       дата: 20.04
-      календарь: греч
+      календарь: греч,охр
       описание: само

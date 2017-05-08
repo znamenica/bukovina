@@ -2,13 +2,17 @@
 Ардалион Лицедей:
    имя: Ардалион
    прозвище: Лицедей
+   описание: мученик; зажарен язычниками
    чин: мч
-   собор: лцд
+   собор: лцд?
    вики: http://drevo-info.ru/articles/3203.html
-   бытие: http://azbyka.ru/days/sv-ardalion
+   бытие:
+    - http://azbyka.ru/days/sv-ardalion
+    - http://calendar.rop.ru/?svt=apr14-aardalion
    событие:
       год: 305-311
       описание: прств
    помин:
       дата: 14.04
+      календарь: рпц
       описание: само

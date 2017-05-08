@@ -1,14 +1,19 @@
 ---
 Артемон Лаодикийский:
-   имя: Артемон
+   имя:
+      ру: Артемон
+      гр: Αρτέμων
    описание:
       ру: чтец, диякон, священник Лаодикийский (Сирийский)
-      гр: Άγιος Αρτέμων Ιερομάρτυρας, πρεσβύτερος Λαοδικείας
-   чин: смчр
-   собор: сир,кипр
+      гр: Ιερομάρτυρας, πρεσβύτερος Λαοδικείας
+   чин: сщмч
+   собор: сир?,кипр?
    вики: http://drevo-info.ru/articles/3204.html
    бытие:
-      ру: http://azbyka.ru/days/sv-artemon-laodikijskij
+      ру:
+       - http://azbyka.ru/days/sv-artemon-laodikijskij
+       - http://www.pravmir.ru/pravoslavnyiy-kalendar-26-aprelya/
+       - http://calendar.rop.ru/?svt=apr13-artemon
       гр: http://www.saint.gr/83/saint.aspx
    образ:
     - http://drevo-info.ru/images/001/000368.jpg
@@ -38,4 +43,5 @@
       календарь: греч,скц,мвс
       описание: само
     - дата: 13.04
+      календарь: рпц
       описание: само

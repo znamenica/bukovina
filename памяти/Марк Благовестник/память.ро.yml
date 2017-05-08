@@ -11,7 +11,9 @@
     - http://ru.wikipedia.org/wiki/Апостол_Марк
     - http://ru.wikipedia.org/wiki/Марк_(апостол_от_70)
     - http://ru.wikipedia.org/wiki/Марк-Иоанн
-   бытие: http://azbyka.ru/days/sv-mark-ioann-evangelist
+   бытие:
+    - http://azbyka.ru/days/sv-mark-ioann-evangelist
+    - http://www.pravmir.ru/tserkov-chtit-pamyat-svyatogo-apostola-i-evangelista-marka/
    образ:
     - http://drevo-info.ru/images/001/001704.jpg
     - http://azbyka.ru/days/assets/img/saints/839/p193vgtn6a1qcech511146su1d8m3.jpg
@@ -29,7 +31,10 @@
     - http://azbyka.ru/days/assets/img/saints/839/267a365d6b47a9f410ef24c770501cac.jpg
     - http://azbyka.ru/days/assets/img/saints/839/a782f1a861e1976a0e67837c59bf4090.jpg
     - http://azbyka.ru/days/assets/img/saints/839/fa480e7f212f88930c977c76e75604c2.jpg
-   служба: Марку Благовестнику служба
+   служба:
+    - Марку Благовестнику служба
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_22.pdf
+    - http://azbyka.ru/days/assets/upload/daily_menaion/03_November/nov22.pdf
    событие:
     - год: нач.I
       описание: ржд
@@ -43,10 +48,7 @@
       место: Марко-Благовестницкая церковь. Венеция. Италия
    помин:
     - дата: 25.04
+      календарь: рпц
       описание: само
     - дата: 22.11
       описание: само
-      служба:
-       - Филимон Газский/Филимону Газскому, Архиппу Колосскому, Онисиму Путеольскому, Марку Благовествнику, Аполлосу Александриянину и Апфии Колосской служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_22.pdf
-       - http://azbyka.ru/days/assets/upload/daily_menaion/03_November/nov22.pdf
