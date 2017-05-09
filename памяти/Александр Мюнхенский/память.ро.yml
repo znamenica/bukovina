@@ -5,17 +5,21 @@
    фамилия: Шморель
    описание: наполовину русский; мученик Мюнхенский; обезглавлен нацистами
    чин: мч
-   собор: орнб,бава
+   собор: орнб?,бава?,онус
    вики: http://drevo-info.ru/articles/26025.html
-   бытие: http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuMf8vUdOjg660fdOfVc8qYs**
+   бытие:
+    - http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuMf8vUdOjg660fdOfVc8qYs**
+    - http://www.pravmir.ru/aleksandr-shmorel-ya-vyipolnil-svoyu-missiyu-v-etoy-zhizni/
    образ:
     - http://drevo-info.ru/images/003/009949.jpg
     - http://213.171.53.29/foto_1/ozr-108.jpg
+    - http://www.pravmir.ru/wp-content/uploads/2017/05/IMG_00731-600x400.jpg
+    - http://www.pravmir.ru/wp-content/uploads/2017/05/IMG_0073.jpg
    служба: Александру Мюнхенскому служба
    событие:
     - год: 1917
       дата: 16.09
-      описание: прств
+      описание: ржд
       место: Оренбург
     - год: 1943
       дата: 30.06
