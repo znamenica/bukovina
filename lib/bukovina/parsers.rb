@@ -31,6 +31,8 @@ module Bukovina::Parsers
    CSLAV_ACCENT = '̀́̓̔҃҇҈҉꙽'
    SERBIAN_CAPITAL = 'ЂЈ-ЋЏА-ИК-Ш'
    SERBIAN_STROKE = 'ђј-ћа-ик-ш'
+   CROATIAN_CAPITAL = 'A-PR-VZČĆŽĐŠ'
+   CROATIAN_STROKE = 'a-pr-vzčćžđš'
    GREEK_CAPITAL = 'ͶͲΑ-ΫϏϒϓϔϘϚϜϠϞϴϷϹϺϾϿἈ-ἏἘ-ἝἨ-ἯἸ-ἿὈ-ὍὙ-ὟὨ-Ὧᾈ-ᾏᾘ-ᾟᾨ-ᾯᾸ-ᾼῈ-ῌῘ-ΊῨ-ῬῸ-ῼΩΆ-Ώ'
    GREEK_STROKE = 'ά-ώϐϑϕ-ϗϙϛϝ-ϟϡ-ϳϵ-϶ϸϻϼᴦ-ᴪἀ-ἇἐ-ἕἠ-ἧἰ-ἷὀ-ὅὐ-ὗὠ-ὧὰ-ᾇᾐ-ᾗᾠ-ᾧᾰ-ᾷῂ-ῇῐ-ῗῠ-ῧῲ-ῷͻ-ͽͷΐά-ΰ'
    GREEK_ACCENT = 'ͺ͵΄᾽ι᾿῀῁῍῎῏῝῞῟῭΅`´῾'
@@ -81,6 +83,7 @@ module Bukovina::Parsers
       :рп => /^[#{RUS_CAPITAL}#{RUS_STROKE}#{RUS_ACCENT}]+$/,
       :цс => /^[#{CSLAV_CAPITAL}#{CSLAV_STROKE}#{CSLAV_ACCENT}]+$/,
       :ср => /^[#{SERBIAN_CAPITAL}#{SERBIAN_STROKE}]+$/,
+      :хр => /^[#{CROATIAN_CAPITAL}#{CROATIAN_STROKE}]+$/,
       :гр => /^[#{GREEK_CAPITAL}#{GREEK_STROKE}#{GREEK_ACCENT}]+$/,
       :ан => /^[#{ENGLISH_CAPITAL}#{ENGLISH_STROKE}]+$/,
       :чх => /^[#{CZECH_CAPITAL}#{CZECH_STROKE}#{CZECH_ACCENT}]+$/,

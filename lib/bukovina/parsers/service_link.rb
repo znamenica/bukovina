@@ -114,7 +114,7 @@ class Bukovina::Parsers::ServiceLink
          return nil
 
       elsif ! valid?( line, alphabeth_code )
-         if / служба$/ =~ line
+         if / служба|акафист$/ =~ line
             filemask = File.join( Dir.pwd, line )
             files = Dir.glob( "#{filemask}*" )
             if files.empty?
@@ -126,11 +126,11 @@ class Bukovina::Parsers::ServiceLink
                if /(~|swp)$/ =~ file
                   next ;end
 
-               /\.(?:(?<lang>[^\._]+)_)?(?<al>[^\.]+)\.(?<format>yml|hip)$/ =~ file
+               /\.(?:(?<lang>[^\._]+)_)?(?<al>[^\.]+)\.(?<format>yml|hip|txt)$/ =~ file
                if ! format || ! al
                   @errors << Parsers::BukovinaInvalidFileNameFormatError.new(
                      "Invalid file name format for #{file}" )
-               elsif format == 'hip'
+               elsif format =~ /hip|txt/
                   parser = Parsers::PlainService.new
                   parsed = parser.parse( IO.read( file ) )
                   if ! parsed
@@ -138,7 +138,7 @@ class Bukovina::Parsers::ServiceLink
                      nil
                   else
                      { alphabeth_code: :цр, language_code: :цс, name: line,
-                        text_format: 'hip' }.merge( parsed ) ;end
+                        text_format: format }.merge( parsed ) ;end
 
                else
                   parser = Parsers::Service.new

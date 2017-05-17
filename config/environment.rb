@@ -38,6 +38,18 @@ module Rails
       def paths
          { 'db/migrate' => [ 'db/migrate' ] } ; end
 
+      MAP = {
+         Bukovina::Parsers::Name => %w(имя name),
+         Bukovina::Parsers::Patronymic => %w(отчество patronymic),
+         Bukovina::Parsers::LastName => %w(фамилия last_name),
+         Bukovina::Parsers::NickName => %w(прозвище nick_name),
+         Bukovina::Parsers::Description => %w(описание description),
+         Bukovina::Parsers::IconLink => %w(образ icon_link),
+         Bukovina::Parsers::Link => %w(бытие link),
+         Bukovina::Parsers::ServiceLink => %w(служба service_link),
+         Bukovina::Parsers::Event => %w(событие event),
+      }
+
       def validate_record f, record
 
          short_name = record.keys.first
@@ -45,15 +57,11 @@ module Rails
 
          data = record[ short_name ]
 
-         namer = Bukovina::Parsers::Name.new
-         namer.parse data[ 'имя' ]
-         if namer.errors.any?
-            @errors[f] = {name: namer.errors } ;end
-
-         eventer = Bukovina::Parsers::Event.new
-         eventer.parse( data[ 'событие' ] )
-         if eventer.errors.any?
-            @errors[f] = {event: eventer.errors } ;end;end
+         MAP.each do |klass, (key, err_key)|
+            parser = klass.new
+            parser.parse(data[ key ])
+            if parser.errors.any?
+               @errors[f] = { err_key => parser.errors } ;end;end;end
 
       def validate
          Dir.glob( 'памяти/**/память.*.yml' ).each do |f|

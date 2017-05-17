@@ -30,6 +30,7 @@ class Bukovina::Parsers::Event
       'собор' => :counsil,
       'чин' => :order,
       'тез' => :tezo,
+      'координаты' => :coord,
    }
 
    ITEMS = [
@@ -159,7 +160,7 @@ class Bukovina::Parsers::Event
                  мск киев черн сузд верн нов нпск влдв
                  молд кит укр клвн блр русз герм
                  пнаф печ)
-   ORDERS = %w(нмр нмч нмк 17мг нмм нмс нмз
+   ORDERS = %w(нмр нмч нмк 17мг нмм нмс нмз 1рс
                сщмч сщмчч вмц вмч мч мцц мчч прмч прмц мц прп прав свт прпж стцц стц блж сщисп присп присц исп исц блгв блгвв рап
                сбр
                кит
@@ -521,7 +522,7 @@ class Bukovina::Parsers::Event
          else
             @errors.concat(parser.errors) ;end
       else
-         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid icon links " +
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid icon link " +
             "'#{value}' detected" ) ;end;end
 
    def link value, result
@@ -534,7 +535,20 @@ class Bukovina::Parsers::Event
          else
             @errors.concat(parser.errors) ;end
       else
-         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid links " +
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid link " +
+            "'#{value}' detected" ) ;end;end
+
+   def coord value, result
+      case value
+      when String, Hash, Array
+         parser = Bukovina::Parsers::Link.new
+         if res = parser.parse(value)
+            result[ :coordinates ] ||= []
+            result[ :coordinates ].concat(res.delete(:link))
+         else
+            @errors.concat(parser.errors) ;end
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid coordinate link " +
             "'#{value}' detected" ) ;end;end
 
    def desc value, result
