@@ -53,6 +53,10 @@ module Rails
       def validate_record f, record
 
          short_name = record.keys.first
+         file_short_name = f.split('/')[-2]
+         if short_name != file_short_name
+            @errors[f] = { root: [StandardError.new("File short name " +
+               "#{file_short_name} doesn't match to short name #{short_name}")] } ;end
          # TODO Validate memory, it will validate subfiieds itself
 
          data = record[ short_name ]
