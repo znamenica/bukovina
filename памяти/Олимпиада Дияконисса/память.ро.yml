@@ -1,13 +1,14 @@
 ---
-Олимпиада Диаконисса:
+Олимпиада Дияконисса:
    имя: Олимпиада
    отчество: Анисьевна
    описание: диаконисса
    чин: прав
-   собор: виз,виф
+   собор: виз?,виф?
    вики: http://drevo-info.ru/articles/1821.html
    бытие: http://azbyka.ru/days/sv-olimpiada-konstantinopolskaja
    образ: http://azbyka.ru/days/assets/img/saints/6251/9f140ea3f0e4e993c31b243739980217.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_25.pdf
    событие:
     - год: 408-410
       описание: прств
@@ -21,6 +22,3 @@
    помин:
       дата: 25.07
       описание: само
-      служба:
-       - Анна Праведная/Анне Праведной, Олимпиаде Диякониссе и Евпраксии Деве служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_25.pdf

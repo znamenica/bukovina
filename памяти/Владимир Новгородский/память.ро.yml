@@ -1,15 +1,18 @@
 ---
 Владимир Новгородский:
-   имя: Владимир
+   имя: в наречении Владимир
    отчество: Ярославич
    описание: чудотворец, князь Новгородский, отец Ярослав Мудрый, мать Анна Новгородская
    чин: блгв
-   собор: новг,рукн
+   собор: нов,рукн?
    вики: http://drevo-info.ru/articles/11102.html
    бытие: http://azbyka.ru/days/sv-vladimir-jaroslavich-novgorodskij
    образ:
     - http://azbyka.ru/days/assets/img/saints/1585/46e47f7d0aa735a8409f350fb741e8bd.jpg
     - http://pravicon.com/icon-1449
+   служба:
+    - Владимиру Новгородскому служба
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_04.pdf
    событие:
     - год: 1020
       описание: ржд
@@ -25,6 +28,3 @@
    помин:
       дата: 04.10
       описание: прств
-      служба:
-       - Владимиру Новгородскому служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_04.pdf

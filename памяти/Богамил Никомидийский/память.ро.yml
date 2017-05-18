@@ -3,9 +3,12 @@
    имя: Феофил
    описание: диякон Никомидийский; замучен язычниками
    чин: сщмч
-   собор: виф,мн
+   собор: виф?,мн
    вики: http://drevo-info.ru/articles/3812.html
    бытие: http://azbyka.ru/days/sv-feofil-nikomidijskij
+   образ:
+    - http://pravicon.com/icon-3135
+    - http://drevo-info.ru/images/002/007151.jpg
    событие:
       год: 302
       описание: прств
