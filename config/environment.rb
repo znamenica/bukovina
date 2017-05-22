@@ -48,7 +48,21 @@ module Rails
          Bukovina::Parsers::Link => %w(бытие link),
          Bukovina::Parsers::ServiceLink => %w(служба service_link),
          Bukovina::Parsers::Event => %w(событие event),
+#         Bukovina::Parsers::Memo => %w(помин memo),
       }
+
+      def validate_calendary f, record
+         short_name = record.keys.first
+         file_short_name = f.split('/')[-2]
+         if short_name != file_short_name
+            @errors[f] = { root: [StandardError.new("File calendary name " +
+               "#{file_short_name} doesn't match to calendary name #{short_name}")] } ;end
+         data = record[ short_name ]
+
+         parser = Bukovina::Parsers::Calendary.new
+         parser.parse(data)
+         if parser.errors.any?
+            @errors[f] = parser.errors ;end;end
 
       def validate_record f, record
 
@@ -61,6 +75,10 @@ module Rails
 
          data = record[ short_name ]
 
+#         parser = Bukovina::Parsers::Memory.new
+#         parser.parse(data)
+#         if parser.errors.any?
+#            @errors[f] = parser.errors ;end;end
          MAP.each do |klass, (key, err_key)|
             parser = klass.new
             parser.parse(data[ key ])
@@ -68,6 +86,20 @@ module Rails
                @errors[f] = { err_key => parser.errors } ;end;end;end
 
       def validate
+         Dir.glob( 'календари/**/память.*.yml' ).each do |f|
+            puts "Календарь: #{f}"
+
+            m = begin
+               YAML.load( File.open( f ) )
+            rescue Psych::SyntaxError => e
+               @errors[f] = {root: [StandardError.new("#{e} for file #{f}")]} ; nil ; end
+
+            if m
+               wd = Dir.pwd
+               Dir.chdir( File.dirname( f ) )
+               validate_calendary(f, m)
+               Dir.chdir( wd ) ;end;end
+=begin
          Dir.glob( 'памяти/**/память.*.yml' ).each do |f|
             puts "Память: #{f}"
 
@@ -81,10 +113,10 @@ module Rails
                Dir.chdir( File.dirname( f ) )
                validate_record(f, m)
                Dir.chdir( wd ) ;end;end
-
+=end
          puts '-'*80
          errors.keys.each do |f|
-            puts "'#{f}'" ;end
+            puts "#{f.gsub(/[ ,]/,'\\\1')}" ;end
          puts '='*80
 
          errors.each do |f, ee|
