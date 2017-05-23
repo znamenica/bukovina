@@ -1,5 +1,3 @@
-#require 'lib/bukovina/parsers/event.rb'
-
 class Bukovina::Parsers::Memo
    attr_reader :errors, :target
 
@@ -15,6 +13,7 @@ class Bukovina::Parsers::Memo
       'календарь' => :calendary,
       'собор' => :ignore,
       'описание' => :type,
+      'служба' => :service,
    }
 
    TYPES = Bukovina::Parsers::Event::EVENTS.keys | %w(само)
@@ -53,7 +52,7 @@ class Bukovina::Parsers::Memo
                     грот
                     грхэ
                     гскс
-                    джрж
+                    джрд
                     длг
                     дни
                     днсс
@@ -175,12 +174,12 @@ class Bukovina::Parsers::Memo
 
    protected
 
-   def parse_hash event
+   def parse_hash memo
       result = {}
 
       result[:memory] = { short_name: "*#{target}" } if target
 
-      event.each do |key, value|
+      memo.each do |key, value|
          case SUBPARSERS[ key ]
          when Symbol
             send(SUBPARSERS[ key ], value, result)
@@ -189,10 +188,10 @@ class Bukovina::Parsers::Memo
             result[ name ] = SUBPARSERS[ key ].last.constantize.new.parse(value)
          when NilClass
             @errors << Parsers::BukovinaInvalidKeyNameError.new( "Invalid " +
-               "key '#{key}' for 'event' specified" )
+               "key '#{key}' for 'memo' specified" )
          else
             @errors << Parsers::BukovinaInvalidValueError.new( "Invalid " +
-               "key value '#{SUBPARSERS[ key ]}' for '#{key}' for 'event' " +
+               "key value '#{SUBPARSERS[ key ]}' for '#{key}' for 'memo' " +
                "specified" )
          end
       end
@@ -250,6 +249,32 @@ class Bukovina::Parsers::Memo
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
+
+   def service value, result
+      case value
+      when String, Hash, Array
+         service_link = Bukovina::Parsers::ServiceLink.new
+         res = service_link.parse(value, target: target)
+
+         if service_link.errors.empty?
+            if res[ :link ].present?
+               result[ :service_links ] ||= []
+               result[ :service_links ].concat(res.delete(:link))
+            end
+
+            if res[ :service ].present?
+               result[ :services ] ||= []
+               result[ :services ].concat(res.delete(:service))
+            end
+         else
+            @errors.concat(service_link.errors)
+         end
+
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid service " +
+            "'#{value}' detected" )
+      end
+   end
 
    def parse_line line, language_code = 'ру'
       language_code = language_code.to_sym

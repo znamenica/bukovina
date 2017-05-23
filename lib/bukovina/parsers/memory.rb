@@ -22,48 +22,62 @@ class Bukovina::Parsers::Memory
       'служба' => :service,
       'событие' => :event,
       'помин' => :memo,
+      'крат' => :short,
+      'количество' => :quantity,
+      'вид' => :view
    }
 
-   COUNSILS = %w(рус греч иерс аме фин болг серб груз пол рум чсл виз алкс антх
-                 карф рим англ
+   COUNSILS = %w(стцц ап70
+                 рус греч иерс аме фин болг серб груз пол рум чсл виз алкс антх
+                 слав
+                 карф мавр
+                 рим
+                 англ
                  мск киев черн сузд верн нов нпск влдв
                  молд кит укр клвн блр русз герм
                  пнаф печ
                  плст
-                )
-   ORDERS = %w(нмр нмч нмк 17мг нмм нмс нмз 1рс нмб
-               сщмч сщмчч вмц вмч мч мцц мчч прмч прмц мц прп прав свт прпж стцц стц блж сщисп присп присц исп исц блгв блгвв рап стсвт
-               сбр
-               кит
-               мск спб вят перм ниж сиб каз влад тавр уф тул ряр врнж сарн вуст кстр нов твер мурм клзн ека крсн кур влгд нсиб
-                   сам тамб кар ряз влгр рнд пск ива омск верн астр кург симб
-               опт пнаф пппр мсвт смнк бпеч рднж нмнд валм сол див
-               укр киев елсг неж жит вол карп гал вин черк одес херс полт крмч мрпл хуст черн кнтп
-               молд
-               блр нгрд
-               серб шбцв)
+                 нмр нмч нмк 17мг нмм нмс нмз 1рс нмб
+                 кит
+                 мск спб вят перм ниж сиб каз влад тавр уф тул ряр врнж сарн вуст кстр нов твер мурм клзн ека крсн кур влгд нсиб
+                     сам тамб кар ряз влгр рнд пск ива омск верн астр кург симб
+                 опт пнаф пппр мсвт смнк бпеч рднж нмнд валм сол див нсвт друс
+                 укр киев елсг неж жит вол карп гал вин черк одес херс полт крмч мрпл хуст черн кнтп
+                 молд
+                 блр нгрд
+                 серб шбцв
+                 чсл чех свк мрв
+                 зубц куп пгрл
+                 сынм
+                  )
 
-   def parse events, options = {}
+   ORDERS = %w(сщмч сщмчч вмц вмч мч мцц мчч прмч прмц мц прп прав свт прпж стцц стц блж сщисп присп присц исп исц блгв блгвв рап стсвт мсвт исвт
+               смчр пмчр пмцр мчр мцр мсвтр иср сщиср приср ицр прицр исвтр
+               оспс обр оник
+               храм место
+               сбр правв)
+
+   def parse memories, options = {}
       # TODO skip return if errors found
       #
       @target = options[:target]
 
       res =
-      case events
+      case memories
       when Hash
-         event = parse_hash( events )
+         memory = parse_hash( memories )
 
-         [ event ]
+         [ memory ]
       when Array
-         if events.blank?
-            @errors << Parsers::BukovinaInvalidValueError.new( "Value of event " +
+         if memories.blank?
+            @errors << Parsers::BukovinaInvalidValueError.new( "Value of memory " +
                "array is empty" ) ;end
 
-         event_list = events.map do |event|
-            parse_hash( event )
+         memory_list = memories.map do |memory|
+            parse_hash( memory )
          end.compact
 
-         event_list
+         memory_list
       when NilClass
          @errors << Parsers::BukovinaInvalidValueError.new( "Event list" +
             "can't be blank" )
@@ -79,12 +93,12 @@ class Bukovina::Parsers::Memory
 
    protected
 
-   def parse_hash event
+   def parse_hash memory
       result = {}
 
       result[:memory] = { short_name: "*#{target}" } if target
 
-      event.each do |key, value|
+      memory.each do |key, value|
          case SUBPARSERS[ key ]
          when Symbol
             send(SUBPARSERS[ key ], value, result)
@@ -93,10 +107,10 @@ class Bukovina::Parsers::Memory
             result[ name ] = SUBPARSERS[ key ].last.constantize.new.parse(value)
          when NilClass
             @errors << Parsers::BukovinaInvalidKeyNameError.new( "Invalid " +
-               "key '#{key}' for 'event' specified" )
+               "key '#{key}' for 'memory' specified" )
          else
             @errors << Parsers::BukovinaInvalidValueError.new( "Invalid " +
-               "key value '#{SUBPARSERS[ key ]}' for '#{key}' for 'event' " +
+               "key value '#{SUBPARSERS[ key ]}' for '#{key}' for 'memory' " +
                "specified" )
          end
       end
@@ -131,19 +145,19 @@ class Bukovina::Parsers::Memory
      name(value, result, :lastname) ;end
 
    def counsil value, result
-      cous = value.to_s.split(',')
-
-      parsed = cous.map do |v|
-         if /^(#{COUNSILS.join("|")})$/ =~ v.sub('?', '')
-            v
-         else
-            @errors << Parsers::BukovinaInvalidValueError.new( "invalid " +
-               "value '#{v}' detected for counsil field" )
-            nil ;end;end
-      .compact
-
-      if (cous - parsed).empty?
-         result[ :counsil ] = value ;end;end
+#      cous = value.to_s.split(',')
+#
+#      parsed = cous.map do |v|
+#         if /^(#{COUNSILS.join("|")})$/ =~ v.sub('?', '')
+#            v
+#         else
+#            @errors << Parsers::BukovinaInvalidValueError.new( "invalid " +
+#               "value '#{v}' detected for counsil field" )
+#            nil ;end;end
+#      .compact
+#
+#      if (cous - parsed).empty?
+         result[ :counsil ] = value ;end;#end
 
    def order value, result
       match =
