@@ -102,6 +102,7 @@ module Bukovina::Parsers
       :ук => /^[#{UKRAINIAN_CAPITAL}#{UKRAINIAN_STROKE}]+$/,
    } ; end
 
+require 'bukovina/parsers/memory'
 require 'bukovina/parsers/name'
 require 'bukovina/parsers/patronymic'
 require 'bukovina/parsers/lastname'

@@ -64,6 +64,7 @@ module Rails
          if parser.errors.any?
             @errors[f] = parser.errors ;end;end
 
+
       def validate_record f, record
 
          short_name = record.keys.first
@@ -75,16 +76,11 @@ module Rails
 
          data = record[ short_name ]
 
-#         parser = Bukovina::Parsers::Memory.new
-#         parser.parse(data)
-#         if parser.errors.any?
-#            @errors[f] = parser.errors ;end;end
-#         MAP.each do |klass, (key, err_key)|
-#            parser = klass.new
-#            parser.parse(data[ key ])
-#            if parser.errors.any?
-#               @errors[f] = { err_key => parser.errors }
-         ;end
+         parser = Bukovina::Parsers::Memory.new
+         parser.parse(data)
+         if parser.errors.any?
+            @errors[f] = parser.errors ;end;end
+
 
       def validate
          Dir.glob( 'календари/**/память.*.yml' ).each do |f|
@@ -100,7 +96,7 @@ module Rails
                Dir.chdir( File.dirname( f ) )
                validate_calendary(f, m)
                Dir.chdir( wd ) ;end;end
-=begin
+
          Dir.glob( 'памяти/**/память.*.yml' ).each do |f|
             puts "Память: #{f}"
 
@@ -114,10 +110,10 @@ module Rails
                Dir.chdir( File.dirname( f ) )
                validate_record(f, m)
                Dir.chdir( wd ) ;end;end
-=end
+
          puts '-'*80
          errors.keys.each do |f|
-            puts "#{f.gsub(/([ ,])/,'\\\1')}" ;end
+            puts "#{f.gsub(/([ ,])/,'@\1').gsub('@','\\')}" ;end
          puts '='*80
 
          errors.each do |f, list|

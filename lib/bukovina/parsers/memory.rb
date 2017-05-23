@@ -28,9 +28,11 @@ class Bukovina::Parsers::Memory
                  карф рим англ
                  мск киев черн сузд верн нов нпск влдв
                  молд кит укр клвн блр русз герм
-                 пнаф печ)
+                 пнаф печ
+                 плст
+                )
    ORDERS = %w(нмр нмч нмк 17мг нмм нмс нмз 1рс нмб
-               сщмч сщмчч вмц вмч мч мцц мчч прмч прмц мц прп прав свт прпж стцц стц блж сщисп присп присц исп исц блгв блгвв рап
+               сщмч сщмчч вмц вмч мч мцц мчч прмч прмц мц прп прав свт прпж стцц стц блж сщисп присп присц исп исц блгв блгвв рап стсвт
                сбр
                кит
                мск спб вят перм ниж сиб каз влад тавр уф тул ряр врнж сарн вуст кстр нов твер мурм клзн ека крсн кур влгд нсиб
@@ -129,13 +131,19 @@ class Bukovina::Parsers::Memory
      name(value, result, :lastname) ;end
 
    def counsil value, result
-      if /^(#{COUNSILS.join("|")})$/ =~ value
-         result[ :counsil ] = value
-      else
-         @errors << Parsers::BukovinaInvalidValueError.new( "invalid " +
-            "value '#{value}' detected for counsil field" )
-      end
-   end
+      cous = value.to_s.split(',')
+
+      parsed = cous.map do |v|
+         if /^(#{COUNSILS.join("|")})$/ =~ v.sub('?', '')
+            v
+         else
+            @errors << Parsers::BukovinaInvalidValueError.new( "invalid " +
+               "value '#{v}' detected for counsil field" )
+            nil ;end;end
+      .compact
+
+      if (cous - parsed).empty?
+         result[ :counsil ] = value ;end;end
 
    def order value, result
       match =
@@ -231,7 +239,7 @@ class Bukovina::Parsers::Memory
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid description " +
             "'#{value}' detected" ) ;end;end
 
-   def pateric
+   def pateric value, result
       case value
       when String, Hash, Array
          parser = Bukovina::Parsers::Link.new
@@ -244,7 +252,7 @@ class Bukovina::Parsers::Memory
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid pateric link " +
             "'#{value}' detected" ) ;end;end
 
-   def event
+   def event value, result
       case value
       when Hash, Array
          parser = Bukovina::Parsers::Event.new
@@ -257,18 +265,21 @@ class Bukovina::Parsers::Memory
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid event value " +
             "'#{value}' detected" ) ;end;end
 
-   def memo
+   def memo value, result
       case value
       when Hash, Array
          parser = Bukovina::Parsers::Memo.new
          if res = parser.parse(value)
             result[ :memos ] ||= []
-            result[ :memos ].concat(res.delete(:event))
+            result[ :memos ].concat(res.delete(:memos))
          else
             @errors.concat(parser.errors) ;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid memos value " +
-            "'#{value}' detected" ) ;end;end
+            "'#{value}' detected" ) ;end;#end
+         rescue
+            binding.pry
+         end
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных

@@ -185,7 +185,7 @@ class Bukovina::Parsers::Event
       when Hash
          event = parse_hash( events )
 
-         [ event ]
+         { event: [ event ] }
       when Array
          if events.blank?
             @errors << Parsers::BukovinaInvalidValueError.new( "Value of event " +
@@ -195,7 +195,7 @@ class Bukovina::Parsers::Event
             parse_hash( event )
          end.compact
 
-         event_list
+         { event: event_list }
       when NilClass
          @errors << Parsers::BukovinaInvalidValueError.new( "Event list" +
             "can't be blank" )
