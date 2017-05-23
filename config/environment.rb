@@ -55,8 +55,8 @@ module Rails
          short_name = record.keys.first
          file_short_name = f.split('/')[-2]
          if short_name != file_short_name
-            @errors[f] = { root: [StandardError.new("File calendary name " +
-               "#{file_short_name} doesn't match to calendary name #{short_name}")] } ;end
+            @errors[f] = [StandardError.new("File calendary name " +
+               "#{file_short_name} doesn't match to calendary name #{short_name}")] ;end
          data = record[ short_name ]
 
          parser = Bukovina::Parsers::Calendary.new
@@ -69,8 +69,8 @@ module Rails
          short_name = record.keys.first
          file_short_name = f.split('/')[-2]
          if short_name != file_short_name
-            @errors[f] = { root: [StandardError.new("File short name " +
-               "#{file_short_name} doesn't match to short name #{short_name}")] } ;end
+            @errors[f] = [StandardError.new("File short name " +
+               "#{file_short_name} doesn't match to short name #{short_name}")] ;end
          # TODO Validate memory, it will validate subfiieds itself
 
          data = record[ short_name ]
@@ -79,11 +79,12 @@ module Rails
 #         parser.parse(data)
 #         if parser.errors.any?
 #            @errors[f] = parser.errors ;end;end
-         MAP.each do |klass, (key, err_key)|
-            parser = klass.new
-            parser.parse(data[ key ])
-            if parser.errors.any?
-               @errors[f] = { err_key => parser.errors } ;end;end;end
+#         MAP.each do |klass, (key, err_key)|
+#            parser = klass.new
+#            parser.parse(data[ key ])
+#            if parser.errors.any?
+#               @errors[f] = { err_key => parser.errors }
+         ;end
 
       def validate
          Dir.glob( 'календари/**/память.*.yml' ).each do |f|
@@ -116,13 +117,12 @@ module Rails
 =end
          puts '-'*80
          errors.keys.each do |f|
-            puts "#{f.gsub(/[ ,]/,'\\\1')}" ;end
+            puts "#{f.gsub(/([ ,])/,'\\\1')}" ;end
          puts '='*80
 
-         errors.each do |f, ee|
-            ee.each do |kls, list|
-               list.each do |e|
-                  puts "@@@ #{f}:#{kls} -> #{e.class}:#{e.message}" ; end;end;end
+         errors.each do |f, list|
+            list.each do |e|
+               puts "@@@ #{f} -> #{e.class}:#{e.message}" ; end;end
 
          true; end
 

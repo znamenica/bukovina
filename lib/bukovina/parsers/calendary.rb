@@ -9,10 +9,15 @@ class Bukovina::Parsers::Calendary
 
    SUBPARSERS = {
       'год' => :year,
-      'крат' => :date,
-      'ссылка' => :calendary,
-      'описание' => :type,
-      'автор' => :author
+      'крат' => :calendary,
+      'ссылка' => :link,
+      'описание' => :desc,
+      'автор' => :author,
+      'имя' => :name,
+      'название' => :name,
+      'место' => :place,
+      'вики' => :wiki,
+      'собор' => :counsil,
    }
 
    CALENDARIES = %w(916
@@ -130,8 +135,12 @@ class Bukovina::Parsers::Calendary
                     хлуд
                     хрис
                     элл)
-                    
-   TYPES = Bukovina::Parsers::Event::EVENTS.keys | %w(само)
+
+   DATE_PRES = %w(нд.по нд.до сб.по сб.до)
+   DATES = [ 'пт.вел', 'сб.по рх', 'нд.7.по пасхе', 'вс.8.по пасхе', 'ср.1.по пасхе', 'вт.1.по пасхе', 'сб.5.поста', 'сб.по отд.вздв',
+              'вт.1.по пасхе', 'чт.по всех' ]
+
+   COUNSILS = %w(рус русз)
 
    def parse events, options = {}
       # TODO skip return if errors found
@@ -196,46 +205,88 @@ class Bukovina::Parsers::Calendary
    def year value, result
       result[ :happened_at ] = value =~ /^\d+$/ && value.to_i || value ;end
 
-   def date value, result
-      value = value.is_a?(Float) && sprintf("%.2f", value) || value
-
-      abouts =
-      value.split(',').map do |v|
-         case v.strip
-         when /^(#{ABOUT_PRES.join("|")})?\s*(\d{1,2}\.\d{2})$/
-            sprintf("%s %.2f", $1, $2)
-         when /^(?:#{ABOUTS.join("|")})$/
-            v
-         else
-            @errors << Parsers::BukovinaInvalidValueError.new( "Invalid memo date " +
-               "value #{value}' detected" ) ;end;end
-
-      if abouts.all?
-         result[ :date ] = abouts.join(',') ;end
-   rescue ArgumentError => e
-      binding.pry
-   rescue TypeError => e
-      e.message << " for type value: #{value}, and result: #{result.inspect}"
-      @errors << e ;end
-
    def calendary value, result
-      if /^(#{CALENDARIES.join("|")})$/ =~ value
-         result[ :calendary_string ] = value
+      if /^(#{CALENDARIES.join("|")})$/ =~ value.to_s
+         result[ :calendary_string ] = value.to_s
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "invalid calendary " +
             "value '#{value}' detected for calendary field" )  ;end;end
 
-   def ignore value, result ;end
-
-   def type value, result
-      if /^(#{TYPES.join("|")})$/ =~ value
-         result[ :memo_type ] = value
-      else
-         @errors << Parsers::BukovinaInvalidValueError.new( "invalid type " +
-            "value '#{value}' detected for description (type) field" ) ;end;end
-
    def author value, result
       result[ :author_name ] = value; end
+
+   def link value, result
+      case value
+      when String, Hash, Array
+         parser = Bukovina::Parsers::Link.new
+         if res = parser.parse(value)
+            result[ :beings ] ||= []
+            result[ :beings ].concat(res.delete(:link))
+         else
+            @errors.concat(parser.errors) ;end
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid link " +
+            "'#{value}' detected" ) ;end;end
+
+   def desc value, result
+      case value
+      when String, Hash, Array
+         parser = Bukovina::Parsers::Description.new
+         if res = parser.parse(value)
+            result[ :descriptions ] ||= []
+            result[ :descriptions ].concat(res.delete(:description))
+         else
+            @errors.concat(parser.errors) ;end
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid description " +
+            "'#{value}' detected" ) ;end;end
+
+   def name value, result
+      case value
+      when String, Hash, Array
+         parser = Bukovina::Parsers::Description.new
+         if res = parser.parse(value)
+            result[ :name ] ||= []
+            result[ :name ].concat(res.delete(:description))
+         else
+            @errors.concat(parser.errors) ;end
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid name " +
+            "'#{value}' detected" ) ;end;end
+
+   def counsil value, result
+      if /^(#{COUNSILS.join("|")})$/ =~ value
+         result[ :counsil ] = value
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "invalid item " +
+            "value '#{value}' detected for counsil field" ) ;end;end
+
+   def place value, result
+      case value
+      when String, Hash, Array
+         parser = Bukovina::Parsers::Description.new
+         if res = parser.parse(value)
+            result[ :place ] ||= {}
+            result[ :place ][ :descriptions ] ||= []
+            result[ :place ][ :descriptions ].concat(res.delete(:description))
+         else
+            @errors.concat(parser.errors) ;end
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid place " +
+            "(value #{value}' detected" ) ;end;end
+
+   def wiki value, result
+      case value
+      when String, Hash, Array
+         parser = Bukovina::Parsers::Link.new
+         if res = parser.parse(value)
+            result[ :wikies ] ||= []
+            result[ :wikies ].concat(res.delete(:link))
+         else
+            @errors.concat(parser.errors) ;end
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid wikies " +
+            "'#{value}' detected" ) ;end;end
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
