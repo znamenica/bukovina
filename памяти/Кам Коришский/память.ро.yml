@@ -15,6 +15,7 @@
    образ:
     - http://drevo-info.ru/images/001/001876.jpg
     - http://manastirostrog.com/wp-content/uploads/2015/06/Sveti-Petar-Koriski.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_05.pdf
    событие:
     - год: XII-XIII
       описание: ржд
@@ -32,7 +33,10 @@
       описание: прен.1
       место: Михайло-Архангельская церковь. Колашин. Черногория
    помин:
-      дата: 05.06
-      календарь: змин,серб,охр,г7д8
+    - дата: 05.06
+      календарь: змин,серб,охр
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_05.pdf
+    - дата: 05.06
+      год: 2008
+      календарь: герм
+      описание: само

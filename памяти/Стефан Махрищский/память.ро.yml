@@ -1,12 +1,16 @@
 ---
 Стефан Махрищский:
    имя: Стефан
-   прозвище: Махрищский
+   описание: подвижник Махрищский
    чин: прп
-   собор: слав,рус,влад,киев,мск,рднж
+   собор: слав?,рус,влад,киев,мск,рднж
    вики: http://drevo-info.ru/articles/11024.html
    бытие: http://azbyka.ru/days/sv-stefan-mahrishchskij
    образ: http://drevo-info.ru/images/001/001791.jpg
+   служба:
+    - Стефану Махрищскому служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_14.pdf
+    - http://azbyka.ru/days/caa/667
    событие:
     - год: XIII-XIV
       описание: ржд
@@ -27,7 +31,3 @@
    помин:
       дата: 14.07
       описание: прств
-      служба:
-       - Стефану Махрищскому служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_14.pdf
-       - http://azbyka.ru/days/caa/667

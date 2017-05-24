@@ -35,6 +35,7 @@ class Bukovina::Parsers::Calendary
                     взр2
                     влат
                     влбр
+                    влдв
                     влчм
                     впдв
                     вскс

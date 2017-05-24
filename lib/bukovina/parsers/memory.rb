@@ -60,7 +60,7 @@ class Bukovina::Parsers::Memory
                оспс обр оник
                храм место обит прдм
                спас бдц крлт бог
-               сбр правв брак стцц)
+               сбр правв брак стцц пстцц)
 
    def parse memories, options = {}
       # TODO skip return if errors found
