@@ -7,6 +7,8 @@ class Bukovina::Parsers::Memory
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
+   QUANTITIES = %w(много)
+
    SUBPARSERS = {
       'имя' => :name,
       'отчество' => :patronymic,
@@ -18,13 +20,15 @@ class Bukovina::Parsers::Memory
       'вики' => :wiki,
       'бытие' => :link,
       'образ' => :icon,
+      'слика' => :photo,
       'отечник' => :pateric,
       'служба' => :service,
       'событие' => :event,
       'помин' => :memo,
       'крат' => :short,
       'количество' => :quantity,
-      'вид' => :view
+      'вид' => :view,
+      'покровительство' => :cover
    }
 
    COUNSILS = %w(стцц ап70
@@ -51,11 +55,12 @@ class Bukovina::Parsers::Memory
                  сынм
                   )
 
-   ORDERS = %w(сщмч сщмчч вмц вмч мч мцц мчч прмч прмц мц прп прав свт прпж стцц стц блж сщисп присп присц исп исц блгв блгвв рап стсвт мсвт исвт
+   ORDERS = %w(св сщмч сщмчч вмц вмч мч мцц мчч прмч прмц мц прп прав свт прпж стц блж сщисп присп присц исп исц блгв блгвв рап стсвт мсвт исвт присп прор ап рап сщпр прсвт прстц бср блпр
                смчр пмчр пмцр мчр мцр мсвтр иср сщиср приср ицр прицр исвтр
                оспс обр оник
-               храм место
-               сбр правв)
+               храм место обит прдм
+               спас бдц крлт бог
+               сбр правв брак стцц)
 
    def parse memories, options = {}
       # TODO skip return if errors found
@@ -227,6 +232,19 @@ class Bukovina::Parsers::Memory
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid icon link " +
             "'#{value}' detected" ) ;end;end
 
+   def photo value, result
+      case value
+      when String, Hash, Array
+         parser = Bukovina::Parsers::IconLink.new
+         if res = parser.parse(value)
+            result[ :photo_links ] ||= []
+            result[ :photo_links ].concat(res.delete(:icon_link))
+         else
+            @errors.concat(parser.errors) ;end
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid photo link " +
+            "'#{value}' detected" ) ;end;end
+
    def link value, result
       case value
       when String, Hash, Array
@@ -294,6 +312,41 @@ class Bukovina::Parsers::Memory
          rescue
             binding.pry
          end
+
+   def quantity value, result
+      if /^(#{QUANTITIES.join("|")}|(ок\.)?\d+)$/ =~ value.to_s
+         result[ :quantity ] = value
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid quantity " +
+            "'#{value}' detected for memory" ) ;end;end
+
+   def short value, result
+      if /,/ !~ value.to_s
+         result[ :short ] = value
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Short has a comma in '#{value}'" ) ;end;end
+
+   def view value, result
+      list = Dir.glob('../*').map { |x| x =~ /..\/(.*)/ && $1 || nil }.compact
+      if list.include?(value)
+         result[ :view_string ] = value
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Memory view '#{value}' isn't found in list of memories" ) ;end;end
+
+   def cover value, result
+      case value
+      when String, Hash, Array
+         parser = Bukovina::Parsers::Description.new
+         if res = parser.parse(value)
+            result[ :cover ] ||= {}
+            result[ :cover ][ :descriptions ] ||= []
+            result[ :cover ][ :descriptions ].concat(res.delete(:description))
+         else
+            @errors.concat(parser.errors) ;end
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Memory cover '#{value}' is invalid" )
+      end
+   end
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных

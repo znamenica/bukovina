@@ -386,8 +386,17 @@ class Bukovina::Parsers::Event
    end
 
    def tezo value, result
-      result[ :tezo_string ] = value
-   end
+      _in = value.split(/,.*/)
+      _out = _in.map do |v|
+         list = Dir.glob('../*').map { |x| x =~ /..\/(.*)/ && $1 || nil }.compact
+         if list.include?(v.gsub(/вид.\s*/, ''))
+            v
+         else
+            @errors << Parsers::BukovinaInvalidValueError.new( "Event tezo '#{value}' isn't found in list of memories" )
+            nil ;end;end.compact
+
+      if _out.size == _in.size
+         result[ :tezo_string ] = value ;end;end
 
    def item value, result
       /^(#{ITEMS.join("|")})(\.\d+)?$/ =~ value

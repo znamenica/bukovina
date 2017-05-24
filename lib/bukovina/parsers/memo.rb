@@ -14,129 +14,16 @@ class Bukovina::Parsers::Memo
       'собор' => :ignore,
       'описание' => :type,
       'служба' => :service,
+      'по' => :after,
+      'пред' => :before,
+      'навеч' => :inevening,
    }
 
-   TYPES = Bukovina::Parsers::Event::EVENTS.keys | %w(само)
+   EVENTS = Bukovina::Parsers::Event::EVENTS
 
-   DATE_PRES = %w(нд.по нд.до сб.по сб.до)
-   DATES = [ 'пт.вел', 'сб.по рх', 'нд.7.по пасхе', 'вс.8.по пасхе', 'ср.1.по пасхе', 'вт.1.по пасхе', 'сб.5.поста', 'сб.по отд.вздв',
-              'вт.1.по пасхе', 'чт.по всех' ]
-
-   CALENDARIES = %w(916
-                    азар
-                    ассе
-                    афин
-                    библ
-                    библ
-                    блап
-                    болл
-                    бпм
-                    валл
-                    взр1
-                    взр2
-                    влат
-                    влбр
-                    влчм
-                    впдв
-                    вскс
-                    всрб
-                    всс
-                    вчм
-                    гбмч
-                    гдк
-                    герм
-                    гмин
-                    гпм
-                    греч
-                    грм
-                    грот
-                    грхэ
-                    гскс
-                    джрд
-                    длг
-                    дни
-                    днсс
-                    дрге
-                    дргм
-                    евг
-                    евер
-                    ждр
-                    змин
-                    иерн
-                    иерн
-                    иерс
-                    имм
-                    ипдл
-                    ит
-                    к688
-                    каро
-                    карф
-                    киж
-                    киж
-                    лавр
-                    лавс
-                    лион
-                    луг
-                    мвс
-                    меа
-                    мокс
-                    мсн
-                    нкс
-                    нмрл
-                    нмчк
-                    новг
-                    нсп2
-                    нспр
-                    остр
-                    охап
-                    охр
-                    парж
-                    парс
-                    плнд
-                    пслт
-                    пспр
-                    пстгу
-                    птпр
-                    птрг
-                    путя
-                    ре12
-                    рм
-                    росс
-                    рпт
-                    рпц
-                    рпца
-                    рсап
-                    рсм
-                    румо
-                    серб
-                    синс
-                    сир
-                    сирм
-                    скал
-                    скмр
-                    сксд
-                    скср
-                    скц
-                    слжб
-                    служ
-                    спр
-                    спсс
-                    сптр
-                    ссм
-                    стип
-                    студ
-                    супр
-                    сурж
-                    суст
-                    твц
-                    тырн
-                    уцс
-                    фип
-                    флпс
-                    флпс
-                    хлуд
-                    хрис
-                    элл)
+   DAY = %w(пн вт ср чт пт сб нд дн)
+   PREF = %w(до по близ о)
+   DATES = %w(рх пасхе пасхи поста посте возн всех птдс)
 
    def parse memos, options = {}
       # TODO skip return if errors found
@@ -174,6 +61,10 @@ class Bukovina::Parsers::Memo
 
    protected
 
+   def events
+      @events ||= (EVENTS.keys | %w(само)).join('|')
+   end
+
    def parse_hash memo
       result = {}
 
@@ -206,10 +97,7 @@ class Bukovina::Parsers::Memo
 
       abouts =
       value.split(',').map do |v|
-         case v.strip
-         when /^(#{DATE_PRES.join("|")})?\s*(\d{1,2}\.\d{2})$/
-            sprintf("%s %.2f", $1, $2)
-         when /^(?:#{DATES.join("|")})$/
+         if /^((#{DAY.join("|")})(\.\d+)?\.(#{PREF.join("|")}))?\s*(\d{1,2}\.\d{2}|#{DATES.join("|")})$/ =~ v
             v
          else
             @errors << Parsers::BukovinaInvalidValueError.new( "Invalid memo date " +
@@ -227,7 +115,7 @@ class Bukovina::Parsers::Memo
       cals = value.to_s.split(',')
 
       parsed = cals.map do |v|
-         if /^(#{CALENDARIES.join("|")})$/ =~ v
+         if /^(#{Bukovina::Parsers::Calendary::CALENDARIES.join("|")})$/ =~ v
             v
          else
             @errors << Parsers::BukovinaInvalidValueError.new( "invalid calendary " +
@@ -241,11 +129,17 @@ class Bukovina::Parsers::Memo
    def ignore value, result ;end
 
    def type value, result
-      if /^(#{TYPES.join("|")})$/ =~ value
-         result[ :memo_type ] = value
+      if /^(#{events})(:?\.(\d+))??$/ =~ value
+         event = $1
+         number= $2
+
+         res = {}
+         res[ :type ] = EVENTS[ event ] if EVENTS[ event ]
+         res[ :type_number ] = number if number
+         result[ :memos ] ||= []
+         result[ :memos ] << res
       else
-         @errors << Parsers::BukovinaInvalidValueError.new( "invalid type " +
-            "value '#{value}' detected for description (type) field" ) ;end;end
+         @errors << Parsers::BukovinaInvalidValueError.new( "Memo type (description) '#{value}' is invalid" ) ;end;end
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
@@ -275,6 +169,27 @@ class Bukovina::Parsers::Memo
             "'#{value}' detected" )
       end
    end
+
+   def before value, result
+      if value.to_s =~ /^\d+$/
+         result[ :before ] = value
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Memo before value '#{value}' is invalid" )
+      end;end
+
+   def after value, result
+      if value.to_s =~ /^\d+$/
+         result[ :after ] = value
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Memo after value '#{value}' is invalid" )
+      end;end
+
+   def inevening value, result
+      if value.to_s =~ /^\d+$/
+         result[ :inevening ] = value
+      else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Memo inevening value '#{value}' is invalid" )
+      end;end
 
    def parse_line line, language_code = 'ру'
       language_code = language_code.to_sym
