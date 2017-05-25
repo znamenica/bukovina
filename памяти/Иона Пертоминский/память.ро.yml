@@ -3,10 +3,11 @@
    имя: Иона
    описание: Пертоминский, чудотворец Соловецкий
    чин: прп
-   собор: слав,рус,сол
+   собор: слав?,рус?,сол?
    вики: http://drevo-info.ru/articles/6047.html
    бытие: http://azbyka.ru/days/sv-iona-pertominskij
    образ: http://pravicon.com/icon-2017
+   служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_12.pdf
    событие:
     - год: 1561
       описание: прств
@@ -21,6 +22,3 @@
       служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_05.pdf
     - дата: 12.06
       описание: само
-      служба:
-       - Вассиан Пертоминский/Вассиану и Ионе Пертоминским служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_12.pdf

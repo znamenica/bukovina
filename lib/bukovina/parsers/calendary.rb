@@ -125,6 +125,7 @@ class Bukovina::Parsers::Calendary
                     спр
                     спсс
                     сптр
+                    спц
                     ссм
                     стип
                     студ

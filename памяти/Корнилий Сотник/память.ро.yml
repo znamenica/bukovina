@@ -3,7 +3,7 @@
    имя: Корнилий
    описание: сотник; римлянин; святитель Кесарийский (Палестинский); преставился в мире
    чин: исвт
-   собор: плст,глпт
+   собор: плст?,глпт?
    вики: http://drevo-info.ru/articles/7077.html
    бытие:
       ру:
@@ -15,7 +15,9 @@
     - http://www.saint.gr/photos/standard/0913/AgiosKornilios02.jpg
     - http://www.apostoliki-diakonia.gr/gr_main/eortologio/septemvrios/13.jpg
     - http://azbyka.ru/days/assets/img/saints/3022/p17vjdvjvpqj51hs817irpir1nu83.jpg
-   служба: Корнилию Сотнику служба
+   служба:
+    - Корнилию Сотнику служба
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_13.pdf
    событие:
     - год: вид.нач.I
       описание: ржд
@@ -24,9 +26,4 @@
       место: Скепсия. Геллеспонт
    помин:
       дата: 13.09
-      чин: свт
       описание: само
-      служба:
-       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_13.pdf
-       - Воздвижение Креста/Предпразднества Воздвижения Креста, Словущенской церкви на
-         обновление и Корнилию Сотнику служба

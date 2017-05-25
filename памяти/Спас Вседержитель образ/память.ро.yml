@@ -3,7 +3,6 @@
    имя: Спас Вседержитель
    описание: образ Спаса Христа
    чин: оспс
-   предмет: Спас Христос
    вики: https://ru.wikipedia.org/wiki/Спас_Вседержитель
    образ:
     - https://upload.wikimedia.org/wikipedia/commons/8/83/Spas_Vsederzhitel_Feofan_Grek_Novgorod.jpg
@@ -14,6 +13,7 @@
     - год: IV-VI
       описание: напис
       место: Византия
+      тез: Спас Христос
     - год: VII
       описание: чудо
       место: Берит (ныне Бейрут)

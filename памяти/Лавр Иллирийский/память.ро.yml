@@ -9,6 +9,9 @@
     - http://azbyka.ru/days/assets/img/saints/4820/2aa4b8e05f4e778dcb9bfe3e722d78ba.jpg
     - http://azbyka.ru/days/assets/img/saints/4820/ad858c0b0a1b7342af73ad97a34900c2.jpg
     - http://drevo-info.ru/images/002/004031.jpg
+   служба:
+    - http://azbyka.ru/days/assets/upload/minei/08/minea_08_18.pdf
+    - http://azbyka.ru/days/caa/466
    событие:
     - год: I-II
       описание: ржд
@@ -19,11 +22,7 @@
       образ: http://azbyka.ru/days/assets/img/saints/4820/2d80b1c536305c276c1f5b14e1140789.jpg
     - год: до 1200
       описание: прен
-      место: Константинополь
+      место: Константинополь. Византия
    помин:
       дата: 18.08
       описание: само
-      служба:
-       - Флор Иллирийский/Флору и Лавру Иллирийским служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_18.pdf
-       - http://azbyka.ru/days/caa/466

@@ -120,6 +120,7 @@ class Bukovina::Parsers::Event
       'преоб' => 'Transfiguration',  # ко(чел)
       'прок' => 'Curse',             # от(чел)
       'проп' => 'Preach',            # от(чел)
+      'пррч' => 'Prophecy',          # от(чел)-кем(person)
       'просл' => 'Canonization',     # от(чел)-кем(собор:person)
       'прств' => 'Repose',           # от(чел)
       'прстл' => 'Throne',           # ч(храм)

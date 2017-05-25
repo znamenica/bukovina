@@ -11,6 +11,7 @@
    образ:
     - http://pravicon.com/icon-2014
     - http://azbyka.ru/days/assets/img/saints/3105/p185vfac2bfvji001vt1r5m1d4j3.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_22.pdf
    событие:
     - год: вид.сер.XVIII
       описание: брак
@@ -24,7 +25,3 @@
       дата: 22.09
       календарь: рпц,змин
       описание: само
-      служба:
-       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_22.pdf
-       - Фока Синопский/Фоке Синопскому, Ионе Сарептянину, Ионе Палестинскому и Кодрату
-         Афинскому служба

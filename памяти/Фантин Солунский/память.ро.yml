@@ -7,9 +7,10 @@
    собор: мак,клбр
    вики: http://drevo-info.ru/articles/6926.html
    бытие:
-    - http://azbyka.ru/days/sv-fantin-solunskij-fessalonikijskij
-    - http://calendar.rop.ru/svyat1/aug30-fantin.html
-    - http://www.saint.gr/847/saint.aspx
+      ру:
+       - http://azbyka.ru/days/sv-fantin-solunskij-fessalonikijskij
+       - http://calendar.rop.ru/svyat1/aug30-fantin.html
+      гр: http://www.saint.gr/847/saint.aspx
    образ:
     - http://pravicon.com/icon-3031
     - http://azbyka.ru/days/assets/img/saints/502/p183mnf6g8ffvrll1tmvcsr16g83.jpg
@@ -21,6 +22,10 @@
       описание: прств
       место: вид.Солунь. Македония
    помин:
-      дата: 30.08
-      календарь: рпц,г7д9,греч
+    - дата: 30.08
+      календарь: рпц,греч
+      описание: само
+    - дата: 30.08
+      год: 2009
+      календарь: герм
       описание: само

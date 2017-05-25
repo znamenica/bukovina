@@ -3,9 +3,10 @@
    имя: Таврион
    описание: Амфипольский
    чин: мч
-   собор: мак
+   собор: мак?
    вики: http://drevo-info.ru/articles/7813.html
    бытие: http://azbyka.ru/days/sv-tavrion-amfipolskij-makedonskij
+   служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_07.pdf
    событие:
       год: II-V
       описание: прств
@@ -13,6 +14,3 @@
    помин:
       дата: 07.11
       описание: само
-      служба:
-       - Авкт Амфипольский/Авкту, Тавриону и Фессалоникии Амфипольским служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_07.pdf

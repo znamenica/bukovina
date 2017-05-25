@@ -9,6 +9,9 @@
    бытие: http://azbyka.ru/days/sv-kosma-maiumskij
    образ: http://azbyka.ru/days/assets/img/saints/2094/p17v9eghf21q710l01mth9ioa653.jpg
    отечник: http://azbyka.ru/otechnik/Kosma_Maiumskij/
+   служба:
+    - Косме Святоградцу служба
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_12.pdf
    событие:
     - год: VII-VIII
       описание: ржд
@@ -21,7 +24,3 @@
    помин:
       дата: 12.10
       описание: само
-      служба:
-       - Косме Святоградцу служба
-       - Пров Тарсийский/Прову, Тараху и Андронику Тарсийским и Козме Святоградцу служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_12.pdf

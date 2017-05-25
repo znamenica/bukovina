@@ -24,7 +24,9 @@
     - http://www.saint.gr/photos/standard/0902/AgiosIoannis02.jpg
     - http://www.saint.gr/photos/standard/0902/AgiosIoannis01.jpg
    отечник: http://azbyka.ru/otechnik/Ioann_Postnik/
-   служба: Иоанну Ниститису служба
+   служба:
+    - Иоанну Ниститису служба
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_02.pdf
    событие:
     - год: 582
       описание: свят
@@ -40,6 +42,3 @@
       дата: 02.09
       календарь: рпц,греч
       описание: прств
-      служба:
-       - Мамант Кесарийский/Маманту Кесарийскому и Иоанну Ниститису служба
-       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_02.pdf

@@ -8,6 +8,10 @@
    образ:
     - http://drevo-info.ru/images/001/001932.jpg
     - http://azbyka.ru/days/assets/img/saints/3327/4adb4c880c13b68b5cf588ec5befe5d0.jpg
+   служба:
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_02.pdf
+    - http://azbyka.ru/days/caa/134
+    - http://azbyka.ru/days/caa/676
    событие:
     - год: I-II
       описание: ржд
@@ -24,9 +28,3 @@
    помин:
       дата: 02.10
       описание: само
-      служба:
-       - Киприану Антиохийскому служба
-       - Киприану и Иустинии Антиохийским служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_02.pdf
-       - http://azbyka.ru/days/caa/134
-       - http://azbyka.ru/days/caa/676

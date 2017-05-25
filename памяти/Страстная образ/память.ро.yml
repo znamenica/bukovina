@@ -11,6 +11,10 @@
     - http://azbyka.ru/days/assets/img/icons/192/5e5cbc434f8f919dfb95f6822c7391a0.jpg
     - http://azbyka.ru/days/assets/img/icons/192/c4d813e99c5ac197b1a1c971f6ba866c.jpg
     - http://azbyka.ru/days/assets/img/icons/192/38897a6daecdb1b11c219594039e120b.jpg
+   служба:
+    - Страстной образу служба
+    - http://azbyka.ru/days/assets/upload/minei/08/minea_08_13.pdf
+    - http://azbyka.ru/days/caa/487
    событие:
     - год: до 1641
       описание: обр
@@ -24,11 +28,8 @@
       описание: прен.1
       место: Страстной монастырь. Москва
    помин:
-    - дата: вс.6.по пасхе
+    - дата: нд.6.по пасхе
       описание: само
     - дата: 13.08
       описание: прен,прен.1
-      служба:
-       - Страстной образу служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_13.pdf
-       - http://azbyka.ru/days/caa/487
+      служба: Страстной образу на пренесение служба

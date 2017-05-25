@@ -11,6 +11,7 @@ class Bukovina::Parsers::Memo
       'год' => :year,
       'дата' => :date,
       'календарь' => :calendary,
+      'месяцеслов' => :calendary,
       'собор' => :ignore,
       'описание' => :type,
       'служба' => :service,
@@ -129,17 +130,18 @@ class Bukovina::Parsers::Memo
    def ignore value, result ;end
 
    def type value, result
-      if /^(#{events})(:?\.(\d+))??$/ =~ value
-         event = $1
-         number= $2
+      value.split(",").map do |v|
+         if /^(#{events})(:?\.(\d+))??$/ =~ v
+            event = $1
+            number= $2
 
-         res = {}
-         res[ :type ] = EVENTS[ event ] if EVENTS[ event ]
-         res[ :type_number ] = number if number
-         result[ :memos ] ||= []
-         result[ :memos ] << res
-      else
-         @errors << Parsers::BukovinaInvalidValueError.new( "Memo type (description) '#{value}' is invalid" ) ;end;end
+            res = {}
+            res[ :type ] = EVENTS[ event ] if EVENTS[ event ]
+            res[ :type_number ] = number if number
+            result[ :memos ] ||= []
+            result[ :memos ] << res
+         else
+            @errors << Parsers::BukovinaInvalidValueError.new( "Memo type (description) '#{v}' is invalid" ) ;end;end;end
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
