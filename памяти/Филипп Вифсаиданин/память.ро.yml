@@ -17,6 +17,9 @@
       - http://azbyka.ru/days/assets/img/saints/4119/e62d9e7d5ae3a047cb9d750fcdda8e59.jpg
       - http://azbyka.ru/days/assets/img/saints/4119/6e0ca680052f252725af44f39bc84073.jpg
       - http://azbyka.ru/days/assets/img/saints/4119/3120f37765f0841d31713f417d9352d9.jpg
+   служба:
+    - Филиппу Вифсаиданину служба
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_14.pdf
    событие:
     - год: I
       описание: ржд
@@ -34,6 +37,3 @@
    помин:
       дата: 14.11
       описание: само
-      служба:
-       - Филиппу Вифсаидину служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_14.pdf

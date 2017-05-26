@@ -6,7 +6,9 @@
    собор: спб,кар
    вики: http://drevo-info.ru/articles/5839.html
    бытие: http://azbyka.ru/days/sv-kornilij-paleostrovskij
-   образ: http://pravicon.com/icon-2208
+   образ:
+    - http://pravicon.com/icon-2208
+    - http://drevo-info.ru/images/003/010766.jpg
    событие:
     - год: XIV
       описание: ржд
@@ -23,5 +25,4 @@
       служба: Корнилию Палеостровскому служба
     - дата: 21.08
       описание: само
-      образ: http://drevo-info.ru/images/003/010766.jpg
       служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_21.pdf

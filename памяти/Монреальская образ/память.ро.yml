@@ -1,14 +1,17 @@
 ---
-Монреальский образ:
-   имя: Монреальский
-   описание: образ Богородицы, Мироточивый
+Монреальская образ:
+   имя: Монреальская
+   описание: образ Богородицы мироточивый
    чин: обр
-   вид: Иверский образ
+   вид: Иверская образ
    вики: http://drevo-info.ru/articles/11669.html
    бытие: http://azbyka.ru/days/ikona-iverskaja-monrealskaja-mirotochivaja
    образ:
     - http://azbyka.ru/days/assets/img/icons/45/p188iijm7168fe1c1lvoc21ver3.jpg
     - http://azbyka.ru/days/assets/img/icons/45/p188iijob51rinc2n1j3i1tss1n5b5.jpg
+   служба:
+    - Монреальскому образу служба
+    - http://azbyka.ru/days/caa/310
    событие:
     - год: 1981
       описание: напис
@@ -26,6 +29,3 @@
       дата: 11.11
       собор: русз
       описание: чудо
-      служба:
-       - Монреальскому образу служба
-       - http://azbyka.ru/days/caa/310

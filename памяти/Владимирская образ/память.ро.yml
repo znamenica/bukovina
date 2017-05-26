@@ -67,9 +67,11 @@
     - дата: 23.06
       календарь: рпц,рпца
       описание: застп
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
+      служба:
+       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_23.pdf
+       - Владимирской образу на сретение служба
     - дата: 26.08
       описание: прен.4
       служба:
        - http://azbyka.ru/days/assets/upload/minei/08/minea_08_26.pdf
-       - Владимирскому образу на пренесение служба
+       - Владимирской образу на пренесение служба

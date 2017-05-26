@@ -1,7 +1,7 @@
 ---
 Авраамий Затворник:
    имя: Авраамий
-   описание: затворник Хиданский
+   описание: затворник Хиданинский
    чин: прп
    собор: мспт
    вики: http://drevo-info.ru/articles/7711.html
@@ -9,6 +9,7 @@
    образ:
     - http://pravicon.com/icon-1025
     - http://azbyka.ru/days/assets/img/saints/1924/p1893toicr134oqql15l7169330a3.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_29.pdf
    событие:
     - год: вт.пол.III
       описание: прств
@@ -18,6 +19,3 @@
    помин:
       дата: 29.10
       описание: само
-      служба:
-       - Неделя Римляныня/Неделе Римляныне и Авраамию Затворнику служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_29.pdf

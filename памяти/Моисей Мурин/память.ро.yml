@@ -3,15 +3,17 @@
    имя: Моисей
    прозвище: Мурин
    описание: эфиоп; страстотерпец; священноинок
-   чин: стпр
-   собор: эфи,копт
+   чин: прстц
+   собор: эфи?,копт?
    вики: http://drevo-info.ru/articles/6902.html
    бытие: http://azbyka.ru/days/sv-moisej-murin
    образ:
     - http://pravicon.com/icon-2478
     - http://drevo-info.ru/images/001/001231.jpg
     - http://azbyka.ru/days/assets/img/saints/715/fc18a762c415ad1857ec09947ea966b6.jpg
-   служба: Моисею Мурину служба
+   служба:
+    - Моисею Мурину служба
+    - http://azbyka.ru/days/assets/upload/minei/08/minea_08_28.pdf
    событие:
     - год: вид.(кон.III-нач.IV)
       описание: ржд
@@ -26,4 +28,3 @@
    помин:
       дата: 28.08
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_28.pdf

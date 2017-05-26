@@ -23,8 +23,8 @@ class Bukovina::Parsers::Memo
    EVENTS = Bukovina::Parsers::Event::EVENTS
 
    DAY = %w(пн вт ср чт пт сб нд дн)
-   PREF = %w(до по близ о)
-   DATES = %w(рх пасхе пасхи поста посте возн всех птдс)
+   PREF = %w(до по близ)
+   DATES = %w(пасхе пасхи)
 
    def parse memos, options = {}
       # TODO skip return if errors found
