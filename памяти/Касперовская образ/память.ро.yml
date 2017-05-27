@@ -1,0 +1,22 @@
+---
+Касперовская образ:
+   имя: Касперовская
+   описание: образ Богородицы
+   чин: обр
+   вики: http://drevo-info.ru/articles/2300.html
+   бытие: http://azbyka.ru/days/ikona-kasperovskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/10/72f9e416b5a3a008cd5a32eb4b42c719.jpg
+    - http://azbyka.ru/days/assets/img/icons/10/7ebfc220bcce6af6ec7b6457ba104653.jpg
+   служба: http://azbyka.ru/days/caa/610
+   событие:
+    - год: 1840
+      описание: чудо
+    - год: 1853-1855
+      описание: чудо.1
+      место: Одесса. Украина
+   помин:
+    - дата: 29.06
+      описание: само
+    - дата: 01.10
+      описание: само

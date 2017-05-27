@@ -1,0 +1,21 @@
+---
+Дубовичская образ:
+   имя: Дубовичская
+   описание: образ Богородицы
+   чин: обр
+   собор: чрнг
+   бытие: http://azbyka.ru/days/ikona-dubovichskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/156/p188g25olu7dn1iso1h21n111m23.jpg
+    - http://azbyka.ru/days/assets/img/icons/156/p188g25rrl1t8111lbfi910aaifh5.jpg
+    - http://azbyka.ru/days/assets/img/icons/156/p188g25rrnph515gq13l68171al36.jpg
+   событие:
+    - год: XVI
+      описание: обр
+      место: Реть река
+    - год: до 1861
+      описание: прен
+      место: Архангельская церковь. Дубовичи село. Черниговская губерния
+   помин:
+      дата: 13.09
+      описание: само

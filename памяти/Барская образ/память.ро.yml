@@ -1,0 +1,24 @@
+---
+Барская образ:
+   имя: Барская
+   описание: образ Богородицы
+   чин: обр
+   собор: подл
+   вики: http://drevo-info.ru/articles/7395.html
+   бытие: http://azbyka.ru/days/ikona-barskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/175/p1887qqmsb1qek1kcd15shktl1vlm3.jpg
+    - http://azbyka.ru/days/assets/img/icons/175/p1887qqq1k23b25ls31p3tfca5.jpg
+   служба:
+    - Барскому образу служба
+    - http://azbyka.ru/days/caa/601
+    - http://akafist.narod.ru/B/Barskaya.htm
+   событие:
+    - год: 1887
+      описание: явл
+      место: Барский монастырь. Подольщина
+    - год: 1887
+      описание: просл
+   помин:
+      дата: 01.10
+      описание: само

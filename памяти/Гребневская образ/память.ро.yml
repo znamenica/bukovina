@@ -1,0 +1,29 @@
+---
+Гребневская образ:
+   имя: Гребневская
+   описание: образ Богородицы
+   чин: обр
+   вики: http://drevo-info.ru/articles/11099.html
+   бытие: http://azbyka.ru/days/ikona-grebnevskaja
+   образ:
+    - http://azbyka.ru/days/assets/img/icons/81/3a4e72ef8dfdaa3811e4d7b7af3b204c.jpg
+    - http://azbyka.ru/days/assets/img/icons/81/599d7ac4e38734cebe5fd3e38e0e2ac6.jpg
+   служба:
+    - Гребневской образу служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_28.pdf
+    - http://azbyka.ru/days/caa/607
+   событие:
+    - год: до 1380
+      описание: явл
+      место: Гребня. река Чири
+    - год: 1380
+      описание: прен
+      место: Москва
+    - год: XV
+      описание: прен
+      место: Успенская церковь. Лубянка. Москва
+    - год: 1687
+      описание: чудо
+   помин:
+      дата: 28.07
+      описание: само

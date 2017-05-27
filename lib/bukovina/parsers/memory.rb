@@ -7,7 +7,7 @@ class Bukovina::Parsers::Memory
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
-   QUANTITIES = %w(много немного)
+   QUANTITIES = %w(много немного несколько)
 
    SUBPARSERS = {
       'имя' => :name,
@@ -21,6 +21,7 @@ class Bukovina::Parsers::Memory
       'бытие' => :link,
       'образ' => :icon,
       'слика' => :photo,
+      'слики' => :photo,
       'отечник' => :pateric,
       'служба' => :service,
       'событие' => :event,
@@ -126,7 +127,7 @@ class Bukovina::Parsers::Memory
    def name value, result, method_name = :name
       case value
       when String, Hash, Array
-         parser = Bukovina::Parsers::Name.new
+         parser = Bukovina::Parsers.const_get(method_name.to_s.camelize).new
          res = parser.parse(value)
 
          if parser.errors.empty?
@@ -144,10 +145,10 @@ class Bukovina::Parsers::Memory
      name(value, result, :patronymic) ;end
 
    def nickname value, result
-     name(value, result, :nickname) ;end
+     name(value, result, :nick_name) ;end
 
    def lastname value, result
-     name(value, result, :lastname) ;end
+     name(value, result, :last_name) ;end
 
    def counsil value, result
 #      cous = value.to_s.split(',')

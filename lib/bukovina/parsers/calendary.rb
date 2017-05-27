@@ -38,6 +38,7 @@ class Bukovina::Parsers::Calendary
                     влдв
                     влчм
                     впдв
+                    врнж
                     вскс
                     всрб
                     всс
@@ -55,6 +56,7 @@ class Bukovina::Parsers::Calendary
                     гскс
                     джрд
                     длг
+                    дмрт
                     дни
                     днсс
                     дрге
@@ -72,7 +74,7 @@ class Bukovina::Parsers::Calendary
                     к688
                     каро
                     карф
-                    киж
+                    кирл
                     киж
                     лавр
                     лавс
@@ -95,6 +97,7 @@ class Bukovina::Parsers::Calendary
                     парж
                     парс
                     плнд
+                    пол
                     пслт
                     пспр
                     птпр
@@ -136,11 +139,13 @@ class Bukovina::Parsers::Calendary
                     твц
                     тырн
                     уцс
+                    укр
                     фип
                     флпс
                     флпс
                     хлуд
                     хрис
+                    чсл
                     элл)
 
    COUNSILS = %w(рус русз)

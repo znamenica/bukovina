@@ -89,7 +89,7 @@ module Rails
             m = begin
                YAML.load( File.open( f ) )
             rescue Psych::SyntaxError => e
-               @errors[f] = {root: [StandardError.new("#{e} for file #{f}")]} ; nil ; end
+               @errors[f] = [ StandardError.new("#{e} for file #{f}")] ; nil ; end
 
             if m
                wd = Dir.pwd
