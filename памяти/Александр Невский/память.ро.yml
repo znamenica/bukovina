@@ -24,6 +24,7 @@
     - http://azbyka.ru/days/caa/18
     - http://azbyka.ru/days/caa/19
     - http://azbyka.ru/days/caa/20
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_23.pdf
    событие:
     - год: 1220
       дата: 30.05
@@ -58,6 +59,7 @@
       дата: 30.08
       описание: прен.1
       место: Свято-Троицкий собор. Александра-Невская лавра. Санкт-Петербург
+      бытие: http://www.saint.gr/3085/saint.aspx
     - год: 1790
       дата: 30.08
       описание: прел
@@ -69,11 +71,8 @@
     - дата: 30.08
       календарь: рпц,греч
       описание: прен.1
-      бытие: http://www.saint.gr/3085/saint.aspx
       служба:
        - Александру Невскому на пренесение мощей служба
        - http://azbyka.ru/days/assets/upload/minei/08/minea_08_30.pdf
     - дата: 23.11
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_23.pdf
-

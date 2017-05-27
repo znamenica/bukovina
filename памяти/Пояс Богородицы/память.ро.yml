@@ -3,7 +3,6 @@
    описание: Честной пояс Богородицы
    чин: прдм
    собор: виз,плст,капд
-   тез: Мария Богородица
    вики: http://drevo-info.ru/articles/19162.html
    образ:
     - http://drevo-info.ru/images/002/005589.jpg
@@ -13,6 +12,10 @@
     - http://azbyka.ru/days/assets/img/holidays/86/p18jr4pektm78ed0jj9b1rd9o3.jpg
    служба: http://azbyka.ru/days/caa/597
    событие:
+    - год: I
+      описание: обн
+      место: Палестина
+      тез: Мария Богородица
     - год: I
       описание: обр
       место: Палестина

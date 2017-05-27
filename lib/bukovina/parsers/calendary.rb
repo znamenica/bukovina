@@ -97,7 +97,6 @@ class Bukovina::Parsers::Calendary
                     плнд
                     пслт
                     пспр
-                    пстгу
                     птпр
                     птрг
                     путя
@@ -111,6 +110,7 @@ class Bukovina::Parsers::Calendary
                     рсм
                     рум
                     румо
+                    русз
                     серб
                     синс
                     сир
@@ -128,6 +128,7 @@ class Bukovina::Parsers::Calendary
                     спц
                     ссм
                     стип
+                    стсл
                     студ
                     супр
                     сурж

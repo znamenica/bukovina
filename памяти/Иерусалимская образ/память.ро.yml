@@ -1,0 +1,38 @@
+---
+Иерусалимская образ:
+   имя: Иерусалимская
+   описание: образ Богородицы
+   чин: обр
+   собор: плст
+   вид: Смоленская образ
+   вики: http://drevo-info.ru/articles/7534.html
+   бытие: http://azbyka.ru/days/ikona-ierusalimskaja
+   образ:
+    - http://drevo-info.ru/images/001/001303.jpg
+    - http://azbyka.ru/days/assets/img/icons/311/e8da4dc7dce0055e64cd0a9ae144effd.jpg
+    - http://azbyka.ru/days/assets/img/icons/311/aeea1deb683de92dcc4b33e1fd24fb79.jpg
+   служба:
+    - Иерусалимской образу служба
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_12.pdf
+    - http://azbyka.ru/days/caa/480
+   событие:
+    - год: 48
+      описание: напис
+      место: Иерусалим
+    - год: 463
+      описание: прен
+      место: Константинополь
+    - год: 988
+      описание: прен.1
+      место: Корсунь
+    - год: X-XI
+      описание: прен.2
+      место: Новгород
+    - год: 1571
+      описание: прен.3
+      место: Москва
+    - год: 1812
+      описание: утр
+   помин:
+      дата: 12.10
+      описание: само

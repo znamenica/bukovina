@@ -16,7 +16,9 @@
     - http://azbyka.ru/days/assets/img/saints/1703/p183o51an61at31at410kc1un6oq03.jpg
     - http://www.porphyrios.gr/files/jpg/%CE%95%CE%B9%CE%BA%CF%8C%CE%BD%CE%B5%CF%82/%CE%9A%CE%B1%CF%84%CE%AC%20%CE%B7%CE%BC%CE%B5%CF%81%CE%BF%CE%BC%CE%B7%CE%BD%CE%AF%CE%B1%20%28%CE%94%CE%B9%CE%AC%CF%86%CE%BF%CF%81%CE%BF%CE%B9%29/09%20%CE%A3%CE%B5%CF%80%CF%84%CE%AD%CE%BC%CE%B2%CF%81%CE%B9%CE%BF%CF%82/07%20%CE%A3%CF%8E%CE%B6%CF%89%CE%BD%20%CE%9C%CE%AC%CF%81%CF%84%CF%85%CF%82.jpg
     - http://www.saint.gr/photos/standard/0907/AgiosSozon01.jpg
-   служба: Созонту Помпеопольскому служба
+   служба:
+    - Созонту Помпеопольскому служба
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_07.pdf
    событие:
     - год: вт.пол.III
       описание: ржд
@@ -41,7 +43,3 @@
       дата: 07.09
       календарь: рпц,греч,змин
       описание: само
-      служба:
-       - Рождество Богородицы/Предпразднеству Рождества Богородицы и Созонту Помпеопольскому
-         служба
-       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_07.pdf

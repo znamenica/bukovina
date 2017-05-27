@@ -1,12 +1,15 @@
 ---
 Филимон Газский:
    имя: Филимон
-   описание: святитель Газский, апостол от 70-ти
+   описание: святитель Газский; апостол от 70-ти
    чин: ап
-   собор: ап70,фриг,плст,стсвтт,брак
+   собор: ап70,фриг,плст,свтт,мчч,брак
    вики: http://drevo-info.ru/articles/4416.html
    бытие: http://azbyka.ru/days/sv-filimon
    образ: http://pravicon.com/icon-3147
+   служба:
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_22.pdf
+    - http://azbyka.ru/days/assets/upload/daily_menaion/03_November/nov22.pdf
    событие:
     - год: нач.I
       описание: брак
@@ -20,7 +23,3 @@
       описание: само
     - дата: 22.11
       описание: само
-      служба:
-       - Филимон Газский/Филимону Газскому, Архиппу Колосскому, Онисиму Путеольскому, Марку Благовествнику, Аполлосу Александриянину и Апфии Колосской служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_22.pdf
-       - http://azbyka.ru/days/assets/upload/daily_menaion/03_November/nov22.pdf

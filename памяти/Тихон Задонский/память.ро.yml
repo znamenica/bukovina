@@ -1,6 +1,6 @@
 ---
 Тихон Задонский:
-   имя: Тихон
+   имя: в иночестве Тихон
    отчество: Савельевич
    фамилия: Кириллов-Соколов
    описание: чудотворец Задонский, святитель Воронежский и Елецкий
@@ -15,6 +15,10 @@
     - http://azbyka.ru/days/assets/img/saints/4142/f04dd94be03314d2377e9a6c29275b73.jpg
     - http://azbyka.ru/days/assets/img/saints/4142/p191vvhbhtfhajpgok4jbo1ah5.jpg
    отечник: http://azbyka.ru/otechnik/Tihon_Zadonskij/
+   служба:
+    - Тихону Задонскому служба
+    - http://azbyka.ru/days/assets/upload/minei/08/minea_08_13.pdf
+    - http://azbyka.ru/days/caa/453
    событие:
     - год: 1783
       дата: 13.08
@@ -36,7 +40,3 @@
       описание: обр
     - дата: 13.08
       описание: прств,обр.2
-      служба:
-       - Тихону Задонскому служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_13.pdf
-       - http://azbyka.ru/days/caa/453

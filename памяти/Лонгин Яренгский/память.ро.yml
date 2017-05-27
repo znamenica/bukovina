@@ -1,7 +1,7 @@
 ---
 Лонгин Яренгский:
    имя: Лонгин
-   прозвище: Яренгский, Соловецкий
+   описание: подвижник Яренгский, Соловецкий
    чин: прп
    собор: сол
    бытие:
@@ -11,6 +11,10 @@
     - http://azbyka.ru/days/assets/img/saints/4732/p187oi16e61j50apr8a91vtq1ui93.jpg
     - http://www.solovki.ca/saints_11/images/ioann_longin_2010_001.jpg
     - http://pravicon.com/icon-2289
+   служба:
+    - Лонгину Яренгскому служба
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_16.pdf
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_03.pdf
    событие:
     - год: 1561
       описание: прств
@@ -26,13 +30,7 @@
    помин:
     - дата: 03.07
       описание: прен
-      служба:
-       - Иоанну и Лонгину Яренгским на пренесение мощей служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_03.pdf
     - дата: 16.10
       описание: само
-      служба:
-       - Лонгину Яренгскому служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_16.pdf
     - дата: сб.по 30.10
       описание: само

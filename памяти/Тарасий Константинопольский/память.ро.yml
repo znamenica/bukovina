@@ -14,7 +14,9 @@
     - http://azbyka.ru/days/assets/img/saints/554/p18i5142er12281l3er8ers8o2h3.jpg
     - http://azbyka.ru/days/assets/img/saints/554/p18i5142et56ab5140hjejsbu4.jpg
     - http://azbyka.ru/days/assets/img/saints/554/p17v9hl3rj1ho31o347e016t510bs3.jpg
-   служба: Тарасию Константинопольскому служба
+   служба:
+    - Тарасию Константинопольскому служба
+    - http://azbyka.ru/days/assets/upload/minei/02/minea_02_25.pdf
    событие:
     - год: 784
       дата: 25.12
@@ -28,9 +30,8 @@
       описание: пгрб
       место: обитель. Боспорский пролив. Византия
    помин:
-    - дата: сб.сыр
+    - дата: сб.8.до пасхи
       описание: само
     - дата: 25.02
       календарь: рпц,греч
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/02/minea_02_25.pdf

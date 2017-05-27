@@ -15,7 +15,9 @@
        - http://calendar.rop.ru/svyat1/jun06-vissarion.html
       гр: http://www.saint.gr/3762/saint.aspx
    образ: http://azbyka.ru/days/assets/img/saints/4635/p18pheg6oe1jsm1383v8318ek11sf3.jpg
-   служба: Виссариону Великому служба
+   служба:
+    - Виссариону Великому служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_06.pdf
    событие:
     - год: вид.сер.IV
       описание: ржд
@@ -33,6 +35,3 @@
     - дата: 06.06
       календарь: рпц,серб,охр
       описание: само
-      служба: 
-       - Виссариону Великому и Илариону Новому служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_06.pdf

@@ -1,9 +1,9 @@
 ---
 Лазарь Галисийский:
    имя: Лазарь
-   описание: Галисийский
+   описание: подвижник Галисийский
    чин: прп
-   собор: лид,плст
+   собор: лид,плст?
    вики:
     - http://drevo-info.ru/articles/4319.html
     - http://ru.wikipedia.org/wiki/Лазарь_Галисийский
@@ -12,6 +12,9 @@
     - http://azbyka.ru/days/assets/img/saints/5167/p189onl8cn1n6it111ndk1b7q17kd3.jpg
     - http://azbyka.ru/days/assets/img/saints/5167/p189oopv9c1pavbvo8ok1g251mur5.jpg
     - http://pravicon.com/icon-2252
+   служба:
+    - Лазарю Галисийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_07.pdf
    событие:
     - год: ок.981
       описание: ржд
@@ -29,7 +32,3 @@
       описание: прен
     - дата: 07.11
       описание: само
-      служба:
-       - Лазарю Галисийскому служба
-       - 33 воина Мелитинского/33-м воинам Мелитинским и Лазарю Галисийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_07.pdf

@@ -6,14 +6,14 @@
    чин: прп
    собор: дпеч
    бытие: http://azbyka.ru/days/sv-nestor-pecherskij-neknizhnyj
+   служба:
+    - Нестору Некнижному служба
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_27.pdf
    событие:
       год: 1113-1116
       описание: прств
    помин:
-    - дата: нд.3.поста
+    - дата: нд.4.до пасхи
       описание: само
     - дата: 27.10
       описание: само
-      служба:
-       - Нестору Некнижному служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_27.pdf

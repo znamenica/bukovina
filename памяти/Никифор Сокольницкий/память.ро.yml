@@ -2,12 +2,13 @@
 Никифор Сокольницкий:
    имя: Никифор
    фамилия: Алфанов
-   описание: Сокольницкий
+   описание: подвижник Сокольницкий
    чин: прп
    собор: слав,рус
    вики: http://drevo-info.ru/articles/5741.html
    бытие: http://azbyka.ru/days/sv-nikifor-alfanov
    образ: http://pravicon.com/images/icons/7/7102_t.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_17.pdf
    событие:
     - год: XIV-XV
       описание: прств
@@ -23,6 +24,3 @@
       описание: прен
     - дата: 17.06
       описание: само
-      служба:
-       - Никита Сокольницкий/Никите, Кириллу, Никифору, Клименту и Исаакию Сокольницким служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_17.pdf

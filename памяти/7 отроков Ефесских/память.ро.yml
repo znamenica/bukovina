@@ -12,6 +12,10 @@
    образ:
     - http://drevo-info.ru/images/002/009108.jpg
     - http://azbyka.ru/days/assets/img/saints/1784/5461045b83ef79d7d1ddf63c8d274ec3.jpg
+   служба:
+    - 7-и отрокам Ефесским служба
+    - http://azbyka.ru/days/assets/upload/minei/08/minea_08_04.pdf
+    - http://azbyka.ru/days/caa/248
    событие:
     - год: ок. 250
       дата: 04.08
@@ -27,12 +31,6 @@
    помин:
     - дата: 04.08
       описание: прств
-      служба:
-       - 7-и отрокам Ефесским служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_04.pdf
-       - http://azbyka.ru/days/caa/248
     - дата: 22.10
       описание: ожив
-      служба:
-       - Аверкий Иерапольский/Аверкию Иерапольскому и 7-и отрокам Ефесским служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_22.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_22.pdf

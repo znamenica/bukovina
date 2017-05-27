@@ -58,7 +58,7 @@ class Bukovina::Parsers::Memory
    ORDERS = %w(св сщмч сщмчч вмц вмч мч мцц мчч прмч прмц мц прп прав свт прпж стц блж сщисп присп присц исп исц блгв блгвв рап стсвт мсвт исвт присп прор ап рап сщпр прсвт прстц бср блпр
                смчр пмчр пмцр мчр мцр мсвтр иср сщиср приср ицр прицр исвтр
                оспс обр оник
-               храм место обит прдм
+               храм место обит прдм град
                спас бдц крлт бог
                сбр правв брак стцц пстцц)
 
@@ -314,7 +314,7 @@ class Bukovina::Parsers::Memory
          end
 
    def quantity value, result
-      if /^(#{QUANTITIES.join("|")}|(ок\.)?\d+)$/ =~ value.to_s
+      if /^(#{QUANTITIES.join("|")}|(ок\.|больше\s*)?\d+)$/ =~ value.to_s
          result[ :quantity ] = value
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid quantity " +

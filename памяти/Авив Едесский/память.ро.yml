@@ -11,6 +11,9 @@
    образ:
     - http://pravicon.com/icon-1014
     - http://azbyka.ru/days/assets/img/saints/62/p18afiqevb1hm910dst761prs1dic5.jpg
+   служба:
+    - http://azbyka.ru/days/caa/314
+    - http://azbyka.ru/days/caa/315
    событие:
     - год: кон.III-нач.IV
       описание: ржд
@@ -20,7 +23,3 @@
    помин:
       дата: 15.11
       описание: само
-      служба:
-       - Гурий Едесский/Гурию, Самону и Авиву Едесским служба
-       - http://azbyka.ru/days/caa/314
-       - http://azbyka.ru/days/caa/315

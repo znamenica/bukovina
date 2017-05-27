@@ -9,6 +9,9 @@
    образ:
     - http://drevo-info.ru/images/002/007380.jpg [Икона из Преображенской церкви Спасо-Кижского погоста]
     - http://azbyka.ru/days/assets/img/saints/2510/p1994umle7180u12jc1mnhei91m8l3.jpg
+   служба:
+    - Науму Галилеянину служба
+    - http://azbyka.ru/days/assets/upload/minei/12/minea_12_01.pdf
    событие:
     - год: VIII до нэ-VII до нэ
       описание: прств
@@ -19,6 +22,3 @@
       дата: 01.12
       календарь: рпц,змин
       описание: само
-      служба:
-       - Науму Галилеянину служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_01.pdf

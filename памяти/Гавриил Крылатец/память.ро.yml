@@ -12,9 +12,9 @@
    бытие:
       ру: http://azbyka.ru/days/sv-sobor-arhangela-gavriila
       гр:
-       - http://www.saint.gr/3859/saint.aspx
        - http://www.pigizois.net/sinaxaristis/03/26_03.htm
        - http://www.ec-patr.org/gr/saints/m03-26.htm
+       - http://www.saint.gr/2090/saint.aspx
    образ:
     - http://azbyka.ru/days/assets/img/saints/6475/p17ud0jm4o19j73ka194mv69sna5.jpg
     - http://azbyka.ru/days/assets/img/saints/6475/p17ud0jm4o1hmn87b78qpis1qap6.jpg
@@ -55,6 +55,8 @@
       образ:
        - http://azbyka.ru/days/assets/img/saints/6475/p190btj05jtth180912p8hh71kvk3.jpg
        - http://azbyka.ru/days/assets/img/saints/6475/p17ud0jm4o11801htg100ap3po2p4.jpg
+      ссылка:
+         гр: http://www.saint.gr/3859/saint.aspx
    помин:
     - дата: 26.03
       календарь: рпц,греч
@@ -63,8 +65,6 @@
     - дата: 13.07
       календарь: змин,рпц,греч
       описание: само
-      бытие:
-         гр: http://www.saint.gr/2090/saint.aspx
       служба:
        - Гавриилу Крылатцу о соборе служба
        - Гавриилу Крылатцу о соборе и Стефану Савваиту служба

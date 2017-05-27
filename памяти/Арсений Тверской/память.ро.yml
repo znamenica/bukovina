@@ -16,6 +16,7 @@
     - http://azbyka.ru/days/caa/421
     - http://azbyka.ru/days/assets/upload/minei/03/minea_03_02.pdf
     - http://azbyka.ru/days/assets/upload/services/minea_03_02_1.pdf
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_02.pdf
    событие:
     - год: вид.перв.пол.XIV
       описание: ржд
@@ -52,9 +53,8 @@
     - дата: 02.03
       календарь: рпц,змин
       описание: прств
-    - дата: вс.по 29.06
+    - дата: нд.по 29.06
       описание: само
     - дата: 02.07
       календарь: змин
       описание: прен
-      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_02.pdf
