@@ -1,7 +1,7 @@
 ---
 Самон Едесский:
    имя: Самон
-   описание: Едесский
+   описание: мученик Едесский
    чин: мч
    собор: брак,исп
    вики:
@@ -11,6 +11,9 @@
    образ:
     - http://azbyka.ru/days/assets/img/saints/943/963ea02dfe7b5e6139d3669d0ede19da.jpg
     - http://azbyka.ru/days/assets/img/saints/943/656c062a7a6d480c96cf72f340d45473.jpg
+   служба:
+    - http://azbyka.ru/days/caa/314
+    - http://azbyka.ru/days/caa/315
    событие:
       год: 299-306
       описание: прств
@@ -18,7 +21,3 @@
    помин:
       дата: 15.11
       описание: само
-      служба:
-       - Гурий Едесский/Гурию, Самону и Авиву Едесским служба
-       - http://azbyka.ru/days/caa/314
-       - http://azbyka.ru/days/caa/315

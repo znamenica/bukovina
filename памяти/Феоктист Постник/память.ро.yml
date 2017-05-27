@@ -16,7 +16,9 @@
     - http://www.saint.gr/photos/standard/0903/OsiosTheoktistos01.jpg
     - http://azbyka.ru/days/assets/img/saints/4361/p1821j29169hh105r1la71kni16833.jpg
     - http://azbyka.ru/days/assets/img/saints/4361/p183nmjkhc14ho12cc7f8ug9jpp3.jpg
-   служба: Феоктисту Постнику служба
+   служба:
+    - Феоктисту Постнику служба
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_03.pdf
    событие:
     - год: вид.нач.V
       описание: иноч
@@ -29,6 +31,3 @@
       дата: 03.09
       календарь: рпц,греч,змин
       описание: прств
-      служба:
-       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_03.pdf
-       - Анфим Никомидийский/Анфиму Никомидийскому и Феоктистсу Потнику служба

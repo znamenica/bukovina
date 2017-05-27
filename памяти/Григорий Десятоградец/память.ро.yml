@@ -10,6 +10,9 @@
    образ:
     - http://azbyka.ru/days/assets/img/saints/121/b8978713fd46a38e9ceb19062ea9394b.jpg
     - http://azbyka.ru/days/assets/img/saints/121/9d7f6a89b50ba63253d61c66a05ef118.jpg
+   служба:
+    - Григорию Десятоградцу служба
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_20.pdf
    событие:
     - год: VIII
       описание: ржд
@@ -23,7 +26,3 @@
    помин:
       дата: 20.11
       описание: само
-      служба:
-       - Григорию Десятоградцу служба
-       - Введение Богородицы/Введения Богородицы предпразднеству, Григорию Десятоградцу и Проклу Константинопольскому служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_20.pdf

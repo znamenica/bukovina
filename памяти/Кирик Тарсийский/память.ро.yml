@@ -1,13 +1,16 @@
 ---
 Кирик Тарсийский:
    имя: Кирик
-   описание: Тарсийский, сын Иулитты Тарсийской
+   описание: мученик Тарсийский, сын Иулитты Тарсийской
    чин: мч
    вики: http://drevo-info.ru/articles/11022.html
    бытие: http://azbyka.ru/days/sv-kirik-tarsijskij
    образ:
     - http://drevo-info.ru/images/001/002533.jpg
     - http://azbyka.ru/days/assets/img/saints/4702/81ad4d901945d099ddbcea0ce2adf570.jpg
+   служба:
+    - Кирику и Иулитте Тарсийским служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_14.pdf
    событие:
     - год: ок. 305
       описание: прств
@@ -17,7 +20,3 @@
    помин:
       дата: 15.07
       описание: само
-      служба:
-       - Кирику и Иулитте Тарсийским служба
-       - Акила Асийский/Акиле Асийскому, Кирику и Иулитте Тарсийским служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_14.pdf

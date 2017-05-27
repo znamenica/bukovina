@@ -10,15 +10,16 @@
    бытие:
       ру: http://azbyka.ru/days/saint/656/192/3707/group
       гр: http://www.saint.gr/3846/saint.aspx
-   служба:
-    - 3-м князьям Ярославским служба
-    - http://azbyka.ru/days/caa/96
    образ:
     - http://azbyka.ru/days/assets/img/saints/656/p18i7ck1iaik318ustk3qiirru6.jpg
     - http://azbyka.ru/days/assets/img/saints/656/p18i7ck1i71se4ojjtfs1cve15rj3.jpg
     - http://azbyka.ru/days/assets/img/saints/656/d5d17841fd638bee2aacfe04c8d23e7f.jpg
     - http://azbyka.ru/days/assets/img/saints/656/p18i7ck1i81g8u1rvochh1njpc1o4.jpg
     - http://www.saint.gr/photos/standard/0919/AgioiTheorosDavidConstantinos01.jpg
+   служба:
+    - 3-м князьям Ярославским служба
+    - http://azbyka.ru/days/caa/96
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_19.pdf
    событие:
     - год: XIII
       описание: ржд
@@ -43,4 +44,3 @@
     - дата: 19.09
       календарь: рпц,змин,греч
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_19.pdf

@@ -1,13 +1,16 @@
 ---
 Никита Столпник:
    имя: Никита
-   описание: Столпник
-   описание: Переславльский, Переяславский, Переславский
+   прозвище: Столпник
+   описание: подвижник и столпник Переславльский (Переяславский, Переславский)
    чин: прп
-   собор: слав,рус,ряр
+   собор: слав,рус,ряр,пзал?
    вики: http://drevo-info.ru/articles/4950.html
    бытие: http://azbyka.ru/days/sv-nikita-stolpnik
    образ: http://drevo-info.ru/images/001/000869.jpg
+   служба:
+    - Никите Столпнику служба
+    - http://www.kazan.eparhia.ru/bogoslugenie/akafisti/prepodobnim/niktastolpik/
    событие:
     - год: 1186
       описание: прств
@@ -18,6 +21,3 @@
    помин:
       дата: 24.05
       описание: прств
-      служба:
-       - Никите Столпнику служба
-       - http://www.kazan.eparhia.ru/bogoslugenie/akafisti/prepodobnim/niktastolpik/

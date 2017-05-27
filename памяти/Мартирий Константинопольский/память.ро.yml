@@ -9,6 +9,7 @@
    образ:
     - http://pravicon.com/icon-2401
     - http://azbyka.ru/days/assets/img/saints/1789/p17vjjsiclgri17qa1ab0ued1tol3.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_25.pdf
    событие:
     - год: ок. 355
       описание: прств
@@ -20,6 +21,3 @@
    помин:
       дата: 25.10
       описание: само
-      служба:
-       - Маркиан Чтец/Маркиану Чтецу и Мартирию Константинопольскому служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_25.pdf

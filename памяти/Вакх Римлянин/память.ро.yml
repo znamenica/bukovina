@@ -1,7 +1,7 @@
 ---
 Вакх Римлянин:
    имя: Вакх
-   описание: Римлянин
+   описание: римлянин
    чин: мч
    собор: рим,воев
    вики: http://drevo-info.ru/articles/7457.html
@@ -10,6 +10,7 @@
     - http://azbyka.ru/days/assets/img/saints/957/8a087794658edf3c129d3d8b2672bde6.jpg
     - http://pravicon.com/icon-1338
     - http://drevo-info.ru/images/002/005441.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_07.pdf
    событие:
     - год: ок.300
       описание: прств
@@ -22,6 +23,3 @@
    помин:
       дата: 07.10
       описание: само
-      служба:
-       - Сергий Римлянин/Сергию и Вакху Римлянам служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_07.pdf

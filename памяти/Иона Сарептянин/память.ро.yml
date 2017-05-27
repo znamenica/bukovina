@@ -2,7 +2,7 @@
 Иона Сарептянин:
    имя: в наречении Иона
    описание: пророк малый; преемник пророка Елисея
-   чин: свт
+   чин: прор
    собор: мпр
    вики: http://drevo-info.ru/articles/3972.html
    бытие:
@@ -17,7 +17,9 @@
     - http://www.saint.gr/photos/standard/0921/ProfitisIonas02.jpg
     - http://azbyka.ru/days/assets/img/saints/994/2016d72d297dcaf8a9308cd0566d811a.jpg
     - http://azbyka.ru/days/assets/img/saints/994/674ba23c8fd80a42c9bf6b44322d5bdf.jpg
-   служба: Ионе Сарептянину служба
+   служба:
+    - Ионе Сарептянину служба
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_22.pdf
    событие:
     - год: IX до нэ-VIII до нэ
       описание: ржд
@@ -31,7 +33,3 @@
     - дата: 22.09
       календарь: рпц,змин
       описание: само
-      служба:
-       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_22.pdf
-       - Фока Синопский/Фоке Синопскому, Ионе Сарептянину, Ионе Палестинскому и Кодрату
-         Афинскому служба

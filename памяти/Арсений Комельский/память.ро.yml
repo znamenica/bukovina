@@ -11,6 +11,10 @@
     - http://azbyka.ru/days/assets/img/saints/2458/p192i89saqbdsvpr17oq1qdj19cg4.jpg
     - http://drevo-info.ru/images/001/001219.jpg
     - http://pravicon.com/icon-1264
+   служба:
+    - Арсению Комельскому служба
+    - http://azbyka.ru/days/caa/7
+    - http://azbyka.ru/days/assets/upload/minei/08/minea_08_24.pdf
    событие:
     - год: вид.сер.VX
       описание: ржд
@@ -26,8 +30,3 @@
    помин:
     - дата: 24.08
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/08/minea_08_24.pdf
-    - описание: само
-      служба:
-       - Арсению Комельскому служба
-       - http://azbyka.ru/days/caa/7

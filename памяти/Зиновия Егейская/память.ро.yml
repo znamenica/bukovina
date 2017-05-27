@@ -8,6 +8,7 @@
    образ:
     - http://pravicon.com/icon-1826
     - http://drevo-info.ru/images/002/007572.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_30.pdf
    событие:
     - год: III
       описание: ржд
@@ -21,6 +22,3 @@
    помин:
       дата: 30.10
       описание: само
-      служба:
-       - Зиновий Егейский/Зиновию и Зиновии Егейским служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_30.pdf

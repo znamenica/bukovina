@@ -3,9 +3,13 @@
    имя: Онисим
    описание: колоссянин, святитель Ефесский, апостол от 70-ти, заточник Путеольский
    чин: ап
-   собор: ап70,стсвтт
+   собор: ап70,мсвтт
    вики: http://drevo-info.ru/articles/5226.html
    бытие: http://azbyka.ru/days/sv-onisim
+   служба:
+    - Онисиму Путеольскому служба
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_22.pdf
+    - http://azbyka.ru/days/assets/upload/daily_menaion/03_November/nov22.pdf
    событие:
     - год: до 68
       описание: свят
@@ -15,10 +19,5 @@
    помин:
     - дата: 15.02
       описание: само
-      служба: Онисиму Путеольскому служба
     - дата: 22.11
       описание: само
-      служба:
-       - Филимон Газский/Филимону Газскому, Архиппу Колосскому, Онисиму Путеольскому, Марку Благовествнику, Аполлосу Александриянину и Апфии Колосской служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_22.pdf
-       - http://azbyka.ru/days/assets/upload/daily_menaion/03_November/nov22.pdf

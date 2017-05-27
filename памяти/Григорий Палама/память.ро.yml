@@ -19,7 +19,9 @@
     - http://azbyka.ru/days/assets/img/saints/305/p18gehee2mbdi1jfu15jmqjs1k6b4.jpg
     - http://azbyka.ru/days/assets/img/saints/305/p18gehee2m1kdi1pe811imea6c943.jpg
    отечник: http://azbyka.ru/otechnik/Grigorij_Palama/
-   служба: Григорию Паламе служба
+   служба:
+    - Григорию Паламе служба
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_14.pdf
    событие:
     - год: 1296
       описание: ржд
@@ -32,9 +34,8 @@
       описание: прств
       место: Солунь
    помин:
-    - дата: нд.2.поста
+    - дата: нд.5.до пасхи
       календарь: рпц
       описание: само
     - дата: 14.11
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_14.pdf

@@ -24,6 +24,7 @@
    служба:
     - 2-м основателям Валаамским служба
     - http://azbyka.ru/days/caa/65
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_28.pdf
    событие:
     - год: X/ок.1353
       описание: прств
@@ -53,10 +54,7 @@
     - дата: 28.06
       календарь: змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_28.pdf
     - дата: 11.09
-      календарь: рус,змин,греч
+      календарь: рпц,змин,греч
       описание: прен
-      служба:
-       - 2-м основателям Валаамским на пренесение мощей служба
-       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_11.pdf
+      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_11.pdf

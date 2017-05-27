@@ -11,7 +11,9 @@
        - http://calendar.rop.ru/svyat1/sep19-trofim.html
       гр: http://www.saint.gr/987/saint.aspx
    образ: http://www.saint.gr/photos/standard/0919/AgioiTrofimosSabbatiosDorymedon01.jpg
-   службу: 3-м мученикам Антиохийскосинадским служба
+   служба:
+    - 3-м мученикам Антиохийскосинадским служба
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_19.pdf
    событие:
       год: 276
       описание: прств
@@ -19,4 +21,3 @@
       дата: 19.09
       календарь: рпц,греч,змин
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/09/minea_09_19.pdf

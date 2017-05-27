@@ -9,14 +9,12 @@
    образ:
     - http://pravicon.com/icon-2054
     - http://azbyka.ru/days/assets/img/saints/4126/ee091ff1986bf48a10fb7ee31768ac41.jpg
+   служба: http://azbyka.ru/days/assets/upload/minei/11/minea_11_28.pdf
    событие:
       год: 303
       описание: прств
       место: Севастия. Армения
    помин:
       дата: 28.11
-      календарь: рус,змин
+      календарь: рпц,змин
       описание: само
-      служба:
-       - Стефан Страстотерпец/Стефану Страстотерпцу и Иринарху Севастийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_28.pdf
