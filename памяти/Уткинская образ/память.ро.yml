@@ -1,13 +1,16 @@
 ---
-Уткинский образ:
-   имя: Тамбовский, Уткинский
+Уткинская образ:
+   имя: Тамбовская, Уткинская
    описание: образ Богородицы
    чин: обр
-   вид: Ильинско-Черниговский образ
+   вид: Черниговская образ
    бытие:
     - http://azbyka.ru/days/ikona-tambovskaja-utkinskaja
     - http://www.eparhia-tmb.ru/o-eparxii/palomnicheskie-mesta/tambovskaya-ikona-bozhiej-materi/
    образ: http://drevo-info.ru/images/001/001687.jpg
+   служба:
+    - Уткинской образу служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_28.pdf
    событие:
     - год: 1692
       описание: прен
@@ -23,7 +26,5 @@
    помин:
     - дата: 16.04
       описание: явл
-      служба: Уткинскому образу служба
     - дата: 28.07
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_28.pdf

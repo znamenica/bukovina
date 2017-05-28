@@ -24,7 +24,7 @@ class Bukovina::Parsers::Memo
 
    DAY = %w(пн вт ср чт пт сб нд дн)
    PREF = %w(до по близ)
-   DATES = %w(пасхе пасхи)
+   DATES = %w(пасхе пасхи пасха)
 
    def parse memos, options = {}
       # TODO skip return if errors found

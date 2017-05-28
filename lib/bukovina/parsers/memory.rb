@@ -61,6 +61,7 @@ class Bukovina::Parsers::Memory
                оспс обр оник озпр
                храм место обит прдм град
                спас бдц крлт бог
+               сбт
                сбр правв брак стцц пстцц)
 
    def parse memories, options = {}
