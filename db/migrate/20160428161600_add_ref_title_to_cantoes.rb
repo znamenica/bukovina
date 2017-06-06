@@ -1,4 +1,4 @@
-class AddRefTitleToCantoes < ActiveRecord::Migration
+class AddRefTitleToCantoes < ActiveRecord::Migration[4.2]
    def change
       change_table :cantoes do |t|
          t.string :ref_title

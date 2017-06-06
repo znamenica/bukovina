@@ -1,4 +1,4 @@
-class RenameChantsToCantoes < ActiveRecord::Migration
+class RenameChantsToCantoes < ActiveRecord::Migration[4.2]
    def change
       rename_table :chants, :cantoes
       

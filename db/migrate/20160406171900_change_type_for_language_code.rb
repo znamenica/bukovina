@@ -1,4 +1,4 @@
-class ChangeTypeForLanguageCode < ActiveRecord::Migration
+class ChangeTypeForLanguageCode < ActiveRecord::Migration[4.2]
    def change
       change_table :cantoes do |t|
          t.change :language_code, :string ;end

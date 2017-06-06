@@ -1,4 +1,4 @@
-class CreateChants < ActiveRecord::Migration
+class CreateChants < ActiveRecord::Migration[4.2]
    def change
       create_table :chants do |t|
          t.string  :text, null: false

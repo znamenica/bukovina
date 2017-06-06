@@ -1,4 +1,4 @@
-class CreateMemories < ActiveRecord::Migration
+class CreateMemories < ActiveRecord::Migration[4.2]
    def change
       create_table :memories do |t|
          t.string :short_name, unique: true
@@ -6,7 +6,4 @@ class CreateMemories < ActiveRecord::Migration
          t.timestamps null: false
       end
 
-      add_index :memories, :short_name, unique: true
-   end
-end
-
+      add_index :memories, :short_name, unique: true ;end;end

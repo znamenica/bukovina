@@ -1,4 +1,4 @@
-class CreateServiceChants < ActiveRecord::Migration
+class CreateServiceChants < ActiveRecord::Migration[4.2]
    def change
       create_table :service_chants do |t|
          t.belongs_to  :service, null: false

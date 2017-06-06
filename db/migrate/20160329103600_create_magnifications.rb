@@ -1,4 +1,4 @@
-class CreateMagnifications < ActiveRecord::Migration
+class CreateMagnifications < ActiveRecord::Migration[4.2]
    def change
       create_table :magnifications do |t|
          t.string  :text, null: false

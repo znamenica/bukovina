@@ -1,4 +1,4 @@
-class AddDescriptionToServices < ActiveRecord::Migration
+class AddDescriptionToServices < ActiveRecord::Migration[4.2]
    def change
       change_table :services do |t|
          t.string :gospel

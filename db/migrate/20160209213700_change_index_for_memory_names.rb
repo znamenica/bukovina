@@ -1,4 +1,4 @@
-class ChangeIndexForMemoryNames < ActiveRecord::Migration
+class ChangeIndexForMemoryNames < ActiveRecord::Migration[4.2]
    def change
       change_table :memory_names do |t|
          t.remove_index column: [ :memory_id, :name_id ], unique: true

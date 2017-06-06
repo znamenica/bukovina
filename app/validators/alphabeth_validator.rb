@@ -47,12 +47,12 @@ class AlphabethValidator < ActiveModel::EachValidator
    UKRAINIAN_CAPITAL = 'А-ЩЬЮЯЄІЇҐ'
    UKRAINIAN_STROKE = 'а-щьюяєіїґ'
 
-   RUSSIAN_SYNTAX = ' \.,:;\!\/\-«»—\?0-9–'
+   RUSSIAN_SYNTAX = ' \(\)\.,:;\!\/\-«»—\?0-9–'
    HIP_SYNTAX = ' 0-9\(\[\{\/\'\+\.\:\!"=~@#\$%\^&\*_\)\]\}\\\\`\-,;?\|'
-   MODIFIED_RUSSIAN_SYNTAX = ' \.,:;\!\/\-«»—\?0-9–'
+   MODIFIED_RUSSIAN_SYNTAX = ' \(\)\.,:;\!\/\-«»—\?0-9–'
    CSLAV_SYNTAX = ' \.,:;'
    SERBIAN_SYNTAX = ' \.,\!:;“”\/'
-   GREEK_SYNTAX = ' 0-9\+\(\)\-\.,;:.·˙\!\'’"`' # TODO last 4 to fix and merge
+   GREEK_SYNTAX = ' \(\)0-9\+\(\)\-\.,;:.·˙\!«»\'’"`' # TODO last 4 to fix and merge
    BULGARIAN_SYNTAX = ' \.,'
    UKRAINIAN_SYNTAX = ' \.,—’;\/:'
    LATIN_SYNTAX = ' \.,<\>'

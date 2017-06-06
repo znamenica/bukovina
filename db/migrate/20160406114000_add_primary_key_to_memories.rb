@@ -1,4 +1,4 @@
-class AddPrimaryKeyToMemories < ActiveRecord::Migration
+class AddPrimaryKeyToMemories < ActiveRecord::Migration[4.2]
    def change
       change_column_null :memories, :short_name, false
       

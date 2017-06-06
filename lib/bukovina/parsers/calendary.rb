@@ -211,11 +211,11 @@ class Bukovina::Parsers::Calendary
       result ;end
 
    def year value, result
-      result[ :happened_at ] = value =~ /^\d+$/ && value.to_i || value ;end
+      result[ :date ] = value =~ /^\d+$/ && value.to_i || value ;end
 
    def calendary value, result
       if /^(#{CALENDARIES.join("|")})$/ =~ value.to_s
-         result[ :calendary_string ] = value.to_s
+         result[ :slug ] = value.to_s
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "invalid calendary " +
             "value '#{value}' detected for calendary field" )  ;end;end
@@ -228,8 +228,8 @@ class Bukovina::Parsers::Calendary
       when String, Hash, Array
          parser = Bukovina::Parsers::Link.new
          if res = parser.parse(value)
-            result[ :beings ] ||= []
-            result[ :beings ].concat(res.delete(:link))
+            result[ :links ] ||= []
+            result[ :links ].concat(res.delete(:link))
          else
             @errors.concat(parser.errors) ;end
       else
@@ -254,8 +254,8 @@ class Bukovina::Parsers::Calendary
       when String, Hash, Array
          parser = Bukovina::Parsers::Description.new
          if res = parser.parse(value)
-            result[ :name ] ||= []
-            result[ :name ].concat(res.delete(:description))
+            result[ :names ] ||= []
+            result[ :names ].concat(res.delete(:description))
          else
             @errors.concat(parser.errors) ;end
       else

@@ -1,4 +1,4 @@
-class CreateCalendaries < ActiveRecord::Migration
+class CreateCalendaries < ActiveRecord::Migration[4.2]
    def change
       create_table :calendaries do |t|
          t.string :author

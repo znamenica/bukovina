@@ -1,4 +1,4 @@
-class RenameMemoryIdToDescribableIdInDescriptions < ActiveRecord::Migration
+class RenameMemoryIdToDescribableIdInDescriptions < ActiveRecord::Migration[4.2]
    def change
       change_table :descriptions do |t|
          t.remove_index [ "memory_id", "language_code" ]

@@ -1,4 +1,4 @@
-class CreateDescriptions < ActiveRecord::Migration
+class CreateDescriptions < ActiveRecord::Migration[4.2]
    def change
       create_table :descriptions do |t|
          t.string :text, null: false

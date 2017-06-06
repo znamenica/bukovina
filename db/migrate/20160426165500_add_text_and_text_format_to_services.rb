@@ -1,4 +1,4 @@
-class AddTextAndTextFormatToServices < ActiveRecord::Migration
+class AddTextAndTextFormatToServices < ActiveRecord::Migration[4.2]
    def change
       change_table :services do |t|
          t.text :text

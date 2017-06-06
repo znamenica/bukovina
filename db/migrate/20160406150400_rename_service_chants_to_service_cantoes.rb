@@ -1,4 +1,4 @@
-class RenameServiceChantsToServiceCantoes < ActiveRecord::Migration
+class RenameServiceChantsToServiceCantoes < ActiveRecord::Migration[4.2]
    def change
       rename_table :service_chants, :service_cantoes
       

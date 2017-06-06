@@ -1,4 +1,4 @@
-class ChangeDefaultsForAlphabethCode < ActiveRecord::Migration
+class ChangeDefaultsForAlphabethCode < ActiveRecord::Migration[4.2]
    def change
       change_table :cantoes do |t|
          t.change_default :alphabeth_code, nil ;end

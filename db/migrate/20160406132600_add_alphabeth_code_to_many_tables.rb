@@ -1,4 +1,4 @@
-class AddAlphabethCodeToManyTables < ActiveRecord::Migration
+class AddAlphabethCodeToManyTables < ActiveRecord::Migration[4.2]
    def change
       change_table :names do |t|
          t.string :alphabeth_code, null: false, default: 0

@@ -1,4 +1,4 @@
-class CreateServiceMagnifications < ActiveRecord::Migration
+class CreateServiceMagnifications < ActiveRecord::Migration[4.2]
    def change
       create_table :service_magnifications do |t|
          t.belongs_to  :service, null: false

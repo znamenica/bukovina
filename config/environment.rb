@@ -38,19 +38,6 @@ module Rails
       def paths
          { 'db/migrate' => [ 'db/migrate' ] } ; end
 
-      MAP = {
-         Bukovina::Parsers::Name => %w(имя name),
-         Bukovina::Parsers::Patronymic => %w(отчество patronymic),
-         Bukovina::Parsers::LastName => %w(фамилия last_name),
-         Bukovina::Parsers::NickName => %w(прозвище nick_name),
-         Bukovina::Parsers::Description => %w(описание description),
-         Bukovina::Parsers::IconLink => %w(образ icon_link),
-         Bukovina::Parsers::Link => %w(бытие link),
-         Bukovina::Parsers::ServiceLink => %w(служба service_link),
-         Bukovina::Parsers::Event => %w(событие event),
-#         Bukovina::Parsers::Memo => %w(помин memo),
-      }
-
       def validate_calendary f, record
          short_name = record.keys.first
          file_short_name = f.split('/')[-2]
@@ -66,7 +53,6 @@ module Rails
 
 
       def validate_record f, record
-
          short_name = record.keys.first
          file_short_name = f.split('/')[-2]
          if short_name != file_short_name
@@ -122,7 +108,82 @@ module Rails
 
          true; end
 
+      def import_calendary f, record
+         short_name = record.keys.first
+         file_short_name = f.split('/')[-2]
+         if short_name != file_short_name
+            @errors[f] = [StandardError.new("File calendary name " +
+               "#{file_short_name} doesn't match to calendary name #{short_name}")] ;end
+         data = record[ short_name ]
+
+         parser = Bukovina::Parsers::Calendary.new
+         attrs = parser.parse(data)
+         if parser.errors.any?
+            @errors[f] = parser.errors
+         else
+            i = Bukovina::Importers::Calendary.new( attrs )
+            i.import
+            @errors[ f ] = i.errors if i.errors.any? ;end;end
+
+
+      def import_record f, record
+         short_name = record.keys.first
+         file_short_name = f.split('/')[-2]
+         if short_name != file_short_name
+            @errors[f] = [StandardError.new("File short name " +
+               "#{file_short_name} doesn't match to short name #{short_name}")] ;end
+         # TODO Validate memory, it will validate subfiieds itself
+
+         data = record[ short_name ]
+
+         parser = Bukovina::Parsers::Memory.new
+         attrs = parser.parse(data)
+         if parser.errors.any?
+            @errors[f] = parser.errors
+         else
+            Bukovina::Importers::Memory.new( attrs ).import ;end;end
+
       def load_seed
+         Dir.glob( 'календари/**/память.*.yml' ).each do |f|
+            puts "Календарь: #{f}"
+
+            m = begin
+               YAML.load( File.open( f ) )
+            rescue Psych::SyntaxError => e
+               @errors[f] = [ StandardError.new("#{e} for file #{f}")] ; nil ; end
+
+            if m
+               wd = Dir.pwd
+               Dir.chdir( File.dirname( f ) )
+               import_calendary(f, m)
+               Dir.chdir( wd ) ;end;end
+=begin
+         Dir.glob( 'памяти/**/память.*.yml' ).each do |f|
+            puts "Память: #{f}"
+
+            m = begin
+               YAML.load( File.open( f ) )
+            rescue Psych::SyntaxError => e
+               @errors[f] = {root: [StandardError.new("#{e} for file #{f}")]} ; nil ; end
+
+            if m
+               wd = Dir.pwd
+               Dir.chdir( File.dirname( f ) )
+               import_record(f, m)
+               Dir.chdir( wd ) ;end;end
+=end
+         puts '-'*80
+         errors.keys.each do |f|
+            puts "#{f.gsub(/([ ,])/,'@\1').gsub('@','\\')}" ;end
+         puts '='*80
+
+         errors.each do |f, list|
+            list.each do |e|
+               puts "@@@ #{f} -> #{e.class}:#{e.message}" ; end;end
+
+         true; end;end
+
+=begin
          errors = {}
          pass = true
          patron = Bukovina::Parsers::Patronymic.new
@@ -304,6 +365,7 @@ module Rails
                puts "#{n}: #{e.class}:#{e}: #{e.backtrace&.join("\n")}" ; end
             raise "Simple load errors found " +
                "with count of #{errors.keys.size}" ; end ; end ; end
+=end
 
    def self.load_folders *folders
       files = folders.flatten.map do |folder|

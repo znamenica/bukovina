@@ -22,3 +22,4 @@ tmp
 .ruby-gemset
 .rvmrc
 db/*.sqlite3*
+.*

@@ -1,4 +1,4 @@
-class CreateNames < ActiveRecord::Migration
+class CreateNames < ActiveRecord::Migration[4.2]
    def change
       create_table :names do |t|
          t.string :text, null: false
@@ -7,7 +7,4 @@ class CreateNames < ActiveRecord::Migration
          t.timestamps null: false
       end
 
-      add_index :names, [ :text, :type, :language_code ], unique: true
-   end
-end
-
+      add_index :names, [ :text, :type, :language_code ], unique: true ;end;end

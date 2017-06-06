@@ -1,4 +1,4 @@
-class CreateCantoMemories < ActiveRecord::Migration
+class CreateCantoMemories < ActiveRecord::Migration[4.2]
    def change
       create_table :canto_memories do |t|
          t.belongs_to :canto, null: false
