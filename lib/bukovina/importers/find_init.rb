@@ -1,13 +1,14 @@
 module Bukovina::Importers::FindInit
    def foreign_class base, attr
-      if not base.reflections[attr.to_s]
-         @errors << StandardError.new("Invalid attribute '#{attr}' reflection")
-         'nil_class'
-      elsif base.reflections[attr.to_s].source_reflection
-         if base.reflections[attr.to_s].options[:as].present?
-            (base.reflections[attr.to_s].options[:class_name] || 'object').to_s
+#            binding.pry
+      if base.reflections[attr.to_s].source_reflection
+         if base.reflections[attr.to_s].options[:class_name].present?
+            base.reflections[attr.to_s].options[:class_name].to_s
+         elsif base.reflections[attr.to_s].options[:as].present?
+            'object'
          else
-            base.reflections[attr.to_s].foreign_key.to_s.gsub( "_id",'' )
+#            base.reflections[attr.to_s].foreign_key.to_s.gsub( "_id",'' )
+            base.reflections[attr.to_s].name.to_s
          end
       else
          through = base.reflections[attr.to_s].through_reflection
@@ -24,6 +25,7 @@ module Bukovina::Importers::FindInit
       hash.map do |(attr, value)|
          case value
          when Array
+#            binding.pry
             new_base = foreign_class( base, attr )
 #            binding.pry
             new_array = parse_array( new_base, value )
@@ -32,6 +34,7 @@ module Bukovina::Importers::FindInit
             else
                [ attr, new_array ] ;end
          when Hash
+#            binding.pry
             new_base = foreign_class( base, attr )
             new_value = parse_hash( new_base, value )
             if new_value.is_a?( Hash )
@@ -51,6 +54,7 @@ module Bukovina::Importers::FindInit
       [ search_hash, hash ] ;end
 
    def parse_array base, array
+#      binding.pry
       array.map do |value|
          case value
          when Hash

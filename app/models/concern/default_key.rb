@@ -15,7 +15,11 @@ module DefaultKey
          new_args = args.flatten.reject { |a| a.blank? }
          rel = self.where(self.default_key => new_args)
          if rel.size < new_args.size
-            raise ::ActiveRecord::RecordNotFound
+            rel = self.where(self.primary_key => new_args)
+            if rel.size < new_args.size
+               raise ::ActiveRecord::RecordNotFound
+            else
+               new_args.size > 1 && rel || rel.first ;end
          else
             new_args.size > 1 && rel || rel.first ;end
       else

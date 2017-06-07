@@ -16,4 +16,4 @@ class Event < ActiveRecord::Base
    accepts_nested_attributes_for :place
    accepts_nested_attributes_for :item, reject_if: :all_blank
 
-   validates :memory_id, :type, presence: true ;end
+   validates :type, presence: true ;end

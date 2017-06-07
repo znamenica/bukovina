@@ -45,46 +45,46 @@ class Bukovina::Parsers::Name
          # remove enumerator error
          @errors.select! { |x| !x.is_a?( Parsers::BukovinaInvalidEnumeratorError ) }
 
-         mn = names[0][ :memory_name ].select do |x|
-            !x[ :name ].has_key?( :similar_to )
+         mn = names[0][ :memory_names ].select do |x|
+            !x[ :names ].has_key?( :similar_to )
             end.map.with_index do |x, i|
-            x[ :name ].has_key?( :text ) && x ||
+            x[ :names ].has_key?( :text ) && x ||
                (sel = names[ 1..-1 ].select do |y|
-                  y[ :memory_name ][ i ]&.[]( :name )&.has_key?( :text ) ; end
-               sel.first&.[]( :memory_name )&.[]( i ) || x) ; end
+                  y[ :memory_names ][ i ]&.[]( :names )&.has_key?( :text ) ; end
+               sel.first&.[]( :memory_names )&.[]( i ) || x) ; end
 
          invalid_index = names[1..-1].any? do |ns|
-            size = ns[ :memory_name ].reduce(0) do |s, x|
-               x[ :name ].has_key?( :similar_to ) && s || s + 1 ; end
+            size = ns[ :memory_names ].reduce(0) do |s, x|
+               x[ :names ].has_key?( :similar_to ) && s || s + 1 ; end
             size != mn.size ; end
 
          if invalid_index
             raise Parsers::BukovinaIndexError, "#{$!}: for name #{name}" ; end
 
          names[1..-1].each do |ns|
-            ns[ :name ].each.with_index do |n, i|
+            ns[ :names ].each.with_index do |n, i|
                has_name =
-               names[ 0 ][ :name ].select.with_index do |x, j|
-                  j % names[ 0 ][ :memory_name ].size == i &&
+               names[ 0 ][ :names ].select.with_index do |x, j|
+                  j % names[ 0 ][ :memory_names ].size == i &&
                      x.has_key?( :text ) ; end
 
 #               binding.pry
                if ! has_name.empty?
                   n[ :similar_to ] = has_name.first
-               elsif mn[ i ] && mn[ i ][ :name ] != n
-                  n[ :similar_to ] = mn[ i ][ :name ] ; end
-               names[ 0 ][ :name ] << n ; end
+               elsif mn[ i ] && mn[ i ][ :names ] != n
+                  n[ :similar_to ] = mn[ i ][ :names ] ; end
+               names[ 0 ][ :names ] << n ; end
 
-            ns[ :memory_name ].each.with_index do |mn, i|
-               if mn[ :name ].has_key?( :text ) &&
-                  ! names[ 0 ][ :memory_name ][ i ]&.[]( :name )&.has_key?( :text )
+            ns[ :memory_names ].each.with_index do |mn, i|
+               if mn[ :names ].has_key?( :text ) &&
+                  ! names[ 0 ][ :memory_names ][ i ]&.[]( :names )&.has_key?( :text )
                   Kernel.puts "*"*80
                   Kernel.puts names[ 0 ].inspect
-                  Kernel.puts names[ 0 ][ :memory_name ].inspect
-                  Kernel.puts names[ 0 ][ :memory_name ][ i ].inspect
-                  Kernel.puts names[ 0 ][ :memory_name ][ i ]&.[]( :name ).inspect
-                  Kernel.puts names[ 0 ][ :memory_name ][ i ]&.[]( :name )&.has_key?( :text ).inspect
-                  names[ 0 ][ :memory_name ][ i ][ :name ] = mn[ :name ]
+                  Kernel.puts names[ 0 ][ :memory_names ].inspect
+                  Kernel.puts names[ 0 ][ :memory_names ][ i ].inspect
+                  Kernel.puts names[ 0 ][ :memory_names ][ i ]&.[]( :names ).inspect
+                  Kernel.puts names[ 0 ][ :memory_names ][ i ]&.[]( :names )&.has_key?( :text ).inspect
+                  names[ 0 ][ :memory_names ][ i ][ :names ] = mn[ :names ]
                   end ; end ; end
 #         binding.pry
 #         rescue TypeError
@@ -102,14 +102,14 @@ class Bukovina::Parsers::Name
             raise BukovinaEmptyRecord, "Empty record found for the names "
                   "hash: #{name.inspect}" ; end
 =end
-         names[ 0 ][ :name ].delete_if { |n| !n[ :text ] }
-         names[ 0 ][ :memory_name ].delete_if { |n| n[ :name ].has_key?( :similar_to ) }
+         names[ 0 ][ :names ].delete_if { |n| !n[ :text ] }
+         names[ 0 ][ :memory_names ].delete_if { |n| n[ :names ].has_key?( :similar_to ) }
 #         binding.pry
          names[ 0 ]
       when String
          names = parse_line( name )
-         names[ :name ]&.delete_if { |n| !n[ :text ] }
-         names[ :memory_name ].delete_if { |n| n[ :name ].has_key?( :similar_to ) }
+         names[ :names ]&.delete_if { |n| !n[ :text ] }
+         names[ :memory_names ].delete_if { |n| n[ :names ].has_key?( :similar_to ) }
 #         binding.pry
          names
       when NilClass
@@ -138,7 +138,7 @@ private
       name = { language_code: language_code.to_sym }
       context = {
          language_code: language_code.to_sym,
-         models: { name: [ name ], memory_name: [ { name: name } ] } }
+         models: { names: [ name ], memory_names: [ { names: name } ] } }
 
       while ! line.empty? do
          match = RE.match( line )
@@ -165,17 +165,17 @@ private
 
    def apply_token token, context
       if token
-         context[ :models ][ :name ].last[ :text ] = token
+         context[ :models ][ :names ].last[ :text ] = token
          case context[ :mode ]
          when :prefix
-            context[ :models ][ :memory_name ][ -2 ][ :mode ] = :prefix
+            context[ :models ][ :memory_names ][ -2 ][ :mode ] = :prefix
          when :ored
-            context[ :models ][ :memory_name ][ -2 ][ :mode ] = :ored
+            context[ :models ][ :memory_names ][ -2 ][ :mode ] = :ored
          when :alias
-            prev = context[ :models ][ :name ][ 0..-2 ].select do |n|
+            prev = context[ :models ][ :names ][ 0..-2 ].select do |n|
                ! n.has_key?( :similar_to ) ; end.last
 #            binding.pry
-            context[ :models ][ :name ].last[ :similar_to ] = prev ; end ; end
+            context[ :models ][ :names ].last[ :similar_to ] = prev ; end ; end
 #      else
 #         aliases = context.delete( :aliases )
 #         dup = aliases.dup
@@ -199,16 +199,16 @@ private
 
    def new_record context
       name = { language_code: context[ :language_code ] }
-      context[ :models ][ :name ] << name
-      memory_name = { name: name }
+      context[ :models ][ :names ] << name
+      memory_name = { names: name }
       if context[ :mode ] == :ored
-         if context[ :models ][ :memory_name ].last[ :feasibly ]
+         if context[ :models ][ :memory_names ].last[ :feasibly ]
             memory_name[ :feasibly ] =
-            context[ :models ][ :memory_name ].last[ :feasibly ] ; end
-         if context[ :models ][ :memory_name ].last[ :state ]
+            context[ :models ][ :memory_names ].last[ :feasibly ] ; end
+         if context[ :models ][ :memory_names ].last[ :state ]
             memory_name[ :state ] =
-            context[ :models ][ :memory_name ].last[ :state ] ; end ; end
-      context[ :models ][ :memory_name ] << memory_name ; end
+            context[ :models ][ :memory_names ].last[ :state ] ; end ; end
+      context[ :models ][ :memory_names ] << memory_name ; end
 
    def apply_separator token, sepa, context
       case sepa
@@ -236,11 +236,11 @@ private
 
    def apply_pref pref, context
       if pref
-         context[ :models ][ :memory_name ].last[ :feasibly ] = :feasible ; end ; end
+         context[ :models ][ :memory_names ].last[ :feasibly ] = :feasible ; end ; end
 
    def apply_state state, context
       if state
-         context[ :models ][ :memory_name ].last[ :state ] = STATES[ state ]
+         context[ :models ][ :memory_names ].last[ :state ] = STATES[ state ]
          end ; end
 
    def validate_token token, context
@@ -251,18 +251,18 @@ private
 
          if re =~ token&.gsub( /[\s‑]+/,'' )
 #            binding.pry
-            if context[ :models ][ :name ].last[ :language_code ] == code.to_sym
+            if context[ :models ][ :names ].last[ :language_code ] == code.to_sym
                token
 #            else
 #               raise BukovinaInvalidLanguage, "Invalid language '"            \
-#                  "#{context[ :models ][ :name ].last[ :language_code ]}' "   \
+#                  "#{context[ :models ][ :names ].last[ :language_code ]}' "   \
 #                  "for the #token '#{token}'" ;
                end ; end ; end
 
       if token && ! matched
 #         binding.pry
          raise Parsers::BukovinaInvalidCharError, "Invalid char(s) for language '" +
-            "#{context[ :models ][ :name ].last[ :language_code ]}' specified" ; end
+            "#{context[ :models ][ :names ].last[ :language_code ]}' specified" ; end
             
       matched
 

@@ -5,6 +5,8 @@ class Calendary < ActiveRecord::Base
    has_many :names, as: :describable, dependent: :delete_all, class_name: :Appellation
    has_many :wikies, as: :info, dependent: :delete_all, class_name: :WikiLink
    has_many :links, as: :info, dependent: :delete_all, class_name: :BeingLink
+   has_many :memos
+
    belongs_to :place, optional: true
 
    accepts_nested_attributes_for :descriptions, reject_if: :all_blank

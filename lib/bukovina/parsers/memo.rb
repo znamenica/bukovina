@@ -54,6 +54,17 @@ class Bukovina::Parsers::Memo
          raise Parsers::BukovinaInvalidClass, "Invalid class #{name.class} " +
             "for Name line '#{name}'" ; end
 
+      # expand calendary string
+      res[:memos ] = res[ :memos ].map do |memo|
+         if memo[ :calendary_string ].to_s =~ /,/
+            memo[ :calendary_string ].split(/,\s*/).map do |cal|
+               new_memo = memo.deep_dup
+               new_memo[ :calendary_string ] = cal
+               new_memo ;end
+         else
+            memo ;end;end
+         .flatten
+
       @errors.empty? && res || nil
 
    rescue Parsers::BukovinaError => e
@@ -136,10 +147,10 @@ class Bukovina::Parsers::Memo
             number= $2
 
             res = {}
-            res[ :type ] = EVENTS[ event ] if EVENTS[ event ]
+            res[ :type_class ] = EVENTS[ event ] if EVENTS[ event ]
             res[ :type_number ] = number if number
-            result[ :memos ] ||= []
-            result[ :memos ] << res
+            result[ :event_memos ] ||= []
+            result[ :event_memos ] << res
          else
             @errors << Parsers::BukovinaInvalidValueError.new( "Memo type (description) '#{v}' is invalid" ) ;end;end;end
 

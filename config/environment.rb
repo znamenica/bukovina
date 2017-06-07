@@ -108,6 +108,7 @@ module Rails
 
          true; end
 
+
       def import_calendary f, record
          short_name = record.keys.first
          file_short_name = f.split('/')[-2]
@@ -141,9 +142,11 @@ module Rails
          if parser.errors.any?
             @errors[f] = parser.errors
          else
-            Bukovina::Importers::Memory.new( attrs ).import ;end;end
+            Bukovina::Importers::Memory.new( attrs, short_name ).import( short_name ) ;end;end
+
 
       def load_seed
+=begin
          Dir.glob( 'календари/**/память.*.yml' ).each do |f|
             puts "Календарь: #{f}"
 
@@ -157,7 +160,7 @@ module Rails
                Dir.chdir( File.dirname( f ) )
                import_calendary(f, m)
                Dir.chdir( wd ) ;end;end
-=begin
+=end
          Dir.glob( 'памяти/**/память.*.yml' ).each do |f|
             puts "Память: #{f}"
 
@@ -171,7 +174,7 @@ module Rails
                Dir.chdir( File.dirname( f ) )
                import_record(f, m)
                Dir.chdir( wd ) ;end;end
-=end
+
          puts '-'*80
          errors.keys.each do |f|
             puts "#{f.gsub(/([ ,])/,'@\1').gsub('@','\\')}" ;end

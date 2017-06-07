@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170607011100) do
+ActiveRecord::Schema.define(version: 20170607175500) do
 
   create_table "calendaries", force: :cascade do |t|
     t.string "date"
@@ -59,6 +59,13 @@ ActiveRecord::Schema.define(version: 20170607011100) do
     t.index ["describable_id", "describable_type", "alphabeth_code", "text"], name: "describable_alphabeth_index", unique: true
   end
 
+  create_table "event_memos", force: :cascade do |t|
+    t.string "type_class"
+    t.string "type_number"
+    t.integer "memo_id", null: false
+    t.integer "event_id"
+  end
+
   create_table "events", force: :cascade do |t|
     t.string "happened_at"
     t.integer "memory_id", null: false
@@ -97,6 +104,8 @@ ActiveRecord::Schema.define(version: 20170607011100) do
     t.string "short_name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "order"
+    t.string "counsil"
     t.index ["short_name"], name: "index_memories_on_short_name", unique: true
   end
 
@@ -109,6 +118,19 @@ ActiveRecord::Schema.define(version: 20170607011100) do
     t.datetime "updated_at", null: false
     t.integer "mode"
     t.index ["memory_id", "name_id", "state"], name: "index_memory_names_on_memory_id_and_name_id_and_state", unique: true
+  end
+
+  create_table "memos", force: :cascade do |t|
+    t.string "happened_at"
+    t.string "date"
+    t.integer "before"
+    t.integer "after"
+    t.integer "ineveningy"
+    t.integer "memory_id", null: false
+    t.integer "calendary_id", null: false
+    t.index ["date"], name: "index_memos_on_date"
+    t.index ["happened_at"], name: "index_memos_on_happened_at"
+    t.index ["memory_id", "calendary_id"], name: "index_memos_on_memory_id_and_calendary_id", unique: true
   end
 
   create_table "mentions", force: :cascade do |t|

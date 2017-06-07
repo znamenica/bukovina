@@ -38,50 +38,50 @@ class Bukovina::Parsers::Patronymic
          @errors.select! do |x|
             !x.is_a?( Parsers::BukovinaInvalidEnumeratorError ) ; end
 
-         mn = names[0][ :memory_name ].select do |x|
-            !x[ :name ].has_key?( :similar_to )
+         mn = names[0][ :memory_names ].select do |x|
+            !x[ :names ].has_key?( :similar_to )
             end.map.with_index do |x, i|
-            x[ :name ].has_key?( :text ) && x ||
+            x[ :names ].has_key?( :text ) && x ||
                (sel = names[ 1..-1 ].select do |y|
-                  y[ :memory_name ][ i ]&.[]( :name )&.has_key?( :text ) ; end
-               sel.first&.[]( :memory_name )&.[]( i ) || x) ; end
+                  y[ :memory_names ][ i ]&.[]( :names )&.has_key?( :text ) ; end
+               sel.first&.[]( :memory_names )&.[]( i ) || x) ; end
 
          invalid_index = names[1..-1].any? do |ns|
-            size = ns[ :memory_name ].reduce(0) do |s, x|
-               x[ :name ].has_key?( :similar_to ) && s || s + 1 ; end
+            size = ns[ :memory_names ].reduce(0) do |s, x|
+               x[ :names ].has_key?( :similar_to ) && s || s + 1 ; end
             size != mn.size ; end
 
          if invalid_index
             raise Parsers::BukovinaIndexError, "#{$!}: for name #{name}" ; end
 
          names[1..-1].each do |ns|
-            ns[ :name ].each.with_index do |n, i|
+            ns[ :names ].each.with_index do |n, i|
                has_name =
-               names[ 0 ][ :name ].select.with_index do |x, j|
-                  j % names[ 0 ][ :memory_name ].size == i &&
+               names[ 0 ][ :names ].select.with_index do |x, j|
+                  j % names[ 0 ][ :memory_names ].size == i &&
                      x.has_key?( :text ) ; end
 
                if ! has_name.empty?
                   n[ :similar_to ] = has_name.first
-               elsif mn[ i ] && mn[ i ][ :name ] != n
-                  n[ :similar_to ] = mn[ i ][ :name ] ; end
-               names[ 0 ][ :name ] << n ; end
+               elsif mn[ i ] && mn[ i ][ :names ] != n
+                  n[ :similar_to ] = mn[ i ][ :names ] ; end
+               names[ 0 ][ :names ] << n ; end
 
-            ns[ :memory_name ].each.with_index do |mn, i|
-               if mn[ :name ].has_key?( :text ) &&
-                  ! names[ 0 ][ :memory_name ][ i ]&.[]( :name )&.has_key?( :text )
-                  names[ 0 ][ :memory_name ][ i ][ :name ] = mn[ :name ]
+            ns[ :memory_names ].each.with_index do |mn, i|
+               if mn[ :names ].has_key?( :text ) &&
+                  ! names[ 0 ][ :memory_names ][ i ]&.[]( :names )&.has_key?( :text )
+                  names[ 0 ][ :memory_names ][ i ][ :names ] = mn[ :names ]
                   end ; end ; end
 
-         names[ 0 ][ :name ].delete_if { |n| !n[ :text ] }
-         names[ 0 ][ :memory_name ].delete_if do |n|
-            n[ :name ].has_key?( :similar_to ) ; end
+         names[ 0 ][ :names ].delete_if { |n| !n[ :text ] }
+         names[ 0 ][ :memory_names ].delete_if do |n|
+            n[ :names ].has_key?( :similar_to ) ; end
          names[ 0 ]
 
       when String
          names = parse_line( name )
-         names[ :name ]&.delete_if { |n| !n[ :text ] }
-         names[ :memory_name ].delete_if { |n| n[ :name ].has_key?( :similar_to ) }
+         names[ :names ]&.delete_if { |n| !n[ :text ] }
+         names[ :memory_names ].delete_if { |n| n[ :names ].has_key?( :similar_to ) }
          names
 
       when NilClass
@@ -137,32 +137,32 @@ class Bukovina::Parsers::Patronymic
 
    def apply_token token, context
       if token
-         context[ :models ][ :name ].last[ :text ] = token
+         context[ :models ][ :names ].last[ :text ] = token
          case context[ :mode ]
          when :prefix
-            context[ :models ][ :memory_name ][ -2 ][ :mode ] = :prefix
+            context[ :models ][ :memory_names ][ -2 ][ :mode ] = :prefix
          when :ored
-            context[ :models ][ :memory_name ][ -2 ][ :mode ] = :ored
+            context[ :models ][ :memory_names ][ -2 ][ :mode ] = :ored
          when :alias
-            prev = context[ :models ][ :name ][ 0..-2 ].select do |n|
+            prev = context[ :models ][ :names ][ 0..-2 ].select do |n|
                ! n.has_key?( :similar_to ) ; end.last
-            context[ :models ][ :name ].last[ :similar_to ] = prev ; end ; end
+            context[ :models ][ :names ].last[ :similar_to ] = prev ; end ; end
 
    rescue Parsers::BukovinaError => e
       @errors << e ; end
 
    def new_record context
       name = { language_code: context[ :language_code ] }
-      context[ :models ][ :name ] << name
+      context[ :models ][ :names ] << name
       memory_name = { name: name }
       if context[ :mode ] == :ored
-         if context[ :models ][ :memory_name ].last[ :feasibly ]
+         if context[ :models ][ :memory_names ].last[ :feasibly ]
             memory_name[ :feasibly ] =
-            context[ :models ][ :memory_name ].last[ :feasibly ] ; end
-         if context[ :models ][ :memory_name ].last[ :state ]
+            context[ :models ][ :memory_names ].last[ :feasibly ] ; end
+         if context[ :models ][ :memory_names ].last[ :state ]
             memory_name[ :state ] =
-            context[ :models ][ :memory_name ].last[ :state ] ; end ; end
-      context[ :models ][ :memory_name ] << memory_name ; end
+            context[ :models ][ :memory_names ].last[ :state ] ; end ; end
+      context[ :models ][ :memory_names ] << memory_name ; end
 
    def apply_separator token, sepa, context
       case sepa
@@ -190,11 +190,11 @@ class Bukovina::Parsers::Patronymic
 
    def apply_pref pref, context
       if pref
-         context[ :models ][ :memory_name ].last[ :feasibly ] = :feasible
+         context[ :models ][ :memory_names ].last[ :feasibly ] = :feasible
          end ; end
 
    def apply_state state, context
-      context[ :models ][ :memory_name ].last[ :state ] =
+      context[ :models ][ :memory_names ].last[ :state ] =
       STATES[ state ] || :отчество ; end
 
    def validate_token token, context
@@ -204,13 +204,13 @@ class Bukovina::Parsers::Patronymic
             next s; end
 
          if re =~ token
-            if context[ :models ][ :name ].last[ :language_code ] == code.to_sym
+            if context[ :models ][ :names ].last[ :language_code ] == code.to_sym
                token
                end ; end ; end
 
       if token && ! matched
          raise Parsers::BukovinaInvalidCharError, "Invalid char(s) for " +
-            "language '#{ context[ :models ][ :name ].last[ :language_code ]}' " +
+            "language '#{ context[ :models ][ :names ].last[ :language_code ]}' " +
             "specified" ; end
             
       matched
