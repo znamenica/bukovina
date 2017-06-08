@@ -27,31 +27,31 @@ class Bukovina::Parsers::LastName
       res =
       case name
       when Hash
-         names = name.to_a.map do |(language_code, nameline)|
-            if ! Parsers::MATCH_TABLE.has_key?( language_code.to_sym )
-               raise Parsers::BukovinaInvalidLanguageError, "Invalid language '" +
-                  "#{language_code}' specified" ; end
+         names = name.to_a.map do |(alphabeth_code, nameline)|
+            if ! Parsers::MATCH_TABLE.has_key?( alphabeth_code.to_sym )
+               raise Parsers::BukovinaInvalidLanguageError,
+                  "Invalid alphabeth '#{alphabeth_code}' specified" ; end
 
             if nameline
-               parse_line nameline, language_code
+               parse_line nameline, alphabeth_code
             else
                raise Parsers::BukovinaNullNameLine, "Null name line #{name.inspect}" +
-                     " for the language #{language_code}" ; end ; end
+                     " for the alphabeth #{alphabeth_code}" ; end ; end
 
          # remove enumerator error
          @errors.select! { |x| !x.is_a?( Parsers::BukovinaInvalidEnumeratorError ) }
 
          mn = names[0][ :memory_names ].select do |x|
-            !x[ :names ].has_key?( :similar_to )
+            !x[ :name ].has_key?( :similar_to )
             end.map.with_index do |x, i|
-            x[ :names ].has_key?( :text ) && x ||
+            x[ :name ].has_key?( :text ) && x ||
                (sel = names[ 1..-1 ].select do |y|
-                  y[ :memory_names ][ i ]&.[]( :names )&.has_key?( :text ) ; end
+                  y[ :memory_names ][ i ]&.[]( :name )&.has_key?( :text ) ; end
                sel.first&.[]( :memory_names )&.[]( i ) || x) ; end
 
          invalid_index = names[1..-1].any? do |ns|
             size = ns[ :memory_names ].reduce(0) do |s, x|
-               x[ :names ].has_key?( :similar_to ) && s || s + 1 ; end
+               x[ :name ].has_key?( :similar_to ) && s || s + 1 ; end
             size != mn.size ; end
 
          if invalid_index
@@ -64,7 +64,6 @@ class Bukovina::Parsers::LastName
                   j % names[ 0 ][ :memory_names ].size == i &&
                      x.has_key?( :text ) ; end
 
-#               binding.pry
                if ! has_name.empty?
                   n[ :similar_to ] = has_name.first
                elsif mn[ i ] && mn[ i ][ :names ] != n
@@ -72,9 +71,9 @@ class Bukovina::Parsers::LastName
                names[ 0 ][ :names ] << n ; end
 
             ns[ :memory_names ].each.with_index do |mn, i|
-               if mn[ :names ].has_key?( :text ) &&
-                  ! names[ 0 ][ :memory_names ][ i ]&.[]( :names )&.has_key?( :text )
-                  names[ 0 ][ :memory_names ][ i ][ :names ] = mn[ :names ]
+               if mn[ :name ].has_key?( :text ) &&
+                  ! names[ 0 ][ :memory_names ][ i ]&.[]( :name )&.has_key?( :text )
+                  names[ 0 ][ :memory_names ][ i ][ :name ] = mn[ :name ]
                   end ; end ; end
 #         binding.pry
 #         rescue TypeError
@@ -93,15 +92,16 @@ class Bukovina::Parsers::LastName
                   "hash: #{name.inspect}" ; end
 =end
          names[ 0 ][ :names ].delete_if { |n| !n[ :text ] }
-         names[ 0 ][ :memory_names ].delete_if { |n| n[ :names ].has_key?( :similar_to ) }
-#         binding.pry
+         names[ 0 ][ :memory_names ].delete_if do |n|
+            n[ :name ].has_key?( :similar_to ) ; end
          names[ 0 ]
+
       when String
          names = parse_line( name )
          names[ :names ]&.delete_if { |n| !n[ :text ] }
-         names[ :memory_names ].delete_if { |n| n[ :names ].has_key?( :similar_to ) }
-#         binding.pry
+         names[ :memory_names ].delete_if { |n| n[ :name ].has_key?( :similar_to ) }
          names
+
       when NilClass
       else
          raise Parsers::BukovinaInvalidClass, "Invalid class #{name.class} " +
@@ -113,7 +113,7 @@ class Bukovina::Parsers::LastName
       @errors << e
       nil ; end
 
-private
+   private
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных
@@ -124,11 +124,19 @@ private
          Parsers::BukovinaFalseSyntaxError.new( line ) ; end
       @errors << error ; end
 
-   def parse_line line, language_code = 'ру'
-      name = { language_code: language_code.to_sym }
+   def parse_line line, alphabeth_code = 'ру'
+      alphabeth_code = alphabeth_code.to_sym
+
+      language_codes = Language.language_list_for(alphabeth_code)
+
+      name = {
+         type: 'LastName',
+         alphabeth_code: alphabeth_code,
+         language_code: language_codes.first.to_sym }
       context = {
-         language_code: language_code.to_sym,
-         models: { name: [ name ], memory_name: [ { name: name } ] } }
+         alphabeth_code: alphabeth_code,
+         language_code: language_codes.first.to_sym,
+         models: { names: [ name ], memory_names: [ { name: name } ] } }
 
       while ! line.empty? do
          match = RE.match( line )
@@ -144,7 +152,6 @@ private
          apply_state( match[ 2 ], context )
          apply_token( validate_token( match[ 3 ]&.strip, context ), context )
          apply_separator( match[ 3 ], match[ 4 ]&.strip, context )
-#         binding.pry
          line = line[ match.end( 0 )..-1 ] ; end
 #      binding.pry
 
@@ -189,7 +196,10 @@ private
       @errors << e ; end
 
    def new_record context
-      name = { language_code: context[ :language_code ] }
+      name = {
+         type: 'LastName',
+         language_code: context[ :language_code ],
+         alphabeth_code: context[ :alphabeth_code ] }
       context[ :models ][ :names ] << name
       memory_name = { name: name }
       if context[ :mode ] == :ored
@@ -242,7 +252,7 @@ private
          # NOTE: w/o U2011 non-break hyphen and spaces
          if re =~ token&.gsub( /[\s‑]+/,'' )
 #            binding.pry
-            if context[ :models ][ :names ].last[ :language_code ] == code.to_sym
+            if context[ :models ][ :names ].last[ :alphabeth_code ] == code.to_sym
                token
 #            else
 #               raise BukovinaInvalidLanguage, "Invalid language '"            \
@@ -252,8 +262,8 @@ private
 
       if token && ! matched
 #         binding.pry
-         raise Parsers::BukovinaInvalidCharError, "Invalid char(s) for language '" +
-            "#{context[ :models ][ :names ].last[ :language_code ]}' specified" ; end
+         raise Parsers::BukovinaInvalidCharError, "Invalid char(s) for alphabeth '" +
+            "#{context[ :models ][ :names ].last[ :alphabeth_code ]}' specified" ; end
             
       matched
 

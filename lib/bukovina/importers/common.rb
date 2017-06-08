@@ -6,7 +6,7 @@ class Bukovina::Importers::Common
    attr_reader :errors
 
    def model
-      @model ||= MODEL.to_s.constantize
+      @model ||= self.class::MODEL.to_s.constantize
    end
 
    def import

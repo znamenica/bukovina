@@ -1,0 +1,1 @@
+class Betraial < Event ;end

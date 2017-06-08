@@ -1,1 +1,1 @@
-class Birth < Event ;end
+class Canonization < Event ;end

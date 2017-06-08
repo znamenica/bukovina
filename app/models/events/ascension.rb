@@ -1,0 +1,1 @@
+class Ascension < Event ;end

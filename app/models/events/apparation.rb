@@ -1,0 +1,1 @@
+class Apparation < Event ;end

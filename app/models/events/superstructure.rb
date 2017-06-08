@@ -1,0 +1,1 @@
+class Superstructure < Event ;end

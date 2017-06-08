@@ -1,0 +1,1 @@
+class Learning < Event ;end

@@ -1,0 +1,1 @@
+class Revival < Event ;end

@@ -27,7 +27,7 @@ class Bukovina::Parsers::Event
       'чадо' => :person,
       'служба' => :service,
       'о' => :about,
-      'собор' => :counsil,
+      'собор' => :council,
       'чин' => :order,
       'тез' => :tezo,
       'координаты' => :coord,
@@ -363,12 +363,12 @@ class Bukovina::Parsers::Event
       result[ :happened_at ] = new.size == 1 && new.pop || new
    end
 
-   def counsil value, result
+   def council value, result
       if /^(#{COUNSILS.join("|")})$/ =~ value
-         result[ :counsil ] = value
+         result[ :council ] = value
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "invalid item " +
-            "value '#{value}' detected for counsil field" )
+            "value '#{value}' detected for council field" )
       end
    end
 

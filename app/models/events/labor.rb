@@ -1,0 +1,1 @@
+class Labor < Event ;end

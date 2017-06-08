@@ -2,7 +2,7 @@ require 'bukovina/importers/common'
 
 class Bukovina::Importers::Memory < Bukovina::Importers::Common
    def import short_name
-         binding.pry
+#         binding.pry
       @attrs.each do |attrs|
          attrs = attrs.merge(short_name: short_name)
 #         name = attrs.delete( :name )
@@ -16,10 +16,10 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
 #
          (search_attrs, new_attrs) = separate_hash( parse_hash( Memory, attrs ) )
 
-         binding.pry
+#         binding.pry
          o = Memory.where( search_attrs ).first_or_initialize( new_attrs )
 
-         binding.pry
+#         binding.pry
          o.save!
 
          errs = o.errors.map do |field, message|

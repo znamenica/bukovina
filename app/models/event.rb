@@ -16,4 +16,13 @@ class Event < ActiveRecord::Base
    accepts_nested_attributes_for :place
    accepts_nested_attributes_for :item, reject_if: :all_blank
 
-   validates :type, presence: true ;end
+   validates :type, presence: true
+
+   # serialization
+   def happened_at= value
+      value.is_a?(Array) && super(value.join('/')) || super
+   end
+
+   def happened_at
+      value = read_attribute(:happened_at)
+      value.to_s =~ /,/ && value.split(/,\*/) || value ;end;end

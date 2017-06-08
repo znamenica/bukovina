@@ -1,0 +1,1 @@
+class Defrocking < Event ;end

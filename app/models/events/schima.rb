@@ -1,0 +1,1 @@
+class Schima < Event ;end

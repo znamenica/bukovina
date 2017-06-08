@@ -1,0 +1,1 @@
+class Transfiguration < Event ;end

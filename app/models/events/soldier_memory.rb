@@ -1,0 +1,1 @@
+class SoldierMemory < Event ;end

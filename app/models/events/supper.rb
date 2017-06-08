@@ -1,0 +1,1 @@
+class Supper < Event ;end

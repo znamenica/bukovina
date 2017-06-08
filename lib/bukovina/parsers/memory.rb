@@ -16,7 +16,7 @@ class Bukovina::Parsers::Memory
       'фамилия' => :lastname,
       'описание' => :desc,
       'чин' => :order,
-      'собор' => :counsil,
+      'собор' => :council,
       'вики' => :wiki,
       'бытие' => :link,
       'образ' => :icon,
@@ -132,9 +132,13 @@ class Bukovina::Parsers::Memory
          res = parser.parse(value)
 
          if parser.errors.empty?
-            if res[ :name ].present?
-               result[ :name ] ||= []
-               result[ :name ].concat(res.delete(:name)) ;end
+#            if res[ :names ].present?
+#               result[ :names ] ||= []
+#               result[ :names ].concat(res.delete(:name)) ;end
+#
+            if res[ :memory_names ].present?
+               result[ :memory_names ] ||= []
+               result[ :memory_names ].concat(res.delete(:memory_names)) ;end
          else
             @errors.concat(parser.errors) ;end
 
@@ -151,7 +155,7 @@ class Bukovina::Parsers::Memory
    def lastname value, result
      name(value, result, :last_name) ;end
 
-   def counsil value, result
+   def council value, result
 #      cous = value.to_s.split(',')
 #
 #      parsed = cous.map do |v|
@@ -159,12 +163,12 @@ class Bukovina::Parsers::Memory
 #            v
 #         else
 #            @errors << Parsers::BukovinaInvalidValueError.new( "invalid " +
-#               "value '#{v}' detected for counsil field" )
+#               "value '#{v}' detected for council field" )
 #            nil ;end;end
 #      .compact
 #
 #      if (cous - parsed).empty?
-         result[ :counsil ] = value ;end;#end
+         result[ :council ] = value ;end;#end
 
    def order value, result
       match =

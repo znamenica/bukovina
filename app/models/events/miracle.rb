@@ -1,0 +1,1 @@
+class Miracle < Event ;end

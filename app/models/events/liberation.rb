@@ -1,0 +1,1 @@
+class Liberation < Event ;end

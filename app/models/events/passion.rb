@@ -1,0 +1,1 @@
+class Passion < Event ;end

@@ -1,0 +1,1 @@
+class Captivity < Event ;end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170607175500) do
+ActiveRecord::Schema.define(version: 20170608153500) do
 
   create_table "calendaries", force: :cascade do |t|
     t.string "date"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20170607175500) do
     t.datetime "updated_at", null: false
     t.integer "place_id"
     t.string "author_name"
-    t.string "counsil"
+    t.string "council"
     t.index ["slug"], name: "index_calendaries_on_slug", unique: true
   end
 
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 20170607175500) do
     t.index ["describable_id", "describable_type", "alphabeth_code", "text"], name: "describable_alphabeth_index", unique: true
   end
 
-  create_table "event_memos", force: :cascade do |t|
+  create_table "event_memoes", force: :cascade do |t|
     t.string "type_class"
     t.string "type_number"
     t.integer "memo_id", null: false
@@ -75,6 +75,11 @@ ActiveRecord::Schema.define(version: 20170607175500) do
     t.integer "place_id"
     t.integer "item_id"
     t.string "person_name"
+    t.integer "type_number"
+    t.string "about_string"
+    t.string "tezo_string"
+    t.string "order"
+    t.string "council"
     t.index ["type", "memory_id", "item_id"], name: "index_events_on_item_id_and_type_and_memory_id"
   end
 
@@ -100,12 +105,25 @@ ActiveRecord::Schema.define(version: 20170607175500) do
     t.string "info_type"
   end
 
+  create_table "memoes", force: :cascade do |t|
+    t.string "happened_at"
+    t.string "date"
+    t.integer "before"
+    t.integer "after"
+    t.integer "ineveningy"
+    t.integer "memory_id", null: false
+    t.integer "calendary_id"
+    t.index ["date"], name: "index_memoes_on_date"
+    t.index ["happened_at"], name: "index_memoes_on_happened_at"
+    t.index ["memory_id", "calendary_id"], name: "index_memoes_on_memory_id_and_calendary_id", unique: true
+  end
+
   create_table "memories", force: :cascade do |t|
     t.string "short_name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "order"
-    t.string "counsil"
+    t.string "council"
     t.index ["short_name"], name: "index_memories_on_short_name", unique: true
   end
 
@@ -118,19 +136,6 @@ ActiveRecord::Schema.define(version: 20170607175500) do
     t.datetime "updated_at", null: false
     t.integer "mode"
     t.index ["memory_id", "name_id", "state"], name: "index_memory_names_on_memory_id_and_name_id_and_state", unique: true
-  end
-
-  create_table "memos", force: :cascade do |t|
-    t.string "happened_at"
-    t.string "date"
-    t.integer "before"
-    t.integer "after"
-    t.integer "ineveningy"
-    t.integer "memory_id", null: false
-    t.integer "calendary_id", null: false
-    t.index ["date"], name: "index_memos_on_date"
-    t.index ["happened_at"], name: "index_memos_on_happened_at"
-    t.index ["memory_id", "calendary_id"], name: "index_memos_on_memory_id_and_calendary_id", unique: true
   end
 
   create_table "mentions", force: :cascade do |t|

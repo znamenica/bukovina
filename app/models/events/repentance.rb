@@ -1,0 +1,1 @@
+class Repentance < Event ;end

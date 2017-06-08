@@ -1,0 +1,1 @@
+class Resurrection < Event ;end

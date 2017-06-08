@@ -1,0 +1,1 @@
+class Procession < Event ;end

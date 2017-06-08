@@ -1,0 +1,1 @@
+class Founding < Event ;end

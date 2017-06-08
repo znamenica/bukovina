@@ -1,0 +1,1 @@
+class Destruction < Event ;end

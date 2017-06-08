@@ -1,0 +1,1 @@
+class Loss < Event ;end

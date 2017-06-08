@@ -1,0 +1,1 @@
+class Adoration < Event ;end

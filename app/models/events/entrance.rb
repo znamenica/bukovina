@@ -1,0 +1,1 @@
+class Entrance < Event ;end

@@ -1,5 +1,5 @@
 # order[string]      - чин памяти
-# counsil[string]    - соборы для памяти
+# council[string]    - соборы для памяти
 # short_name[string] - краткое имя
 #
 class Memory < ActiveRecord::Base
@@ -16,6 +16,7 @@ class Memory < ActiveRecord::Base
 
    scope :by_short_name, ->(name) { where( short_name: name ) }
 
+   accepts_nested_attributes_for :memory_names, reject_if: :all_blank
    accepts_nested_attributes_for :paterics, reject_if: :all_blank
    accepts_nested_attributes_for :events, reject_if: :all_blank
    accepts_nested_attributes_for :memos, reject_if: :all_blank

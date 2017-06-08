@@ -1,0 +1,1 @@
+class Veneration < Event ;end

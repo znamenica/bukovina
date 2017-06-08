@@ -1,0 +1,1 @@
+class Numbness < Event ;end

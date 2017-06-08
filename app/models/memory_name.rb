@@ -9,7 +9,14 @@ class MemoryName < ActiveRecord::Base
    enum feasibly: [ :non_feasible, :feasible ]
    enum mode: [ :ored, :prefix ]
 
-   validates_presence_of :memory_id, :name_id
+   accepts_nested_attributes_for :name, reject_if: :all_blank
+
+   validates_presence_of :memory, :name
+   # validates :state, inclusion: { in: states.keys } # TODO later after import
+
+   def name_attributes= value
+      self.name = Name.where(value).first || super && name
+   end
 
    def to_s
       name.text ; end ; end

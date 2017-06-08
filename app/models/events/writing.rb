@@ -1,0 +1,1 @@
+class Writing < Event ;end

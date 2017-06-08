@@ -1,0 +1,1 @@
+class Bishopry < Event ;end

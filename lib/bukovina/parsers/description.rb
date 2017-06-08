@@ -13,8 +13,8 @@ class Bukovina::Parsers::Description
       res =
       case name
       when Hash
-         descriptions = name.map do |(lang, desc)|
-            res = parse_line( desc, lang )
+         descriptions = name.map do |(alph, desc)|
+            res = parse_line( desc, alph )
             res&.[](:text) && res || nil
          end.compact
 
@@ -34,20 +34,20 @@ class Bukovina::Parsers::Description
 
    protected
 
-   def detect_alphabeth text, language_code
-      language_code = language_code.to_sym
-
-      alphs = Language::LANGUAGE_TREE[language_code]
-      alph =
-      [ alphs ].flatten.reduce do |res, alph|
-         if Parsers::MATCH_TABLE[ language_code ] =~ line.gsub(/[0-9\s‑';:"«»,()\.\-\?\/]/,'')
-            alph
-         else
-            res
-         end
-      end
-   end
-
+#   def detect_alphabeth text, language_code
+#      language_code = language_code.to_sym
+#
+#      alphs = Language::LANGUAGE_TREE[language_code]
+#      alph =
+#      [ alphs ].flatten.reduce do |res, alph|
+#         if Parsers::MATCH_TABLE[ language_code ] =~ line.gsub(/[0-9\s‑';:"«»,()\.\-\?\/]/,'')
+#            alph
+#         else
+#            res
+#         end
+#      end
+#   end
+#
    def match_alphabeth? alphabeth_code, line
       filtered = line.gsub(/[0-9\s‑';:"«»,()№’\.\-\?\/]/,'')
       Parsers::MATCH_TABLE[ alphabeth_code ] =~ filtered

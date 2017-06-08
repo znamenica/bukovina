@@ -19,7 +19,7 @@ class Memo < ActiveRecord::Base
    accepts_nested_attributes_for :service_links, reject_if: :all_blank
    accepts_nested_attributes_for :services, reject_if: :all_blank
 
-   validates :memory, :calendary, :event_memos, presence: true 
+   validates :memory, presence: true
 
    def calendary_string= value
-      self.calendary = Calendary.find_by_slug(value) ;end;end
+      self.calendary = Calendary.where(slug: value).first ;end;end

@@ -1,0 +1,1 @@
+class Decanonization < Event ;end

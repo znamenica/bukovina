@@ -17,7 +17,7 @@ class Bukovina::Parsers::Calendary
       'название' => :name,
       'место' => :place,
       'вики' => :wiki,
-      'собор' => :counsil,
+      'собор' => :council,
    }
 
    CALENDARIES = %w(916
@@ -262,12 +262,12 @@ class Bukovina::Parsers::Calendary
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid name " +
             "'#{value}' detected" ) ;end;end
 
-   def counsil value, result
+   def council value, result
       if /^(#{COUNSILS.join("|")})$/ =~ value
-         result[ :counsil ] = value
+         result[ :council ] = value
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "invalid item " +
-            "value '#{value}' detected for counsil field" ) ;end;end
+            "value '#{value}' detected for council field" ) ;end;end
 
    def place value, result
       case value
