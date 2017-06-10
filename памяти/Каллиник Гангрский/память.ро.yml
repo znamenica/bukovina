@@ -1,7 +1,7 @@
 ---
 Каллиник Гангрский:
    имя: Каллиник
-   прозвище: Киликийский, Гангрский
+   описание: Киликийский, Гангрский
    чин: мч
    собор: клк,пафл
    вики: http://drevo-info.ru/articles/1840.html
@@ -10,6 +10,9 @@
     - http://drevo-info.ru/images/003/011108.jpg
     - http://azbyka.ru/days/assets/img/saints/3623/p17vjab6u612tr15n717grco01s2i3.jpg
     - http://pravicon.com/icon-2110
+   служба:
+    - Каллинику Гангрскому служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_29.pdf
    событие:
     - год: II-III
       описание: ржд
@@ -20,6 +23,3 @@
    помин:
       дата: 29.07
       описание: само
-      служба:
-       - Каллинику Гангрскому служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_29.pdf

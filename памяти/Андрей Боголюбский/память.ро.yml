@@ -11,7 +11,9 @@
    образ:
     - http://pravicon.com/icon-1178
     - http://drevo-info.ru/images/002/009124.jpg
-   служба: Андрею Боголюбскому служба
+   служба:
+    - Андрею Боголюбскому служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_04.pdf
    событие:
     - год: 1120-1125 
       описание: ржд
@@ -23,4 +25,3 @@
    помин:
       дата: 04.07
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_04.pdf

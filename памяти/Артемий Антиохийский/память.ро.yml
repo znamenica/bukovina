@@ -1,7 +1,7 @@
 ---
 Артемий Антиохийский:
    имя: Артемий
-   прозвище: Антиохийский
+   описание: Антиохийский
    чин: вмч
    собор: воев
    вики:
@@ -17,6 +17,10 @@
     - http://azbyka.ru/days/assets/img/saints/2410/p18fa1lsl51mq0thd17kk17qp1kvl3.jpg
     - http://www.ikona-kiot.ru/wp-content/uploads/artemiy-antiohiyskiy-1.jpg
     - http://azbyka.ru/days/assets/img/saints/2410/p18f06f9rh1qe91pc61j6hhto2h63.jpg
+   служба:
+    - Артемию Антиохийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_20.pdf
+    - http://azbyka.ru/days/caa/191
    событие:
     - год: кон.III-нач.IV
       описание: ржд
@@ -29,7 +33,3 @@
    помин:
       дата: 20.10
       описание: само
-      служба:
-       - Артемию Антиохийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_20.pdf
-       - http://azbyka.ru/days/caa/191

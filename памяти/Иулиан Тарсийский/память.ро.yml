@@ -1,11 +1,14 @@
 ---
 Иулиан Тарсийский:
    имя: Иулиан
-   прозвище: Тарсийский, Египетский
+   описание: Тарсийский, Египетский
    чин: мч
    собор: копт
    вики: http://drevo-info.ru/articles/6264.html
    бытие: http://azbyka.ru/days/sv-iulian-tarsijskij
+   служба:
+    - Иулиану Тарсийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_21.pdf
    событие:
     - год: III
       описание: ржд
@@ -18,6 +21,3 @@
    помин:
       дата: 21.06
       описание: само
-      служба:
-       - Иулиану Тарсийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/06/minea_06_21.pdf

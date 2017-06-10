@@ -1,10 +1,13 @@
 ---
 Прокопий Устьянский:
    имя: Прокопий
-   прозвище: Устьянский
+   описание: Устьянский
    чин: прав
    вики: http://drevo-info.ru/articles/6379.html
    бытие: http://azbyka.ru/days/sv-prokopij-ustjanskij
+   служба:
+    - Прокопию Устьянскому служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_08.pdf
    событие:
     - год: ок. 1600
       описание: прств
@@ -19,6 +22,3 @@
    помин:
       дата: 08.07
       описание: само
-      служба:
-       - Прокопию Устьянскому служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_08.pdf

@@ -1,12 +1,15 @@
 ---
 Кириакия Никомидийская:
-   имя: Кириакия, Господня, Недела
+   имя: Кириакия (Господня, Неделя)
    отчество: Дорофеевна
-   прозвище: Никомидийская
+   описание: Никомидийская
    чин: мц
    вики: http://drevo-info.ru/articles/11001.html
    бытие: http://azbyka.ru/days/sv-kiriakija-nedela-nikomidijskaja
    образ: http://azbyka.ru/days/assets/img/saints/6377/cc70e122be8675dca467bfa52def8c5d.jpg
+   служба:
+    - Кириакии Никомидийской служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_07.pdf
    событие:
     - год: III
       описание: ржд
@@ -16,6 +19,3 @@
    помин:
       дата: 07.07
       описание: само
-      служба:
-       - Кириакии Никомидийской служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_07.pdf

@@ -1,12 +1,15 @@
 ---
 Прокопий Кесарийский:
    имя: в крещении Прокопий, в наречении Неаний
-   прозвище: Кесарийский
+   описание: Кесарийский
    чин: вмч
    собор: плст
    вики: http://drevo-info.ru/articles/4415.html
    бытие: http://azbyka.ru/days/sv-prokopij-do-muchenichestva-neanij-kesarijskij-palestinskij
    образ: http://drevo-info.ru/images/001/000722.jpg
+   служба:
+    - Прокопию Кесарийскому служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_08.pdf
    событие:
     - год: III
       описание: ржд
@@ -16,6 +19,3 @@
    помин:
       дата: 08.07
       описание: само
-      служба:
-       - Прокопию Кесарийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_08.pdf

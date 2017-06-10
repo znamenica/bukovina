@@ -1,12 +1,16 @@
 ---
 Никодим Кожеезерский:
    имя: в иночестве Никодим, в крещении Никита
-   прозвище: Кожеезерский
+   описание: Кожеезерский
    чин: прп
    собор: слав,рус
    вики: http://drevo-info.ru/articles/10977.html
    бытие: http://azbyka.ru/days/sv-nikodim-kozheezerskij
    образ: http://pravicon.com/icon-2538
+   служба:
+    - Никодиму Кожеезерскому служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_03.pdf
+    - http://azbyka.ru/days/caa/202
    событие:
     - год: XVI
       описание: ржд
@@ -23,7 +27,3 @@
    помин:
       дата: 03.07
       описание: само
-      служба:
-       - Никодиму Кожеезерскому служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_03.pdf
-       - http://azbyka.ru/days/caa/202

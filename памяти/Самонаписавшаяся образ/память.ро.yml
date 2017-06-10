@@ -1,10 +1,13 @@
 ---
-Самонаписавшийся образ:
-   имя: Самонаписавшийся
+Самонаписавшаяся образ:
+   имя: Самонаписавшаяся
    описание: образ Богородицы
    чин: обр
    бытие: http://azbyka.ru/days/ikona-samonapisavshajasja
    образ: http://azbyka.ru/days/assets/img/icons/118/9eaba749919e756f70cf9e61fec2b263.jpg
+   служба:
+    - Самонаписавшейся образу служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_12.pdf
    событие:
     - год: 1863
       дата: июнь
@@ -16,6 +19,3 @@
    помин:
       дата: 12.07
       описание: само
-      служба:
-       - Самонаписавшемуся образу служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_12.pdf

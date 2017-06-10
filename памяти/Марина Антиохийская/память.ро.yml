@@ -1,7 +1,7 @@
 ---
 Марина Антиохийская:
    имя: Марина, Маргарита
-   прозвище: Антиохийская
+   описание: Антиохийская
    чин: мц
    собор: псд
    вики: http://drevo-info.ru/articles/6460.html
@@ -9,6 +9,9 @@
    образ:
     - http://pravicon.com/icon-2359
     - http://drevo-info.ru/images/001/001158.jpg
+   служба:
+    - Марине Антиохийской служба
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_17.pdf
    событие:
     - год: III
       описание: ржд
@@ -24,6 +27,3 @@
    помин:
       дата: 17.07
       описание: само
-      служба:
-       - Марине Антиохийской служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_17.pdf
