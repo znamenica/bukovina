@@ -45,8 +45,11 @@
        - http://www.pigizois.net/sinaxaristis/09/06.jpg
        - http://upload.wikimedia.org/wikipedia/commons/c/c9/Michael_Miracle_Icon_Sinai_12th_century.jpg [α' μισό 12ου αι. μ.Χ.]
    помин:
-      дата: 06.09
-      календарь: рпц,греч,змин
+    - дата: 06.09
+      календарь: рпц,греч
+      описание: чудо
+    - дата: 06.09
+      календарь: змин
       описание: чудо
       служба:
        - Михаилу Небесному Воеводе о чуде служба

@@ -3,7 +3,7 @@ class Bukovina::Parsers::Description
 
    Parsers = Bukovina::Parsers
 
-   RE = /\A([#{Parsers::UPCHAR}#{Parsers::CHAR}#{Parsers::ACCENT}0-9\s‑;:'"«»\,’()\.\-\?\/]+)\z/
+   RE = /\A([#{Parsers::UPCHAR}#{Parsers::CHAR}#{Parsers::ACCENT}0-9\s‑;:'"«»\>\,’()^\.\-\?\/]+)\z/
    # вход: значение поля "имя" включая словарь разных языков
    # выход: обработанный словарь данных
 
@@ -49,12 +49,12 @@ class Bukovina::Parsers::Description
 #   end
 #
    def match_alphabeth? alphabeth_code, line
-      filtered = line.gsub(/[0-9\s‑';:"«»,()№’\.\-\?\/]/,'')
+      filtered = line.gsub(/[0-9\s‑';:"«»,()№’\.\-\?\/>^]/,'')
       Parsers::MATCH_TABLE[ alphabeth_code ] =~ filtered
    end
 
    def grab_invalid_chars alphabeth_code, line
-      filtered = line.gsub(/[0-9\s‑';:"«»,()№’\.\-\?\/]/,'')
+      filtered = line.gsub(/[0-9\s‑';:"«»,()№’\.\-\?\/>^]/,'')
       filtered.split('').map { |c| Parsers::MATCH_TABLE[ alphabeth_code ] !~ c && c || nil }.compact.uniq.join
    end
 

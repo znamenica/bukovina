@@ -7,13 +7,43 @@
    образ:
     - http://www.saint.gr/filesnew/04/1833/photos/FilokseniaAbraam03.jpg [Προτύπωση του τριαδικού Θεού στην Παλαιά Διαθήκη]
     - http://www.saint.gr/filesnew/04/1833/photos/FilokseniaAbraam02.jpg [Γεωργία Δαμικούκα© (http://www.tempera.gr)]
-    - http://upload.wikimedia.org/wikipedia/commons/0/0b/Angelsatmamre-trinity-rublev-1410.jpg [Andrei Rublev]
+    - http://upload.wikimedia.org/wikipedia/commons/0/0b/Angelsatmamre-trinity-rublev-1410.jpg [Андрей Рублёв]
     - http://stamatis-skliris.gr/wp-content/uploads/2012/06/filoksenia.jpg [π. Σταμάτης Σκλήρης© (stamatis-skliris.gr)]
     - http://www.saint.gr/filesnew/04/1833/photos/FilokseniaAbraam05.jpg [Φώτης Κόντογλου]
    событие:
     - год: 30
       описание: явл
       описание_: Богоявление; Просвещение
+      образ:
+       - http://azbyka.ru/days/assets/img/holidays/88/p18f06m6uc1prs1689jeb1ccp179p3.JPG
+       - http://azbyka.ru/days/assets/img/holidays/88/p184svi9psl61jsv1c6f1quc11rl3.jpg
+       - http://azbyka.ru/days/assets/img/holidays/88/p18f06m6udsk4rnjpo5iml1jc54.JPG
+       - http://drevo-info.ru/images/002/004434.jpg
+       - http://www.pravmir.ru/wp-content/uploads/2014/09/20874523-600x480.jpg
+       - http://www.pravmir.ru/wp-content/uploads/2014/01/23133-0-580x342.jpg
+      бытие: http://calendar.rop.ru/svyat1/jan06-kreshenie.html
+      место: Иордан река. Палестина
+    - год: II-V
+      описание: просл
+      ссылка: http://azbyka.ru/days/prazdnik-den-svjatoj-troicy-pjatidesjatnica
+      описание_: Пятидесятница
+      о: нд.7.по пасхе
+    - год: II-V
+      описание: просл.1
+      о: 06.01
+   помин:
+    - дата: 06.01
+      календарь: рпц
+      описание: явл
+      пред: 3
+      по: 8
+      навеч: 1
+    - дата: 06.01
+      календарь: змин
+      описание: явл
+      пред: 3
+      по: 8
+      навеч: 1
       служба: 
        - Предпразнеству Богоявления и Сильвестру Римскому служба
        - http://azbyka.ru/days/assets/upload/minei/01/minea_01_02.pdf
@@ -30,34 +60,11 @@
        - http://azbyka.ru/days/caa/50
        - http://azbyka.ru/days/caa/244
        - http://azbyka.ru/days/caa/51
-      образ:
-       - http://azbyka.ru/days/assets/img/holidays/88/p18f06m6uc1prs1689jeb1ccp179p3.JPG
-       - http://azbyka.ru/days/assets/img/holidays/88/p184svi9psl61jsv1c6f1quc11rl3.jpg
-       - http://azbyka.ru/days/assets/img/holidays/88/p18f06m6udsk4rnjpo5iml1jc54.JPG
-       - http://drevo-info.ru/images/002/004434.jpg
-       - http://www.pravmir.ru/wp-content/uploads/2014/09/20874523-600x480.jpg
-       - http://www.pravmir.ru/wp-content/uploads/2014/01/23133-0-580x342.jpg
-      бытие: http://calendar.rop.ru/svyat1/jan06-kreshenie.html
-      место: Иордан река. Палестина
-    - год: II-V
-      описание: просл
+    - дата: нд.7.по пасхе
+      календарь: рпц
+      описание: само
+      по: 6
       служба:
        - Пятидесятнице служба
        - http://azbyka.ru/days/caa/230
        - http://azbyka.ru/days/caa/68
-      ссылка: http://azbyka.ru/days/prazdnik-den-svjatoj-troicy-pjatidesjatnica
-      описание_: Пятидесятница
-      о: нд.7.по пасхе
-    - год: II-V
-      описание: просл.1
-      о: 06.01
-   помин:
-    - дата: 06.01
-      календарь: змин,рпц
-      описание: явл
-      пред: 3
-      по: 8
-      навеч: 1
-    - дата: нд.7.по пасхе
-      описание: само
-      по: 6

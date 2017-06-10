@@ -7,16 +7,12 @@
     - год: 988
       описание: крещ
       описание_: Крещение Руси
-      служба:
-       - http://ustavschik.livejournal.com/229273.html
-       - http://ustavschik.livejournal.com/188527.html
     - год: 1769
       дата: 17.08
       собор: рус
       описание: воин
       описание_: Поминовение воинов за веру и отечество убиенных
       вики: http://drevo-info.ru/articles/9591.html
-      служба: http://ustavschik.livejournal.com/249067.html
     - год: 1911
       дата: 29.08
       описание: трез
@@ -29,8 +25,12 @@
    помин:
     - дата: 15.07
       календарь: рпц,укр
-      описание: само
+      описание: крещ
+      служба:
+       - http://ustavschik.livejournal.com/229273.html
+       - http://ustavschik.livejournal.com/188527.html
     - дата: 29.08
       описание: трез
     - дата: 29.08
       описание: воин
+      служба: http://ustavschik.livejournal.com/249067.html

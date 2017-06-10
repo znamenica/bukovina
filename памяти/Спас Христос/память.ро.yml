@@ -14,7 +14,6 @@
     - год: 1 до нэ
       описание: явл
       описание_: Суббота пред Рождеством Христовым
-      служба: Субботы пред Рождеством Христовым служба
     - год: 1 до нэ
       описание: заржд
     - год: 1 до нэ
@@ -24,27 +23,6 @@
       бытие:
        - http://azbyka.ru/days/prazdnik-rozhdestvo-gospoda-boga-i-spasa-nashego-iisusa-hrista
        - http://calendar.rop.ru/svyat1/dec25-rozhdestvo.html
-      служба:
-       - Предпразнеству Рождества Христова и Игнатию Богоносцу служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_20.pdf
-       - Предпразнеству Рождества Христова и Иулиании Никомидийской служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_21.pdf
-       - Предпразнеству Рождества Христова и Евгении Римской служба
-       - Предпразнеству Рождества Христова служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_24.pdf
-       - http://azbyka.ru/days/assets/upload/services/predprazdnstvo_rh.pdf
-       - Навечерию Рождества Христова служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_24.pdf
-       - http://azbyka.ru/days/assets/upload/services/predprazdnstvo_rh.pdf
-       - Рождеству Христову служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_25.pdf
-       - http://azbyka.ru/days/caa/228
-       - http://azbyka.ru/days/caa/229
-       - http://azbyka.ru/days/caa/227
-       - http://ustavschik.livejournal.com/244176.html
-       - Отданию Рождества Христова служба
-       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_31.pdf
-       - http://ustavschik.livejournal.com/244176.html
     - год: до 354
       описание: просл
       о: 25.12
@@ -54,11 +32,6 @@
       бытие: http://azbyka.ru/days/prazdnik-obrezanie-gospodne
       вики: http://drevo-info.ru/articles/1097.html
       образ: http://drevo-info.ru/images/001/002041.jpg
-      служба:
-       - Обрезанию Христову служба
-       - Обрезанию Христову и Василию Великому служба
-       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_01.pdf
-       - http://azbyka.ru/days/caa/376
       место: Иерусалимский храм. Иерусалим. Палестина
     - год: 1
       описание: срет
@@ -70,15 +43,6 @@
        - http://drevo-info.ru/images/001/000153.jpg
        - http://azbyka.ru/days/assets/img/holidays/8/p17vjo40af17ki1ij61hi31bvarme3.jpg
        - http://azbyka.ru/days/assets/img/holidays/8/p18fq0u6fs1iiu15869q014q48eu3.jpg
-      служба:
-       - Сретению Христову служба
-       - http://azbyka.ru/days/caa/52
-       - http://azbyka.ru/days/caa/53
-       - Сретения Христова предпразднеству служба
-       - Сретения Христова предпразднеству и Трифону Апамейскому служба
-       - http://azbyka.ru/days/assets/upload/minei/02/minea_02_01.pdf
-       - http://azbyka.ru/days/assets/upload/minei/02/minea_02_02.pdf
-       - Сретения Христова отданию и Никифору Антиохийскому служба
     - год: 30
       описание: крещ
       описание_: Крещение Иисуса Христа
@@ -103,13 +67,6 @@
        - http://azbyka.ru/days/assets/img/holidays/10/p18862j2r6k2j1l2s1phf1ahbipb7.jpg
        - http://azbyka.ru/days/assets/img/holidays/10/p18862j2r5n90160bcab5gh9qr6.jpg
        - http://azbyka.ru/days/assets/img/holidays/10/p18fa1hv06hqf1upel1715h190g3.jpg
-      служба:
-       - Предпразднеству Преображения Спасова и Евсигнию Антиохийскому служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_05.pdf
-       - Преображению Спасову служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_06.pdf
-       - http://azbyka.ru/days/assets/upload/daily_menaion/12_August/aug06.pdf
-       - http://azbyka.ru/days/caa/226
     - год: 33
       описание: ожив
       место: Вифания. Палестина
@@ -125,10 +82,6 @@
        - http://azbyka.ru/days/assets/img/holidays/12/p181k4km2s1sjl1s0t16rhs82ea43.jpg
        - http://azbyka.ru/days/assets/img/holidays/12/p18is91jp2143invf4hm1uplbk97.jpg
        - http://azbyka.ru/days/assets/img/holidays/12/p18is91jp1i6215dfl4onqj10ja3.jpg
-      служба:
-       - Цветной недели служба
-       - http://azbyka.ru/days/caa/54
-       - http://azbyka.ru/days/caa/55
     - год: 33
       описание: прок
       место: Иерусалимье. Палестина
@@ -137,18 +90,12 @@
       образ:
        - http://azbyka.ru/days/assets/img/holidays/108/p18i2dmv6fcg1c3c55sc3d16gk3.jpg
        - http://azbyka.ru/days/assets/upload/ib4475.jpg
-      служба:
-       - http://azbyka.ru/days/worship/583
-       - Страстного Понедельника служба
     - год: 33
       описание: проп
       место: Иерусалимье. Палестина
       описание_: Страстной Вторник, Проповедь Спасителя
       образ: http://azbyka.ru/days/assets/img/holidays/109/p18i47bu878dj1a9d1pei1i8t1hjh3.jpg
       бытие: http://azbyka.ru/days/prazdnik-velikij-vtornik
-      служба:
-       - http://azbyka.ru/days/worship/585
-       - Страстного Вторника служба
       место: Иерусалим. Палестина
     - год: 33
       описание: изме
@@ -166,7 +113,6 @@
       описание: стрст
       место: Лобное место. Иерусалимье. Палестина
       описание_: Страстная Пятница; Страсти Христовы
-      служба: http://azbyka.ru/days/worship/544
       образ:
        - http://azbyka.ru/days/assets/img/holidays/98/p1ah8khp0ovc4lis5nic442hca.jpg
        - http://azbyka.ru/days/assets/img/holidays/98/p1ah8khd5bfj819nhjkk1il512cp5.jpg
@@ -189,9 +135,6 @@
       место: Иерусалимье. Палестина
       описание_: Воскресение Христово; Светлая Пасха
       образ: http://azbyka.ru/days/assets/img/holidays/96/p1ah8l92es1c13qgiankcs6rpv3.jpg
-      служба:
-       - Воскресению Христову служба
-       - http://ustavschik.livejournal.com/244176.html
     - год: 33
       описание: науч
       место: Иерусалим. Палестина
@@ -211,8 +154,16 @@
       о: 01.01
    помин:
     - дата: 01.01
-      календарь: рпц,змин
+      календарь: рпц
       описание: обрез
+    - дата: 01.01
+      календарь: змин
+      описание: обрез
+      служба:
+       - Обрезанию Христову служба
+       - Обрезанию Христову и Василию Великому служба
+       - http://azbyka.ru/days/assets/upload/minei/01/minea_01_01.pdf
+       - http://azbyka.ru/days/caa/376
     - дата: 06.01
       календарь: рпц
       описание: крещ
@@ -223,32 +174,61 @@
       описание: срет
       пред: 1
       по: 7
-    - дата: пн.до пасхи
-      календарь: рпц
-      описание: само
+    - дата: 02.02
+      календарь: змин
+      описание: срет
+      пред: 1
+      по: 7
+      служба:
+       - Сретению Христову служба
+       - http://azbyka.ru/days/caa/52
+       - http://azbyka.ru/days/caa/53
+       - Сретения Христова предпразднеству служба
+       - Сретения Христова предпразднеству и Трифону Апамейскому служба
+       - http://azbyka.ru/days/assets/upload/minei/02/minea_02_01.pdf
+       - http://azbyka.ru/days/assets/upload/minei/02/minea_02_02.pdf
+       - Сретения Христова отданию и Никифору Антиохийскому служба
     - дата: нд.до пасхи
+      календарь: рпц
       описание: вход
+      служба:
+       - Цветной недели служба
+       - http://azbyka.ru/days/caa/54
+       - http://azbyka.ru/days/caa/55
     - дата: пн.до пасхи
       календарь: рпц
       описание: прок
+      служба:
+       - http://azbyka.ru/days/worship/583
+       - Страстного Понедельника служба
     - дата: вт.до пасхи
       календарь: рпц
       описание: проп
+      служба:
+       - http://azbyka.ru/days/worship/585
+       - Страстного Вторника служба
+    - дата: пт.до пасхи
+      календарь: рпц
+      описание: стрст
+      служба: http://azbyka.ru/days/worship/544
     - дата: пасха
       календарь: рпц
       описание: вскрс
       по: 38
+      служба:
+       - Воскресению Христову служба
+       - http://ustavschik.livejournal.com/244176.html
     - дата: дн.24.по пасхе
       календарь: рпц
       описание: науч
       по: 7
     - дата: дн.40.по пасхе
-      календарь: греч
+      календарь: рпц
       описание: вознс
       по: 8
       служба: Вознесению Христову служба
     - дата: дн.40.по пасхе
-      календарь: рпц
+      календарь: греч
       описание: вознс
       пред: 1
       по: 8
@@ -257,18 +237,52 @@
       описание: преоб
       пред: 1
       по: 7
+    - дата: 06.08
+      календарь: змин
+      описание: преоб
+      пред: 1
+      по: 7
+      служба:
+       - Предпразднеству Преображения Спасова и Евсигнию Антиохийскому служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_05.pdf
+       - Преображению Спасову служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_06.pdf
+       - http://azbyka.ru/days/assets/upload/daily_menaion/12_August/aug06.pdf
+       - http://azbyka.ru/days/caa/226
     - дата: сб.до 25.12
-      календарь: рпц,змин
-      описание: само
+      календарь: рпц
+      описание: явл
+    - дата: сб.до 25.12
+      календарь: змин
+      описание: явл
+      служба: Субботы пред Рождеством Христовым служба
     - дата: 25.12
       календарь: рпц
       описание: ржд
       пред: 5
       навеч: 1
       по: 6
-    - дата: сб.по 25.12
-      календарь: рпц
-      описание: пррч
+      служба:
+       - Предпразнеству Рождества Христова и Игнатию Богоносцу служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_20.pdf
+       - Предпразнеству Рождества Христова и Иулиании Никомидийской служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_21.pdf
+       - Предпразнеству Рождества Христова и Евгении Римской служба
+       - Предпразнеству Рождества Христова служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_24.pdf
+       - http://azbyka.ru/days/assets/upload/services/predprazdnstvo_rh.pdf
+       - Навечерию Рождества Христова служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_24.pdf
+       - http://azbyka.ru/days/assets/upload/services/predprazdnstvo_rh.pdf
+       - Рождеству Христову служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_25.pdf
+       - http://azbyka.ru/days/caa/228
+       - http://azbyka.ru/days/caa/229
+       - http://azbyka.ru/days/caa/227
+       - http://ustavschik.livejournal.com/244176.html
+       - Отданию Рождества Христова служба
+       - http://azbyka.ru/days/assets/upload/minei/12/minea_12_31.pdf
+       - http://ustavschik.livejournal.com/244176.html
     - дата: сб.по 25.12
       календарь: змин
       описание: пррч

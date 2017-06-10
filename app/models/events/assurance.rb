@@ -1,1 +1,1 @@
-class Assurancee < Event ;end
+class Assurance < Event ;end

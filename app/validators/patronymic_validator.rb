@@ -1,7 +1,7 @@
 class PatronymicValidator < ActiveModel::EachValidator
    TABLE = {
       # РУ -ович/-овна/-евич/-евна/-ич/-ыч/-на/-ль/вар-
-      ру: /((ич|ыч|на|ль)\z|\AВар)/
+      ру: /((ич|и́ч|ыч|на|ль)\z|\AВар)/
    }
 
    def validate_each(record, attribute, value)

@@ -48,7 +48,7 @@ class Bukovina::Parsers::IconLink
       if ! desc || desc.empty?
          return nil ; end
 
-      fdesc = desc.gsub(/[0-9\s‑';:"«»©,()\.\-\?\/_a-zA-Z%~+&]/,'')
+      fdesc = desc.gsub(/[0-9\s‑';:"«»©,()\.\-\?\/_a-zA-Z%~+&^]/,'')
       if fdesc.empty?
          return :ру ; end
 

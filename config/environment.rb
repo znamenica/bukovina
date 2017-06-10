@@ -147,7 +147,7 @@ module Rails
 
 
       def load_seed
-=begin
+#=begin
          Dir.glob( 'календари/**/память.*.yml' ).each do |f|
             puts "Календарь: #{f}"
 
@@ -161,10 +161,10 @@ module Rails
                Dir.chdir( File.dirname( f ) )
                import_calendary(f, m)
                Dir.chdir( wd ) ;end;end
-         exit
-=end
+#         exit
+#=end
 
-         Dir.glob( 'памяти/**/память.*.yml' )[2500...3000].each.with_index do |f, i|
+         Dir.glob( 'памяти/**/память.*.yml' ).each.with_index do |f, i|
             puts "Память: #{i}:#{f}"
 
             m = begin

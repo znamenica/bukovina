@@ -110,7 +110,7 @@ ActiveRecord::Schema.define(version: 20170610011800) do
     t.string "date"
     t.integer "before"
     t.integer "after"
-    t.integer "ineveningy"
+    t.integer "inevening"
     t.integer "memory_id", null: false
     t.integer "calendary_id"
     t.index ["date"], name: "index_memoes_on_date"
