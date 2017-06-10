@@ -17,7 +17,10 @@
    образ:
     - http://www.saint.gr/photos/standard/0911/OsiaTheodora02.jpg
     - http://www.saint.gr/photos/standard/0911/OsiaTheodora01.jpg
-   служба: Божидаре Александрийской служба
+   служба:
+    - Божидаре Александрийской служба
+    - http://azbyka.ru/days/assets/upload/minei/09/minea_09_11.pdf
+    - Божидаре Александрийской и Автоному Италийскому служба
    событие:
     - год: вид.перв.пол.V
       описание: брак
@@ -38,6 +41,3 @@
     - дата: 11.09
       календарь: змин
       описание: само
-      служба:
-       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_11.pdf
-       - Божидаре Александрийской и Автоному Италийскому служба
