@@ -6,6 +6,18 @@ class Canto < ActiveRecord::Base
    has_many :canto_memories, inverse_of: :canto
    has_many :targets, through: :canto_memories, foreign_key: :memory_id, source: :memory
 
-   has_alphabeth on: [ :text, :prosomeion_title, :title ]
+   has_alphabeth on: %i(text prosomeion_title title)
 
-   validates :type, presence: true ;end
+   validates :type, presence: true
+
+   def targets= value
+      if value.kind_of?( Array )
+         new_value = value.map do |v|
+            if v.kind_of?(String) && v =~ /^\*(.*)/
+               Memory.where(short_name: $1).first
+            else
+               v ;end;end
+            .compact
+         super(new_value)
+      else
+         super ;end;end;end

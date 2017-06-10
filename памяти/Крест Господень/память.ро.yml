@@ -15,7 +15,6 @@
       описание: обр
       бытие: http://calendar.rop.ru/svyat1/mar06-obretenie-kresta.html
       место: Иерусалимье. Палестина
-      служба: Кресту Господню на обретение служба
     - год: 335
       дата: 14.09
       описание: вздв
@@ -42,17 +41,6 @@
          гр: Ύψωση του Τιμίου και Ζωοποιού Σταυρού
          ла: Exaltatio Sancti Crvcis
       место: Воскресенская церковь. Голгофа. Иерусалимье. Палестина
-      служба:
-       - Предпразднества Воздвижения Креста служба
-       - Предпразднества Воздвижения Креста, Словущенской церкви на обновление и Корнилию
-         Сотнику служба
-       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_13.pdf
-       - Воздвижению Креста служба
-       - http://azbyka.ru/days/caa/78
-       - http://azbyka.ru/days/caa/79
-       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_14.pdf
-       - Попразднества Воздвижения Креста и Никите Готфскому служба
-       - Отданию Воздвижения Креста служба
     - год: 351/346
       дата: 07.05
       описание: явл
@@ -64,7 +52,6 @@
          ру: http://azbyka.ru/days/prazdnik-vospominanie-javlenija-na-nebe-kresta-gospodnja-v-ierusalime-351
          гр: http://www.saint.gr/4001/saint.aspx
       место: Иерусалимье. Палестина
-      служба: Кресту Господню на явление в небе служба
     - год: 1799
       дата: авг
       описание: прен
@@ -72,37 +59,52 @@
       вики: http://drevo-info.ru/articles/16665.html
       бытие: http://azbyka.ru/days/prazdnik-perenesenie-iz-malty-v-gatchinu-chasti-dreva-zhivotvorjashchego-kresta-gospodnja-filermskoj-ikony-bozhiej-mate
       место: Гатчина. Санкт-Петербургская губерния
-      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_12.pdf
     - год: IV-X
       описание: изнес
       вики: http://drevo-info.ru/articles/11120.html
       бытие: http://azbyka.ru/days/prazdnik-iznesenie-chestnyh-drev-zhivotvorjashchego-kresta-gospodnja
       образ: http://drevo-info.ru/images/003/011128.jpg
       описание_: Изнесение древ Честного Креста Господня
-      служба:
-       - Предпразднеству Изнесения Древ и Евдокиму Каппадокиянину служба
-       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_31.pdf
-       - Изнесению Древ служба
-       - Изнесению Древ и Маккавееву собору служба
-       - Кресту Господню служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_01.pdf
    помин:
     - дата: 06.03
       календарь: рпц
       описание: обр
+      служба: Кресту Господню на обретение служба
     - дата: нд.4.до пасхи
       календарь: греч
       описание: покл
     - дата: 07.05
       описание: явл
+      служба: Кресту Господню на явление в небе служба
     - дата: 01.08
       календарь: змин
       описание: изнес
       пред: 1
+      служба:
+       - Предпразднеству Изнесения Древ и Евдокиму Каппадокиянину служба
+       - http://azbyka.ru/days/assets/upload/minei/07/minea_07_31.pdf
+       - Изнесению Древ служба
+       - Изнесению Древ и Маккавееву собору служба
+       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_01.pdf
     - дата: 14.09
-      календарь: рпц,греч,змин
+      календарь: рпц,греч
+      описание: вздв
+    - дата: 14.09
+      календарь: змин
       описание: вздв
       пред: 1
       по: 7
+      служба:
+       - Предпразднества Воздвижения Креста служба
+       - Предпразднества Воздвижения Креста, Словущенской церкви на обновление и Корнилию
+         Сотнику служба
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_13.pdf
+       - Воздвижению Креста служба
+       - http://azbyka.ru/days/caa/78
+       - http://azbyka.ru/days/caa/79
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_14.pdf
+       - Попразднества Воздвижения Креста и Никите Готфскому служба
+       - Отданию Воздвижения Креста служба
     - дата: 12.10
       описание: прен
+      служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_12.pdf

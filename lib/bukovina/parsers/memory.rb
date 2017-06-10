@@ -344,9 +344,9 @@ class Bukovina::Parsers::Memory
       when String, Hash, Array
          parser = Bukovina::Parsers::Description.new
          if res = parser.parse(value)
-            result[ :cover ] ||= {}
-            result[ :cover ][ :descriptions ] ||= []
-            result[ :cover ][ :descriptions ].concat(res.delete(:description))
+            result[ :covers_to ] ||= {}
+            result[ :covers_to ][ :descriptions ] ||= []
+            result[ :covers_to ][ :descriptions ].concat(res.delete(:description))
          else
             @errors.concat(parser.errors) ;end
       else

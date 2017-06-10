@@ -1,27 +1,31 @@
 module Bukovina::Importers::FindInit
    def foreign_class base, attr
-      if not base.reflections[attr.to_s]
+      a= if not base.reflections[attr.to_s]
          'array'
       elsif base.reflections[attr.to_s].source_reflection
          if base.reflections[attr.to_s].options[:class_name].present?
-            base.reflections[attr.to_s].options[:class_name].to_s
+            base.reflections[attr.to_s].options[:class_name]
+         elsif base.reflections[attr.to_s].options[:source].present?
+            base.reflections[attr.to_s].options[:source]
          elsif base.reflections[attr.to_s].options[:as].present?
             'object'
          else
 #            base.reflections[attr.to_s].foreign_key.to_s.gsub( "_id",'' )
-            base.reflections[attr.to_s].name.to_s
+            base.reflections[attr.to_s].name
          end
       else
          through = base.reflections[attr.to_s].through_reflection
          through_class = through.class_name.constantize
-         binding.pry
+#         binding.pry
          if class_name = base.reflections[attr.to_s].options[:class_name]
-            class_name.to_s
+            class_name
          else
             foreign_key = base.reflections[attr.to_s].options[ :foreign_key ]
             kind = foreign_key.to_s.gsub( "_id",'' )
-            through_class.reflections[ kind ].name.to_s ;end ;end
-      .classify.constantize
+            through_class.reflections[ kind ].name ;end ;end
+#      binding.pry if attr == :memory_names
+
+      a.to_s.classify.constantize
    rescue
       binding.pry ;end
 
@@ -45,10 +49,10 @@ module Bukovina::Importers::FindInit
                [ :"#{attr}_attributes", new_value ]
             else
                [ attr, new_value ] ;end
-         when /\A\*(?<newvalue>.*)/
+#         when /\A\*(?<newvalue>.*)/
 #            newvalue = $1
 #            raise "To be fixed so: attr #{attr} => #{value}"
-            [ attr, value ]
+#            [ attr, value ]
          else
             [ attr, value ] ;end;end
       .compact.to_h
@@ -66,6 +70,6 @@ module Bukovina::Importers::FindInit
          when Hash
             parse_hash( base, value )
          when /^\*(.*)/
-            base.find($1)
+            $1.present? && value || "*#{@short_name}"
          else
             value ;end ;end ;end ;end

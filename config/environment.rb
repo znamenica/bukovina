@@ -129,6 +129,7 @@ module Rails
 
       def import_record f, record
          short_name = record.keys.first
+#         return  if short_name != 'Василий Волыньский' ####
          file_short_name = f.split('/')[-2]
          if short_name != file_short_name
             @errors[f] = [StandardError.new("File short name " +
@@ -160,9 +161,11 @@ module Rails
                Dir.chdir( File.dirname( f ) )
                import_calendary(f, m)
                Dir.chdir( wd ) ;end;end
+         exit
 =end
-         Dir.glob( 'памяти/**/память.*.yml' ).each do |f|
-            puts "Память: #{f}"
+
+         Dir.glob( 'памяти/**/память.*.yml' )[2500...3000].each.with_index do |f, i|
+            puts "Память: #{i}:#{f}"
 
             m = begin
                YAML.load( File.open( f ) )

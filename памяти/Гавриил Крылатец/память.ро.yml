@@ -26,21 +26,21 @@
     - http://azbyka.ru/days/assets/img/saints/5473/p18f4kbga35ncu8eoo1123i14sl3.jpg
     - http://azbyka.ru/days/assets/img/saints/5473/p18f4kbga4fe2hhc16v71o7kpe66.JPG
     - http://azbyka.ru/days/assets/img/saints/5473/p193vf4g5q1loi1a70181nr2d1m1p3.png
-    - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel11.jpg [1542 μ.Χ. - Πρωτάτο, Άγιον Όρος - Kρητική σχολή]
+    - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel11.jpg [1542 μ.Χ. - Πρωτάτο, Άγιον Όρος - Κρητική σχολή]
     - http://www.apostoliki-diakonia.gr/gr_main/eortologio/Agion_pics/Mar_15.jpg
     - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel01.jpg
     - http://s14.postimg.org/bc2dopsf5/Archangel_Gabriel02.jpg
     - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel05.jpg [Λυδία Γουριώτη© (lydiagourioti-iconography.blogspot.com)]
     - http://upload.wikimedia.org/wikipedia/commons/b/b9/Rublev_Gavriil.jpg [Αντρέι Ρουμπλιόβ, Ναός της Ανάληψης στο Βλαδιμίρ, 1408]
-    - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel15.jpg [Εικόνα από το Aγιογραφείο της Μονής Βατοπαιδίου]
+    - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel15.jpg [Εικόνα από το Αγιογραφείο της Μονής Βατοπαιδίου]
     - http://1.bp.blogspot.com/-GzdOOlkQeJc/Va7LkDZsM6I/AAAAAAAABS4/_rY0dwHvzV4/s1600/DSC00020.jpg [Αγγελική Τσέλιου©]
-    - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel06.jpg [Βασίλειος & Περικλής Συρίμης© (sirimis.gr)]
-    - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel07.jpg [Βασίλειος & Περικλής Συρίμης© (sirimis.gr)]
+    - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel06.jpg [Βασίλειος και Περικλής Συρίμης© (sirimis.gr)]
+    - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel07.jpg [Βασίλειος και Περικλής Συρίμης© (sirimis.gr)]
     - http://s29.postimg.org/6z41z6fkl/Archangel_Gabriel08.png
     - http://4.bp.blogspot.com/--EAg48aWj8c/Ta2MvwsCLdI/AAAAAAAAACU/HQIW7oKdVgs/s1600/arxaggelos+fabrihl+2.jpg [Καζακίδου Μαρία© (byzantineartkazakidou. blogspot.com)]
     - http://2.bp.blogspot.com/_cKRraUf_YGQ/TMBXdyMrYbI/AAAAAAAAAEg/Oaabjh4TLOo/s1600/ArxGavriil2010.JPG [Χρωστήρας© (xrostiras.blogspot.com)]
-    - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel12.jpg [γ' τέταρτο 14ου αι. μ.Χ. - Μονή Xιλανδαρίου, Άγιον Όρος]
-    - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel13.jpg [γ' τέταρτο 14ου αι. μ.Χ. - Μονή Xιλανδαρίου, Άγιον Όρος]
+    - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel12.jpg [γ' τέταρτο 14ου αι. μ.Χ. - Μονή Χιλανδαρίου, Άγιον Όρος]
+    - http://www.saint.gr/filesnew/05/2494/photos/ArchangelGabriel13.jpg [γ' τέταρτο 14ου αι. μ.Χ. - Μονή Χιλανδαρίου, Άγιον Όρος]
     - http://s15.postimg.org/koyp66o4r/Archangel_Gabriel17.jpg [περί το 1387 - 1395 μ.Χ.]
     - http://www.imga.gr/images/pitsidia_naos_ag_koudouma%20%2862%29.JPG [Ι. Ν. Οσίων Παρθενίου και Ευμενίου των εν Κουδουμά, δια χειρός Παναγιώτη Μόσχου (2006 μ.Χ.)]
     - http://s13.postimg.org/f52hbqmmf/Archangel_Gabriel14.jpg
@@ -61,9 +61,15 @@
     - дата: 26.03
       календарь: рпц,греч
       описание: явл
+    - дата: 26.03
+      календарь: змин
+      описание: явл
       служба: Гавриилу Крылатцу о благовещении служба
     - дата: 13.07
-      календарь: змин,рпц,греч
+      календарь: рпц,греч
+      описание: само
+    - дата: 13.07
+      календарь: змин
       описание: само
       служба:
        - Гавриилу Крылатцу о соборе служба

@@ -25,7 +25,7 @@ class Bukovina::Parsers::Event
       'кем' => :person,
       'кому' => :person,
       'чадо' => :person,
-      'служба' => :service,
+#      'служба' => :service,
       'о' => :about,
       'собор' => :council,
       'чин' => :order,
@@ -553,8 +553,7 @@ class Bukovina::Parsers::Event
       when String, Hash, Array
          parser = Bukovina::Parsers::Link.new
          if res = parser.parse(value)
-            result[ :coordinates ] ||= []
-            result[ :coordinates ].concat(res.delete(:link))
+            result[ :coordinate ] = res.delete(:link).first
          else
             @errors.concat(parser.errors) ;end
       else

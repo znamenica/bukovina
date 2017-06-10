@@ -19,4 +19,4 @@ class MemoryName < ActiveRecord::Base
    end
 
    def to_s
-      name.text ; end ; end
+      name.text ;end;end

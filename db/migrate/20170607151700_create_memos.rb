@@ -5,7 +5,7 @@ class CreateMemos < ActiveRecord::Migration[4.2]
          t.string :date, index: true
          t.integer :before
          t.integer :after
-         t.integer :ineveningy
+         t.integer :inevening
          t.belongs_to :memory, null: false
          t.belongs_to :calendary, null: false
 

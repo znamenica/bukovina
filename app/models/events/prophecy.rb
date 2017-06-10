@@ -1,1 +1,1 @@
-class Prophesy < Event ;end
+class Prophecy < Event ;end

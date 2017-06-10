@@ -12,13 +12,16 @@
       образ:
        - http://www.saint.gr/filesnew/02/0896/photos/Indictio01.jpg
        - http://www.saint.gr/filesnew/02/0896/photos/Indictio02.jpg
-      служба:
-       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_01.pdf
-       - Новолетья Церковного и Симеону Столпнику служба
     - год: по IV
       описание: просл
       описание_: новолетие церковное; индикт
    помин:
-      дата: 01.09
+    - дата: 01.09
       календарь: рпц,греч
       описание: созд
+    - дата: 01.09
+      календарь: змин
+      описание: созд
+      служба:
+       - http://azbyka.ru/days/assets/upload/minei/09/minea_09_01.pdf
+       - Новолетья Церковного и Симеону Столпнику служба

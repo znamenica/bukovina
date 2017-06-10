@@ -25,6 +25,7 @@ class Bukovina::Parsers::ServiceLink
 
    LANGUAGES = {
       'цс' => :цс,
+      'ро' => :ру,
       'ру' => :ру,
       'ан' => :ан,
       'en' => :ан,
@@ -126,6 +127,7 @@ class Bukovina::Parsers::ServiceLink
                if /(~|swp)$/ =~ file
                   next ;end
 
+               filename = file.split('/').last.split('.')[0..1].join('.')
                /\.(?:(?<lang>[^\._]+)_)?(?<al>[^\.]+)\.(?<format>yml|hip|txt)$/ =~ file
                if ! format || ! al
                   @errors << Parsers::BukovinaInvalidFileNameFormatError.new(
@@ -137,7 +139,7 @@ class Bukovina::Parsers::ServiceLink
                      collect_errors( parser, line, alphabeth_code )
                      nil
                   else
-                     { alphabeth_code: :цр, language_code: :цс, name: line,
+                     { alphabeth_code: :цр, language_code: :цс, name: filename,
                         text_format: format }.merge( parsed ) ;end
 
                else
@@ -165,8 +167,7 @@ class Bukovina::Parsers::ServiceLink
                   else
                      {  alphabeth_code: ALPHABETHS[ al ],
                         language_code: LANGUAGES[ lang ],
-                        name: line,
-                        'info>memory': { short_name: "*#{target}" } }.merge( parsed ) ;end;end;end
+                        name: filename }.merge( parsed ) ;end;end;end
             .compact.flatten
 
             parsed

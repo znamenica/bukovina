@@ -5,6 +5,8 @@
 class Event < ActiveRecord::Base
    extend Informatible
 
+   has_one :coordinate, foreign_key: :info_id, inverse_of: :info, class_name: :CoordLink
+
    belongs_to :memory
    belongs_to :place, optional: true
    belongs_to :item, optional: true
@@ -14,6 +16,7 @@ class Event < ActiveRecord::Base
    default_scope -> { order(:created_at) }
 
    accepts_nested_attributes_for :place
+   accepts_nested_attributes_for :coordinate
    accepts_nested_attributes_for :item, reject_if: :all_blank
 
    validates :type, presence: true

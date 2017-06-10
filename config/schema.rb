@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170608153500) do
+ActiveRecord::Schema.define(version: 20170610011800) do
 
   create_table "calendaries", force: :cascade do |t|
     t.string "date"
@@ -115,13 +115,17 @@ ActiveRecord::Schema.define(version: 20170608153500) do
     t.integer "calendary_id"
     t.index ["date"], name: "index_memoes_on_date"
     t.index ["happened_at"], name: "index_memoes_on_happened_at"
-    t.index ["memory_id", "calendary_id"], name: "index_memoes_on_memory_id_and_calendary_id", unique: true
+    t.index ["memory_id", "calendary_id", "date"], name: "index_memoes_on_memory_calendary_and_date", unique: true
   end
 
   create_table "memories", force: :cascade do |t|
     t.string "short_name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "covers_to_id"
+    t.string "view_string"
+    t.string "short"
+    t.string "quantity"
     t.string "order"
     t.string "council"
     t.index ["short_name"], name: "index_memories_on_short_name", unique: true
