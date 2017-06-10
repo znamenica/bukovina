@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170610011800) do
+ActiveRecord::Schema.define(version: 20170611025100) do
 
   create_table "calendaries", force: :cascade do |t|
     t.string "date"
@@ -190,6 +190,8 @@ ActiveRecord::Schema.define(version: 20170610011800) do
     t.string "source"
     t.string "description"
     t.string "info_type"
+    t.string "ref_title"
+    t.integer "tone"
     t.index ["name", "alphabeth_code"], name: "index_services_on_name_and_alphabeth_code", unique: true
   end
 

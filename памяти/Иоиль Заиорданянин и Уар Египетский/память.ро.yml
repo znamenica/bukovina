@@ -4,7 +4,9 @@
    количество: 2
    чин: свв
    крат: изуе
-   служба: http://azbyka.ru/days/assets/upload/minei/10/minea_10_19.pdf
+   служба:
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_19.pdf
+    - Иоилю Заиорданянину и Уару Египетскому служба
    событие:
       год: IV-X
       описание: просл

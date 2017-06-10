@@ -12,8 +12,10 @@
     - http://azbyka.ru/days/assets/img/saints/1832/p192i8fnci1thq1m82ku9gccf93.jpg
     - http://azbyka.ru/days/assets/img/saints/1832/p183kjvho51vjj1cfaa3k1cci17p73.jpg
     - http://azbyka.ru/days/assets/img/saints/1832/p192i8fncj126q19f4117dhoe1sqt4.jpg
-   служба: http://www.psaltologion.com/attachment.php?attachmentid=28040&d=1274259397
+   служба:
+    - http://www.psaltologion.com/attachment.php?attachmentid=28040&d=1274259397
       [творение митрополита Родосского Кирилла (Когеракиса)]
+    - Титу Критскому служба
    событие:
     - год: нач.I
       описание: ржд

@@ -10,7 +10,9 @@
     - http://drevo-info.ru/images/002/009089.jpg
     - http://azbyka.ru/days/assets/img/saints/2001/p18gh56aug10mrtongc41gbnquj3.jpg
     - http://www.pravmir.ru/wp-content/uploads/2017/03/0-10-600x407.jpg
-   служба: http://azbyka.ru/days/assets/upload/minei/03/minea_03_06.pdf
+   служба:
+    - http://azbyka.ru/days/assets/upload/minei/03/minea_03_06.pdf
+    - 42-м воинам Амморейским служба
    событие:
       год: ок. 845
       описание: прств

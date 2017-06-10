@@ -6,7 +6,10 @@
    чин: свт
    собор: сиб,киев,гал,кпеч?,дпеч?
    вики: http://drevo-info.ru/articles/16355.html
-   служба: http://ustavschik.livejournal.com/194310.html
+   служба:
+    - http://ustavschik.livejournal.com/194310.html
+    - Малу Тобольскому служба
+    - http://azbyka.ru/days/assets/upload/minei/06/minea_06_10.pdf
    событие:
     - год: 1705
       описание: ржд
@@ -48,4 +51,3 @@
       собор: укр
       календарь: змин
       описание: прств
-      служба: http://azbyka.ru/days/assets/upload/minei/06/minea_06_10.pdf

@@ -13,7 +13,9 @@
    бытие:
       ру: http://www.pravmir.ru/14-evropeyskih-svyatyih-svyatitel-gonorat-prepodobnaya-zheneveva-i-drugie/
       ан: http://www.holytrinityorthodox.com/calendar/los/June/22-04.htm
-   служба: https://drevo-info.ru/articles/1629.html
+   служба:
+    - https://drevo-info.ru/articles/1629.html
+    - Албану Веруламскому служба
    событие:
     - год: ок. 209/303/305
       описание: прств

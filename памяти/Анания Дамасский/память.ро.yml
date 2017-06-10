@@ -9,6 +9,11 @@
    образ:
     - http://drevo-info.ru/images/001/001286.jpg
     - http://pravicon.com/icon-1152
+   служба:
+    - Анании Дамасскому служба
+    - Анании Дамасскому и Роману Сладкопевцу служба
+    - http://azbyka.ru/days/worship/11
+    - http://azbyka.ru/days/assets/upload/minei/10/minea_10_01.pdf
    событие:
     - год: I
       описание: прств
@@ -19,7 +24,3 @@
    помин:
       дата: 01.10
       описание: само
-      служба:
-       - Анании Дамасскому служба
-       - http://azbyka.ru/days/worship/11
-       - http://azbyka.ru/days/assets/upload/minei/10/minea_10_01.pdf

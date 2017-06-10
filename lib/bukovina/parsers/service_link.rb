@@ -139,6 +139,7 @@ class Bukovina::Parsers::ServiceLink
                      collect_errors( parser, line, alphabeth_code )
                      nil
                   else
+                     Kernel.puts "FILE: #{file}"
                      { alphabeth_code: :цр, language_code: :цс, name: filename,
                         text_format: format }.merge( parsed ) ;end
 
@@ -165,6 +166,7 @@ class Bukovina::Parsers::ServiceLink
                      collect_errors( parser, line, alphabeth_code )
                      nil
                   else
+                     Kernel.puts "FILE: #{file}"
                      {  alphabeth_code: ALPHABETHS[ al ],
                         language_code: LANGUAGES[ lang ],
                         name: filename }.merge( parsed ) ;end;end;end

@@ -17,7 +17,9 @@
     - http://azbyka.ru/days/assets/img/saints/3849/b8549755ce12f0289aecc490f171afe0.jpg
     - http://pravicon.com/icon-2891
     - http://calendar.rop.ru/svyat1/photos/SimeonVerhotur.jpg
-   служба: http://azbyka.ru/days/caa/71
+   служба:
+    - http://azbyka.ru/days/caa/71
+    - Симеону Верхотурскому служба
    событие:
     - год: ок.1607
       описание: ржд
