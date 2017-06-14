@@ -19,11 +19,17 @@ class Memory < ActiveRecord::Base
    has_many :events
    has_many :memos
    has_many :photo_links, foreign_key: :info_id, inverse_of: :info, class_name: :IconLink # ЧИНЬ во photos
+   has_one :slug
 
    belongs_to :covers_to, class_name: :Place, optional: true
    belongs_to :sight, class_name: :Memory, optional: true
 
-   scope :by_short_name, ->(name) { where( short_name: name ) }
+   scope :by_short_name, -> name { where( short_name: name ) }
+   scope :by_slug, -> slug { includes( :slug ).where( slug: { code: slug } ) }
+   scope :by_date, -> date { includes( :memoes ).where( memo: { date: date } ) }
+   scope :by_text, -> text do
+      includes( :names, :description ).where( names: text ).
+                                    or.where( description: { text: text } ) ;end
 
    accepts_nested_attributes_for :memory_names, reject_if: :all_blank
    accepts_nested_attributes_for :paterics, reject_if: :all_blank

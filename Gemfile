@@ -14,6 +14,9 @@ gem 'validate_url'
 gem 'activerecord', github: 'rails/rails', branch: 'v5.1.0.rc1'
 
 group :development do
+   gem 'mechanize'
+   gem 'hashie'
+   gem 'petrovich'
    gem 'cucumber'
    gem 'spork'
    gem 'shoulda-matchers', github: 'majioa/shoulda-matchers', branch: 'allow_to_use_the_matchers_with_just_rspec_expectations_gem'

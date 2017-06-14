@@ -15,8 +15,7 @@ class MemoryName < ActiveRecord::Base
    # validates :state, inclusion: { in: states.keys } # TODO later after import
 
    def name_attributes= value
-      self.name = Name.where(value).first || super && name
-   end
+      self.name = Name.where(value).first || super && name ;end
 
    def to_s
       name.text ;end;end

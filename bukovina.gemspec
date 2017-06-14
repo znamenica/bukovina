@@ -18,10 +18,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'hashie'
-  spec.add_dependency 'mechanize'
-  spec.add_dependency 'nokogiri'
-  spec.add_dependency 'petrovich'
+  spec.add_dependency 'i18n'
+  spec.add_dependency 'rdoba', '>= 0.9.2'
+  spec.add_dependency 'validate_url'
+  spec.add_dependency 'activerecord', '>= 4.2'
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "pry"
