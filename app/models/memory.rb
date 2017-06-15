@@ -2,7 +2,6 @@
 # council[string]       - соборы для памяти
 # short_name[string]    - краткое имя
 # covers_to_id[integer] - прокровительство
-# short[string]         - крат
 # quantity[string]      - количество
 # sight_id[integer]     - вид
 # view_string[string]   - строка памяти как надвид памяти (преложить в вид)
@@ -19,7 +18,7 @@ class Memory < ActiveRecord::Base
    has_many :events
    has_many :memos
    has_many :photo_links, foreign_key: :info_id, inverse_of: :info, class_name: :IconLink # ЧИНЬ во photos
-   has_one :slug
+   has_one :slug, as: :sluggable
 
    belongs_to :covers_to, class_name: :Place, optional: true
    belongs_to :sight, class_name: :Memory, optional: true
@@ -37,6 +36,7 @@ class Memory < ActiveRecord::Base
    accepts_nested_attributes_for :memos, reject_if: :all_blank
    accepts_nested_attributes_for :photo_links, reject_if: :all_blank
    accepts_nested_attributes_for :covers_to, reject_if: :all_blank
+   accepts_nested_attributes_for :slug, reject_if: :all_blank
 
    validates_presence_of :short_name, :events
 

@@ -328,7 +328,7 @@ class Bukovina::Parsers::Memory
 
    def short value, result
       if /,/ !~ value.to_s
-         result[ :short ] = value
+         result[ :slug ] = { text: value }
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Short has a comma in '#{value}'" ) ;end;end
 

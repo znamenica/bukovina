@@ -4,6 +4,8 @@ require 'cucumber'
 require 'bundler/gem_tasks'
 require 'cucumber/rake/task'
 
+Rake.add_rakelib 'lib/tasks'
+
 Cucumber::Rake::Task.new(:cucumber) do |t|
    t.cucumber_opts = "features --format pretty"
 end

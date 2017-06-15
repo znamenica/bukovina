@@ -6,6 +6,7 @@ class Calendary < ActiveRecord::Base
    has_many :wikies, as: :info, dependent: :delete_all, class_name: :WikiLink
    has_many :links, as: :info, dependent: :delete_all, class_name: :BeingLink
    has_many :memos
+   has_one :slug, as: :sluggable
 
    belongs_to :place, optional: true
 
@@ -14,6 +15,7 @@ class Calendary < ActiveRecord::Base
    accepts_nested_attributes_for :wikies, reject_if: :all_blank
    accepts_nested_attributes_for :links, reject_if: :all_blank
    accepts_nested_attributes_for :place, reject_if: :all_blank
+   accepts_nested_attributes_for :slug, reject_if: :all_blank
 
    # has_alphabeth # TODO enable after import
 

@@ -215,7 +215,7 @@ class Bukovina::Parsers::Calendary
 
    def calendary value, result
       if /^(#{CALENDARIES.join("|")})$/ =~ value.to_s
-         result[ :slug ] = value.to_s
+         result[ :slug ] = { text: value.to_s }
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "invalid calendary " +
             "value '#{value}' detected for calendary field" )  ;end;end

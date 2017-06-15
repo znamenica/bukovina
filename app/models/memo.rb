@@ -22,4 +22,4 @@ class Memo < ActiveRecord::Base
    validates :memory, presence: true
 
    def calendary_string= value
-      self.calendary = Calendary.where(slug: value).first ;end;end
+      self.calendary = Calendary.includes(:slug).where(slugs: { text: value }).first ;end;end
