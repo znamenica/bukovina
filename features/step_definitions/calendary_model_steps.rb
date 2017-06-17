@@ -8,8 +8,8 @@
    sample { create( :calendary, slug: slug, descriptions: false,
       names: false ) } ; end
 
-Если(/^попробуем создать новый календарь "([^"]*)" с неверным описанием$/) do |arg1|
-   sample { create :calendary, :with_invalid_description } ; end
+Если(/^попробуем создать новый календарь "([^"]*)" с неверным описанием$/) do |slug|
+   sample { create :calendary, :with_invalid_description, slug: slug } ; end
 
 То(/^у модели есть действенным многоимущее свойство "([^"]*)"$/) do |prop|
    expect( subject ).to have_many( prop ) ;end
@@ -24,9 +24,9 @@
    FactoryGirl.create( :calendary, slug: slug ) ;end
 
 То(/^календарь "([^"]*)" будет иметь "([^"]*)" описание$/) do |slug, count|
-   exa = Calendary.where( slug: slug ).first
+   exa = Calendary.includes( :slug ).where( slugs: { text: slug } ).first
    expect( exa.descriptions.count ).to be_eql( count.to_i ) ;end
 
 То(/^календарь "([^"]*)" будет иметь "([^"]*)" имя$/) do |slug, count|
-   exa = Calendary.where( slug: slug ).first
+   exa = Calendary.includes( :slug ).where( slugs: { text: slug } ).first
    expect( exa.names.count ).to be_eql( count.to_i ) ;end

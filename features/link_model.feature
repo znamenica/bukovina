@@ -40,7 +40,7 @@
         | alphabeth_code   | ру                    |
         | language_code    | ру                    |
         | url              | http://www.wiki.ru    |
-        | info:memory      | *Василий Памятливый   |
+        | info:memory      | ^Василий Памятливый   |
       То русская вики ссылка "http://www.wiki.ru" будет существовать
 
 
@@ -51,7 +51,7 @@
         | alphabeth_code   | ру                    |
         | language_code    | ру                    |
         | url              | httr://recource.ru    |
-        | info:memory      | *Василий Памятливый   |
+        | info:memory      | ^Василий Памятливый   |
       То увидим сообщение ссылки об ошибке:
          """
          Url is not a valid URL
@@ -62,7 +62,7 @@
         | language_code    | ру                    |
         | alphabeth_code   | ру                    |
         | url              | file:///recource.ru   |
-        | info:memory      | *Василий Памятливый   |
+        | info:memory      | ^Василий Памятливый   |
       То увидим сообщение ссылки об ошибке:
          """
          Url is not a valid URL
@@ -73,7 +73,7 @@
         | language_code    | ру                    |
         | alphabeth_code   | ру                    |
         | url              | httpe/r/recource.ruw  |
-        | info:memory      | *Василий Памятливый   |
+        | info:memory      | ^Василий Памятливый   |
       То увидим сообщение ссылки об ошибке:
          """
          Url is not a valid URL
@@ -89,7 +89,7 @@
         | language_code    | ру                    |
         | alphabeth_code   | ру                    |
         | text             | Мурмур                |
-        | describable:link | *http://www.wiki.ru   |
+        | describable:link | ^http://www.wiki.ru   |
       То русская иконная ссылка "http://www.wiki.ru" будет действительной
 
 
@@ -100,7 +100,7 @@
       Если попробуем создать новую иконную ссылку "http://www.wiki.ru" с неверным описанием
       То увидим сообщение ссылки об ошибке:
          """
-         Description text contains invalid char(s) "Iadilnv" for the specified alphabeth "ру"
+         Description text contains invalid char(s) "I" for the specified alphabeth "ру"
          Description is invalid
          """
       И ссылки "http://www.wiki.ru" не будет

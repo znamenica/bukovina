@@ -50,7 +50,7 @@ class AlphabethValidator < ActiveModel::EachValidator
 
    RUSSIAN_SYNTAX = ' \(\)\.,:;\!\/\-«»—\?0-9–№'
    HIP_SYNTAX = ' 0-9\(\[\{\/\'\+\.\:\!"=~@#\$%\^&\*_\)\]\}\\\\`\-,;?\|'
-   MODIFIED_RUSSIAN_SYNTAX = ' \(\)\.,:;\!\/\-«»—\?0-9a-z©–№\'\[\]&^'
+   MODIFIED_RUSSIAN_SYNTAX = ' \(\)\.,:;\!\/\-«»—\?0-9a-z©–№\'\[\]&^' #TODO after import rollack tp no latin chars
    CSLAV_SYNTAX = ' \(\)\.,:;'
    SERBIAN_SYNTAX = ' \(\)\.,\!:;“”\/'
    GREEK_SYNTAX = ' \(\)a-z0-9~\+\(\)\-\.,;;:.·˙\!«»\'’"`©\/' # TODO last 4 to fix and merge

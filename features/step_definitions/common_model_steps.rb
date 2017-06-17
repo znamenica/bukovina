@@ -2,7 +2,8 @@
    subject { model_of( kind ).new } ;end
 
 Допустим(/^попробуем создать (?:новую |новый )?(#{kinds_re}) с полями:$/) do |kind, table|
-   sample { create( model_of( kind ), table.rows_hash ) } ; end
+   attrs = table.rows_hash.map { |attr, value| [ attr, YAML.load(value) ] }.to_h
+   sample { create( model_of( kind ).to_s.tableize.singularize.to_sym, attrs ) } ; end
 
 То(/^значение свойства "([^"]*)" .*? строго попадает в размер перечислителя$/) do |prop|
    begin
@@ -40,32 +41,47 @@
 То(/^свойство "([^"]*)" модели есть отношение к описываемому$/) do |prop|
    expect( subject ).to belong_to( prop ) ; end
 
-То(/^(?:(#{langs_re}) )?(#{kinds_re}) не будет$/) do |_, kind|
-   expect( model_of( kind ).all ).to be_empty ;end
+То(/^(?:(#{langs_re}) )?(#{kinds_re}) не будет$/) do |lang, kind|
+   lang_code = alphabeth_code_for(lang)
+   expect( model_of( kind ).where(alphabeth_code: lang_code) ).to be_empty ;end
+
+То(/^(?:(#{langs_re}) )?описания с текстом "([^"]*)" не будет$/) do |_, text|
+   expect( Description.where(text: text) ).to be_empty ;end
 
 То(/^свойство "([^"]*)" модели есть включение описания с зависимостью удаления$/) do |prop|
    expect( subject ).to have_one( prop ).dependent( :destroy ) ; end
 
 То(/^свойство "([^"]*)" модели есть включения описания с зависимостями удаления$/) do |prop|
-   expect( subject ).to have_many( prop ).dependent( :destroy ) ; end
+   expect( subject ).to have_many( prop ).dependent( :delete_all ) ; end
 
 То(/^(?:(?:#{langs_re}) )?(#{kinds_re}) "([^"]*)" будет действительн(?:ой|ым)$/) do |kind, prop|
    expect( model_of( kind ).where( base_field( kind ) => prop ).first )
       .to be_valid ; end
 
 Допустим(/^создадим нов(?:ое|ую|ый) (#{kinds_re}) с полями:$/) do |kind, table|
-   find_or_create( model_of( kind ), table.rows_hash ).save! ;end
+   find_or_create( model_of( kind ).to_s.tableize.singularize.to_sym, table.rows_hash ).save! ;end
 
 То(/^(?:(?:#{langs_re}) )?(#{kinds_re}) "([^"]*)" будет существовать$/) do |kind, prop|
    if sample
       expect( sample ).to be_present
    else
-      relation = model_of( kind ).where( base_field( kind ) => prop )
+      model = model_of( kind )
+      field = base_field( kind ).to_s
+      relation =
+      if model.reflections[ field ].present?
+         model.includes( field ).where( field.pluralize => { text: prop } )
+      else
+         model_of( kind ).where( base_field( kind ) => prop ) ;end
       expect( relation ).to_not be_empty ;end ;end
 
 То(/^(?:(?:#{langs_re}) )?(#{kinds_re}) "([^"]*)" не будет$/) do |kind, prop|
    expect( sample ).to_not be_persisted
-   expect( model_of( kind ).where( base_field( kind ) => prop ) ).to be_empty ;end
+   model = model_of( kind )
+   field = base_field( kind ).to_s
+   if model.reflections[ field ].present?
+      expect( model.includes( field ).where( field.pluralize => { text: prop } ) ).to be_empty
+   else
+      expect( model.where( field => prop ) ).to be_empty ;end;end
 
 То(/^должны быть пустыми следующие свойства (#{kinds_re}):$/) do |kind, table|
    expect( subject ).to be_a( model_of( kind ) )

@@ -1,9 +1,9 @@
 Допустим(/^есть память "(.*)"$/) do |short_name|
-   find_or_create( Memory, short_name: short_name ) ; end
+   create( :memory, short_name: short_name ) ; end
 
 Допустим(/^суть памяти "([^"]*)"$/) do |names|
    names.split(/\s*,\s*/).each do |short_name|
-      find_or_create( Memory, short_name: short_name ) ; end ; end
+      create( :memory, short_name: short_name ) ; end ; end
 
 То(/^свойство '(.*)' памяти "([^"]*)" не может быть пустым$/) do |attr, short_name|
    name = Memory.where( short_name: short_name ).first

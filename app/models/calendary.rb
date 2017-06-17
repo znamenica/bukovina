@@ -19,5 +19,8 @@ class Calendary < ActiveRecord::Base
 
    # has_alphabeth # TODO enable after import
 
+   validates :language_code, inclusion: { in: Language.language_list }
+   validates :alphabeth_code, inclusion: { in: proc { |l|
+      Language.alphabeth_list_for( l.language_code ) } }
    validates :slug, :names, presence: true # TODO add date after import
    validates :descriptions, :names, :wikies, :links, :place, associated: true ;end

@@ -6,12 +6,11 @@
    Сценарий: Проверка полей модели календаря
       Допустим есть модель календаря
 
-      То свойства "slug, date" модели не могут быть пустыми
+      То свойства "slug, names" модели не могут быть пустыми
       И календарь имеет рода "строка" следущие столбцы:
          | столбец            |
-         | author             |
+         | author_name        |
          | date               |
-         | slug               |
          | language_code      |
          | alphabeth_code     |
 
@@ -20,10 +19,8 @@
       Если есть модель календаря
       То у модели суть действенными многоимущие свойства:
          | свойства        | как          | зависимость  | имя рода     |
-         | descriptions    | describable  | destroy      | описание     |
-         | names           | describable  | destroy      | найменование |
-      И свойство "descriptions" модели есть включения описания с зависимостями удаления
-      И свойство "names" модели есть включения описания с зависимостями удаления
+         | descriptions    | describable  | delete_all   | описание     |
+         | names           | describable  | delete_all   | найменование |
       И модель принимает вложенные настройки для свойства "descriptions"
       И модель принимает вложенные настройки для свойства "names"
 
@@ -34,7 +31,6 @@
 
       То увидим сообщение календаря об ошибке:
          """
-         Descriptions can't be blank
          Names can't be blank
          """
       И календаря "клнд" не будет
@@ -51,16 +47,17 @@
    @language
    Сценарий: Неверный язык календаря
       Если попробуем создать новый календарь с полями:
-        | alphabeth_code   | ру        |
+        | alphabeth_code   | рр        |
         | language_code    | уу        |
-        | author           | Василий   |
+        | author_name      | Василий   |
         | slug             | клнд      |
         | date             | Година    |
+        | descriptions     | ---\n...  |
+        | names            | ---\n...  |
       То увидим сообщение календаря об ошибке:
          """
          Language_code is not included in the list
          Alphabeth_code is not included in the list
-         Descriptions can't be blank
          Names can't be blank
          """
       И календаря "клнд" не будет
@@ -71,13 +68,14 @@
       Если попробуем создать новый календарь с полями:
         | alphabeth_code   | уу        |
         | language_code    | ру        |
-        | author           | Василий   |
+        | author_name      | Василий   |
         | slug             | клнд      |
         | date             | Година    |
+        | descriptions     | ---\n...  |
+        | names            | ---\n...  |
       То увидим сообщение календаря об ошибке:
          """
          Alphabeth_code is not included in the list
-         Descriptions can't be blank
          Names can't be blank
          """
       И календаря "клнд" не будет
@@ -89,6 +87,7 @@
       То увидим сообщение календаря об ошибке:
          """
          Descriptions is invalid
-         Descriptions text contains invalid char(s) "Iadilnv" for the specified alphabeth "ру"
+         Descriptions text contains invalid char(s) "I" for the specified alphabeth "ру"
+         Slug can't be blank
          """
       И календаря "клнд" не будет

@@ -1,4 +1,14 @@
 module MacrosSupport
+   ALPHABETH_MATHCES = {
+      /румынск/ => :рм,
+      /украинск/ => :ук,
+      /сербск/ => :ср,
+      /иверск/ => :ив,
+      /английск/ => :ан,
+      /греческ/ => :гр,
+      /русск/ => :ру,
+   }
+
    LANGUAGE_MATHCES = {
       /румынск/ => [:рм, :рм],
       /украинск/ => [:ук, :ук],
@@ -47,8 +57,11 @@ module MacrosSupport
                /служебн(?:ые|ых) песм(?:ена)?/     => ServiceCanto,
                /служб[аыу]?/                       => Service }
 
-   def language_code_for( language_text )
+   def language_code_for language_text
       LANGUAGE_MATHCES.any? {|(l, code)| break code if l =~ language_text  } ;end
+
+   def alphabeth_code_for text 
+      ALPHABETH_MATHCES.any? {|(a, code)| break code if a =~ text  } ;end
 
    def sample &block
       if block_given?
@@ -64,10 +77,13 @@ module MacrosSupport
       else
          @subject_result = @subject_proc.call ;end ;end
 
-   def expand_attributes model, search_attrs
+   def expand_attributes model, *args
+      search_attrs = args.select { |x| x.is_a?(Hash) }.first
+      model = model.is_a?(Symbol) && model.to_s.camelize.constantize || model
       new_attrs = {}
+
       search_attrs.to_a.each do |(attr, value)|
-         if value.is_a?( String ) && /^\*(?<match_value>.*)/ =~ value
+         if value.is_a?( String ) && /^\^(?<match_value>.*)/ =~ value
             /(?<base_attr>[^\.]+)(?:\.(?<relation>.*))?/ =~ attr
             /(?<attr>[^:]*)(?::(?<modelname>.*))?/ =~ base_attr
 #            binding.pry
@@ -87,22 +103,25 @@ module MacrosSupport
 
       new_attrs ;end
 
-   def create model, search_attrs = {}, attrs = {}
+   def create model, *args
+      search_attrs = args.select { |x| x.is_a?(Hash) }.first
+      attrs = args.select { |x| x.is_a?(Hash) }.last
+      new_attrs = expand_attributes( model, search_attrs )
+
       if model.is_a?( Symbol )
-         object = FactoryGirl.build( model, search_attrs )
+         syms = args.select { |x| x.is_a?(Symbol) }
+         object = FactoryGirl.build( model, *syms, new_attrs )
          object.save
          object
       else
-         new_attrs = expand_attributes( model, search_attrs )
-
          model.create( attrs.merge( new_attrs ) ) ;end ;end
 
    def find_or_create model, search_attrs, attrs = {}
       new_attrs = expand_attributes( model, search_attrs )
 
-#            binding.pry
-      model.where( new_attrs ).first_or_create!(
-         attrs.merge( new_attrs ) ) ; end
+      # binding.pry
+      model_class = model.is_a?(Symbol) && model.to_s.camelize.constantize || model
+      model_class.where( new_attrs ).first || create( model, search_attrs, attrs ) ;end
 
    def get_type type_name
       types = { 'целый' => :integer, 'строка' => :string, 'текст' => :text }

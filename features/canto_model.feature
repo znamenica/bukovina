@@ -52,11 +52,12 @@
       Допустим попробуем создать песму с полями:
         | alphabeth_code   | ру              |
         | language_code    | ру              |
-        | text             | Тропаря текстj  |
+        | text             | Тропаря текстJ  |
+        | type             | ---\n...        |
       То русских песм не будет
       И увидим сообщение песмы об ошибке:
          """
-         Text contains invalid char(s) "j" for the specified alphabeth "ру"
+         Text contains invalid char(s) "J" for the specified alphabeth "ру"
          Type can't be blank
          """
 
@@ -79,11 +80,12 @@
    @tone @canticle
    Сценарий: Недействительная запись спевны при неверном гласе
       Допустим попробуем создать спевну с полями:
-        | alphabeth_code | ру             |
-        | language_code  | ру             |
-        | text           | Тропаря текст  |
-        | tone           | 9              |
-        | type           | Troparion      |
+        | alphabeth_code   | ру              |
+        | language_code    | ру              |
+        | text             | Тропаря текст   |
+        | tone             | 9               |
+        | type             | Troparion       |
+        | prosomeion_title | ---\n...        |
       То русских песнопений не будет
       И увидим сообщение спевны об ошибке:
          """
@@ -163,6 +165,8 @@
         | alphabeth_code   | гр                 |
         | language_code    | гр                 |
         | text             | Василию величание  |
+        | prosomeion_title | ---\n...           |
+        | tone             | ---\n...           |
       То греческого моления "Василию величание" не будет
       И увидим сообщение моление об ошибке:
          """
