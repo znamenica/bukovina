@@ -8,13 +8,17 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: LastName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Ананьев
          """
       А обработанные данные памятного имени будут выглядеть как:
          """
          ---
          - :name:
+             :type: LastName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Ананьев
            :state: :отечья
@@ -29,7 +33,9 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: LastName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Аль‑Ананьев
          """
 
@@ -43,37 +49,57 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: LastName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Алексеева
-         - :language_code: :ру
+         - :type: LastName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Валентинова
-         - :language_code: :ру
+         - :type: LastName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Загорская
-         - :language_code: :ру
+         - :type: LastName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Егорин
-         - :language_code: :ру
+         - :type: LastName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Зворыкин
          """
       А обработанные данные памятного имени будут выглядеть как:
          """
          ---
          - :name:
+             :type: LastName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексеева
            :state: :отечья
          - :name:
+             :type: LastName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Валентинова
            :state: :мужнина
          - :name:
+             :type: LastName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Загорская
            :state: :наречёная
          - :name:
+             :type: LastName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Егорин
            :state: :самоданная
          - :name:
+             :type: LastName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Зворыкин
            :state: :матерня
@@ -89,6 +115,8 @@
          """
          ---
          - :name:
+             :type: LastName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексеев
            :feasibly: :feasible
@@ -104,11 +132,17 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: LastName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Иувенальев
-         - :language_code: :ру
+         - :type: LastName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Алексеев
-         - :language_code: :ру
+         - :type: LastName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Феофанов
          """
 
@@ -116,15 +150,21 @@
          """
          ---
          - :name:
+             :type: LastName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Иувенальев
            :state: :отечья
            :mode: :ored
          - :name:
+             :type: LastName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексеев
            :state: :отечья
          - :name:
+             :type: LastName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Феофанов
            :state: :отечья
@@ -143,12 +183,18 @@
          """
          ---
          - &1
+           :type: LastName
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Александров
-         - :language_code: :гр
+         - :type: LastName
+           :alphabeth_code: :гр
+           :language_code: :гр
            :text: Αλεξάνδροβ
            :similar_to: *1
-         - :language_code: :ан
+         - :type: LastName
+           :alphabeth_code: :ан
+           :language_code: :ан
            :text: Alexandrov
            :similar_to: *1
          """
@@ -157,6 +203,8 @@
          """
          ---
          - :name:
+             :type: LastName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Александров
            :state: :отечья

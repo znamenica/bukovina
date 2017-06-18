@@ -70,6 +70,6 @@ module Bukovina::Importers::FindInit
          when Hash
             parse_hash( base, value )
          when /^\*(.*)/
-            $1.present? && value || "*#{@short_name}"
+            $1.present? && value || "^#{@short_name}"
          else
             value ;end ;end ;end ;end

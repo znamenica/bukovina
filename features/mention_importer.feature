@@ -12,14 +12,15 @@
          - :year_date: "10.10"
            :add_date: "11.11.1010"
            :calendary:
-             :slug: клдр
+             :slugs:
+               :text: клдр
            :event:
              :happened_at: "10.10.1010"
          """
 
       Если импортируем их
       То будет создана модель помина с аттрибутами:
-         | year_date | 10.10        |
-         | add_date  | 11.11.1010   |
-         | calendary | *клдр        |
-         | event     | *10.10.1010  |
+         | year_date       | 10.10        |
+         | add_date        | 11.11.1010   |
+         | calendary>slug  | ^клдр        |
+         | event           | ^10.10.1010  |

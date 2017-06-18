@@ -4,6 +4,7 @@ class Canto < ActiveRecord::Base
    has_many :service_cantoes, inverse_of: :canto
    has_many :services, through: :service_cantoes
    has_many :canto_memories, inverse_of: :canto
+   has_many :memories, through: :canto_memories
    has_many :targets, through: :canto_memories, foreign_key: :memory_id, source: :memory
 
    has_alphabeth on: %i(text prosomeion_title title)

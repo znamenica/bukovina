@@ -32,7 +32,7 @@
         | alphabeth_code      | ру                    |
         | language_code       | ру                    |
         | text                | Мурмур                |
-        | describable:memory  | *Василий Памятливый   |
+        | describable:memory  | ^Василий Памятливый   |
       То русское описание "Мурмур" будет существовать
 
 
@@ -43,12 +43,12 @@
         | alphabeth_code      | ру                    |
         | language_code       | ру                    |
         | text                | Мурмур                |
-        | describable:memory  | *Василий Памятливый   |
+        | describable:memory  | ^Василий Памятливый   |
       То получим ошибку удвоения попытавшись создать новое описание с полями:
         | alphabeth_code      | ру                    |
         | language_code       | ру                    |
         | text                | Мурмур                |
-        | describable:memory  | *Василий Товстый      |
+        | describable:memory  | ^Василий Товстый      |
 
 
    Сценарий: Ошибка удвоения записи описания тойже памяти
@@ -57,9 +57,9 @@
         | alphabeth_code      | ру                    |
         | language_code       | ру                    |
         | text                | Мурмур                |
-        | describable:memory  | *Василий Памятливый   |
+        | describable:memory  | ^Василий Памятливый   |
       То получим ошибку удвоения попытавшись создать новое описание с полями:
         | alphabeth_code      | ру                    |
         | language_code       | ру                    |
         | text                | Шуршур                |
-        | describable:memory  | *Василий Памятливый   |
+        | describable:memory  | ^Василий Памятливый   |

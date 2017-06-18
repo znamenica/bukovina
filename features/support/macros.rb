@@ -54,6 +54,7 @@ module MacrosSupport
                /фамили[ияю]/                       => LastName,
                /предмета?/                         => Item,
                /тип[ау]? предмета/                 => ItemType,
+               /слуга?/                            => Slug,
                /служебн(?:ые|ых) песм(?:ена)?/     => ServiceCanto,
                /служб[аыу]?/                       => Service }
 
@@ -140,6 +141,7 @@ module MacrosSupport
                /orison|молени[йея]/                   => :text,
                /event|событи[йея]/                    => :happened_at,
                /calendary|календар[ьяюи]/             => :slug,
+               /slug|слуг[а]/                         => :text,
                /link|ссылк[аиу]/                      => :url }
 
       hash.reduce( nil ) { |s, (re, prop)| re =~ name && prop || s } ;end

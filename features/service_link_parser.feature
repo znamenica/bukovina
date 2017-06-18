@@ -56,14 +56,12 @@
          ---
          - :alphabeth_code: :ру
            :language_code: :ру
-           :name: Василию Васильскому служба
-           :info>memory:
-             :short_name: "*Василий Васильский"
+           :name: Василию Васильскому служба.ру_ро
            :cantoes:
            - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Troparion
              :tone: 4
              :text: Тропарёв текст
@@ -90,14 +88,12 @@
          ---
          - :alphabeth_code: :ру
            :language_code: :ру
-           :name: Василию Васильскому служба
-           :info>memory:
-             :short_name: "*Василий Васильский"
+           :name: Василию Васильскому служба.ру_ро
            :cantoes:
            - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Troparion
              :ref_title: Тропарёв текст
          """
@@ -131,33 +127,31 @@
          ---
          - :alphabeth_code: :ук
            :language_code: :ук
-           :name: Василию Васильскому служба
-           :info>memory:
-             :short_name: "*Василий Васильский"
+           :name: Василию Васильскому служба.ук_ук
            :cantoes:
            - :alphabeth_code: :ук
              :language_code: :ук
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: CryStichira
              :tone: 4
              :text: Кондака текст
            - :alphabeth_code: :ук
              :language_code: :ук
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Prayer
              :text: Молитва перва
            - :alphabeth_code: :ук
              :language_code: :ук
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Prayer
              :text: Молитва друга
            - :alphabeth_code: :ук
              :language_code: :ук
              :targets:
-             - "*Мария Богородица"
+             - "^Мария Богородица"
              :type: Troparion
              :tone: 1
              :text: Богородична текст
@@ -193,14 +187,12 @@
          ---
          - :alphabeth_code: :рм
            :language_code: :рм
-           :name: Василию Васильскому служба
-           :info>memory:
-             :short_name: "*Василий Васильский"
+           :name: Василию Васильскому служба.рм_рм
            :cantoes:
            - :alphabeth_code: :рм
              :language_code: :рм
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Kanonion
              :tone: 1
              :title: Sedalions primul
@@ -208,7 +200,7 @@
            - :alphabeth_code: :рм
              :language_code: :рм
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Kanonion
              :tone: 2
              :prosomeion_title: Sedalions primul
@@ -216,14 +208,14 @@
            - :alphabeth_code: :рм
              :language_code: :рм
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Kontakion
              :tone: 4
              :text: Condacul textului
            - :alphabeth_code: :рм
              :language_code: :рм
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Ikos
              :text: Icosul textului
          """
@@ -257,14 +249,12 @@
          ---
          - :alphabeth_code: :ср
            :language_code: :сх
-           :name: Василию Васильскому служба
-           :info>memory:
-             :short_name: "*Василий Васильский"
+           :name: Василию Васильскому служба.ср_ср
            :cantoes:
            - :alphabeth_code: :ср
              :language_code: :сх
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Kathismion
              :tone: 1
              :title: прв седалан
@@ -272,7 +262,7 @@
            - :alphabeth_code: :ср
              :language_code: :сх
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Kathismion
              :tone: 2
              :prosomeion_title: прв седалан
@@ -280,7 +270,7 @@
            - :alphabeth_code: :ср
              :language_code: :сх
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Kathismion
              :tone: 3
              :text: текст трећа седална
@@ -313,20 +303,18 @@
          ---
          - :alphabeth_code: :ив
            :language_code: :ив
-           :name: Василию Васильскому служба
-           :info>memory:
-             :short_name: "*Василий Васильский"
+           :name: Василию Васильскому служба.ив_ив
            :cantoes:
            - :alphabeth_code: :ив
              :language_code: :ив
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Magnification
              :text: ზეობა
            - :alphabeth_code: :ив
              :language_code: :ив
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Polileosion
              :tone: 1
              :title: სასესიო ჰიმნი პირველი
@@ -334,7 +322,7 @@
            - :alphabeth_code: :ив
              :language_code: :ив
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Polileosion
              :tone: 2
              :prosomeion_title: სასესიო ჰიმნი პირველი
@@ -383,54 +371,48 @@
          ---
          - :alphabeth_code: :ра
            :language_code: :ан
-           :name: Василию Васильскому служба
-           :info>memory:
-             :short_name: "*Василий Васильский"
+           :name: Василию Васильскому служба.re_en
            :cantoes:
            - :alphabeth_code: :ра
              :language_code: :ан
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Troparion
              :tone: 3
              :prosomeion_title: Other
              :text: Another text
          - :alphabeth_code: :ру
            :language_code: :ру
-           :name: Василию Васильскому служба
-           :info>memory:
-             :short_name: "*Василий Васильский"
+           :name: Василию Васильскому служба(1).ру_ро
            :cantoes:
            - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Magnification
              :text: Величание
            - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Kontakion
              :tone: 1
              :text: Кондаков иной текст
            - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Kontakion
              :tone: 2
              :text: Кондаков ещё текст
          - :alphabeth_code: :ру
            :language_code: :ру
-           :name: Василию Васильскому служба
-           :info>memory:
-             :short_name: "*Василий Васильский"
+           :name: Василию Васильскому служба.ру_ро
            :cantoes:
            - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
-             - "*Василий Васильский"
+             - "^Василий Васильский"
              :type: Troparion
              :tone: 4
              :text: Тропарёв текст
@@ -456,7 +438,7 @@
          ---
          - :alphabeth_code: :цр
            :language_code: :цс
-           :name: Василию Васильскому служба
+           :name: Василию Васильскому служба.цс
            :text_format: hip
            :text: |
              %<Гла'съ _е~. Подо'бенъ: Р%>а'дуйся:

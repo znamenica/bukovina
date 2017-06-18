@@ -5,7 +5,7 @@ class Bukovina::Importers::Mention
          # find name
          calendary_attrs = attrs.delete( :calendary )
          attrs[ :calendary ] = calendary_attrs.is_a?( Calendary ) &&
-            calendary_attrs || Calendary.where( calendary_attrs ).first
+            calendary_attrs || Calendary.includes( :slug ).where( calendary_attrs ).first
          event_attrs = attrs.delete( :event )
          attrs[ :event ] = event_attrs.is_a?( Event ) &&
             event_attrs || Event.where( event_attrs ).first

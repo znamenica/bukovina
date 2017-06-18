@@ -8,9 +8,9 @@
          """
          ---
          - :happened_at: "10.10.1010"
-           :type: Birth
+           :type: Nativity
            :memory:
-             :short_name: "*Василий Васильский"
+             :short_name: "^Василий Васильский"
            :item:
              :item_type:
                :descriptions:
@@ -27,11 +27,11 @@
       Если импортируем их
       То будет создана модель события с аттрибутами:
          | happened_at        | 10.10.1010            |
-         | type               | Birth                 |
-         | memory             | *Василий Васильский   |
-         | place>descriptions | *Красная площадь      |
+         | type               | Nativity              |
+         | memory             | ^Василий Васильский   |
+         | place>descriptions | ^Красная площадь      |
       И будет создана модель предмета с аттрибутами:
-         | item_type>descriptions   | *глава       |
+         | item_type>descriptions   | ^глава       |
       И будет создана модель описания с аттрибутами:
          | text               | Красная площадь       |
          | language_code      | ру                    |
@@ -44,9 +44,9 @@
          """
          ---
          - :happened_at: "10.10.1010"
-           :type: Birth
+           :type: Nativity
            :memory:
-             :short_name: "*Василий Васильский"
+             :short_name: "^Василий Васильский"
            :item:
              :item_type:
                :descriptions:
@@ -61,18 +61,18 @@
          - :happened_at: 1.1.1000
            :type: Benediction
            :memory:
-             :short_name: "*Василий Васильский"
+             :short_name: "^Василий Васильский"
          """
 
       Если импортируем их
       То будет создана модель события с аттрибутами:
          | happened_at        | 10.10.1010            |
-         | type               | Birth                 |
-         | memory             | *Василий Васильский   |
-         | place>descriptions | *Красная площадь      |
-         | memory             | *Василий Васильский   |
+         | type               | Nativity              |
+         | memory             | ^Василий Васильский   |
+         | place>descriptions | ^Красная площадь      |
+         | memory             | ^Василий Васильский   |
       И будет создана модель предмета с аттрибутами:
-         | item_type>descriptions   | *глава       |
+         | item_type>descriptions   | ^глава       |
       И будет создана модель описания с аттрибутами:
          | text               | Красная площадь       |
          | language_code      | ру                    |
@@ -88,7 +88,7 @@
          """
          ---
          - :memory:
-             :short_name: "*Василий Васильский"
+             :short_name: "^Василий Васильский"
            :happened_at: 10.10.1010
            :type: Conceiving
            :person_name: Царько Вислонский
@@ -129,13 +129,11 @@
            - :alphabeth_code: :ру
              :language_code: :ру
              :name: Василию Васильскому служба
-             :info>memory:
-               :short_name: "*Василий Васильский"
              :cantoes:
              - :alphabeth_code: :ру
                :language_code: :ру
                :targets:
-               - "*Василий Васильский"
+               - "^Василий Васильский"
                :type: Troparion
                :prosomeion_title: Тропарёв текст
                :text: Тропарёв ин текст.
@@ -144,13 +142,13 @@
 
       Если импортируем их
       То будет создана модель предмета с аттрибутами:
-         | item_type>descriptions   | *глава       |
+         | item_type>descriptions   | ^глава       |
       И будет создана модель события с аттрибутами:
          | happened_at        | 10.10.1010            |
          | type               | Conceiving            |
-         | memory             | *Василий Васильский   |
+         | memory             | ^Василий Васильский   |
          | person_name        | Царько Вислонский     |
-         | place>descriptions | *Красная площадь      |
+         | place>descriptions | ^Красная площадь      |
       И будет создана модель описания с аттрибутами:
          | text               | Красная площадь    |
          | language_code      | ру                 |
@@ -162,7 +160,7 @@
          | language_code   | ру              |
       И будет создана модель иконной ссылки с аттрибутами:
          | url                | http://wiki.ws/образ.jpg |
-         | >description       | *описание иконы          |
+         | >description       | ^описание иконы          |
       И будет создана модель описания с аттрибутами:
          | text            | описание иконы  |
          | alphabeth_code  | ру              |
@@ -179,11 +177,11 @@
          | language_code            | ру                          |
          | alphabeth_code           | ру                          |
          | name                     | Василию Васильскому служба  |
-         | info:memory              | *Василий Васильский         |
+         | info:event               | ^10.10.1010                 |
       И будет создана модель тропаря с аттрибутами:
          | tone                     | 4                           |
          | prosomeion_title         | Тропарёв текст              |
          | text                     | Тропарёв ин текст.          |
          | language_code            | ру                          |
          | alphabeth_code           | ру                          |
-         | service_cantoes.service  | *Василию Васильскому служба |
+         | service_cantoes.service  | ^Василию Васильскому служба |

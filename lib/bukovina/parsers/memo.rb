@@ -80,7 +80,7 @@ class Bukovina::Parsers::Memo
    def parse_hash memo
       result = {}
 
-      result[:memory] = { short_name: "*#{target}" } if target
+      result[:memory] = { short_name: "^#{target}" } if target
 
       memo.each do |key, value|
          case SUBPARSERS[ key ]

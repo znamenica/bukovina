@@ -28,7 +28,7 @@ class Bukovina::Importers::Service
                [ :"#{attr}_attributes", new_array ]
             else
                [ attr, new_array ] ;end
-         when /\A\*(?<newvalue>.*)/
+         when /\A\^(?<newvalue>.*)/
             newvalue = $1
             raise "To be fixed so: attr #{attr} => #{value}"
             [ attr, value ]
@@ -45,7 +45,7 @@ class Bukovina::Importers::Service
          case value
          when Hash
             parse_hash( base, value )
-         when /^\*(.*)/
+         when /^\^(.*)/
             base.find($1)
          else
             value ;end ;end ;end

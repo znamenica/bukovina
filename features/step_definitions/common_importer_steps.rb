@@ -2,7 +2,7 @@
    joins = []
    add_attrs = nil
    attrs = table.rows_hash.map do |(attr, value)|
-      if /^\*(?<match_value>.*)$/ =~ value
+      if /^\^(?<match_value>.*)$/ =~ value
          attrs = attr.split('.')
 
          new_attrs = attrs[0..-2].map( &:to_sym )
@@ -36,6 +36,7 @@
          sample = 
          if relation
             subattr = base_field( relation.singularize )
+            # binding.pry
             model.joins( relation.to_sym ).where( relation.tableize => { subattr => match_value }).first
          else
             model.where( base_field( target_model_name ) => match_value ).first ;end
@@ -48,4 +49,5 @@
          [ attr, value ] ;end ;end.concat( [ add_attrs ] ).compact.to_h
 
    relation = model_of( kind ).joins( joins ).where( attrs )
+   # binding.pry
    expect( relation.size ).to be_eql( 1 ) ;end

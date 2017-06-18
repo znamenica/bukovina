@@ -8,13 +8,17 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: NickName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Ананька
          """
       А обработанные данные памятного имени будут выглядеть как:
          """
          ---
          - :name:
+             :type: NickName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Ананька
            :state: :прозвание
@@ -29,7 +33,9 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: NickName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Аль‑Ананька
          """
 
@@ -42,13 +48,17 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: NickName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Вторый Златоуст
          """
       А обработанные данные памятного имени будут выглядеть как:
          """
          ---
          - :name:
+             :type: NickName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Вторый Златоуст
            :state: :прозвание
@@ -63,19 +73,27 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: NickName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Алексейка
-         - :language_code: :ру
+         - :type: NickName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Валентинка
          """
       А обработанные данные памятного имени будут выглядеть как:
          """
          ---
          - :name:
+             :type: NickName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексейка
            :state: :прозвание
          - :name:
+             :type: NickName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Валентинка
            :state: :прозвание
@@ -94,12 +112,18 @@
          """
          ---
          - &1
+           :type: NickName
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Александ
-         - :language_code: :гр
+         - :type: NickName
+           :alphabeth_code: :гр
+           :language_code: :гр
            :text: Αλεξάνδρ
            :similar_to: *1
-         - :language_code: :ан
+         - :type: NickName
+           :alphabeth_code: :ан
+           :language_code: :ан
            :text: Alexand
            :similar_to: *1
          """
@@ -108,6 +132,8 @@
          """
          ---
          - :name:
+             :type: NickName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Александ
            :state: :прозвание

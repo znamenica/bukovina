@@ -74,7 +74,7 @@ class Bukovina::Parsers::Service
    # TODO проверить всякие левые свойства и синтаксис, напр. сдела кратко ложным
 
    TARGETS = {
-      /богородичен/ => ['*Мария Богородица']
+      /богородичен/ => ['^Мария Богородица']
    }
 
    MATCHERS = [
@@ -162,7 +162,7 @@ class Bukovina::Parsers::Service
             tree[ base ][ index ][ :base_path ] ||= base_path
             tree[ base ][ index ][ :alphabeth_code ] ||= alphabeth_code
             tree[ base ][ index ][ :language_code ] ||= language_code
-            targets = select_targets( path, [ "*#{target}" ] )
+            targets = select_targets( path, [ "^#{target}" ] )
             tree[ base ][ index ][ :targets ] ||= targets
             if !! kinds = EXTEND_KINDS[ kind ]
                kind = kinds.reduce( kind ) do |r, (re, k)|

@@ -162,8 +162,8 @@ class Bukovina::Parsers::Patronymic
    def new_record context
       name = {
          type: 'Patronymic',
-         language_code: context[ :language_code ],
-         alphabeth_code: context[ :alphabeth_code ] }
+         alphabeth_code: context[ :alphabeth_code ],
+         language_code: context[ :language_code ] }
       context[ :models ][ :names ] << name
       memory_name = { name: name }
       if context[ :mode ] == :ored

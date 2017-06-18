@@ -1,5 +1,5 @@
 Допустим(/^есть календарь "([^"]*)"$/) do |slug|
-   FactoryGirl.create( :calendary, slug: slug ) ;end
+   create( :calendary, slug: slug ) ;end
 
 Допустим(/^попробуем создать календарь "([^"]*)"$/) do |slug|
    sample { create( :calendary, slug: slug ) } ; end

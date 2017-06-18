@@ -1,5 +1,5 @@
 Допустим(/^есть событие "([^"]*)"$/) do |date|
-   FactoryGirl.create( :event, happened_at: date ) ;end
+   create( :event, happened_at: date ) ;end
 
 Допустим(/^есть обработанные данные помина:$/) do |string|
    attrs = YAML.load( string )

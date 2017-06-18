@@ -377,15 +377,16 @@ module Rails
       files = folders.flatten.map do |folder|
          path = Rails.root.join( "#{folder}/**/*.rb" )
          Dir.glob( path ).sort.each { |r| require( r ) } ;end
-      Kernel.puts( files.join("\n") ) ;end
+      # Kernel.puts( files.join("\n") )
+      end
 
    def self.application
-      Kernel.puts "Access to app..."
+      # Kernel.puts "Access to app..."
       if !@app
-         Kernel.puts "Loading app..."
+         # Kernel.puts "Loading app..."
          load_folders( 'config/initializers', 'app/validators',
             'app/models/concern', 'app' )
-         Kernel.puts "..."
+         # Kernel.puts "..."
          @app = App.new ; end
       @app ; end
 

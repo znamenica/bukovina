@@ -215,7 +215,7 @@ class Bukovina::Parsers::Event
    def parse_hash event
       result = {}
 
-      result[:memory] = { short_name: "*#{target}" } if target
+      # result[:memory] = { short_name: "^#{target}" } if target
 
       event.each do |key, value|
          case SUBPARSERS[ key ]

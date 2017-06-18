@@ -6,8 +6,9 @@
          ---
          - :alphabeth_code: :ру
            :language_code: :ру
-           :slug: клдр
-           :author: Автор
+           :slug:
+             :text: клдр
+           :author_name: Автор
            :date: 10.10.1001
            :descriptions:
            - :alphabeth_code: :ру
@@ -24,13 +25,14 @@
       То будет создана модель календаря с аттрибутами:
          | alphabeth_code  | ру           |
          | language_code   | ру           |
-         | slug            | клдр         |
-         | author          | Автор        |
+         | author_name     | Автор        |
          | date            | 10.10.1001   |
       То будет создана модель описания с аттрибутами:
          | alphabeth_code  | ру                 |
          | language_code   | ру                 |
          | text            | Описание календаря |
+      То будет создана модель слуга с аттрибутами:
+         | text            | клдр |
       То будет создана модель наименования с аттрибутами:
          | alphabeth_code  | ру           |
          | language_code   | ру           |

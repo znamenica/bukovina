@@ -8,13 +8,17 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: Patronymic
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Ананьевич
          """
       А обработанные данные памятного имени будут выглядеть как:
          """
          ---
          - :name:
+             :type: Patronymic
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Ананьевич
            :state: :отчество
@@ -29,19 +33,27 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: Patronymic
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Алексеевич
-         - :language_code: :ру
+         - :type: Patronymic
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Валентинович
          """
       А обработанные данные памятного имени будут выглядеть как:
          """
          ---
          - :name:
+             :type: Patronymic
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексеевич
            :state: :отчество
          - :name:
+             :type: Patronymic
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Валентинович
            :state: :отчество
@@ -58,14 +70,20 @@
          """
          ---
          - :name:
+             :type: Patronymic
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Иувенальевич
            :state: :отчество
          - :name:
+             :type: Patronymic
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Феофанович
            :state: :кумство
          - :name:
+             :type: Patronymic
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Феодорович
            :state: :отчество_принятое
@@ -80,6 +98,8 @@
          """
          ---
          - :name:
+             :type: Patronymic
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексеевич
            :feasibly: :feasible
@@ -96,11 +116,17 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: Patronymic
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Иувенальевич
-         - :language_code: :ру
+         - :type: Patronymic
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Алексеевич
-         - :language_code: :ру
+         - :type: Patronymic
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Феофанович
          """
 
@@ -108,15 +134,21 @@
          """
          ---
          - :name:
+             :type: Patronymic
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Иувенальевич
            :state: :отчество
            :mode: :ored
          - :name:
+             :type: Patronymic
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексеевич
            :state: :отчество
          - :name:
+             :type: Patronymic
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Феофанович
            :state: :отчество
@@ -135,12 +167,18 @@
          """
          ---
          - &1
+           :type: Patronymic
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Александрович
-         - :language_code: :гр
+         - :type: Patronymic
+           :alphabeth_code: :гр
+           :language_code: :гр
            :text: Αλεξάνδροβιτς
            :similar_to: *1
-         - :language_code: :ан
+         - :type: Patronymic
+           :alphabeth_code: :ан
+           :language_code: :ан
            :text: MacLoga
            :similar_to: *1
          """
@@ -149,6 +187,8 @@
          """
          ---
          - :name:
+             :type: Patronymic
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Александрович
            :state: :отчество

@@ -8,13 +8,17 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Анания
          """
       А обработанные данные памятного имени будут выглядеть как:
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Анания
          """
@@ -28,23 +32,35 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Алексей
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Валентин
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Сергий‑Вася
          """
       А обработанные данные памятного имени будут выглядеть как:
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Валентин
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Сергий‑Вася
          """
@@ -59,6 +75,8 @@
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :feasibly: :feasible
@@ -74,17 +92,27 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Иувеналий
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Алексий
          - &1
+           :type: FirstName
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Феофан
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Феофаний
            :similar_to: *1
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Иван
          """
 
@@ -92,19 +120,27 @@
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Иувеналий
            :state: :иноческое
            :mode: :ored
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексий
            :state: :иноческое
         - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Феофан
            :state: :схимное
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Иван
            :state: :крещенское
@@ -122,30 +158,44 @@
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :state: :наречёное
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Валентин
            :state: :крещенское
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Василий
            :state: :чернецкое
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Сергий
            :state: :иноческое
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Виктор
            :state: :схимное
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Иона
            :state: :благословенное
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Мирон
            :state: :покаянное
@@ -161,6 +211,8 @@
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :feasibly: :feasible
@@ -177,6 +229,8 @@
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :state: :самоданное
@@ -191,19 +245,27 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Алексей
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Александр
          """
       А обработанные данные памятного имени будут выглядеть как:
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :mode: :ored
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Александр
          """
@@ -217,19 +279,27 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Алексей
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Александр
          """
       А обработанные данные памятного имени будут выглядеть как:
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :mode: :prefix
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Александр
          """
@@ -247,20 +317,32 @@
          """
          ---
          - &1
+           :type: FirstName
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Алексей
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Алеша
            :similar_to: *1
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Лёха
            :similar_to: *1
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Вало
-         - :language_code: :гр
+         - :type: FirstName
+           :alphabeth_code: :гр
+           :language_code: :гр
            :text: Αλέξιος
            :similar_to: *1
-         - :language_code: :ср
+         - :type: FirstName
+           :alphabeth_code: :ср
+           :language_code: :сх
            :text: Бранко
            :similar_to: *1
          """
@@ -269,11 +351,15 @@
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :feasibly: :feasible
            :state: :наречёное
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Вало
          """
@@ -291,16 +377,24 @@
          """
          ---
          - &1
+           :type: FirstName
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Алексей
-         - :language_code: :гр
+         - :type: FirstName
+           :alphabeth_code: :гр
+           :language_code: :гр
            :text: Αλέξιος
            :similar_to: *1
          - &2
+           :type: FirstName
+           :alphabeth_code: :ср
            :language_code: :ср
            :text: Бранко
            :similar_to: *1
-         - :language_code: :ср
+         - :type: FirstName
+           :alphabeth_code: :ср
+           :language_code: :сх
            :text: Бранок
            :similar_to: *2
          """
@@ -309,6 +403,8 @@
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :feasibly: :feasible
@@ -329,21 +425,33 @@
          """
          ---
          - &2
+           :type: FirstName
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Сергей
          - &1
+           :type: FirstName
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Алексей
-         - :language_code: :гр
+         - :type: FirstName
+           :alphabeth_code: :гр
+           :language_code: :гр
            :text: Αλέξιος
            :similar_to: *1
-         - :language_code: :ан
+         - :type: FirstName
+           :alphabeth_code: :ан
+           :language_code: :ан
            :text: Sergei
            :similar_to: *2
-         - :language_code: :ан
+         - :type: FirstName
+           :alphabeth_code: :ан
+           :language_code: :ан
            :text: Alexey
            :similar_to: *1
-         - :language_code: :ср
+         - :type: FirstName
+           :alphabeth_code: :ср
+           :language_code: :сх
            :text: Срђан
            :similar_to: *2
          """
@@ -352,12 +460,16 @@
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Сергей
            :feasibly: :feasible
            :state: :наречёное
            :mode: :ored
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
            :feasibly: :feasible
@@ -378,39 +490,63 @@
          """
          ---
          - &3
+           :type: FirstName
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Валентин
          - &2
+           :type: FirstName
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Алексей
          - &1
+           :type: FirstName
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Валерий
          - &5
+           :type: FirstName
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Валерик
            :similar_to: *1
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Валера
            :similar_to: *1
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Зема
-         - :language_code: :гр
+         - :type: FirstName
+           :alphabeth_code: :гр
+           :language_code: :гр
            :text: Αλέξιος
            :similar_to: *2
          - &4
-           :language_code: :ср
+           :type: FirstName
+           :alphabeth_code: :ср
+           :language_code: :сх
            :text: Сергије
-         - :language_code: :ан
+         - :type: FirstName
+           :alphabeth_code: :ан
+           :language_code: :ан
            :text: Valentin
            :similar_to: *3
-         - :language_code: :ан
+         - :type: FirstName
+           :alphabeth_code: :ан
+           :language_code: :ан
            :text: Sergius
            :similar_to: *4
-         - :language_code: :ан
+         - :type: FirstName
+           :alphabeth_code: :ан
+           :language_code: :ан
            :text: Valery
            :similar_to: *1
-         - :language_code: :ан
+         - :type: FirstName
+           :alphabeth_code: :ан
+           :language_code: :ан
            :text: Valerick
            :similar_to: *5
          """
@@ -419,20 +555,30 @@
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Валентин
            :state: :крещенское
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Алексей
          - :name:
-             :language_code: :ср
+             :type: FirstName
+             :alphabeth_code: :ср
+             :language_code: :сх
              :text: Сергије
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Валерий
            :state: :наречёное
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Зема
          """
@@ -461,56 +607,90 @@
          """
          ---
          - &1
+           :type: FirstName
+           :alphabeth_code: :ру
            :language_code: :ру
            :text: Нина
-         - :language_code: :цс
+         - :type: FirstName
+           :alphabeth_code: :цс
+           :language_code: :цс
            :text: Нина
            :similar_to: *1
          - &2
+           :type: FirstName
+           :alphabeth_code: :гр
            :language_code: :гр
            :text: Νίνα
            :similar_to: *1
-         - :language_code: :гр
+         - :type: FirstName
+           :alphabeth_code: :гр
+           :language_code: :гр
            :text: Νίνω
            :similar_to: *2
          - &3
+           :type: FirstName
+           :alphabeth_code: :ив
            :language_code: :ив
            :text: ნინმ
            :similar_to: *1
-         - :language_code: :ив
+         - :type: FirstName
+           :alphabeth_code: :ив
+           :language_code: :ив
            :text: ნინო
            :similar_to: *3
-         - :language_code: :ср
+         - :type: FirstName
+           :alphabeth_code: :ср
+           :language_code: :сх
            :text: Нина
            :similar_to: *1
-         - :language_code: :ан
+         - :type: FirstName
+           :alphabeth_code: :ан
+           :language_code: :ан
            :text: Nina
            :similar_to: *1
-         - :language_code: :ла
+         - :type: FirstName
+           :alphabeth_code: :ла
+           :language_code: :ла
            :text: Nina
            :similar_to: *1
-         - :language_code: :чх
+         - :type: FirstName
+           :alphabeth_code: :чх
+           :language_code: :чх
            :text: Nina
            :similar_to: *1
-         - :language_code: :ир
+         - :type: FirstName
+           :alphabeth_code: :ир
+           :language_code: :ир
            :text: Nina
            :similar_to: *1
-         - :language_code: :си
+         - :type: FirstName
+           :alphabeth_code: :си
+           :language_code: :си
            :text: Nina
            :similar_to: *1
-         - :language_code: :бг
+         - :type: FirstName
+           :alphabeth_code: :бг
+           :language_code: :бг
            :text: Нина
            :similar_to: *1
-         - :language_code: :ит
+         - :type: FirstName
+           :alphabeth_code: :ит
+           :language_code: :ит
            :text: Nina
            :similar_to: *1
-         - :language_code: :ар
+         - :type: FirstName
+           :alphabeth_code: :ар
+           :language_code: :ар
            :text: Նունէ
            :similar_to: *1
-         - :language_code: :рм
+         - :type: FirstName
+           :alphabeth_code: :рм
+           :language_code: :рм
            :text: Nina
            :similar_to: *1
-         - :language_code: :са
+         - :type: FirstName
+           :alphabeth_code: :са
+           :language_code: :са
            :text: Nina
            :similar_to: *1
          """
@@ -519,6 +699,8 @@
          """
          ---
          - :name:
+             :type: FirstName
+             :alphabeth_code: :ру
              :language_code: :ру
              :text: Нина
          """
@@ -532,7 +714,9 @@
       То обработанные данные имени будут выглядеть как:
          """
          ---
-         - :language_code: :ру
+         - :type: FirstName
+           :alphabeth_code: :ру
+           :language_code: :ру
            :text: Сложное имя
          """
 

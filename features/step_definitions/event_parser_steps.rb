@@ -5,4 +5,5 @@
       puts @parser.inspect ; end ; end
 
 То(/^обработанные данные события будут выглядеть как:$/) do |string|
+   # binding.pry
    expect( @res.to_yaml.strip ).to be_eql( string.to_s ) ; end

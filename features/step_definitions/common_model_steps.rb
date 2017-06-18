@@ -43,7 +43,9 @@
 
 То(/^(?:(#{langs_re}) )?(#{kinds_re}) не будет$/) do |lang, kind|
    lang_code = alphabeth_code_for(lang)
-   expect( model_of( kind ).where(alphabeth_code: lang_code) ).to be_empty ;end
+   relation = model_of( kind ).all
+   relation = relation.where(alphabeth_code: lang_code) if lang_code
+   expect( relation ).to be_empty ;end
 
 То(/^(?:(#{langs_re}) )?описания с текстом "([^"]*)" не будет$/) do |_, text|
    expect( Description.where(text: text) ).to be_empty ;end
@@ -59,7 +61,8 @@
       .to be_valid ; end
 
 Допустим(/^создадим нов(?:ое|ую|ый) (#{kinds_re}) с полями:$/) do |kind, table|
-   find_or_create( model_of( kind ).to_s.tableize.singularize.to_sym, table.rows_hash ).save! ;end
+   attrs = table.rows_hash.map { |attr, value| [ attr, YAML.load(value) ] }.to_h
+   find_or_create( model_of( kind ).to_s.tableize.singularize.to_sym, attrs ).save! ;end
 
 То(/^(?:(?:#{langs_re}) )?(#{kinds_re}) "([^"]*)" будет существовать$/) do |kind, prop|
    if sample

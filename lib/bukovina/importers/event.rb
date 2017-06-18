@@ -37,7 +37,7 @@ class Bukovina::Importers::Event
             h = parse_hash( new_base, value )
             ar = h.values.select { |x| x.is_a?( ActiveRecord::Base ) }.first
             ar && [ attr, ar ] || [ :"#{attr}_attributes", h ]
-         when /\A\*(?<newvalue>.*)/
+         when /\A\^(?<newvalue>.*)/
             [ attr, base.where( attr => $1 ).first ]
          else
             [ attr, value ] ;end ;end
@@ -52,7 +52,7 @@ class Bukovina::Importers::Event
          case value
          when Hash
             parse_hash( base, value )
-         when /^\*(.*)/
+         when /^\^(.*)/
             base.find($1)
          else
             value ;end ;end ;end
@@ -61,8 +61,15 @@ class Bukovina::Importers::Event
       @attrs.each do |attrs|
          (search_attrs, new_attrs) = separate_hash( parse_hash( Event, attrs ) )
 
-#         binding.pry
-         Event.where( search_attrs ).first_or_create!( new_attrs ) ;end ;end
+         # binding.pry
+         event = Event.where( search_attrs ).first_or_initialize( new_attrs )
+         event.save!
+         event.services.each do |s|
+            s.reload
+            if not s.info.present?
+               $stderr.puts "WARN: info of service isn't present. refill"
+               s.info = event
+               s.save! ;end;end;end;end
 
    def initialize attrs, o_attrs = {}
       @attrs = [ attrs.deep_dup ].flatten ;end ;end

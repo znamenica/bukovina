@@ -103,7 +103,7 @@ class Bukovina::Parsers::Memory
    def parse_hash memory
       result = {}
 
-      result[:memory] = { short_name: "*#{target}" } if target
+      result[:memory] = { short_name: "^#{target}" } if target
 
       memory.each do |key, value|
          case SUBPARSERS[ key ]

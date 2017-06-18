@@ -33,6 +33,6 @@
       То увидим сообщение типа предмета об ошибке:
          """
          Descriptions is invalid
-         Descriptions text contains invalid char(s) "Iadilnv" for the specified alphabeth "ру"
+         Descriptions text contains invalid char(s) "I" for the specified alphabeth "ру"
          """
       И типа предмета не будет

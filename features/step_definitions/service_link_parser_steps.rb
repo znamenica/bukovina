@@ -31,6 +31,7 @@
    Dir.chdir( File.join( @workdir, short_name ) ) ; end
 
 То(/^обработанные данные службы будут выглядеть как:$/) do |string|
+   # binding.pry
    expect( @res[ :service ].to_yaml.strip ).to be_eql( string.to_s ) ; end
 
 То(/^обработанных данных службы не будет$/) do

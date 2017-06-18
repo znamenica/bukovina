@@ -88,6 +88,5 @@
          """
          Descriptions is invalid
          Descriptions text contains invalid char(s) "I" for the specified alphabeth "ру"
-         Slug can't be blank
          """
       И календаря "клнд" не будет
