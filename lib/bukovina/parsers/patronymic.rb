@@ -68,10 +68,11 @@ class Bukovina::Parsers::Patronymic
                names[ 0 ][ :names ] << n ; end
 
             ns[ :memory_names ].each.with_index do |mn, i|
-               if mn[ :name ].has_key?( :text ) &&
-                  ! names[ 0 ][ :memory_names ][ i ]&.[]( :name )&.has_key?( :text )
-                  names[ 0 ][ :memory_names ][ i ][ :name ] = mn[ :name ]
-                  end ; end ; end
+               if mn[ :name ].has_key?( :text )
+                  if names[ 0 ][ :memory_names ][ i ].present?
+                     if ! names[ 0 ][ :memory_names ][ i ][ :name ].has_key?( :text )
+                        names[ 0 ][ :memory_names ][ i ][ :name ] = mn[ :name ] ;end
+                     ;end;end;end;end
 
          names[ 0 ][ :names ].delete_if { |n| !n[ :text ] }
          names[ 0 ][ :memory_names ].delete_if do |n|

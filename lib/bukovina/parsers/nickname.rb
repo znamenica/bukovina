@@ -63,10 +63,11 @@ class Bukovina::Parsers::NickName
                names[ 0 ][ :names ] << n ; end
 
             ns[ :memory_names ].each.with_index do |mn, i|
-               if mn[ :name ].has_key?( :text ) &&
-                  ! names[ 0 ][ :memory_names ][ i ]&.[]( :name )&.has_key?( :text )
-                  names[ 0 ][ :memory_names ][ i ][ :name ] = mn[ :name ]
-                  end ; end ; end
+               if mn[ :name ].has_key?( :text )
+                  if names[ 0 ][ :memory_names ][ i ].present?
+                     if ! names[ 0 ][ :memory_names ][ i ][ :name ].has_key?( :text )
+                        names[ 0 ][ :memory_names ][ i ][ :name ] = mn[ :name ] ;end
+                     ;end;end;end;end
 #         binding.pry
 #         rescue TypeError
 #            raise BukovinaTypeError, "#{$!}: for name #{name}"

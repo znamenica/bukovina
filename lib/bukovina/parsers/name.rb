@@ -31,7 +31,7 @@ class Bukovina::Parsers::Name
       res =
       case name
       when Hash
-         names = name.to_a.map do |(alphabeth_code, nameline)|
+         name_list = name.to_a.map do |(alphabeth_code, nameline)|
             if ! Parsers::MATCH_TABLE.has_key?( alphabeth_code.to_sym )
                raise Parsers::BukovinaInvalidLanguageError,
                   "Invalid alphabeth '#{alphabeth_code}' specified" ; end
@@ -45,15 +45,15 @@ class Bukovina::Parsers::Name
          # remove enumerator error
          @errors.select! { |x| !x.is_a?( Parsers::BukovinaInvalidEnumeratorError ) }
 
-         mn = names[0][ :memory_names ].select do |x|
+         mn = name_list[0][ :memory_names ].select do |x|
             !x[ :name ].has_key?( :similar_to )
             end.map.with_index do |x, i|
             x[ :name ].has_key?( :text ) && x ||
-               (sel = names[ 1..-1 ].select do |y|
+               (sel = name_list[ 1..-1 ].select do |y|
                   y[ :memory_names ][ i ]&.[]( :name )&.has_key?( :text ) ; end
                sel.first&.[]( :memory_names )&.[]( i ) || x) ; end
 
-         invalid_index = names[1..-1].any? do |ns|
+         invalid_index = name_list[1..-1].any? do |ns|
             size = ns[ :memory_names ].reduce(0) do |s, x|
                x[ :name ].has_key?( :similar_to ) && s || s + 1 ; end
             size != mn.size ; end
@@ -61,30 +61,36 @@ class Bukovina::Parsers::Name
          if invalid_index
             raise Parsers::BukovinaIndexError, "#{$!}: for name #{name}" ; end
 
-         names[1..-1].each do |ns|
+         name_list[1..-1].each do |ns|
             ns[ :names ].each.with_index do |n, i|
                has_name =
-               names[ 0 ][ :names ].select.with_index do |x, j|
-                  j % names[ 0 ][ :memory_names ].size == i &&
+               name_list[ 0 ][ :names ].select.with_index do |x, j|
+                  j % name_list[ 0 ][ :memory_names ].size == i &&
                      x.has_key?( :text ) ; end
 
                if ! has_name.empty?
                   n[ :similar_to ] = has_name.first
-               elsif mn[ i ] && mn[ i ][ :names ] != n
-                  n[ :similar_to ] = mn[ i ][ :names ] ; end
-               names[ 0 ][ :names ] << n ; end
+               elsif mn[ i ] && mn[ i ][ :name ] != n
+                  n[ :similar_to ] = mn[ i ][ :name ] ; end
+               name_list[ 0 ][ :names ] << n ; end
 
             ns[ :memory_names ].each.with_index do |mn, i|
-               if mn[ :name ].has_key?( :text ) &&
-                  ! names[ 0 ][ :memory_names ][ i ]&.[]( :name )&.has_key?( :text )
+#            binding.pry
+               if mn[ :name ].has_key?( :text )
+                  if name_list[ 0 ][ :memory_names ][ i ].present?
+                     if ! name_list[ 0 ][ :memory_names ][ i ][ :name ].has_key?( :text )
+#            binding.pry
 #                  Kernel.puts "*"*80
 #                  Kernel.puts names[ 0 ].inspect
 #                  Kernel.puts names[ 0 ][ :memory_names ].inspect
 #                  Kernel.puts names[ 0 ][ :memory_names ][ i ].inspect
 #                  Kernel.puts names[ 0 ][ :memory_names ][ i ]&.[]( :name ).inspect
 #                  Kernel.puts names[ 0 ][ :memory_names ][ i ]&.[]( :name )&.has_key?( :text ).inspect
-                  names[ 0 ][ :memory_names ][ i ][ :name ] = mn[ :name ]
-                  end ; end ; end
+                        name_list[ 0 ][ :memory_names ][ i ][ :name ] = mn[ :name ] ;end
+#                  else
+#                     if 
+#                     raise
+                     ;end;end;end;end
 #         binding.pry
 #         rescue TypeError
 #            raise BukovinaTypeError, "#{$!}: for name #{name}"
@@ -101,16 +107,16 @@ class Bukovina::Parsers::Name
             raise BukovinaEmptyRecord, "Empty record found for the names "
                   "hash: #{name.inspect}" ; end
 =end
-         names[ 0 ][ :names ].delete_if { |n| !n[ :text ] }
-         names[ 0 ][ :memory_names ].delete_if do |n|
+         name_list[ 0 ][ :names ].delete_if { |n| !n[ :text ] }
+         name_list[ 0 ][ :memory_names ].delete_if do |n|
             n[ :name ].has_key?( :similar_to ) ; end
-         names[ 0 ]
+         name_list[ 0 ]
 
       when String
-         names = parse_line( name )
-         names[ :names ]&.delete_if { |n| !n[ :text ] }
-         names[ :memory_names ].delete_if { |n| n[ :name ].has_key?( :similar_to ) }
-         names
+         name_list = parse_line( name )
+         name_list[ :names ]&.delete_if { |n| !n[ :text ] }
+         name_list[ :memory_names ].delete_if { |n| n[ :name ].has_key?( :similar_to ) }
+         name_list
 
       when NilClass
       else

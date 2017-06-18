@@ -70,10 +70,11 @@ class Bukovina::Parsers::LastName
                names[ 0 ][ :names ] << n ; end
 
             ns[ :memory_names ].each.with_index do |mn, i|
-               if mn[ :name ].has_key?( :text ) &&
-                  ! names[ 0 ][ :memory_names ][ i ]&.[]( :name )&.has_key?( :text )
-                  names[ 0 ][ :memory_names ][ i ][ :name ] = mn[ :name ]
-                  end ; end ; end
+               if mn[ :name ].has_key?( :text )
+                  if names[ 0 ][ :memory_names ][ i ].present?
+                     if ! names[ 0 ][ :memory_names ][ i ][ :name ].has_key?( :text )
+                        names[ 0 ][ :memory_names ][ i ][ :name ] = mn[ :name ] ;end
+                     ;end;end;end;end
 #         binding.pry
 #         rescue TypeError
 #            raise BukovinaTypeError, "#{$!}: for name #{name}"
@@ -171,7 +172,6 @@ class Bukovina::Parsers::LastName
          when :alias
             prev = context[ :models ][ :names ][ 0..-2 ].select do |n|
                ! n.has_key?( :similar_to ) ; end.last
-#            binding.pry
             context[ :models ][ :names ].last[ :similar_to ] = prev ; end ; end
 #      else
 #         aliases = context.delete( :aliases )

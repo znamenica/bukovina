@@ -389,7 +389,7 @@
          - &2
            :type: FirstName
            :alphabeth_code: :ср
-           :language_code: :ср
+           :language_code: :сх
            :text: Бранко
            :similar_to: *1
          - :type: FirstName
@@ -690,7 +690,7 @@
            :similar_to: *1
          - :type: FirstName
            :alphabeth_code: :са
-           :language_code: :са
+           :language_code: :ан
            :text: Nina
            :similar_to: *1
          """
