@@ -6,4 +6,4 @@ module ValidationCancel
             callback.raw_filter.try( :attributes ) == [ attr ] ;end
          .each do |vc|
             ifs = vc.instance_variable_get( :@if )
-            ifs << proc { ! self.is_a?( this ) } ;end ;end ;end ;end
+            ifs << proc { not self.kind_of?( this ) } ;end ;end ;end ;end

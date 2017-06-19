@@ -6,8 +6,7 @@ module Bukovina
          paths << Bukovina::Engine.root.join("app/validators")
 
          paths.each do |dir|
-            ActiveSupport::Dependencies.autoload_paths << dir
-         end
+            ActiveSupport::Dependencies.autoload_paths << dir ;end
 
          # Pull in all the migrations from Commons to the application
          config.paths['db/migrate'].concat(Bukovina::Engine.paths['db/migrate'].existent) ;end

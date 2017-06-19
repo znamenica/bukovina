@@ -14,7 +14,7 @@ class Canto < ActiveRecord::Base
    def targets= value
       if value.kind_of?( Array )
          new_value = value.map do |v|
-            if v.kind_of?(String) && v =~ /^\*(.*)/
+            if v.kind_of?(String) && v =~ /^\^(.*)/
                Memory.where(short_name: $1).first
             else
                v ;end;end

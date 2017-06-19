@@ -26,6 +26,7 @@
              :type: Kontakion
              :text: Кондаков иной текст
              :tone: 1
+             :prosomeion_title: Подобен неку
            - :alphabeth_code: :ру
              :language_code: :ру
              :targets:
@@ -113,6 +114,7 @@
       И будет создана модель кондака с аттрибутами:
          | tone                     | 1                           |
          | text                     | Кондаков иной текст         |
+         | prosomeion_title         | Подобен неку                |
          | language_code            | ру                          |
          | alphabeth_code           | ру                          |
          | service_cantoes.service  | ^Василию Васильскому служба |

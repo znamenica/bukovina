@@ -6,7 +6,7 @@ namespace :import do
       true; end
 
    desc "Import memories"
-   task memories: :environment do
-      Bukovina::Tasks.import_calendaries
+   task memories: %i(environment db:environment:set) do
+      Bukovina::Tasks.import_memories
 
       true; end;end
