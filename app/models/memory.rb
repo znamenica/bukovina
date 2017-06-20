@@ -54,9 +54,9 @@ class Memory < ActiveRecord::Base
    def paterics_for language_code
       paterics.where(language_code: language_code) ;end
 
-   def icon_links_for language_code
-      # TODO cleanup when filter for jpg/png etc will be added to model
-      icon_links.where(language_code: language_code).where("url ~ '.(jpg|png)$'") ;end
+#   def icon_links language_code
+#      # TODO cleanup when filter for jpg/png etc will be added to model
+#      icon_links.where(language_code: language_code).where("url ~ '.(jpg|png)$'") ;end
 
    def filtered_events
       types = %w(Repose Appearance Miracle Writing Founding Canonization)
