@@ -23,8 +23,10 @@ class Memory < ActiveRecord::Base
    belongs_to :covers_to, class_name: :Place, optional: true
    belongs_to :sight, class_name: :Memory, optional: true
 
+   default_scope { includes( :slug ).where.not( slugs: { text: nil } ) }
+
    scope :by_short_name, -> name { where( short_name: name ) }
-   scope :by_slug, -> slug { includes( :slug ).where( slug: { code: slug } ) }
+   scope :by_slug, -> slug { includes( :slug ).where( slugs: { text: slug } ) }
    scope :by_date, -> date { includes( :memoes ).where( memo: { date: date } ) }
    scope :by_text, -> text do
       includes( :names, :description ).where( names: text ).
@@ -39,6 +41,32 @@ class Memory < ActiveRecord::Base
    accepts_nested_attributes_for :slug, reject_if: :all_blank
 
    validates_presence_of :short_name, :events
+
+   def description_for language_code
+      descriptions.where(language_code: language_code).first ;end
+
+   def beings_for language_code
+      beings.where(language_code: language_code) ;end
+
+   def wikies_for language_code
+      wikies.where(language_code: language_code) ;end
+
+   def paterics_for language_code
+      paterics.where(language_code: language_code) ;end
+
+   def icon_links_for language_code
+      # TODO cleanup when filter for jpg/png etc will be added to model
+      icon_links.where(language_code: language_code).where("url ~ '.(jpg|png)$'") ;end
+
+   def filtered_events
+      types = %w(Repose Appearance Miracle Writing Founding Canonization)
+      events.where(type: types) ;end
+
+   def troparions
+      services.joins(:chants).where(cantoes: { type: 'Troparion' }) ;end
+
+   def kontakions
+      services.joins(:chants).where(cantoes: { type: 'Kontakion' }) ;end
 
    def to_s
       memory_names.join( ' ' ) ; end ; end
