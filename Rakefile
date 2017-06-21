@@ -10,6 +10,8 @@ Cucumber::Rake::Task.new(:cucumber) do |t|
    t.cucumber_opts = "features --format pretty"
 end
 
+task :environment => 'db:seed'
+
 namespace :db do
    desc 'Load DB Config'
    task :load_config do

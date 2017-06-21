@@ -1,13 +1,16 @@
 ---
 Нерукотворный образ:
    описание: образ Спаса Христа, Убрус
-   чин: спас
+   чин: оспс
    вики: http://drevo-info.ru/articles/588.html
-   бытие: http://azbyka.ru/days/sv-diomid-tarsjanin
    образ:
     - http://drevo-info.ru/images/001/000047.jpg
     - http://azbyka.ru/days/assets/img/holidays/43/p190i2phmn1kd0dde1kr03dotd73.jpg
     - http://azbyka.ru/days/assets/img/holidays/43/p190i2phmoc3r1738s2c4u9nbp4.jpg
+   служба:
+    - Нерукотворному образу служба
+    - Нерукотворному образу и Диомиду Тарсянину служба
+    - http://azbyka.ru/days/assets/upload/minei/08/minea_08_16.pdf
    событие:
     - год: I
       описание: обр
@@ -28,7 +31,3 @@
    помин:
       дата: 16.08
       описание: прен.1
-      служба:
-       - Нерукотворному образу служба
-       - Нерукотворному образу и Диомиду Тарсянину служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_16.pdf

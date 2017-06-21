@@ -46,27 +46,32 @@ class Memory < ActiveRecord::Base
       descriptions.where(language_code: language_code).first ;end
 
    def beings_for language_code
-      beings.where(language_code: language_code) ;end
+      abeings = beings.where(language_code: language_code)
+      abeings.present? && abeings || nil ;end
 
    def wikies_for language_code
-      wikies.where(language_code: language_code) ;end
+      awikies = wikies.where(language_code: language_code)
+      awikies.present? && awikies || nil ;end
 
    def paterics_for language_code
-      paterics.where(language_code: language_code) ;end
+      apaterics = paterics.where(language_code: language_code)
+      apaterics.present? && apaterics || nil ;end
 
-#   def icon_links language_code
-#      # TODO cleanup when filter for jpg/png etc will be added to model
-#      icon_links.where(language_code: language_code).where("url ~ '.(jpg|png)$'") ;end
+   def valid_icon_links
+      # TODO cleanup when filter for jpg/png etc will be added to model
+      icon_links.where("url ~ '.(jpg|png)$'") ;end
 
    def filtered_events
       types = %w(Repose Appearance Miracle Writing Founding Canonization)
       events.where(type: types) ;end
 
-   def troparions
-      services.joins(:chants).where(cantoes: { type: 'Troparion' }) ;end
+   def troparions text_present = true
+      relation = Troparion.joins( :services ).where( services: { id: services.pluck( :id ) } )
+      text_present && relation.where.not( { text: nil } ) || relation ;end
 
-   def kontakions
-      services.joins(:chants).where(cantoes: { type: 'Kontakion' }) ;end
+   def kontakions text_present = true
+      relation = Kontakion.joins( :services ).where( services: { id: services.pluck( :id ) } )
+      text_present && relation.where.not( { text: nil } ) || relation ;end
 
    def to_s
       memory_names.join( ' ' ) ; end ; end

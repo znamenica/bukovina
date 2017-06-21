@@ -79,6 +79,7 @@ ActiveRecord::Schema.define(version: 20170615180100) do
     t.string "order"
     t.string "council"
     t.index ["type", "memory_id", "item_id"], name: "index_events_on_item_id_and_type_and_memory_id"
+    t.index ["type", "memory_id"], name: "index_events_on_subject_and_type_and_memory_id"
   end
 
   create_table "item_types", force: :cascade do |t|
