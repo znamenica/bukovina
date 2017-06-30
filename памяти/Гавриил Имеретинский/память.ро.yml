@@ -7,8 +7,12 @@
    чин: свт
    собор: имер,нац
    вики: http://drevo-info.ru/articles/13844.html
-   бытие: http://pravicon.com/info-3618
-   образ: http://pravicon.com/icon-3216
+   бытие:
+      ру: http://pravicon.com/info-3618
+      ив: http://www.gabrielisgimnazia.ge/#data-14
+   образ:
+    - http://pravicon.com/icon-3216
+    - http://www.gabrielisgimnazia.ge/uploads/ckeditor/image/gabriel_qiqodze_xati.jpg
    событие:
     - год: 1825
       дата: 15.11
