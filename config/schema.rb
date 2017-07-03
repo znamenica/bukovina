@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170615180100) do
+ActiveRecord::Schema.define(version: 20170703020600) do
 
   create_table "calendaries", force: :cascade do |t|
     t.string "date"
@@ -101,7 +101,7 @@ ActiveRecord::Schema.define(version: 20170615180100) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "alphabeth_code"
-    t.string "info_type"
+    t.string "info_type", null: false
   end
 
   create_table "memoes", force: :cascade do |t|
@@ -187,7 +187,7 @@ ActiveRecord::Schema.define(version: 20170615180100) do
     t.string "author"
     t.string "source"
     t.string "description"
-    t.string "info_type"
+    t.string "info_type", null: false
     t.string "ref_title"
     t.integer "tone"
     t.index ["name", "alphabeth_code"], name: "index_services_on_name_and_alphabeth_code", unique: true
@@ -198,7 +198,7 @@ ActiveRecord::Schema.define(version: 20170615180100) do
     t.string "sluggable_type"
     t.integer "sluggable_id"
     t.index ["sluggable_type", "sluggable_id"], name: "index_slugs_on_sluggable_type_and_sluggable_id"
-    t.index ["text"], name: "index_slugs_on_text"
+    t.index ["text"], name: "index_slugs_on_text", unique: true
   end
 
 end

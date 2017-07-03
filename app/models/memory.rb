@@ -27,8 +27,8 @@ class Memory < ActiveRecord::Base
 
    scope :by_short_name, -> name { where( short_name: name ) }
    scope :by_slug, -> slug { includes( :slug ).where( slugs: { text: slug } ) }
-   scope :by_date, -> date { includes( :memoes ).where( memo: { date: date } ) }
-   scope :by_text, -> text do
+   scope :with_date, -> date { includes( :memos ).where( memoes: { date: date } ) }
+   scope :with_text, -> text do
       includes( :names, :description ).where( names: text ).
                                     or.where( description: { text: text } ) ;end
 
@@ -41,6 +41,8 @@ class Memory < ActiveRecord::Base
    accepts_nested_attributes_for :slug, reject_if: :all_blank
 
    validates_presence_of :short_name, :events
+
+   before_create :set_slug
 
    def description_for language_code
       descriptions.where(language_code: language_code).first ;end
@@ -69,9 +71,18 @@ class Memory < ActiveRecord::Base
       relation = Troparion.joins( :services ).where( services: { id: services.pluck( :id ) } )
       text_present && relation.where.not( { text: nil } ) || relation ;end
 
+   def troparions_for language_code, text_present = true
+      troparions( text_present ).where(language_code: language_code) ;end
+
    def kontakions text_present = true
       relation = Kontakion.joins( :services ).where( services: { id: services.pluck( :id ) } )
       text_present && relation.where.not( { text: nil } ) || relation ;end
+
+   def kontakions_for language_code, text_present = true
+      kontakions( text_present ).where(language_code: language_code) ;end
+
+   def set_slug
+      self.slug = Slug.new(base: self.short_name) if self.slug.blank? ;end
 
    def to_s
       memory_names.join( ' ' ) ; end ; end
