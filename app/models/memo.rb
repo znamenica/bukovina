@@ -9,8 +9,8 @@
 class Memo < ActiveRecord::Base
    has_many :event_memos
    has_many :events, through: :event_memos
-   has_many :service_links, foreign_key: :info_id, inverse_of: :info #ЧИНЬ превод во services
-   has_many :services, foreign_key: :info_id, inverse_of: :info
+   has_many :service_links, as: :info, inverse_of: :info #ЧИНЬ превод во services
+   has_many :services, as: :info, inverse_of: :info
 
    belongs_to :memory
    belongs_to :calendary

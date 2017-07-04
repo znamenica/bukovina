@@ -12,12 +12,12 @@ class Memory < ActiveRecord::Base
 
    has_default_key :short_name
 
-   has_many :memory_names
-   has_many :names, through: :memory_names
-   has_many :paterics, class_name: :PatericLink, foreign_key: :info_id
-   has_many :events
-   has_many :memos
-   has_many :photo_links, foreign_key: :info_id, inverse_of: :info, class_name: :IconLink # ЧИНЬ во photos
+   has_many :memory_names, dependent: :destroy
+   has_many :names, through: :memory_names, dependent: :destroy
+   has_many :paterics, as: :info, dependent: :destroy, class_name: :PatericLink
+   has_many :events, dependent: :destroy
+   has_many :memos, dependent: :destroy
+   has_many :photo_links, as: :info, inverse_of: :info, class_name: :IconLink, dependent: :destroy # ЧИНЬ во photos
    has_one :slug, as: :sluggable
 
    belongs_to :covers_to, class_name: :Place, optional: true

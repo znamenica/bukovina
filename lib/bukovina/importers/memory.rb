@@ -47,22 +47,6 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
          o.photo_links.delete(links)
          o.icon_links.delete(links) ;end
 
-      if not o.valid? and o.errors.details.keys.grep(/\.info_type/).any?
-         o.events.each { |e| e.beings.each { |l| l.info_type = e.class.name } }
-         o.events.each { |e| e.wikies.each { |l| l.info_type = e.class.name } }
-         o.events.each { |e| e.icon_links.each { |l| l.info_type = e.class.name } }
-         o.events.each { |e| e.coordinate&.info_type = e.class.name }
-         o.memos.each { |m| m.service_links.each { |l| l.info_type = m.class.name } }
-         o.memos.each { |m| m.services.each { |s| s.info_type = m.class.name } }
-         o.paterics.each { |l| l.info_type = o.class.name }
-         o.beings.each { |l| l.info_type = o.class.name }
-         o.wikies.each { |l| l.info_type = o.class.name }
-         o.icon_links.each { |l| l.info_type = o.class.name }
-         o.photo_links.each { |l| l.info_type = o.class.name }
-         o.service_links.each { |l| l.info_type = o.class.name }
-         o.wikies.each { |l| l.info_type = o.class.name }
-         o.services.each { |s| s.info_type = o.class.name } ;end
-
       init_slug(o) if ! o.slug || ! o.slug.persisted?
 
       binding.pry if not o.valid? #or not o.persisted?
@@ -75,41 +59,24 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
 
          (search_attrs, new_attrs) = separate_hash( parse_hash( ::Memory, attrs ) )
 
-         o = find_init(search_attrs, new_attrs)
          begin
+            o = find_init(search_attrs, new_attrs)
+
             o.memory_names.each { |mn| mn.name.save }
             init_slug(o) if ! o.slug&.persisted?
             o.save!
             binding.pry if ! o.slug&.persisted?
-         rescue ActiveRecord::RecordInvalid
-            if o.errors.details.keys.grep(/\.info_type/).any?
-               o.events.each { |e| e.beings.each { |l| l.info_type = e.class.name } }
-               o.events.each { |e| e.wikies.each { |l| l.info_type = e.class.name } }
-               o.events.each { |e| e.icon_links.each { |l| l.info_type = e.class.name } }
-                  o.events.each { |e| e.coordinate&.info_type = e.class.name }
-               o.memos.each { |m| m.service_links.each { |l| l.info_type = m.class.name } }
-               o.memos.each { |m| m.services.each { |s| s.info_type = m.class.name } }
-               o.paterics.each { |l| l.info_type = o.class.name }
-               o.beings.each { |l| l.info_type = o.class.name }
-               o.wikies.each { |l| l.info_type = o.class.name }
-               o.icon_links.each { |l| l.info_type = o.class.name }
-               o.photo_links.each { |l| l.info_type = o.class.name }
-               o.service_links.each { |l| l.info_type = o.class.name }
-               o.wikies.each { |l| l.info_type = o.class.name }
-               o.services.each { |s| s.info_type = o.class.name }
-               Kernel.puts "retry links/servies info type"
-               retry
-            else
-               raise ;end
+
          rescue ActiveRecord::RecordNotUnique
             case $!.message
             when /: names\.|index_names_on_text_and_type_and_alphabeth_code/
-               (search_attrs, new_attrs) = separate_hash( parse_hash( ::Memory, attrs ) )
-               o = Memory.unscoped.where( search_attrs ).first_or_initialize( new_attrs )
+               o.slug.destroy
                Kernel.puts "retry dup name"
                retry
             else
+               r = false
                binding.pry
+               retry if r
                raise $! ;end;end
 
          errs = o.errors.map do |field, message|

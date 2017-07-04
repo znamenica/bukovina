@@ -8,7 +8,7 @@ module Bukovina::Importers::FindInit
          elsif base.reflections[attr.to_s].options[:source].present?
             base.reflections[attr.to_s].options[:source]
          elsif base.reflections[attr.to_s].options[:as].present?
-            'object'
+            attr
          else
 #            base.reflections[attr.to_s].foreign_key.to_s.gsub( "_id",'' )
             base.reflections[attr.to_s].name
@@ -24,6 +24,8 @@ module Bukovina::Importers::FindInit
             kind = foreign_key.to_s.gsub( "_id",'' )
             through_class.reflections[ kind ].name ;end ;end
 #      binding.pry if attr == :memory_names
+#      binding.pry if attr == :descriptions
+
 
       a.to_s.classify.constantize
    rescue
@@ -33,9 +35,10 @@ module Bukovina::Importers::FindInit
       hash.map do |(attr, value)|
          case value
          when Array
-#            binding.pry if ! base.reflections[attr.to_s]
+            binding.pry if ! base.respond_to?(:reflections)#.reflections[attr.to_s]
             new_base = foreign_class( base, attr )
 #            binding.pry
+#            binding.pry if ! new_base.respond_to?(:reflections)#.reflections[attr.to_s]
             new_array = parse_array( new_base, value )
             if new_array.any? {|v| v.is_a?( Hash ) }
                [ :"#{attr}_attributes", new_array ]
@@ -43,7 +46,9 @@ module Bukovina::Importers::FindInit
                [ attr, new_array ] ;end
          when Hash
 #            binding.pry if ! base.reflections[attr.to_s]
+            binding.pry if ! base.respond_to?(:reflections)#.reflections[attr.to_s]
             new_base = foreign_class( base, attr )
+#            binding.pry if ! new_base.respond_to?(:reflections)#.reflections[attr.to_s]
             new_value = parse_hash( new_base, value )
             if new_value.is_a?( Hash )
                [ :"#{attr}_attributes", new_value ]
@@ -68,6 +73,7 @@ module Bukovina::Importers::FindInit
       array.map do |value|
          case value
          when Hash
+            binding.pry if ! base.respond_to?(:reflections)#.reflections[attr.to_s]
             parse_hash( base, value )
          when /^\*(.*)/
             $1.present? && value || "^#{@short_name}"

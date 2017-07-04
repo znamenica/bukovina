@@ -1,0 +1,9 @@
+---
+ru:
+   activerecord:
+      errors:
+         invalid_patronymic: имеет неверный вид отчества
+         invalid_last_name: имеет неверный вид фамилии
+         invalid_language_char: содержит неверные символ(ы) "%{chars}" для выбранной азбуки "%{alphabeth}"
+         invalid_utf8_char: содержит невернные символы уникода "%{parts}" для выбранной азбуки "%{alphabeth}"
+         languages_arent_same: содержит нетождественные языки класса и его наследников

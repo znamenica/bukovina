@@ -5,7 +5,7 @@
 class Event < ActiveRecord::Base
    extend Informatible
 
-   has_one :coordinate, foreign_key: :info_id, inverse_of: :info, class_name: :CoordLink
+   has_one :coordinate, as: :info, inverse_of: :info, class_name: :CoordLink
 
    belongs_to :memory
    belongs_to :place, optional: true
