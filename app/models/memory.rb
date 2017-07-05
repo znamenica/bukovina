@@ -13,7 +13,7 @@ class Memory < ActiveRecord::Base
    has_default_key :short_name
 
    has_many :memory_names, dependent: :destroy
-   has_many :names, through: :memory_names, dependent: :destroy
+   has_many :names, through: :memory_names
    has_many :paterics, as: :info, dependent: :destroy, class_name: :PatericLink
    has_many :events, dependent: :destroy
    has_many :memos, dependent: :destroy
@@ -23,14 +23,17 @@ class Memory < ActiveRecord::Base
    belongs_to :covers_to, class_name: :Place, optional: true
    belongs_to :sight, class_name: :Memory, optional: true
 
-   default_scope { includes( :slug ).where.not( slugs: { text: nil } ) }
-
+   # default_scope { includes( :slug ).where.not( slugs: { text: nil } ) }
+   default_scope { includes(:slug) }
    scope :by_short_name, -> name { where( short_name: name ) }
-   scope :by_slug, -> slug { includes( :slug ).where( slugs: { text: slug } ) }
-   scope :with_date, -> date { includes( :memos ).where( memoes: { date: date } ) }
+   scope :by_slug, -> slug { joins( :slug ).where( slugs: { text: slug } ) }
+   scope :with_date, -> date do
+      new_date = (Date.parse(date) - 13.days).strftime("%1d.%m")
+      joins( :memos ).where( memoes: { date: new_date } ).distinct ;end
    scope :with_text, -> text do
-      includes( :names, :description ).where( names: text ).
-                                    or.where( description: { text: text } ) ;end
+      joins( :names, :descriptions )
+     .where("names.text ILIKE ? OR descriptions.text ILIKE ?", "%#{text}%", "%#{text}%")
+     .distinct ;end
 
    accepts_nested_attributes_for :memory_names, reject_if: :all_blank
    accepts_nested_attributes_for :paterics, reject_if: :all_blank
