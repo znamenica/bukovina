@@ -277,7 +277,10 @@ class Bukovina::Parsers::Event
       end
 
       result[ :happened_at ] = new.size == 1 && new.pop || new
-   end
+      if result[ :happened_at ] =~ /Time can't be used without a previously defined date/
+         @errors << Parsers::BukovinaInvalidValueError.new( "Invalid resulted value: #{result[ :happened_at ]}") ;end
+
+      result[ :happened_at ] ;end
 
    def date value, result
       ats = value.to_s.split('/').map { |x| x =~ /.1$/ && "#{x}0" || x }

@@ -1,6 +1,66 @@
 module Bukovina
    module Tasks
+      DAYS = %w(нд пн вт ср чт пт сб)
+      DAYSR = DAYS.dup.reverse
+      DAYSN = DAYS.dup.rotate
+
       class << self
+         def fix_memo_date
+            memoes = Memo.where("date !~ ?", "^(\\d+\\.\\d+|[-+]\\d+|0)")
+            memoes.each do |m|
+               # binding.pry
+               newdate =
+               case m.date
+               when /пасха/
+                  "+0"
+               when /^дн\.(\d+)\.по пасхе/ #+24
+                  "+#{$1}"
+               when /^дн\.(\d+)\.до пасхи/ #-24
+                  "-#{$1}"
+               when /^(#{DAYS.join("|")})\.(\d+)\.по пасхе/ #+70
+                  daynum = DAYSN.index($1) + 1
+                  days = ($2.to_i - 1) * 7 + daynum
+                  "+#{days}"
+               when /^(#{DAYS.join("|")})\.по пасхе/    #+7
+                  daynum = DAYSN.index($1) + 1
+                  "+#{daynum}"
+               when /^(#{DAYS.join("|")})\.(\d+)\.до пасхи/  #-14
+                  daynum = DAYSR.index($1) + 1
+                  days = ($2.to_i - 1) * 7 + daynum
+                  "-#{days}"
+               when /^(#{DAYS.join("|")})\.до пасхи/    #-7
+                  daynum = DAYSR.index($1) + 1
+                  "-#{daynum}"
+               when /^дн\.(\d+)\.по (\d+\.\d+)$/   #29.06%7
+                  date = Time.parse("#{$2}.1970") + $1.to_i
+                  date.strftime("%1d.%m")
+               when /^(#{DAYS.join("|")})\.близ (\d+\.\d+)$/   #29.06%7
+                  daynum = DAYS.index($1)
+                  date = Time.parse("#{$2}.1970") - 4.days
+                  "#{date.strftime("%1d.%m")}%#{daynum}"
+               when /^(#{DAYS.join("|")})\.по (\d+\.\d+)$/   #29.06%7
+                  daynum = DAYS.index($1)
+                  date = Time.parse("#{$2}.1970")
+                  "#{date.strftime("%1d.%m")}%#{daynum}"
+               when /^(#{DAYS.join("|")})\.до (\d+\.\d+)$/  #21.06%7
+                  daynum = DAYS.index($1)
+                  date = Time.parse("#{$2}.1970") - 8.days
+                  "#{date.strftime("%1d.%m")}%#{daynum}"
+               when /^(#{DAYS.join("|")})\.(\d+)\.по (\d+\.\d+)$/   #29.06%7
+                  daynum = DAYS.index($1)
+                  date = Time.parse("#{$3}.1970") + ($2.to_i - 1) * 7
+                  "#{date.strftime("%1d.%m")}%#{daynum}"
+               when /^(#{DAYS.join("|")})\.(\d+)\.до (\d+\.\d+)$/  #21.06%7
+                  daynum = DAYS.index($1)
+                  date = Time.parse("#{$3}.1970") - 8.days - ($2.to_i - 1) * 7
+                  "#{date.strftime("%1d.%m")}%#{daynum}"
+               end
+               # Kernel.puts "#{m.date} => #{newdate}" if ! newdate
+               m.update(date: newdate)
+            end
+         end
+
+
          def add_errors f, errors
             @errors ||= {}
             @errors[ f ] ||= [ errors ].flatten ;end

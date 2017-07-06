@@ -12,6 +12,9 @@ class Memory < ActiveRecord::Base
 
    has_default_key :short_name
 
+   belongs_to :covers_to, class_name: :Place, optional: true
+   belongs_to :sight, class_name: :Memory, optional: true
+
    has_many :memory_names, dependent: :destroy
    has_many :names, through: :memory_names
    has_many :paterics, as: :info, dependent: :destroy, class_name: :PatericLink
@@ -20,16 +23,12 @@ class Memory < ActiveRecord::Base
    has_many :photo_links, as: :info, inverse_of: :info, class_name: :IconLink, dependent: :destroy # ЧИНЬ во photos
    has_one :slug, as: :sluggable
 
-   belongs_to :covers_to, class_name: :Place, optional: true
-   belongs_to :sight, class_name: :Memory, optional: true
-
    # default_scope { includes( :slug ).where.not( slugs: { text: nil } ) }
    default_scope { includes(:slug) }
    scope :by_short_name, -> name { where( short_name: name ) }
    scope :by_slug, -> slug { joins( :slug ).where( slugs: { text: slug } ) }
    scope :with_date, -> date do
-      new_date = (Date.parse(date) - 13.days).strftime("%1d.%m")
-      joins( :memos ).where( memoes: { date: new_date } ).distinct ;end
+      joins( :memos ).merge(Memo.with_date( date )).distinct ;end
    scope :with_text, -> text do
       joins( :names, :descriptions )
      .where("names.text ILIKE ? OR descriptions.text ILIKE ?", "%#{text}%", "%#{text}%")
