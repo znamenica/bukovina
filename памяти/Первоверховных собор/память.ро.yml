@@ -1,17 +1,39 @@
 ---
 Первоверховных собор:
-   описание: Первоверховных апостолов собор
-   чин: сбр
-   крат: апв
-   бытие: http://azbyka.ru/days/prazdnik-slavnyh-i-vsehvalnyh-pervoverhovnyh-apostolov-petra-i-pavla
-   образ: http://azbyka.ru/days/assets/img/holidays/83/p18bjou5ncj8614rnp5q6mnvbu3.jpg
+   описание:
+      ру: апостолов первоверховных собор Петра (Кама) и Павла (Мала)
+      гр: Πέτρος και Παύλος Πρωτοκορυφαίοι Απόστολοι
+      ан: Holy, Glorious and All-praised Leaders of the Apostles, Peter and Paul
+   количество: 2
+   чин: апп
+   крат: кмп
+   бытие:
+      ру:
+       - http://calendar.rop.ru/?svt=jun29-petr-pavel
+       - http://azbyka.ru/days/prazdnik-slavnyh-i-vsehvalnyh-pervoverhovnyh-apostolov-petra-i-pavla
+      гр: http://www.saint.gr/642/saint.aspx
+      ан: http://www.holytrinityorthodox.com/calendar/los/June/29-01.htm
+   образ:
+    - http://www.saint.gr/photos/standard/0629/AgioiPetrosPaulos01.jpg
+    - http://www.saint.gr/photos/standard/0629/AgioiPetrosPaulos02.jpg
+    - http://www.saint.gr/photos/standard/0629/AgioiPetrosPaulos03.jpg
+    - http://www.saint.gr/photos/standard/0629/AgioiPetrosPaulos04.jpg [Λυδία Γουριώτη© (http://lydiagourioti-iconography.blogspot.com)]
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Άγιον%20Όρος/Καρυές/Παχωμαίοι/Φορητές/Άγιοι/Πέτρος%20και%20Παύλος%20Απόστολοι.jpg
+    - http://www.saint.gr/photos/standard/0629/AgioiPetrosPaulos07.jpg [γύρω στα 1170-1180 μ.Χ. - Μονή Βατοπαιδίου, Άγιον Όρος]
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Συλλογή%20με%20κατάταξη/Απόστολοι/Πέτρος%20και%20Παύλος%20Απόστολοι%2004%20Ασπασμός%20%28σύγχρονη%29.jpg
+    - http://www.saint.gr/photos/standard/0629/AgioiPetrosPaulos11.jpg [17ος αιώνας μ.Χ. (Η εικόνα προέρχεται από τη Μονή του Σωτήρος της νήσου Πριγκήπου) - Φανάρι, Κωνσταντινούπολη]
+    - http://azbyka.ru/days/assets/img/holidays/83/p18bjou5ncj8614rnp5q6mnvbu3.jpg
    служба:
     - Первоверховных собору служба
     - http://azbyka.ru/days/assets/upload/minei/06/minea_06_29.pdf
     - http://azbyka.ru/days/caa/77
    событие:
-      год: I
+    - год: 67
       описание: прств
+      место: Рим. Италия
+    - год: по IV
+      описание: просл
    помин:
       дата: 29.06
+      календарь: рпц,рпца,греч
       описание: само

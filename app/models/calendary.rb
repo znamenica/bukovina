@@ -1,5 +1,8 @@
+#licit[boolean]         - действительный календарь (не в разработке)
 class Calendary < ActiveRecord::Base
    extend Language
+
+   belongs_to :place, optional: true
 
    has_many :descriptions, proc { where( type: nil ) }, as: :describable, dependent: :delete_all
    has_many :names, as: :describable, dependent: :delete_all, class_name: :Appellation
@@ -8,7 +11,10 @@ class Calendary < ActiveRecord::Base
    has_many :memos
    has_one :slug, as: :sluggable
 
-   belongs_to :place, optional: true
+   scope :licit, -> { where( licit: true ) }
+   scope :by_slug, -> slug { joins( :slug ).where( slugs: { text: slug } ) }
+   scope :named_as, -> name { joins( :names ).where( descriptions: { text: name } ) }
+   scope :described_as, -> name { joins( :descriptions ).where( descriptions: { text: name } ) }
 
    accepts_nested_attributes_for :descriptions, reject_if: :all_blank
    accepts_nested_attributes_for :names, reject_if: :all_blank
@@ -22,4 +28,7 @@ class Calendary < ActiveRecord::Base
    # validates :alphabeth_code, inclusion: { in: proc { |l|
    #   Language.alphabeth_list_for( l.language_code ) } }
    validates :slug, :names, presence: true # TODO add date after import
-   validates :descriptions, :names, :wikies, :links, :place, associated: true ;end
+   validates :descriptions, :names, :wikies, :links, :place, associated: true
+   
+   def name_for language_codes
+      names.where( language_code: language_codes ).first ;end;end

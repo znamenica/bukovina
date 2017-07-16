@@ -8,6 +8,7 @@ class Bukovina::Parsers::Calendary
    # выход: обработанный словарь данных
 
    SUBPARSERS = {
+      'годя' => :licit,
       'год' => :year,
       'крат' => :calendary,
       'ссылка' => :link,
@@ -212,6 +213,9 @@ class Bukovina::Parsers::Calendary
 
    def year value, result
       result[ :date ] = value =~ /^\d+$/ && value.to_i || value ;end
+
+   def licit value, result
+      result[ :licit ] = true ;end
 
    def calendary value, result
       if /^(#{CALENDARIES.join("|")})$/ =~ value.to_s

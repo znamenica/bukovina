@@ -27,8 +27,10 @@ class Memory < ActiveRecord::Base
    default_scope { includes(:slug) }
    scope :by_short_name, -> name { where( short_name: name ) }
    scope :by_slug, -> slug { joins( :slug ).where( slugs: { text: slug } ) }
+   scope :for_calendaries, -> calendaries do
+      joins( :memos ).merge( Memo.for_calendaries( calendaries )).distinct ;end
    scope :with_date, -> date do
-      joins( :memos ).merge(Memo.with_date( date )).distinct ;end
+      joins( :memos ).merge( Memo.with_date( date )).distinct ;end
    scope :with_text, -> text do
       joins( :names, :descriptions )
      .where("names.text ILIKE ? OR descriptions.text ILIKE ?", "%#{text}%", "%#{text}%")
