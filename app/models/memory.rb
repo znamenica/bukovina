@@ -20,6 +20,7 @@ class Memory < ActiveRecord::Base
    has_many :paterics, as: :info, dependent: :destroy, class_name: :PatericLink
    has_many :events, dependent: :destroy
    has_many :memos, dependent: :destroy
+   has_many :calendaries, -> { distinct }, through: :memos
    has_many :photo_links, as: :info, inverse_of: :info, class_name: :IconLink, dependent: :destroy # ЧИНЬ во photos
    has_one :slug, as: :sluggable
 
