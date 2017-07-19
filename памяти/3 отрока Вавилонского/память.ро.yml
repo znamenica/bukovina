@@ -4,7 +4,9 @@
    чин: стцц
    крат: 3ов
    собор: пра,плст?,вав?
-   вики: http://drevo-info.ru/articles/4608.html
+   вики:
+    - http://drevo-info.ru/articles/4608.html
+    - https://ru.wikipedia.org/wiki/Три_отрока_в_пещи_огненной
    бытие: http://azbyka.ru/days/saint/1874/1990/1665/2260/group
    образ:
     - http://azbyka.ru/days/assets/img/saints/1874/p17vjmcmkliu74gvug91slmh1q3.jpg
@@ -14,10 +16,10 @@
     - 3-м отрокам Вавилонским служба
     - http://azbyka.ru/days/assets/upload/minei/12/minea_12_17.pdf
    событие:
-    - год: вт.пол.VII до нэ
+    - год: по 614 до нэ
       описание: ржд
       место: вид.Палестина
-    - год: VI до нэ
+    - год: до 539 до нэ
       описание: прств
       место: вид.Вавилония
    помин:

@@ -3,9 +3,11 @@
    имя: Олдама
    описание: пророчица
    чин: прор
-   вики: http://drevo-info.ru/articles/10119.html
+   вики:
+    - http://drevo-info.ru/articles/10119.html
+    - https://ru.wikipedia.org/wiki/Олдама
    событие:
-      год: VII до РХ
+      год: до 601 до нэ
       описание: прств
    помин:
       дата: 10.04

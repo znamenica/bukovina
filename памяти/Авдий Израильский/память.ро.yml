@@ -3,23 +3,26 @@
    имя: Авдий
    описание: пророк Израильский, из 12-ти
    чин: прор
-   вики: http://drevo-info.ru/articles/4097.html
+   собор: 12мп
+   вики:
+    - http://drevo-info.ru/articles/4097.html
+    - https://ru.wikipedia.org/wiki/Авдий_(пророк)
    бытие: http://azbyka.ru/days/sv-avdij
    образ:
     - http://azbyka.ru/days/assets/img/saints/1301/p18aigh2d7aigq81eds1obnc3d3.jpg
     - http://drevo-info.ru/images/002/007182.jpg
+   служба:
+    - Авдию Израильскому и Варлааму Антиохийцу служба
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_19.pdf
    событие:
     - год: X до нэ
       описание: ржд
       место: Вифарама село. Сихемье
-    - год: IX до нэ
+    - год: до 801 до нэ
       описание: прств
-    - год: IX до нэ
+    - год: до 801 до нэ
       описание: пгрб
       место: Самария
    помин:
       дата: 19.11
       описание: само
-      служба:
-       - Авдию Израильскому и Варлааму Антиохийцу служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_19.pdf

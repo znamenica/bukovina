@@ -1,3 +1,5 @@
+require 'rdoba/roman'
+
 module Bukovina
    module Tasks
       DAYS = %w(нд пн вт ср чт пт сб)
@@ -5,6 +7,44 @@ module Bukovina
       DAYSN = DAYS.dup.rotate
 
       class << self
+         def fix_base_year
+            memories = Memory.all
+            # memories = Memory.where(base_year: nil)
+            memories.each do |memory|
+               types = %w(Resurrection Repose Writing Appearance Translation Sanctification)
+
+               event = memory.events.to_a.sort_by { |x| (types.index(x.type) || 100) }.first
+
+               dates = event.happened_at.split(/[\/-]/)
+               year =
+               case dates.first
+               when /([IVX]+)$/
+                  ($1.rom - 1) * 100 + 50
+               when /\.\s*(\d+)$/
+                  $1
+               when /(?:\A|\s|\()(\d+)$/
+                  $1
+               when /(?:\A|\s|\(|\.)(\d+) до (?:нэ|РХ)/
+                  "-#{$1}"
+               when /(:|сент)/
+                  dates.last.split(".").last
+               when /давно/
+                  '-3760'
+               else
+                  binding.pry
+                  dates = event.happened_at.split(/[\/-]/)
+                  if /(?:\A|\s|\(|\.)(\d+) до (?:нэ|РХ)/ =~ dates.first
+                     "-#{$1}"
+                  else
+                     nil
+                  end
+               end
+               memory.update!(base_year: year)
+            end
+
+            Kernel.puts "Fixed #{memories.size} of #{Memory.count}"
+         end
+
          def fix_memo_date
             memoes = Memo.where("date !~ ?", "^(\\d+\\.\\d+|[-+]\\d+|0)")
             memoes.each do |m|

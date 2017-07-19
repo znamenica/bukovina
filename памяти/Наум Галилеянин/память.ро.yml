@@ -4,7 +4,9 @@
    описание: галилеянин
    чин: прор
    собор: 12мп,гали
-   вики: http://drevo-info.ru/articles/4490.html
+   вики:
+    - http://drevo-info.ru/articles/4490.html
+    - https://ru.wikipedia.org/wiki/Наум_(пророк)
    бытие: http://azbyka.ru/days/sv-naum
    образ:
     - http://drevo-info.ru/images/002/007380.jpg [Икона из Преображенской церкви Спасо-Кижского погоста]
@@ -13,10 +15,10 @@
     - Науму Галилеянину служба
     - http://azbyka.ru/days/assets/upload/minei/12/minea_12_01.pdf
    событие:
-    - год: VIII до нэ-VII до нэ
+    - год: вид.до 727 до нэ
       описание: прств
       место: Елкоша село. Галилея
-    - год: VII до нэ
+    - год: вид.по 698 до нэ
       описание: прств
    помин:
       дата: 01.12

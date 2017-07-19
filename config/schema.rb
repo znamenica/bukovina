@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170703020600) do
+ActiveRecord::Schema.define(version: 20170719001700) do
 
   create_table "calendaries", force: :cascade do |t|
     t.string "date"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20170703020600) do
     t.integer "place_id"
     t.string "author_name"
     t.string "council"
+    t.boolean "licit", default: false
   end
 
   create_table "canto_memories", force: :cascade do |t|
@@ -126,6 +127,7 @@ ActiveRecord::Schema.define(version: 20170703020600) do
     t.string "quantity"
     t.string "order"
     t.string "council"
+    t.integer "base_year"
     t.index ["short_name"], name: "index_memories_on_short_name", unique: true
   end
 

@@ -10,7 +10,9 @@
       ср: тесвићанина
    чин: прор
    крат: илия
-   вики: http://drevo-info.ru/articles/6475.html
+   вики:
+    - http://drevo-info.ru/articles/6475.html
+    - https://ru.wikipedia.org/wiki/Илия_(пророк)
    бытие:
       ру: http://azbyka.ru/days/sv-ilija-fesvitjanin
       гр: http://www.saint.gr/732/saint.aspx
@@ -48,11 +50,12 @@
     - http://azbyka.ru/days/caa/264
     - http://azbyka.ru/days/caa/501
     - http://azbyka.ru/days/caa/674
+    - http://azbyka.ru/days/assets/upload/minei/07/minea_07_20.pdf
    событие:
     - год: IX до нэ
       описание: ржд
       место: Фесвия Галаадская. Палестина
-    - год: IX до нэ
+    - год: до 801 до нэ
       описание: вознс
       образ:
        - http://drevo-info.ru/images/001/001165.jpg
@@ -64,4 +67,3 @@
       дата: 20.07
       календарь: рпц,греч,змин,охр,серб
       описание: само
-      служба: http://azbyka.ru/days/assets/upload/minei/07/minea_07_20.pdf

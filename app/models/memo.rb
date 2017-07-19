@@ -17,8 +17,9 @@ class Memo < ActiveRecord::Base
    has_many :service_links, as: :info, inverse_of: :info #ЧИНЬ превод во services
    has_many :services, as: :info, inverse_of: :info
 
-   scope :for_calendaries, -> calendaries do
-      calendary_ids = Slug.where( text: calendaries, sluggable_type: 'Calendary' ).pluck( :sluggable_id ) # TODO make single embedded select or after fix rails bug use merge
+   scope :in_calendaries, -> calendaries do
+      # TODO make single embedded select or after fix rails bug use merge
+      calendary_ids = Slug.where( text: calendaries, sluggable_type: 'Calendary' ).pluck( :sluggable_id )
       where( calendary_id: calendary_ids ) ;end
 
    scope :with_date, -> date_str do

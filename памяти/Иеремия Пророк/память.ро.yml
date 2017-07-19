@@ -11,7 +11,9 @@
       ив: წინასწარმეტყველი
    чин: прор
    собор: плст?,влпр?,копт?
-   вики: http://drevo-info.ru/articles/5704.html
+   вики:
+    - http://drevo-info.ru/articles/5704.html
+    - https://ru.wikipedia.org/wiki/Иеремия
    бытие:
       ру:
        - http://calendar.rop.ru/svyat1/may01-ieremijya.html
@@ -25,10 +27,10 @@
     - http://www.apostoliki-diakonia.gr/gr_main/eortologio/img/may/may10.jpg
    служба: Иеремии Пророку служба
    событие:
-    - год: вид.650 до нэ
+    - год: вид.650 до нэ/655 до нэ
       описание: ржд
       место: Анафоф. Иерусалимье. Палестина
-    - год: VI до нэ
+    - год: 586 до нэ
       описание: прств
       место: вид.Тафна. Египет
    помин:

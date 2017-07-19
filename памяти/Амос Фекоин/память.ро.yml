@@ -1,10 +1,13 @@
 ---
 Амос Фекоин:
    имя:
-      ру: Амос
+      ру: Амос (Бремя)
       ан: Amos
    чин: прор
-   вики: http://drevo-info.ru/articles/15335.html
+   собор: 12мп
+   вики:
+    - http://drevo-info.ru/articles/15335.html
+    - https://ru.wikipedia.org/wiki/Амос_(пророк)
    бытие:
       ру: http://azbyka.ru/days/sv-amos
       ан: http://www.holytrinityorthodox.com/calendar/los/June/15-01.htm
@@ -18,7 +21,7 @@
       место: Фекои. Иудея
     - год: 810 до нэ
       описание: призв
-    - год: VIII до нэ
+    - год: до 701 до нэ
       описание: прств
    помин:
       дата: 15.06

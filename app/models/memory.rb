@@ -24,17 +24,25 @@ class Memory < ActiveRecord::Base
    has_one :slug, as: :sluggable
 
    # default_scope { includes( :slug ).where.not( slugs: { text: nil } ) }
-   default_scope { includes(:slug) }
+   default_scope { includes(:slug).order(base_year: :asc) }
    scope :by_short_name, -> name { where( short_name: name ) }
    scope :by_slug, -> slug { joins( :slug ).where( slugs: { text: slug } ) }
-   scope :for_calendaries, -> calendaries do
-      joins( :memos ).merge( Memo.for_calendaries( calendaries )).distinct ;end
+   scope :in_calendaries, -> calendaries do
+      joins( :memos ).merge( Memo.in_calendaries( calendaries )).distinct ;end
    scope :with_date, -> date do
       joins( :memos ).merge( Memo.with_date( date )).distinct ;end
-   scope :with_text, -> text do
-      joins( :names, :descriptions )
-     .where("names.text ILIKE ? OR descriptions.text ILIKE ?", "%#{text}%", "%#{text}%")
-     .distinct ;end
+   scope :with_text, -> whole_text do
+      tokens = whole_text.gsub(/\+\s*/,' +').split(/\s+/).select { |t| ! t.empty? }
+      cond = tokens.first[0] == '+' && 'TRUE' || 'FALSE'
+      rel = joins( :names, :descriptions ).where( cond )
+      tokens.reduce(rel) do |rel, token|
+         /\A(?<a>\+)?(?<text>.*)/ =~ token
+         if a # and operatior
+            rel.where("names.text ILIKE ? OR descriptions.text ILIKE ?", "%#{text}%", "%#{text}%")
+         else
+            rel.or(joins(:names, :descriptions)
+                  .where("names.text ILIKE ? OR descriptions.text ILIKE ?", "%#{text}%", "%#{text}%")) ;end;end
+      .distinct ;end
 
    accepts_nested_attributes_for :memory_names, reject_if: :all_blank
    accepts_nested_attributes_for :paterics, reject_if: :all_blank
@@ -45,6 +53,7 @@ class Memory < ActiveRecord::Base
    accepts_nested_attributes_for :slug, reject_if: :all_blank
 
    validates_presence_of :short_name, :events
+   validates :base_year, format: { with: /\A-?\d+\z/ }
 
    before_create :set_slug
 

@@ -1,10 +1,15 @@
 ---
 Самуил Израильский:
-   имя: Самуил
+   имя:
+      ру: Самуил
+      гр: Σαμουήλ
+      ла: Samvel
    отчество: Елканинич
    описание: пророк и судья Израильский
    чин: прор
-   вики: http://drevo-info.ru/articles/13612.html
+   вики:
+    - http://drevo-info.ru/articles/13612.html
+    - https://ru.wikipedia.org/wiki/Самуил
    бытие: http://azbyka.ru/days/sv-samuil-1
    образ:
     - http://azbyka.ru/days/assets/img/saints/1886/p1920dcn5vkec1lm1h2gjhhikt3.jpg
@@ -13,11 +18,14 @@
     - http://azbyka.ru/days/assets/img/saints/1886/865467b761bf150dfb2e185724f8f9af.jpg
     - http://azbyka.ru/days/assets/img/saints/1886/cb6d3c0c92122ca50abe18a881b6f262.jpg
     - http://azbyka.ru/days/assets/img/saints/1886/p1920dcn631pi91n6m13lb5vq974.jpg
+   служба:
+    - Самуилу Израильскому служба
+    - http://azbyka.ru/days/assets/upload/minei/08/minea_08_20.pdf
    событие:
     - год: XII до нэ-XI до нэ
       описание: ржд
       место: вид.Рамафаим-Цофим. Ефремова гора. Палестина
-    - год: XI до нэ
+    - год: до 1001 до нэ
       описание: прств
     - год: 406
       описание: прен
@@ -25,6 +33,3 @@
    помин:
       дата: 20.08
       описание: само
-      служба:
-       - Самуилу Израильскому служба
-       - http://azbyka.ru/days/assets/upload/minei/08/minea_08_20.pdf
