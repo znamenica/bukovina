@@ -3,13 +3,16 @@ require 'excon'
 class IconLink < Link
    belongs_to :info, polymorphic: true
 
-   has_one :description, as: :describable, dependent: :destroy
+   has_many :descriptions, as: :describable, dependent: :destroy
 
-   accepts_nested_attributes_for :description, reject_if: :all_blank
+   accepts_nested_attributes_for :descriptions, reject_if: :all_blank
 
    # validates :url, format: { with: /\.(?i-mx:jpg|png)\z/ }
-   validates :description, associated: true
+   validates :descriptions, associated: true
    validate :url, :accessible_image
+
+   def description_for language_code
+      descriptions.where(language_code: language_code).first ;end
    
    def accessible_image
       response = Excon.get(URI.encode(url))
