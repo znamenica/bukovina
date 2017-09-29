@@ -3,12 +3,12 @@
    имя: Цареградская
    описание: образ Богородицы
    чин: обр
-   собор: плст,пск
+   собор: плст,пск,виз?
    вики: http://drevo-info.ru/articles/10510.html
    бытие: http://azbyka.ru/days/ikona-caregradskaja
    образ:
     - http://azbyka.ru/days/assets/img/icons/70/p188nvsprp1q92ntb1uqo46t12e26.jpg
-    - http://drevo-info.ru/images/001/001718.jpg
+    - http://natanevskay.narod.ru/ikona.files/original_images/p0000191.jpg
    служба: Цареградской образу служба
    событие:
     - год: I
@@ -17,6 +17,7 @@
     - год: 1071
       дата: 25.04
       описание: обр
+      ссылка: http://www.sedmitza.ru/lib/text/440287/
     - год: XV
       описание: прен
       место: Спасо-Елеазаровская обитель. Псковье
@@ -25,4 +26,5 @@
       место: Толба река. Псковье
    помин:
       дата: 25.04
+      календарь: пслн
       описание: само

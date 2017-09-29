@@ -5,14 +5,20 @@
    чин: обр
    собор: укр
    вид: Смоленская образ
-   вики: http://drevo-info.ru/articles/15937.html
-   бытие: http://azbyka.ru/days/ikona-bojanskaja-bojanovskaja
+   вики:
+    - http://drevo-info.ru/articles/15937.html
+    - https://ru.wikipedia.org/w/index.php?title=Боянская_икона_Божией_Матери
+   бытие:
+    - http://azbyka.ru/days/ikona-bojanskaja-bojanovskaja
+    - http://www.pravenc.ru/text/153293.html
    образ:
     - http://drevo-info.ru/images/002/003667.jpg
     - http://azbyka.ru/days/assets/img/icons/324/p18jtko5mtnsq30c1vpj8gflun6.jpg
     - http://azbyka.ru/days/assets/img/icons/324/p18jtko5mtauq608nq1r5kvh44.jpg
     - http://azbyka.ru/days/assets/img/icons/324/p18jtko5mt1pfi1a9u14kq1e7bpna5.jpg
-   служба: http://azbyka.ru/days/caa/619
+   служба:
+    - http://azbyka.ru/days/caa/619
+    - http://pravoslavnyi.ru/new_site/component/content/article/38/105-boyanskaya-ikona-bozhiej-materi-
    событие:
     - год: 1991
       описание: напис
