@@ -8,7 +8,7 @@ class Calendary < ActiveRecord::Base
    has_many :names, as: :describable, dependent: :delete_all, class_name: :Appellation
    has_many :wikies, as: :info, dependent: :delete_all, class_name: :WikiLink
    has_many :links, as: :info, dependent: :delete_all, class_name: :BeingLink
-   has_many :memos
+   has_many :memos, dependent: :delete_all
    has_one :slug, as: :sluggable
 
    scope :licit, -> { where( licit: true ) }
@@ -29,6 +29,9 @@ class Calendary < ActiveRecord::Base
    #   Language.alphabeth_list_for( l.language_code ) } }
    validates :slug, :names, presence: true # TODO add date after import
    validates :descriptions, :names, :wikies, :links, :place, associated: true
-   
+
+   def description_for language_codes
+      descriptions.where( language_code: language_codes ).first ;end
+
    def name_for language_codes
       names.where( language_code: language_codes ).first ;end;end

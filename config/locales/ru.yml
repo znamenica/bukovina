@@ -7,3 +7,35 @@ ru:
          invalid_language_char: содержит неверные символ(ы) "%{chars}" для выбранной азбуки "%{alphabeth}"
          invalid_utf8_char: содержит невернные символы уникода "%{parts}" для выбранной азбуки "%{alphabeth}"
          languages_arent_same: содержит нетождественные языки класса и его наследников
+         models:
+            calendary:
+               attributes:
+                  slug: Крат должен быть задан
+                  names: Минимум одно имя должно быть задано
+      scopes:
+         calendary:
+            licit: Только дозволенные
+            by_slug: По крату
+            named_as: Именованный как
+            described_as: Описаный как
+      models:
+         calendary:
+            one: Календарь
+            other: Календари
+      attributes:
+         calendary:
+            date: Дата
+            language_code: Язык
+            alphabeth_code: Азбука
+            author_name: Автор
+            council: Собор
+            licit: Опубликован
+            slug: Крат
+            name: Наименование
+            names: Наименования
+            place: Место
+            description: Описание
+            descriptions: Описания
+            wikies: Вики
+            links: Ссылки
+            memos: Помины

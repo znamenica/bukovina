@@ -46,6 +46,11 @@ module Language
       list = Language::LANGUAGE_TREE.keys
       list.concat( list.map( &:to_s ) ) ;end
 
+   # +alphabeth_list+ returns list of available languages.
+   #
+   def self.alphabeth_list
+      Language::LANGUAGE_TREE.values.flatten.uniq ;end
+
    # +alphabeth_list_for+ returns list of available alphabeths for the specified
    # language code.
    #
