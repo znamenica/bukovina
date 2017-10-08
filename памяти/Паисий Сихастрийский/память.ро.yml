@@ -1,0 +1,36 @@
+---
+Паисий Сихастрийский:
+   имя:
+      ру: в иночестве Паисий
+      ан: Paisios
+      рм: Paisie
+   описание:
+      ру: подвижник и настоятель Сихастрийский
+   чин: прп
+   собор: буко?
+   событие:
+    - год: вид.нач.XVIII
+      описание: ржд
+    - год: 1784
+      описание: прств
+      место: вид.Сихастрийско-Путненская обитель. близ.Путна. Буковина
+    - год: 2016
+      дата: 24.05/25.05
+      собор: рум
+      чин: прп
+      описание: просл
+      ссылка:
+         рм: http://basilica.ro/canonizarea-sfintilor-putneni-sa-i-rugam-sa-lumineze-sufletul-nostru-cu-rugaciunile-lor-pentru-a-merge-pe-calea-mantuirii-spune-patriarhul-daniel/
+         ан: http://orthochristian.com/94007.html
+    - год: 2017
+      дата: 01.05
+      собор: рум
+      чин: прп
+      описание: чинпр
+      ссылка:
+         рм: http://basilica.ro/patriarhul-romaniei-a-oficiat-sfanta-liturghie-la-manastirea-putna-video/
+         ан: http://orthochristian.com/103466.html
+   помин:
+      дата: 15.05
+      календарь: рум
+      описание: само

@@ -1,0 +1,43 @@
+---
+Иаков Путнинский:
+   имя:
+      ру: в иночестве Иаков
+      ан: Jacob
+      рм: Iacob
+   описание:
+      ру: святитель Радаутский, Молдовский; подвижник Путнинский
+      ан: Metropolitan of Putna
+      рм: Mitropolitul Putneanul, Moldovei
+   чин: прсвт
+   собор: рум?,буко?
+   событие:
+    - год: 1719
+      описание: ржд
+    - год: 1731
+      описание: иноч
+      место: Путнинская обитель. Буковина
+    - год: 1745
+      описание: свят
+    - год: 1778
+      описание: прств
+      место: вид.Сихастрийско-Путненская обитель. близ.Путна. Буковина
+    - год: 2016
+      дата: 24.05/25.05
+      собор: рум
+      чин: свт
+      описание: просл
+      ссылка:
+         рм: http://basilica.ro/canonizarea-sfintilor-putneni-sa-i-rugam-sa-lumineze-sufletul-nostru-cu-rugaciunile-lor-pentru-a-merge-pe-calea-mantuirii-spune-patriarhul-daniel/
+         ан: http://orthochristian.com/94007.html
+    - год: 2017
+      дата: 01.05
+      собор: рум
+      чин: свт
+      описание: чинпр
+      ссылка:
+         рм: http://basilica.ro/patriarhul-romaniei-a-oficiat-sfanta-liturghie-la-manastirea-putna-video/
+         ан: http://orthochristian.com/103466.html
+   помин:
+      дата: 16.05
+      календарь: рум
+      описание: прств

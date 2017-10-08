@@ -1,6 +1,6 @@
 ---
-Словинская образ:
-   имя: Словинская, Словенская
+Словинcкая образ:
+   имя: Словенокская, Словенская, Словинская, Словесная
    описание: образ Богородицы
    чин: обр
    собор: галч
@@ -8,12 +8,14 @@
    бытие: 
     - http://azbyka.ru/days/ikona-slovenskaja
     - http://calendar.rop.ru/icons1/sep23-ikona.html
+    - http://deni-spiri.livejournal.com/64675.html
    образ:
     - http://calendar.rop.ru/icons1/photos/Slovenskaya.jpg
     - http://days.pravoslavie.ru/jpg/ib1115.jpg
     - http://drevo-info.ru/images/001/001913.jpg
     - http://azbyka.ru/days/assets/img/icons/215/e74b8c38bc01886a75b5d5b2acaea02d.jpg
     - http://azbyka.ru/days/assets/img/icons/215/e4ae654d6b197b9d58fd94e974982b29.jpg
+   служба: http://filosofia.ru/o-chem-molyatsya-pered-pravoslavnoj-ikona-bozhej-materi-slovenskaya/
    событие:
     - год: 1628
       дата: 15.05
@@ -21,10 +23,10 @@
       место: Шерстенёво деревня. Галичский уезд. Костромская губерния
     - год: 1635
       описание: обр
-      место: Галичье. Костромщина
+      место: близ. Словенки село. Галичье. Костромщина
     - год: ок. 1764
       описание: прен
-      место: храм. Словинка село. вид.Галичский уезд. Костромская губерния
+      место: храм. Словенки (ныне Словинка. Антроповский район) село. вид.Галичский уезд. Костромская губерния
    помин:
       дата: 23.09
       календарь: рпц
