@@ -1,13 +1,15 @@
 ---
 Гавриил Мелекесский:
-   имя: в иночестве Гавриил, в крещении Иван
+   имя: в иночестве Гавриил, в крещении Иоанн, в наречении Иван
    отчество: Иванович
    фамилия: Игошкин
-   описание: архимандрит Мелекесский
-   чин: присп
-   собор: нмр,симб,пев
+   описание: архимандрит Мелекесский (Мелекес. Симбирск)
+   чин: приср
+   собор: нмр,мелк?,пев?
    вики: http://drevo-info.ru/articles/16228.html
-   бытие: http://azbyka.ru/days/sv-gavriil-igoshkin
+   бытие:
+    - http://azbyka.ru/days/sv-gavriil-igoshkin
+    - http://www.pravmir.ru/prepodobnoispovednik-gavriil-igoshkin-gospod-spodobil-menya-postradat-vmeste-s-moim-narodom/
    образ: http://drevo-info.ru/images/003/009444.jpg
    событие:
     - год: 1988
