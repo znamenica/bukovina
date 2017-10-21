@@ -6,6 +6,8 @@ class Slug < ActiveRecord::Base
 
    validates :text, format: { with: /\A[0-9а-яё]+\z/ }
 
+   scope :for_calendary, -> { where( sluggable_type: 'Calendary' ) }
+
    def base= value
       digits = value.mb_chars.downcase.to_s.gsub(/[^0-9]+/, '')
       words = value.gsub(/[0-9]+/, '').split(/\s+/).select do |x|

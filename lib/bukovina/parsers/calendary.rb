@@ -99,6 +99,7 @@ class Bukovina::Parsers::Calendary
                     парс
                     плнд
                     пол
+                    пслн
                     пслт
                     пспр
                     птпр

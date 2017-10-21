@@ -24,23 +24,25 @@ class Memory < ActiveRecord::Base
    has_many :photo_links, as: :info, inverse_of: :info, class_name: :IconLink, dependent: :destroy # ЧИНЬ во photos
    has_one :slug, as: :sluggable
 
-   # default_scope { includes( :slug ).where.not( slugs: { text: nil } ) }
-   default_scope { includes(:slug).order(base_year: :asc) }
+   default_scope { joins(:slug).order(base_year: :asc, short_name: :asc, id: :asc) }
    scope :by_short_name, -> name { where( short_name: name ) }
    scope :by_slug, -> slug { joins( :slug ).where( slugs: { text: slug } ) }
    scope :in_calendaries, -> calendaries do
       joins( :memos ).merge( Memo.in_calendaries( calendaries )).distinct ;end
+
    scope :with_date, -> date do
       joins( :memos ).merge( Memo.with_date( date )).distinct ;end
-   scope :with_text, -> whole_text do
-      tokens = whole_text.gsub(/\+\s*/,' +').split(/\s+/).select { |t| ! t.empty? }
+
+   scope :with_tokens, -> token_list do
+      # TODO fix the correctness of the query
+      tokens = token_list.reject { |t| t =~ /\A[\s\+]*\z/ }
       cond = tokens.first[0] == '+' && 'TRUE' || 'FALSE'
       rel = joins( :names, :descriptions ).where( cond )
       tokens.reduce(rel) do |rel, token|
          /\A(?<a>\+)?(?<text>.*)/ =~ token
-         if a # and operatior
+         if a # AND operation
             rel.where("names.text ILIKE ? OR descriptions.text ILIKE ?", "%#{text}%", "%#{text}%")
-         else
+         else # OR operation
             rel.or(joins(:names, :descriptions)
                   .where("names.text ILIKE ? OR descriptions.text ILIKE ?", "%#{text}%", "%#{text}%")) ;end;end
       .distinct ;end
@@ -55,6 +57,7 @@ class Memory < ActiveRecord::Base
 
    validates_presence_of :short_name, :events
    validates :base_year, format: { with: /\A-?\d+\z/ }
+   validates :order, format: { with: /\A[ёа-я0-9]+\z/ }
 
    before_create :set_slug
 
