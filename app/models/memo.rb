@@ -22,10 +22,11 @@ class Memo < ActiveRecord::Base
       calendary_ids = Slug.where( text: calendaries, sluggable_type: 'Calendary' ).pluck( :sluggable_id )
       where( calendary_id: calendary_ids ) ;end
 
-   scope :with_date, -> date_str do
+   scope :with_date, -> (date_str, julian = false) do
       date = Date.parse(date_str)
       new_date = date.strftime("%1d.%m")
-      relays = (1..7).map { |x| (date - x.days).strftime("%1d.%m") + "%#{date.wday}" }
+      wday = (date + (julian && 13.days || 0)).wday
+      relays = (1..7).map { |x| (date - x.days).strftime("%1d.%m") + "%#{wday}" }
       easter = WhenEaster::EasterCalendar.find_greek_easter_date(date.year)
       days = sprintf( "%+i", date.to_time.yday - easter.yday )
       where( date: relays.dup << new_date << days ) ;end

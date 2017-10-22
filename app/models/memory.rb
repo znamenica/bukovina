@@ -24,14 +24,15 @@ class Memory < ActiveRecord::Base
    has_many :photo_links, as: :info, inverse_of: :info, class_name: :IconLink, dependent: :destroy # ЧИНЬ во photos
    has_one :slug, as: :sluggable
 
+   scope :by_slug, -> slug { unscoped.joins( :slug ).where( slugs: { text: slug } ).first }
+
    default_scope { joins(:slug).order(base_year: :asc, short_name: :asc, id: :asc) }
    scope :by_short_name, -> name { where( short_name: name ) }
-   scope :by_slug, -> slug { joins( :slug ).where( slugs: { text: slug } ) }
    scope :in_calendaries, -> calendaries do
       joins( :memos ).merge( Memo.in_calendaries( calendaries )).distinct ;end
 
-   scope :with_date, -> date do
-      joins( :memos ).merge( Memo.with_date( date )).distinct ;end
+   scope :with_date, -> (date, julian = false) do
+      joins( :memos ).merge( Memo.with_date( date, julian )).distinct ;end
 
    scope :with_tokens, -> token_list do
       # TODO fix the correctness of the query
