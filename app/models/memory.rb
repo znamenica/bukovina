@@ -24,8 +24,6 @@ class Memory < ActiveRecord::Base
    has_many :photo_links, as: :info, inverse_of: :info, class_name: :IconLink, dependent: :destroy # ЧИНЬ во photos
    has_one :slug, as: :sluggable
 
-   scope :by_slug, -> slug { unscoped.joins( :slug ).where( slugs: { text: slug } ).first }
-
    default_scope { joins(:slug).order(base_year: :asc, short_name: :asc, id: :asc) }
    scope :by_short_name, -> name { where( short_name: name ) }
    scope :in_calendaries, -> calendaries do
@@ -61,6 +59,9 @@ class Memory < ActiveRecord::Base
    validates :order, format: { with: /\A[ёа-я0-9]+\z/ }
 
    before_create :set_slug
+
+   def self.by_slug slug
+      unscoped.joins( :slug ).where( slugs: { text: slug } ).first ;end
 
    def description_for language_code
       descriptions.where(language_code: language_code).first ;end

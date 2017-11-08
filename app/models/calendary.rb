@@ -4,8 +4,8 @@ class Calendary < ActiveRecord::Base
 
    belongs_to :place, optional: true
 
-   # has_many :descriptions, proc { where( type: nil ) }, as: :describable, dependent: :delete_all
-   has_many :descriptions, as: :describable, dependent: :delete_all
+   has_many :descriptions, proc { where( type: nil ) }, as: :describable, dependent: :delete_all
+   # has_many :descriptions, as: :describable, dependent: :delete_all
    has_many :names, as: :describable, dependent: :delete_all, class_name: :Appellation
    has_many :wikies, as: :info, dependent: :delete_all, class_name: :WikiLink
    has_many :links, as: :info, dependent: :delete_all, class_name: :BeingLink
@@ -13,7 +13,7 @@ class Calendary < ActiveRecord::Base
    has_one :slug, as: :sluggable
 
    scope :licit, -> { where( licit: true ) }
-   scope :by_slug, -> slug { joins( :slug ).where( slugs: { text: slug } ) }
+   # scope :by_slug, -> slug { joins( :slug ).where( slugs: { text: slug } ) }
    scope :named_as, -> name { joins( :names ).where( descriptions: { text: name } ) }
    scope :described_as, -> name { joins( :descriptions ).where( descriptions: { text: name } ) }
 
@@ -30,6 +30,10 @@ class Calendary < ActiveRecord::Base
    #   Language.alphabeth_list_for( l.language_code ) } }
    validates :slug, :names, presence: true # TODO add date after import
    validates :descriptions, :names, :wikies, :links, :place, associated: true
+
+   class << self
+      def by_slug slug
+         joins( :slug ).where( slugs: { text: slug } ).first ;end;end
 
    def description_for language_codes
       descriptions.where( language_code: language_codes ).first ;end

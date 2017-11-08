@@ -143,8 +143,6 @@ class Bukovina::Parsers::Calendary
                     уцс
                     укр
                     фип
-                    флпс
-                    флпс
                     хлуд
                     хрис
                     чсл
