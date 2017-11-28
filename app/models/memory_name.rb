@@ -6,7 +6,6 @@ class MemoryName < ActiveRecord::Base
       :схимное, :отчество, :отчество_принятое, :кумство, :благословенное,
       :покаянное, :отечья, :мужнина, :наречёная, :самоданная, :матерня,
       :прозвание ]
-   enum feasible: [ :non_feasible => false, :feasible => true ]
    enum mode: [ :ored, :prefix ]
 
    accepts_nested_attributes_for :name, reject_if: :all_blank
