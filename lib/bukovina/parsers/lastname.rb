@@ -202,9 +202,9 @@ class Bukovina::Parsers::LastName
       context[ :models ][ :names ] << name
       memory_name = { name: name }
       if context[ :mode ] == :ored
-         if context[ :models ][ :memory_names ].last[ :feasibly ]
-            memory_name[ :feasibly ] =
-            context[ :models ][ :memory_names ].last[ :feasibly ] ; end
+         if context[ :models ][ :memory_names ].last[ :feasible ]
+            memory_name[ :feasible ] =
+            context[ :models ][ :memory_names ].last[ :feasible ] ; end
          if context[ :models ][ :memory_names ].last[ :state ]
             memory_name[ :state ] =
             context[ :models ][ :memory_names ].last[ :state ] ; end ; end
@@ -236,7 +236,7 @@ class Bukovina::Parsers::LastName
 
    def apply_pref pref, context
       if pref
-         context[ :models ][ :memory_names ].last[ :feasibly ] = :feasible ; end ; end
+         context[ :models ][ :memory_names ].last[ :feasible ] = true ; end ; end
 
    def apply_state state, context
       context[ :models ][ :memory_names ].last[ :state ] =
