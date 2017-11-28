@@ -2,109 +2,25 @@ require 'rdoba/roman'
 
 module Bukovina
    module Tasks
-      DAYS = %w(нд пн вт ср чт пт сб)
-      DAYSR = DAYS.dup.reverse
-      DAYSN = DAYS.dup.rotate
-
       class << self
          def fix_base_year
             memories = Memory.all
             # memories = Memory.where(base_year: nil)
             memories.each do |memory|
-               types = %w(Resurrection Repose Writing Appearance Translation Sanctification)
+               memory.update!(base_year: memory.set_base_year) ;end
 
-               event = memory.events.to_a.sort_by { |x| (types.index(x.type) || 100) }.first
-
-               dates = event.happened_at.split(/[\/-]/)
-               year =
-               case dates.first
-               when /([IVX]+)$/
-                  ($1.rom - 1) * 100 + 50
-               when /\.\s*(\d+)$/
-                  $1
-               when /(?:\A|\s|\()(\d+)$/
-                  $1
-               when /(?:\A|\s|\(|\.)(\d+) до (?:нэ|РХ)/
-                  "-#{$1}"
-               when /(:|сент)/
-                  dates.last.split(".").last
-               when /давно/
-                  '-3760'
-               else
-                  binding.pry
-                  dates = event.happened_at.split(/[\/-]/)
-                  if /(?:\A|\s|\(|\.)(\d+) до (?:нэ|РХ)/ =~ dates.first
-                     "-#{$1}"
-                  else
-                     nil
-                  end
-               end
-               memory.update!(base_year: year)
-            end
-
-            Kernel.puts "Fixed #{memories.size} of #{Memory.count}"
-         end
+            Kernel.puts "Fixed #{memories.size} of #{Memory.count}" ;end
 
          def fix_memo_date
             memoes = Memo.where("date !~ ?", "^(\\d+\\.\\d+|[-+]\\d+|0)")
             memoes.each do |m|
                # binding.pry
-               newdate =
-               case m.date
-               when /пасха/
-                  "+0"
-               when /^дн\.(\d+)\.по пасхе/ #+24
-                  "+#{$1}"
-               when /^дн\.(\d+)\.до пасхи/ #-24
-                  "-#{$1}"
-               when /^(#{DAYS.join("|")})\.(\d+)\.по пасхе/ #+70
-                  daynum = DAYSN.index($1) + 1
-                  days = ($2.to_i - 1) * 7 + daynum
-                  "+#{days}"
-               when /^(#{DAYS.join("|")})\.по пасхе/    #+7
-                  daynum = DAYSN.index($1) + 1
-                  "+#{daynum}"
-               when /^(#{DAYS.join("|")})\.(\d+)\.до пасхи/  #-14
-                  daynum = DAYSR.index($1) + 1
-                  days = ($2.to_i - 1) * 7 + daynum
-                  "-#{days}"
-               when /^(#{DAYS.join("|")})\.до пасхи/    #-7
-                  daynum = DAYSR.index($1) + 1
-                  "-#{daynum}"
-               when /^дн\.(\d+)\.по (\d+\.\d+)$/   #29.06%7
-                  date = Time.parse("#{$2}.1970") + $1.to_i
-                  date.strftime("%1d.%m")
-               when /^(#{DAYS.join("|")})\.близ (\d+\.\d+)$/   #29.06%7
-                  daynum = DAYS.index($1)
-                  date = Time.parse("#{$2}.1970") - 4.days
-                  "#{date.strftime("%1d.%m")}%#{daynum}"
-               when /^(#{DAYS.join("|")})\.по (\d+\.\d+)$/   #29.06%7
-                  daynum = DAYS.index($1)
-                  date = Time.parse("#{$2}.1970")
-                  "#{date.strftime("%1d.%m")}%#{daynum}"
-               when /^(#{DAYS.join("|")})\.до (\d+\.\d+)$/  #21.06%7
-                  daynum = DAYS.index($1)
-                  date = Time.parse("#{$2}.1970") - 8.days
-                  "#{date.strftime("%1d.%m")}%#{daynum}"
-               when /^(#{DAYS.join("|")})\.(\d+)\.по (\d+\.\d+)$/   #29.06%7
-                  daynum = DAYS.index($1)
-                  date = Time.parse("#{$3}.1970") + ($2.to_i - 1) * 7
-                  "#{date.strftime("%1d.%m")}%#{daynum}"
-               when /^(#{DAYS.join("|")})\.(\d+)\.до (\d+\.\d+)$/  #21.06%7
-                  daynum = DAYS.index($1)
-                  date = Time.parse("#{$3}.1970") - 8.days - ($2.to_i - 1) * 7
-                  "#{date.strftime("%1d.%m")}%#{daynum}"
-               end
                # Kernel.puts "#{m.date} => #{newdate}" if ! newdate
-               m.update(date: newdate)
-            end
-         end
-
+               m.update(date: m.fix_date) ;end;end
 
          def add_errors f, errors
             @errors ||= {}
             @errors[ f ] ||= [ errors ].flatten ;end
-
 
          def errors
             @errors ||= {} ;end

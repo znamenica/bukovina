@@ -25,6 +25,8 @@ class Memory < ActiveRecord::Base
    has_one :slug, as: :sluggable
 
    default_scope { joins(:slug).order(base_year: :asc, short_name: :asc, id: :asc) }
+   scope :icons, -> { where( order: :обр ) }
+   scope :with_token, -> text { where( "short_name ~* ?", "\\m#{text}.*" ) }
    scope :by_short_name, -> name { where( short_name: name ) }
    scope :in_calendaries, -> calendaries do
       joins( :memos ).merge( Memo.in_calendaries( calendaries )).distinct ;end
@@ -59,6 +61,36 @@ class Memory < ActiveRecord::Base
    validates :order, format: { with: /\A[ёа-я0-9]+\z/ }
 
    before_create :set_slug
+   before_validation :set_base_year, on: :create
+
+   def set_base_year
+      types = %w(Resurrection Repose Writing Appearance Translation Sanctification)
+
+      event = self.events.to_a.sort_by { |x| (types.index(x.type) || 100) }.first
+
+      dates = event.happened_at.split(/[\/-]/)
+      self.base_year ||=
+      case dates.first
+      when /([IVX]+)$/
+         ($1.rom - 1) * 100 + 50
+      when /\.\s*(\d+)$/
+         $1
+      when /(?:\A|\s|\()(\d+)$/
+         $1
+      when /(?:\A|\s|\(|\.)(\d+) до (?:нэ|РХ)/
+         "-#{$1}"
+      when /(:|сент)/
+         dates.last.split(".").last
+      when /давно/
+         '-3760'
+      else
+         dates = event.happened_at.split(/[\/-]/)
+         if /(?:\A|\s|\(|\.)(\d+) до (?:нэ|РХ)/ =~ dates.first
+            "-#{$1}"
+         else
+            '0' ;end;end
+
+   self.base_year ;end
 
    def self.by_slug slug
       unscoped.joins( :slug ).where( slugs: { text: slug } ).first ;end

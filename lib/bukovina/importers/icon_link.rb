@@ -9,4 +9,4 @@ class Bukovina::Importers::IconLink < Bukovina::Importers::Link
          create_attrs = attrs.delete( :description )
 
          IconLink.where( attrs ).first_or_create( attrs.merge(
-            { description_attributes: create_attrs || {} } ) ) ;end ;end ;end
+            { descriptions_attributes: [ create_attrs || {} ] } ) ) ;end ;end ;end

@@ -82,9 +82,9 @@ class Bukovina::Parsers::IconLink
             res = { url: url }
             if desc
               language_codes = Language.language_list_for(alphabeth_code)
-              res[:description] = { alphabeth_code: alphabeth_code,
+              res[:descriptions] = [ { alphabeth_code: alphabeth_code,
                                     language_code: language_codes.first.to_sym,
-                                    text: desc } ;end
+                                    text: desc } ] ;end
             res ;end;end;end
 
 

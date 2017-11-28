@@ -7,4 +7,6 @@ class Name < ActiveRecord::Base
 
    has_alphabeth on: { text: [:nosyntax, allow: " ‑" ] }
 
+   scope :with_token, -> text { where( "text ~* ?", "\\m#{text}.*" ) }
+
    validates :type, :text, :language_code, presence: true ;end
