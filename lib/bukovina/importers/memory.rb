@@ -49,7 +49,7 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
 
       init_slug(o) if ! o.slug || ! o.slug.persisted?
 
-      binding.pry if not o.valid? #or not o.persisted?
+      # binding.pry if not o.valid? #or not o.persisted?
       o ;end
 
    def import short_name
@@ -67,9 +67,15 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
             o.save!
             binding.pry if ! o.slug&.persisted?
 
+         rescue ActiveRecord::RecordInvalid
+            case $!.message
+            when /is inaccessible/
+               retry
+            else
+               raise $! ;end
          rescue ActiveRecord::RecordNotUnique
             case $!.message
-            when /: names\.|index_names_on_text_and_type_and_alphabeth_code/
+            when /: names\.|index_names_on_text_and_alphabeth_code/
                o.slug.destroy
                Kernel.puts "retry dup name"
                retry

@@ -4,27 +4,22 @@ class Bukovina::Importers::Name
       Name.where( attrs ).first || init( attrs ) ; end
 
    def init attrs
-      r = [ LastName, Patronymic ].reduce( nil ) do |res, model|
-         if ! res
-            r = model.new( attrs )
-            r.valid? && r || nil
-         else
-            res ; end ; end
-      r || FirstName.new( attrs ) ; end
+      Name.new( attrs ) ;end
 
    def import
       @attrs.each do |attrs|
          # find name
-         similar_to = attrs.delete( :similar_to )
-         if similar_to
-            s = similar_to.deep_dup
-            s.delete( :similar_to )
-            similar_to = Name.where( s ).first ; end
+         bond_to = attrs.delete( :bond_to )
+         if bond_to
+            s = bond_to.deep_dup
+            s.delete( :bond_to )
+            bond_to = Name.where( s ).first ; end
 
          r = find_or_init( attrs )
-         if similar_to
-            r.similar_to = similar_to ; end
-         r.save! ; end ; end
+         if bond_to
+            #binding.pry
+            r.bond_to = bond_to ; end
+         r.save! ;end;end
 
    private
 

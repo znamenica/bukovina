@@ -3,10 +3,11 @@
    @res = @parser.parse( YAML.load( string ) ) ; end
 
 То(/^обработанные данные имени будут выглядеть как:$/) do |string|
-   # binding.pry
+   binding.pry if ENV['DEBUG']
    expect( @res[ :names ].to_yaml.strip ).to be_eql( string.to_s ) ; end
 
 То(/^обработанные данные памятного имени будут выглядеть как:$/) do |string|
+   binding.pry if ENV['DEBUG']
    expect( @res[ :memory_names ].to_yaml.strip ).to be_eql( string.to_s ) ; end
 
 То(/^обработанных данных не будет$/) do

@@ -25,7 +25,7 @@ group :development do
    gem 'faker'
    gem 'ffaker'
    gem 'database_cleaner'
-   gem 'sqlite3', '~> 1.3.11'
+   gem 'pg'
    # To fix CVE-2015-7499 - HEAP-BASED BUFFER OVERFLOW VULNERABILITY IN LIBXML2 and others in LIBXML2
    gem 'nokogiri', '~> 1.6.7.2' ; end
 

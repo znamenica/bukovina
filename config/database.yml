@@ -1,7 +1,16 @@
 ---
 cucumber:
-   adapter: sqlite3
-   database: db/cucumber.sqlite3
+   adapter: postgresql
+   encoding: unicode
+   database: dneslov_cucumber
+   pool: 5
+   username: dneslov
+   password: 
+
 development:
-   adapter: sqlite3
-   database: db/development.sqlite3
+   adapter: postgresql
+   encoding: unicode
+   database: dneslov_development
+   pool: 5
+   username: dneslov
+   password: 

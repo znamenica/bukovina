@@ -49,5 +49,5 @@
          [ attr, value ] ;end ;end.concat( [ add_attrs ] ).compact.to_h
 
    relation = model_of( kind ).joins( joins ).where( attrs )
-   # binding.pry
+   binding.pry if ENV['DEBUG']
    expect( relation.size ).to be_eql( 1 ) ;end

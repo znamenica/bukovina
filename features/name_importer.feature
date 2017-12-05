@@ -53,7 +53,8 @@
          - :alphabeth_code: :ру
            :language_code: :ру
            :text: Феофаний
-           :similar_to: *1
+           :bind_kind: подобное
+           :bond_to: *1
          - :alphabeth_code: :ру
            :language_code: :ру
            :text: Иван
@@ -64,7 +65,7 @@
          | :text: Иувеналий   | :alphabeth_code: :ру  | :language_code: :ру   |                       |
          | :text: Алексий     | :alphabeth_code: :ру  | :language_code: :ру   |                       |
          | :text: Феофан      | :alphabeth_code: :ру  | :language_code: :ру   |                       |
-         | :text: Феофаний    | :alphabeth_code: :ру  | :language_code: :ру   | :similar_to: Феофан   |
+         | :text: Феофаний    | :alphabeth_code: :ру  | :language_code: :ру   | :bond_to: Феофан   |
          | :text: Иван        | :alphabeth_code: :ру  | :language_code: :ру   |                       |
 
 
@@ -84,58 +85,67 @@
            :alphabeth_code: :ру
            :language_code: :ру
            :text: Валерий
-         - :alphabeth_code: :ру
-           :language_code: :ру
-           :text: Валера
-           :similar_to: *1
-         - &4
+         - &5
            :alphabeth_code: :ру
            :language_code: :ру
            :text: Валерик
-           :similar_to: *1
+           :bind_kind: подобное
+           :bond_to: *1
          - :alphabeth_code: :ру
            :language_code: :ру
+           :text: Валера
+           :bind_kind: подобное
+           :bond_to: *1
+         - :alphabeth_code: :ру
+           :language_code: :ру
+           :bind_kind: прилаженое
            :text: Зема
          - :alphabeth_code: :гр
            :language_code: :гр
            :text: Αλέξιος
-           :similar_to: *2
-         - &5
+           :bind_kind: прилаженое
+           :bond_to: *2
+         - &4
            :alphabeth_code: :ср
            :language_code: :сх
            :text: Сергије
          - :alphabeth_code: :ан
            :language_code: :ан
            :text: Valentin
-           :similar_to: *3
+           :bind_kind: прилаженое
+           :bond_to: *3
          - :alphabeth_code: :ан
            :language_code: :ан
            :text: Sergius
-           :similar_to: *5
+           :bind_kind: прилаженое
+           :bond_to: *4
          - :alphabeth_code: :ан
            :language_code: :ан
            :text: Valery
-           :similar_to: *1
+           :bind_kind: прилаженое
+           :bond_to: *1
          - :alphabeth_code: :ан
            :language_code: :ан
            :text: Valerick
-           :similar_to: *4
+           :bind_kind: прилаженое
+           :bond_to: *5
          """
+
 
       Если импортируем их
       То будут созданы модели имени с аттрибутами:
          | :text: Валентин | :alphabeth_code: :ру  | :language_code: :ру   |                       |
          | :text: Алексей  | :alphabeth_code: :ру  | :language_code: :ру   |                       |
          | :text: Валерий  | :alphabeth_code: :ру  | :language_code: :ру   |                       |
-         | :text: Валера   | :alphabeth_code: :ру  | :language_code: :ру   | :similar_to: Валерий  |
-         | :text: Валерик  | :alphabeth_code: :ру  | :language_code: :ру   | :similar_to: Валерий  |
+         | :text: Валера   | :alphabeth_code: :ру  | :language_code: :ру   | :bond_to: Валерий  |
+         | :text: Валерик  | :alphabeth_code: :ру  | :language_code: :ру   | :bond_to: Валерий  |
          | :text: Зема     | :alphabeth_code: :ру  | :language_code: :ру   |                       |
-         | :text: Αλέξιος  | :alphabeth_code: :гр  | :language_code: :гр   | :similar_to: Алексей  |
+         | :text: Αλέξιος  | :alphabeth_code: :гр  | :language_code: :гр   | :bond_to: Алексей  |
          | :text: Сергије  | :alphabeth_code: :ср  | :language_code: :сх   |                       |
-         | :text: Valentin | :alphabeth_code: :ан  | :language_code: :ан   | :similar_to: Валентин |
-         | :text: Sergius  | :alphabeth_code: :ан  | :language_code: :ан   | :similar_to: Сергије  |
-         | :text: Valery   | :alphabeth_code: :ан  | :language_code: :ан   | :similar_to: Валерий  |
-         | :text: Valerick | :alphabeth_code: :ан  | :language_code: :ан   | :similar_to: Валерик  |
+         | :text: Valentin | :alphabeth_code: :ан  | :language_code: :ан   | :bond_to: Валентин |
+         | :text: Sergius  | :alphabeth_code: :ан  | :language_code: :ан   | :bond_to: Сергије  |
+         | :text: Valery   | :alphabeth_code: :ан  | :language_code: :ан   | :bond_to: Валерий  |
+         | :text: Valerick | :alphabeth_code: :ан  | :language_code: :ан   | :bond_to: Валерик  |
 
 
    Сценарий: Одинарное имя с пробелом

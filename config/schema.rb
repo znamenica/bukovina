@@ -10,9 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171128133800) do
+ActiveRecord::Schema.define(version: 20171129142100) do
 
-  create_table "calendaries", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "calendaries", id: :serial, force: :cascade do |t|
     t.string "date"
     t.string "language_code"
     t.string "alphabeth_code"
@@ -24,13 +27,13 @@ ActiveRecord::Schema.define(version: 20171128133800) do
     t.boolean "licit", default: false
   end
 
-  create_table "canto_memories", force: :cascade do |t|
+  create_table "canto_memories", id: :serial, force: :cascade do |t|
     t.integer "canto_id", null: false
     t.integer "memory_id", null: false
     t.index ["canto_id", "memory_id"], name: "canto_memories_index", unique: true
   end
 
-  create_table "cantoes", force: :cascade do |t|
+  create_table "cantoes", id: :serial, force: :cascade do |t|
     t.text "text"
     t.string "prosomeion_title"
     t.string "language_code", null: false
@@ -46,7 +49,7 @@ ActiveRecord::Schema.define(version: 20171128133800) do
     t.index ["title", "language_code"], name: "index_cantoes_on_title_and_language_code"
   end
 
-  create_table "descriptions", force: :cascade do |t|
+  create_table "descriptions", id: :serial, force: :cascade do |t|
     t.string "text", null: false
     t.string "language_code", null: false
     t.integer "describable_id", null: false
@@ -58,14 +61,14 @@ ActiveRecord::Schema.define(version: 20171128133800) do
     t.index ["describable_id", "describable_type", "alphabeth_code", "text"], name: "describable_alphabeth_index", unique: true
   end
 
-  create_table "event_memoes", force: :cascade do |t|
+  create_table "event_memoes", id: :serial, force: :cascade do |t|
     t.string "type_class"
     t.string "type_number"
     t.integer "memo_id", null: false
     t.integer "event_id"
   end
 
-  create_table "events", force: :cascade do |t|
+  create_table "events", id: :serial, force: :cascade do |t|
     t.string "happened_at"
     t.integer "memory_id", null: false
     t.string "type", null: false
@@ -80,21 +83,20 @@ ActiveRecord::Schema.define(version: 20171128133800) do
     t.string "order"
     t.string "council"
     t.index ["type", "memory_id", "item_id"], name: "index_events_on_item_id_and_type_and_memory_id"
-    t.index ["type", "memory_id"], name: "index_events_on_subject_and_type_and_memory_id"
   end
 
-  create_table "item_types", force: :cascade do |t|
+  create_table "item_types", id: :serial, force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "items", force: :cascade do |t|
+  create_table "items", id: :serial, force: :cascade do |t|
     t.integer "item_type_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "links", force: :cascade do |t|
+  create_table "links", id: :serial, force: :cascade do |t|
     t.string "url", null: false
     t.string "language_code"
     t.integer "info_id", null: false
@@ -105,7 +107,7 @@ ActiveRecord::Schema.define(version: 20171128133800) do
     t.string "info_type", null: false
   end
 
-  create_table "memoes", force: :cascade do |t|
+  create_table "memoes", id: :serial, force: :cascade do |t|
     t.string "happened_at"
     t.string "date"
     t.integer "before"
@@ -118,7 +120,7 @@ ActiveRecord::Schema.define(version: 20171128133800) do
     t.index ["memory_id", "calendary_id", "date"], name: "index_memoes_on_memory_calendary_and_date", unique: true
   end
 
-  create_table "memories", force: :cascade do |t|
+  create_table "memories", id: :serial, force: :cascade do |t|
     t.string "short_name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -131,7 +133,7 @@ ActiveRecord::Schema.define(version: 20171128133800) do
     t.index ["short_name"], name: "index_memories_on_short_name", unique: true
   end
 
-  create_table "memory_names", force: :cascade do |t|
+  create_table "memory_names", id: :serial, force: :cascade do |t|
     t.integer "memory_id", null: false
     t.integer "name_id", null: false
     t.integer "state"
@@ -142,7 +144,7 @@ ActiveRecord::Schema.define(version: 20171128133800) do
     t.index ["memory_id", "name_id", "state"], name: "index_memory_names_on_memory_id_and_name_id_and_state", unique: true
   end
 
-  create_table "mentions", force: :cascade do |t|
+  create_table "mentions", id: :serial, force: :cascade do |t|
     t.integer "calendary_id", null: false
     t.integer "event_id", null: false
     t.string "year_date", null: false
@@ -152,29 +154,32 @@ ActiveRecord::Schema.define(version: 20171128133800) do
     t.index ["calendary_id", "event_id", "year_date"], name: "dated_calendary_event_index", unique: true
   end
 
-  create_table "names", force: :cascade do |t|
+  create_table "names", id: :serial, force: :cascade do |t|
     t.string "text", null: false
-    t.string "type", default: "", null: false
     t.string "language_code", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "similar_to_id"
+    t.integer "bond_to_id"
     t.string "alphabeth_code", null: false
-    t.index ["text", "type", "alphabeth_code"], name: "index_names_on_text_and_type_and_alphabeth_code", unique: true
+    t.integer "root_id"
+    t.string "bind_kind", null: false
+    t.index ["bond_to_id", "bind_kind"], name: "index_names_on_bond_to_id_and_bind_kind"
+    t.index ["root_id"], name: "index_names_on_root_id"
+    t.index ["text", "alphabeth_code"], name: "index_names_on_text_and_alphabeth_code", unique: true
   end
 
-  create_table "places", force: :cascade do |t|
+  create_table "places", id: :serial, force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "service_cantoes", force: :cascade do |t|
+  create_table "service_cantoes", id: :serial, force: :cascade do |t|
     t.integer "service_id", null: false
     t.integer "canto_id", null: false
     t.index ["service_id", "canto_id"], name: "index_service_cantoes_on_service_id_and_canto_id", unique: true
   end
 
-  create_table "services", force: :cascade do |t|
+  create_table "services", id: :serial, force: :cascade do |t|
     t.string "name", null: false
     t.string "language_code", null: false
     t.integer "info_id", null: false
@@ -195,7 +200,7 @@ ActiveRecord::Schema.define(version: 20171128133800) do
     t.index ["name", "alphabeth_code"], name: "index_services_on_name_and_alphabeth_code", unique: true
   end
 
-  create_table "slugs", force: :cascade do |t|
+  create_table "slugs", id: :serial, force: :cascade do |t|
     t.string "text", null: false
     t.string "sluggable_type"
     t.integer "sluggable_id"

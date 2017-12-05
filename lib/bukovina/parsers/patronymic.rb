@@ -39,7 +39,7 @@ class Bukovina::Parsers::Patronymic
             !x.is_a?( Parsers::BukovinaInvalidEnumeratorError ) ; end
 
          mn = names[0][ :memory_names ].select do |x|
-            !x[ :name ].has_key?( :similar_to )
+            !x[ :name ].has_key?( :bond_to )
             end.map.with_index do |x, i|
             x[ :name ].has_key?( :text ) && x ||
                (sel = names[ 1..-1 ].select do |y|
@@ -48,7 +48,7 @@ class Bukovina::Parsers::Patronymic
 
          invalid_index = names[1..-1].any? do |ns|
             size = ns[ :memory_names ].reduce(0) do |s, x|
-               x[ :name ].has_key?( :similar_to ) && s || s + 1 ; end
+               x[ :name ].has_key?( :bond_to ) && s || s + 1 ; end
             size != mn.size ; end
 
          if invalid_index
@@ -62,9 +62,12 @@ class Bukovina::Parsers::Patronymic
                      x.has_key?( :text ) ; end
 
                if ! has_name.empty?
-                  n[ :similar_to ] = has_name.first
-               elsif mn[ i ] && mn[ i ][ :names ] != n
-                  n[ :similar_to ] = mn[ i ][ :names ] ; end
+                  n[ :bind_kind ] = 'переложеное'
+                  n[ :bond_to ] = has_name.first
+               elsif mn[ i ] && mn[ i ][ :names ] && mn[ i ][ :names ] != n
+                  #binding.pry
+                  n[ :bind_kind ] = 'прилаженое'
+                  n[ :bond_to ] = mn[ i ][ :names ] ; end
                names[ 0 ][ :names ] << n ; end
 
             ns[ :memory_names ].each.with_index do |mn, i|
@@ -76,13 +79,13 @@ class Bukovina::Parsers::Patronymic
 
          names[ 0 ][ :names ].delete_if { |n| !n[ :text ] }
          names[ 0 ][ :memory_names ].delete_if do |n|
-            n[ :name ].has_key?( :similar_to ) ; end
+            n[ :name ].has_key?( :bond_to ) ; end
          names[ 0 ]
 
       when String
          names = parse_line( name )
          names[ :names ]&.delete_if { |n| !n[ :text ] }
-         names[ :memory_names ].delete_if { |n| n[ :name ].has_key?( :similar_to ) }
+         names[ :memory_names ].delete_if { |n| n[ :name ].has_key?( :bond_to ) }
          names
 
       when NilClass
@@ -113,7 +116,6 @@ class Bukovina::Parsers::Patronymic
       language_codes = Language.language_list_for(alphabeth_code)
 
       name = {
-         type: 'Patronymic',
          alphabeth_code: alphabeth_code,
          language_code: language_codes.first.to_sym }
       context = {
@@ -154,15 +156,15 @@ class Bukovina::Parsers::Patronymic
             context[ :models ][ :memory_names ][ -2 ][ :mode ] = :ored
          when :alias
             prev = context[ :models ][ :names ][ 0..-2 ].select do |n|
-               ! n.has_key?( :similar_to ) ; end.last
-            context[ :models ][ :names ].last[ :similar_to ] = prev ; end ; end
+               ! n.has_key?( :bond_to ) ; end.last
+            context[ :models ][ :names ].last[ :bind_kind ] = 'подобное'
+            context[ :models ][ :names ].last[ :bond_to ] = prev ; end ; end
 
    rescue Parsers::BukovinaError => e
       @errors << e ; end
 
    def new_record context
       name = {
-         type: 'Patronymic',
          alphabeth_code: context[ :alphabeth_code ],
          language_code: context[ :language_code ] }
       context[ :models ][ :names ] << name

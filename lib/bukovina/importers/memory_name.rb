@@ -8,7 +8,7 @@ class Bukovina::Importers::MemoryName
       @attrs.each do |attrs|
          # find name
          name_attrs = attrs.delete( :name )
-         name_attrs.delete( :similar_to )
+         name_attrs.delete( :bond_to )
          attrs[ :name ] = 
          begin
             Name.where( name_attrs ).first || raise
