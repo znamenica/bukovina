@@ -14,6 +14,8 @@
          :event:
          - :happened_at: 4.05.1871
            :type: Nativity
+         - :happened_at: 4.05.1871
+           :type: Veneration
          """
 
 
@@ -78,6 +80,8 @@
                  :language_code: :ру
                  :text: глава
            :type: Translation
+         - :happened_at: 10.10.1810
+           :type: Veneration
          """
 
 
@@ -102,6 +106,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -128,6 +134,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Мария К
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -154,6 +162,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -180,6 +190,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -206,6 +218,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -232,6 +246,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -258,6 +274,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -284,6 +302,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -310,6 +330,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -334,6 +356,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -358,6 +382,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -406,8 +432,8 @@
              :url: http://www.saint.gr/3213/saint.aspx
            :icon_links:
            - :url: http://drevo-info.ru/images/002/007284.jpg
-             :description:
-               :alphabeth_code: :ру
+             :descriptions:
+             - :alphabeth_code: :ру
                :language_code: :ру
                :text: описание иконы
            :place:
@@ -415,6 +441,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Иерусалим
+         - :happened_at: ок.17 до нэ
+           :type: Veneration
          """
 
 
@@ -430,6 +458,8 @@
          :event:
          - :happened_at: вид.1010
            :type: Conception
+         - :happened_at: вид.1010
+           :type: Veneration
          """
 
    Сценарий: Событие знамения
@@ -451,6 +481,8 @@
              - :alphabeth_code: :ан
                :language_code: :ан
                :text: Red Square
+         - :happened_at: 1010-1020
+           :type: Veneration
          """
 
 
@@ -475,6 +507,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -501,6 +535,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -527,6 +563,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -553,6 +591,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -579,6 +619,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -605,6 +647,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -631,6 +675,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -657,6 +703,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -683,6 +731,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -709,6 +759,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -735,6 +787,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -761,6 +815,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -787,6 +843,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -813,6 +871,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -839,6 +899,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -865,6 +927,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -917,6 +981,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -943,6 +1009,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -969,6 +1037,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -995,6 +1065,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1021,6 +1093,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1047,6 +1121,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1073,6 +1149,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1099,6 +1177,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1125,6 +1205,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1151,6 +1233,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1177,6 +1261,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1203,6 +1289,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
    Сценарий: Событие рождества или рождения
@@ -1228,6 +1316,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
    Сценарий: Событие пострига в рясу
@@ -1253,6 +1343,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1279,6 +1371,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
    Сценарий: Событие рукоположения во священство
@@ -1304,6 +1398,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1330,6 +1426,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1356,6 +1454,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1380,6 +1480,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
    Сценарий: Событие сретения кем-то кого-то или святыни кем-то, может быть парным сретением
@@ -1405,6 +1507,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1429,6 +1533,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1453,6 +1559,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1479,6 +1587,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1503,6 +1613,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1527,6 +1639,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1553,6 +1667,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1577,6 +1693,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1601,6 +1719,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1627,6 +1747,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1651,6 +1773,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Византия
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1675,6 +1799,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1701,6 +1827,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1725,6 +1853,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1749,6 +1879,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1773,6 +1905,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1797,6 +1931,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1823,6 +1959,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1847,6 +1985,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1871,6 +2011,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1895,6 +2037,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1919,6 +2063,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1943,6 +2089,8 @@
              - :alphabeth_code: :ру
                :language_code: :ру
                :text: Красная площадь
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1969,6 +2117,8 @@
                :language_code: :ру
                :text: Красная площадь
            :person_name: Тарасий
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -1987,6 +2137,8 @@
            - 10.10.1010
            - '09.09.1020'
            :type: SoldierMemory
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """
 
 
@@ -2005,4 +2157,6 @@
            - 10.10.1010
            - '09.09.1020'
            :type: Sobriety
+         - :happened_at: 10.10.1010
+           :type: Veneration
          """

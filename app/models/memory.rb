@@ -19,12 +19,12 @@ class Memory < ActiveRecord::Base
    has_many :names, through: :memory_names
    has_many :paterics, as: :info, dependent: :destroy, class_name: :PatericLink
    has_many :events, dependent: :destroy
-   has_many :memos, dependent: :destroy
+   has_many :memos, through: :events
    has_many :calendaries, -> { distinct }, through: :memos
    has_many :photo_links, as: :info, inverse_of: :info, class_name: :IconLink, dependent: :destroy # ЧИНЬ во photos
    has_one :slug, as: :sluggable
 
-   default_scope { joins(:slug).order(base_year: :asc, short_name: :asc, id: :asc) }
+   default_scope { joins( :slug ).order( base_year: :asc, short_name: :asc, id: :asc ) }
    scope :icons, -> { where( order: :обр ) }
    scope :with_token, -> text { where( "short_name ~* ?", "\\m#{text}.*" ) }
    scope :by_short_name, -> name { where( short_name: name ) }

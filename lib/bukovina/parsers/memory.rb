@@ -103,8 +103,6 @@ class Bukovina::Parsers::Memory
    def parse_hash memory
       result = {}
 
-      result[:memory] = { short_name: "^#{target}" } if target
-
       memory.each do |key, value|
          case SUBPARSERS[ key ]
          when Symbol
@@ -307,7 +305,7 @@ class Bukovina::Parsers::Memory
       case value
       when Hash, Array
          parser = Bukovina::Parsers::Memo.new
-         if res = parser.parse(value)
+         if res = parser.parse(value, target: target)
             result[ :memos ] ||= []
             result[ :memos ].concat(res.delete(:memos))
          else

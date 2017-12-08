@@ -28,7 +28,9 @@
 
 Допустим(/^задействуем память "([^"]*)"$/) do |short_name|
    @short_name = short_name
-   Dir.chdir( File.join( @workdir, short_name ) ) ; end
+   begin
+      Dir.chdir( File.join( @workdir, short_name ) )
+   rescue Errno::ENOENT ;end;end
 
 То(/^обработанные данные службы будут выглядеть как:$/) do |string|
    # binding.pry

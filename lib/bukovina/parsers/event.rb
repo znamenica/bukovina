@@ -186,8 +186,9 @@ class Bukovina::Parsers::Event
       case events
       when Hash
          event = parse_hash( events )
+         events = post_hash_proc( event )
 
-         { event: [ event ] }
+         { event: events }
       when Array
          if events.blank?
             @errors << Parsers::BukovinaInvalidValueError.new( "Value of event " +
@@ -196,20 +197,33 @@ class Bukovina::Parsers::Event
          event_list = events.map do |event|
             parse_hash( event )
          end.compact
+         events = post_hash_proc( event_list )
 
-         { event: event_list }
+         { event: events }
       when NilClass
          @errors << Parsers::BukovinaInvalidValueError.new( "Event list" +
             "can't be blank" )
       else
          raise Parsers::BukovinaInvalidClass, "Invalid class #{name.class} " +
-            "for Name line '#{name}'" ; end
+            "for Event line '#{name}'" ; end
 
       @errors.empty? && res || nil
 
    rescue Parsers::BukovinaError => e
       @errors << e
       nil ; end
+
+   def post_hash_proc in_event
+      events = [ in_event ].flatten
+         
+      if !events.find { |e| e[:type] == 'Veneration' }
+         happened_at = events.last[:happened_at]
+         events << {
+            happened_at: happened_at.is_a?(Array) && happened_at.first || happened_at,
+            type: 'Veneration',
+         } ;end
+
+      events ;end
 
    protected
 
@@ -422,7 +436,7 @@ class Bukovina::Parsers::Event
    end
 
    def type value, result
-      /^(#{EVENTS.keys.join("|")})(:?\.(\d+))??$/ =~ value
+      /^(#{EVENTS.keys.join("|")})(?:\.(\d+))??$/ =~ value
       event = $1
       number= $2
 

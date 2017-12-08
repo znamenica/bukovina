@@ -5,6 +5,7 @@
 class Event < ActiveRecord::Base
    extend Informatible
 
+   has_many :memos, dependent: :delete_all
    has_one :coordinate, as: :info, inverse_of: :info, class_name: :CoordLink
 
    belongs_to :memory

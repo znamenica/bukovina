@@ -139,7 +139,7 @@ module Rails
          data = record[ short_name ]
 
          parser = Bukovina::Parsers::Memory.new
-         attrs = parser.parse(data)
+         attrs = parser.parse(data, target: short_name)
          if parser.errors.any?
             @errors[f] = parser.errors
          else

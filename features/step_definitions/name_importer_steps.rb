@@ -2,9 +2,6 @@
    attrs = YAML.load( string )
    @importer = Bukovina::Importers::Name.new( attrs ) ; end
 
-Если(/^импортируем их$/) do
-   @importer.import ; end
-
 То(/^будут созданы модели имени с аттрибутами:$/) do |table|
    attrs_list = []
    table.each_cells_row do |row|

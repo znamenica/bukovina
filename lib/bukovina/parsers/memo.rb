@@ -34,17 +34,19 @@ class Bukovina::Parsers::Memo
       res =
       case memos
       when Hash
-         memo = parse_hash( memos )
+         parsed = parse_hash( memos )
+         memos = post_hash_proc( parsed )
 
-         { memos: [ memo ] }
+         { memos: memos }
       when Array
          if memos.blank?
             @errors << Parsers::BukovinaInvalidValueError.new( "Value of memo " +
                "array is empty" ) ;end
 
          list = memos.map do |memo|
-            parse_hash( memo )
-         end.compact
+            parsed = parse_hash( memo )
+            post_hash_proc( parsed )
+         end.flatten.compact
 
          { memos: list }
       when NilClass
@@ -52,18 +54,7 @@ class Bukovina::Parsers::Memo
             "can't be blank" )
       else
          raise Parsers::BukovinaInvalidClass, "Invalid class #{name.class} " +
-            "for Name line '#{name}'" ; end
-
-      # expand calendary string
-      res[:memos ] = res[ :memos ].map do |memo|
-         if memo[ :calendary_string ].to_s =~ /,/
-            memo[ :calendary_string ].split(/,\s*/).map do |cal|
-               new_memo = memo.deep_dup
-               new_memo[ :calendary_string ] = cal
-               new_memo ;end
-         else
-            memo ;end;end
-         .flatten
+            "for Memo line '#{name}'" ; end
 
       @errors.empty? && res || nil
 
@@ -77,10 +68,93 @@ class Bukovina::Parsers::Memo
       @events ||= (EVENTS.keys | %w(само)).join('|')
    end
 
+   def post_hash_proc in_memo
+      result =
+      [ in_memo ].flatten.map do |memo|
+         be_i = memo.delete(:before).to_i
+         in_i = memo.delete(:inevening).to_i
+         af_i = memo.delete(:after).to_i
+
+         be = (-be_i - in_i...-in_i).map do |i|
+            new_memo = memo.deep_dup
+            new_memo[:year_date] = sub_date(memo[:year_date], i)
+            new_memo[:bond_to_marker] = memo[:year_date]
+            new_memo[:bind_kind] = 'предпразднество'
+            new_memo
+         end
+         ie = (-in_i...0).map do |i|
+            new_memo = memo.deep_dup
+            new_memo[:year_date] = sub_date(memo[:year_date], i)
+            new_memo[:bond_to_marker] = memo[:year_date]
+            new_memo[:bind_kind] = 'навечерие'
+            new_memo
+         end
+         af = (1...af_i + 1).map do |i|
+            new_memo = memo.deep_dup
+            new_memo[:year_date] = sub_date(memo[:year_date], i)
+            new_memo[:bond_to_marker] = memo[:year_date]
+            new_memo[:bind_kind] = 'попразднество'
+            new_memo
+         end
+         [ memo, be, ie, af ] ;end
+      .flatten
+
+      result =
+      result.map do |memo|
+         events = memo[:event].split(/\s*,\s*/)
+         events.map do |value|
+            event = {}
+            value = 'почит' if value == 'само'
+            if /^(#{Bukovina::Parsers::Event::EVENTS.keys.join("|")})(?:\.(\d+))??$/ =~ value
+               event[ :type ] = EVENTS[ $1 ]
+               event[ :type_number ] = $2 if $2
+            else
+               raise
+               ;end
+
+            event[ :memory ] = { short_name: target } if target
+
+            new_memo = memo.deep_dup
+            new_memo[ :event ] = event
+            new_memo ;end;end
+      .flatten
+
+      result =
+      result.map do |memo|
+         memo.delete(:calendary_string).to_s.split(/\s*,\s*/).map do |cal|
+            new_memo = memo.deep_dup
+            new_memo[ :calendary ] = { slugs: { text: cal }}
+            new_memo ;end;end
+      .flatten
+
+      result ;end
+
+   def sub_date date, idx
+      days = [31,29,31,30,31,30,31,31,30,31,30,31]
+
+      if /(?<day>\d+)\.(?<month>\d+)/ =~ date
+         new_day = day.to_i + idx
+         new_month = month.to_i
+         if new_day > days[new_month - 1]
+            new_day -= days[new_month - 1]
+            new_month += 1
+            if new_month > 12
+               new_month = 1 ;end
+         elsif new_day < 1
+            new_month -= 1
+            if new_month < 1
+               new_month = 12 ;end
+            new_day += days[new_month - 1]
+         end
+         sprintf("%02i.%02i", new_day, new_month)
+      elsif /(?<day>[+-]\d+)/ =~ date
+         new_day = day.to_i + idx
+         sprintf("%+i", new_day)
+      else
+         raise "Invalid format date is: #{date}" ;end;end
+
    def parse_hash memo
       result = {}
-
-      result[:memory] = { short_name: "^#{target}" } if target
 
       memo.each do |key, value|
          case SUBPARSERS[ key ]
@@ -102,10 +176,15 @@ class Bukovina::Parsers::Memo
       result ;end
 
    def year value, result
-      result[ :happened_at ] = value =~ /^\d+$/ && value.to_i || value  ;end
+      result[ :add_date ] = value =~ /^\d+$/ && value.to_i || value  ;end
 
    def date value, result
-      value = value.is_a?(Float) && sprintf("%.2f", value) || value.to_s
+      if value.is_a?(Float) || value =~ /(\d+)\.(\d+)/
+         float = value.is_a?(String) && value.to_f || value
+         int = float.to_i
+         mod = ((float - int + 0.0099999)*100).to_i
+         value = sprintf("%02i.%02i", int, mod)
+      end
 
       abouts =
       value.split(',').map do |v|
@@ -116,7 +195,7 @@ class Bukovina::Parsers::Memo
                "value #{value}' detected" ) ;end;end
 
       if abouts.all?
-         result[ :date ] = abouts.join(',') ;end
+         result[ :year_date ] = abouts.join(',') ;end
    rescue ArgumentError => e
       binding.pry
    rescue TypeError => e
@@ -141,18 +220,21 @@ class Bukovina::Parsers::Memo
    def ignore value, result ;end
 
    def type value, result
-      value.split(",").map do |v|
-         if /^(#{events})(:?\.(\d+))??$/ =~ v
-            event = $1
-            number= $2
-
-            res = {}
-            res[ :type_class ] = EVENTS[ event ] if EVENTS[ event ]
-            res[ :type_number ] = number if number
-            result[ :event_memos ] ||= []
-            result[ :event_memos ] << res
-         else
-            @errors << Parsers::BukovinaInvalidValueError.new( "Memo type (description) '#{v}' is invalid" ) ;end;end;end
+      if value.to_s !~ /^$/
+         result[ :event ] = value
+      else
+#      value.split(",").map do |v|
+#         if /^(#{events})(:?\.(\d+))??$/ =~ v
+#            event = $1
+#            number= $2
+#
+#            res = {}
+#            res[ :type_class ] = EVENTS[ event ] if EVENTS[ event ]
+#            res[ :type_number ] = number if number
+#            result[ :event_memos ] ||= []
+#            result[ :event_memos ] << res
+#         else
+         @errors << Parsers::BukovinaInvalidValueError.new( "Memo type (description) '#{value}' is invalid" ) ;end;end;#end
 
    # вход: значение поля "имя"
    # выход: обработанный словарь данных

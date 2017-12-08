@@ -6,31 +6,36 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
       o.slug = Slug.new(base: o.short_name) if o.slug.blank?
       base = o.slug.text.gsub(/[^0-9а-яё]/, 'а').unpack("U*")
       nums = base.dup
-      while Slug.where(text: nums.pack("U*")).present?
-         Kernel.puts "slug #{nums.pack("U*")} found"
-         nums[-1] =
-         case nums.last
-         when base.last - 1 < 'а'.ord && 'я'.ord || base.last - 1
-            nums[-2] =
-            case nums[-2]
-            when base[-2] - 1 < 'а'.ord &&  'я'.ord || base[-2] - 1
-               raise
+
+      if slug = Slug.where(text: nums.pack("U*"), sluggable: nil).first
+         o.slug = slug
+         Kernel.puts "old slug '#{o.slug.text}' approved"
+      else
+         while Slug.where(text: nums.pack("U*")).present?
+            Kernel.puts "slug #{nums.pack("U*")} found"
+            nums[-1] =
+            case nums.last
+            when base.last - 1 < 'а'.ord && 'я'.ord || base.last - 1
+               nums[-2] =
+               case nums[-2]
+               when base[-2] - 1 < 'а'.ord &&  'я'.ord || base[-2] - 1
+                  raise
+               when 'я'.ord
+                  'ё'.ord
+               when 'ё'.ord
+                  'а'.ord
+               else
+                  nums[-2] + 1 ;end
+               nums.last == 'я'.ord && 'а'.ord || nums.last + 1
             when 'я'.ord
                'ё'.ord
             when 'ё'.ord
                'а'.ord
             else
-               nums[-2] + 1 ;end
-            nums.last == 'я'.ord && 'а'.ord || nums.last + 1
-         when 'я'.ord
-            'ё'.ord
-         when 'ё'.ord
-            'а'.ord
-         else
-            nums.last + 1 ;end;end
-      o.slug.text = nums.pack("U*")
-      Kernel.puts "new slug #{o.slug.text}"
-      o.slug.save! rescue binding.pry ;end
+               nums.last + 1 ;end;end
+         o.slug.text = nums.pack("U*")
+         Kernel.puts "new slug '#{o.slug.text}'"
+         o.slug.save! rescue binding.pry ;end;end
 
    def find_init search_attrs, new_attrs
       o = ::Memory.unscoped.where( short_name: search_attrs[:short_name] ).first_or_initialize( new_attrs )
@@ -57,15 +62,19 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
       @attrs.each do |attrs|
          attrs = attrs.merge(short_name: short_name)
 
+         memos_attrs = attrs.delete( :memos )
          (search_attrs, new_attrs) = separate_hash( parse_hash( ::Memory, attrs ) )
 
          begin
-            o = find_init(search_attrs, new_attrs)
+               o = find_init(search_attrs, new_attrs)
 
-            o.memory_names.each { |mn| mn.name.save }
-            init_slug(o) if ! o.slug&.persisted?
-            o.save!
-            binding.pry if ! o.slug&.persisted?
+               o.memory_names.each { |mn| mn.name.save }
+               Kernel.puts "old slug '#{o.slug&.text}'"
+               init_slug(o) if ! o.slug&.persisted?
+               o.save!
+               if memos_attrs
+                  memos_attrs.each do |memo_attrs|
+                     Bukovina::Importers::Memo.new( memo_attrs ).import ;end;end
 
          rescue ActiveRecord::RecordInvalid
             case $!.message
@@ -78,6 +87,8 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
             when /: names\.|index_names_on_text_and_alphabeth_code/
                o.slug.destroy
                Kernel.puts "retry dup name"
+               retry
+            when /index_services_on_name_and_alphabeth_code/
                retry
             else
                r = false

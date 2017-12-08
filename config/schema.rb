@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171129142100) do
+ActiveRecord::Schema.define(version: 20171205142200) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -61,13 +61,6 @@ ActiveRecord::Schema.define(version: 20171129142100) do
     t.index ["describable_id", "describable_type", "alphabeth_code", "text"], name: "describable_alphabeth_index", unique: true
   end
 
-  create_table "event_memoes", id: :serial, force: :cascade do |t|
-    t.string "type_class"
-    t.string "type_number"
-    t.integer "memo_id", null: false
-    t.integer "event_id"
-  end
-
   create_table "events", id: :serial, force: :cascade do |t|
     t.string "happened_at"
     t.integer "memory_id", null: false
@@ -108,16 +101,17 @@ ActiveRecord::Schema.define(version: 20171129142100) do
   end
 
   create_table "memoes", id: :serial, force: :cascade do |t|
-    t.string "happened_at"
-    t.string "date"
-    t.integer "before"
-    t.integer "after"
-    t.integer "inevening"
-    t.integer "memory_id", null: false
-    t.integer "calendary_id"
-    t.index ["date"], name: "index_memoes_on_date"
-    t.index ["happened_at"], name: "index_memoes_on_happened_at"
-    t.index ["memory_id", "calendary_id", "date"], name: "index_memoes_on_memory_calendary_and_date", unique: true
+    t.string "add_date"
+    t.string "year_date"
+    t.integer "calendary_id", null: false
+    t.string "bind_kind", null: false
+    t.integer "bond_to_id"
+    t.integer "event_id", null: false
+    t.index ["add_date"], name: "index_memoes_on_add_date"
+    t.index ["bond_to_id", "bind_kind"], name: "index_memoes_on_bond_to_id_and_bind_kind"
+    t.index ["calendary_id", "event_id", "year_date"], name: "index_memoes_on_calendary_id_and_event_id_and_year_date", unique: true
+    t.index ["calendary_id", "year_date"], name: "index_memoes_on_calendary_id_and_year_date"
+    t.index ["year_date"], name: "index_memoes_on_year_date"
   end
 
   create_table "memories", id: :serial, force: :cascade do |t|
@@ -142,16 +136,6 @@ ActiveRecord::Schema.define(version: 20171129142100) do
     t.integer "mode"
     t.boolean "feasible", default: false, null: false
     t.index ["memory_id", "name_id", "state"], name: "index_memory_names_on_memory_id_and_name_id_and_state", unique: true
-  end
-
-  create_table "mentions", id: :serial, force: :cascade do |t|
-    t.integer "calendary_id", null: false
-    t.integer "event_id", null: false
-    t.string "year_date", null: false
-    t.string "add_date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["calendary_id", "event_id", "year_date"], name: "dated_calendary_event_index", unique: true
   end
 
   create_table "names", id: :serial, force: :cascade do |t|

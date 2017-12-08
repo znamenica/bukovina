@@ -30,4 +30,4 @@ class Name < ActiveRecord::Base
 
    validates :text, :language_code, presence: true
 
-   before_create -> { self.bind_kind ||= 'несвязаное' } ;end unless defined? Name
+   before_create -> { self.bind_kind ||= 'несвязаное' } ;end
