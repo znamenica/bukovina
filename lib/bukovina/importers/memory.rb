@@ -66,15 +66,15 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
          (search_attrs, new_attrs) = separate_hash( parse_hash( ::Memory, attrs ) )
 
          begin
-               o = find_init(search_attrs, new_attrs)
+            o = find_init(search_attrs, new_attrs)
 
-               o.memory_names.each { |mn| mn.name.save }
-               Kernel.puts "old slug '#{o.slug&.text}'"
-               init_slug(o) if ! o.slug&.persisted?
-               o.save!
-               if memos_attrs
-                  memos_attrs.each do |memo_attrs|
-                     Bukovina::Importers::Memo.new( memo_attrs ).import ;end;end
+            o.memory_names.each { |mn| mn.name.save }
+            Kernel.puts "old slug '#{o.slug&.text}'"
+            init_slug(o) if ! o.slug&.persisted?
+            o.save!
+            if memos_attrs
+               memos_attrs.each do |memo_attrs|
+                  Bukovina::Importers::Memo.new( memo_attrs ).import ;end;end
 
          rescue ActiveRecord::RecordInvalid
             case $!.message
@@ -89,6 +89,7 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
                Kernel.puts "retry dup name"
                retry
             when /index_services_on_name_and_alphabeth_code/
+               Kernel.puts "retry dup service #{$!}"
                retry
             else
                r = false

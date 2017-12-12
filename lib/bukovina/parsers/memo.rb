@@ -71,6 +71,29 @@ class Bukovina::Parsers::Memo
    def post_hash_proc in_memo
       result =
       [ in_memo ].flatten.map do |memo|
+         #fix year date
+         date = memo[:year_date]
+
+         if /пасха/ =~ date
+            date = '+0'
+         elsif /дн.(\d+).по пасхе/ =~ date
+            date = "+#{$1}"
+         elsif /нд.по пасхе/ =~ date
+            date = "+7"
+         elsif /нд.(\d+).по пасхе/ =~ date
+            date = "+#{$1.to_i * 7}"
+         elsif /нд.до пасхи/ =~ date
+            date = "-7"
+         elsif /нд.(\d+).до пасхи/ =~ date
+            date = "-#{$1.to_i * 7}"
+         elsif /дн.(\d+).до пасхи/ =~ date
+            date = "-#{$1}" ;end
+
+         memo[:year_date] = date
+         memo ;end
+
+      result =
+      result.flatten.map do |memo|
          be_i = memo.delete(:before).to_i
          in_i = memo.delete(:inevening).to_i
          af_i = memo.delete(:after).to_i

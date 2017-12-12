@@ -16,6 +16,10 @@ class Calendary < ActiveRecord::Base
    # scope :by_slug, -> slug { joins( :slug ).where( slugs: { text: slug } ) }
    scope :named_as, -> name { joins( :names ).where( descriptions: { text: name } ) }
    scope :described_as, -> name { joins( :descriptions ).where( descriptions: { text: name } ) }
+
+   scope :with_token, -> text do
+      joins( :descriptions ).where( "descriptions.text ILIKE ?", "%#{text}%" ) ;end
+
    scope :with_tokens, -> token_list do
       # TODO fix the correctness of the query
       tokens = token_list.reject { |t| t =~ /\A[\s\+]*\z/ }

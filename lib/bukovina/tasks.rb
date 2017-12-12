@@ -89,19 +89,25 @@ module Bukovina
 
          def import_memories
             Dir.glob( Bukovina.root.join('памяти/**/память.*.yml') ).each.with_index do |f, i|
-               puts "Память: #{i}:#{f}"
+               begin
+                  puts "Память: #{i}:#{f}"
 
-               m = begin
-                  YAML.load( File.open( f ) )
-               rescue Psych::SyntaxError => e
-                  add_errors(f, StandardError.new("#{e} for file #{f}"))
-                  nil ; end
+                  m = begin
+                     YAML.load( File.open( f ) )
+                  rescue Psych::SyntaxError => e
+                     add_errors(f, StandardError.new("#{e} for file #{f}"))
+                     nil ; end
 
-               if m
-                  wd = Dir.pwd
-                  Dir.chdir( File.dirname( f ) )
-                  import_record(f, m)
-                  Dir.chdir( wd ) ;end;end
+                  if m
+                     wd = Dir.pwd
+                     Dir.chdir( File.dirname( f ) )
+                     import_record(f, m)
+                     Dir.chdir( wd ) ;end
+               rescue ArgumentError
+                  Memory.by_short_name(m.keys.first).first.destroy
+                  Kernel.puts "Destroed memory: #{f}"
+                  retry
+               end;end
 
             puts '-'*80
             errors.keys.each do |f|

@@ -22,7 +22,7 @@ class Memory < ActiveRecord::Base
    has_many :memos, through: :events
    has_many :calendaries, -> { distinct }, through: :memos
    has_many :photo_links, as: :info, inverse_of: :info, class_name: :IconLink, dependent: :destroy # ЧИНЬ во photos
-   has_one :slug, as: :sluggable
+   has_one :slug, as: :sluggable, dependent: :destroy
 
    default_scope { joins( :slug ).order( base_year: :asc, short_name: :asc, id: :asc ) }
    scope :icons, -> { where( order: :обр ) }
@@ -34,6 +34,9 @@ class Memory < ActiveRecord::Base
    scope :with_date, -> (date, julian = false) do
       joins( :memos ).merge( Memo.with_date( date, julian )).distinct ;end
 
+   scope :with_token, -> text do
+      joins(:names, :descriptions).where("descriptions.text ILIKE ? OR names.text ILIKE ?", "%#{text}%", "%#{text}%").distinct ;end
+
    scope :with_tokens, -> token_list do
       # TODO fix the correctness of the query
       tokens = token_list.reject { |t| t =~ /\A[\s\+]*\z/ }
@@ -42,10 +45,9 @@ class Memory < ActiveRecord::Base
       tokens.reduce(rel) do |rel, token|
          /\A(?<a>\+)?(?<text>.*)/ =~ token
          if a # AND operation
-            rel.where("names.text ILIKE ? OR descriptions.text ILIKE ?", "%#{text}%", "%#{text}%")
+            rel.merge(Memory.with_token(text))
          else # OR operation
-            rel.or(joins(:names, :descriptions)
-                  .where("names.text ILIKE ? OR descriptions.text ILIKE ?", "%#{text}%", "%#{text}%")) ;end;end
+            rel.or(merge(Memory.with_token(text))) ;end;end
       .distinct ;end
 
    accepts_nested_attributes_for :memory_names, reject_if: :all_blank

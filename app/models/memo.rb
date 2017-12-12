@@ -12,6 +12,7 @@ class Memo < ActiveRecord::Base
 
    belongs_to :calendary
    belongs_to :event
+   belongs_to :bond_to, class_name: :Memo
 
    has_many :service_links, as: :info, inverse_of: :info #ЧИНЬ превод во services
    has_many :services, as: :info, inverse_of: :info
@@ -36,23 +37,38 @@ class Memo < ActiveRecord::Base
       days = sprintf( "%+i", date.to_time.yday - easter.yday )
       where( date: relays.dup << new_date << days ) ;end
 
+   scope :with_token, -> text do
+      #SELECT  DISTINCT  "memoes".* FROM "memoes","events","descriptions","calendaries" WHERE (("descriptions"."describable_id" = "memoes"."id" AND "descriptions"."describable_type" = 'Memo') OR ("memoes"."calendary_id" = "descriptions"."describable_id" AND "descriptions"."describable_type" = 'Calendary') OR ("memoes"."event_id" = "events"."id" AND "events"."memory_id" = "descriptions"."describable_id" AND "descriptions"."describable_type" = 'Memory')) AND descriptions.text ILIKE '%Азарьин%'; TODO + names
+      #
+#                                      merge(Calendary.with_token(text)).or(
+#            left_outer_joins(:memory).merge(Memory.with_token(text)))))) ;end
+      left_outer_joins(:descriptions).where("descriptions.text ILIKE ?", "%#{text}%").or(
+                                      where("memoes.add_date ILIKE ?", "%#{text}%").or(
+                                      where("memoes.year_date ILIKE ?", "%#{text}%"))) ;end
+
    scope :with_tokens, -> token_list do
       # TODO fix the correctness of the query
       tokens = token_list.reject { |t| t =~ /\A[\s\+]*\z/ }
       cond = tokens.first[0] == '+' && 'TRUE' || 'FALSE'
-      rel = where( cond )
+      rel = left_outer_joins(:descriptions).where( cond )
       tokens.reduce(rel) do |rel, token|
          /\A(?<a>\+)?(?<text>.*)/ =~ token
          if a # AND operation
-#            rel.joins(:calendary).merge(Calendary.with_tokens(token_list)).or(joins(:memory).merge(Memory.with_tokens(token_list))).or(where("descriptions.text ILIKE ?", "%#{text}%")
-            rel.joins(:descriptions).where("descriptions.text ILIKE ?", "%#{text}%")
+            rel.with_token(text)
          else # OR operation
-#            rel.or(joins(:calendary).merge(Calendary.with_tokens(token_list)).or(joins(:memory).merge(Memory.with_tokens(token_list).or("descriptions.text ILIKE ?", "%#{text}%"))) ;end;end
-            rel.or(joins(:descriptions).where("descriptions.text ILIKE ?", "%#{text}%")) ;end;end
+            rel.or(self.with_token(text)) ;end;end
       .distinct ;end
+
+   scope :with_event_id, -> (event_id) do
+      where(event_id: event_id) ;end
+
+   scope :with_calendary_id, -> (calendary_id) do
+      where(calendary_id: calendary_id) ;end
 
    accepts_nested_attributes_for :service_links, reject_if: :all_blank
    accepts_nested_attributes_for :services, reject_if: :all_blank
+   accepts_nested_attributes_for :descriptions, reject_if: :all_blank, allow_destroy: true
+   accepts_nested_attributes_for :links, reject_if: :all_blank, allow_destroy: true
 
    validates :calendary, :event, :year_date, presence: true
 

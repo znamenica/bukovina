@@ -314,8 +314,9 @@ class Bukovina::Parsers::Memory
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid memos value " +
             "'#{value}' detected" ) ;end;#end
          rescue
+            r = true
             binding.pry
-         end
+            raise ArgumentError if r ;end
 
    def quantity value, result
       if /^(#{QUANTITIES.join("|")}|(ок\.|больше\s*)?\d+)$/ =~ value.to_s

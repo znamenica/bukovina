@@ -16,6 +16,11 @@ class Event < ActiveRecord::Base
    # czin: has_one/many
    default_scope -> { order(:created_at) }
 
+   scope :with_token, -> text do
+      where("type ILIKE ?", "%#{text}%").or(where(type_number: text.to_i)) ;end
+   scope :with_memory_id, -> memory_id do
+      where(memory_id: memory_id) ;end
+
    accepts_nested_attributes_for :place
    accepts_nested_attributes_for :coordinate
    accepts_nested_attributes_for :item, reject_if: :all_blank
