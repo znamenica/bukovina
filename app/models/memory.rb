@@ -24,24 +24,21 @@ class Memory < ActiveRecord::Base
    has_many :photo_links, as: :info, inverse_of: :info, class_name: :IconLink, dependent: :destroy # ЧИНЬ во photos
    has_one :slug, as: :sluggable, dependent: :destroy
 
-   default_scope { joins( :slug ).order( base_year: :asc, short_name: :asc, id: :asc ) }
+   default_scope { left_outer_joins( :slug ).order( base_year: :asc, short_name: :asc, id: :asc ) }
    scope :icons, -> { where( order: :обр ) }
-   scope :with_token, -> text { where( "short_name ~* ?", "\\m#{text}.*" ) }
    scope :by_short_name, -> name { where( short_name: name ) }
    scope :in_calendaries, -> calendaries do
-      joins( :memos ).merge( Memo.in_calendaries( calendaries )).distinct ;end
-
+      left_outer_joins( :memos ).merge( Memo.in_calendaries( calendaries )).distinct ;end
    scope :with_date, -> (date, julian = false) do
-      joins( :memos ).merge( Memo.with_date( date, julian )).distinct ;end
-
+      left_outer_joins( :memos ).merge( Memo.with_date( date, julian )).distinct ;end
    scope :with_token, -> text do
-      joins(:names, :descriptions).where("descriptions.text ILIKE ? OR names.text ILIKE ?", "%#{text}%", "%#{text}%").distinct ;end
-
+      left_outer_joins(:names, :descriptions).where( "short_name ~* ?", "\\m#{text}.*" ).or(
+         where("descriptions.text ILIKE ? OR names.text ILIKE ?", "%#{text}%", "%#{text}%")).distinct ;end
    scope :with_tokens, -> token_list do
       # TODO fix the correctness of the query
       tokens = token_list.reject { |t| t =~ /\A[\s\+]*\z/ }
       cond = tokens.first[0] == '+' && 'TRUE' || 'FALSE'
-      rel = joins( :names, :descriptions ).where( cond )
+      rel = left_outer_joins( :names, :descriptions, :memos ).where( cond )
       tokens.reduce(rel) do |rel, token|
          /\A(?<a>\+)?(?<text>.*)/ =~ token
          if a # AND operation

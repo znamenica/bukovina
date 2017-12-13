@@ -30,12 +30,12 @@ class Memo < ActiveRecord::Base
 
    scope :with_date, -> (date_str, julian = false) do
       date = Date.parse(date_str)
-      new_date = date.strftime("%1d.%m")
+      new_date = date.strftime("%2d.%m")
       wday = (date + (julian && 13.days || 0)).wday
-      relays = (1..7).map { |x| (date - x.days).strftime("%1d.%m") + "%#{wday}" }
+      relays = (1..7).map { |x| (date - x.days).strftime("%2d.%m") + "%#{wday}" }
       easter = WhenEaster::EasterCalendar.find_greek_easter_date(date.year)
       days = sprintf( "%+i", date.to_time.yday - easter.yday )
-      where( date: relays.dup << new_date << days ) ;end
+      where( year_date: relays.dup << new_date << days ) ;end
 
    scope :with_token, -> text do
       #SELECT  DISTINCT  "memoes".* FROM "memoes","events","descriptions","calendaries" WHERE (("descriptions"."describable_id" = "memoes"."id" AND "descriptions"."describable_type" = 'Memo') OR ("memoes"."calendary_id" = "descriptions"."describable_id" AND "descriptions"."describable_type" = 'Calendary') OR ("memoes"."event_id" = "events"."id" AND "events"."memory_id" = "descriptions"."describable_id" AND "descriptions"."describable_type" = 'Memory')) AND descriptions.text ILIKE '%Азарьин%'; TODO + names

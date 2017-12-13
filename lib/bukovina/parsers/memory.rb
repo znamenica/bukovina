@@ -154,19 +154,20 @@ class Bukovina::Parsers::Memory
      name(value, result, :last_name) ;end
 
    def council value, result
-#      cous = value.to_s.split(',')
-#
-#      parsed = cous.map do |v|
-#         if /^(#{COUNSILS.join("|")})$/ =~ v.sub('?', '')
-#            v
-#         else
-#            @errors << Parsers::BukovinaInvalidValueError.new( "invalid " +
-#               "value '#{v}' detected for council field" )
-#            nil ;end;end
-#      .compact
-#
-#      if (cous - parsed).empty?
-         result[ :council ] = value ;end;#end
+      cous = value.to_s.split(',')
+
+      parsed = cous.map do |v|
+         #if /^(#{COUNSILS.join("|")})$/ =~ v.sub('?', '')
+         if /^[а-яё0-9\?]+$/ =~ v
+            v
+         else
+            @errors << Parsers::BukovinaInvalidValueError.new( "invalid " +
+               "value '#{v}' detected for council field" )
+            nil ;end;end
+      .compact
+
+      if (cous - parsed).empty?
+         result[ :council ] = value ;end;end
 
    def order value, result
       match =
