@@ -3,7 +3,6 @@ class FixNames < ActiveRecord::Migration[4.2]
       change_table :names do |t|
          t.integer :root_id
          t.string :bind_kind, null: false
-         t.remove :type
          t.rename :similar_to_id, :bond_to_id ;end
 
       add_index :names, %i(root_id)
