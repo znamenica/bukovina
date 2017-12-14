@@ -63,12 +63,14 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
          attrs = attrs.merge(short_name: short_name)
 
          memos_attrs = attrs.delete( :memos )
+         names = attrs.delete( :names )
+         names&.each { |x| Bukovina::Importers::Name.new(x).import }
+
          (search_attrs, new_attrs) = separate_hash( parse_hash( ::Memory, attrs ) )
 
          begin
             o = find_init(search_attrs, new_attrs)
 
-            o.memory_names.each { |mn| mn.name.save }
             Kernel.puts "old slug '#{o.slug&.text}'"
             init_slug(o) if ! o.slug&.persisted?
             o.save!

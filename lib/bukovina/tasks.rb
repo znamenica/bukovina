@@ -103,7 +103,7 @@ module Bukovina
                      Dir.chdir( File.dirname( f ) )
                      import_record(f, m)
                      Dir.chdir( wd ) ;end
-               rescue ArgumentError
+               rescue SecurityError
                   Memory.by_short_name(m.keys.first).first.destroy
                   Kernel.puts "Destroed memory: #{f}"
                   retry

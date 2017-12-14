@@ -24,7 +24,7 @@ class Bukovina::Importers::Memo
             Kernel.puts "EVENT: #{new_attrs.inspect}"
             r = true
             binding.pry
-            raise ArgumentError if r ;end
+            raise SecurityError if r ;end
 
          search_attrs[ :calendary_id ] = new_attrs[ :calendary ].id
          search_attrs[ :event_id ] = new_attrs[ :event ].id
@@ -36,7 +36,7 @@ class Bukovina::Importers::Memo
             if !memo
                r = true
                binding.pry
-               raise ArgumentError if r ;end
+               raise SecurityError if r ;end
             new_attrs[ :bond_to_id ] = memo.id ;end
 
          binding.pry if ENV['DEBUG']
@@ -55,7 +55,7 @@ class Bukovina::Importers::Memo
             rescue
                r = true
                binding.pry
-               raise ArgumentError if r ;end
+               raise SecurityError if r ;end
          ) #;end
       #rescue
       #   binding.pry

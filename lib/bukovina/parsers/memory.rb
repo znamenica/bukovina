@@ -89,8 +89,8 @@ class Bukovina::Parsers::Memory
          @errors << Parsers::BukovinaInvalidValueError.new( "Event list" +
             "can't be blank" )
       else
-         raise Parsers::BukovinaInvalidClass, "Invalid class #{name.class} " +
-            "for Name line '#{name}'" ; end
+         raise Parsers::BukovinaInvalidClass, "Invalid class #{memories.class} " +
+            "for Memory line '#{memories}'" ; end
 
       @errors.empty? && res || nil
 
@@ -130,10 +130,10 @@ class Bukovina::Parsers::Memory
          res = parser.parse(value)
 
          if parser.errors.empty?
-#            if res[ :names ].present?
-#               result[ :names ] ||= []
-#               result[ :names ].concat(res.delete(:name)) ;end
-#
+            if res[ :names ].present?
+               result[ :names ] ||= []
+               result[ :names ].concat(res.delete(:names)) ;end
+
             if res[ :memory_names ].present?
                result[ :memory_names ] ||= []
                result[ :memory_names ].concat(res.delete(:memory_names)) ;end
@@ -317,7 +317,7 @@ class Bukovina::Parsers::Memory
          rescue
             r = true
             binding.pry
-            raise ArgumentError if r ;end
+            raise SecurityError if r ;end
 
    def quantity value, result
       if /^(#{QUANTITIES.join("|")}|(ок\.|больше\s*)?\d+)$/ =~ value.to_s
