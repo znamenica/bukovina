@@ -4,10 +4,11 @@
    отчество: Ефимович
    фамилия: Щёголев
    описание: священник Чиганакский (Аркадак); мученик Балашовский; расстрелян безбожниками
-   чин: сщмч
+   чин: смчр
    собор: нмр,нмср,сар,балш,аркд
    вики: http://drevo-info.ru/articles/21929.html
    бытие: http://kuz3.pstbi.ru/bin/nkws.exe/no_dbpath/docum/ans/nm/?HYZ9EJxGHoxITYZCF2JMTdG6XbuNdOCieuKW66GcfeqcsOWd66LYe8miceXb**
+   служба: https://ustavschik.livejournal.com/256092.html
    событие:
     - год: 1871/1870
       дата: дек
@@ -24,4 +25,5 @@
       описание: просл
    помин:
       дата: 10.11
+      календарь: рпц
       описание: прств

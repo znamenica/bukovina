@@ -1,6 +1,6 @@
 ---
 Иннокентий Херсонский:
-   имя: в иночестве Иннокентий, в крещении Иоанн
+   имя: в иночестве Иннокентий, в крещении Иоанн, в наречении Иван
    отчество: Алексеевич
    фамилия: Борисов
    описание: первоинок Санкт-Петерубргский; святитель Херсонский и Таврический
@@ -13,9 +13,11 @@
     - http://drevo-info.ru/images/002/008890.jpg
    служба:
     - Иннокентию Херсонскому служба
-    - http://ustavschik.livejournal.com/222484.html
+    - https://ustavschik.livejournal.com/222484.html
     - http://azbyka.ru/days/sv-innokentij-borisov
     - http://pravoslavie.ks.ua/?ch=eparh_akaf&article=ak_Innok_2007
+    - http://pravoslavie.ks.ua/rubric/hersonskim-svyatym/article/akafist-svyatitelyu-innokentiyu-hersonskomu
+    - http://ierokirik.livejournal.com/969.html [публикация в блоге протоиерея Андрея Николаиди]
    событие:
     - год: 1800
       дата: 15.12
@@ -55,7 +57,15 @@
     - год: вид.1997
       описание: прен.2
       место: Спасо-Преображенский собор. Одесса
+    - год: 2017
+      дата: 17.11
+      собор: рус
+      чин: свт
+      описание: просл.1
+      место: Соборный зал. Храм Христа Спасителя. Москва
+      ссылка: http://www.patriarchia.ru/db/text/5074360.html
+      о: 25.05
    помин:
       дата: 25.05
-      собор: одес
+      календарь: рпц
       описание: прств

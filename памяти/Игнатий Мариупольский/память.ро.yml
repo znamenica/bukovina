@@ -6,7 +6,12 @@
    собор: мрпл?,ферм?,тавр?
    вики: http://drevo-info.ru/articles/4000.html
    образ: http://drevo-info.ru/images/001/000612.jpg
-   служба: Игнатию Мариупольскому служба
+   служба:
+    - Игнатию Мариупольскому служба
+    - http://sv-ignatiy.dn.ua/pokrovitel/slugba [на сайте храма во имя свят. Игнатия при Донецком металлургическом заводе]
+    - http://akafist.narod.ru/I/Ignaty_Mariupolsky.html
+    - http://sv-ignatiy.dn.ua/sites/default/files/field/image/molitva_svyatitelyu_ignatiyu_mariupolskomu_na_grecheskom_yazyke.jpg [на греческом языке, на сайте храма во имя свят. Игнатия при Донецком металлургическом заводе]
+    - https://ustavschik.livejournal.com/66832.html
    событие:
     - год: 1715
       дата: 03.02
@@ -59,7 +64,15 @@
       чин: свт
       описание: чинпр
       место: Николо-Мирликийский собор. Мариуполь
+    - год: 2017
+      дата: 03.02
+      собор: рус
+      чин: свт
+      описание: просл.2
+      место: Соборный зал. Храм Христа Спасителя. Москва
+      ссылка: http://www.patriarchia.ru/db/text/5074360.html
+      о: 03.02
    помин:
       дата: 03.02
-      собор: укр
+      календарь: рпц
       описание: прств

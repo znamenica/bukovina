@@ -3,12 +3,16 @@
    имя: в иночестве Филипп, в крещении Феофил
    описание: настоятель Ирапский, Череповецкий
    чин: прп
-   собор: влгд?
+   собор: влгд
    вики: http://drevo-info.ru/articles/4371.html
    бытие: http://azbyka.ru/days/sv-filipp-irapskij
    образ:
     - http://azbyka.ru/days/assets/img/saints/1506/p18ab3j0k5d8ltkh14ogiu13em3.jpg
     - http://azbyka.ru/days/assets/img/saints/1506/p18ab3j0n31u17lqm24ubhp7ro4.jpg
+   служба:
+    - Филиппу Ирапскому служба
+    - http://azbyka.ru/days/assets/upload/minei/11/minea_11_14.pdf
+    - https://ustavschik.livejournal.com/255960.html
    событие:
     - год: ок.1482
       описание: ржд
@@ -30,7 +34,4 @@
       место: Филиппо-Ирапская часовня. Череповец
    помин:
       дата: 14.11
-      описание: иноч
-      служба:
-       - Филиппу Ирапскому служба
-       - http://azbyka.ru/days/assets/upload/minei/11/minea_11_14.pdf
+      описание: само

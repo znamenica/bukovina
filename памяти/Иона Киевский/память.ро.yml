@@ -13,6 +13,11 @@
     - http://azbyka.ru/days/assets/img/saints/6557/p19c892g071ln01m031p3l8r214ee3.jpg
     - http://azbyka.ru/days/assets/img/saints/6557/p19c89r3p29m99q716tu1obuis64.jpg
     - http://pravicon.com/icon-2010
+   служба:
+    - http://www.iona.kiev.ua/download/texts/prestavlenie.pdf
+    - http://www.iona.kiev.ua/download/texts/proslavlenie.pdf
+    - http://www.iona.kiev.ua/download/texts/perenesenie.pdf
+    - http://www.iona.kiev.ua/monastery.php?menu=akathist
    событие:
     - год: 1802
       описание: ржд
@@ -44,6 +49,14 @@
       дата: 09.11
       собор: укр
       описание: просл
+    - год: 2017
+      дата: 17.11
+      собор: рус
+      чин: прп
+      описание: просл.1
+      место: Соборный зал. Храм Христа Спасителя. Москва
+      ссылка: http://www.patriarchia.ru/db/text/5074360.html
+      о: 09.01
    помин:
     - дата: 09.01
       календарь: рпц

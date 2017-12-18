@@ -9,6 +9,8 @@
    вики: http://drevo-info.ru/articles/12673.html
    бытие: http://pravicon.com/info-3575
    образ: http://pravicon.com/icon-3145
+   отечник: https://azbyka.ru/otechnik/Filaret_Chernigovskij/
+   служба: https://azbyka.ru/otechnik/Filaret_Chernigovskij/
    событие:
     - год: 1805
       дата: 23.10
@@ -48,9 +50,17 @@
       дата: 13.01
       собор: укр
       описание: просл.1
+    - год: 2017
+      дата: 17.11
+      собор: рус
+      чин: свт
+      описание: просл.2
+      место: Соборный зал. Храм Христа Спасителя. Москва
+      ссылка: http://www.patriarchia.ru/db/text/5074360.html
+      о: 09.08
    помин:
     - дата: 09.08
-      собор: черн
+      календарь: рпц
       описание: прств
     - дата: 12.10
       собор: укр

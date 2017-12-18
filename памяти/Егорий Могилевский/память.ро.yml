@@ -6,7 +6,7 @@
    чин: свт
    собор: млгв
    служба:
-    - http://ustavschik.livejournal.com/223522.html
+    - https://ustavschik.livejournal.com/223522.html
     - http://ustavschik.livejournal.com/69367.html
     - http://akafist.narod.ru/G/Georgiy_M.htm
    событие:
@@ -19,10 +19,18 @@
       собор: укр
       чин: свт
       описание: просл
+    - год: 2017
+      дата: 17.11
+      собор: рус
+      чин: свт
+      описание: просл.1
+      место: Соборный зал. Храм Христа Спасителя. Москва
+      ссылка: http://www.patriarchia.ru/db/text/5074360.html
+      о: 24.07
    помин:
     - дата: 13.02
       собор: укр
       описание: просл
     - дата: 24.07
-      собор: укр
+      календарь: рпц
       описание: прств

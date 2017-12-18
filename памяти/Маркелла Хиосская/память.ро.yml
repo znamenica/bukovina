@@ -1,11 +1,20 @@
 ---
 Маркелла Хиосская:
-   имя: Маркелла
-   описание: Хиосская
+   имя:
+      ру: Маркелла
+      гр: Μαρκέλλα
+   описание:
+      ру: Хиосская
+      гр: Παρθενομάρτυς η Χιοπολίτιδα
    чин: мц
    вики: http://drevo-info.ru/articles/13441.html
-   бытие: http://pravicon.com/info-2889
-   образ: http://pravicon.com/icon-2386
+   бытие:
+      ру: http://pravicon.com/info-2889
+      гр: http://www.saint.gr/733/saint.aspx
+   образ:
+    - http://pravicon.com/icon-2386
+    - http://www.porphyrios.gr/files/jpg/Εικόνες/Κατά ημερομηνία (Διάφοροι)/07 Ιούλιος/22 Μαρκέλλα Παρθενομάρτυς.jpg
+    - http://www.saint.gr/filesnew/02/0733/photos/AgiaMarkella01.jpg
    событие:
       год: III
       описание: прств
