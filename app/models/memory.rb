@@ -3,8 +3,7 @@
 # short_name[string]    - краткое имя
 # covers_to_id[integer] - прокровительство
 # quantity[string]      - количество
-# sight_id[integer]     - вид
-# view_string[string]   - строка памяти как надвид памяти (преложить в вид)
+# bond_to_id[integer]   - отношение к (для икон это замысел или оригинал списка)
 #
 class Memory < ActiveRecord::Base
    extend DefaultKey
@@ -13,7 +12,7 @@ class Memory < ActiveRecord::Base
    has_default_key :short_name
 
    belongs_to :covers_to, class_name: :Place, optional: true
-   belongs_to :sight, class_name: :Memory, optional: true
+   belongs_to :bond_to, class_name: :Memory, optional: true
 
    has_many :memory_names, dependent: :destroy
    has_many :names, through: :memory_names

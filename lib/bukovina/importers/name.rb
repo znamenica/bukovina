@@ -3,7 +3,7 @@ class Bukovina::Importers::Name
    def find_or_init in_attrs
       attrs = in_attrs.deep_dup
       attrs.delete(:bind_kind)
-      Name.where( attrs ).first || init( in_attrs ) ; end
+      ::Name.where( attrs ).first || init( in_attrs ) ; end
 
    def init attrs
       Name.new( attrs ) ;end

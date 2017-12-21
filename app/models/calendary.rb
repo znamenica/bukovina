@@ -14,24 +14,23 @@ class Calendary < ActiveRecord::Base
 
    scope :licit, -> { where( licit: true ) }
    # scope :by_slug, -> slug { joins( :slug ).where( slugs: { text: slug } ) }
-   scope :named_as, -> name { joins( :names ).where( descriptions: { text: name } ) }
+   scope :named_as, -> name { joins( :names ).where( names: { text: name } ) }
    scope :described_as, -> name { joins( :descriptions ).where( descriptions: { text: name } ) }
 
    scope :with_token, -> text do
-      joins( :descriptions ).where( "descriptions.text ILIKE ?", "%#{text}%" ) ;end
+      left_outer_joins( :names, :descriptions ).where( "descriptions.text ILIKE ?", "%#{text}%" ) ;end
 
    scope :with_tokens, -> token_list do
       # TODO fix the correctness of the query
       tokens = token_list.reject { |t| t =~ /\A[\s\+]*\z/ }
       cond = tokens.first[0] == '+' && 'TRUE' || 'FALSE'
-      rel = joins( :names, :descriptions ).where( cond )
+      rel = left_outer_joins( :names, :descriptions ).where( cond )
       tokens.reduce(rel) do |rel, token|
          /\A(?<a>\+)?(?<text>.*)/ =~ token
          if a # AND operation
-            rel.where("names.text ILIKE ? OR descriptions.text ILIKE ?", "%#{text}%", "%#{text}%")
+            rel.merge(self.with_token(text))
          else # OR operation
-            rel.or(joins(:names, :descriptions)
-                  .where("names.text ILIKE ? OR descriptions.text ILIKE ?", "%#{text}%", "%#{text}%")) ;end;end
+            rel.or(merge(self.with_token(text))) ;end;end
       .distinct ;end
 
    accepts_nested_attributes_for :descriptions, reject_if: :all_blank, allow_destroy: true
