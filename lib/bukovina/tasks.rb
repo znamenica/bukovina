@@ -3,6 +3,12 @@ require 'rdoba/roman'
 module Bukovina
    module Tasks
       class << self
+         def import_orders
+            orders = YAML.load( File.open( Bukovina.root.join( 'db/seeds/orders.yaml' )))
+            orders.each do |order|
+               Kernel.puts "#{order['order']} => #{order['text']}"
+               Order.where(order).find_or_create_by!(order) ;end;end
+
          def fix_base_year
             memories = Memory.all
             # memories = Memory.where(base_year: nil)

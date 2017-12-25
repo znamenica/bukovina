@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171218190000) do
+ActiveRecord::Schema.define(version: 20171225160900) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -151,6 +151,17 @@ ActiveRecord::Schema.define(version: 20171218190000) do
     t.index ["bond_to_id", "bind_kind"], name: "index_names_on_bond_to_id_and_bind_kind"
     t.index ["root_id"], name: "index_names_on_root_id"
     t.index ["text", "alphabeth_code"], name: "index_names_on_text_and_alphabeth_code", unique: true
+  end
+
+  create_table "orders", id: :serial, force: :cascade do |t|
+    t.string "order"
+    t.string "text"
+    t.string "alphabeth_code"
+    t.string "language_code"
+    t.index ["order", "alphabeth_code"], name: "index_orders_on_order_and_alphabeth_code", unique: true
+    t.index ["order"], name: "index_orders_on_order"
+    t.index ["text", "alphabeth_code", "language_code"], name: "index_orders_on_text_and_alphabeth_code_and_language_code"
+    t.index ["text"], name: "index_orders_on_text"
   end
 
   create_table "places", id: :serial, force: :cascade do |t|
