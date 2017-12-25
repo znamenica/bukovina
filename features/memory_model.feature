@@ -1,6 +1,8 @@
 # language: ru
 @model @memory
 Функционал: Модель памяти
+   Предыстория:
+    * есть чин "св"
 
    @language
    Сценарий: Проверка полей модели памяти
@@ -23,6 +25,7 @@
          | names           |
          | memory_names    |
          | descriptions    |
+         | notes           |
          | wikies          |
          | beings          |
          | paterics        |

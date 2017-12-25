@@ -2,7 +2,7 @@ module Informatible
    extend ActiveSupport::Concern
 
    def self.extended base
-      base.has_many :descriptions, as: :describable, dependent: :destroy
+      base.has_many :descriptions, -> { where(type: nil) }, as: :describable, dependent: :destroy
       base.has_many :wikies, as: :info, class_name: :WikiLink, dependent: :destroy
       base.has_many :beings, as: :info, class_name: :BeingLink, dependent: :destroy
       base.has_many :icon_links, as: :info, foreign_key: :info_id, inverse_of: :info, dependent: :destroy # ЧИНЬ во icons

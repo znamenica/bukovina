@@ -4,7 +4,14 @@ FactoryGirl.define do
       language_code :ру
       alphabeth_code :ру ;end
 
-   factory :appellation do
+   factory :appellation, class: :Appellation do
+      type 'Appellation'
+      text { FFaker::NameRU.name }
+      language_code :ру
+      alphabeth_code :ру ;end
+
+   factory :note, class: :Note do
+      type 'Note'
       text { FFaker::NameRU.name }
       language_code :ру
       alphabeth_code :ру ;end

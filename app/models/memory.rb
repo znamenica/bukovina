@@ -23,6 +23,7 @@ class Memory < ActiveRecord::Base
    has_many :photo_links, as: :info, inverse_of: :info, class_name: :IconLink, dependent: :destroy # ЧИНЬ во photos
    has_many :orders, foreign_key: :order, primary_key: :order
    has_one :slug, as: :sluggable, dependent: :destroy
+   has_many :notes, as: :describable, dependent: :destroy, class_name: :Note
 
    default_scope { left_outer_joins( :slug ).order( base_year: :asc, short_name: :asc, id: :asc ) }
    scope :icons, -> { where( order: :обр ) }
@@ -54,6 +55,7 @@ class Memory < ActiveRecord::Base
    accepts_nested_attributes_for :photo_links, reject_if: :all_blank
    accepts_nested_attributes_for :covers_to, reject_if: :all_blank
    accepts_nested_attributes_for :slug, reject_if: :all_blank
+   accepts_nested_attributes_for :notes, reject_if: :all_blank
 
    validates_presence_of :short_name, :events
    validates :base_year, format: { with: /\A-?\d+\z/ }

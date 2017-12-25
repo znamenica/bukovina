@@ -1,3 +1,6 @@
+Допустим(/^есть чин "([^"]*)"$/) do |order|
+   create( :order, order: order ) ; end
+
 Допустим(/^есть память "(.*)"$/) do |short_name|
    create( :memory, short_name: short_name ) ; end
 

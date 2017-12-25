@@ -269,8 +269,11 @@ class Bukovina::Parsers::Memory
       when String, Hash, Array
          parser = Bukovina::Parsers::Description.new
          if res = parser.parse(value)
+            desc = res.delete(:description)
             result[ :descriptions ] ||= []
-            result[ :descriptions ].concat(res.delete(:description))
+            result[ :descriptions ].concat(desc)
+            result[ :notes ] ||= []
+            result[ :notes ].concat(desc)
          else
             @errors.concat(parser.errors) ;end
       else
@@ -345,9 +348,12 @@ class Bukovina::Parsers::Memory
       when String, Hash, Array
          parser = Bukovina::Parsers::Description.new
          if res = parser.parse(value)
+            desc = res.delete(:description)
             result[ :covers_to ] ||= {}
             result[ :covers_to ][ :descriptions ] ||= []
-            result[ :covers_to ][ :descriptions ].concat(res.delete(:description))
+            result[ :covers_to ][ :descriptions ].concat(desc)
+            result[ :covers_to ][ :notes ] ||= []
+            result[ :covers_to ][ :notes ].concat(desc)
          else
             @errors.concat(parser.errors) ;end
       else
