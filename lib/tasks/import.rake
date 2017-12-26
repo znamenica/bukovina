@@ -15,6 +15,12 @@ namespace :import do
    task orders: %i(environment db:environment:set) do
       Bukovina::Tasks.import_orders
 
+      true; end
+
+   desc "import event kinds"
+   task event_kinds: %i(environment db:environment:set) do
+      Bukovina::Tasks.import_event_kinds
+
       true; end;end
 
-task import: %(import:orders import:calendaries import:memories)
+task import: %(import:orders import:event_kinds import:calendaries import:memories)

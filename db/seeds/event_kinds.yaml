@@ -1,0 +1,333 @@
+---
+ - kind: Tale
+   text: Беседа
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Battle
+   text: Битва
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Annunciation
+   text: Благовещение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Thanksgiving
+   text: Благодарение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Benediction
+   text: Благословение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Marriage
+   text: Брак
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Exaltation
+   text: Воздвижение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Incarnation
+   text: Воплощение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Apparation
+   text: Видение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Ascension
+   text: Вознесение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: SoldierMemory
+   text: Воинская память
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Restoration
+   text: Восстановление
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Resurrection
+   text: Воскресение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Entrance
+   text: Вход
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Deaconry
+   text: Дияконство
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Enheresment
+   text: Впадение в ересь
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Conception
+   text: Зачатие
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Protection
+   text: Заступление
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Conceiving
+   text: Зачинание
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Portent
+   text: Знамение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Deliverance
+   text: Избаление
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Betraial
+   text: Измена
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Procession
+   text: Изнесение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Monasticry
+   text: Иночество
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Hypodeaconry
+   text: Иподьяконство
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Baptism
+   text: Крещение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Superstructure
+   text: Надстройка
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Writing
+   text: Написание
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Learning
+   text: Научение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Numbness
+   text: Немота
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Deposition
+   text: Низложение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Sanctification
+   text: Освящение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Uncovering
+   text: Обретение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Circumcision
+   text: Обрезание
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Revival
+   text: Воскрешение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Liberation
+   text: Освобождение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Renunciation
+   text: Отречение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Fall
+   text: Падение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Burial
+   text: Погребение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: GreatFire
+   text: Пожар
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Repentance
+   text: Покаяние
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Rest
+   text: Покой
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Placing
+   text: Положение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Veneration
+   text: Почитание
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Primacy
+   text: Предстоятельство
+   language_code: ру
+   alphabeth_code: ру
+ - kind: PuttingInAgain
+   text: Преложение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Teleportation
+   text: Перемещение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Translation
+   text: Пренесение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Calling
+   text: Призвание
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Captivity
+   text: Пленение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Adoration
+   text: Поклонение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Transfiguration
+   text: Преображение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Curse
+   text: Проклятие
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Preach
+   text: Проповедь
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Prophecy
+   text: Пророчество
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Canonization
+   text: Прославление
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Repose
+   text: Преставление
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Throne
+   text: Интронизация
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Destruction
+   text: Разрушение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Schism
+   text: Уход в раскол
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Defrocking
+   text: Извержение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Decanonization
+   text: Деканонизация
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Nativity
+   text: Рождение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Frockbearing
+   text: Оличение в рясу
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Council
+   text: Собор
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Bishopry
+   text: Епископство
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Priestship
+   text: Священство
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Founding
+   text: Созидание
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Hiddening
+   text: Сокрытие
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Phenomenon
+   text: Появление
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Meeting
+   text: Сретение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Passion
+   text: Страсти
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Schima
+   text: Схима
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Supper
+   text: Тайная вечеря
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Sobriety
+   text: Трезвение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Labor
+   text: Труд
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Earthquake
+   text: Землетрясение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Assurance
+   text: Уверение
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Loss
+   text: Утрата
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Glorification
+   text: Чин прославления
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Reader
+   text: Чтецтво
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Miracle
+   text: Чудо
+   language_code: ру
+   alphabeth_code: ру
+ - kind: Appearance
+   text: Явление
+   language_code: ру
+   alphabeth_code: ру

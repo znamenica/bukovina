@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171225160900) do
+ActiveRecord::Schema.define(version: 20171226174200) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,17 @@ ActiveRecord::Schema.define(version: 20171225160900) do
     t.string "alphabeth_code", null: false
     t.string "type"
     t.index ["describable_id", "describable_type", "alphabeth_code", "text"], name: "describable_alphabeth_index", unique: true
+  end
+
+  create_table "event_kinds", id: :serial, force: :cascade do |t|
+    t.string "kind"
+    t.string "text"
+    t.string "alphabeth_code"
+    t.string "language_code"
+    t.index ["kind", "alphabeth_code"], name: "index_event_kinds_on_kind_and_alphabeth_code", unique: true
+    t.index ["kind"], name: "index_event_kinds_on_kind"
+    t.index ["text", "alphabeth_code", "language_code"], name: "index_event_kinds_on_text_and_alphabeth_code_and_language_code"
+    t.index ["text"], name: "index_event_kinds_on_text"
   end
 
   create_table "events", id: :serial, force: :cascade do |t|

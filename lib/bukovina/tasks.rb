@@ -3,6 +3,12 @@ require 'rdoba/roman'
 module Bukovina
    module Tasks
       class << self
+         def import_event_kinds
+            event_kinds = YAML.load( File.open( Bukovina.root.join( 'db/seeds/event_kinds.yaml' )))
+            event_kinds.each do |event_kind|
+               Kernel.puts "#{event_kind['kind']} => #{event_kind['text']}"
+               EventKind.where(event_kind).find_or_create_by!(event_kind) ;end;end
+
          def import_orders
             orders = YAML.load( File.open( Bukovina.root.join( 'db/seeds/orders.yaml' )))
             orders.each do |order|
