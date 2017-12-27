@@ -3,6 +3,9 @@ class Order < ActiveRecord::Base
 
    has_many :memories, foreign_key: :order, primary_key: :order
    
-   has_alphabeth on: { text: [ :nosyntax, allow: " ‑" ] }
+   has_alphabeth on: {
+      text: [ :nosyntax, allow: " ‑" ],
+      note: [],
+      short_note: [], }
 
-   validates :order, :text, :language_code, presence: true ;end
+   validates :order, :note, :short_note, :text, :language_code, presence: true ;end

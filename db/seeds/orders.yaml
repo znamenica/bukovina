@@ -21,7 +21,7 @@
   text: ангел
   language_code: ру
   alphabeth_code: ру
-  note: ангел (крылатец)
+  note: 'ангел (крылатец)'
   short_note: Крылатец
 - order: св
   text: св
@@ -29,7 +29,6 @@
   alphabeth_code: ру
   note: святой
   short_note: Святой
-  short_note: Святая
 - order: сбр
   text: сбр
   language_code: ру
@@ -156,7 +155,7 @@
   alphabeth_code: ру
   note: пророчицы
   short_note: Пророчицы
-- order:аап
+- order: ап
   text: ап
   language_code: ру
   alphabeth_code: ру
@@ -490,7 +489,7 @@
   text: вещь
   language_code: ру
   alphabeth_code: ру
-  note: вещь или предмет
+  note: почитаемая вещь или предмет
   short_note: Предмет
 - order: древо
   text: древо

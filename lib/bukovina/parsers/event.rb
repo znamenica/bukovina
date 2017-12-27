@@ -72,7 +72,7 @@ class Bukovina::Parsers::Event
       'битва' => 'Battle',           # ч(место)
       'блгдр' => 'Thanksgiving',     # ко(лич) ЧИНИ какое событие, или просто добвить поле норов (характер) в помин, а событие поставить иное?
       'блслв' => 'Benediction',      # от(стын:self)-ко(чел:person)
-      'бвщ' =>  => 'Annunciation',   # кого
+      'бвщ' => 'Annunciation',       # кого
       'брак' => 'Marriage',          # от(чел:self)-ко(чел:person)
       'вздв' => 'Exaltation',        # ч(стын:self),кем(чел:person)
       'вид' => 'Apparation',         # ч(стын:self)-ко(чел:person)
