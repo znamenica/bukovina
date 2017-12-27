@@ -3,271 +3,528 @@
   text: Бог
   language_code: ру
   alphabeth_code: ру
+  note: Бог Троица
+  short_note: Бог
 - order: спс
   text: спас
   language_code: ру
   alphabeth_code: ру
+  note: Спаситель
+  short_note: Спаситель
 - order: бдц
   text: бдц
   language_code: ру
   alphabeth_code: ру
+  note: Богородица
+  short_note: Богородица
 - order: крлт
   text: ангел
   language_code: ру
   alphabeth_code: ру
+  note: ангел (крылатец)
+  short_note: Крылатец
 - order: св
   text: св
   language_code: ру
   alphabeth_code: ру
+  note: святой
+  short_note: Святой
+  short_note: Святая
 - order: сбр
   text: сбр
   language_code: ру
   alphabeth_code: ру
+  note: собор святых
+  short_note: Собор
 - order: прав
   text: прав
   language_code: ру
   alphabeth_code: ру
+  note: праведник
+  short_note: Праведный
+- order: правж
+  text: прав
+  language_code: ру
+  alphabeth_code: ру
+  note: праведница
+  short_note: Праведная
 - order: сщпр
   text: прав
   language_code: ру
   alphabeth_code: ру
+  note: праведник в священном сане
+  short_note: Священноправедник
 - order: правв
   text: правв
   language_code: ру
   alphabeth_code: ру
+  note: праведники
+  short_note: Праведные
+- order: правжж
+  text: правв
+  language_code: ру
+  alphabeth_code: ру
+  note: праведницы
+  short_note: Праведницы
 - order: брак
   text: правв
   language_code: ру
   alphabeth_code: ру
+  note: праведники в браке
+  short_note: Брак
 - order: блж
   text: блж
   language_code: ру
   alphabeth_code: ру
+  note: блаженный
+  short_note: Блаженный
+- order: блжя
+  text: блж
+  language_code: ру
+  alphabeth_code: ру
+  note: блаженная
+  short_note: Блаженная
+- order: блжж
+  text: блжж
+  language_code: ру
+  alphabeth_code: ру
+  note: блаженные
+  short_note: Блаженные
+- order: блжяя
+  text: блжж
+  language_code: ру
+  alphabeth_code: ру
+  note: блаженные жены
+  short_note: Блаженные жены
 - order: блпр
   text: блж
   language_code: ру
   alphabeth_code: ру
+  note: блаженный преподобный
+  short_note: Блаженнопреподобник
 - order: блгв
   text: блгв
   language_code: ру
   alphabeth_code: ру
+  note: благоверный
+  short_note: Благоверный
+- order: блгвя
+  text: блгв
+  language_code: ру
+  alphabeth_code: ру
+  note: благоверная
+  short_note: Благоверная
 - order: блгвв
   text: блгвв
   language_code: ру
   alphabeth_code: ру
+  note: благоверные
+  short_note: Благоверные
+- order: блгвяя
+  text: блгвв
+  language_code: ру
+  alphabeth_code: ру
+  note: благоверные жены
+  short_note: Благоверные жены
 - order: бср
   text: бср
   language_code: ру
   alphabeth_code: ру
+  note: бессребренник
+  short_note: Бессребренник
 - order: прор
   text: прор
   language_code: ру
   alphabeth_code: ру
-- order: ап
+  note: пророк
+  short_note: Пророк
+- order: пррч
+  text: прор
+  language_code: ру
+  alphabeth_code: ру
+  note: пророчица
+  short_note: Пророчица
+- order: прорр
+  text: прорр
+  language_code: ру
+  alphabeth_code: ру
+  note: пророки
+  short_note: Пророки
+- order: пррчч
+  text: прорр
+  language_code: ру
+  alphabeth_code: ру
+  note: пророчицы
+  short_note: Пророчицы
+- order:аап
   text: ап
   language_code: ру
   alphabeth_code: ру
+  note: апостол
+  short_note: Апостол
+- order: апп
+  text: апп
+  language_code: ру
+  alphabeth_code: ру
+  note: апостолы
+  short_note: Апостолы
 - order: рап
   text: рап
   language_code: ру
   alphabeth_code: ру
+  note: равноапостольный
+  short_note: Равноапостольный
+- order: рапж
+  text: рап
+  language_code: ру
+  alphabeth_code: ру
+  note: равноапостольная
+  short_note: Равноапостольная
+- order: рапп
+  text: рапп
+  language_code: ру
+  alphabeth_code: ру
+  note: равноапостольные
+  short_note: Равноапостольные
+- order: рапжж
+  text: рапп
+  language_code: ру
+  alphabeth_code: ру
+  note: равноапостольные жены
+  short_note: Равноапостольные жены
 - order: мч
   text: мч
   language_code: ру
   alphabeth_code: ру
+  note: мученик
+  short_note: Мученик
 - order: мчр
   text: мч
   language_code: ру
   alphabeth_code: ру
+  note: мученик русской церкви
+  short_note: Мученик русская
 - order: мц
   text: мц
   language_code: ру
   alphabeth_code: ру
+  note: мученица
+  short_note: Мученица
 - order: мцр
   text: мц
   language_code: ру
   alphabeth_code: ру
+  note: мученица русской церкви
+  short_note: Мученица русская
 - order: вмч
   text: вмч
   language_code: ру
   alphabeth_code: ру
+  note: великомученик
+  short_note: Великомученик
 - order: вмц
   text: вмц
   language_code: ру
   alphabeth_code: ру
+  note: великомученица
+  short_note: Великомученица
 - order: сщмч
   text: сщмч
   language_code: ру
   alphabeth_code: ру
+  note: священномученик
+  short_note: Священномученик
 - order: смчр
   text: сщмч
   language_code: ру
   alphabeth_code: ру
+  note: священномученик русской церкви
+  short_note: Священномученик русский
 - order: прмч
   text: прмч
   language_code: ру
   alphabeth_code: ру
+  note: преподобномученик
+  short_note: Преподобномученик
 - order: пмчр
   text: прмч
   language_code: ру
   alphabeth_code: ру
+  note: препобожномученик русской церкви
+  short_note: Преподобномученик русский
 - order: прмц
   text: прмц
   language_code: ру
   alphabeth_code: ру
+  note: преподобномученица
+  short_note: Преподобномученица
 - order: пмцр
   text: прмц
   language_code: ру
   alphabeth_code: ру
+  note: преподобномученица русской церкви
+  short_note: Преподобномученица русская
 - order: мсвт
   text: сщмч
   language_code: ру
   alphabeth_code: ру
+  note: священномученик в святительском сане
+  short_note: Умученосвятитель
 - order: мсвтр
   text: сщмч
   language_code: ру
   alphabeth_code: ру
+  note: священномученик русской церкви в святительском сане
+  short_note: Умученосвятитель русский
 - order: мчч
   text: мчч
   language_code: ру
   alphabeth_code: ру
+  note: мученики
+  short_note: Мученики
 - order: мцц
   text: мцц
   language_code: ру
   alphabeth_code: ру
+  note: мученицы
+  short_note: Мученицы
 - order: сщмчч
   text: сщмчч
   language_code: ру
   alphabeth_code: ру
+  note: священномученики
+  short_note: Священномученики
 - order: стц
   text: стц
   language_code: ру
   alphabeth_code: ру
+  note: страстотерпец
+  short_note: Страстотерпец
+- order: стца
+  text: стц
+  language_code: ру
+  alphabeth_code: ру
+  note: страстотерпица
+  short_note: Страстотерпица
 - order: сщстц
   text: сщмч
   language_code: ру
   alphabeth_code: ру
+  note: священнострастотерпец
+  short_note: Священнострастотерпец
 - order: стсвт
   text: сщмч
   language_code: ру
   alphabeth_code: ру
+  note: священнострастотерпец в святительском сане
+  short_note: Страстотерпосвятитель
 - order: прстц
   text: прмч
   language_code: ру
   alphabeth_code: ру
-- order: стцц
-  text: мчч
+  note: преподобнострастотерпец
+  short_note: Преподобнострастотерпец
+- order: прстца
+  text: прмч
   language_code: ру
   alphabeth_code: ру
+  note: страстотерпица
+  short_note: Преподобнострастотерпица
+- order: стцц
+  text: стцц
+  language_code: ру
+  alphabeth_code: ру
+  note: страстотерпцы
+  short_note: Страстотерпцы
+- order: стцаа
+  text: стцц
+  language_code: ру
+  alphabeth_code: ру
+  note: страстотерпицы
+  short_note: Страстотерпицы
 - order: пстцц
   text: прмчч
   language_code: ру
   alphabeth_code: ру
+  note: преподобнострастотерпцы
+  short_note: Преподобнострастотерпцы
+- order: пстцаа
+  text: прмчч
+  language_code: ру
+  alphabeth_code: ру
+  note: преподобнострастотерпицы
+  short_note: Преподобнострастотерпицы
 - order: исп
   text: исп
   language_code: ру
   alphabeth_code: ру
+  note: исповедник
+  short_note: Исповедник
 - order: иср
   text: исп
   language_code: ру
   alphabeth_code: ру
+  note: исповедник русской церкви
+  short_note: Исповедник русский
 - order: исц
   text: исп
   language_code: ру
   alphabeth_code: ру
+  note: исповедница
+  short_note: Исповедница
 - order: ицр
   text: исп
   language_code: ру
   alphabeth_code: ру
+  note: исповедница русской церкви
+  short_note: Исповедница русский
 - order: сщисп
   text: сщисп
   language_code: ру
   alphabeth_code: ру
+  note: священноисповедник
+  short_note: Священноисповедник
 - order: сщиср
   text: сщисп
   language_code: ру
   alphabeth_code: ру
+  note: священноисповедник русской церкви
+  short_note: Священноисповедник русский
 - order: присп
   text: присп
   language_code: ру
   alphabeth_code: ру
+  note: преподобноисповедник
+  short_note: Преподобноисповедник
 - order: приср
   text: присп
   language_code: ру
   alphabeth_code: ру
+  note: преподобноисповедник русской церкви
+  short_note: Преподобноисповедник русский
 - order: присц
   text: присп
   language_code: ру
   alphabeth_code: ру
+  note: преподобноисповедница
+  short_note: Преподобноисповедница
 - order: прицр
   text: присп
   language_code: ру
   alphabeth_code: ру
+  note: преподобноисповедница русской церкви
+  short_note: Преподобноисповедница русская
 - order: исвт
   text: сщисп
   language_code: ру
   alphabeth_code: ру
+  note: священноисповедник в святительском сане
+  short_note: Исповедносвятитель
 - order: исвтр
   text: сщисп
   language_code: ру
   alphabeth_code: ру
+  note: священноисповедник русской церкви в святительском сане
+  short_note: Исповедносвятитель русский
 - order: прп
   text: прп
   language_code: ру
   alphabeth_code: ру
+  note: преподобный
+  short_note: Преподобный
 - order: прпж
   text: прп
   language_code: ру
   alphabeth_code: ру
+  note: преподобная
+  short_note: Преподобная
+- order: пст
+  text: прп
+  language_code: ру
+  alphabeth_code: ру
+  note: преподобный пустынник
+  short_note: Преподобный пустынник
+- order: пстж
+  text: прп
+  language_code: ру
+  alphabeth_code: ру
+  note: преподобная пустынница
+  short_note: Преподобная пустынница
 - order: свт
   text: свт
   language_code: ру
   alphabeth_code: ру
+  note: святитель
+  short_note: Святитель
 - order: прсвт
   text: прп
   language_code: ру
   alphabeth_code: ру
+  note: преподобый в святительском сане
+  short_note: Преподобносвятитель
 - order: оспс
   text: обр
   language_code: ру
   alphabeth_code: ру
+  note: образ Спасителя
+  short_note: Образ Спасителя
 - order: обр
   text: обр
   language_code: ру
   alphabeth_code: ру
+  note: образ Богородицы
+  short_note: Образ Богородицы
 - order: оник
   text: обр
   language_code: ру
   alphabeth_code: ру
+  note: образ Николы Мирликийского
+  short_note: Образ Николы
 - order: озпр
   text: обр
   language_code: ру
   alphabeth_code: ру
+  note: образ Димитрия Прилуцкого
+  short_note: Образ Дмитрия Прилуцкого
 - order: вещь
   text: вещь
   language_code: ру
   alphabeth_code: ру
+  note: вещь или предмет
+  short_note: Предмет
 - order: древо
   text: древо
   language_code: ру
   alphabeth_code: ру
+  note: дерево
+  short_note: Дерево
 - order: храм
   text: храм
   language_code: ру
   alphabeth_code: ру
+  note: церковь
+  short_note: Храм
 - order: обит
   text: обит
   language_code: ру
   alphabeth_code: ру
+  note: обитель
+  short_note: Обитель
 - order: град
   text: град
   language_code: ру
   alphabeth_code: ру
+  note: град
+  short_note: Град
 - order: место
   text: место
   language_code: ру
   alphabeth_code: ру
+  note: место
+  short_note: Место
 - order: сбт
   text: сбт
   language_code: ру
   alphabeth_code: ру
+  note: событие
+  short_note: Событие
