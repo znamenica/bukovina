@@ -125,4 +125,7 @@ class Memo < ActiveRecord::Base
          self.year_date ;end;end
 
    def calendary_string= value
-      self.calendary = Calendary.includes(:slug).where(slugs: { text: value }).first ;end;end
+      self.calendary = Calendary.includes(:slug).where(slugs: { text: value }).first ;end
+
+   def description_for language_code
+      descriptions.where(language_code: language_code).first ;end;end
