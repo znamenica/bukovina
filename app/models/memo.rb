@@ -4,6 +4,8 @@ require 'when_easter'
 # year_date[string]     - дата в году постоянная или перемещаемая, когда память отмечается
 # event_id[int]         - ссылка на событие
 # calendary_id[int]     - ссылка на календарь
+# bind_kind[string]     - тип привязки к опорному помину(может быть не привязан)
+# bond_to_id[int]       - ссылка на опорный помин, если nil, помин первичный
 #
 class Memo < ActiveRecord::Base
    DAYS = %w(нд пн вт ср чт пт сб)
@@ -23,6 +25,8 @@ class Memo < ActiveRecord::Base
 
    #enum bind_kind: [ 'несвязаный', 'навечерие', 'предпразднество', 'попразднество' ]
 
+   scope :primary, -> { where( bond_to_id: nil ) }
+   scope :licit, -> { joins( :calendary ).where( calendaries: { licit: true })}
    scope :in_calendaries, -> calendaries do
       # TODO make single embedded select or after fix rails bug use merge
       calendary_ids = Slug.where( text: calendaries, sluggable_type: 'Calendary' ).pluck( :sluggable_id )
@@ -70,7 +74,8 @@ class Memo < ActiveRecord::Base
    accepts_nested_attributes_for :descriptions, reject_if: :all_blank, allow_destroy: true
    accepts_nested_attributes_for :links, reject_if: :all_blank, allow_destroy: true
 
-   validates :calendary, :event, :year_date, presence: true
+   validates_presence_of :calendary, :event
+   validates :year_date, format: { with: /\A(0[1-9]|[1-2][0-9]|3[0-1])\.(0[1-9]|1[0-2])|[+-]\d{1,3}|0\z/ }
 
    before_validation :fix_year_date
    before_create -> { self.bind_kind ||= 'несвязаный' }

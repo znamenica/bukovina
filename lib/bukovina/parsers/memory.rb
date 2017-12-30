@@ -58,6 +58,8 @@ class Bukovina::Parsers::Memory
 
    ORDERS = %w(св сщмч сщмчч вмц вмч мч мцц мчч прмч прмц мц прп прав свт прпж стц блж сщисп присп присц исп исц блгв блгвв рап стсвт мсвт исвт присп прор ап рап сщпр прсвт прстц бср блпр
                смчр пмчр пмцр мчр мцр мсвтр иср сщиср приср ицр прицр исвтр сщстц
+               испп блжж прпп прмцц прмчч свтт прпс мчрр рапп свв апп смчрр сщмчр мсвтт 
+               приспп исвтт пмчрр бсрр прстцц блгвя
                оспс обр оник озпр
                храм место обит град
                вещь древо
@@ -139,11 +141,11 @@ class Bukovina::Parsers::Memory
                result[ :memory_names ] ||= []
                result[ :memory_names ].concat(res.delete(:memory_names)) ;end
          else
-            @errors.concat(parser.errors) ;end
+            @errors.concat(parser.errors) ;nil ;end
 
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid service " +
-            "'#{value}' detected" ) ;end;end
+            "'#{value}' detected" ); nil ;end;end
 
    def patronymic value, result
      name(value, result, :patronymic) ;end
@@ -173,7 +175,7 @@ class Bukovina::Parsers::Memory
    def order value, result
       match =
       value.split(',').all? do |v|
-         /^(#{ORDERS.join("|")})/ =~ v
+         /^(#{ORDERS.join("|")})$/ =~ v
       end
 
       if match
@@ -181,6 +183,7 @@ class Bukovina::Parsers::Memory
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid " +
             "value '#{value}' detected for order field" )
+         nil
       end
    end
 
@@ -201,12 +204,12 @@ class Bukovina::Parsers::Memory
                result[ :services ].concat(res.delete(:service))
             end
          else
-            @errors.concat(service_link.errors)
+            @errors.concat(service_link.errors) ;nil
          end
 
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid service " +
-            "'#{value}' detected" )
+            "'#{value}' detected" ) ;nil
       end
    end
 
@@ -218,10 +221,10 @@ class Bukovina::Parsers::Memory
             result[ :wikies ] ||= []
             result[ :wikies ].concat(res.delete(:link))
          else
-            @errors.concat(parser.errors) ;end
+            @errors.concat(parser.errors) ;nil;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid wikies " +
-            "'#{value}' detected" )
+            "'#{value}' detected" ) ;nil
       end
    end
 
@@ -233,10 +236,10 @@ class Bukovina::Parsers::Memory
             result[ :icon_links ] ||= []
             result[ :icon_links ].concat(res.delete(:icon_link))
          else
-            @errors.concat(parser.errors) ;end
+            @errors.concat(parser.errors) ;nil;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid icon link " +
-            "'#{value}' detected" ) ;end;end
+            "'#{value}' detected" ) ;nil ;end;end
 
    def photo value, result
       case value
@@ -246,10 +249,10 @@ class Bukovina::Parsers::Memory
             result[ :photo_links ] ||= []
             result[ :photo_links ].concat(res.delete(:icon_link))
          else
-            @errors.concat(parser.errors) ;end
+            @errors.concat(parser.errors) ;nil ;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid photo link " +
-            "'#{value}' detected" ) ;end;end
+            "'#{value}' detected" ) ;nil ;end;end
 
    def link value, result
       case value
@@ -259,10 +262,10 @@ class Bukovina::Parsers::Memory
             result[ :beings ] ||= []
             result[ :beings ].concat(res.delete(:link))
          else
-            @errors.concat(parser.errors) ;end
+            @errors.concat(parser.errors) ;nil ;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid link " +
-            "'#{value}' detected" ) ;end;end
+            "'#{value}' detected" ) ;nil ;end;end
 
    def desc value, result
       case value
@@ -275,10 +278,10 @@ class Bukovina::Parsers::Memory
             result[ :notes ] ||= []
             result[ :notes ].concat(desc)
          else
-            @errors.concat(parser.errors) ;end
+            @errors.concat(parser.errors) ;nil ;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid description " +
-            "'#{value}' detected" ) ;end;end
+            "'#{value}' detected" ) ;nil ;end;end
 
    def pateric value, result
       case value
@@ -288,10 +291,10 @@ class Bukovina::Parsers::Memory
             result[ :paterics ] ||= []
             result[ :paterics ].concat(res.delete(:link))
          else
-            @errors.concat(parser.errors) ;end
+            @errors.concat(parser.errors) ;nil ;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid pateric link " +
-            "'#{value}' detected" ) ;end;end
+            "'#{value}' detected" ) ;nil ;end;end
 
    def event value, result
       case value
@@ -301,10 +304,10 @@ class Bukovina::Parsers::Memory
             result[ :events ] ||= []
             result[ :events ].concat(res.delete(:event))
          else
-            @errors.concat(parser.errors) ;end
+            @errors.concat(parser.errors) ;nil ;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid event value " +
-            "'#{value}' detected" ) ;end;end
+            "'#{value}' detected" ) ;nil ;end;end
 
    def memo value, result
       case value
@@ -314,10 +317,10 @@ class Bukovina::Parsers::Memory
             result[ :memos ] ||= []
             result[ :memos ].concat(res.delete(:memos))
          else
-            @errors.concat(parser.errors) ;end
+            @errors.concat(parser.errors) ;nil ;end
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid memos value " +
-            "'#{value}' detected" ) ;end;#end
+            "'#{value}' detected" ) ;nil ;end;#end
          rescue
             r = true
             binding.pry
@@ -328,20 +331,20 @@ class Bukovina::Parsers::Memory
          result[ :quantity ] = value
       else
          @errors << Parsers::BukovinaInvalidValueError.new( "Invalid quantity " +
-            "'#{value}' detected for memory" ) ;end;end
+            "'#{value}' detected for memory" ) ;nil ;end;end
 
    def short value, result
       if /,/ !~ value.to_s
          result[ :slug ] = { text: value }
       else
-         @errors << Parsers::BukovinaInvalidValueError.new( "Short has a comma in '#{value}'" ) ;end;end
+         @errors << Parsers::BukovinaInvalidValueError.new( "Short has a comma in '#{value}'" ) ;nil ;end;end
 
    def view value, result
       list = Dir.glob('../*').map { |x| x =~ /..\/(.*)/ && $1 || nil }.compact
       if list.include?(value)
-         result[ :view_string ] = value
+         #result[ :view_string ] = value
       else
-         @errors << Parsers::BukovinaInvalidValueError.new( "Memory view '#{value}' isn't found in list of memories" ) ;end;end
+         @errors << Parsers::BukovinaInvalidValueError.new( "Memory view '#{value}' isn't found in list of memories" ) ;nil ;end;end
 
    def cover value, result
       case value
@@ -355,9 +358,9 @@ class Bukovina::Parsers::Memory
             result[ :covers_to ][ :notes ] ||= []
             result[ :covers_to ][ :notes ].concat(desc)
          else
-            @errors.concat(parser.errors) ;end
+            @errors.concat(parser.errors) ;nil ;end
       else
-         @errors << Parsers::BukovinaInvalidValueError.new( "Memory cover '#{value}' is invalid" )
+         @errors << Parsers::BukovinaInvalidValueError.new( "Memory cover '#{value}' is invalid" ) ;nil
       end
    end
 

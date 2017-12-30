@@ -33,8 +33,14 @@
   text: сбр
   language_code: ру
   alphabeth_code: ру
+  note: собор святых и святынь
+  short_note: Собор святых и святынь
+- order: свв
+  text: свв
+  language_code: ру
+  alphabeth_code: ру
   note: собор святых
-  short_note: Собор
+  short_note: Собор святых
 - order: прав
   text: прав
   language_code: ру
@@ -131,6 +137,12 @@
   alphabeth_code: ру
   note: бессребренник
   short_note: Бессребренник
+- order: бсрр
+  text: бсрр
+  language_code: ру
+  alphabeth_code: ру
+  note: бессребренники
+  short_note: Бессребренники
 - order: прор
   text: прор
   language_code: ру
@@ -202,7 +214,7 @@
   language_code: ру
   alphabeth_code: ру
   note: мученик русской церкви
-  short_note: Мученик русская
+  short_note: Мученик русский
 - order: мц
   text: мц
   language_code: ру
@@ -249,7 +261,7 @@
   text: прмч
   language_code: ру
   alphabeth_code: ру
-  note: препобожномученик русской церкви
+  note: преподобномученик русской церкви
   short_note: Преподобномученик русский
 - order: прмц
   text: прмц
@@ -281,18 +293,60 @@
   alphabeth_code: ру
   note: мученики
   short_note: Мученики
+- order: мчрр
+  text: мчч
+  language_code: ру
+  alphabeth_code: ру
+  note: мученики русской церкви
+  short_note: Мученики русские
 - order: мцц
   text: мцц
   language_code: ру
   alphabeth_code: ру
   note: мученицы
   short_note: Мученицы
+- order: мцрр
+  text: мцц
+  language_code: ру
+  alphabeth_code: ру
+  note: мученицы русской церкви
+  short_note: Мученицы русские
+- order: прмчч
+  text: прмчч
+  language_code: ру
+  alphabeth_code: ру
+  note: преподобномученики
+  short_note: Преподобномученики
+- order: пмчрр
+  text: прмчч
+  language_code: ру
+  alphabeth_code: ру
+  note: преподобномученики русской церкви
+  short_note: Преподобномученики русские
 - order: сщмчч
   text: сщмчч
   language_code: ру
   alphabeth_code: ру
   note: священномученики
   short_note: Священномученики
+- order: смчрр
+  text: сщмчч
+  language_code: ру
+  alphabeth_code: ру
+  note: священномученики русской церкви
+  short_note: Священномученики русские
+- order: мсвтт
+  text: сщмчч
+  language_code: ру
+  alphabeth_code: ру
+  note: священномученики в святительском сане
+  short_note: Умученосвятители
+- order: мсвтрр
+  text: сщмчч
+  language_code: ру
+  alphabeth_code: ру
+  note: священномученики русские в святительском сане
+  short_note: Умученосвятители русские
 - order: стц
   text: стц
   language_code: ру
@@ -335,6 +389,12 @@
   alphabeth_code: ру
   note: страстотерпцы
   short_note: Страстотерпцы
+- order: прстцц
+  text: прмчч
+  language_code: ру
+  alphabeth_code: ру
+  note: преподобнострастотерпцы
+  short_note: Преподобнострастотерпцы
 - order: стцаа
   text: стцц
   language_code: ру
@@ -353,6 +413,12 @@
   alphabeth_code: ру
   note: преподобнострастотерпицы
   short_note: Преподобнострастотерпицы
+- order: прмцц
+  text: прмцц
+  language_code: ру
+  alphabeth_code: ру
+  note: преподобномученицы
+  short_note: Преподобномученицы
 - order: исп
   text: исп
   language_code: ру
@@ -376,7 +442,7 @@
   language_code: ру
   alphabeth_code: ру
   note: исповедница русской церкви
-  short_note: Исповедница русский
+  short_note: Исповедница русская
 - order: сщисп
   text: сщисп
   language_code: ру
@@ -425,6 +491,30 @@
   alphabeth_code: ру
   note: священноисповедник русской церкви в святительском сане
   short_note: Исповедносвятитель русский
+- order: испп
+  text: испп
+  language_code: ру
+  alphabeth_code: ру
+  note: исповедники
+  short_note: Исповедники
+- order: исцц
+  text: испп
+  language_code: ру
+  alphabeth_code: ру
+  note: исповедницы
+  short_note: Исповедницы
+- order: исвтт
+  text: сщиспп
+  language_code: ру
+  alphabeth_code: ру
+  note: священноисповедники в святительском сане
+  short_note: Исповедносвятители
+- order: приспп
+  text: приспп
+  language_code: ру
+  alphabeth_code: ру
+  note: преподобноисповедники
+  short_note: Преподобноисповедники
 - order: прп
   text: прп
   language_code: ру
@@ -437,13 +527,13 @@
   alphabeth_code: ру
   note: преподобная
   short_note: Преподобная
-- order: пст
+- order: прпс
   text: прп
   language_code: ру
   alphabeth_code: ру
   note: преподобный пустынник
   short_note: Преподобный пустынник
-- order: пстж
+- order: прпсж
   text: прп
   language_code: ру
   alphabeth_code: ру
@@ -461,6 +551,24 @@
   alphabeth_code: ру
   note: преподобый в святительском сане
   short_note: Преподобносвятитель
+- order: свтт
+  text: свтт
+  language_code: ру
+  alphabeth_code: ру
+  note: святители
+  short_note: Святители
+- order: прпп
+  text: прпп
+  language_code: ру
+  alphabeth_code: ру
+  note: преподобные
+  short_note: Преподобные
+- order: прпжж
+  text: прпп
+  language_code: ру
+  alphabeth_code: ру
+  note: преподобные жены
+  short_note: Преподобные жены
 - order: оспс
   text: обр
   language_code: ру

@@ -1,7 +1,6 @@
 require 'bukovina/importers/common'
 
 class Bukovina::Importers::Memory < Bukovina::Importers::Common
-
    def init_slug o
       o.slug = Slug.new(base: o.short_name) if o.slug.blank?
       base = o.slug.text.gsub(/[^0-9а-яё]/, 'а').unpack("U*")
@@ -18,7 +17,7 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
             when base.last - 1 < 'а'.ord && 'я'.ord || base.last - 1
                nums[-2] =
                case nums[-2]
-               when base[-2] - 1 < 'а'.ord &&  'я'.ord || base[-2] - 1
+               when base[-2] - 1 < 'а'.ord && 'я'.ord || base[-2] - 1
                   raise
                when 'я'.ord
                   'ё'.ord
@@ -94,7 +93,7 @@ class Bukovina::Importers::Memory < Bukovina::Importers::Common
                Kernel.puts "retry dup service #{$!}"
                retry
             else
-               r = false
+               r = true
                binding.pry
                retry if r
                raise $! ;end;end

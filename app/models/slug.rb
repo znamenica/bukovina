@@ -22,11 +22,11 @@ class Slug < ActiveRecord::Base
       elsif digits.size > 0
          digits + firsts[ 0...4 - digits.size ].join
       elsif firsts.size > 2
-         firsts[ 0...4 ].join
+         firsts[ 0...5 ].join
       elsif firsts.size > 1
          # [ firsts, words.map { |l| l[1] } ].transpose.flatten.join
-         last = words[ 1 ].gsub( /[аеёиоуъыьэюя]+/, '' )[ 0..2 ]
-         first = words[ 0 ][ 0...4 - last.size ]
+         last = words[ 1 ].gsub( /[аеёиоуъыьэюя]+/, '' )[ 0...3 ]
+         first = words[ 0 ][ 0...5 - last.size ]
          first + last
       else
-         words.first[ 0...4 ] ;end;end;end
+         words.first[ 0..5 ] ;end;end;end
