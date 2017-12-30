@@ -64,7 +64,7 @@
        - http://azbyka.ru/days/assets/img/holidays/6/p18aj6d13r14u317d79tq77u1qkf3.jpg
        - http://azbyka.ru/days/assets/img/holidays/6/p18aj6d13r1kd01h771je1127n18oe6.jpg
     - год: 1 до нэ
-      описание: зач
+      описание: бвщ
       описание_:
          ру: Благовещение Богородицы
          гр: Ευαγγελισμός της Υπεραγίας Θεοτόκου
@@ -116,7 +116,8 @@
     - год: VI-VIII
       описание: просл.4
       о: 08.09
-    - год: IX
+    - год: 626
+      дата: лето
       собор: виз
       описание: застп
       место: Константинополь. Византия
@@ -138,17 +139,45 @@
       описание: просл.5
       место: Константинополь. Византия
       о: сб.5.поста
-    - год: XV
+    - год: 910
+      дата: 01.10
+      описание: явл
+      место: Влахернский храм. Константинополь. Византия
+    - год: 910
+      дата: 01.10
+      описание: застп.1
+      описание_: Покров Богородицы
+      вики: http://drevo-info.ru/articles/1167.html
+      бытие:
+         ру:
+          - http://azbyka.ru/days/prazdnik-pokrov-presvjatoj-vladychicy-nashej-bogorodicy-i-prisnodevy-marii
+          - http://azbyka.ru/days/ikona-pokrov-presvjatoj-bogorodicy
+         гр: http://www.synaxarion.gr/gr/sid/1007/sxsaintinfo.aspx
+      образ:
+       - http://drevo-info.ru/images/002/003909.jpg
+       - http://azbyka.ru/days/assets/img/icons/318/p188li655m1rqq1q3u133s1fpk1acfc.jpg
+       - http://azbyka.ru/days/assets/img/icons/318/p188li5nmv15b8u3s1fortft1vo37.jpg
+       - http://azbyka.ru/days/assets/img/icons/318/p188li655n17busdod40695e0ed.jpg
+       - http://azbyka.ru/days/assets/img/icons/318/p188lhv0306phd92b351g354fo3.jpg
+       - http://azbyka.ru/days/assets/img/icons/318/p188li5h9vecqcl7103u7g51l705.jpg
+       - http://azbyka.ru/days/assets/img/icons/318/p188li655j1pte1114bd4107dir4a.jpg
+      место: Константинополь. Византия
+    - год: ок.1152
+      собор: виз
       описание: просл.6
+      о: 10.01
+    - год: XV
+      описание: просл.7
+      собор: виз
       о: 17.08
       бытие: http://days.pravoslavie.ru/rubrics/canon564.htm?id=564
    помин:
     - дата: 25.03
       календарь: рпц,греч
-      описание: зач
+      описание: бвщ
     - дата: 25.03
       календарь: змин
-      описание: зач
+      описание: бвщ
       служба:
        - Благовещению Богородицы служба
        - http://azbyka.ru/days/caa/234
@@ -211,6 +240,16 @@
        - http://azbyka.ru/days/assets/upload/minei/09/minea_09_08.pdf
        - http://azbyka.ru/days/assets/upload/minei/09/minea_09_12.pdf
        - Отданию Рождества Богородицы служба
+    - дата: 01.10
+      календарь: рпц,змин
+      описание: застп.1
+      описание_: Покро́в Пресвято́й Богоро́дицы
+      служба: Покрову Богородицы служба
+    - дата: 28.10
+      календарь: гбмч
+      описание: застп.1
+      описание_: Покро́в Пресвято́й Богоро́дицы
+      служба: Покрову Богородицы служба
     - дата: 21.11
       описание: вход
       пред: 1

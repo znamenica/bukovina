@@ -22,7 +22,8 @@
     - http://www.saint.gr/photos/standard/0508/OsiosArseniosMegas02.jpg
     - http://www.saint.gr/photos/standard/0508/OsiosArseniosMegas01.jpg
    служба: Арсению Великому служба
-   покровительство: Парос
+   покровительство:
+    - Парос
    событие:
     - год: вид.сер.IV
       описание: ржд
