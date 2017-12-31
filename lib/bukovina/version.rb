@@ -1,3 +1,2 @@
 module Bukovina
-  VERSION = "0.0.3"
-end
+  VERSION = "0.99" ;end
